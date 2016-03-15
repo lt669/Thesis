@@ -1,0 +1,7 @@
+\contentsline {section}{\numberline {1}Literature Review}{2}
+\contentsline {subsection}{\numberline {1.1}Applications of Virtual Acoustic Environments}{2}
+\contentsline {subsection}{\numberline {1.2}Creating VAEs}{2}
+\contentsline {subsubsection}{\numberline {1.2.1}Real RIRs}{2}
+\contentsline {subsubsection}{\numberline {1.2.2}Synthetic RIRs}{2}
+\contentsline {paragraph}{\numberline {1.2.2.1}Geometrical Methods}{2}
+\contentsline {subsection}{\numberline {1.3}Ambisonics}{2}
