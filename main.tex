@@ -1,8 +1,9 @@
 \documentclass{article}
-\usepackage[utf8]{inputenc}
-\usepackage[]{subfiles}
-\usepackage{fancyhdr}
-\usepackage{graphicx}
+\usepackage{thesisStyle}
+%\usepackage{import}
+%\usepackage{standalone}
+
+\bibliographystyle{IEEEtran}
 
 %\usepackage{setspace}
 
@@ -28,6 +29,13 @@
 
 \begin{document}
 
+%-------------Acronyms-------------%
+\section{Acronyms}
+\begin{acronym}[TDMA]
+	\acro{VAE}{Virtual Acoustic Environment}
+	\acro{VSS}{Virtual Singing Studio}
+\end{acronym}
+
 %-------------Title Page-------------%
 %\subfile{Presections/Titlepage/TitlePage}
 
@@ -47,14 +55,18 @@
 
 
 %-------------Introduction-------------%
-%%\subfile{Presections/Introduction}
 
-\subfile{Sections/LitReview/LiteratureReview}
+%\input{Sections/Background/Background.tex}
+
+\subfile{Sections/Background/Background}
 \pagebreak
 %\subfile{Sections/Section1/Section1}
 
 \pagebreak
 
 %\subfile{Sections/Section2/Section2}
+
+%-------------Bibliography-------------%
+\bibliography{IEEEabrv,thesis.bib}
 
 \end{document}

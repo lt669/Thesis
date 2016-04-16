@@ -2,11 +2,20 @@ This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**main.tex
-(./main.tex
+**Background.tex
+(./Background.tex
 LaTeX2e <2015/01/01>
 Babel <3.9l> and hyphenation patterns for 79 languages loaded.
-(/usr/local/texlive/2015/texmf-dist/tex/latex/base/article.cls
+(/usr/local/texlive/2015/texmf-dist/tex/latex/subfiles/subfiles.cls
+Document Class: subfiles 2012/05/23 Federico Garcia
+(/usr/local/texlive/2015/texmf-dist/tex/latex/tools/verbatim.sty
+Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks14
+\verbatim@line=\toks15
+\verbatim@in@stream=\read1
+)
+Preamble taken from file `../../main.tex'
+(../../main.tex (/usr/local/texlive/2015/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
 (/usr/local/texlive/2015/texmf-dist/tex/latex/base/size10.clo
 File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
@@ -28,8 +37,8 @@ Package: thesisStyle
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2015/03/17 v1.2c Input encoding file
-\inpenc@prehook=\toks14
-\inpenc@posthook=\toks15
+\inpenc@prehook=\toks16
+\inpenc@posthook=\toks17
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2014/09/29 v1.1m UTF-8 support for inputenc
@@ -245,13 +254,7 @@ Now handling font encoding U ...
 ))
 (/usr/local/texlive/2015/texmf-dist/tex/latex/subfiles/subfiles.sty
 Package: subfiles 2012/05/23 Federico Garcia
-
-(/usr/local/texlive/2015/texmf-dist/tex/latex/tools/verbatim.sty
-Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
-\every@verbatim=\toks16
-\verbatim@line=\toks17
-\verbatim@in@stream=\read1
-))
+)
 (/usr/local/texlive/2015/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 \fancy@headwidth=\skip43
 \f@ncyO@elh=\skip44
@@ -338,7 +341,6 @@ Package: letltxmacro 2010/09/02 v1.4 Let assignment for LaTeX macros (HO)
 Package: hopatch 2012/05/28 v1.2 Wrapper for package hooks (HO)
 Package: xcolor-patch 2011/01/30 xcolor patch
 Package: atveryend 2011/06/30 v1.8 Hooks at the very end of document (HO)
-Package atveryend Info: \enddocument detected (standard20110627).
 Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
 Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)
 Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
@@ -348,8 +350,12 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/auxhook.sty
 Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
-)
-(/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+
+
+Package auxhook Warning: Cannot patch \document,
+(auxhook)                using \AtBeginDocument instead.
+
+) (/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
 )
 \@linkdim=\dimen105
@@ -413,11 +419,13 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip52
 )
-(./acronym.sty
+(/usr/local/texlive/2015/texmf-dist/tex/latex/acronym/acronym.sty
 Package: acronym 2015/03/21 v1.41 Support for acronyms (Tobias Oetiker)
- (/usr/local/texlive/2015/texmf-dist/tex/latex/bigfoot/suffix.sty
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/bigfoot/suffix.sty
 Package: suffix 2006/07/15 1.5a Variant command support
-) (/usr/local/texlive/2015/texmf-dist/tex/generic/xstring/xstring.sty
+)
+(/usr/local/texlive/2015/texmf-dist/tex/generic/xstring/xstring.sty
 (/usr/local/texlive/2015/texmf-dist/tex/generic/xstring/xstring.tex
 \@xs@message=\write3
 \integerpart=\count98
@@ -438,25 +446,26 @@ Package: titlesec 2011/12/15 v2.10.0 Sectioning titles
 \titlewidth=\dimen111
 \titlewidthlast=\dimen112
 \titlewidthfirst=\dimen113
-))
-(./main.aux)
-\openout1 = `main.aux'.
+))))
+(./Background.aux)
+\openout1 = `Background.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
- (/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+
+(/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count100
 \scratchdimen=\dimen114
@@ -494,7 +503,7 @@ File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package color Info: Driver file: pdftex.def on input line 142.
 )
-Package hyperref Info: Link coloring ON on input line 30.
+Package hyperref Info: Link coloring ON on input line 5.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -504,65 +513,60 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count106
 )
-LaTeX Info: Redefining \ref on input line 30.
-LaTeX Info: Redefining \pageref on input line 30.
-LaTeX Info: Redefining \nameref on input line 30.
+LaTeX Info: Redefining \ref on input line 5.
+LaTeX Info: Redefining \pageref on input line 5.
+LaTeX Info: Redefining \nameref on input line 5.
 
-(./main.out) (./main.out)
+(./Background.out) (./Background.out)
 \@outlinefile=\write4
-\openout4 = `main.out'.
+\openout4 = `Background.out'.
 
- [1{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
-
-] (./main.toc
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 3.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 3.
-)
-\tf@toc=\write5
-\openout5 = `main.toc'.
-
- (./main.lof)
-\tf@lof=\write6
-\openout6 = `main.lof'.
-
- (./main.lot)
-\tf@lot=\write7
-\openout7 = `main.lot'.
-
- [2]
-(./Sections/Background/Background.tex
 Package acronym Info: Label `acro:VAE' newly defined as it shall be overridden
 although it is yet undefined on input line 13.
-) [3] (./main.bbl)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 72.
- [4]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 72.
- (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 72.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 72.
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: C96E1F34304B82695DF685868154C248;447.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 72.
+
+
+Package acronym Warning: Acronym `VAE' is not defined on input line 13.
+
+
+Package acronym Warning: Acronym `VAE' is not defined on input line 13.
+
+
+LaTeX Warning: Citation `SalvadorCesar2010' on page 1 undefined on input line 1
+3.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 34.
+[1{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 34.
+
+(./Background.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 34.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 34.
+Package rerunfilecheck Info: File `Background.out' has not changed.
+(rerunfilecheck)             Checksum: 731F074F23EBF444BDC281B0AFCD2A56;404.
+
+
+LaTeX Warning: There were undefined references.
+
  ) 
 Here is how much of TeX's memory you used:
- 6210 strings out of 493089
- 90330 string characters out of 6134842
- 179911 words of memory out of 5000000
- 9608 multiletter control sequences out of 15000+600000
+ 6189 strings out of 493089
+ 90468 string characters out of 6134842
+ 180113 words of memory out of 5000000
+ 9602 multiletter control sequences out of 15000+600000
  5498 words of font info for 20 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 36i,11n,45p,272b,433s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 45i,11n,47p,297b,363s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb>
 </usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></
 usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on main.pdf (4 pages, 79375 bytes).
+Output written on Background.pdf (1 page, 65248 bytes).
 PDF statistics:
- 90 PDF objects out of 1000 (max. 8388607)
- 78 compressed objects within 1 object stream
- 15 named destinations out of 1000 (max. 500000)
- 57 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 61 PDF objects out of 1000 (max. 8388607)
+ 52 compressed objects within 1 object stream
+ 9 named destinations out of 1000 (max. 500000)
+ 49 words of extra memory for PDF output out of 10000 (max. 10000000)
 
