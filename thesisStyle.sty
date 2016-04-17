@@ -1,8 +1,10 @@
+\NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{thesisStyle}
 \usepackage[utf8]{inputenc}
 \usepackage[]{subfiles}
 \usepackage{fancyhdr}
 \usepackage{graphicx}
+\usepackage{parskip}
 \usepackage[colorlinks]{hyperref}
 \usepackage[printonlyused,withpage]{acronym}
 
@@ -14,3 +16,20 @@
 	{}{0em}
 	{}	
 	[\titlerule]
+
+\titleformat{\subsection}
+	{\large\raggedleft}
+	{}{0em}
+	{}
+
+\titleformat{\subsubsection}
+	{\raggedright}
+	{}{0em}
+	{}
+
+%-------------Define itemize spacing-------------%
+\newenvironment{itemize*}%
+  {\begin{itemize}%
+    \setlength{\itemsep}{-3pt}%
+    \setlength{\parskip}{0pt}}%
+  {\end{itemize}}

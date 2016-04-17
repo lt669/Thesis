@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.14)  16 APR 2016 18:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.14)  17 APR 2016 12:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -295,6 +295,9 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen103
 \Gin@req@width=\dimen104
 )
+(/usr/local/texlive/2015/texmf-dist/tex/latex/parskip/parskip.sty
+Package: parskip 2001/04/09 non-zero parskip adjustments
+)
 (/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
 
@@ -442,20 +445,20 @@ Package: titlesec 2011/12/15 v2.10.0 Sectioning titles
 (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
  (/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count100
@@ -494,7 +497,7 @@ File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package color Info: Driver file: pdftex.def on input line 142.
 )
-Package hyperref Info: Link coloring ON on input line 30.
+Package hyperref Info: Link coloring ON on input line 31.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -504,9 +507,9 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count106
 )
-LaTeX Info: Redefining \ref on input line 30.
-LaTeX Info: Redefining \pageref on input line 30.
-LaTeX Info: Redefining \nameref on input line 30.
+LaTeX Info: Redefining \ref on input line 31.
+LaTeX Info: Redefining \pageref on input line 31.
+LaTeX Info: Redefining \nameref on input line 31.
 
 (./main.out) (./main.out)
 \@outlinefile=\write4
@@ -534,35 +537,65 @@ LaTeX Font Info:    External font `cmex10' loaded for size
  [2]
 (./Sections/Background/Background.tex
 Package acronym Info: Label `acro:VAE' newly defined as it shall be overridden
-although it is yet undefined on input line 13.
-) [3] (./main.bbl)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 72.
- [4]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 72.
+although it is yet undefined on input line 20.
+Package acronym Info: Label `acro:RIR' newly defined as it shall be overridden
+although it is yet undefined on input line 22.
+ [3]
+<Sections/Background/images/soudFieldMic.jpg, id=93, 440.64626pt x 702.625pt>
+File: Sections/Background/images/soudFieldMic.jpg Graphic file (type jpg)
+
+<use Sections/Background/images/soudFieldMic.jpg>
+Package pdftex.def Info: Sections/Background/images/soudFieldMic.jpg used on in
+put line 49.
+(pdftex.def)             Requested size: 88.12769pt x 140.5225pt.
+
+<Sections/Background/images/soundFieldPolar.jpg, id=94, 702.625pt x 588.1975pt>
+File: Sections/Background/images/soundFieldPolar.jpg Graphic file (type jpg)
+<use Sections/Background/images/soundFieldPolar.jpg>
+Package pdftex.def Info: Sections/Background/images/soundFieldPolar.jpg used on
+ input line 52.
+(pdftex.def)             Requested size: 210.78912pt x 176.4606pt.
+
+Overfull \hbox (38.28912pt too wide) in paragraph at lines 52--53
+[][] 
+ []
+
+
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 48--55
+[]$[]$ $[]$
+ []
+
+Package acronym Info: Label `acro:VSS' newly defined as it shall be overridden
+although it is yet undefined on input line 59.
+[4 <./Sections/Background/images/soudFieldMic.jpg> <./Sections/Background/image
+s/soundFieldPolar.jpg>]) [5] (./main.bbl)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 74.
+ [6]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 74.
  (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 72.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 72.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 74.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 74.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: C96E1F34304B82695DF685868154C248;447.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 72.
+(rerunfilecheck)             Checksum: 621271B753A2A378BE010D9F99F12869;656.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 74.
  ) 
 Here is how much of TeX's memory you used:
- 6210 strings out of 493089
- 90330 string characters out of 6134842
- 179911 words of memory out of 5000000
- 9608 multiletter control sequences out of 15000+600000
- 5498 words of font info for 20 fonts, out of 8000000 for 9000
+ 6264 strings out of 493089
+ 91390 string characters out of 6134842
+ 181221 words of memory out of 5000000
+ 9643 multiletter control sequences out of 15000+600000
+ 5191 words of font info for 19 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 36i,11n,45p,272b,433s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,11n,45p,875b,487s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
-></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
-</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb>
-</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></
-usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on main.pdf (4 pages, 79375 bytes).
+></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb
+></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><
+/usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></u
+sr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on main.pdf (6 pages, 211177 bytes).
 PDF statistics:
- 90 PDF objects out of 1000 (max. 8388607)
- 78 compressed objects within 1 object stream
- 15 named destinations out of 1000 (max. 500000)
- 57 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 142 PDF objects out of 1000 (max. 8388607)
+ 124 compressed objects within 2 object streams
+ 28 named destinations out of 1000 (max. 500000)
+ 91 words of extra memory for PDF output out of 10000 (max. 10000000)
 

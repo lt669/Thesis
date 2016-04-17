@@ -21,10 +21,29 @@
 \providecommand{\BIBdecl}{\relax}
 \BIBdecl
 
-\bibitem{SalvadorCesar2010}
-D.~{Salvador, Cesar}, ``{A virtual acoustic environment as auditory display
-  front-end for sonification},'' \emph{Proceedings of ISon 2010, 3rd
-  Interactive Sonification Workshop, KTH, Stockholm, Sweden, April 7, 2010},
-  pp. 69--72, 2010.
+\bibitem{soundFieldMic}
+\BIBentryALTinterwordspacing
+P.~White. (2016) Recording a live choral performance. Website. sos. [Online].
+  Available:
+  \url{http://www.soundonsound.com/sos/jun04/articles/liveconcert.htm}
+\BIBentrySTDinterwordspacing
+
+\bibitem{Huopaniemi2000}
+J.~Huopaniemi, L.~Savioja, T.~Lokki, and R.~V{\"{a}}{\"{a}}n{\"{a}}nen,
+  ``{Virtual acoustics - applications and technology trends},'' \emph{Proc.
+  European Signal Proc. Conf. (Eusipco'2000)}, pp. 2201--2208, 2000.
+
+\bibitem{Stan2002}
+\BIBentryALTinterwordspacing
+G.~Stan, J.~Embrechts, and D.~Archambeau, ``{Comparison of different impulse
+  response measurement techniques},'' \emph{Journal of the Audio Engineering
+  Society}, vol.~50, no.~4, pp. 249--262, 2002. [Online]. Available:
+  \url{http://orbi.ulg.ac.be/handle/2268/34825}
+\BIBentrySTDinterwordspacing
+
+\bibitem{Brereton2014}
+J.~S. Brereton and B.~A. Hons, ``{Singing in Space ( s ): Singing performance
+  in real and virtual acoustic environments — Singers ’ evaluation ,
+  performance analysis and listeners ’ perception .}'' no. August, 2014.
 
 \end{thebibliography}

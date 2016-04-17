@@ -1,7 +1,10 @@
 \BOOKMARK [1][-]{section.1}{Acronyms}{}% 1
 \BOOKMARK [1][-]{section.2}{Background}{}% 2
 \BOOKMARK [2][-]{subsection.2.1}{Virtual Acoustic Environments}{section.2}% 3
-\BOOKMARK [3][-]{subsubsection.2.1.1}{Real RIRs}{subsection.2.1}% 4
-\BOOKMARK [3][-]{subsubsection.2.1.2}{Synthetic RIRs}{subsection.2.1}% 5
-\BOOKMARK [4][-]{paragraph.2.1.2.1}{Geometrical Methods}{subsubsection.2.1.2}% 6
-\BOOKMARK [2][-]{subsection.2.2}{Ambisonics}{section.2}% 7
+\BOOKMARK [2][-]{subsection.2.2}{Room Impulse Responses}{section.2}% 4
+\BOOKMARK [2][-]{subsection.2.3}{Ambisonics}{section.2}% 5
+\BOOKMARK [2][-]{subsection.2.4}{The Virtual Singing Studio}{section.2}% 6
+\BOOKMARK [3][-]{subsubsection.2.4.1}{How It Works}{subsection.2.4}% 7
+\BOOKMARK [3][-]{subsubsection.2.4.2}{Synthetic RIRs}{subsection.2.4}% 8
+\BOOKMARK [4][-]{paragraph.2.4.2.1}{Geometrical Methods}{subsubsection.2.4.2}% 9
+\BOOKMARK [2][-]{subsection.2.5}{Ambisonics}{section.2}% 10

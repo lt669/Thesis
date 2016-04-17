@@ -1,7 +1,10 @@
 \contentsline {section}{\numberline {1}Acronyms}{1}{section.1}
 \contentsline {section}{\numberline {2}Background}{3}{section.2}
 \contentsline {subsection}{\numberline {2.1}Virtual Acoustic Environments}{3}{subsection.2.1}
-\contentsline {subsubsection}{\numberline {2.1.1}Real RIRs}{3}{subsubsection.2.1.1}
-\contentsline {subsubsection}{\numberline {2.1.2}Synthetic RIRs}{3}{subsubsection.2.1.2}
-\contentsline {paragraph}{\numberline {2.1.2.1}Geometrical Methods}{3}{paragraph.2.1.2.1}
-\contentsline {subsection}{\numberline {2.2}Ambisonics}{3}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.2}Room Impulse Responses}{3}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Ambisonics}{4}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.4}The Virtual Singing Studio}{4}{subsection.2.4}
+\contentsline {subsubsection}{\numberline {2.4.1}How It Works}{5}{subsubsection.2.4.1}
+\contentsline {subsubsection}{\numberline {2.4.2}Synthetic RIRs}{5}{subsubsection.2.4.2}
+\contentsline {paragraph}{\numberline {2.4.2.1}Geometrical Methods}{5}{paragraph.2.4.2.1}
+\contentsline {subsection}{\numberline {2.5}Ambisonics}{5}{subsection.2.5}
