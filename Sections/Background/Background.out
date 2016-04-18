@@ -1,9 +1,11 @@
 \BOOKMARK [1][-]{section.1}{Background}{}% 1
 \BOOKMARK [2][-]{subsection.1.1}{Virtual Acoustic Environments}{section.1}% 2
 \BOOKMARK [2][-]{subsection.1.2}{Room Impulse Responses}{section.1}% 3
-\BOOKMARK [2][-]{subsection.1.3}{Ambisonics}{section.1}% 4
-\BOOKMARK [2][-]{subsection.1.4}{The Virtual Singing Studio}{section.1}% 5
-\BOOKMARK [3][-]{subsubsection.1.4.1}{How It Works}{subsection.1.4}% 6
-\BOOKMARK [3][-]{subsubsection.1.4.2}{Synthetic RIRs}{subsection.1.4}% 7
-\BOOKMARK [4][-]{paragraph.1.4.2.1}{Geometrical Methods}{subsubsection.1.4.2}% 8
-\BOOKMARK [2][-]{subsection.1.5}{Ambisonics}{section.1}% 9
+\BOOKMARK [2][-]{subsection.1.3}{Synthetic Room Impulse Responses in ODEON}{section.1}% 4
+\BOOKMARK [3][-]{subsubsection.1.3.1}{Ray-Tracing}{subsection.1.3}% 5
+\BOOKMARK [3][-]{subsubsection.1.3.2}{Image Source Method}{subsection.1.3}% 6
+\BOOKMARK [2][-]{subsection.1.4}{Ambisonics}{section.1}% 7
+\BOOKMARK [2][-]{subsection.1.5}{The Virtual Singing Studio}{section.1}% 8
+\BOOKMARK [2][-]{subsection.1.6}{Project Motivation}{section.1}% 9
+\BOOKMARK [2][-]{subsection.1.7}{Similar Projects}{section.1}% 10
+\BOOKMARK [3][-]{paragraph.1.7.0.1}{Geometrical Methods}{subsection.1.7}% 11
