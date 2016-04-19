@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.14)  18 APR 2016 17:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.14)  19 APR 2016 22:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -452,35 +452,43 @@ Package: xstring 2013/10/13  v1.7c  String manipulations (C Tellechea)
 )
 \AC@clearlist=\toks20
 )
+(/usr/local/texlive/2015/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2011/09/28 v3.5.2 Customized lists
+\labelindent=\skip53
+\enit@outerparindent=\dimen117
+\enit@toks=\toks21
+\enit@inbox=\box26
+\enitdp@description=\count103
+)
 (/usr/local/texlive/2015/texmf-dist/tex/latex/titlesec/titlesec.sty
 Package: titlesec 2011/12/15 v2.10.0 Sectioning titles
-\ttl@box=\box26
-\beforetitleunit=\skip53
-\aftertitleunit=\skip54
-\ttl@plus=\dimen117
-\ttl@minus=\dimen118
-\ttl@toksa=\toks21
-\titlewidth=\dimen119
-\titlewidthlast=\dimen120
-\titlewidthfirst=\dimen121
+\ttl@box=\box27
+\beforetitleunit=\skip54
+\aftertitleunit=\skip55
+\ttl@plus=\dimen118
+\ttl@minus=\dimen119
+\ttl@toksa=\toks22
+\titlewidth=\dimen120
+\titlewidthlast=\dimen121
+\titlewidthfirst=\dimen122
 ))
 (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -518,17 +526,17 @@ LaTeX Font Info:    ... okay on input line 29.
 
 (/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count103
-\scratchdimen=\dimen122
-\scratchbox=\box27
-\nofMPsegments=\count104
-\nofMParguments=\count105
-\everyMPshowfont=\toks22
-\MPscratchCnt=\count106
-\MPscratchDim=\dimen123
-\MPnumerator=\count107
-\makeMPintoPDFobject=\count108
-\everyMPtoPDFconversion=\toks23
+\scratchcounter=\count104
+\scratchdimen=\dimen123
+\scratchbox=\box28
+\nofMPsegments=\count105
+\nofMParguments=\count106
+\everyMPshowfont=\toks23
+\MPscratchCnt=\count107
+\MPscratchDim=\dimen124
+\MPnumerator=\count108
+\makeMPintoPDFobject=\count109
+\everyMPtoPDFconversion=\toks24
 ) (/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
@@ -544,7 +552,7 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\AtBeginShipoutBox=\box28
+\AtBeginShipoutBox=\box29
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/color.sty
 Package: color 2014/10/28 v1.1a Standard LaTeX Color (DPC)
@@ -554,7 +562,7 @@ File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package color Info: Driver file: pdftex.def on input line 142.
 )
-Package hyperref Info: Link coloring ON on input line 29.
+Package hyperref Info: Link coloring ON on input line 30.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -562,48 +570,43 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count109
+\c@section@level=\count110
 )
-LaTeX Info: Redefining \ref on input line 29.
-LaTeX Info: Redefining \pageref on input line 29.
-LaTeX Info: Redefining \nameref on input line 29.
+LaTeX Info: Redefining \ref on input line 30.
+LaTeX Info: Redefining \pageref on input line 30.
+LaTeX Info: Redefining \nameref on input line 30.
 
 (./main.out) (./main.out)
 \@outlinefile=\write4
 \openout4 = `main.out'.
 
- (./Sections/Background/Background.tex
-Package acronym Info: Label `acro:VAE' newly defined as it shall be overridden
-although it is yet undefined on input line 23.
+ (./main.toc
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 3.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 3.
  [1{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
-]
+])
+\tf@toc=\write5
+\openout5 = `main.toc'.
+
+ (./Sections/Background/Background.tex
+[2]
+Package acronym Info: Label `acro:VAE' newly defined as it shall be overridden
+although it is yet undefined on input line 47.
 Package acronym Info: Label `acro:RIR' newly defined as it shall be overridden
-although it is yet undefined on input line 25.
-Package acronym Info: Label `acro:ISM' newly defined as it shall be overridden
 although it is yet undefined on input line 49.
- [2]
-<Sections/Background/images/ISM.png, id=102, 556.479pt x 571.1739pt>
-File: Sections/Background/images/ISM.png Graphic file (type png)
-
-<use Sections/Background/images/ISM.png>
-Package pdftex.def Info: Sections/Background/images/ISM.png used on input line 
-63.
-(pdftex.def)             Requested size: 166.94498pt x 171.35349pt.
-
-<Sections/Background/images/soudFieldMic.jpg, id=106, 440.64626pt x 702.625pt>
+ [3]
+<Sections/Background/images/soudFieldMic.jpg, id=165, 440.64626pt x 702.625pt>
 File: Sections/Background/images/soudFieldMic.jpg Graphic file (type jpg)
 
 <use Sections/Background/images/soudFieldMic.jpg>
 Package pdftex.def Info: Sections/Background/images/soudFieldMic.jpg used on in
 put line 79.
 (pdftex.def)             Requested size: 88.12769pt x 140.5225pt.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 80.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 80.
 
-<Sections/Background/images/soundFieldPolar.jpg, id=107, 702.625pt x 588.1975pt
+<Sections/Background/images/soundFieldPolar.jpg, id=166, 702.625pt x 588.1975pt
 >
 File: Sections/Background/images/soundFieldPolar.jpg Graphic file (type jpg)
  <use Sections/Background/images/soundFieldPolar.jpg>
@@ -615,63 +618,118 @@ Overfull \hbox (2.2222pt too wide) in paragraph at lines 78--84
 []$[]$ $[]$ 
  []
 
-[3]
+[4 <./Sections/Background/images/soudFieldMic.jpg> <./Sections/Background/image
+s/soundFieldPolar.jpg>]
+Package acronym Info: Label `acro:ISM' newly defined as it shall be overridden
+although it is yet undefined on input line 93.
+ [5]
+<Sections/Background/images/ISM.png, id=199, 556.479pt x 571.1739pt>
+File: Sections/Background/images/ISM.png Graphic file (type png)
+
+<use Sections/Background/images/ISM.png>
+Package pdftex.def Info: Sections/Background/images/ISM.png used on input line 
+112.
+(pdftex.def)             Requested size: 166.94498pt x 171.35349pt.
+Package acronym Info: Label `acro:TO' newly defined as it shall be overridden
+although it is yet undefined on input line 122.
+ [6 <./Sections/Background/images/ISM.png>] [7]
 Package acronym Info: Label `acro:VSS' newly defined as it shall be overridden
-although it is yet undefined on input line 90.
+although it is yet undefined on input line 151.
 
 
-LaTeX Warning: Reference `vssDiagram' on page 4 undefined on input line 90.
+LaTeX Warning: Reference `vssDiagram' on page 8 undefined on input line 151.
 
-[4 <./Sections/Background/images/ISM.png> <./Sections/Background/images/soudFie
-ldMic.jpg> <./Sections/Background/images/soundFieldPolar.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 111--112
+[8]
+Underfull \hbox (badness 10000) in paragraph at lines 190--191
 
  []
 
-[5]
 
-Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 121.
+Underfull \hbox (badness 10000) in paragraph at lines 191--192
 
-) [6] (./main.bbl
-Underfull \hbox (badness 1990) in paragraph at lines 43--46
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 192--193
+
+ []
+
+[9]
+Underfull \hbox (badness 10000) in paragraph at lines 193--194
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 194--195
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 195--196
+
+ []
+
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 198.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 198.
+
+Underfull \hbox (badness 10000) in paragraph at lines 198--199
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 199--200
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 200--201
+
+ []
+
+) [10] (./main.bbl
+Underfull \hbox (badness 1990) in paragraph at lines 50--53
 []\OT1/cmr/m/n/10 (2016) Soft-ware. Odeon. [On-line]. Avail-able: [][]$http : /
  / www . odeon . dk /
  []
 
-[7])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 73.
- [8]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 73.
+[11])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 78.
+ [12]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 78.
  (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 73.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 73.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 78.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 78.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 56A309C2ECBEBEEDD739BCD88B417C3E;820.
+(rerunfilecheck)             Checksum: CCA217BED36D43B5EF836EDACD4D7E86;1636.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 73.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 78.
  ) 
 Here is how much of TeX's memory you used:
- 6742 strings out of 493089
- 98514 string characters out of 6134842
- 197267 words of memory out of 5000000
- 10104 multiletter control sequences out of 15000+600000
+ 7099 strings out of 493089
+ 104251 string characters out of 6134842
+ 203617 words of memory out of 5000000
+ 10421 multiletter control sequences out of 15000+600000
  5791 words of font info for 21 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 36i,11n,45p,972b,501s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,12n,45p,1296b,639s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb
 ></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><
 /usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></u
 sr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></us
 r/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on main.pdf (8 pages, 311646 bytes).
+Output written on main.pdf (12 pages, 329527 bytes).
 PDF statistics:
- 213 PDF objects out of 1000 (max. 8388607)
- 190 compressed objects within 2 object streams
- 42 named destinations out of 1000 (max. 500000)
- 112 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 354 PDF objects out of 1000 (max. 8388607)
+ 325 compressed objects within 4 object streams
+ 72 named destinations out of 1000 (max. 500000)
+ 200 words of extra memory for PDF output out of 10000 (max. 10000000)
 

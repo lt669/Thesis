@@ -38,6 +38,13 @@ G.~Stan, J.~Embrechts, and D.~Archambeau, ``{Comparison of different impulse
 {Iso 3382-1}, ``{Acoustics - Measurement of room acoustic parameters - Part 1:
   Performance spaces},'' vol.~3, 2009.
 
+\bibitem{soundFieldMic}
+\BIBentryALTinterwordspacing
+P.~White. (2016) Recording a live choral performance. Website. sos. [Online].
+  Available:
+  \url{http://www.soundonsound.com/sos/jun04/articles/liveconcert.htm}
+\BIBentrySTDinterwordspacing
+
 \bibitem{odeon}
 \BIBentryALTinterwordspacing
 (2016) Software. Odeon. [Online]. Available:
@@ -61,13 +68,31 @@ J.~H. Rindel, ``{Computer Simulation Techniques for Acoustical Design of
 \BIBentrySTDinterwordspacing
 
 \bibitem{odeonManual}
-C.~L. Christensen and G.~Koutsouris, ``{ODEON User's Manual},'' 2015.
+C.~L. Christensen and G.~Koutsouris, \emph{{ODEON User's Manual}}, Scion DTU
+  Diplomvej Kgs. Lyngby Denmark, 2015.
 
-\bibitem{soundFieldMic}
+\bibitem{SKU}
 \BIBentryALTinterwordspacing
-P.~White. (2016) Recording a live choral performance. Website. sos. [Online].
-  Available:
-  \url{http://www.soundonsound.com/sos/jun04/articles/liveconcert.htm}
+Google. (2015) Google sketchup. Software. [Online]. Available:
+  \url{http://www.sketchup.com/}
+\BIBentrySTDinterwordspacing
+
+\bibitem{SU2Odeon}
+\BIBentryALTinterwordspacing
+(2016) Su2odeon. Software. Odeon. [Online]. Available:
+  \url{http://www.odeon.dk/su2odeon-plugin-trimble-sketchup}
+\BIBentrySTDinterwordspacing
+
+\bibitem{max}
+\BIBentryALTinterwordspacing
+(2016) Max/msp. Software. Cycling74. [Online]. Available:
+  \url{https://cycling74.com/products/max/}
+\BIBentrySTDinterwordspacing
+
+\bibitem{spat}
+\BIBentryALTinterwordspacing
+(2016) Spat. Software. IRCAM Centre Pompidou. [Online]. Available:
+  \url{http://forumnet.ircam.fr/product/spat-en/}
 \BIBentrySTDinterwordspacing
 
 \bibitem{Brereton2014}

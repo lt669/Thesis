@@ -1,10 +1,23 @@
 \contentsline {section}{\numberline {1}Acronyms}{1}{section.1}
-\contentsline {section}{\numberline {2}Background}{2}{section.2}
-\contentsline {subsection}{\numberline {2.1}Pre-project}{2}{subsection.2.1}
-\contentsline {subsubsection}{\numberline {2.1.1}Virtual Acoustic Environments}{2}{subsubsection.2.1.1}
-\contentsline {subsubsection}{\numberline {2.1.2}Room Impulse Responses}{2}{subsubsection.2.1.2}
-\contentsline {subsubsection}{\numberline {2.1.3}Ambisonics}{3}{subsubsection.2.1.3}
-\contentsline {subsubsection}{\numberline {2.1.4}The Virtual Singing Studio}{3}{subsubsection.2.1.4}
-\contentsline {subsection}{\numberline {2.2}Project}{4}{subsection.2.2}
-\contentsline {subsubsection}{\numberline {2.2.1}Synthetic Room Impulse Responses}{4}{subsubsection.2.2.1}
-\contentsline {paragraph}{\numberline {2.2.1.1}Geometrical Methods}{4}{paragraph.2.2.1.1}
+\contentsline {section}{\numberline {2}Introduction}{2}{section.2}
+\contentsline {subsection}{\numberline {2.1}Project Overview}{2}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Project Motivation}{3}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Background}{3}{subsection.2.3}
+\contentsline {subsubsection}{\numberline {2.3.1}Virtual Acoustic Environments}{3}{subsubsection.2.3.1}
+\contentsline {subsubsection}{\numberline {2.3.2}Room Impulse Responses}{3}{subsubsection.2.3.2}
+\contentsline {subsubsection}{\numberline {2.3.3}Ambisonics}{4}{subsubsection.2.3.3}
+\contentsline {subsection}{\numberline {2.4}Software Overview}{5}{subsection.2.4}
+\contentsline {subsubsection}{\numberline {2.4.1}ODEON}{5}{subsubsection.2.4.1}
+\contentsline {paragraph}{\numberline {2.4.1.1}Ray-Tracing}{5}{paragraph.2.4.1.1}
+\contentsline {paragraph}{\numberline {2.4.1.2}Image Source Method}{5}{paragraph.2.4.1.2}
+\contentsline {paragraph}{\numberline {2.4.1.3}Hybrid Method}{6}{paragraph.2.4.1.3}
+\contentsline {paragraph}{\numberline {2.4.1.4}Room Modelling}{7}{paragraph.2.4.1.4}
+\contentsline {paragraph}{\numberline {2.4.1.5}Material Selection}{7}{paragraph.2.4.1.5}
+\contentsline {subsubsection}{\numberline {2.4.2}Google SketchUp}{7}{subsubsection.2.4.2}
+\contentsline {subsubsection}{\numberline {2.4.3}Max/MSP}{7}{subsubsection.2.4.3}
+\contentsline {paragraph}{\numberline {2.4.3.1}Spat}{8}{paragraph.2.4.3.1}
+\contentsline {subsection}{\numberline {2.5}Project Description}{8}{subsection.2.5}
+\contentsline {subsubsection}{\numberline {2.5.1}The Virtual Singing Studio}{8}{subsubsection.2.5.1}
+\contentsline {subsubsection}{\numberline {2.5.2}Project Motivation}{8}{subsubsection.2.5.2}
+\contentsline {subsubsection}{\numberline {2.5.3}Project Objectives}{9}{subsubsection.2.5.3}
+\contentsline {subsubsection}{\numberline {2.5.4}Project Overview}{10}{subsubsection.2.5.4}
