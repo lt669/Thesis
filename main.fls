@@ -136,6 +136,16 @@ INPUT ./Sections/Background/images/ISM.png
 INPUT ./Sections/Background/images/ISM.png
 INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/base/omscmr.fd
 INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/base/omscmr.fd
+INPUT Sections/Implementation/RealRIRs/RealRIRs.tex
+INPUT Sections/Implementation/RealRIRs/RealRIRs.tex
+INPUT Sections/Implementation/Modelling/Modelling.tex
+INPUT Sections/Implementation/Modelling/Modelling.tex
+INPUT Sections/Implementation/Odeon/Odeon.tex
+INPUT Sections/Implementation/Odeon/Odeon.tex
+INPUT Sections/Implementation/Max/Max.tex
+INPUT Sections/Implementation/Max/Max.tex
+INPUT Sections/userTesting/userTesting.tex
+INPUT Sections/userTesting/userTesting.tex
 INPUT main.bbl
 INPUT main.bbl
 INPUT main.aux

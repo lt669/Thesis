@@ -1,23 +1,54 @@
 \contentsline {section}{\numberline {1}Acronyms}{1}{section.1}
-\contentsline {section}{\numberline {2}Introduction}{2}{section.2}
-\contentsline {subsection}{\numberline {2.1}Project Overview}{2}{subsection.2.1}
-\contentsline {subsection}{\numberline {2.2}Project Motivation}{3}{subsection.2.2}
-\contentsline {subsection}{\numberline {2.3}Background}{3}{subsection.2.3}
-\contentsline {subsubsection}{\numberline {2.3.1}Virtual Acoustic Environments}{3}{subsubsection.2.3.1}
-\contentsline {subsubsection}{\numberline {2.3.2}Room Impulse Responses}{3}{subsubsection.2.3.2}
-\contentsline {subsubsection}{\numberline {2.3.3}Ambisonics}{4}{subsubsection.2.3.3}
-\contentsline {subsection}{\numberline {2.4}Software Overview}{5}{subsection.2.4}
-\contentsline {subsubsection}{\numberline {2.4.1}ODEON}{5}{subsubsection.2.4.1}
-\contentsline {paragraph}{\numberline {2.4.1.1}Ray-Tracing}{5}{paragraph.2.4.1.1}
-\contentsline {paragraph}{\numberline {2.4.1.2}Image Source Method}{5}{paragraph.2.4.1.2}
-\contentsline {paragraph}{\numberline {2.4.1.3}Hybrid Method}{6}{paragraph.2.4.1.3}
-\contentsline {paragraph}{\numberline {2.4.1.4}Room Modelling}{7}{paragraph.2.4.1.4}
-\contentsline {paragraph}{\numberline {2.4.1.5}Material Selection}{7}{paragraph.2.4.1.5}
-\contentsline {subsubsection}{\numberline {2.4.2}Google SketchUp}{7}{subsubsection.2.4.2}
-\contentsline {subsubsection}{\numberline {2.4.3}Max/MSP}{7}{subsubsection.2.4.3}
-\contentsline {paragraph}{\numberline {2.4.3.1}Spat}{8}{paragraph.2.4.3.1}
-\contentsline {subsection}{\numberline {2.5}Project Description}{8}{subsection.2.5}
-\contentsline {subsubsection}{\numberline {2.5.1}The Virtual Singing Studio}{8}{subsubsection.2.5.1}
-\contentsline {subsubsection}{\numberline {2.5.2}Project Motivation}{8}{subsubsection.2.5.2}
-\contentsline {subsubsection}{\numberline {2.5.3}Project Objectives}{9}{subsubsection.2.5.3}
-\contentsline {subsubsection}{\numberline {2.5.4}Project Overview}{10}{subsubsection.2.5.4}
+\contentsline {section}{\numberline {2}Introduction}{3}{section.2}
+\contentsline {subsection}{\numberline {2.1}Project Overview}{3}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Project Motivation}{4}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Background}{4}{subsection.2.3}
+\contentsline {subsubsection}{\numberline {2.3.1}Virtual Acoustic Environments}{4}{subsubsection.2.3.1}
+\contentsline {subsubsection}{\numberline {2.3.2}Room Impulse Responses}{4}{subsubsection.2.3.2}
+\contentsline {subsubsection}{\numberline {2.3.3}Ambisonics}{5}{subsubsection.2.3.3}
+\contentsline {subsection}{\numberline {2.4}Software Overview}{6}{subsection.2.4}
+\contentsline {subsubsection}{\numberline {2.4.1}ODEON}{6}{subsubsection.2.4.1}
+\contentsline {paragraph}{\numberline {2.4.1.1}Ray-Tracing}{6}{paragraph.2.4.1.1}
+\contentsline {paragraph}{\numberline {2.4.1.2}Image Source Method}{6}{paragraph.2.4.1.2}
+\contentsline {paragraph}{\numberline {2.4.1.3}Hybrid Method}{7}{paragraph.2.4.1.3}
+\contentsline {paragraph}{\numberline {2.4.1.4}Room Modelling}{8}{paragraph.2.4.1.4}
+\contentsline {paragraph}{\numberline {2.4.1.5}Material Selection}{8}{paragraph.2.4.1.5}
+\contentsline {subsubsection}{\numberline {2.4.2}Google SketchUp}{8}{subsubsection.2.4.2}
+\contentsline {subsubsection}{\numberline {2.4.3}Max/MSP}{8}{subsubsection.2.4.3}
+\contentsline {paragraph}{\numberline {2.4.3.1}Spat}{9}{paragraph.2.4.3.1}
+\contentsline {subsection}{\numberline {2.5}Project Description}{9}{subsection.2.5}
+\contentsline {subsubsection}{\numberline {2.5.1}The Virtual Singing Studio}{9}{subsubsection.2.5.1}
+\contentsline {subsubsection}{\numberline {2.5.2}Project Motivation}{9}{subsubsection.2.5.2}
+\contentsline {subsubsection}{\numberline {2.5.3}Project Objectives}{10}{subsubsection.2.5.3}
+\contentsline {subsubsection}{\numberline {2.5.4}Project Overview}{11}{subsubsection.2.5.4}
+\contentsline {subsubsection}{\numberline {2.5.5}Room Choice}{11}{subsubsection.2.5.5}
+\contentsline {section}{\numberline {3}Implementation}{12}{section.3}
+\contentsline {subsection}{\numberline {3.1}Real RIR Recordings}{12}{subsection.3.1}
+\contentsline {subsubsection}{\numberline {3.1.1}Equipment}{12}{subsubsection.3.1.1}
+\contentsline {subsubsection}{\numberline {3.1.2}Topology}{12}{subsubsection.3.1.2}
+\contentsline {subsubsection}{\numberline {3.1.3}Positions}{12}{subsubsection.3.1.3}
+\contentsline {subsubsection}{\numberline {3.1.4}RIR Analysis}{12}{subsubsection.3.1.4}
+\contentsline {subsubsection}{\numberline {3.1.5}Issues: False Start}{12}{subsubsection.3.1.5}
+\contentsline {subsection}{\numberline {3.2}Room Modelling}{13}{subsection.3.2}
+\contentsline {subsubsection}{\numberline {3.2.1}Room Measurements}{13}{subsubsection.3.2.1}
+\contentsline {subsubsection}{\numberline {3.2.2}Final Blueprints}{13}{subsubsection.3.2.2}
+\contentsline {subsubsection}{\numberline {3.2.3}Designing the room}{13}{subsubsection.3.2.3}
+\contentsline {subsubsection}{\numberline {3.2.4}Complex vs Simple Design}{13}{subsubsection.3.2.4}
+\contentsline {subsubsection}{\numberline {3.2.5}Material}{13}{subsubsection.3.2.5}
+\contentsline {subsection}{\numberline {3.3}Export for ODEON}{13}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.4}ODEON}{13}{subsection.3.4}
+\contentsline {subsubsection}{\numberline {3.4.1}File Import}{13}{subsubsection.3.4.1}
+\contentsline {subsubsection}{\numberline {3.4.2}Water Tightness Test}{13}{subsubsection.3.4.2}
+\contentsline {subsubsection}{\numberline {3.4.3}Material Selection}{13}{subsubsection.3.4.3}
+\contentsline {paragraph}{\numberline {3.4.3.1}Initial Materials}{13}{paragraph.3.4.3.1}
+\contentsline {paragraph}{\numberline {3.4.3.2}RIR Comparison}{13}{paragraph.3.4.3.2}
+\contentsline {paragraph}{\numberline {3.4.3.3}Final Material Choice}{13}{paragraph.3.4.3.3}
+\contentsline {subsubsection}{\numberline {3.4.4}RIR Outputs}{13}{subsubsection.3.4.4}
+\contentsline {paragraph}{\numberline {3.4.4.1}RIR Topology Problems}{13}{paragraph.3.4.4.1}
+\contentsline {paragraph}{\numberline {3.4.4.2}Solution}{13}{paragraph.3.4.4.2}
+\contentsline {subsubsection}{\numberline {3.4.5}RIR Locations}{13}{subsubsection.3.4.5}
+\contentsline {subsection}{\numberline {3.5}Software}{13}{subsection.3.5}
+\contentsline {section}{\numberline {4}User Testing}{14}{section.4}
+\contentsline {subsection}{\numberline {4.1}User Testing Aims}{14}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Testing Procedure}{14}{subsection.4.2}
+\contentsline {subsubsection}{\numberline {4.2.1}}{14}{subsubsection.4.2.1}
