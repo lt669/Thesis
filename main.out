@@ -1,54 +1,7 @@
 \BOOKMARK [1][-]{section.1}{Acronyms}{}% 1
-\BOOKMARK [1][-]{section.2}{Introduction}{}% 2
-\BOOKMARK [2][-]{subsection.2.1}{Project Overview}{section.2}% 3
-\BOOKMARK [2][-]{subsection.2.2}{Project Motivation}{section.2}% 4
-\BOOKMARK [2][-]{subsection.2.3}{Background}{section.2}% 5
-\BOOKMARK [3][-]{subsubsection.2.3.1}{Virtual Acoustic Environments}{subsection.2.3}% 6
-\BOOKMARK [3][-]{subsubsection.2.3.2}{Room Impulse Responses}{subsection.2.3}% 7
-\BOOKMARK [3][-]{subsubsection.2.3.3}{Ambisonics}{subsection.2.3}% 8
-\BOOKMARK [2][-]{subsection.2.4}{Software Overview}{section.2}% 9
-\BOOKMARK [3][-]{subsubsection.2.4.1}{ODEON}{subsection.2.4}% 10
-\BOOKMARK [4][-]{paragraph.2.4.1.1}{Ray-Tracing}{subsubsection.2.4.1}% 11
-\BOOKMARK [4][-]{paragraph.2.4.1.2}{Image Source Method}{subsubsection.2.4.1}% 12
-\BOOKMARK [4][-]{paragraph.2.4.1.3}{Hybrid Method}{subsubsection.2.4.1}% 13
-\BOOKMARK [4][-]{paragraph.2.4.1.4}{Room Modelling}{subsubsection.2.4.1}% 14
-\BOOKMARK [4][-]{paragraph.2.4.1.5}{Material Selection}{subsubsection.2.4.1}% 15
-\BOOKMARK [3][-]{subsubsection.2.4.2}{Google SketchUp}{subsection.2.4}% 16
-\BOOKMARK [3][-]{subsubsection.2.4.3}{Max/MSP}{subsection.2.4}% 17
-\BOOKMARK [4][-]{paragraph.2.4.3.1}{Spat}{subsubsection.2.4.3}% 18
-\BOOKMARK [2][-]{subsection.2.5}{Project Description}{section.2}% 19
-\BOOKMARK [3][-]{subsubsection.2.5.1}{The Virtual Singing Studio}{subsection.2.5}% 20
-\BOOKMARK [3][-]{subsubsection.2.5.2}{Project Motivation}{subsection.2.5}% 21
-\BOOKMARK [3][-]{subsubsection.2.5.3}{Project Objectives}{subsection.2.5}% 22
-\BOOKMARK [3][-]{subsubsection.2.5.4}{Project Overview}{subsection.2.5}% 23
-\BOOKMARK [3][-]{subsubsection.2.5.5}{Room Choice}{subsection.2.5}% 24
-\BOOKMARK [1][-]{section.3}{Implementation}{}% 25
-\BOOKMARK [2][-]{subsection.3.1}{Real RIR Recordings}{section.3}% 26
-\BOOKMARK [3][-]{subsubsection.3.1.1}{Equipment}{subsection.3.1}% 27
-\BOOKMARK [3][-]{subsubsection.3.1.2}{Topology}{subsection.3.1}% 28
-\BOOKMARK [3][-]{subsubsection.3.1.3}{Positions}{subsection.3.1}% 29
-\BOOKMARK [3][-]{subsubsection.3.1.4}{RIR Analysis}{subsection.3.1}% 30
-\BOOKMARK [3][-]{subsubsection.3.1.5}{Issues: False Start}{subsection.3.1}% 31
-\BOOKMARK [2][-]{subsection.3.2}{Room Modelling}{section.3}% 32
-\BOOKMARK [3][-]{subsubsection.3.2.1}{Room Measurements}{subsection.3.2}% 33
-\BOOKMARK [3][-]{subsubsection.3.2.2}{Final Blueprints}{subsection.3.2}% 34
-\BOOKMARK [3][-]{subsubsection.3.2.3}{Designing the room}{subsection.3.2}% 35
-\BOOKMARK [3][-]{subsubsection.3.2.4}{Complex vs Simple Design}{subsection.3.2}% 36
-\BOOKMARK [3][-]{subsubsection.3.2.5}{Material}{subsection.3.2}% 37
-\BOOKMARK [2][-]{subsection.3.3}{Export for ODEON}{section.3}% 38
-\BOOKMARK [2][-]{subsection.3.4}{ODEON}{section.3}% 39
-\BOOKMARK [3][-]{subsubsection.3.4.1}{File Import}{subsection.3.4}% 40
-\BOOKMARK [3][-]{subsubsection.3.4.2}{Water Tightness Test}{subsection.3.4}% 41
-\BOOKMARK [3][-]{subsubsection.3.4.3}{Material Selection}{subsection.3.4}% 42
-\BOOKMARK [4][-]{paragraph.3.4.3.1}{Initial Materials}{subsubsection.3.4.3}% 43
-\BOOKMARK [4][-]{paragraph.3.4.3.2}{RIR Comparison}{subsubsection.3.4.3}% 44
-\BOOKMARK [4][-]{paragraph.3.4.3.3}{Final Material Choice}{subsubsection.3.4.3}% 45
-\BOOKMARK [3][-]{subsubsection.3.4.4}{RIR Outputs}{subsection.3.4}% 46
-\BOOKMARK [4][-]{paragraph.3.4.4.1}{RIR Topology Problems}{subsubsection.3.4.4}% 47
-\BOOKMARK [4][-]{paragraph.3.4.4.2}{Solution}{subsubsection.3.4.4}% 48
-\BOOKMARK [3][-]{subsubsection.3.4.5}{RIR Locations}{subsection.3.4}% 49
-\BOOKMARK [2][-]{subsection.3.5}{Software}{section.3}% 50
-\BOOKMARK [1][-]{section.4}{User Testing}{}% 51
-\BOOKMARK [2][-]{subsection.4.1}{User Testing Aims}{section.4}% 52
-\BOOKMARK [2][-]{subsection.4.2}{Testing Procedure}{section.4}% 53
-\BOOKMARK [3][-]{subsubsection.4.2.1}{}{subsection.4.2}% 54
+\BOOKMARK [1][-]{section.2}{Implementation}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{Real RIR Recordings}{section.2}% 3
+\BOOKMARK [3][-]{subsubsection.2.1.1}{RIR Measurement Setup}{subsection.2.1}% 4
+\BOOKMARK [3][-]{subsubsection.2.1.2}{Positions}{subsection.2.1}% 5
+\BOOKMARK [3][-]{subsubsection.2.1.3}{RIR Analysis}{subsection.2.1}% 6
+\BOOKMARK [3][-]{subsubsection.2.1.4}{Issues: False Start}{subsection.2.1}% 7
