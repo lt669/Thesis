@@ -1,6 +1,6 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{thesisStyle}
-\usepackage[a4paper, total={15cm, 8in}]{geometry}
+\usepackage[a4paper, total={15cm, 9in}]{geometry}
 \usepackage[utf8]{inputenc}
 \usepackage[]{subfiles}
 \usepackage{fancyhdr}
@@ -9,15 +9,37 @@
 \usepackage[colorlinks]{hyperref}
 \usepackage[printonlyused,withpage]{acronym}
 \linespread{1.3}
+\usepackage{textcomp}
+
+\usepackage[toc,page]{appendix}
+
+%-------------Footnote in tabular-------------%
+\usepackage{tablefootnote}
+
+%-------------Subcaptions-------------%
+\usepackage{caption}
+\usepackage{subcaption}
+
+%-------------Font selection-------------%
+\usepackage[T1]{fontenc}
+\usepackage{mathpazo}
+
+\usepackage{courier}
+
+%-------------For attaching audio files-------------%
+\usepackage{attachfile}
+\newcommand\HREF[2]{\hyper@linkurl{#2}{#1}}
 
 %-------------Define new referencing command-------------%
 \newcommand*{\fullref}[1]{\hyperref[{#1}]{\ref*{#1} \nameref*{#1}}}
 
 %-------------Define itemize spacing-------------%
 \usepackage{enumitem}
-\setlist{nosep} 
+\setlist{nolistsep} 
 \setenumerate{noitemsep}
 
+%-------------Hyperlinks-------------%
+\usepackage{hyperref}
 
 \RequirePackage{titlesec}
 

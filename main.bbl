@@ -21,7 +21,29 @@
 \providecommand{\BIBdecl}{\relax}
 \BIBdecl
 
-\bibitem{genelec}
-\emph{Genelec 8040B Active Monitoring System}, Datasheet, Genelec, 2016.
+\bibitem{dewalt}
+\BIBentryALTinterwordspacing
+\emph{DeWalt Laser Distance Measurer Manual}, Manual, DeWalt, 2016. [Online].
+  Available:
+  \url{http://service.dewalt.co.uk/PDMSDocuments/EU/Docs//docpdf/dw03101-typ1_en.pdf}
+\BIBentrySTDinterwordspacing
+
+\bibitem{odeonManual}
+C.~L. Christensen and G.~Koutsouris, \emph{{ODEON User's Manual}}, Scion DTU
+  Diplomvej Kgs. Lyngby Denmark, 2015.
+
+\bibitem{SU2Odeon}
+\BIBentryALTinterwordspacing
+(2016) Su2odeon. Software. Odeon. [Online]. Available:
+  \url{http://www.odeon.dk/su2odeon-plugin-trimble-sketchup}
+\BIBentrySTDinterwordspacing
+
+\bibitem{Kovalchik}
+\BIBentryALTinterwordspacing
+P.~Kovalchik, R.~Matetic, S.~Peng, and G.~Cole, ``{Measurement method for
+  determining absorption coefficients for underground mines},'' pp. 1--4.
+  [Online]. Available:
+  \url{http://www.cdc.gov/niosh/mining/userfiles/works/pdfs/ammfd.pdf}
+\BIBentrySTDinterwordspacing
 
 \end{thebibliography}

@@ -1,7 +1,15 @@
 \contentsline {section}{\numberline {1}Acronyms}{1}{section.1}
-\contentsline {section}{\numberline {2}Implementation}{2}{section.2}
-\contentsline {subsection}{\numberline {2.1}Real RIR Recordings}{2}{subsection.2.1}
-\contentsline {subsubsection}{\numberline {2.1.1}RIR Measurement Setup}{2}{subsubsection.2.1.1}
-\contentsline {subsubsection}{\numberline {2.1.2}Positions}{4}{subsubsection.2.1.2}
-\contentsline {subsubsection}{\numberline {2.1.3}RIR Analysis}{4}{subsubsection.2.1.3}
-\contentsline {subsubsection}{\numberline {2.1.4}Issues: False Start}{4}{subsubsection.2.1.4}
+\contentsline {subsection}{\numberline {1.1}Room Modelling}{1}{subsection.1.1}
+\contentsline {subsubsection}{\numberline {1.1.1}Room Measurements}{1}{subsubsection.1.1.1}
+\contentsline {subsubsection}{\numberline {1.1.2}Designing the room}{2}{subsubsection.1.1.2}
+\contentsline {subsection}{\numberline {1.2}ODEON}{3}{subsection.1.2}
+\contentsline {subsubsection}{\numberline {1.2.1}Water Tightness Test}{3}{subsubsection.1.2.1}
+\contentsline {subsubsection}{\numberline {1.2.2}Material Selection}{4}{subsubsection.1.2.2}
+\contentsline {paragraph}{\numberline {1.2.2.1}Initial Materials}{4}{paragraph.1.2.2.1}
+\contentsline {paragraph}{\numberline {1.2.2.2}Surface Types}{4}{paragraph.1.2.2.2}
+\contentsline {paragraph}{\numberline {1.2.2.3}RIR Comparison}{5}{paragraph.1.2.2.3}
+\contentsline {paragraph}{\numberline {1.2.2.4}Final Material Choice}{5}{paragraph.1.2.2.4}
+\contentsline {paragraph}{\numberline {1.2.2.5}Original Material Selection}{5}{paragraph.1.2.2.5}
+\contentsline {subsubsection}{\numberline {1.2.3}RIR Outputs}{5}{subsubsection.1.2.3}
+\contentsline {paragraph}{\numberline {1.2.3.1}RIR Topology Problems}{5}{paragraph.1.2.3.1}
+\contentsline {subsubsection}{\numberline {1.2.4}RIR Locations}{5}{subsubsection.1.2.4}

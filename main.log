@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.14)  20 APR 2016 22:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.14)  22 APR 2016 17:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -452,25 +452,273 @@ Package: xstring 2013/10/13  v1.7c  String manipulations (C Tellechea)
 )
 \AC@clearlist=\toks20
 )
+(/usr/local/texlive/2015/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2005/09/27 v1.99g Standard LaTeX package
+Package textcomp Info: Sub-encoding information:
+(textcomp)               5 = only ISO-Adobe without \textcurrency
+(textcomp)               4 = 5 + \texteuro
+(textcomp)               3 = 4 + \textohm
+(textcomp)               2 = 3 + \textestimated + \textcurrency
+(textcomp)               1 = TS1 - \textcircled - \t
+(textcomp)               0 = TS1 (full)
+(textcomp)             Font families with sub-encoding setting implement
+(textcomp)             only a restricted character set as indicated.
+(textcomp)             Family '?' is the default used for unknown fonts.
+(textcomp)             See the documentation for details.
+Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 79.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/base/ts1enc.def
+File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
+Now handling font encoding TS1 ...
+... processing UTF-8 mapping file for font encoding TS1
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/base/ts1enc.dfu
+File: ts1enc.dfu 2014/09/29 v1.1m UTF-8 support for inputenc
+   defining Unicode char U+00A2 (decimal 162)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00A4 (decimal 164)
+   defining Unicode char U+00A5 (decimal 165)
+   defining Unicode char U+00A6 (decimal 166)
+   defining Unicode char U+00A7 (decimal 167)
+   defining Unicode char U+00A8 (decimal 168)
+   defining Unicode char U+00A9 (decimal 169)
+   defining Unicode char U+00AA (decimal 170)
+   defining Unicode char U+00AC (decimal 172)
+   defining Unicode char U+00AE (decimal 174)
+   defining Unicode char U+00AF (decimal 175)
+   defining Unicode char U+00B0 (decimal 176)
+   defining Unicode char U+00B1 (decimal 177)
+   defining Unicode char U+00B2 (decimal 178)
+   defining Unicode char U+00B3 (decimal 179)
+   defining Unicode char U+00B4 (decimal 180)
+   defining Unicode char U+00B5 (decimal 181)
+   defining Unicode char U+00B6 (decimal 182)
+   defining Unicode char U+00B7 (decimal 183)
+   defining Unicode char U+00B9 (decimal 185)
+   defining Unicode char U+00BA (decimal 186)
+   defining Unicode char U+00BC (decimal 188)
+   defining Unicode char U+00BD (decimal 189)
+   defining Unicode char U+00BE (decimal 190)
+   defining Unicode char U+00D7 (decimal 215)
+   defining Unicode char U+00F7 (decimal 247)
+   defining Unicode char U+0192 (decimal 402)
+   defining Unicode char U+02C7 (decimal 711)
+   defining Unicode char U+02D8 (decimal 728)
+   defining Unicode char U+02DD (decimal 733)
+   defining Unicode char U+0E3F (decimal 3647)
+   defining Unicode char U+2016 (decimal 8214)
+   defining Unicode char U+2020 (decimal 8224)
+   defining Unicode char U+2021 (decimal 8225)
+   defining Unicode char U+2022 (decimal 8226)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+2031 (decimal 8241)
+   defining Unicode char U+203B (decimal 8251)
+   defining Unicode char U+203D (decimal 8253)
+   defining Unicode char U+2044 (decimal 8260)
+   defining Unicode char U+204E (decimal 8270)
+   defining Unicode char U+2052 (decimal 8274)
+   defining Unicode char U+20A1 (decimal 8353)
+   defining Unicode char U+20A4 (decimal 8356)
+   defining Unicode char U+20A6 (decimal 8358)
+   defining Unicode char U+20A9 (decimal 8361)
+   defining Unicode char U+20AB (decimal 8363)
+   defining Unicode char U+20AC (decimal 8364)
+   defining Unicode char U+20B1 (decimal 8369)
+   defining Unicode char U+2103 (decimal 8451)
+   defining Unicode char U+2116 (decimal 8470)
+   defining Unicode char U+2117 (decimal 8471)
+   defining Unicode char U+211E (decimal 8478)
+   defining Unicode char U+2120 (decimal 8480)
+   defining Unicode char U+2122 (decimal 8482)
+   defining Unicode char U+2126 (decimal 8486)
+   defining Unicode char U+2127 (decimal 8487)
+   defining Unicode char U+212E (decimal 8494)
+   defining Unicode char U+2190 (decimal 8592)
+   defining Unicode char U+2191 (decimal 8593)
+   defining Unicode char U+2192 (decimal 8594)
+   defining Unicode char U+2193 (decimal 8595)
+   defining Unicode char U+2329 (decimal 9001)
+   defining Unicode char U+232A (decimal 9002)
+   defining Unicode char U+2422 (decimal 9250)
+   defining Unicode char U+25E6 (decimal 9702)
+   defining Unicode char U+25EF (decimal 9711)
+   defining Unicode char U+266A (decimal 9834)
+))
+LaTeX Info: Redefining \oldstylenums on input line 334.
+Package textcomp Info: Setting cmr sub-encoding to TS1/0 on input line 349.
+Package textcomp Info: Setting cmss sub-encoding to TS1/0 on input line 350.
+Package textcomp Info: Setting cmtt sub-encoding to TS1/0 on input line 351.
+Package textcomp Info: Setting cmvtt sub-encoding to TS1/0 on input line 352.
+Package textcomp Info: Setting cmbr sub-encoding to TS1/0 on input line 353.
+Package textcomp Info: Setting cmtl sub-encoding to TS1/0 on input line 354.
+Package textcomp Info: Setting ccr sub-encoding to TS1/0 on input line 355.
+Package textcomp Info: Setting ptm sub-encoding to TS1/4 on input line 356.
+Package textcomp Info: Setting pcr sub-encoding to TS1/4 on input line 357.
+Package textcomp Info: Setting phv sub-encoding to TS1/4 on input line 358.
+Package textcomp Info: Setting ppl sub-encoding to TS1/3 on input line 359.
+Package textcomp Info: Setting pag sub-encoding to TS1/4 on input line 360.
+Package textcomp Info: Setting pbk sub-encoding to TS1/4 on input line 361.
+Package textcomp Info: Setting pnc sub-encoding to TS1/4 on input line 362.
+Package textcomp Info: Setting pzc sub-encoding to TS1/4 on input line 363.
+Package textcomp Info: Setting bch sub-encoding to TS1/4 on input line 364.
+Package textcomp Info: Setting put sub-encoding to TS1/5 on input line 365.
+Package textcomp Info: Setting uag sub-encoding to TS1/5 on input line 366.
+Package textcomp Info: Setting ugq sub-encoding to TS1/5 on input line 367.
+Package textcomp Info: Setting ul8 sub-encoding to TS1/4 on input line 368.
+Package textcomp Info: Setting ul9 sub-encoding to TS1/4 on input line 369.
+Package textcomp Info: Setting augie sub-encoding to TS1/5 on input line 370.
+Package textcomp Info: Setting dayrom sub-encoding to TS1/3 on input line 371.
+Package textcomp Info: Setting dayroms sub-encoding to TS1/3 on input line 372.
+
+Package textcomp Info: Setting pxr sub-encoding to TS1/0 on input line 373.
+Package textcomp Info: Setting pxss sub-encoding to TS1/0 on input line 374.
+Package textcomp Info: Setting pxtt sub-encoding to TS1/0 on input line 375.
+Package textcomp Info: Setting txr sub-encoding to TS1/0 on input line 376.
+Package textcomp Info: Setting txss sub-encoding to TS1/0 on input line 377.
+Package textcomp Info: Setting txtt sub-encoding to TS1/0 on input line 378.
+Package textcomp Info: Setting lmr sub-encoding to TS1/0 on input line 379.
+Package textcomp Info: Setting lmdh sub-encoding to TS1/0 on input line 380.
+Package textcomp Info: Setting lmss sub-encoding to TS1/0 on input line 381.
+Package textcomp Info: Setting lmssq sub-encoding to TS1/0 on input line 382.
+Package textcomp Info: Setting lmvtt sub-encoding to TS1/0 on input line 383.
+Package textcomp Info: Setting lmtt sub-encoding to TS1/0 on input line 384.
+Package textcomp Info: Setting qhv sub-encoding to TS1/0 on input line 385.
+Package textcomp Info: Setting qag sub-encoding to TS1/0 on input line 386.
+Package textcomp Info: Setting qbk sub-encoding to TS1/0 on input line 387.
+Package textcomp Info: Setting qcr sub-encoding to TS1/0 on input line 388.
+Package textcomp Info: Setting qcs sub-encoding to TS1/0 on input line 389.
+Package textcomp Info: Setting qpl sub-encoding to TS1/0 on input line 390.
+Package textcomp Info: Setting qtm sub-encoding to TS1/0 on input line 391.
+Package textcomp Info: Setting qzc sub-encoding to TS1/0 on input line 392.
+Package textcomp Info: Setting qhvc sub-encoding to TS1/0 on input line 393.
+Package textcomp Info: Setting futs sub-encoding to TS1/4 on input line 394.
+Package textcomp Info: Setting futx sub-encoding to TS1/4 on input line 395.
+Package textcomp Info: Setting futj sub-encoding to TS1/4 on input line 396.
+Package textcomp Info: Setting hlh sub-encoding to TS1/3 on input line 397.
+Package textcomp Info: Setting hls sub-encoding to TS1/3 on input line 398.
+Package textcomp Info: Setting hlst sub-encoding to TS1/3 on input line 399.
+Package textcomp Info: Setting hlct sub-encoding to TS1/5 on input line 400.
+Package textcomp Info: Setting hlx sub-encoding to TS1/5 on input line 401.
+Package textcomp Info: Setting hlce sub-encoding to TS1/5 on input line 402.
+Package textcomp Info: Setting hlcn sub-encoding to TS1/5 on input line 403.
+Package textcomp Info: Setting hlcw sub-encoding to TS1/5 on input line 404.
+Package textcomp Info: Setting hlcf sub-encoding to TS1/5 on input line 405.
+Package textcomp Info: Setting pplx sub-encoding to TS1/3 on input line 406.
+Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 407.
+Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 408.
+Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/appendix/appendix.sty
+Package: appendix 2009/09/02 v1.2b extra appendix facilities
+\c@@pps=\count103
+\c@@ppsavesec=\count104
+\c@@ppsaveapp=\count105
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/tablefootnote/tablefootnote.sty
+Package: tablefootnote 2014/01/26 v1.1c Table foot notes (HMM)
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/xifthen/xifthen.sty
+Package: xifthen 2009/04/17 v1.3 Extended ifthen features
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/etex-pkg/etex.sty
+Package: etex 2015/03/02 v2.1 eTeX basic definition package (PEB,DPC)
+\et@xins=\count106
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count107
+\calc@Bcount=\count108
+\calc@Adimen=\dimen117
+\calc@Bdimen=\dimen118
+\calc@Askip=\skip53
+\calc@Bskip=\skip54
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count109
+\calc@Cskip=\skip55
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/ifmtarg/ifmtarg.sty
+Package: ifmtarg 2009/09/02 v1.2a check for an empty argument
+))
+(/usr/local/texlive/2015/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2015/05/04 v2.2 e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count110
+))
+(/usr/local/texlive/2015/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 57.
+\captionmargin=\dimen119
+\captionmargin@=\dimen120
+\captionwidth=\dimen121
+\caption@tempdima=\dimen122
+\caption@indent=\dimen123
+\caption@parindent=\dimen124
+\caption@hangindent=\dimen125
+)
+\c@ContinuedFloat=\count111
+Package caption Info: hyperref package is loaded.
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2013/02/03 v1.1-62 Sub-captions (AR)
+\c@subfigure=\count112
+\c@subtable=\count113
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/base/t1enc.def
+File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
+))
+(/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/mathpazo.sty
+Package: mathpazo 2005/04/12 PSNFSS-v9.2a Palatino w/ Pazo Math (D.Puga, WaS) 
+\symupright=\mathgroup4
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/courier.sty
+Package: courier 2005/04/12 PSNFSS-v9.2a (WaS) 
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/attachfile/attachfile.sty
+Package: attachfile 2015/04/04 v1.6 PDF 1.3+ file attachment
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2014/10/28 v1.1a Standard LaTeX Color (DPC)
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package color Info: Driver file: pdftex.def on input line 142.
+)
+\c@atfi@tmp=\count114
+\atfi@appearancewidth=\skip56
+\atfi@appearanceheight=\skip57
+\atfi@appearancedepth=\skip58
+\atfi@appearancebox=\box26
+)
 (/usr/local/texlive/2015/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2011/09/28 v3.5.2 Customized lists
-\labelindent=\skip53
-\enit@outerparindent=\dimen117
+\labelindent=\skip59
+\enit@outerparindent=\dimen126
 \enit@toks=\toks21
-\enit@inbox=\box26
-\enitdp@description=\count103
+\enit@inbox=\box27
+\enitdp@description=\count115
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/titlesec/titlesec.sty
 Package: titlesec 2011/12/15 v2.10.0 Sectioning titles
-\ttl@box=\box27
-\beforetitleunit=\skip54
-\aftertitleunit=\skip55
-\ttl@plus=\dimen118
-\ttl@minus=\dimen119
+\ttl@box=\box28
+\beforetitleunit=\skip60
+\aftertitleunit=\skip61
+\ttl@plus=\dimen127
+\ttl@minus=\dimen128
 \ttl@toksa=\toks22
-\titlewidth=\dimen120
-\titlewidthlast=\dimen121
-\titlewidthfirst=\dimen122
+\titlewidth=\dimen129
+\titlewidthlast=\dimen130
+\titlewidthfirst=\dimen131
 ))
 (./main.aux)
 \openout1 = `main.aux'.
@@ -489,7 +737,17 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 30.
 LaTeX Font Info:    ... okay on input line 30.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 30.
 LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 30.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 30.
+ (/usr/local/texlive/2015/texmf-dist/tex/latex/base/ts1cmr.fd
+File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Try loading font information for T1+ppl on input line 30.
 
+(/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/t1ppl.fd
+File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
+)
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -499,14 +757,14 @@ LaTeX Font Info:    ... okay on input line 30.
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
 * h-part:(L,W,R)=(85.35826pt, 426.79134pt, 85.35828pt)
-* v-part:(T,H,B)=(106.75473pt, 578.15999pt, 160.13213pt)
+* v-part:(T,H,B)=(77.84674pt, 650.43pt, 116.77011pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
 * \textwidth=426.79134pt
-* \textheight=578.15999pt
+* \textheight=650.43pt
 * \oddsidemargin=13.08827pt
 * \evensidemargin=13.08827pt
-* \topmargin=-2.51526pt
+* \topmargin=-31.42325pt
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=10.0pt
@@ -526,16 +784,16 @@ LaTeX Font Info:    ... okay on input line 30.
 
 (/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count104
-\scratchdimen=\dimen123
-\scratchbox=\box28
-\nofMPsegments=\count105
-\nofMParguments=\count106
+\scratchcounter=\count116
+\scratchdimen=\dimen132
+\scratchbox=\box29
+\nofMPsegments=\count117
+\nofMParguments=\count118
 \everyMPshowfont=\toks23
-\MPscratchCnt=\count107
-\MPscratchDim=\dimen124
-\MPnumerator=\count108
-\makeMPintoPDFobject=\count109
+\MPscratchCnt=\count119
+\MPscratchDim=\dimen133
+\MPnumerator=\count120
+\makeMPintoPDFobject=\count121
 \everyMPtoPDFconversion=\toks24
 ) (/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
@@ -552,16 +810,7 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\AtBeginShipoutBox=\box29
-
-(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/color.sty
-Package: color 2014/10/28 v1.1a Standard LaTeX Color (DPC)
-
-(/usr/local/texlive/2015/texmf-dist/tex/latex/latexconfig/color.cfg
-File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
-)
-Package color Info: Driver file: pdftex.def on input line 142.
-)
+\AtBeginShipoutBox=\box30
 Package hyperref Info: Link coloring ON on input line 30.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/nameref.sty
@@ -570,7 +819,7 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count110
+\c@section@level=\count122
 )
 LaTeX Info: Redefining \ref on input line 30.
 LaTeX Info: Redefining \pageref on input line 30.
@@ -580,78 +829,208 @@ LaTeX Info: Redefining \nameref on input line 30.
 \@outlinefile=\write4
 \openout4 = `main.out'.
 
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+\big@size=\dimen134
+LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10> not available
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 34.
  (./main.toc
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 3.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 3.
+LaTeX Font Info:    Try loading font information for OT1+ppl on input line 2.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/ot1ppl.fd
+File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
 )
+LaTeX Font Info:    Try loading font information for OML+zplm on input line 2.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/omlzplm.fd
+File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
+)
+LaTeX Font Info:    Try loading font information for OMS+zplm on input line 2.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/omszplm.fd
+File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
+)
+LaTeX Font Info:    Try loading font information for OMX+zplm on input line 2.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/omxzplm.fd
+File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
+)
+LaTeX Font Info:    Try loading font information for OT1+zplm on input line 2.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/ot1zplm.fd
+File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
+))
 \tf@toc=\write5
 \openout5 = `main.toc'.
 
 
-(./Sections/Implementation/RealRIRs/RealRIRs.tex [1{/usr/local/texlive/2015/tex
-mf-var/fonts/map/pdftex/updmap/pdftex.map}
+(./Sections/Implementation/Modelling/Modelling.tex
+
+LaTeX Warning: Reference `blueprintTop' on page 1 undefined on input line 11.
+
+
+LaTeX Warning: Reference `appendixA' on page 1 undefined on input line 11.
+
+[1{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 ]
-Package acronym Info: Label `acro:VSS' newly defined as it shall be overridden
-although it is yet undefined on input line 14.
-Package acronym Info: Label `acro:RIR' newly defined as it shall be overridden
-although it is yet undefined on input line 25.
+<Sections/Implementation/Modelling/images/sku1.png, id=91, 1927.2pt x 1084.05pt
+>
+File: Sections/Implementation/Modelling/images/sku1.png Graphic file (type png)
 
-<Sections/Implementation/RealRIRs/images/realRIRTopology1.jpg, id=59, 2457.18pt
- x 3276.24pt>
-File: Sections/Implementation/RealRIRs/images/realRIRTopology1.jpg Graphic file
- (type jpg)
+ <use Sections/Implementation/Modelling/images/sku1.png>
+Package pdftex.def Info: Sections/Implementation/Modelling/images/sku1.png used
+ on input line 21.
+(pdftex.def)             Requested size: 385.43318pt x 216.80615pt.
 
-<use Sections/Implementation/RealRIRs/images/realRIRTopology1.jpg>
-Package pdftex.def Info: Sections/Implementation/RealRIRs/images/realRIRTopolog
-y1.jpg used on input line 31.
-(pdftex.def)             Requested size: 245.73239pt x 327.64319pt.
- [2] [3 <./Sections/Implementation/RealRIRs/images/realRIRTopology1.jpg>]
-<Sections/Implementation/RealRIRs/images/Real_RIRs7_edit.png, id=75, 1557.82pt 
-x 988.69376pt>
-File: Sections/Implementation/RealRIRs/images/Real_RIRs7_edit.png Graphic file 
-(type png)
+Underfull \hbox (badness 10000) in paragraph at lines 33--34
 
-<use Sections/Implementation/RealRIRs/images/Real_RIRs7_edit.png>
-Package pdftex.def Info: Sections/Implementation/RealRIRs/images/Real_RIRs7_edi
-t.png used on input line 51.
-(pdftex.def)             Requested size: 467.34961pt x 296.61041pt.
+ []
 
-Overfull \hbox (40.55827pt too wide) in paragraph at lines 51--52
+[2 <./Sections/Implementation/Modelling/images/sku1.png>]
+<Sections/Implementation/Modelling/images/lights2.png, id=104, 992.20688pt x 50
+2.87875pt>
+File: Sections/Implementation/Modelling/images/lights2.png Graphic file (type p
+ng)
+ <use Sections/Implementation/Modelling/images/lights2.png>
+Package pdftex.def Info: Sections/Implementation/Modelling/images/lights2.png u
+sed on input line 47.
+(pdftex.def)             Requested size: 248.05112pt x 125.71938pt.
+
+<Sections/Implementation/Modelling/images/projector1.png, id=105, 606.265pt x 7
+10.655pt>
+File: Sections/Implementation/Modelling/images/projector1.png Graphic file (typ
+e png)
+ <use Sections/Implementation/Modelling/images/projector1.png>
+Package pdftex.def Info: Sections/Implementation/Modelling/images/projector1.pn
+g used on input line 52.
+(pdftex.def)             Requested size: 151.56587pt x 177.66331pt.
+
+<Sections/Implementation/Modelling/images/concave1.png, id=106, 858.70813pt x 4
+41.65pt>
+File: Sections/Implementation/Modelling/images/concave1.png Graphic file (type 
+png)
+ <use Sections/Implementation/Modelling/images/concave1.png>
+Package pdftex.def Info: Sections/Implementation/Modelling/images/concave1.png 
+used on input line 57.
+(pdftex.def)             Requested size: 214.6765pt x 110.41222pt.
+
+Overfull \hbox (80.99867pt too wide) in paragraph at lines 45--60
+[][] []
+ []
+
+
+<Sections/Implementation/Modelling/images/realVsSku/roofSku.png, id=107, 1445.4
+pt x 903.375pt>
+File: Sections/Implementation/Modelling/images/realVsSku/roofSku.png Graphic fi
+le (type png)
+
+<use Sections/Implementation/Modelling/images/realVsSku/roofSku.png>
+Package pdftex.def Info: Sections/Implementation/Modelling/images/realVsSku/roo
+fSku.png used on input line 66.
+(pdftex.def)             Requested size: 433.62335pt x 271.01459pt.
+
+Overfull \hbox (6.83202pt too wide) in paragraph at lines 66--67
  [] 
  []
 
-) (./main.bbl [4 <./Sections/Implementation/RealRIRs/images/Real_RIRs7_edit.png
->])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 82.
- [5]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 82.
+
+<Sections/Implementation/Modelling/images/HHroof.jpg, id=108, 3276.24pt x 2154.
+0475pt>
+File: Sections/Implementation/Modelling/images/HHroof.jpg Graphic file (type jp
+g)
+ <use Sections/Implementation/Modelling/images/HHroof.jpg>
+Package pdftex.def Info: Sections/Implementation/Modelling/images/HHroof.jpg us
+ed on input line 67.
+(pdftex.def)             Requested size: 425.92616pt x 280.03601pt.
+)
+(./Sections/Implementation/Odeon/Odeon.tex [3 <./Sections/Implementation/Modell
+ing/images/lights2.png> <./Sections/Implementation/Modelling/images/projector1.
+png> <./Sections/Implementation/Modelling/images/concave1.png>]
+<Sections/Implementation/Odeon/images/OdeonRays/waterTight2.PNG, id=122, 1445.4
+pt x 788.9475pt>
+File: Sections/Implementation/Odeon/images/OdeonRays/waterTight2.PNG Graphic fi
+le (type png)
+
+<use Sections/Implementation/Odeon/images/OdeonRays/waterTight2.PNG>
+Package pdftex.def Info: Sections/Implementation/Odeon/images/OdeonRays/waterTi
+ght2.PNG used on input line 14.
+(pdftex.def)             Requested size: 433.62335pt x 236.68607pt.
+
+Overfull \hbox (6.83202pt too wide) in paragraph at lines 14--15
+ [] 
+ []
+
+
+Package caption Warning: \label without proper \caption on input line 52.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `materialEdit' on page 4 undefined on input line 38.
+
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 41.
+(/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/t1pcr.fd
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+)
+<Sections/Implementation/Odeon/images/Absorption.PNG, id=128, 461.47406pt x 299
+.61937pt>
+File: Sections/Implementation/Odeon/images/Absorption.PNG Graphic file (type pn
+g)
+ <use Sections/Implementation/Odeon/images/Absorption.PNG>
+Package pdftex.def Info: Sections/Implementation/Odeon/images/Absorption.PNG us
+ed on input line 51.
+(pdftex.def)             Requested size: 461.47292pt x 299.61864pt.
+
+Overfull \hbox (34.68158pt too wide) in paragraph at lines 51--53
+ [] 
+ []
+
+Package acronym Info: Label `acro:RIR' newly defined as it shall be overridden
+although it is yet undefined on input line 62.
+[4pdfTeX warning (ext4): destination with the same identifier (name{Hfootnote.2
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.63 			\paragraph{Original Material Selection}
+                                               ]) [5] (./main.bbl)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 88.
+ [6] [7 <./Sections/Implementation/Modelling/images/realVsSku/roofSku.png> <./S
+ections/Implementation/Modelling/images/HHroof.jpg>] [8 <./Sections/Implementat
+ion/Odeon/images/OdeonRays/waterTight2.PNG> <./Sections/Implementation/Odeon/im
+ages/Absorption.PNG>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 88.
  (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 82.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 82.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 88.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 88.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 9AB9B127DE17825D7213E83365CE49B8;457.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 82.
+(rerunfilecheck)             Checksum: 81C2186B4167AB991703DCCA358CD35C;1102.
+
+
+LaTeX Warning: There were undefined references.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 88.
  ) 
 Here is how much of TeX's memory you used:
- 6954 strings out of 493089
- 102454 string characters out of 6134842
- 202028 words of memory out of 5000000
- 10331 multiletter control sequences out of 15000+600000
- 5791 words of font info for 21 fonts, out of 8000000 for 9000
+ 9793 strings out of 493089
+ 147220 string characters out of 6134842
+ 246659 words of memory out of 5000000
+ 13035 multiletter control sequences out of 15000+600000
+ 34824 words of font info for 66 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 36i,11n,45p,648b,521s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
-></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb
-></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><
-/usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></u
-sr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on main.pdf (5 pages, 1739453 bytes).
+ 43i,11n,45p,888b,583s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exi
+st, replaced by a fixed one
+
+{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/tex
+live/2015/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/201
+5/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2015/texmf
+-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2015/texmf-dist/f
+onts/type1/urw/palatino/uplri8a.pfb>
+Output written on main.pdf (8 pages, 2036032 bytes).
 PDF statistics:
- 113 PDF objects out of 1000 (max. 8388607)
- 96 compressed objects within 1 object stream
- 20 named destinations out of 1000 (max. 500000)
- 67 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 198 PDF objects out of 1000 (max. 8388607)
+ 167 compressed objects within 2 object streams
+ 37 named destinations out of 1000 (max. 500000)
+ 161 words of extra memory for PDF output out of 10000 (max. 10000000)
 
