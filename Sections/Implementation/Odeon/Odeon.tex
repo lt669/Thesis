@@ -182,40 +182,123 @@
 
 				\textbf{Maximum reflection order} - Maximum allowed is 2000 as is the default. This means a ray can only reflect around a room 2000 times before the simulation is stopped. This prevents trapped rays from prolonging the impulse response if it never reaches the receiver.
 
-				\textbf{Late Rays} - These are emitted from the source and reflected according to the \ac{VBS} (described in section~\nameref{background:scattering}) taking into account scattering due to surface size and roughness. If the reflection order is about the transition order, a secondary source is generated at each reflection point.
+				\textbf{Late Rays} - These are emitted from the source and reflected according to the \ac{VBS} (described in section~\nameref{background:scattering}) taking into account scattering due to surface size and roughness.
 
 				\textbf{Transition Order} - As explained in section~\nameref{Software:Odeon}, a \ac{TO} can be set to determine the number of early rays sent out to find a number of wall combinations for reflections using the \ac{ISM}. After this number of rays has been reached, the ray-tracing method is used.
 
 
-				All settings are left at their default values as they are sufficient for accuracy and prevent the increase of computation time which will be needed given the large number of RIRs required for free movement.
+				All settings apart from \ac{LR's} and \ac{TO} are left at their default values as they are sufficient for accuracy and prevent the increase of computation time which will be needed given the large number of RIRs required for free movement.
 
 				%TO and Late rays
-				%As mentioned in section~\ref{Software:Odeon}, a \ac{TO} can be set to determine the number of rays used in the \ac{ISM} before switching to ray-tracing.
 
-				As mentioned in section~\nameref{Software:Odeon}, a \ac{TO} can be set to determine the number of early rays sent out to find a number of wall combinations for reflections using the \ac{ISM}. After this number of rays has been reached, the ray-tracing method is used.
+				Odeon suggests two possible modes, \textbf{Engineer} and \textbf{Precision} which both suggest using a different number of \ac{LR's} which are 1285 and 20560 respectively. As both the \ac{TO} and \ac{LR's} value increase both the accuracy and computation time of the \ac{RIR}'s, these values were tried with difference combinations of \ac{TO} values and \ac{RIR}'s were rendered. Figure~\ref{odeonSettingsRIR} shows plots of the rendered \ac{RIR}'s with the name indicating the \ac{TO} and \ac{LR's} value. For example, `TO\_2\_LR\_1285' indicates the sample was produced where \ac{TO} = 2 and \ac{LR's} = 1285. Table~\ref{odeonSettingsTable} can be used to clarify the settings used for each \ac{RIR} in figure~\ref{odeonSettingsRIR} and indicates which audio sample can be listened to. All \ac{RIR}'s were taken from the centre of the room.
 
-				As increasing the \ac{TO} increases both accuracy and computation time, \ac{RIR}'s were rendered with different \ac{TO}'s and compared.
+				\begin{table}
+				\begin{center}
+					\begin{tabular}{|l | c | l | l|}
+					\hline
+					\textbf{Audio Sample} & \textbf{\ac{TO}} & \textbf{\ac{LR's}} & \textbf{Graph Name}\\ \hline
+					TO\_2\_LR\_1285.wav & 2 & 1285 & TO\_2\_LR\_1285 \\
+					TO\_2\_LR\_20560.wav & 2 & 20560 & TO\_2\_LR\_20560 \\
+					TO\_4\_LR\_1285.wav & 4 & 1285 & TO\_4\_LR\_1285\\
+					TO\_4\_LR\_20560.wav & 4 & 20560 & TO\_4\_LR\_20560 \\ \hline
+					\end{tabular}
+				\end{center}
+				\caption{Table of audio samples with the corresponding settings information and graph name}
+				\label{odeonSettingsTable}
+				\end{table}
 
+
+			%-------------TO and LR value image-------------%
+			\begin{figure}[H]
+				\center\includegraphics[scale = 0.4]{Sections/Implementation/Odeon/images/OdeonSettings/settingsFigure_edit.png}
+				\caption{\ac{RIR}'s rendered using different \ac{TO} and late ray values}
+				\label{odeonSettingsRIR}
+			\end{figure}
+				%-------------TO and LR value Zoomed image-------------%
+			\begin{figure}[H]
+				\center\includegraphics[scale = 0.3]{Sections/Implementation/Odeon/images/OdeonSettings/settingsFigureZoomed.png}
+				\caption{Zoomed in section indicated by the red dashed line in figure~\ref{odeonSettingsRIR}}
+				\label{odeonSettingsRIRZoomed}
+			\end{figure}
+
+				%-------------TO Zoomed image-------------%
+			\begin{figure}[H]
+				\center\includegraphics[scale = 0.3]{Sections/Implementation/Odeon/images/OdeonSettings/settingsFigure_TOZoom.png}
+				\caption{Zoomed in section showing the effects of using a high \ac{TO} value}
+				\label{odeonSettings_TOZoomed}
+			\end{figure}
+
+
+				\textbf{Audio samples: SupportingFiles/Audio/Odeon\_Settings}
+
+				Through aural analysis, it can be heard that the number of \ac{LR's} used has an audible impact, where a lower \ac{LR's} value produces an \ac{RIR} that sounds more \textit{grainy}. This can be seen in figure~\ref{odeonSettingsRIRZoomed}, showing the \ac{RIR}'s in figure~\ref{odeonSettingsRIR} which have been zoomed to show the \ac{RIR} from approximately 0.085s where a difference caused by the different setting combinations can be seen. The two \ac{RIR}'s with a high \ac{LR's} value (2nd and 4th plot) show more densely packed reflections due to the fact that more rays are used. This produces a `smoother' more natural sounding reverb tail.
+
+				Figure~\ref{odeonSettings_TOZoomed} shows an earlier part of the \ac{RIR}'s where the effect of using a high \ac{TO} value can be seen. The two plots showing the \ac{RIR}'s with a \ac{TO} of 2 show more random reflections earlier on where the ray-tracing method has been used, whereas the bottom two plots with a \ac{TO} of 4 show less random reflections as the \ac{ISM} will still be used. Though the difference in using a \ac{TO} of 2 or 4 can be seen, is not audible.
+
+				The time difference taken to render the \ac{RIR}'s is also an important factor when choosing which of these settings to use. Given the potentially large number of \ac{RIR}'s required, a slightly more accurate output may result in a much greater calculation time. Odeon uses information gathered when previously rendering \ac{RIR}'s to speed up calculations for other \ac{RIR}'s being rendered in the same room, however there initial time taken to calculate each of the \ac{RIR}'s was noted and compared for reference.
+
+				Initially it was found that increasing the \ac{TO} from 2 to 4 increased the time taken to render by approximately 20 seconds. However, It was later realised that inaccurate calulation times may have been given due to the fact the project was being stored on the University network, thus adding variable delay times. The project was later stored on a local C drive, eliminating any network speed issues and inconsistencies. After doing so, the difference in \ac{TO} values made almost no difference to the calculation times. In hindsight, a higher \ac{TO} value could have been used to produce more accurate \ac{RIR}'s.
+
+				It was found that the \ac{LR's} value made quite a difference to the calculation time:
+
+				\begin{center}
+					\begin{tabular}{c l c}
+					\textbf{Transition Order} & \textbf{Late Ray Value} & \textbf{Calculation Time (s)} \\ \hline
+					2 & 1285 & 11 \\
+					2 & 20560 & 28 \\
+					4 & 1285 & 11 \\
+					4 & 20560 & 28 \\
+					\end{tabular}
+				\end{center}
+
+				Despite the increase in calculation time by 17 seconds, the inaccuracy of \ac{RIR}'s produced when using the lower \ac{LR's} makes using the higher value justifiable.
 
 				%B-Format setting
+				As the \ac{VSS} requires B-format audio files, the B-format option was selected.
+
+
 
 			\paragraph{Directivity}
 
 				%Possible to use CLF2 to mimic sound source directivity
+				Without selecting otherwise, Odeon uses an omni-directional point source as the sound source. This can be changed however by providing a .cf2 file. This file stores loudspeaker performance data and polar plots in what is known as a Common Loudspeaker Format, a standard used by loudspeaker manufacturers. By importing one of these files, Odeon simulates the directionality of the selected loudspeaker as the sound source. This can be used to attempt to more accurately recreate an \ac{RIR} that would be taken in a real space, by finding the .cf2 file that corresponds to the loudspeaker used for the measurement.
+
+				It is also possible however, to input a custom directivity pattern to model a specific sound source. This provides an opportunity to create a more accurate sound source for a human head, something desirable when creating \ac{RIR}'s that will be convolved with the audio input from a singer. Techniques for recording the directivity of the human head have been reviewed and improved upon in \cite{Monson2012b}, however only directivity data for the horizontal plane was recorded. A student from the University of York has recently investigated the directivity of a human head in both the vertical and horizontal planes ranging from the 63Hz to 8kHz octave band \cite{calum} \textbf{[CHANGE NAME]} and generously provided said data to be used in this project. Figure~\ref{directivity} shows the directivity patten editor window in Odeon with the input horizontal and vertical directivity patterns for the 8Khz octave band taken from \cite{calum}. 
 
 
-	\subsubsection{RIR Outputs}
+				%-------------Directivity Image image-------------%
+				\begin{figure}[H]
+					\center\includegraphics[scale = 0.3]{Sections/Implementation/Odeon/images/Directivity/DirectivityPattern.png}
+					\caption{Directivity pattern editor window in Odeon showing the directivity pattern for the horizontal plane (left) and the vertical plane (right) for the 8Khz octave band using data from \cite{calum}}
+					\label{directivity}
+				\end{figure}
 
-		\paragraph{RIR Topology Problems}
+
+		\subsubsection{RIR Topology Problems}
 		\label{odeonError}
 			%Show original output RIR
+			It has been noted that the \ac{RIR}'s produced will attempt to accurately resemble a human head. This involves placing the sound source below the receiver, to resemble the mouth (sound source) below the ears (receiver). When taking real \ac{RIR} measurements it is often not possible to get the source and receiver close enough due to the physical dimensions of the equipment used and therefore result in an unnatural distance between them (see section~\nameref{realRIRs}). However, with using software such as Odeon, where sound sources are calculated from a point source, it is possible to move the source and receiver much closer together. Initially, the sound source was place 1m off the ground and the receiver was positioned 0.05m above the sound source. Three \ac{RIR}'s positioned along the centre of the room at varying distances from the left wall can be seen in figure~\ref{incorrectRIR}.
 
 			%Show timing errors
+
+
+			%-------------Directivity Image image-------------%
+			\begin{figure}[H]
+				\center\includegraphics[scale = 0.3]{Sections/Implementation/Odeon/images/incorrectRIR/RIR_76_incorrect_edit.png}
+				\caption{Initial \ac{RIR} output with receiver 5cm above sound source}
+				\label{incorrectRIR}
+			\end{figure}
 
 			%Show Height Test Images
 
 			%Show new RIRs with correct timings
 
-	\subsubsection{RIR Locations}
+		\subsubsection{RIR Locations}
+			%How many RIRs and where?
+
+			%Inaccuracies due to distance
+
+			%Keep them anyway
 	
 \end{document}
