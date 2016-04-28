@@ -29,15 +29,15 @@
 				\item[-] Lights (concave curves) 
 				\item[-] Canvas roof hangings (convex curves) 
 				\item[-] Projector hangings (poles)
-				\item[-] Roof (tiled) 
-				\item[-] Radiator and door grills \\
+				%\item[-] Roof (tiled) 
+				\item[-] Radiator, door and vent grills \\
 			\end{itemize}
 
-			Objects with curved edges posed a problem when importing the model into Odeon. This is because SketchUp uses a large number of short surfaces to represent curves as can be seen in Figure~\ref{surfaces} which shows the initial models of the lights, projectors and roof hangings. This then means that Odeon has to take each into account when calculating the rooms acoustics. According to the Odeon manual \cite{odeonManual}, when modelling a room for acoustic simulation purposes it is more accurate and less time consuming to keep the model simple and to add the appropriate scattering coefficients or materials in Odeon itself. This also applied to the grilled objects in the room as a grill surface material could be selected from Odeons material list, see section \nameref{odeon:materials}
+			These objects were initially designed to look as close to the real thing as possible, however the objects with curved edges posed a problem when importing the model into Odeon. This is because SketchUp uses a large number of short surfaces to represent curves as can be seen in Figure~\ref{surfaces} which shows the initial models of the lights, projectors and roof hangings. According to the Odeon manual \cite{odeonManual}, when modelling a room for acoustic simulation purposes it is more accurate and less time consuming to keep the model simple and to add the appropriate scattering coefficients or materials in Odeon itself. This also applied to the objects (such as the radiators) that contained a grilled surface, as a specific `grill' material could be selected from Odeons material list (see section \nameref{odeon:materials}).
 
 			%Initially, the more complex surfaces such as the lights, projectors and canvases on the roof were modelled to closely represent those within Hendrix Hall. This resulted in using a large number of individual surfaces to represent the objects curves which can be seen in figure~\ref{surfaces}. Once the model was imported into Odeon this resulted in a large number of surfaces for which materials must be selected for. According to the Odeon manual \cite{odeonManual}, when modelling a room for acoustic simulation purposes it is more accurate and less time consuming to keep the model simple and to add the appropriate scattering coefficients or materials in Odeon itself.
 
-			These objects were then redesigned more simply which can be seen in figure~\ref{simpleSurfaces} where the roof hangings were represented as four joint slanting surfaces and lights and projector poles are simple rectangles.
+			These objects, shown in figure~\ref{simpleSurfaces} were then redesigned more simply where the roof hangings were represented as four joint slanting surfaces and lights and projector poles are simple rectangles.
 
 			%-------------Lights and projector images-------------%
 
@@ -45,28 +45,49 @@
 				\begin{subfigure}[t]{4in}
 					\centering
 					\includegraphics[scale = 0.25]{Sections/Implementation/Modelling/images/lights2.png}
-					\caption{FIRST}
+					\caption{Lights}
 				\end{subfigure}
 				\begin{subfigure}[t]{3in}
 					\centering
 					\includegraphics[scale = 0.25]{Sections/Implementation/Modelling/images/projector1.png}
-					\caption{SECOND}
+					\caption{Projector}
 				\end{subfigure}
 				\begin{subfigure}[t]{3in}
 					\centering
 					\includegraphics[scale = 0.25]{Sections/Implementation/Modelling/images/concave1.png}
-					\caption{THIRD}
+					\caption{Roof Hanging}
 				\end{subfigure}
-		
 				\caption{Initial models of the lights and projector hangings made of a large number of surfaces}
 				\label{surfaces}
+			\end{figure}
+
+				%-------------Lights and projector images-------------%
+
+			\begin{figure}[ht]
+				\begin{subfigure}[t]{4in}
+					\centering
+					\includegraphics[scale = 0.25]{Sections/Implementation/Modelling/images/lightsSimple.png}
+					\caption{Simple Lights}
+				\end{subfigure}
+				\begin{subfigure}[t]{3in}
+					\centering
+					\includegraphics[scale = 0.25]{Sections/Implementation/Modelling/images/projectorSimple.png}
+					\caption{Simple Projector}
+				\end{subfigure}
+				\begin{subfigure}[t]{3in}
+					\centering
+					\includegraphics[scale = 0.25]{Sections/Implementation/Modelling/images/concaveSimple.png}
+					\caption{Simple Roof Hanging}
+				\end{subfigure}
+				\caption{Simplified models of the lights and projector hangings containing a smaller number of surfaces}
+				\label{simpleSurfaces}
 			\end{figure}
 
 		\begin{figure}[ht]
 				\center\includegraphics[scale = 0.3]{Sections/Implementation/Modelling/images/realVsSku/roofSku.png}
 				\center\includegraphics[scale = 0.13]{Sections/Implementation/Modelling/images/HHroof.jpg}
 				\caption{Comparison of the final simplified model and a picture of the real Hendrix Hall}
-				\label{simpleSurfaces}
+				\label{simpleSurfacesRoom}
 			\end{figure}
 
 \end{document}

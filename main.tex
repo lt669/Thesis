@@ -3,8 +3,6 @@
 %\usepackage{import}
 %\usepackage{standalone}
 
-\bibliographystyle{IEEEtran}
-
 %\usepackage{setspace}
 
 %---------Redefine Paragraph to create new sections---------%
@@ -24,9 +22,6 @@
 
 \cfoot{\thepage}
 
-
-
-
 \begin{document}
 
 %-------------Acronyms-------------%
@@ -37,6 +32,7 @@
 	\acro{RIR}{Room Impulse Response}
 	\acro{ISM}{Image Source Method}
 	\acro{TO}{Transition Order}
+	\acro{VBS}{Vector Based Scattering Method}
 \end{acronym}
 
 %-------------Title Page-------------%
@@ -61,14 +57,14 @@
 %\subfile{Presections/Abstract/Abstract}
 
 %-------------Introduction-------------%
-% \subfile{Sections/Background/Background}
+ %\subfile{Sections/Background/Background}
 % \pagebreak
 
 %-------------Implementation-------------%
 % \subfile{Sections/Implementation/RealRIRs/RealRIRs}
 % \pagebreak
 %Room Modelling
-\subfile{Sections/Implementation/Modelling/Modelling}
+%\subfile{Sections/Implementation/Modelling/Modelling}
 % \pagebreak
 %Odeon
 \subfile{Sections/Implementation/Odeon/Odeon}
@@ -83,6 +79,10 @@
 %\subfile{Sections/Appendix/AppendixA/AppendixA}
 %-------------Bibliography-------------%
 \pagebreak
-\bibliography{IEEEabrv,thesis.bib}
 
+% \bibliographystyle{IEEEtran}
+% \bibliography{IEEEabrv,thesis.bib}
+
+
+\printbibliography
 \end{document}

@@ -1,60 +1,21 @@
-This is BibTeX, Version 0.99d (TeX Live 2015)
-Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
-The top-level auxiliary file: main.aux
-The style file: IEEEtran.bst
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Database file #1: IEEEabrv.bib
-Database file #2: thesis.bib.bib
--- IEEEtran.bst version 1.13 (2008/09/30) by Michael Shell.
--- http://www.michaelshell.org/tex/ieeetran/bibtex/
--- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
-Warning--empty journal in Kovalchik
-Warning--empty year in Kovalchik
-
-Done.
-You've used 4 entries,
-            4039 wiz_defined-function locations,
-            1229 strings with 15461 characters,
-and the built_in function-call counts, 1827 in all, are:
-= -- 147
-> -- 32
-< -- 5
-+ -- 16
-- -- 6
-* -- 94
-:= -- 338
-add.period$ -- 7
-call.type$ -- 4
-change.case$ -- 2
-chr.to.int$ -- 12
-cite$ -- 6
-duplicate$ -- 134
-empty$ -- 144
-format.name$ -- 8
-if$ -- 377
-int.to.chr$ -- 0
-int.to.str$ -- 4
-missing$ -- 29
-newline$ -- 41
-num.names$ -- 2
-pop$ -- 72
-preamble$ -- 1
-purify$ -- 0
-quote$ -- 2
-skip$ -- 138
-stack$ -- 0
-substring$ -- 29
-swap$ -- 92
-text.length$ -- 1
-text.prefix$ -- 0
-top$ -- 5
-type$ -- 4
-warning$ -- 2
-while$ -- 6
-width$ -- 5
-write$ -- 62
-(There were 2 warnings)
+[0] Config.pm:324> INFO - This is Biber 2.1
+[0] Config.pm:327> INFO - Logfile is 'main.blg'
+[38] biber-darwin:276> INFO - === Thu Apr 28, 2016, 10:54:46
+[38] Biber.pm:333> INFO - Reading 'main.bcf'
+[124] Biber.pm:645> INFO - Found 5 citekeys in bib section 0
+[141] Biber.pm:2977> INFO - Processing section 0
+[157] Biber.pm:3115> INFO - Looking for bibtex format file 'thesis.bib' for section 0
+[160] bibtex.pm:1021> INFO - Decoding LaTeX character macros into UTF-8
+[163] bibtex.pm:895> INFO - Found BibTeX data source 'thesis.bib'
+[172] Utils.pm:146> WARN - BibTeX subsystem: /var/folders/9m/7yvjw_r54n1c0nbfzndk_j0m0000gn/T/tB5vHq0d9e/thesis.bib_95767.utf8, line 96, warning: 2 characters of junk seen at toplevel
+[173] Utils.pm:146> WARN - The field 'author' in entry 'SU2Odeon' cannot be null, deleting it
+[174] Utils.pm:146> WARN - The field 'author' in entry 'plastic' cannot be null, deleting it
+[174] Utils.pm:146> WARN - The field 'author' in entry 'mineralFibre' cannot be null, deleting it
+[174] Utils.pm:146> WARN - The field 'title' in entry 'mineralFibre' cannot be null, deleting it
+[216] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[216] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[216] Biber.pm:2854> INFO - Sorting list 'none' of type 'entry' with scheme 'none' and locale 'en-US'
+[216] Biber.pm:2858> INFO - No sort tailoring available for locale 'en-US'
+[222] bbl.pm:505> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[223] bbl.pm:596> INFO - Output to main.bbl
+[224] Biber.pm:106> INFO - WARNINGS: 5

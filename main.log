@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.14)  22 APR 2016 17:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.14)  28 APR 2016 10:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -614,6 +614,249 @@ Package: appendix 2009/09/02 v1.2b extra appendix facilities
 \c@@ppsavesec=\count104
 \c@@ppsaveapp=\count105
 )
+(/usr/local/texlive/2015/texmf-dist/tex/latex/biblatex/biblatex.sty
+Package: biblatex 2015/04/19 v3.0 programmable bibliographies (PK/JW/AB)
+
+
+Package biblatex Warning: No "backend" specified, using Biber backend.
+(biblatex)                To use BibTeX, load biblatex with 
+(biblatex)                the "backend=bibtex" option.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/biblatex/biblatex2.sty
+Package: biblatex2 2015/04/19 v3.0 programmable bibliographies (biber) (PK/JW/A
+B)
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2015/05/04 v2.2 e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count106
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/logreq/logreq.sty
+Package: logreq 2010/08/04 v1.0 xml request logger
+\lrq@indent=\count107
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/logreq/logreq.def
+File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
+))
+(/usr/local/texlive/2015/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\c@tabx@nest=\count108
+\c@listtotal=\count109
+\c@listcount=\count110
+\c@liststart=\count111
+\c@liststop=\count112
+\c@citecount=\count113
+\c@citetotal=\count114
+\c@multicitecount=\count115
+\c@multicitetotal=\count116
+\c@instcount=\count117
+\c@maxnames=\count118
+\c@minnames=\count119
+\c@maxitems=\count120
+\c@minitems=\count121
+\c@citecounter=\count122
+\c@savedcitecounter=\count123
+\c@uniquelist=\count124
+\c@uniquename=\count125
+\c@refsection=\count126
+\c@refsegment=\count127
+\c@maxextratitle=\count128
+\c@maxextratitleyear=\count129
+\c@maxextrayear=\count130
+\c@maxextraalpha=\count131
+\c@abbrvpenalty=\count132
+\c@highnamepenalty=\count133
+\c@lownamepenalty=\count134
+\c@maxparens=\count135
+\c@parenlevel=\count136
+\blx@tempcnta=\count137
+\blx@tempcntb=\count138
+\blx@tempcntc=\count139
+\blx@maxsection=\count140
+\blx@maxsegment@0=\count141
+\blx@notetype=\count142
+\blx@parenlevel@text=\count143
+\blx@parenlevel@foot=\count144
+\blx@sectionciteorder@0=\count145
+\labelnumberwidth=\skip53
+\labelalphawidth=\skip54
+\biblabelsep=\skip55
+\bibitemsep=\skip56
+\bibnamesep=\skip57
+\bibinitsep=\skip58
+\bibparsep=\skip59
+\bibhang=\skip60
+\blx@bcfin=\read2
+\blx@bcfout=\write4
+\c@mincomprange=\count146
+\c@maxcomprange=\count147
+\c@mincompwidth=\count148
+Package biblatex Info: Trying to load biblatex default data model...
+Package biblatex Info: ... file 'blx-dm.def' found.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/biblatex/blx-dm.def)
+Package biblatex Info: Trying to load biblatex style data model...
+Package biblatex Info: ... file 'ieee.dbx' not found.
+Package biblatex Info: Trying to load biblatex custom data model...
+Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
+\c@afterword=\count149
+\c@savedafterword=\count150
+\c@annotator=\count151
+\c@savedannotator=\count152
+\c@author=\count153
+\c@savedauthor=\count154
+\c@bookauthor=\count155
+\c@savedbookauthor=\count156
+\c@commentator=\count157
+\c@savedcommentator=\count158
+\c@editor=\count159
+\c@savededitor=\count160
+\c@editora=\count161
+\c@savededitora=\count162
+\c@editorb=\count163
+\c@savededitorb=\count164
+\c@editorc=\count165
+\c@savededitorc=\count166
+\c@foreword=\count167
+\c@savedforeword=\count168
+\c@holder=\count169
+\c@savedholder=\count170
+\c@introduction=\count171
+\c@savedintroduction=\count172
+\c@namea=\count173
+\c@savednamea=\count174
+\c@nameb=\count175
+\c@savednameb=\count176
+\c@namec=\count177
+\c@savednamec=\count178
+\c@translator=\count179
+\c@savedtranslator=\count180
+\c@shortauthor=\count181
+\c@savedshortauthor=\count182
+\c@shorteditor=\count183
+\c@savedshorteditor=\count184
+\c@labelname=\count185
+\c@savedlabelname=\count186
+\c@institution=\count187
+\c@savedinstitution=\count188
+\c@lista=\count189
+\c@savedlista=\count190
+\c@listb=\count191
+\c@savedlistb=\count192
+\c@listc=\count193
+\c@savedlistc=\count194
+\c@listd=\count195
+\c@savedlistd=\count196
+\c@liste=\count197
+\c@savedliste=\count198
+\c@listf=\count199
+\c@savedlistf=\count200
+\c@location=\count201
+\c@savedlocation=\count202
+\c@organization=\count203
+\c@savedorganization=\count204
+\c@origlocation=\count205
+\c@savedoriglocation=\count206
+\c@origpublisher=\count207
+\c@savedorigpublisher=\count208
+\c@publisher=\count209
+\c@savedpublisher=\count210
+\c@language=\count211
+\c@savedlanguage=\count212
+\c@pageref=\count213
+\c@savedpageref=\count214
+\shorthandwidth=\skip61
+\shortjournalwidth=\skip62
+\shortserieswidth=\skip63
+\shorttitlewidth=\skip64
+\shortauthorwidth=\skip65
+\shorteditorwidth=\skip66
+Package biblatex Info: Trying to load compatibility code...
+Package biblatex Info: ... file 'blx-compat.def' found.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/biblatex/blx-compat.def
+File: blx-compat.def 2015/04/19 v3.0 biblatex compatibility (PK/JW/AB)
+)
+Package biblatex Info: Trying to load generic definitions...
+Package biblatex Info: ... file 'biblatex.def' found.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/biblatex/biblatex.def
+File: biblatex.def 
+\c@textcitecount=\count215
+\c@textcitetotal=\count216
+\c@textcitemaxnames=\count217
+\c@biburlnumpenalty=\count218
+\c@biburlucpenalty=\count219
+\c@biburllcpenalty=\count220
+\c@smartand=\count221
+)
+Package biblatex Info: Trying to load bibliography style 'ieee'...
+Package biblatex Info: ... file 'ieee.bbx' found.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/biblatex-ieee/ieee.bbx
+File: ieee.bbx 2015/03/12 v1.1k biblatex bibliography style
+Package biblatex Info: Trying to load bibliography style 'numeric-comp'...
+Package biblatex Info: ... file 'numeric-comp.bbx' found.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/biblatex/bbx/numeric-comp.bbx
+File: numeric-comp.bbx 2015/04/19 v3.0 biblatex bibliography style (PK/JW/AB)
+Package biblatex Info: Trying to load bibliography style 'numeric'...
+Package biblatex Info: ... file 'numeric.bbx' found.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/biblatex/bbx/numeric.bbx
+File: numeric.bbx 2015/04/19 v3.0 biblatex bibliography style (PK/JW/AB)
+Package biblatex Info: Trying to load bibliography style 'standard'...
+Package biblatex Info: ... file 'standard.bbx' found.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
+File: standard.bbx 2015/04/19 v3.0 biblatex bibliography style (PK/JW/AB)
+\c@bbx:relatedcount=\count222
+\c@bbx:relatedtotal=\count223
+))))
+Package biblatex Info: Trying to load citation style 'ieee'...
+Package biblatex Info: ... file 'ieee.cbx' found.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/biblatex-ieee/ieee.cbx
+File: ieee.cbx 2015/03/12 v1.1k biblatex citation style
+Package biblatex Info: Trying to load citation style 'numeric-comp'...
+Package biblatex Info: ... file 'numeric-comp.cbx' found.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/biblatex/cbx/numeric-comp.cbx
+File: numeric-comp.cbx 2015/04/19 v3.0 biblatex citation style (PK/JW/AB)
+\c@cbx@tempcnta=\count224
+\c@cbx@tempcntb=\count225
+Package biblatex Info: Redefining '\cite'.
+Package biblatex Info: Redefining '\parencite'.
+Package biblatex Info: Redefining '\footcite'.
+Package biblatex Info: Redefining '\footcitetext'.
+Package biblatex Info: Redefining '\smartcite'.
+Package biblatex Info: Redefining '\supercite'.
+Package biblatex Info: Redefining '\textcite'.
+Package biblatex Info: Redefining '\textcites'.
+Package biblatex Info: Redefining '\cites'.
+Package biblatex Info: Redefining '\parencites'.
+Package biblatex Info: Redefining '\smartcites'.
+)
+Package biblatex Info: Redefining '\cite'.
+Package biblatex Info: Redefining '\cites'.
+)
+Package biblatex Info: Trying to load configuration file...
+Package biblatex Info: ... file 'biblatex.cfg' found.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/biblatex/biblatex.cfg
+File: biblatex.cfg 
+)))
+(/usr/local/texlive/2015/texmf-dist/tex/latex/multirow/multirow.sty
+\bigstrutjot=\dimen117
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count226
+\float@exts=\toks21
+\float@box=\box26
+\@float@everytoks=\toks22
+\@floatcapt=\box27
+)
 (/usr/local/texlive/2015/texmf-dist/tex/latex/tablefootnote/tablefootnote.sty
 Package: tablefootnote 2014/01/26 v1.1c Table foot notes (HMM)
 
@@ -622,52 +865,46 @@ Package: xifthen 2009/04/17 v1.3 Extended ifthen features
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/etex-pkg/etex.sty
 Package: etex 2015/03/02 v2.1 eTeX basic definition package (PEB,DPC)
-\et@xins=\count106
+\et@xins=\count227
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count107
-\calc@Bcount=\count108
-\calc@Adimen=\dimen117
-\calc@Bdimen=\dimen118
-\calc@Askip=\skip53
-\calc@Bskip=\skip54
+\calc@Acount=\count228
+\calc@Bcount=\count229
+\calc@Adimen=\dimen118
+\calc@Bdimen=\dimen119
+\calc@Askip=\skip67
+\calc@Bskip=\skip68
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count109
-\calc@Cskip=\skip55
-)
-(/usr/local/texlive/2015/texmf-dist/tex/latex/base/ifthen.sty
-Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+\calc@Ccount=\count230
+\calc@Cskip=\skip69
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/ifmtarg/ifmtarg.sty
 Package: ifmtarg 2009/09/02 v1.2a check for an empty argument
-))
-(/usr/local/texlive/2015/texmf-dist/tex/latex/etoolbox/etoolbox.sty
-Package: etoolbox 2015/05/04 v2.2 e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count110
-))
+)))
 (/usr/local/texlive/2015/texmf-dist/tex/latex/caption/caption.sty
 Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 57.
-\captionmargin=\dimen119
-\captionmargin@=\dimen120
-\captionwidth=\dimen121
-\caption@tempdima=\dimen122
-\caption@indent=\dimen123
-\caption@parindent=\dimen124
-\caption@hangindent=\dimen125
+\captionmargin=\dimen120
+\captionmargin@=\dimen121
+\captionwidth=\dimen122
+\caption@tempdima=\dimen123
+\caption@indent=\dimen124
+\caption@parindent=\dimen125
+\caption@hangindent=\dimen126
 )
-\c@ContinuedFloat=\count111
+\c@ContinuedFloat=\count231
+Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/caption/subcaption.sty
 Package: subcaption 2013/02/03 v1.1-62 Sub-captions (AR)
-\c@subfigure=\count112
-\c@subtable=\count113
+\c@subfigure=\count232
+\c@subtable=\count233
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
@@ -694,56 +931,70 @@ File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package color Info: Driver file: pdftex.def on input line 142.
 )
-\c@atfi@tmp=\count114
-\atfi@appearancewidth=\skip56
-\atfi@appearanceheight=\skip57
-\atfi@appearancedepth=\skip58
-\atfi@appearancebox=\box26
+Normal \count register pool exhausted, switching to extended pool.
+\c@atfi@tmp=\count277
+\atfi@appearancewidth=\skip70
+\atfi@appearanceheight=\skip71
+\atfi@appearancedepth=\skip72
+\atfi@appearancebox=\box28
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2011/09/28 v3.5.2 Customized lists
-\labelindent=\skip59
-\enit@outerparindent=\dimen126
-\enit@toks=\toks21
-\enit@inbox=\box27
-\enitdp@description=\count115
+\labelindent=\skip73
+\enit@outerparindent=\dimen127
+\enit@toks=\toks23
+\enit@inbox=\box29
+\enitdp@description=\count278
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/titlesec/titlesec.sty
 Package: titlesec 2011/12/15 v2.10.0 Sectioning titles
-\ttl@box=\box28
-\beforetitleunit=\skip60
-\aftertitleunit=\skip61
-\ttl@plus=\dimen127
-\ttl@minus=\dimen128
-\ttl@toksa=\toks22
-\titlewidth=\dimen129
-\titlewidthlast=\dimen130
-\titlewidthfirst=\dimen131
+\ttl@box=\box30
+\beforetitleunit=\skip74
+\aftertitleunit=\skip75
+\ttl@plus=\dimen128
+\ttl@minus=\dimen129
+\ttl@toksa=\toks24
+\titlewidth=\dimen130
+\titlewidthlast=\dimen131
+\titlewidthfirst=\dimen132
 ))
-(./main.aux)
+Package biblatex Info: Trying to load language 'english'...
+Package biblatex Info: ... file 'english.lbx' found.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/biblatex/lbx/english.lbx
+File: english.lbx 2015/04/19 v3.0 biblatex localization (PK/JW/AB)
+)
+\@quotelevel=\count279
+\@quotereset=\count280
+
+(./main.aux
+
+LaTeX Warning: Label `materialTable' multiply defined.
+
+)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 30.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 30.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 25.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 25.
  (/usr/local/texlive/2015/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Try loading font information for T1+ppl on input line 30.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Try loading font information for T1+ppl on input line 25.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/t1ppl.fd
 File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
@@ -784,17 +1035,17 @@ File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
 
 (/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count116
-\scratchdimen=\dimen132
-\scratchbox=\box29
-\nofMPsegments=\count117
-\nofMParguments=\count118
-\everyMPshowfont=\toks23
-\MPscratchCnt=\count119
-\MPscratchDim=\dimen133
-\MPnumerator=\count120
-\makeMPintoPDFobject=\count121
-\everyMPtoPDFconversion=\toks24
+\scratchcounter=\count281
+\scratchdimen=\dimen133
+\scratchbox=\box31
+\nofMPsegments=\count282
+\nofMParguments=\count283
+\everyMPshowfont=\toks25
+\MPscratchCnt=\count284
+\MPscratchDim=\dimen134
+\MPnumerator=\count285
+\makeMPintoPDFobject=\count286
+\everyMPtoPDFconversion=\toks26
 ) (/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
@@ -810,8 +1061,8 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\AtBeginShipoutBox=\box30
-Package hyperref Info: Link coloring ON on input line 30.
+\AtBeginShipoutBox=\box32
+Package hyperref Info: Link coloring ON on input line 25.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -819,136 +1070,67 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count122
+\c@section@level=\count287
 )
-LaTeX Info: Redefining \ref on input line 30.
-LaTeX Info: Redefining \pageref on input line 30.
-LaTeX Info: Redefining \nameref on input line 30.
+LaTeX Info: Redefining \ref on input line 25.
+LaTeX Info: Redefining \pageref on input line 25.
+LaTeX Info: Redefining \nameref on input line 25.
 
 (./main.out) (./main.out)
-\@outlinefile=\write4
-\openout4 = `main.out'.
+\@outlinefile=\write5
+\openout5 = `main.out'.
 
+Package biblatex Info: Input encoding 'utf8' detected.
+Package biblatex Info: Automatic encoding selection.
+(biblatex)             Assuming data encoding 'utf8'.
+\openout4 = `main.bcf'.
+
+Package biblatex Info: Trying to load bibliographic data...
+Package biblatex Info: ... file 'main.bbl' found.
+ (./main.bbl)
+Package biblatex Info: Reference section=0 on input line 25.
+Package biblatex Info: Reference segment=0 on input line 25.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-\big@size=\dimen134
+\big@size=\dimen135
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 34.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 29.
  (./main.toc
-LaTeX Font Info:    Try loading font information for OT1+ppl on input line 2.
+LaTeX Font Info:    Try loading font information for OT1+ppl on input line 5.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/ot1ppl.fd
 File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
 )
-LaTeX Font Info:    Try loading font information for OML+zplm on input line 2.
+LaTeX Font Info:    Try loading font information for OML+zplm on input line 5.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/omlzplm.fd
 File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
 )
-LaTeX Font Info:    Try loading font information for OMS+zplm on input line 2.
+LaTeX Font Info:    Try loading font information for OMS+zplm on input line 5.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/omszplm.fd
 File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
 )
-LaTeX Font Info:    Try loading font information for OMX+zplm on input line 2.
+LaTeX Font Info:    Try loading font information for OMX+zplm on input line 5.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/omxzplm.fd
 File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
 )
-LaTeX Font Info:    Try loading font information for OT1+zplm on input line 2.
+LaTeX Font Info:    Try loading font information for OT1+zplm on input line 5.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/ot1zplm.fd
 File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
 ))
-\tf@toc=\write5
-\openout5 = `main.toc'.
+\tf@toc=\write6
+\openout6 = `main.toc'.
 
 
-(./Sections/Implementation/Modelling/Modelling.tex
-
-LaTeX Warning: Reference `blueprintTop' on page 1 undefined on input line 11.
-
-
-LaTeX Warning: Reference `appendixA' on page 1 undefined on input line 11.
-
-[1{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+(./Sections/Implementation/Odeon/Odeon.tex [1{/usr/local/texlive/2015/texmf-var
+/fonts/map/pdftex/updmap/pdftex.map}
 
 ]
-<Sections/Implementation/Modelling/images/sku1.png, id=91, 1927.2pt x 1084.05pt
->
-File: Sections/Implementation/Modelling/images/sku1.png Graphic file (type png)
-
- <use Sections/Implementation/Modelling/images/sku1.png>
-Package pdftex.def Info: Sections/Implementation/Modelling/images/sku1.png used
- on input line 21.
-(pdftex.def)             Requested size: 385.43318pt x 216.80615pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 33--34
-
- []
-
-[2 <./Sections/Implementation/Modelling/images/sku1.png>]
-<Sections/Implementation/Modelling/images/lights2.png, id=104, 992.20688pt x 50
-2.87875pt>
-File: Sections/Implementation/Modelling/images/lights2.png Graphic file (type p
-ng)
- <use Sections/Implementation/Modelling/images/lights2.png>
-Package pdftex.def Info: Sections/Implementation/Modelling/images/lights2.png u
-sed on input line 47.
-(pdftex.def)             Requested size: 248.05112pt x 125.71938pt.
-
-<Sections/Implementation/Modelling/images/projector1.png, id=105, 606.265pt x 7
-10.655pt>
-File: Sections/Implementation/Modelling/images/projector1.png Graphic file (typ
-e png)
- <use Sections/Implementation/Modelling/images/projector1.png>
-Package pdftex.def Info: Sections/Implementation/Modelling/images/projector1.pn
-g used on input line 52.
-(pdftex.def)             Requested size: 151.56587pt x 177.66331pt.
-
-<Sections/Implementation/Modelling/images/concave1.png, id=106, 858.70813pt x 4
-41.65pt>
-File: Sections/Implementation/Modelling/images/concave1.png Graphic file (type 
-png)
- <use Sections/Implementation/Modelling/images/concave1.png>
-Package pdftex.def Info: Sections/Implementation/Modelling/images/concave1.png 
-used on input line 57.
-(pdftex.def)             Requested size: 214.6765pt x 110.41222pt.
-
-Overfull \hbox (80.99867pt too wide) in paragraph at lines 45--60
-[][] []
- []
-
-
-<Sections/Implementation/Modelling/images/realVsSku/roofSku.png, id=107, 1445.4
-pt x 903.375pt>
-File: Sections/Implementation/Modelling/images/realVsSku/roofSku.png Graphic fi
-le (type png)
-
-<use Sections/Implementation/Modelling/images/realVsSku/roofSku.png>
-Package pdftex.def Info: Sections/Implementation/Modelling/images/realVsSku/roo
-fSku.png used on input line 66.
-(pdftex.def)             Requested size: 433.62335pt x 271.01459pt.
-
-Overfull \hbox (6.83202pt too wide) in paragraph at lines 66--67
- [] 
- []
-
-
-<Sections/Implementation/Modelling/images/HHroof.jpg, id=108, 3276.24pt x 2154.
-0475pt>
-File: Sections/Implementation/Modelling/images/HHroof.jpg Graphic file (type jp
-g)
- <use Sections/Implementation/Modelling/images/HHroof.jpg>
-Package pdftex.def Info: Sections/Implementation/Modelling/images/HHroof.jpg us
-ed on input line 67.
-(pdftex.def)             Requested size: 425.92616pt x 280.03601pt.
-)
-(./Sections/Implementation/Odeon/Odeon.tex [3 <./Sections/Implementation/Modell
-ing/images/lights2.png> <./Sections/Implementation/Modelling/images/projector1.
-png> <./Sections/Implementation/Modelling/images/concave1.png>]
-<Sections/Implementation/Odeon/images/OdeonRays/waterTight2.PNG, id=122, 1445.4
-pt x 788.9475pt>
+<Sections/Implementation/Odeon/images/OdeonRays/waterTight2.PNG, id=95, 1445.4p
+t x 788.9475pt>
 File: Sections/Implementation/Odeon/images/OdeonRays/waterTight2.PNG Graphic fi
 le (type png)
 
@@ -961,76 +1143,192 @@ Overfull \hbox (6.83202pt too wide) in paragraph at lines 14--15
  [] 
  []
 
-
-Package caption Warning: \label without proper \caption on input line 52.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `materialEdit' on page 4 undefined on input line 38.
-
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 41.
-(/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/t1pcr.fd
-File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-)
-<Sections/Implementation/Odeon/images/Absorption.PNG, id=128, 461.47406pt x 299
+[2 <./Sections/Implementation/Odeon/images/OdeonRays/waterTight2.PNG>]
+<Sections/Implementation/Odeon/images/Absorption.PNG, id=109, 461.47406pt x 299
 .61937pt>
 File: Sections/Implementation/Odeon/images/Absorption.PNG Graphic file (type pn
 g)
  <use Sections/Implementation/Odeon/images/Absorption.PNG>
 Package pdftex.def Info: Sections/Implementation/Odeon/images/Absorption.PNG us
-ed on input line 51.
-(pdftex.def)             Requested size: 461.47292pt x 299.61864pt.
+ed on input line 45.
+(pdftex.def)             Requested size: 276.88655pt x 179.77301pt.
 
-Overfull \hbox (34.68158pt too wide) in paragraph at lines 51--53
+
+LaTeX Warning: Reference `designRoom' on page 3 undefined on input line 52.
+
+[3 <./Sections/Implementation/Odeon/images/Absorption.PNG>]
+<Sections/Implementation/Odeon/images/seating.jpg, id=123, 3276.24pt x 1652.172
+5pt>
+File: Sections/Implementation/Odeon/images/seating.jpg Graphic file (type jpg)
+ <use Sections/Implementation/Odeon/images/seating.jpg>
+Package pdftex.def Info: Sections/Implementation/Odeon/images/seating.jpg used 
+on input line 57.
+(pdftex.def)             Requested size: 393.13184pt x 198.25214pt.
+
+<Sections/Implementation/Odeon/images/OdeonRays/transparencyEdit/singleRay2_edi
+t3.PNG, id=124, 187.45032pt x 292.84406pt>
+File: Sections/Implementation/Odeon/images/OdeonRays/transparencyEdit/singleRay
+2_edit3.PNG Graphic file (type png)
+
+<use Sections/Implementation/Odeon/images/OdeonRays/transparencyEdit/singleRay2
+_edit3.PNG>
+Package pdftex.def Info: Sections/Implementation/Odeon/images/OdeonRays/transpa
+rencyEdit/singleRay2_edit3.PNG used on input line 64.
+(pdftex.def)             Requested size: 131.21431pt x 204.98944pt.
+
+
+LaTeX Warning: Reference `designRoom' on page 4 undefined on input line 69.
+
+
+LaTeX Warning: Reference `background:scattering' on page 4 undefined on input l
+ine 69.
+
+[4 <./Sections/Implementation/Odeon/images/seating.jpg> <./Sections/Implementat
+ion/Odeon/images/OdeonRays/transparencyEdit/singleRay2_edit3.PNG>]
+<Sections/Implementation/Odeon/images/scatteringCoefficients.png, id=133, 1260.
+71pt x 338.26375pt>
+File: Sections/Implementation/Odeon/images/scatteringCoefficients.png Graphic f
+ile (type png)
+
+<use Sections/Implementation/Odeon/images/scatteringCoefficients.png>
+Package pdftex.def Info: Sections/Implementation/Odeon/images/scatteringCoeffic
+ients.png used on input line 73.
+(pdftex.def)             Requested size: 378.21593pt x 101.4799pt.
+Package acronym Info: Label `acro:RIR' newly defined as it shall be overridden
+although it is yet undefined on input line 80.
+
+
+LaTeX Warning: Reference `realRIRs' on page 5 undefined on input line 80.
+
+
+<Sections/Implementation/Odeon/images/MaterialCompare/OriginalMaterials/origina
+l.png, id=142, 1114.1625pt x 716.6775pt>
+File: Sections/Implementation/Odeon/images/MaterialCompare/OriginalMaterials/or
+iginal.png Graphic file (type png)
+
+<use Sections/Implementation/Odeon/images/MaterialCompare/OriginalMaterials/ori
+ginal.png>
+Package pdftex.def Info: Sections/Implementation/Odeon/images/MaterialCompare/O
+riginalMaterials/original.png used on input line 84.
+(pdftex.def)             Requested size: 334.25133pt x 215.00491pt.
+ [5 <./Sections/Implementation/Odeon/images/scatteringCoefficients.png>] [6 <./
+Sections/Implementation/Odeon/images/MaterialCompare/OriginalMaterials/original
+.png>]
+
+LaTeX Warning: Reference `SoftwareOdon' on page 7 undefined on input line 115.
+
+
+<Sections/Implementation/Odeon/images/MaterialCompare/OriginalMaterials/all.png
+, id=178, 1118.1775pt x 708.6475pt>
+File: Sections/Implementation/Odeon/images/MaterialCompare/OriginalMaterials/al
+l.png Graphic file (type png)
+
+<use Sections/Implementation/Odeon/images/MaterialCompare/OriginalMaterials/all
+.png>
+Package pdftex.def Info: Sections/Implementation/Odeon/images/MaterialCompare/O
+riginalMaterials/all.png used on input line 123.
+(pdftex.def)             Requested size: 447.26308pt x 283.45398pt.
+
+Overfull \hbox (20.47174pt too wide) in paragraph at lines 123--124
  [] 
  []
 
-Package acronym Info: Label `acro:RIR' newly defined as it shall be overridden
-although it is yet undefined on input line 62.
-[4pdfTeX warning (ext4): destination with the same identifier (name{Hfootnote.2
-}) has been already used, duplicate ignored
+[7]
+<Sections/Implementation/Odeon/images/MaterialCompare/OriginalMaterials/new.png
+, id=191, 1124.2pt x 667.49374pt>
+File: Sections/Implementation/Odeon/images/MaterialCompare/OriginalMaterials/ne
+w.png Graphic file (type png)
 
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.63 			\paragraph{Original Material Selection}
-                                               ]) [5] (./main.bbl)
+<use Sections/Implementation/Odeon/images/MaterialCompare/OriginalMaterials/new
+.png>
+Package pdftex.def Info: Sections/Implementation/Odeon/images/MaterialCompare/O
+riginalMaterials/new.png used on input line 130.
+(pdftex.def)             Requested size: 337.2626pt x 200.24966pt.
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 135.
+ (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/t1pcr.fd
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+) [8 <./Sections/Implementation/Odeon/images/MaterialCompare/OriginalMaterials/
+all.png> <./Sections/Implementation/Odeon/images/MaterialCompare/OriginalMateri
+als/new.png>]
+<Sections/Implementation/Odeon/images/MaterialCompare/NewMaterials/newOdeonComp
+arison.png, id=211, 1129.21875pt x 716.6775pt>
+File: Sections/Implementation/Odeon/images/MaterialCompare/NewMaterials/newOdeo
+nComparison.png Graphic file (type png)
+
+<use Sections/Implementation/Odeon/images/MaterialCompare/NewMaterials/newOdeon
+Comparison.png>
+Package pdftex.def Info: Sections/Implementation/Odeon/images/MaterialCompare/N
+ewMaterials/newOdeonComparison.png used on input line 142.
+(pdftex.def)             Requested size: 451.6795pt x 286.66592pt.
+
+Overfull \hbox (24.88817pt too wide) in paragraph at lines 142--143
+ [] 
+ []
+
+[9 <./Sections/Implementation/Odeon/images/MaterialCompare/NewMaterials/newOdeo
+nComparison.png>]
+Package acronym Info: Label `acro:VBS' newly defined as it shall be overridden
+although it is yet undefined on input line 185.
+
+
+LaTeX Warning: Reference `background:scattering' on page 10 undefined on input 
+line 185.
+
+
+LaTeX Warning: Reference `Software:Odeon' on page 10 undefined on input line 18
+7.
+
+Package acronym Info: Label `acro:TO' newly defined as it shall be overridden
+although it is yet undefined on input line 187.
+Package acronym Info: Label `acro:ISM' newly defined as it shall be overridden
+although it is yet undefined on input line 187.
+
+LaTeX Warning: Reference `Software:Odeon' on page 10 undefined on input line 19
+5.
+
+) [10] [11]
+Overfull \hbox (9.91418pt too wide) in paragraph at lines 88--88
+[]\T1/ppl/m/n/10 (2016). Ab-sorp-tion co-ef-fi-cients, Acous-tic-Traf-fic, [On-
+line]. Avail-able: [][]$\T1/pcr/m/n/10 http : / / www . acoustic .
+ []
+
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 88.
- [6] [7 <./Sections/Implementation/Modelling/images/realVsSku/roofSku.png> <./S
-ections/Implementation/Modelling/images/HHroof.jpg>] [8 <./Sections/Implementat
-ion/Odeon/images/OdeonRays/waterTight2.PNG> <./Sections/Implementation/Odeon/im
-ages/Absorption.PNG>]
+[12]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 88.
  (./main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 88.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 88.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 81C2186B4167AB991703DCCA358CD35C;1102.
+(rerunfilecheck)             Checksum: FDBB79AA1A9E780BEED6A9166B68FFE1;1023.
 
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package logreq Info: Writing requests to 'main.run.xml'.
+\openout1 = `main.run.xml'.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 88.
  ) 
 Here is how much of TeX's memory you used:
- 9793 strings out of 493089
- 147220 string characters out of 6134842
- 246659 words of memory out of 5000000
- 13035 multiletter control sequences out of 15000+600000
- 34824 words of font info for 66 fonts, out of 8000000 for 9000
+ 14969 strings out of 493089
+ 243154 string characters out of 6134842
+ 691998 words of memory out of 5000000
+ 18138 multiletter control sequences out of 15000+600000
+ 33218 words of font info for 64 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 43i,11n,45p,888b,583s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exi
-st, replaced by a fixed one
-
-{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/tex
-live/2015/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/201
-5/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2015/texmf
--dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2015/texmf-dist/f
-onts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (8 pages, 2036032 bytes).
+ 47i,13n,52p,1150b,1018s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
+exlive/2015/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2
+015/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2015/tex
+mf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2015/texmf-dist
+/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on main.pdf (12 pages, 5037912 bytes).
 PDF statistics:
- 198 PDF objects out of 1000 (max. 8388607)
- 167 compressed objects within 2 object streams
- 37 named destinations out of 1000 (max. 500000)
- 161 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 285 PDF objects out of 1000 (max. 8388607)
+ 237 compressed objects within 3 object streams
+ 51 named destinations out of 1000 (max. 500000)
+ 158 words of extra memory for PDF output out of 10000 (max. 10000000)
 

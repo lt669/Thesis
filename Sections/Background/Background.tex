@@ -85,34 +85,35 @@
 				\label{sfMic}
 			\end{figure}
 
-\subsection{Software Overview}
+		\subsection{Software Overview}
 
-	\subsubsection{ODEON}
-	A method for measuring \ac{RIR}'s has been discussed, however there is also a way to synthesis \ac{RIR}'s by using room acoustic simulation software such as Odeon \cite{odeon}.
+		\subsubsection{ODEON}
+		\label{Software:Odeon}
+		A method for measuring \ac{RIR}'s has been discussed, however there is also a way to synthesis \ac{RIR}'s by using room acoustic simulation software such as Odeon \cite{odeon}.
 
-		Odeon was designed to provide reliable predictions of room acoustics by using a hybrid of two geometric acoustic models, Ray-tracing and the \ac{ISM} to synthesis \ac{RIR}'s. These methods model how sound would propagate around a room as though it were a straight line (ray). This inherently neglects wave phenomena such as phase and diffraction, properties that are negligible at high frequencies, however they are fundamental in describing low frequency wave behaviour \cite{Siltanen2010}. Therefore geometrical methods are not accurate at modelling sound propagation for low frequency waves.
+			Odeon was designed to provide reliable predictions of room acoustics by using a hybrid of two geometric acoustic models, Ray-tracing and the \ac{ISM} to synthesis \ac{RIR}'s. These methods model how sound would propagate around a room as though it were a straight line (ray). This inherently neglects wave phenomena such as phase and diffraction, properties that are negligible at high frequencies, however they are fundamental in describing low frequency wave behaviour \cite{Siltanen2010}. Therefore geometrical methods are not accurate at modelling sound propagation for low frequency waves.
 
-		The reason for Odeon using a hybrid of the two method comes from the inherent problems encountered in each method.
+			The reason for Odeon using a hybrid of the two method comes from the inherent problems encountered in each method.
 
-	\paragraph{Ray-Tracing}
-		The ray-tracing method imitates a sound source by emitting a large number of particles in various directions from a single point \cite{Rindel1995}. These particles are then traced around the room, losing energy each time the particle encounters a surface according to the absorption coefficient assigned to that surface. The angle at which the particle is then reflected is determined by the scattering coefficient assigned to the surface of contact, ranging from a specular reflection to a completely random reflection \cite{odeonManual}. For a specific receiver position, an area around said point is defined in which rays are collected and used to calculate the results.
+		\paragraph{Ray-Tracing}
+			The ray-tracing method imitates a sound source by emitting a large number of particles in various directions from a single point \cite{Rindel1995}. These particles are then traced around the room, losing energy each time the particle encounters a surface according to the absorption coefficient assigned to that surface. The angle at which the particle is then reflected is determined by the scattering coefficient assigned to the surface of contact, ranging from a specular reflection to a completely random reflection \cite{odeonManual}. For a specific receiver position, an area around said point is defined in which rays are collected and used to calculate the results.
 
-		Ray-tracing does not provide a completely accurate result as it is a risk that some rays may not pass close enough to the receiver to contribute to the final result. The outcome of the ray-tracing method is a statistical result rather than a complete one.
+			Ray-tracing does not provide a completely accurate result as it is a risk that some rays may not pass close enough to the receiver to contribute to the final result. The outcome of the ray-tracing method is a statistical result rather than a complete one.
 
-	\paragraph{Image Source Method}
-	
-		%The \ac{ISM} represents specular reflections from surfaces as its own source, mirroring that of the original sound source, creating what is known as ``image sources'' \cite{Rindel1995} and can be used to find all possible specular reflection paths. Figure~\ref{ISMPic} illustrates this concept. The advantage of the \ac{ISM} is that each surface can be modelled by an image source which provides a great deal of data regarding the contribution to the received sound making this method more accurate than ray-tracing.
+		\paragraph{Image Source Method}
 
-		The \ac{ISM} can be used to find all possible specular reflections paths from the sound source to the receiver position. This is done by representing each specular reflection from a surface as a secondary source known as an ``image source'' \cite{Rindel1995}, illustrated in figure~\ref{ISMPic}. The advantage of the \ac{ISM} is that each surface can be modelled by an image source which provides a great deal of data regarding the contribution to the received sound making this method more accurate than ray-tracing, however as each image source then emits more rays there is a possibility to produce a great deal more image sources. This means that the number of image sources grows exponentially for each new image source than is produced making this method much more computationally expensive than the ray-tracing method. This problem can be avoided by setting a \textit{reflection order} which determines how many times a ray can reflect off a surface before calculations are stopped, thus preventing the creation of more image source though the calculates for the prediction of the rooms acoustics will be incomplete. This obviously then makes the \ac{ISM} less accurate with a smaller reflection order.
+			%The \ac{ISM} represents specular reflections from surfaces as its own source, mirroring that of the original sound source, creating what is known as ``image sources'' \cite{Rindel1995} and can be used to find all possible specular reflection paths. Figure~\ref{ISMPic} illustrates this concept. The advantage of the \ac{ISM} is that each surface can be modelled by an image source which provides a great deal of data regarding the contribution to the received sound making this method more accurate than ray-tracing.
 
-		Once all image sources have been calculated, a visibility check is run. This checks to see whether the image sources that have been produced can be seen by the receiver, therefore checking whether that image source needs to be used or not. If the image source is not in sight of the receiver, it therefore does not need to be used for calculations. If the receiver position is moved, the visibility check is run again. Overall, this saves time as the image sources do not need to be recalculated.
+			The \ac{ISM} can be used to find all possible specular reflections paths from the sound source to the receiver position. This is done by representing each specular reflection from a surface as a secondary source known as an ``image source'' \cite{Rindel1995}, illustrated in figure~\ref{ISMPic}. The advantage of the \ac{ISM} is that each surface can be modelled by an image source which provides a great deal of data regarding the contribution to the received sound making this method more accurate than ray-tracing, however as each image source then emits more rays there is a possibility to produce a great deal more image sources. This means that the number of image sources grows exponentially for each new image source than is produced making this method much more computationally expensive than the ray-tracing method. This problem can be avoided by setting a \textit{reflection order} which determines how many times a ray can reflect off a surface before calculations are stopped, thus preventing the creation of more image source though the calculates for the prediction of the rooms acoustics will be incomplete. This obviously then makes the \ac{ISM} less accurate with a smaller reflection order.
+
+			Once all image sources have been calculated, a visibility check is run. This checks to see whether the image sources that have been produced can be seen by the receiver, therefore checking whether that image source needs to be used or not. If the image source is not in sight of the receiver, it therefore does not need to be used for calculations. If the receiver position is moved, the visibility check is run again. Overall, this saves time as the image sources do not need to be recalculated.
 
 
-		\begin{figure}[ht]
-			\center\includegraphics[scale = 0.3]{Sections/Background/images/ISM.png}
-			\caption{Illustration of the image source method (by the author)}
-			\label{ISMPic}
-		\end{figure}
+			\begin{figure}[ht]
+				\center\includegraphics[scale = 0.3]{Sections/Background/images/ISM.png}
+				\caption{Illustration of the image source method (by the author)}
+				\label{ISMPic}
+			\end{figure}
 
 		\paragraph{Hybrid Method}
 			%The inherent problems of the ray-tracing method and the \ac{ISM} are occluded by using a hybrid method that uses the best part of both. 
@@ -120,6 +121,20 @@
 			Ideally, the \ac{ISM} would be used to calculate all sound rays due to its accurate results, however due to the computational limitations, Odeon uses a hybrid method to provide a reasonable compromise between calculation time and accuracy.
 
 			The hybrid method first uses the \ac{ISM} to calculate a number of image sources up until a specified reflection order determined by a \ac{TO}. For example, if the \ac{TO} = 2, the image source method will allow a ray to reflect twice which will produce a number of image sources, then it will switch to using the ray tracing method to calculate a statistical model of how the rest of the rays might propagate. This gives the user the choice between computation time and accuracy.
+
+		\paragraph{Scattering}
+		\label{background:scattering}			
+			Quote from Odeon Manual:	
+
+			 \vspace{5mm}
+		 \begin{center}
+		 \begin{minipage}{0.5\textwidth}
+		 \textit{``In short, each time ODEON detects an image source (IMS), an inner loop of (scatter) rays (not visualised in the 3D Investigate Rays display) is started, taking care of the scattered sound which is reflected from this image source /surface''}
+		 \end{minipage}
+		 \end{center}
+		 \vspace{5mm}
+
+		 \textbf{Reword that shit}
 
 		\paragraph{Room Modelling}
 
