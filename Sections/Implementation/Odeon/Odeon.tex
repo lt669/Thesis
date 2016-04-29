@@ -163,18 +163,6 @@
 				%Other settings
 				Odeon provides the following options for \ac{RIR} rendering:
 
-				% \begin{center}
-				% 	\begin{tabular}{p{3cm} | p{10cm}}
-				% 		\textbf{Setting} & \textbf{Description (from~\cite{odeonManual})} \\ \hline
-				% 		Astop (dB) & The maximum possible attenuation of each octave band. \\
-				% 		Apass & Ripple of octave band filters in dB\\
-				% 		Band overlap & 100\% overlap gives a smooth transition between the FIR octave band filters as they are not completely rectangular \\
-				% 		Maximum reflection order & Maximum allowed is 2000 as is the default. This means a ray can only reflect around a room 2000 times before the simulation is stopped. This prevents trapped rays from prolonging the impulse response if it never reaches the receiver. \\
-				% 		Late Rays & These are emitted from the source and reflected according to the \ac{VBS} (described in section~\nameref{background:scattering}) taking into account scattering due to surface size and roughness. If the reflection order is about the transition order, a secondary source is generated at each reflection point.\\
-				% 		Transition Order & As explained in section~\nameref{Software:Odeon}, a \ac{TO} can be set to determine the number of early rays sent out to find a number of wall combinations for reflections using the \ac{ISM}. After this number of rays has been reached, the ray-tracing method is used.
-				% 	\end{tabular}
-				% \end{center}
-
 				\textbf{Astop} - The maximum possible attenuation of each octave band.
 				\textbf{Apass} - Ripple of octave band filters in dB.
 
@@ -186,12 +174,10 @@
 
 				\textbf{Transition Order} - As explained in section~\nameref{Software:Odeon}, a \ac{TO} can be set to determine the number of early rays sent out to find a number of wall combinations for reflections using the \ac{ISM}. After this number of rays has been reached, the ray-tracing method is used.
 
-
 				All settings apart from \ac{LR's} and \ac{TO} are left at their default values as they are sufficient for accuracy and prevent the increase of computation time which will be needed given the large number of RIRs required for free movement.
 
 				%TO and Late rays
-
-				Odeon suggests two possible modes, \textbf{Engineer} and \textbf{Precision} which both suggest using a different number of \ac{LR's} which are 1285 and 20560 respectively. As both the \ac{TO} and \ac{LR's} value increase both the accuracy and computation time of the \ac{RIR}'s, these values were tried with difference combinations of \ac{TO} values and \ac{RIR}'s were rendered. Figure~\ref{odeonSettingsRIR} shows plots of the rendered \ac{RIR}'s with the name indicating the \ac{TO} and \ac{LR's} value. For example, `TO\_2\_LR\_1285' indicates the sample was produced where \ac{TO} = 2 and \ac{LR's} = 1285. Table~\ref{odeonSettingsTable} can be used to clarify the settings used for each \ac{RIR} in figure~\ref{odeonSettingsRIR} and indicates which audio sample can be listened to. All \ac{RIR}'s were taken from the centre of the room.
+				Odeon suggests two possible modes, \textbf{Engineer} and \textbf{Precision} which both suggest using a different number of \ac{LR's} which are 1285 and 20560 respectively. As both the \ac{TO} and \ac{LR's} value increase both the accuracy and computation time of the \ac{RIR}'s, different combinations were tried and \ac{RIR}'s were rendered. Figure~\ref{odeonSettingsRIR} shows plots of the rendered \ac{RIR}'s with the name indicating the \ac{TO} and \ac{LR's} value. For example, `TO\_2\_LR\_1285' indicates the sample was produced where \ac{TO} = 2 and \ac{LR's} = 1285. Table~\ref{odeonSettingsTable} can be used to clarify the settings used for each \ac{RIR} in figure~\ref{odeonSettingsRIR} and indicates which audio sample can be listened to. For consistency, all \ac{RIR}'s were taken from the centre of the room.
 
 				\begin{table}
 				\begin{center}
@@ -277,28 +263,199 @@
 
 		\subsubsection{RIR Topology Problems}
 		\label{odeonError}
+
+			\paragraph{RIR Analysis}
 			%Show original output RIR
-			It has been noted that the \ac{RIR}'s produced will attempt to accurately resemble a human head. This involves placing the sound source below the receiver, to resemble the mouth (sound source) below the ears (receiver). When taking real \ac{RIR} measurements it is often not possible to get the source and receiver close enough due to the physical dimensions of the equipment used and therefore result in an unnatural distance between them (see section~\nameref{realRIRs}). However, with using software such as Odeon, where sound sources are calculated from a point source, it is possible to move the source and receiver much closer together. Initially, the sound source was place 1m off the ground and the receiver was positioned 0.05m above the sound source. Three \ac{RIR}'s positioned along the centre of the room at varying distances from the left wall can be seen in figure~\ref{incorrectRIR}.
+			It has been noted that the \ac{RIR}'s produced will attempt to accurately resemble a human head. This involves placing the sound source below the receiver, to resemble the mouth (sound source) below the ears (receiver). When taking real \ac{RIR} measurements it is often not possible to get the source and receiver close enough due to the physical dimensions of the equipment used and therefore result in an unnatural distance between them (see section~\nameref{realRIRs}). However, with using software such as Odeon, where sound sources are calculated from a point source, it is possible to move the source and receiver much closer together. Initially, the sound source was placed 1m off the ground and the receiver was positioned 0.05m above the sound source. Three \ac{RIR}'s positioned along the centre of the room at varying distances from the left wall can be seen in figure~\ref{incorrectRIR_3}. \textbf{[Note where the grid positions are]}
 
 			%Show timing errors
 
 
-			%-------------Directivity Image image-------------%
+			%-------------Incorrect RIRs image-------------%
 			\begin{figure}[H]
 				\center\includegraphics[scale = 0.3]{Sections/Implementation/Odeon/images/incorrectRIR/RIR_76_incorrect_edit.png}
-				\caption{Initial \ac{RIR} output with receiver 5cm above sound source}
+				\caption{Initial \ac{RIR} output with receiver 5cm above sound source showing \ac{RIR}'s from grid positions 76, 77 and 83}
 				\label{incorrectRIR}
 			\end{figure}
 
-			%Show Height Test Images
+			These \ac{RIR} positions were chosen as the varying distance from the left wall can be used to estimate when to expect reflection other than that from the floor which will remain the same across each \ac{RIR}. Each \ac{RIR} shows a dip of varying amplitude at the same instance in time. Without further inspection, this could be assumed as the direct sound from the source to receiver, which would be in the same place in time as the source and receiver are kept the same distance across all RIRs, though the varying amplitude is questionable.
 
+			%-------------76 incorrect RIR image-------------%
+			\begin{figure}[H]
+				\center\includegraphics[scale = 0.5]{Sections/Implementation/Odeon/images/incorrectRIR/RIR_76_incorrect_edit_crop.png}
+				\caption{Initial \ac{RIR} output with receiver 5cm above sound source from grid position 76}
+				\label{incorrectRIR_76}
+			\end{figure}
+
+			Figure~\ref{incorrectRIR_76} shows the first \ac{RIR} from figure~\ref{incorrectRIR} which is used for analysis or early reflections. The \ac{RIR}'s can be validated by calculating where expected reflections should be using the following equation:
+			
+			\begin{equation}\label{distance}
+				t_s = t_p - \frac{d}{c}
+			\end{equation}
+			where:
+
+			\begin{tabular}{l l}
+			$t_s$ & = Expected start of impulse \\
+			$t_p$ & = Time of first recorded reflection (first peak) \\
+			$d$ & = Distance between source and receiver\\
+			$c$ & = Speed of sound ($344m/s$) \\
+			\end{tabular}
+
+
+			Therefore, if this dip is assumed to be the direct sound which occurs at $t_p = 0.03448s$ , where $d = 0.5$, then the start of the impulse can be calculated to be:
+
+			\begin{equation}
+			 0.03448 - \frac{0.05}{344} = 0.03433s = t_s
+			\end{equation}
+
+			This is indistinguishable from the direct sound peak, which is understandable given the source and receiver are 0.05m away. Now the expected start of this impulse is known, the expected first reflection due to the floor can be calculated:
+
+			\begin{equation}
+			\frac{2.05}{344} + t_s = 0.4029s
+			\end{equation}
+
+			However, it can be seen that the first reflection occurs at 920, at a time of $0.039s$ suggesting that sound has travelled 1.6392m before reaching the receiver. However, the shortest available distance a sound could travel other than directly from the source to the receiver is 2.05m, which is the first floor reflection.
+
+			\begin{equation}
+			(0.039 - t_s)*c = 1.6382m
+			\end{equation}
+
+			As the source and receiver are placed 1.85m away from the left side wall, a second reflection would be expected to occur at:
+
+			\begin{equation}
+			\frac{1.85\times{2}}{c} + t_s = 0.04509s
+			\end{equation}
+
+			indicated by (3) in figure~\ref{incorrectRIR_76}. However, it can be seen that no strong reflection occurs here.
+
+			After an email was sent to the technical department \cite{odeonEmail}, it was suggested that the small dip may be a bug in the version of Odeon being used. It could therefore be assumed that the direct sound is actually captured at the peak shown at (2) in figure~\ref{incorrectRIR_76} at a time of $0.03908$. From this the new expected time for the start of the impulse could be calculated:
+
+			\begin{equation}
+			0.03908 - \frac{d}{c} = 0.03893 = t_s
+			\end{equation}
+
+			It could then be assumed that the first reflection caused by the floor is the peak at (4) in figure~\ref{incorrectRIR_76} which occurs at a time of 0.04058s. However, this would suggest that sound has travelled 0.05532m:
+
+			\begin{equation}
+			(0.04058 - t_s)\times{c} = 0.05532
+			\end{equation}
+
+			meaning that it has reflected off a surface approximately 0.28m away, of which there is no surface.
+
+			It is also apparent that if the first peak other than the dip at the beginning of the file is taken to be the direct sound, it can be seen across impulse responses that these would occur at different times depending on room position. This is also incorrect as it has been mentioned that the source and receiver distance is kept constant across \ac{RIR}’s. The first strong reflection appears to be delayed in time the further away from the left side wall the RIRs are taken which would be accurate, however the timings are incorrect.
+
+			\paragraph{Experiment}
+			%Show Height Test Images
+			After some further investigation, it was found that the Odeon Manual \cite{odeonManual} states in the section \textbf{Minimum distance from receiver to closest surface}:
+
+			 \vspace{5mm}
+			 \begin{center}
+			 \begin{minipage}{0.75\textwidth}
+			 \textit{``If a receiver is placed very close to a surface then results will be sensitive to the actual position of the secondary sources generated by ODEON’s late ray method. If such a secondary source happens to be very close to the receiver, e.g. 1 to 10 centimetres, this may produce a spurious spike on the decay curve, resulting in unreliable predictions of the reverberation time.''}
+			 \end{minipage}
+			 \end{center}
+			 \vspace{5mm}
+
+			 Though this is a problem said to be caused by secondary sources, it can be assumed that this issue could be caused to primary sources. This was investigated by producing RIRs with the source in a stationary location with receivers varying in distance above the source. Figure~\ref{HeightTest} shows six \ac{RIR}'s produced using different distances between the source and receiver where the numbers 1 - 6 indicate the following:
+
+			 \begin{center}
+				 \begin{tabular}{|c |c| c|}
+				 \hline
+				 \multirow{2}{*}{Graph Number} & \multicolumn{2}{|c|}{Distance from floor} \\ \cline{2-3}
+				 & Source & Receiver \\\hline
+				 (1) & 1m & 1.05m \\
+				 (2) & 1m & 1.15m \\
+				 (3) & 1m & 1.30m \\
+				 (4) & 1m & 1.50m \\
+				 (5) & 1m & 1.60m \\
+				 (6) & 1m & 1.70m \\ \hline
+				 \end{tabular}
+			 \end{center}
+
+		 	%-------------Height Test image-------------%
+			\begin{figure}[H]
+				\centerline{\includegraphics[scale = 0.3]{Sections/Implementation/Odeon/images/incorrectRIR/HeightTest_Edit.png}}
+				\caption{Plots of \ac{RIR}'s produced with the receiver placed at varying distances from the source, indicated by the title of each plot where \textbf{(1)}: 5cm \textbf{(2)}: 15cm \textbf{(3)}: 30cm \textbf{(4)}: 50cm \textbf{(5)}: 60cm \textbf{(6)}: 70cm}
+				\label{HeightTest}
+			\end{figure}
+
+			The following numbers (1) - (6) refer to the individual plots in figure~\ref{HeightTest}.
+
+			A 5cm distance between the source and receiver shown in (1)\footnotemark[1] was originally used. This plot can be seen to be greatly different from the rest. It is in this \ac{RIR} that the `dip' found in the previously investigated \ac{RIR}'s is contained, whereas the \ac{RIR}'s with a greater distance between source and receiver (2) - (6) do not.
+
+			\footnotetext[1]{\textit{\textbf{Note:} The reason the \ac{RIR} shown in (1) looks different to previously investigated \ac{RIR}'s such as those in figure~\ref{incorrectRIR} is due to (1) being zoomed in, causing it to look greater in amplitude. This was done so it could be compared to (2) - (6) whilst being on the same scale.}}
+
+			\paragraph{Results}
 			%Show new RIRs with correct timings
+
+			It is suggested in the Odeon manual that source and receiver be at least between 30cm and 50cm apart. Though a distance of 15cm (2) shows an \ac{RIR} similar to the rest of the assumed correct ones, it is obvious that there is one strong direct sound, however it is difficult to see other reflections, whereas when the receiver is moved further away to a distance suggested by the Odeon manual, the early reflections become more obvious, with clarity of amplitude being more consistent through (4) - (6). The peaks in the RIR (5) (60cm) were investigated to assure they correctness, shown in figure~\ref{60cm}. This \ac{RIR} was chosen as the distance between the source and receiver for the real RIR’s taken in Hendrix Hall was also 60cm. As the aim of achieving a more accurate human head topology is not possible due to this issue caused by Odeon, it was decided that for now, consistency is the next best thing.
+
+			%-------------60cm image-------------%
+			\begin{figure}[H]
+				\center\includegraphics[scale = 0.6]{Sections/Implementation/Odeon/images/incorrectRIR/76_60cm_editV2_crop.png}
+				\caption{\ac{RIR} produced when the receiver is places 60cm above the source.}
+				\label{60cm}
+			\end{figure}
+
+			The first peak (a) can be assumed to be the direct sound, present at $0.03168s$ meaning the start of the impulse can be calculated using equation~\ref{distance}, where now $d = 0.6$:
+
+			\begin{equation}
+			0.03168 - \frac{0.6}{c} = 0.02994s = t_s
+			\end{equation}
+
+			From this, it can be calculated that the peak at (b), which occurs at $0.0375s$ had been captured after sound has travelled 2.6m:
+
+			\begin{equation}
+			(0.0375 - t_s)\times{c} = 2.6m
+			\end{equation}
+
+			This is the reflection from the floor which is 1.6m below the receiver, causing the sound to travel 1m to the floor and then a further 1.6m to reach the receiver. This is shown in \textbf{Path 1} in figure~\ref{reflectionPaths}. The peak at (c), occuring at $0.04084s$ can be calculated as having travelled 3.75m which is approximately the distance travelled by a reflection caused by the left side wall shown as \textbf{Path 2} in figure~\ref{reflectionPaths}.
+
+				%-------------reflection path image-------------%
+			\begin{figure}[H]
+			\centerline{\includegraphics[scale = 0.25]{Sections/Implementation/Odeon/images/incorrectRIR/reflectionPaths_colourV1.png}}
+				\caption{Illustration of the two early reflection paths due to the floor and left side wall when the receiver is placed 60cm above the source.}
+				\label{reflectionPaths}
+			\end{figure}
+
+			It can therefore be noted that the \ac{RIR}'s with a distance of 60cm between the source and receiver are accurate and can be used to produce a mass of \ac{RIR}'s.
 
 		\subsubsection{RIR Locations}
 			%How many RIRs and where?
+			As discussed in section~\nameref{Background:RIRPositions}, \ac{RIR}'s were to be taken every 1m starting from the centre of the room and should form a grid (rectangular or square). However, there were some positions within the room that would cause some \ac{RIR} positions to be invalid. These positions were location anywhere the sound source and receiver were placed closer than 0.75m next to a surface. This is because the loudspeakers in the \ac{VSS} are placed 1.5m away from the centre, where the user will be stood meaning that any sound that has to travel less than 1.5m the reach the receiver will be impossible to reproduce at the correct time within the \ac{VSS}. If a source and receiver were to be placed placed closer than 0.75m from a wall, sound would have to travel less than 1.5m before reaching the receiver. When taking this into account, figure~\ref{incorrectRIRPositions} shows the positions that would be invalid due to them being placed too close to a surface, marked as U, V, W and Z. W represents a large space of invalid \ac{RIR} positions and they would all be too close to the table surfaces.
 
-			%Inaccuracies due to distance
+			%-------------RIR Invalid Positions Image-------------%
+			\begin{figure}[H]
+				\centerline{\includegraphics[scale = 0.4]{Sections/Implementation/Odeon/images/RIRPositions/RIRPositionAnnotated.png}}
+				\caption{Top down view of the Hendrix Hall model indicating the \ac{RIR} positions that are invalid due to being too close to a surface (U, V, W and Z), where other \ac{RIR}'s that are valid are not included as it would cause inconsistency (X and Y)}
+				\label{incorrectRIRPositions}
+			\end{figure}
 
-			%Keep them anyway
+			It was decided however that these \ac{RIR}'s would still be produced and used as part of the final system. If they were not included, there would be large gaps in the space where the user would have to jump between, thus be unable to produce what what feel like an consistent path.
+
+			It was also later discovered (see section \nameref{latency}) that the latency due to the software used would mean that the beginning of the \ac{RIR}'s would have to be trimmed anyway, avoiding this issue.
+
+			There are several \ac{RIR}'s in figure~\ref{incorrectRIRPositions} labeled X and Y. These positions would still produce valid \ac{RIR}'s, however they were not included in the final grid as they would cause inconsistencies in the positions available to the user. All pther blue crosses in figure~\ref{incorrectRIRPositions} were also included in the final \ac{RIR} grid, producing a total of 240 available positions.
+
+			%Table doesn't cause incorrect RIR
+			The tables present within the room so not cause an issue 
+
+		\subsubsection{RIR Rendering}
+
+			Once all of the source and receiver positions had been decided, they must be included in Odeons 
+
+			The source and receiver positions can be set using a .SouRecScript file, which contains information regarding the Cartesian coordinates of both sources and receivers within the room as well as the sound source directivity patter and the direction in which the source is facing. This made producing 240 \ac{RIR}'s almost effortless. However, one the script had set to locations of the source and receivers, each source and receiver had to be paired up individually. This is because Odeon provides a \textbf{Job List}, where any number of \ac{RIR}'s can be rendered one after. For this to work, the user must tell Odeon which receiver to use for each sound source. Figure~\ref{SouRecPos} shows the job list menu where each source has to be connected to each receiver, using a series od drop down menus and scroll bars. This part of Odeon is clumsy and in no way designed to make the process fast and simple. This had to be done for all 240 \ac{RIR}'s and then again for the other three sets of \ac{RIR}'s used for facing different direction within the room, totalling 960 \ac{RIR}'s.
+
+			%-------------RIR Invalid Positions Image-------------%
+			\begin{figure}[H]
+				\centerline{\includegraphics[scale = 0.4]{Sections/Implementation/Odeon/images/SouRecPos/SouRecSelection_crop.png}}
+				\caption{Source and receiver pairing window in Odeon}
+				\label{SouRecPos}
+			\end{figure}
+
+			A naming system was used for the \ac{RIR} files to indicate which grid positions they were taken from and which direction they are facing. For example: `008\_0.wav' is is an \ac{RIR} from grid position 8 with 0\textdegree~rotation (facing the blackboards) where `128\_90' is taken from grid position 128 and has a 90\textdegree~rotation (facing the left side wall).
+
+			\textbf{Files available: SupportingFiles/sourecscripts/}
+
 	
 \end{document}

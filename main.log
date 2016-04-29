@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.14)  28 APR 2016 20:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.14)  29 APR 2016 16:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -967,11 +967,7 @@ File: english.lbx 2015/04/19 v3.0 biblatex localization (PK/JW/AB)
 \@quotelevel=\count279
 \@quotereset=\count280
 
-(./main.aux
-
-LaTeX Warning: Label `materialTable' multiply defined.
-
-)
+(./main.aux)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
@@ -1124,286 +1120,60 @@ File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
 \tf@toc=\write6
 \openout6 = `main.toc'.
 
-
-(./Sections/Implementation/Odeon/Odeon.tex [1{/usr/local/texlive/2015/texmf-var
-/fonts/map/pdftex/updmap/pdftex.map}
+ [1{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 ]
-<Sections/Implementation/Odeon/images/OdeonRays/waterTight2.PNG, id=101, 1445.4
-pt x 788.9475pt>
-File: Sections/Implementation/Odeon/images/OdeonRays/waterTight2.PNG Graphic fi
-le (type png)
-
-<use Sections/Implementation/Odeon/images/OdeonRays/waterTight2.PNG>
-Package pdftex.def Info: Sections/Implementation/Odeon/images/OdeonRays/waterTi
-ght2.PNG used on input line 14.
-(pdftex.def)             Requested size: 433.62335pt x 236.68607pt.
-
-Overfull \hbox (6.83202pt too wide) in paragraph at lines 14--15
- [] 
- []
-
-[2 <./Sections/Implementation/Odeon/images/OdeonRays/waterTight2.PNG>]
-<Sections/Implementation/Odeon/images/Absorption.PNG, id=115, 461.47406pt x 299
-.61937pt>
-File: Sections/Implementation/Odeon/images/Absorption.PNG Graphic file (type pn
-g)
- <use Sections/Implementation/Odeon/images/Absorption.PNG>
-Package pdftex.def Info: Sections/Implementation/Odeon/images/Absorption.PNG us
-ed on input line 45.
-(pdftex.def)             Requested size: 276.88655pt x 179.77301pt.
-
-
-LaTeX Warning: Reference `designRoom' on page 3 undefined on input line 52.
-
-[3 <./Sections/Implementation/Odeon/images/Absorption.PNG>]
-<Sections/Implementation/Odeon/images/seating.jpg, id=129, 3276.24pt x 1652.172
-5pt>
-File: Sections/Implementation/Odeon/images/seating.jpg Graphic file (type jpg)
- <use Sections/Implementation/Odeon/images/seating.jpg>
-Package pdftex.def Info: Sections/Implementation/Odeon/images/seating.jpg used 
-on input line 57.
-(pdftex.def)             Requested size: 393.13184pt x 198.25214pt.
-
-<Sections/Implementation/Odeon/images/OdeonRays/transparencyEdit/singleRay2_edi
-t3.PNG, id=130, 187.45032pt x 292.84406pt>
-File: Sections/Implementation/Odeon/images/OdeonRays/transparencyEdit/singleRay
-2_edit3.PNG Graphic file (type png)
-
-<use Sections/Implementation/Odeon/images/OdeonRays/transparencyEdit/singleRay2
-_edit3.PNG>
-Package pdftex.def Info: Sections/Implementation/Odeon/images/OdeonRays/transpa
-rencyEdit/singleRay2_edit3.PNG used on input line 64.
-(pdftex.def)             Requested size: 131.21431pt x 204.98944pt.
-
-
-LaTeX Warning: Reference `designRoom' on page 4 undefined on input line 69.
-
-
-LaTeX Warning: Reference `background:scattering' on page 4 undefined on input l
-ine 69.
-
-[4 <./Sections/Implementation/Odeon/images/seating.jpg> <./Sections/Implementat
-ion/Odeon/images/OdeonRays/transparencyEdit/singleRay2_edit3.PNG>]
-<Sections/Implementation/Odeon/images/scatteringCoefficients.png, id=139, 1260.
-71pt x 338.26375pt>
-File: Sections/Implementation/Odeon/images/scatteringCoefficients.png Graphic f
-ile (type png)
-
-<use Sections/Implementation/Odeon/images/scatteringCoefficients.png>
-Package pdftex.def Info: Sections/Implementation/Odeon/images/scatteringCoeffic
-ients.png used on input line 73.
-(pdftex.def)             Requested size: 378.21593pt x 101.4799pt.
-Package acronym Info: Label `acro:RIR' newly defined as it shall be overridden
-although it is yet undefined on input line 80.
-
-
-LaTeX Warning: Reference `realRIRs' on page 5 undefined on input line 80.
-
-
-<Sections/Implementation/Odeon/images/MaterialCompare/OriginalMaterials/origina
-l.png, id=148, 1114.1625pt x 716.6775pt>
-File: Sections/Implementation/Odeon/images/MaterialCompare/OriginalMaterials/or
-iginal.png Graphic file (type png)
-
-<use Sections/Implementation/Odeon/images/MaterialCompare/OriginalMaterials/ori
-ginal.png>
-Package pdftex.def Info: Sections/Implementation/Odeon/images/MaterialCompare/O
-riginalMaterials/original.png used on input line 84.
-(pdftex.def)             Requested size: 334.25133pt x 215.00491pt.
- [5 <./Sections/Implementation/Odeon/images/scatteringCoefficients.png>] [6 <./
-Sections/Implementation/Odeon/images/MaterialCompare/OriginalMaterials/original
-.png>]
-
-LaTeX Warning: Reference `SoftwareOdon' on page 7 undefined on input line 115.
-
-
-<Sections/Implementation/Odeon/images/MaterialCompare/OriginalMaterials/all.png
-, id=184, 1118.1775pt x 708.6475pt>
-File: Sections/Implementation/Odeon/images/MaterialCompare/OriginalMaterials/al
-l.png Graphic file (type png)
-
-<use Sections/Implementation/Odeon/images/MaterialCompare/OriginalMaterials/all
-.png>
-Package pdftex.def Info: Sections/Implementation/Odeon/images/MaterialCompare/O
-riginalMaterials/all.png used on input line 123.
-(pdftex.def)             Requested size: 447.26308pt x 283.45398pt.
-
-Overfull \hbox (20.47174pt too wide) in paragraph at lines 123--124
- [] 
- []
-
-[7]
-<Sections/Implementation/Odeon/images/MaterialCompare/OriginalMaterials/new.png
-, id=197, 1124.2pt x 667.49374pt>
-File: Sections/Implementation/Odeon/images/MaterialCompare/OriginalMaterials/ne
-w.png Graphic file (type png)
-
-<use Sections/Implementation/Odeon/images/MaterialCompare/OriginalMaterials/new
-.png>
-Package pdftex.def Info: Sections/Implementation/Odeon/images/MaterialCompare/O
-riginalMaterials/new.png used on input line 130.
-(pdftex.def)             Requested size: 337.2626pt x 200.24966pt.
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 135.
- (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/t1pcr.fd
-File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-) [8 <./Sections/Implementation/Odeon/images/MaterialCompare/OriginalMaterials/
-all.png> <./Sections/Implementation/Odeon/images/MaterialCompare/OriginalMateri
-als/new.png>]
-<Sections/Implementation/Odeon/images/MaterialCompare/NewMaterials/newOdeonComp
-arison.png, id=217, 1129.21875pt x 716.6775pt>
-File: Sections/Implementation/Odeon/images/MaterialCompare/NewMaterials/newOdeo
-nComparison.png Graphic file (type png)
-
-<use Sections/Implementation/Odeon/images/MaterialCompare/NewMaterials/newOdeon
-Comparison.png>
-Package pdftex.def Info: Sections/Implementation/Odeon/images/MaterialCompare/N
-ewMaterials/newOdeonComparison.png used on input line 142.
-(pdftex.def)             Requested size: 451.6795pt x 286.66592pt.
-
-Overfull \hbox (24.88817pt too wide) in paragraph at lines 142--143
- [] 
- []
-
-[9 <./Sections/Implementation/Odeon/images/MaterialCompare/NewMaterials/newOdeo
-nComparison.png>]
-Package acronym Info: Label `acro:VBS' newly defined as it shall be overridden
-although it is yet undefined on input line 185.
-
-
-LaTeX Warning: Reference `background:scattering' on page 10 undefined on input 
-line 185.
-
-
-LaTeX Warning: Reference `Software:Odeon' on page 10 undefined on input line 18
-7.
-
-Package acronym Info: Label `acro:TO' newly defined as it shall be overridden
-although it is yet undefined on input line 187.
-Package acronym Info: Label `acro:ISM' newly defined as it shall be overridden
-although it is yet undefined on input line 187.
-Package acronym Info: Label `acro:LR's' newly defined as it shall be overridden
-
-although it is yet undefined on input line 190.
-
-<Sections/Implementation/Odeon/images/OdeonSettings/settingsFigure_edit.png, id
-=254, 1190.4475pt x 697.60625pt>
-File: Sections/Implementation/Odeon/images/OdeonSettings/settingsFigure_edit.pn
-g Graphic file (type png)
-
-<use Sections/Implementation/Odeon/images/OdeonSettings/settingsFigure_edit.png
->
-Package pdftex.def Info: Sections/Implementation/Odeon/images/OdeonSettings/set
-tingsFigure_edit.png used on input line 214.
-(pdftex.def)             Requested size: 476.17056pt x 279.03755pt.
-
-Overfull \hbox (49.37923pt too wide) in paragraph at lines 214--215
- [] 
- []
-
-
-<Sections/Implementation/Odeon/images/OdeonSettings/settingsFigureZoomed.png, i
-d=259, 1561.835pt x 863.225pt>
-File: Sections/Implementation/Odeon/images/OdeonSettings/settingsFigureZoomed.p
-ng Graphic file (type png)
-
-<use Sections/Implementation/Odeon/images/OdeonSettings/settingsFigureZoomed.pn
-g>
-Package pdftex.def Info: Sections/Implementation/Odeon/images/OdeonSettings/set
-tingsFigureZoomed.png used on input line 220.
-(pdftex.def)             Requested size: 468.55412pt x 258.9695pt.
-
-Overfull \hbox (41.76279pt too wide) in paragraph at lines 220--221
- [] 
- []
-
-[10] [11 <./Sections/Implementation/Odeon/images/OdeonSettings/settingsFigure_e
-dit.png>]
-<Sections/Implementation/Odeon/images/OdeonSettings/settingsFigure_TOZoom.png, 
-id=273, 1575.8875pt x 855.195pt>
-File: Sections/Implementation/Odeon/images/OdeonSettings/settingsFigure_TOZoom.
-png Graphic file (type png)
-
-<use Sections/Implementation/Odeon/images/OdeonSettings/settingsFigure_TOZoom.p
-ng>
-Package pdftex.def Info: Sections/Implementation/Odeon/images/OdeonSettings/set
-tingsFigure_TOZoom.png used on input line 227.
-(pdftex.def)             Requested size: 472.7699pt x 256.56049pt.
-
-Overfull \hbox (45.97856pt too wide) in paragraph at lines 227--228
- [] 
- []
-
-[12 <./Sections/Implementation/Odeon/images/OdeonSettings/settingsFigureZoomed.
-png> <./Sections/Implementation/Odeon/images/OdeonSettings/settingsFigure_TOZoo
-m.png>]
+(./Sections/Implementation/Max/Max.tex
 Package acronym Info: Label `acro:VSS' newly defined as it shall be overridden
-although it is yet undefined on input line 258.
- [13]
-<Sections/Implementation/Odeon/images/Directivity/DirectivityPattern.png, id=32
-6, 1445.4pt x 788.9475pt>
-File: Sections/Implementation/Odeon/images/Directivity/DirectivityPattern.png G
-raphic file (type png)
+although it is yet undefined on input line 10.
 
-<use Sections/Implementation/Odeon/images/Directivity/DirectivityPattern.png>
-Package pdftex.def Info: Sections/Implementation/Odeon/images/Directivity/Direc
-tivityPattern.png used on input line 272.
-(pdftex.def)             Requested size: 433.62335pt x 236.68607pt.
+<Sections/Implementation/Max/images/FlowDiagrams/Max1_V2.png, id=66, 803.0pt x 
+1199.48125pt>
+File: Sections/Implementation/Max/images/FlowDiagrams/Max1_V2.png Graphic file 
+(type png)
 
-Overfull \hbox (6.83202pt too wide) in paragraph at lines 272--273
- [] 
- []
+<use Sections/Implementation/Max/images/FlowDiagrams/Max1_V2.png>
+Package pdftex.def Info: Sections/Implementation/Max/images/FlowDiagrams/Max1_V
+2.png used on input line 23.
+(pdftex.def)             Requested size: 240.90186pt x 359.84715pt.
+ [2 <./Sections/Implementation/Max/images/FlowDiagrams/Max1_V2.png>]
+<Sections/Implementation/Max/images/Max/lcd.png, id=75, 690.58pt x 681.54625pt>
+File: Sections/Implementation/Max/images/Max/lcd.png Graphic file (type png)
+<use Sections/Implementation/Max/images/Max/lcd.png>
+Package pdftex.def Info: Sections/Implementation/Max/images/Max/lcd.png used on
+ input line 32.
+(pdftex.def)             Requested size: 276.2271pt x 272.61366pt.
+) [3 <./Sections/Implementation/Max/images/Max/lcd.png>]
 
-) [14 <./Sections/Implementation/Odeon/images/Directivity/DirectivityPattern.pn
-g>]
-Overfull \hbox (9.91418pt too wide) in paragraph at lines 89--89
-[]\T1/ppl/m/n/10 (2016). Ab-sorp-tion co-ef-fi-cients, Acous-tic-Traf-fic, [On-
-line]. Avail-able: [][]$\T1/pcr/m/n/10 http : / / www . acoustic .
- []
-
-
-Overfull \hbox (2.79759pt too wide) in paragraph at lines 89--89
-[]\T1/ppl/m/n/10 B. B. Mon-son, E. J. Hunter, and B. H. Story, ``Hor-i-zon-tal 
-di-rec-tiv-ity of low- and high-frequency
- []
+LaTeX Warning: Empty bibliography on input line 88.
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 89.
-[15]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 89.
- (./main.aux)
+(./main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 89.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 89.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: FDBB79AA1A9E780BEED6A9166B68FFE1;1023.
-
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
+(rerunfilecheck)             Checksum: 1E720CEB22113A51F197661EB16EEE98;663.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 89.
  ) 
 Here is how much of TeX's memory you used:
- 15027 strings out of 493089
- 245127 string characters out of 6134842
- 693772 words of memory out of 5000000
- 18176 multiletter control sequences out of 15000+600000
- 34793 words of font info for 65 fonts, out of 8000000 for 9000
+ 14671 strings out of 493089
+ 236421 string characters out of 6134842
+ 687311 words of memory out of 5000000
+ 17895 multiletter control sequences out of 15000+600000
+ 22446 words of font info for 44 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 47i,13n,52p,1150b,1040s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 47i,11n,45p,938b,668s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
-exlive/2015/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2
-015/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2015/tex
-mf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2015/texmf-dist
-/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (15 pages, 5408066 bytes).
+exlive/2015/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/
+2015/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb>
+Output written on main.pdf (3 pages, 129928 bytes).
 PDF statistics:
- 384 PDF objects out of 1000 (max. 8388607)
- 319 compressed objects within 4 object streams
- 65 named destinations out of 1000 (max. 500000)
- 178 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 97 PDF objects out of 1000 (max. 8388607)
+ 85 compressed objects within 1 object stream
+ 18 named destinations out of 1000 (max. 500000)
+ 91 words of extra memory for PDF output out of 10000 (max. 10000000)
 

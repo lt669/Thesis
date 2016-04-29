@@ -2,28 +2,20 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1}Acronyms}{1}{section.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.1}ODEON}{2}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.1}Software}{2}{subsection.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {1.1.1}Water Tightness Test}{2}{subsubsection.1.1.1}
+\contentsline {subsubsection}{\numberline {1.1.1}Location Selection}{2}{subsubsection.1.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {1.1.2}Material Selection}{2}{subsubsection.1.1.2}
+\contentsline {subsubsection}{\numberline {1.1.2}Mobility Implementation}{3}{subsubsection.1.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {1.1.2.1}Initial Materials}{3}{paragraph.1.1.2.1}
+\contentsline {paragraph}{\numberline {1.1.2.1}Iteration 1}{3}{paragraph.1.1.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {1.1.2.2}Surface Types}{3}{paragraph.1.1.2.2}
+\contentsline {paragraph}{\numberline {1.1.2.2}Iteration 2}{3}{paragraph.1.1.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {1.1.2.3}RIR Comparison}{5}{paragraph.1.1.2.3}
+\contentsline {paragraph}{\numberline {1.1.2.3}Iteration 3}{3}{paragraph.1.1.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {1.1.2.4}Final Material Choice}{9}{paragraph.1.1.2.4}
+\contentsline {subsection}{\numberline {1.2}Head-Tracking}{3}{subsection.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {1.1.3}Odeon Output Settings}{10}{subsubsection.1.1.3}
+\contentsline {subsection}{\numberline {1.3}Latency Test}{3}{subsection.1.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {1.1.3.1}Ray Settings}{10}{paragraph.1.1.3.1}
-\defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {1.1.3.2}Directivity}{13}{paragraph.1.1.3.2}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {1.1.4}RIR Outputs}{14}{subsubsection.1.1.4}
-\defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {1.1.4.1}RIR Topology Problems}{14}{paragraph.1.1.4.1}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {1.1.5}RIR Locations}{14}{subsubsection.1.1.5}
+\contentsline {subsection}{\numberline {1.4}RIR Trimming}{3}{subsection.1.4}

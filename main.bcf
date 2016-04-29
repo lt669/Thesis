@@ -2212,17 +2212,6 @@
     <bcf:datasource type="file" datatype="bibtex">thesis.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">SU2Odeon</bcf:citekey>
-    <bcf:citekey order="2">plastic</bcf:citekey>
-    <bcf:citekey order="3">mineralFibre</bcf:citekey>
-    <bcf:citekey order="4">Kovalchik</bcf:citekey>
-    <bcf:citekey order="5">odeonManual</bcf:citekey>
-    <bcf:citekey order="6">odeonManual</bcf:citekey>
-    <bcf:citekey order="7">Monson2012b</bcf:citekey>
-    <bcf:citekey order="8">calum</bcf:citekey>
-    <bcf:citekey order="9">calum</bcf:citekey>
-    <bcf:citekey order="10">calum</bcf:citekey>
-    <bcf:citekey order="11">calum</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="none" type="entry" sortscheme="none">
   <bcf:sorting>
