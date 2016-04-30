@@ -16,5 +16,496 @@
   {}
 \endgroup
 
+
+\refsection{0}
+  \sortlist{none}{none}
+    \entry{Huopaniemi2000}{article}{}
+      \name{author}{4}{}{%
+        {{hash=efd3e50bccd9273d1bd4d0eccb0b790d}{Huopaniemi}{H\bibinitperiod}{J}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=a3b3e1d11beaf8e3260d7c9cb937df47}{Savioja}{S\bibinitperiod}{L}{L\bibinitperiod}{}{}{}{}}%
+        {{hash=1318cee3e9f936611425d8bd1ca4fa26}{Lokki}{L\bibinitperiod}{T}{T\bibinitperiod}{}{}{}{}}%
+        {{hash=d746462388ae75ffd4ef5b82a5cc9c3e}{Väänänen}{V\bibinitperiod}{R}{R\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{aa380fc4958a67d14944635daabc4e76}
+      \strng{fullhash}{2d83e06fa828044c7ac705d1c1eddc3d}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proc. European Signal Proc. Conf. (Eusipco'2000)}
+      \field{title}{{Virtual acoustics - applications and technology trends}}
+      \field{year}{2000}
+      \field{pages}{2201\bibrangedash 2208}
+      \range{pages}{8}
+      \verb{file}
+      \verb :Users/Lewis 1/Uni Work/4th Year/Project/Post-Lit Papers/VAE/CR1904.PDF:PDF
+      \endverb
+      \keyw{Auralization}
+    \endentry
+    \entry{Stan2002}{article}{}
+      \name{author}{3}{}{%
+        {{hash=3c887bda3aeb5bb614e4b99173d97dcf}{Stan}{S\bibinitperiod}{GB}{G\bibinitperiod}{}{}{}{}}%
+        {{hash=1f71267593ae1ff7d51fbf087c7b2b7a}{Embrechts}{E\bibinitperiod}{JJ}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=7576b9709d6d549b225e36cc31d26f98}{Archambeau}{A\bibinitperiod}{Dominique}{D\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{159cbb3167a189524b559428d0ac030a}
+      \strng{fullhash}{159cbb3167a189524b559428d0ac030a}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The impulse response of an acoustical space or transducer is one of its most important characterizations. In order to perform the measurement of their impulse responses, four of the most suitable methods are compared: MLS (maximum-length sequence), IRS (inverse repeated sequence), time-stretched pulses, and SineSweep. These methods have already been described in the literature. Nevertheless, the choice of one of them depending on the measurement conditions is critical. Therefore an extensive comparison has been realized. This comparison was done through the implementation and realization of a complete, fast, reliable, and cheap measurement system. Finally, a conclusion for the use of each method according to the principal measurement conditions is presented. It is shown that in the presence of nonwhite noise, the MLS and IRS techniques seem to be more accurate. On the contrary, in quiet environments the logarithmic SineSweep method seems to be the most appropriate.}
+      \field{issn}{1549-4950}
+      \field{journaltitle}{Journal of the Audio Engineering Society}
+      \field{number}{4}
+      \field{title}{{Comparison of different impulse response measurement techniques}}
+      \field{urlday}{25}
+      \field{urlmonth}{04}
+      \field{urlyear}{2016}
+      \field{volume}{50}
+      \field{year}{2002}
+      \field{pages}{249\bibrangedash 262}
+      \range{pages}{14}
+      \verb{file}
+      \verb :Users/Lewis 1/Uni Work/4th Year/Project/Post-Lit Papers/SineSweep/ArticleJAES.pdf:pdf
+      \endverb
+      \verb{url}
+      \verb http://orbi.ulg.ac.be/handle/2268/34825
+      \endverb
+    \endentry
+    \entry{ISO}{article}{}
+      \name{author}{1}{}{%
+        {{hash=3b3ab68c8c2f196fcd1562d8b1e1e0d8}{{Iso\bibnamedelimb 3382-1}}{I\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{3b3ab68c8c2f196fcd1562d8b1e1e0d8}
+      \strng{fullhash}{3b3ab68c8c2f196fcd1562d8b1e1e0d8}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{ISO 3382-1:2009 specifies methods for the measurement of reverberation time and other room acoustical parameters in performance spaces. It describes the measurement procedure, the apparatus needed, the coverage required, and the method of evaluating the data and presenting the test report. It is intended for the application of modern digital measuring techniques and for the evaluation of room acoustical parameters derived from impulse responses.}
+      \field{title}{{Acoustics - Measurement of room acoustic parameters - Part 1: Performance spaces}}
+      \field{volume}{3}
+      \field{year}{2009}
+      \verb{file}
+      \verb :Users/Lewis 1/Uni Work/4th Year/Project/Post-Lit Papers/ISO 3382-2009.pdf:pdf
+      \endverb
+    \endentry
+    \entry{odeon}{online}{}
+      \list{organization}{1}{%
+        {Odeon}%
+      }
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{howpublished}{Software}
+      \field{urlday}{25}
+      \field{urlmonth}{04}
+      \field{urlyear}{2016}
+      \field{year}{2016}
+      \verb{url}
+      \verb http://www.odeon.dk/pdf/ODEONManual.pdf
+      \endverb
+    \endentry
+    \entry{Siltanen2010}{article}{}
+      \name{author}{3}{}{%
+        {{hash=498c826edf9a2805b4c0e67ff68b9d45}{Siltanen}{S\bibinitperiod}{Samuel}{S\bibinitperiod}{}{}{}{}}%
+        {{hash=8668a3e26e443df4dd23ef8c1068afdc}{Lokki}{L\bibinitperiod}{Tapio}{T\bibinitperiod}{}{}{}{}}%
+        {{hash=b50a22c2e1c05593efba03d484c4b4d0}{Savioja}{S\bibinitperiod}{Lauri}{L\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{ec1f2bb116440d885cc524ba182b4396}
+      \strng{fullhash}{ec1f2bb116440d885cc524ba182b4396}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of the International Symposium on Room Acoustics, ISRA 2010}
+      \field{number}{August}
+      \field{title}{{Rays or Waves? Understanding the Strengths and Weaknesses of Computational Room Acoustics Modeling Techniques}}
+      \field{urlday}{25}
+      \field{urlmonth}{04}
+      \field{urlyear}{2016}
+      \field{year}{2010}
+      \field{pages}{1\bibrangedash 6}
+      \range{pages}{6}
+      \verb{file}
+      \verb :Users/Lewis 1/Library/Application Support/Mendeley Desktop/Downloaded/Siltanen, Lokki, Savioja - 2010 - Rays or Waves Understanding the Strengths and Weaknesses of Computational Room Acoustics Modeling T(2).pdf:pdf
+      \endverb
+      \verb{url}
+      \verb http://www.acoustics.asn.au/conference%7B%5C_%7Dproceedings/ICA2010/cdrom-ISRA2010/Papers/O5a.pdf
+      \endverb
+    \endentry
+    \entry{Rindel1995}{article}{}
+      \name{author}{1}{}{%
+        {{hash=eff9057a1e382dc05503081db5bceb15}{Rindel}{R\bibinitperiod}{Jens\bibnamedelima Holger}{J\bibinitperiod\bibinitdelim H\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{eff9057a1e382dc05503081db5bceb15}
+      \strng{fullhash}{eff9057a1e382dc05503081db5bceb15}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Acoustics Australia}
+      \field{title}{{Computer Simulation Techniques for Acoustical Design of Rooms}}
+      \field{urlday}{25}
+      \field{urlmonth}{04}
+      \field{urlyear}{2016}
+      \field{volume}{23}
+      \field{year}{1995}
+      \field{pages}{81\bibrangedash 86}
+      \range{pages}{6}
+      \verb{file}
+      \verb :Users/Lewis 1/Uni Work/4th Year/Project/Write Up/Post-Lit Papers/Odeon/AustralAc{\_}1995{\_}Rindel.pdf:pdf
+      \endverb
+      \verb{url}
+      \verb http://www.odeon.dk/pdf/AustralAc_1995_Rindel.pdf
+      \endverb
+    \endentry
+    \entry{odeonManual}{manual}{}
+      \name{author}{2}{}{%
+        {{hash=3cfb885ac637698a5e3e1b8d9bb4a011}{Christensen}{C\bibinitperiod}{Claus\bibnamedelima Lynge}{C\bibinitperiod\bibinitdelim L\bibinitperiod}{}{}{}{}}%
+        {{hash=2a8f1fe777391b8d07173d8159aac89f}{Koutsouris}{K\bibinitperiod}{George}{G\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {Scion DTU Diplomvej Kgs. Lyngby Denmark}%
+      }
+      \strng{namehash}{41db1ff97e4f8e7ecb696ad93f561184}
+      \strng{fullhash}{41db1ff97e4f8e7ecb696ad93f561184}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{ODEON User's Manual}}
+      \field{urlday}{25}
+      \field{urlmonth}{04}
+      \field{urlyear}{2016}
+      \field{year}{2015}
+      \verb{file}
+      \verb :Users/Lewis 1/Library/Application Support/Mendeley Desktop/Downloaded/Christensen, Koutsouris - 2015 - ODEON User's Manual(2).pdf:pdf
+      \endverb
+      \verb{url}
+      \verb http://www.odeon.dk/pdf/ODEONManual12.pdf
+      \endverb
+    \endentry
+    \entry{SKU}{online}{}
+      \name{author}{1}{}{%
+        {{hash=8b36e9207c24c76e6719268e49201d94}{Google}{G\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{fullhash}{8b36e9207c24c76e6719268e49201d94}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Software}
+      \field{title}{Google SketchUp}
+      \field{urlday}{25}
+      \field{urlmonth}{04}
+      \field{urlyear}{2016}
+      \field{year}{2015}
+      \verb{url}
+      \verb http://www.sketchup.com/
+      \endverb
+    \endentry
+    \entry{SU2Odeon}{online}{}
+      \list{organization}{1}{%
+        {Odeon}%
+      }
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Software}
+      \field{title}{SU2Odeon}
+      \field{urlday}{25}
+      \field{urlmonth}{04}
+      \field{urlyear}{2016}
+      \field{year}{2016}
+      \verb{url}
+      \verb http://www.odeon.dk/su2odeon-plugin-trimble-sketchup
+      \endverb
+    \endentry
+    \entry{max}{online}{}
+      \list{organization}{1}{%
+        {Cycling74}%
+      }
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Software}
+      \field{title}{Max/MSP}
+      \field{urlday}{25}
+      \field{urlmonth}{04}
+      \field{urlyear}{2016}
+      \field{year}{2016}
+      \verb{url}
+      \verb https://cycling74.com/products/max/
+      \endverb
+    \endentry
+    \entry{spat}{online}{}
+      \list{organization}{1}{%
+        {IRCAM Centre Pompidou}%
+      }
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Software}
+      \field{title}{Spat}
+      \field{urlday}{25}
+      \field{urlmonth}{04}
+      \field{urlyear}{2016}
+      \field{year}{2016}
+      \verb{url}
+      \verb http://forumnet.ircam.fr/product/spat-en/
+      \endverb
+    \endentry
+    \entry{Brereton2014}{article}{}
+      \name{author}{2}{}{%
+        {{hash=162910466367ad3de6353be6735b4aff}{Brereton}{B\bibinitperiod}{Judith\bibnamedelima Sara}{J\bibinitperiod\bibinitdelim S\bibinitperiod}{}{}{}{}}%
+        {{hash=6592806c0fc014c1e33299458f3413d5}{Hons}{H\bibinitperiod}{B\bibnamedelima A}{B\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{b48c1be0536c035cbe4edb0aad063f0b}
+      \strng{fullhash}{b48c1be0536c035cbe4edb0aad063f0b}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{number}{August}
+      \field{title}{{Singing in Space ( s ): Singing performance in real and virtual acoustic environments — Singers ’ evaluation , performance analysis and listeners ’ perception .}}
+      \field{year}{2014}
+      \verb{file}
+      \verb :Users/Lewis 1/Library/Application Support/Mendeley Desktop/Downloaded/Brereton, Hons - 2014 - Singing in Space ( s ) Singing performance in real and virtual acoustic environments — Singers ’ evaluati(2).pdf:pdf
+      \endverb
+    \endentry
+    \entry{oculus}{online}{}
+      \list{organization}{1}{%
+        {Oculus}%
+      }
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{howpublished}{Website}
+      \field{urlday}{25}
+      \field{urlmonth}{04}
+      \field{urlyear}{2016}
+      \field{year}{2016}
+      \verb{url}
+      \verb https://www.oculus.com/en-us/
+      \endverb
+    \endentry
+    \entry{Savioja1999}{article}{}
+      \name{author}{4}{}{%
+        {{hash=b50a22c2e1c05593efba03d484c4b4d0}{Savioja}{S\bibinitperiod}{Lauri}{L\bibinitperiod}{}{}{}{}}%
+        {{hash=29d74f37601ecf5f04d69141f517fdfa}{Huopaniemi}{H\bibinitperiod}{Jyri}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=8668a3e26e443df4dd23ef8c1068afdc}{Lokki}{L\bibinitperiod}{Tapio}{T\bibinitperiod}{}{}{}{}}%
+        {{hash=73d8af6604e6a3f49994864ce64fa724}{Väänänen}{V\bibinitperiod}{Ritta}{R\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{122a9270f72a827e2a1f3480f176ec2d}
+      \strng{fullhash}{c0a66951ec3c0a09ad08d118ff2e7a1a}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{J. Audio Eng. Soc}
+      \field{number}{9}
+      \field{title}{Creating Interactive Virtual Acoustic Environments}
+      \field{urlday}{25}
+      \field{urlmonth}{04}
+      \field{urlyear}{2016}
+      \field{volume}{47}
+      \field{year}{1999}
+      \field{pages}{675\bibrangedash 705}
+      \range{pages}{31}
+      \verb{url}
+      \verb http://www.aes.org/e-lib/browse.cfm?elib=12095
+      \endverb
+    \endentry
+    \entry{dewalt}{manual}{}
+      \list{organization}{1}{%
+        {DeWalt}%
+      }
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Manual}
+      \field{title}{DeWalt Laser Distance Measurer Manual}
+      \field{urlday}{25}
+      \field{urlmonth}{04}
+      \field{urlyear}{2016}
+      \field{year}{2016}
+      \verb{url}
+      \verb http://service.dewalt.co.uk/PDMSDocuments/EU/Docs//docpdf/dw03101-typ1_en.pdf
+      \endverb
+      \warn{\item Datamodel: Entry 'dewalt' (thesis.bib): Invalid format '' of date field 'date' - ignoring}
+    \endentry
+    \entry{plastic}{online}{}
+      \list{organization}{1}{%
+        {AcousticTraffic}%
+      }
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Website}
+      \field{title}{Absorption Coefficients}
+      \field{urlday}{25}
+      \field{urlmonth}{04}
+      \field{urlyear}{2016}
+      \field{year}{2016}
+      \verb{url}
+      \verb http://www.acoustic.ua/st/web_absorption_data_eng.pdf
+      \endverb
+    \endentry
+    \entry{mineralFibre}{online}{}
+      \list{organization}{1}{%
+        {BemBook}%
+      }
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{howpublished}{Website}
+      \field{urlday}{25}
+      \field{urlmonth}{04}
+      \field{urlyear}{2016}
+      \field{year}{2016}
+      \verb{url}
+      \verb http://www.bembook.ibpsa.us/index.php?title=Absorption_Coefficient&action=edit
+      \endverb
+    \endentry
+    \entry{Kovalchik}{article}{}
+      \name{author}{4}{}{%
+        {{hash=0a7dca0d1a09d8566382f7bf773e55d6}{Kovalchik}{K\bibinitperiod}{P}{P\bibinitperiod}{}{}{}{}}%
+        {{hash=6c8846efcf4f09f1a703213dc3b2aa43}{Matetic}{M\bibinitperiod}{R}{R\bibinitperiod}{}{}{}{}}%
+        {{hash=4a6ecdbb82702190711310c3bb7a7ee0}{Peng}{P\bibinitperiod}{S}{S\bibinitperiod}{}{}{}{}}%
+        {{hash=1aca3ead7458bc0245c910daaee84c8c}{Cole}{C\bibinitperiod}{G}{G\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{644e36890d0bad47566fd04ad107ce8d}
+      \strng{fullhash}{5d5dbad8f715a2a28bd69f77680e4c14}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Measurement method for determining absorption coefficients for underground mines}}
+      \field{urlday}{25}
+      \field{urlmonth}{04}
+      \field{urlyear}{2016}
+      \field{pages}{1\bibrangedash 4}
+      \range{pages}{4}
+      \verb{file}
+      \verb :Users/Lewis 1/Library/Application Support/Mendeley Desktop/Downloaded/Kovalchik et al. - Unknown - Measurement method for determining absorption coefficients for underground mines.pdf:pdf
+      \endverb
+      \verb{url}
+      \verb http://www.cdc.gov/niosh/mining/userfiles/works/pdfs/ammfd.pdf
+      \endverb
+    \endentry
+    \entry{Monson2012b}{article}{}
+      \name{author}{3}{}{%
+        {{hash=399b7453dd0a1835cce5b40e8fdad291}{Monson}{M\bibinitperiod}{Brian\bibnamedelima B}{B\bibinitperiod\bibinitdelim B\bibinitperiod}{}{}{}{}}%
+        {{hash=dee3eecffba45392c1690bc4f2b2375a}{Hunter}{H\bibinitperiod}{Eric\bibnamedelima J}{E\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+        {{hash=ca8e84610e84515304ab0653d9e99ba3}{Story}{S\bibinitperiod}{Brad\bibnamedelima H}{B\bibinitperiod\bibinitdelim H\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{d97920ad1f74b8e9e6343150b18d9200}
+      \strng{fullhash}{d97920ad1f74b8e9e6343150b18d9200}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1520-8524}
+      \field{journaltitle}{The Journal of the Acoustical Society of America}
+      \field{number}{1}
+      \field{title}{{Horizontal directivity of low- and high-frequency energy in speech and singing.}}
+      \field{volume}{132}
+      \field{year}{2012}
+      \field{pages}{433\bibrangedash 41}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1121/1.4725963
+      \endverb
+      \verb{file}
+      \verb :Users/Lewis 1/Uni Work/4th Year/Project/Directivity/horizontal{\_}directivity{\_}Monson.pdf:pdf
+      \endverb
+    \endentry
+    \entry{calum}{unpublished}{}
+      \name{author}{1}{}{%
+        {{hash=8037ec3feb3c4576eef201c6ce2b864d}{Armstrong}{A\bibinitperiod}{Calum}{C\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{8037ec3feb3c4576eef201c6ce2b864d}
+      \strng{fullhash}{8037ec3feb3c4576eef201c6ce2b864d}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{(Unpublished Masters Dissertation, University of York, May, 2016)}
+      \field{title}{Noisy Fire Hazard}
+    \endentry
+    \entry{odeonEmail}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=cb50f92abb883437070abbef360527c9}{Thresh}{T\bibinitperiod}{Lewis}{L\bibinitperiod}{}{}{}{}}%
+      }
+      \list{organization}{1}{%
+        {Odeon Support}%
+      }
+      \strng{namehash}{cb50f92abb883437070abbef360527c9}
+      \strng{fullhash}{cb50f92abb883437070abbef360527c9}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Personal Email}
+      \field{month}{03}
+      \field{title}{Impulse Response Analysis Question}
+      \field{year}{2016}
+      \warn{\item Datamodel: Entry 'odeonEmail' (thesis.bib): Invalid format '22' of date field 'date' - ignoring}
+    \endentry
+    \entry{genelec}{manual}{}
+      \list{organization}{1}{%
+        {Genelec}%
+      }
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Datasheet}
+      \field{title}{Genelec 8040B Active Monitoring System}
+      \field{urlday}{25}
+      \field{urlmonth}{04}
+      \field{urlyear}{2016}
+      \field{year}{2016}
+      \verb{url}
+      \verb http://www.genelec.com/sites/default/files/media/Studio%20monitors/8000%20Series%20Studio%20Monitors/8040B/genelec_8040b_datasheet.pdf
+      \endverb
+      \warn{\item Datamodel: Entry 'genelec' (thesis.bib): Invalid format '' of date field 'date' - ignoring}
+    \endentry
+    \entry{st450}{online}{}
+      \list{organization}{1}{%
+        {TSL Products}%
+      }
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Website}
+      \field{title}{ST450 MKII SoundField Portable}
+      \field{urlday}{25}
+      \field{urlmonth}{04}
+      \field{urlyear}{2016}
+      \field{year}{2016}
+      \verb{url}
+      \verb http://www.tslproducts.com/soundfield/st450-soundfield-portable/#spec-tab
+      \endverb
+    \endentry
+    \entry{sineSweep}{online}{}
+      \list{organization}{1}{%
+        {University of York}%
+      }
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Website}
+      \field{title}{Sine sweep matlab script}
+      \field{urlday}{25}
+      \field{urlmonth}{04}
+      \field{urlyear}{2016}
+      \field{year}{2016}
+      \verb{url}
+      \verb http://www.elec.york.ac.uk/internal_web/gsp/amt/modules/Audio_Acoustics_and_Applications/
+      \endverb
+    \endentry
+  \endsortlist
+  \missing{soundFieldMic}
+\endrefsection
 \endinput
 

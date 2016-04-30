@@ -422,7 +422,7 @@
 
 		\subsubsection{RIR Locations}
 			%How many RIRs and where?
-			As discussed in section~\nameref{Background:RIRPositions}, \ac{RIR}'s were to be taken every 1m starting from the centre of the room and should form a grid (rectangular or square). However, there were some positions within the room that would cause some \ac{RIR} positions to be invalid. These positions were location anywhere the sound source and receiver were placed closer than 0.75m next to a surface. This is because the loudspeakers in the \ac{VSS} are placed 1.5m away from the centre, where the user will be stood meaning that any sound that has to travel less than 1.5m the reach the receiver will be impossible to reproduce at the correct time within the \ac{VSS}. If a source and receiver were to be placed placed closer than 0.75m from a wall, sound would have to travel less than 1.5m before reaching the receiver. When taking this into account, figure~\ref{incorrectRIRPositions} shows the positions that would be invalid due to them being placed too close to a surface, marked as U, V, W and Z. W represents a large space of invalid \ac{RIR} positions and they would all be too close to the table surfaces.
+			As discussed in section~\nameref{Background:RIRPositions}, \ac{RIR}'s were to be taken every 1m starting from the centre of the room and should form a grid (rectangular or square). However, there were some positions within the room that would cause some \ac{RIR} positions to be invalid. The location of these invalid positions could be found anywhere the sound source and receiver were placed closer than 0.75m next to a surface. This is because the loudspeakers in the \ac{VSS} are placed 1.5m away from the centre, where the user will be stood meaning that any sound that has to travel less than 1.5m the reach the receiver will be impossible to reproduce at the correct time within the \ac{VSS}. If a source and receiver were to be placed placed closer than 0.75m from a wall, sound would have to travel less than 1.5m before reaching the receiver. When taking this into account, figure~\ref{incorrectRIRPositions} shows the positions that would be invalid due to them being placed too close to a surface, marked as U, V, W and Z. W represents a large space of invalid \ac{RIR} positions and they would all be too close to the table surfaces.
 
 			%-------------RIR Invalid Positions Image-------------%
 			\begin{figure}[H]
@@ -435,7 +435,15 @@
 
 			It was also later discovered (see section \nameref{latency}) that the latency due to the software used would mean that the beginning of the \ac{RIR}'s would have to be trimmed anyway, avoiding this issue.
 
-			There are several \ac{RIR}'s in figure~\ref{incorrectRIRPositions} labeled X and Y. These positions would still produce valid \ac{RIR}'s, however they were not included in the final grid as they would cause inconsistencies in the positions available to the user. All pther blue crosses in figure~\ref{incorrectRIRPositions} were also included in the final \ac{RIR} grid, producing a total of 240 available positions.
+			There are several \ac{RIR}'s in figure~\ref{incorrectRIRPositions} labeled X and Y. These positions would still produce valid \ac{RIR}'s, however they were not included in the final grid as they would cause inconsistencies in the positions available to the user. All other blue crosses in figure~\ref{incorrectRIRPositions} were also included in the final \ac{RIR} grid, producing a grid 15x16, totalling 240 available positions. Figure~\ref{bulkRIRs} shows the final maximum avilable \ac{RIR}'s locations.
+
+				%-------------RIR Invalid Positions Image-------------%
+			\begin{figure}[H]
+				\centerline{\includegraphics[scale = 0.4]{Sections/Implementation/Odeon/images/RIRPositions/RIR_Position_Bulk.png}}
+				\caption{Top down view of the Hendrix Hall model showing the maximum available \ac{RIR} locations}
+				\label{bulkRIRs}
+			\end{figure}
+
 
 			%Table doesn't cause incorrect RIR
 			The tables present within the room so not cause an issue 
@@ -456,6 +464,14 @@
 			A naming system was used for the \ac{RIR} files to indicate which grid positions they were taken from and which direction they are facing. For example: `008\_0.wav' is is an \ac{RIR} from grid position 8 with 0\textdegree~rotation (facing the blackboards) where `128\_90' is taken from grid position 128 and has a 90\textdegree~rotation (facing the left side wall).
 
 			\textbf{Files available: SupportingFiles/sourecscripts/}
+
+	\subsection{File Sorting (Extra Grids)}
+
+		As described in section~\nameref{Background:RIRPositions}, user test \#3 requires there to be a grid of \ac{RIR}'s that are separated by a variety of distances. To achieve this, four more \ac{RIR} grids were produced with an increasing distance between the \ac{RIR}'s in each one (2m - 5m). This was done by first finding which \ac{RIR}'s would be included in each of the new grids by starting from the centre of the first grid (position 128) and moving outwards. By doing this, it was possible to find the first \ac{RIR} positions of each new grid. Usingthig, 4 Matlab algorithms were written to extract the appropriate \ac{RIR}'s required for each new gird, and rename them starting from 001 up to the maximum number of \ac{RIR}'s in each grid.
+
+		 For this, the greatest distance between \ac{RIR} locations was found. This was done by starting at the centre of the \ac{RIR} grid (position 128) 
+
+		MATLAB SCRIPT
 
 	
 \end{document}

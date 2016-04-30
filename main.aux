@@ -29,20 +29,426 @@
 \newacro{TO}[\AC@hyperlink{TO}{TO}]{Transition Order}
 \newacro{VBS}[\AC@hyperlink{VBS}{VBS}]{Vector Based Scattering Method}
 \newacro{LR's}[\AC@hyperlink{LR's}{LR's}]{Late Rays}
-\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {1.1}Software}{2}{subsection.1.1}}
-\AC@undonewlabel{acro:VSS}
-\newlabel{acro:VSS}{{1.1}{2}{Software}{section*.1}{}}
-\acronymused{VSS}
-\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsubsection}{\numberline {1.1.1}Location Selection}{2}{subsubsection.1.1.1}}
-\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Flow diagram of the location selection software design\relax }}{2}{figure.caption.2}}
+\abx@aux@cite{Huopaniemi2000}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {section}{\numberline {2}Introduction}{4}{section.2}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Project Overview}{4}{subsection.2.1}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Project Motivation}{4}{subsection.2.2}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Background}{4}{subsection.2.3}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.3.1}Virtual Acoustic Environments}{4}{subsubsection.2.3.1}}
+\abx@aux@cite{Stan2002}
+\abx@aux@cite{ISO}
+\abx@aux@cite{soundFieldMic}
+\abx@aux@cite{odeon}
+\AC@undonewlabel{acro:VAE}
+\newlabel{acro:VAE}{{2.3.1}{5}{Virtual Acoustic Environments}{section*.1}{}}
+\acronymused{VAE}
+\acronymused{VAE}
+\AC@undonewlabel{acro:RIR}
+\newlabel{acro:RIR}{{2.3.1}{5}{Virtual Acoustic Environments}{section*.2}{}}
+\acronymused{RIR}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.3.2}Room Impulse Responses}{5}{subsubsection.2.3.2}}
+\acronymused{RIR}
+\acronymused{RIR}
+\acronymused{RIR}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.3.3}Ambisonics}{5}{subsubsection.2.3.3}}
+\abx@aux@cite{Siltanen2010}
+\abx@aux@cite{Rindel1995}
+\abx@aux@cite{odeonManual}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces \textbf  {Left}: Picture of a Soundfield microphone with coincident capsules exposed \textbf  {Right}: Soundfield microphone polar pattern \cite {soundFieldMic}\relax }}{6}{figure.caption.3}}
 \providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
-\newlabel{flowDiagram}{{1}{2}{Flow diagram of the location selection software design\relax }{figure.caption.2}{}}
-\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Flow diagram of the location selection software design\relax }}{3}{figure.caption.3}}
-\newlabel{lcd}{{2}{3}{Flow diagram of the location selection software design\relax }{figure.caption.3}{}}
-\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsubsection}{\numberline {1.1.2}Mobility Implementation}{3}{subsubsection.1.1.2}}
-\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {paragraph}{\numberline {1.1.2.1}Iteration 1}{3}{paragraph.1.1.2.1}}
-\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {paragraph}{\numberline {1.1.2.2}Iteration 2}{3}{paragraph.1.1.2.2}}
-\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {paragraph}{\numberline {1.1.2.3}Iteration 3}{3}{paragraph.1.1.2.3}}
-\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {1.2}Head-Tracking}{3}{subsection.1.2}}
-\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {1.3}Latency Test}{3}{subsection.1.3}}
-\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {1.4}RIR Trimming}{3}{subsection.1.4}}
+\newlabel{sfMic}{{1}{6}{\textbf {Left}: Picture of a Soundfield microphone with coincident capsules exposed \textbf {Right}: Soundfield microphone polar pattern \cite {soundFieldMic}\relax }{figure.caption.3}{}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {2.4}Software Overview}{6}{subsection.2.4}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.4.1}ODEON}{6}{subsubsection.2.4.1}}
+\newlabel{Software:Odeon}{{2.4.1}{6}{ODEON}{subsubsection.2.4.1}{}}
+\acronymused{RIR}
+\acronymused{RIR}
+\AC@undonewlabel{acro:ISM}
+\newlabel{acro:ISM}{{2.4.1}{6}{ODEON}{section*.4}{}}
+\acronymused{ISM}
+\acronymused{RIR}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {paragraph}{\numberline {2.4.1.1}Ray-Tracing}{6}{paragraph.2.4.1.1}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {paragraph}{\numberline {2.4.1.2}Image Source Method}{7}{paragraph.2.4.1.2}}
+\acronymused{ISM}
+\acronymused{ISM}
+\acronymused{ISM}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Illustration of the image source method (by the author)\relax }}{7}{figure.caption.5}}
+\newlabel{ISMPic}{{2}{7}{Illustration of the image source method (by the author)\relax }{figure.caption.5}{}}
+\abx@aux@cite{SKU}
+\abx@aux@cite{SU2Odeon}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {paragraph}{\numberline {2.4.1.3}Hybrid Method}{8}{paragraph.2.4.1.3}}
+\acronymused{ISM}
+\acronymused{ISM}
+\AC@undonewlabel{acro:TO}
+\newlabel{acro:TO}{{2.4.1.3}{8}{Hybrid Method}{section*.6}{}}
+\acronymused{TO}
+\acronymused{TO}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {paragraph}{\numberline {2.4.1.4}Scattering}{8}{paragraph.2.4.1.4}}
+\newlabel{background:scattering}{{2.4.1.4}{8}{Scattering}{paragraph.2.4.1.4}{}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {paragraph}{\numberline {2.4.1.5}Room Modelling}{8}{paragraph.2.4.1.5}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {paragraph}{\numberline {2.4.1.6}Material Selection}{8}{paragraph.2.4.1.6}}
+\acronymused{VAE}
+\abx@aux@cite{max}
+\abx@aux@cite{spat}
+\abx@aux@cite{Brereton2014}
+\abx@aux@cite{oculus}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.4.2}Google SketchUp}{9}{subsubsection.2.4.2}}
+\newlabel{GSU}{{2.4.2}{9}{Google SketchUp}{subsubsection.2.4.2}{}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.4.3}Max/MSP}{9}{subsubsection.2.4.3}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {paragraph}{\numberline {2.4.3.1}Spat}{9}{paragraph.2.4.3.1}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {2.5}Project Description}{9}{subsection.2.5}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.5.1}The Virtual Singing Studio}{9}{subsubsection.2.5.1}}
+\AC@undonewlabel{acro:VSS}
+\newlabel{acro:VSS}{{2.5.1}{9}{The Virtual Singing Studio}{section*.7}{}}
+\acronymused{VSS}
+\acronymused{RIR}
+\acronymused{VAE}
+\acronymused{VSS}
+\abx@aux@cite{Savioja1999}
+\acronymused{RIR}
+\acronymused{RIR}
+\acronymused{RIR}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.5.2}Project Motivation}{10}{subsubsection.2.5.2}}
+\acronymused{VSS}
+\acronymused{RIR}
+\acronymused{RIR}
+\acronymused{VSS}
+\acronymused{RIR}
+\acronymused{RIR}
+\acronymused{VSS}
+\acronymused{VAE}
+\acronymused{VAE}
+\acronymused{RIR}
+\acronymused{RIR}
+\acronymused{RIR}
+\acronymused{RIR}
+\acronymused{VAE}
+\acronymused{RIR}
+\acronymused{VSS}
+\acronymused{VSS}
+\acronymused{RIR}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.5.3}Project Objectives}{11}{subsubsection.2.5.3}}
+\acronymused{VAE}
+\acronymused{RIR}
+\acronymused{RIR}
+\acronymused{RIR}
+\acronymused{RIR}
+\acronymused{RIR}
+\acronymused{VAE}
+\acronymused{RIR}
+\acronymused{VAE}
+\acronymused{VAE}
+\abx@aux@cite{dewalt}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.5.4}Project Overview}{12}{subsubsection.2.5.4}}
+\acronymused{VAE}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.5.5}Room Choice}{12}{subsubsection.2.5.5}}
+\acronymused{RIR}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.5.6}User Test Planning}{12}{subsubsection.2.5.6}}
+\newlabel{Background:RIRPositions}{{2.5.6}{12}{User Test Planning}{subsubsection.2.5.6}{}}
+\acronymused{RIR}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {section}{\numberline {3}Implementation}{12}{section.3}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Room Modelling}{13}{subsection.3.1}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.1.1}Room Measurements}{13}{subsubsection.3.1.1}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.1.2}Designing the room}{13}{subsubsection.3.1.2}}
+\newlabel{designRoom}{{3.1.2}{13}{Designing the room}{subsubsection.3.1.2}{}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Early iteration of the Hendrix Hall SketchUp model with a few early wall protrusions being modelled such as the entrance door\relax }}{13}{figure.caption.8}}
+\newlabel{sku1}{{3}{13}{Early iteration of the Hendrix Hall SketchUp model with a few early wall protrusions being modelled such as the entrance door\relax }{figure.caption.8}{}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Initial models of the lights and projector hangings made of a large number of surfaces\relax }}{14}{figure.caption.9}}
+\newlabel{surfaces}{{4}{14}{Initial models of the lights and projector hangings made of a large number of surfaces\relax }{figure.caption.9}{}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Simplified models of the lights and projector hangings containing a smaller number of surfaces\relax }}{15}{figure.caption.10}}
+\newlabel{simpleSurfaces}{{5}{15}{Simplified models of the lights and projector hangings containing a smaller number of surfaces\relax }{figure.caption.10}{}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}ODEON}{15}{subsection.3.2}}
+\newlabel{odeon}{{3.2}{15}{ODEON}{subsection.3.2}{}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.1}Water Tightness Test}{15}{subsubsection.3.2.1}}
+\abx@aux@cite{plastic}
+\abx@aux@cite{mineralFibre}
+\abx@aux@cite{Kovalchik}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Hendrix Hall model undergoing a water tightness test in Odeon.\relax }}{16}{figure.caption.12}}
+\newlabel{watertight}{{7}{16}{Hendrix Hall model undergoing a water tightness test in Odeon.\relax }{figure.caption.12}{}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.2}Material Selection}{16}{subsubsection.3.2.2}}
+\newlabel{odeon:materials}{{3.2.2}{16}{Material Selection}{subsubsection.3.2.2}{}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {paragraph}{\numberline {3.2.2.1}Initial Materials}{16}{paragraph.3.2.2.1}}
+\@writefile{lot}{\defcounter {refsection}{0}\relax }\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Table of materials for which absorption coefficients were sought and added to Odeon's material list.\relax }}{17}{table.caption.13}}
+\newlabel{materialTable}{{1}{17}{Table of materials for which absorption coefficients were sought and added to Odeon's material list.\relax }{table.caption.13}{}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Absorption coefficient editing window in Odeon used to add unavailable materials.\relax }}{17}{figure.caption.14}}
+\newlabel{materialEdit}{{8}{17}{Absorption coefficient editing window in Odeon used to add unavailable materials.\relax }{figure.caption.14}{}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {paragraph}{\numberline {3.2.2.2}Surface Types}{17}{paragraph.3.2.2.2}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Contracted seating in Hendrix Hall showing gaps in the structure.\relax }}{18}{figure.caption.15}}
+\newlabel{seating}{{9}{18}{Contracted seating in Hendrix Hall showing gaps in the structure.\relax }{figure.caption.15}{}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Blue circle highlights a ray penetrating the modelled seating area, reflecting 3 times and escaping the seating area due to the transparency value set.\relax }}{18}{figure.caption.16}}
+\newlabel{transparency}{{10}{18}{Blue circle highlights a ray penetrating the modelled seating area, reflecting 3 times and escaping the seating area due to the transparency value set.\relax }{figure.caption.16}{}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces A table provided in the Odeon Manual \cite {odeonManual} that can be used to set an approximate scattering coefficient for surfaces similar to those described\relax }}{19}{figure.caption.17}}
+\newlabel{odeonTable}{{11}{19}{A table provided in the Odeon Manual \cite {odeonManual} that can be used to set an approximate scattering coefficient for surfaces similar to those described\relax }{figure.caption.17}{}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {paragraph}{\numberline {3.2.2.3}RIR Comparison}{19}{paragraph.3.2.2.3}}
+\acronymused{RIR}
+\acronymused{RIR}
+\acronymused{RIR}
+\acronymused{RIR}
+\acronymused{RIR}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces Spectrograms of real \ac {RIR} (top) against spectrogram of first rendered \ac {RIR} from Odeon.\relax }}{19}{figure.caption.18}}
+\acronymused{RIR}
+\acronymused{RIR}
+\newlabel{compareOriginal}{{12}{19}{Spectrograms of real \ac {RIR} (top) against spectrogram of first rendered \ac {RIR} from Odeon.\relax }{figure.caption.18}{}}
+\acronymused{RIR}
+\acronymused{RIR}
+\acronymused{RIR}
+\acronymused{RIR}
+\acronymused{RIR}
+\@writefile{lot}{\defcounter {refsection}{0}\relax }\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces List of audio samples with corresponding spectrogram title in figure\nobreakspace  {}\ref  {compareAll} and the edits made for each one.\relax }}{20}{table.caption.19}}
+\newlabel{materialTable}{{2}{20}{List of audio samples with corresponding spectrogram title in figure~\ref {compareAll} and the edits made for each one.\relax }{table.caption.19}{}}
+\acronymused{RIR}
+\acronymused{RIR}
+\acronymused{RIR}
+\acronymused{RIR}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {13}{\ignorespaces Spectrograms of real \ac {RIR} (top) against spectrogram of several rendered \ac {RIR} from Odeon with different material absorption coefficients where ODEON (bottom) shows the final \ac {RIR} used.\relax }}{21}{figure.caption.20}}
+\acronymused{RIR}
+\acronymused{RIR}
+\acronymused{RIR}
+\newlabel{compareAll}{{13}{21}{Spectrograms of real \ac {RIR} (top) against spectrogram of several rendered \ac {RIR} from Odeon with different material absorption coefficients where ODEON (bottom) shows the final \ac {RIR} used.\relax }{figure.caption.20}{}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {14}{\ignorespaces Spectrograms of real \ac {RIR} (top) against Odeon \ac {RIR} from Odeon with final material absorption coefficients.\relax }}{21}{figure.caption.21}}
+\acronymused{RIR}
+\acronymused{RIR}
+\newlabel{compareNew}{{14}{21}{Spectrograms of real \ac {RIR} (top) against Odeon \ac {RIR} from Odeon with final material absorption coefficients.\relax }{figure.caption.21}{}}
+\acronymused{RIR}
+\acronymused{RIR}
+\acronymused{RIR}
+\acronymused{RIR}
+\acronymused{RIR}
+\acronymused{RIR}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {15}{\ignorespaces Spectrograms of correct Odeon \ac {RIR}'s with original materials (top) and final materials (center) to compare against real RIR that has been level calibrated (bottom).\relax }}{22}{figure.caption.22}}
+\acronymused{RIR}
+\newlabel{compareCorrect}{{15}{22}{Spectrograms of correct Odeon \ac {RIR}'s with original materials (top) and final materials (center) to compare against real RIR that has been level calibrated (bottom).\relax }{figure.caption.22}{}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {paragraph}{\numberline {3.2.2.4}Final Material Choice}{23}{paragraph.3.2.2.4}}
+\acronymused{RIR}
+\acronymused{RIR}
+\acronymused{RIR}
+\acronymused{RIR}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.3}Odeon Output Settings}{23}{subsubsection.3.2.3}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {paragraph}{\numberline {3.2.3.1}Ray Settings}{23}{paragraph.3.2.3.1}}
+\acronymused{RIR}
+\AC@undonewlabel{acro:VBS}
+\newlabel{acro:VBS}{{3.2.3.1}{23}{Ray Settings}{section*.23}{}}
+\acronymused{VBS}
+\acronymused{TO}
+\acronymused{ISM}
+\AC@undonewlabel{acro:LR's}
+\newlabel{acro:LR's}{{3.2.3.1}{23}{Ray Settings}{section*.24}{}}
+\acronymused{LR's}
+\acronymused{TO}
+\acronymused{LR's}
+\acronymused{TO}
+\acronymused{LR's}
+\acronymused{RIR}
+\acronymused{RIR}
+\acronymused{RIR}
+\acronymused{TO}
+\acronymused{LR's}
+\acronymused{TO}
+\acronymused{LR's}
+\acronymused{RIR}
+\acronymused{RIR}
+\acronymused{TO}
+\acronymused{LR's}
+\@writefile{lot}{\defcounter {refsection}{0}\relax }\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Table of audio samples with the corresponding settings information and graph name\relax }}{24}{table.caption.25}}
+\newlabel{odeonSettingsTable}{{3}{24}{Table of audio samples with the corresponding settings information and graph name\relax }{table.caption.25}{}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {16}{\ignorespaces \ac {RIR}'s rendered using different \ac {TO} and late ray values\relax }}{24}{figure.caption.26}}
+\acronymused{RIR}
+\acronymused{TO}
+\newlabel{odeonSettingsRIR}{{16}{24}{\ac {RIR}'s rendered using different \ac {TO} and late ray values\relax }{figure.caption.26}{}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {17}{\ignorespaces Zoomed in section indicated by the red dashed line in figure\nobreakspace  {}\ref  {odeonSettingsRIR}\relax }}{25}{figure.caption.27}}
+\newlabel{odeonSettingsRIRZoomed}{{17}{25}{Zoomed in section indicated by the red dashed line in figure~\ref {odeonSettingsRIR}\relax }{figure.caption.27}{}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {18}{\ignorespaces Zoomed in section showing the effects of using a high \ac {TO} value\relax }}{25}{figure.caption.28}}
+\acronymused{TO}
+\newlabel{odeonSettings_TOZoomed}{{18}{25}{Zoomed in section showing the effects of using a high \ac {TO} value\relax }{figure.caption.28}{}}
+\acronymused{LR's}
+\acronymused{LR's}
+\acronymused{RIR}
+\acronymused{RIR}
+\acronymused{RIR}
+\acronymused{RIR}
+\acronymused{LR's}
+\acronymused{RIR}
+\acronymused{TO}
+\acronymused{RIR}
+\acronymused{TO}
+\acronymused{TO}
+\acronymused{ISM}
+\acronymused{TO}
+\acronymused{RIR}
+\acronymused{RIR}
+\acronymused{RIR}
+\acronymused{RIR}
+\acronymused{RIR}
+\acronymused{TO}
+\acronymused{TO}
+\acronymused{TO}
+\acronymused{RIR}
+\acronymused{LR's}
+\acronymused{RIR}
+\acronymused{LR's}
+\acronymused{VSS}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {paragraph}{\numberline {3.2.3.2}Directivity}{26}{paragraph.3.2.3.2}}
+\abx@aux@cite{Monson2012b}
+\abx@aux@cite{calum}
+\acronymused{RIR}
+\acronymused{RIR}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {19}{\ignorespaces Directivity pattern editor window in Odeon showing the directivity pattern for the horizontal plane (left) and the vertical plane (right) for the 8Khz octave band using data from \cite {calum}\relax }}{27}{figure.caption.29}}
+\newlabel{directivity}{{19}{27}{Directivity pattern editor window in Odeon showing the directivity pattern for the horizontal plane (left) and the vertical plane (right) for the 8Khz octave band using data from \cite {calum}\relax }{figure.caption.29}{}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.4}RIR Topology Problems}{27}{subsubsection.3.2.4}}
+\newlabel{odeonError}{{3.2.4}{27}{RIR Topology Problems}{subsubsection.3.2.4}{}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {paragraph}{\numberline {3.2.4.1}RIR Analysis}{27}{paragraph.3.2.4.1}}
+\acronymused{RIR}
+\acronymused{RIR}
+\acronymused{RIR}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {20}{\ignorespaces Initial \ac {RIR} output with receiver 5cm above sound source showing \ac {RIR}'s from grid positions 76, 77 and 83\relax }}{28}{figure.caption.30}}
+\acronymused{RIR}
+\acronymused{RIR}
+\newlabel{incorrectRIR}{{20}{28}{Initial \ac {RIR} output with receiver 5cm above sound source showing \ac {RIR}'s from grid positions 76, 77 and 83\relax }{figure.caption.30}{}}
+\acronymused{RIR}
+\acronymused{RIR}
+\acronymused{RIR}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {21}{\ignorespaces Initial \ac {RIR} output with receiver 5cm above sound source from grid position 76\relax }}{29}{figure.caption.31}}
+\acronymused{RIR}
+\newlabel{incorrectRIR_76}{{21}{29}{Initial \ac {RIR} output with receiver 5cm above sound source from grid position 76\relax }{figure.caption.31}{}}
+\acronymused{RIR}
+\acronymused{RIR}
+\newlabel{distance}{{1}{29}{RIR Analysis}{equation.3.1}{}}
+\abx@aux@cite{odeonEmail}
+\acronymused{RIR}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {paragraph}{\numberline {3.2.4.2}Experiment}{30}{paragraph.3.2.4.2}}
+\acronymused{RIR}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {22}{\ignorespaces Plots of \ac {RIR}'s produced with the receiver placed at varying distances from the source, indicated by the title of each plot where \textbf  {(1)}: 5cm \textbf  {(2)}: 15cm \textbf  {(3)}: 30cm \textbf  {(4)}: 50cm \textbf  {(5)}: 60cm \textbf  {(6)}: 70cm\relax }}{31}{figure.caption.32}}
+\acronymused{RIR}
+\newlabel{HeightTest}{{22}{31}{Plots of \ac {RIR}'s produced with the receiver placed at varying distances from the source, indicated by the title of each plot where \textbf {(1)}: 5cm \textbf {(2)}: 15cm \textbf {(3)}: 30cm \textbf {(4)}: 50cm \textbf {(5)}: 60cm \textbf {(6)}: 70cm\relax }{figure.caption.32}{}}
+\acronymused{RIR}
+\acronymused{RIR}
+\acronymused{RIR}
+\acronymused{RIR}
+\acronymused{RIR}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {paragraph}{\numberline {3.2.4.3}Results}{32}{paragraph.3.2.4.3}}
+\acronymused{RIR}
+\acronymused{RIR}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {23}{\ignorespaces \ac {RIR} produced when the receiver is places 60cm above the source.\relax }}{32}{figure.caption.33}}
+\acronymused{RIR}
+\newlabel{60cm}{{23}{32}{\ac {RIR} produced when the receiver is places 60cm above the source.\relax }{figure.caption.33}{}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {24}{\ignorespaces Illustration of the two early reflection paths due to the floor and left side wall when the receiver is placed 60cm above the source.\relax }}{33}{figure.caption.34}}
+\newlabel{reflectionPaths}{{24}{33}{Illustration of the two early reflection paths due to the floor and left side wall when the receiver is placed 60cm above the source.\relax }{figure.caption.34}{}}
+\acronymused{RIR}
+\acronymused{RIR}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.5}RIR Locations}{33}{subsubsection.3.2.5}}
+\acronymused{RIR}
+\acronymused{RIR}
+\acronymused{VSS}
+\acronymused{VSS}
+\acronymused{RIR}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {25}{\ignorespaces Top down view of the Hendrix Hall model indicating the \ac {RIR} positions that are invalid due to being too close to a surface (U, V, W and Z), where other \ac {RIR}'s that are valid are not included as it would cause inconsistency (X and Y)\relax }}{34}{figure.caption.35}}
+\acronymused{RIR}
+\acronymused{RIR}
+\newlabel{incorrectRIRPositions}{{25}{34}{Top down view of the Hendrix Hall model indicating the \ac {RIR} positions that are invalid due to being too close to a surface (U, V, W and Z), where other \ac {RIR}'s that are valid are not included as it would cause inconsistency (X and Y)\relax }{figure.caption.35}{}}
+\acronymused{RIR}
+\acronymused{RIR}
+\acronymused{RIR}
+\acronymused{RIR}
+\acronymused{RIR}
+\acronymused{RIR}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {26}{\ignorespaces Top down view of the Hendrix Hall model showing the maximum available \ac {RIR} locations\relax }}{35}{figure.caption.36}}
+\acronymused{RIR}
+\newlabel{bulkRIRs}{{26}{35}{Top down view of the Hendrix Hall model showing the maximum available \ac {RIR} locations\relax }{figure.caption.36}{}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.6}RIR Rendering}{35}{subsubsection.3.2.6}}
+\acronymused{RIR}
+\acronymused{RIR}
+\acronymused{RIR}
+\acronymused{RIR}
+\acronymused{RIR}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {27}{\ignorespaces Source and receiver pairing window in Odeon\relax }}{36}{figure.caption.37}}
+\newlabel{SouRecPos}{{27}{36}{Source and receiver pairing window in Odeon\relax }{figure.caption.37}{}}
+\acronymused{RIR}
+\acronymused{RIR}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Software}{36}{subsection.3.3}}
+\acronymused{VSS}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.1}Software Overview}{36}{subsubsection.3.3.1}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {paragraph}{\numberline {3.3.1.1}The Original Patch}{36}{paragraph.3.3.1.1}}
+\newlabel{softwareoverview:original}{{3.3.1.1}{36}{The Original Patch}{paragraph.3.3.1.1}{}}
+\acronymused{RIR}
+\acronymused{VAE}
+\acronymused{VAE}
+\acronymused{RIR}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {28}{\ignorespaces Original Max patch used in the \ac {VSS} showing the file location window that pops up 4 times.\relax }}{37}{figure.caption.38}}
+\acronymused{VSS}
+\newlabel{original}{{28}{37}{Original Max patch used in the \ac {VSS} showing the file location window that pops up 4 times.\relax }{figure.caption.38}{}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {paragraph}{\numberline {3.3.1.2}Extended Patch Overview}{37}{paragraph.3.3.1.2}}
+\acronymused{RIR}
+\acronymused{RIR}
+\acronymused{VAE}
+\acronymused{RIR}
+\acronymused{RIR}
+\acronymused{RIR}
+\acronymused{RIR}
+\acronymused{VAE}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {29}{\ignorespaces Top level Max patch\relax }}{38}{figure.caption.39}}
+\newlabel{myPatch}{{29}{38}{Top level Max patch\relax }{figure.caption.39}{}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.2}Location Selection}{39}{subsubsection.3.3.2}}
+\acronymused{RIR}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {30}{\ignorespaces Flow diagram of the location selection software design. \textbf  {Section 1} indicates the user interface section where coordinates are recorded and \textbf  {Section 2} takes these coordinates and finds the appropriate \ac {RIR} file.\relax }}{39}{figure.caption.40}}
+\acronymused{RIR}
+\newlabel{flowDiagram}{{30}{39}{Flow diagram of the location selection software design. \textbf {Section 1} indicates the user interface section where coordinates are recorded and \textbf {Section 2} takes these coordinates and finds the appropriate \ac {RIR} file.\relax }{figure.caption.40}{}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {31}{\ignorespaces Flow diagram of the location selection software design\relax }}{40}{figure.caption.41}}
+\newlabel{lcd}{{31}{40}{Flow diagram of the location selection software design\relax }{figure.caption.41}{}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {32}{\ignorespaces Screen shot from Max showing a section that converts the user interface coordinates into the appropriate file name. 1) Coordinates from lcd object 2) Dimensions of lcd object 3) Number of segments the lcd object should be split into due to the number of \ac {RIR}'s per meter 4) JavaScript file take produces an appropriate file name given the input data.\relax }}{41}{figure.caption.42}}
+\acronymused{RIR}
+\newlabel{locationsConvert}{{32}{41}{Screen shot from Max showing a section that converts the user interface coordinates into the appropriate file name. 1) Coordinates from lcd object 2) Dimensions of lcd object 3) Number of segments the lcd object should be split into due to the number of \ac {RIR}'s per meter 4) JavaScript file take produces an appropriate file name given the input data.\relax }{figure.caption.42}{}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {paragraph}{\numberline {3.3.2.1}File name JavaScript: `loadFilesLogic'}{41}{paragraph.3.3.2.1}}
+\abx@aux@cite{genelec}
+\abx@aux@cite{st450}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.3}Mobility Implementation}{42}{subsubsection.3.3.3}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {paragraph}{\numberline {3.3.3.1}Iteration 1}{42}{paragraph.3.3.3.1}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {paragraph}{\numberline {3.3.3.2}Iteration 2}{42}{paragraph.3.3.3.2}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {paragraph}{\numberline {3.3.3.3}Iteration 3}{42}{paragraph.3.3.3.3}}
+\newlabel{iteration3}{{3.3.3.3}{42}{Iteration 3}{paragraph.3.3.3.3}{}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {3.4}Head-Tracking}{42}{subsection.3.4}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {3.5}Latency Test}{42}{subsection.3.5}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {3.6}RIR Trimming}{42}{subsection.3.6}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {3.7}Real RIR Recordings}{42}{subsection.3.7}}
+\newlabel{realRIRs}{{3.7}{42}{Real RIR Recordings}{subsection.3.7}{}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.7.1}RIR Measurement Setup}{42}{subsubsection.3.7.1}}
+\acronymused{VSS}
+\acronymused{RIR}
+\abx@aux@cite{sineSweep}
+\acronymused{RIR}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.7.2}Positions}{43}{subsubsection.3.7.2}}
+\acronymused{RIR}
+\acronymused{RIR}
+\acronymused{VSS}
+\acronymused{RIR}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.7.3}Measurements}{43}{subsubsection.3.7.3}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.7.4}RIR Analysis}{43}{subsubsection.3.7.4}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.7.5}Issues}{44}{subsubsection.3.7.5}}
+\acronymused{RIR}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {3.8}RIR Finalisation}{44}{subsection.3.8}}
+\acronymused{RIR}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {section}{\numberline {4}User Testing}{45}{section.4}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}User Testing Aims}{45}{subsection.4.1}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Testing Procedure}{45}{subsection.4.2}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.1}}{45}{subsubsection.4.2.1}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {section}{Appendices}{45}{section*.47}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {section}{\numberline {A}Appendix A}{45}{Appendix.1.A}}
+\newlabel{appendixA}{{A}{45}{Appendix A}{Appendix.1.A}{}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {section}{\numberline {B}Appendix B}{45}{Appendix.1.B}}
+\newlabel{appendixB}{{B}{45}{Appendix B}{Appendix.1.B}{}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Comparison of the final simplified model and a picture of the real Hendrix Hall\relax }}{50}{figure.caption.11}}
+\newlabel{simpleSurfacesRoom}{{6}{50}{Comparison of the final simplified model and a picture of the real Hendrix Hall\relax }{figure.caption.11}{}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {33}{\ignorespaces Code\relax }}{51}{figure.caption.43}}
+\newlabel{code2}{{33}{51}{Code\relax }{figure.caption.43}{}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {34}{\ignorespaces Human head topology \ac {RIR} measurement set up with a Genelec 8040B sound source placed 1m off the floor 0.6m below a Soundfield microphone used as a receiver\relax }}{51}{figure.caption.44}}
+\acronymused{RIR}
+\newlabel{realRIRTop}{{34}{51}{Human head topology \ac {RIR} measurement set up with a Genelec 8040B sound source placed 1m off the floor 0.6m below a Soundfield microphone used as a receiver\relax }{figure.caption.44}{}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {35}{\ignorespaces Real \ac {RIR} measurement set up. \textbf  {(1)}: Sound source and receiver set up \textbf  {(2)}: Soundfield interface \textbf  {(3)}: Fireface UXC audio interface \textbf  {(4)}: Mac running Reaper to output sinusoidal sweep and record B-format input\relax }}{52}{figure.caption.45}}
+\acronymused{RIR}
+\newlabel{realRIRSetup}{{35}{52}{Real \ac {RIR} measurement set up. \textbf {(1)}: Sound source and receiver set up \textbf {(2)}: Soundfield interface \textbf {(3)}: Fireface UXC audio interface \textbf {(4)}: Mac running Reaper to output sinusoidal sweep and record B-format input\relax }{figure.caption.45}{}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {36}{\ignorespaces Google SketchUp model showing the positions of where the real \ac {RIR}'s were taken\relax }}{52}{figure.caption.46}}
+\acronymused{RIR}
+\newlabel{rirPositions}{{36}{52}{Google SketchUp model showing the positions of where the real \ac {RIR}'s were taken\relax }{figure.caption.46}{}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {37}{\ignorespaces Annotated blueprint of Hendrix Hall from a birds-eye view\relax }}{53}{figure.caption.48}}
+\newlabel{blueprintTop}{{37}{53}{Annotated blueprint of Hendrix Hall from a birds-eye view\relax }{figure.caption.48}{}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {38}{\ignorespaces Real Vs SKU Roof\relax }}{54}{figure.caption.49}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {39}{\ignorespaces Real Vs SKU Roof\relax }}{55}{figure.caption.50}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {40}{\ignorespaces Real Vs SKU Roof\relax }}{56}{figure.caption.51}}
