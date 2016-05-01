@@ -2212,43 +2212,8 @@
     <bcf:datasource type="file" datatype="bibtex">thesis.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">Huopaniemi2000</bcf:citekey>
-    <bcf:citekey order="2">Stan2002</bcf:citekey>
-    <bcf:citekey order="3">ISO</bcf:citekey>
-    <bcf:citekey order="4">soundFieldMic</bcf:citekey>
-    <bcf:citekey order="5">soundFieldMic</bcf:citekey>
-    <bcf:citekey order="6">odeon</bcf:citekey>
-    <bcf:citekey order="7">Siltanen2010</bcf:citekey>
-    <bcf:citekey order="8">Rindel1995</bcf:citekey>
-    <bcf:citekey order="9">odeonManual</bcf:citekey>
-    <bcf:citekey order="10">Rindel1995</bcf:citekey>
-    <bcf:citekey order="11">SKU</bcf:citekey>
-    <bcf:citekey order="12">SKU</bcf:citekey>
-    <bcf:citekey order="13">SU2Odeon</bcf:citekey>
-    <bcf:citekey order="14">max</bcf:citekey>
-    <bcf:citekey order="15">spat</bcf:citekey>
-    <bcf:citekey order="16">Brereton2014</bcf:citekey>
-    <bcf:citekey order="17">oculus</bcf:citekey>
-    <bcf:citekey order="18">Savioja1999</bcf:citekey>
-    <bcf:citekey order="19">dewalt</bcf:citekey>
-    <bcf:citekey order="20">odeonManual</bcf:citekey>
-    <bcf:citekey order="21">SU2Odeon</bcf:citekey>
-    <bcf:citekey order="22">plastic</bcf:citekey>
-    <bcf:citekey order="23">mineralFibre</bcf:citekey>
-    <bcf:citekey order="24">Kovalchik</bcf:citekey>
-    <bcf:citekey order="25">odeonManual</bcf:citekey>
-    <bcf:citekey order="26">odeonManual</bcf:citekey>
-    <bcf:citekey order="27">Monson2012b</bcf:citekey>
-    <bcf:citekey order="28">calum</bcf:citekey>
-    <bcf:citekey order="29">calum</bcf:citekey>
-    <bcf:citekey order="30">calum</bcf:citekey>
-    <bcf:citekey order="31">calum</bcf:citekey>
-    <bcf:citekey order="32">odeonEmail</bcf:citekey>
-    <bcf:citekey order="33">odeonManual</bcf:citekey>
-    <bcf:citekey order="34">genelec</bcf:citekey>
-    <bcf:citekey order="35">st450</bcf:citekey>
-    <bcf:citekey order="36">sineSweep</bcf:citekey>
-    <bcf:citekey order="37">sineSweep</bcf:citekey>
+    <bcf:citekey order="1">mira</bcf:citekey>
+    <bcf:citekey order="2">c74</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="none" type="entry" sortscheme="none">
   <bcf:sorting>

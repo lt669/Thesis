@@ -1,38 +1,19 @@
 [0] Config.pm:324> INFO - This is Biber 2.1
 [0] Config.pm:327> INFO - Logfile is 'main.blg'
-[47] biber-darwin:276> INFO - === Sat Apr 30, 2016, 11:52:23
-[47] Biber.pm:333> INFO - Reading 'main.bcf'
-[130] Biber.pm:645> INFO - Found 25 citekeys in bib section 0
-[154] Biber.pm:2977> INFO - Processing section 0
-[171] Biber.pm:3115> INFO - Looking for bibtex format file 'thesis.bib' for section 0
-[173] bibtex.pm:1021> INFO - Decoding LaTeX character macros into UTF-8
-[176] bibtex.pm:895> INFO - Found BibTeX data source 'thesis.bib'
-[189] Utils.pm:146> WARN - Possible typo (case mismatch) between citation and datasource keys: 'soundFieldMic' and 'soundfieldMic' in file 'thesis.bib'
-[197] Utils.pm:146> WARN - Datamodel: Entry 'dewalt' (thesis.bib): Invalid format '' of date field 'date' - ignoring
-[200] Utils.pm:146> WARN - Datamodel: Entry 'odeonEmail' (thesis.bib): Invalid format '22' of date field 'date' - ignoring
-[203] Utils.pm:146> WARN - Datamodel: Entry 'genelec' (thesis.bib): Invalid format '' of date field 'date' - ignoring
-[204] Utils.pm:146> WARN - BibTeX subsystem: /var/folders/9m/7yvjw_r54n1c0nbfzndk_j0m0000gn/T/xUnPIiltyl/thesis.bib_23645.utf8, line 96, warning: 2 characters of junk seen at toplevel
-[205] Utils.pm:146> WARN - I didn't find a database entry for 'soundFieldMic' (section 0)
-[206] Utils.pm:146> WARN - The field 'author' in entry 'odeon' cannot be null, deleting it
-[206] Utils.pm:146> WARN - The field 'title' in entry 'odeon' cannot be null, deleting it
-[207] Utils.pm:146> WARN - The field 'author' in entry 'SU2Odeon' cannot be null, deleting it
-[207] Utils.pm:146> WARN - The field 'author' in entry 'max' cannot be null, deleting it
-[207] Utils.pm:146> WARN - The field 'author' in entry 'spat' cannot be null, deleting it
-[207] Utils.pm:146> WARN - The field 'author' in entry 'oculus' cannot be null, deleting it
-[207] Utils.pm:146> WARN - The field 'title' in entry 'oculus' cannot be null, deleting it
-[207] Utils.pm:146> WARN - The field 'author' in entry 'dewalt' cannot be null, deleting it
-[208] Utils.pm:146> WARN - The field 'month' in entry 'dewalt' cannot be null, deleting it
-[208] Utils.pm:146> WARN - The field 'author' in entry 'plastic' cannot be null, deleting it
-[208] Utils.pm:146> WARN - The field 'author' in entry 'mineralFibre' cannot be null, deleting it
-[208] Utils.pm:146> WARN - The field 'title' in entry 'mineralFibre' cannot be null, deleting it
-[208] Utils.pm:146> WARN - The field 'author' in entry 'genelec' cannot be null, deleting it
-[208] Utils.pm:146> WARN - The field 'month' in entry 'genelec' cannot be null, deleting it
-[208] Utils.pm:146> WARN - The field 'author' in entry 'st450' cannot be null, deleting it
-[208] Utils.pm:146> WARN - The field 'author' in entry 'sineSweep' cannot be null, deleting it
-[380] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[380] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[380] Biber.pm:2854> INFO - Sorting list 'none' of type 'entry' with scheme 'none' and locale 'en-US'
-[380] Biber.pm:2858> INFO - No sort tailoring available for locale 'en-US'
-[401] bbl.pm:505> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[403] bbl.pm:596> INFO - Output to main.bbl
-[403] Biber.pm:106> INFO - WARNINGS: 22
+[40] biber-darwin:276> INFO - === Sun May  1, 2016, 11:54:22
+[40] Biber.pm:333> INFO - Reading 'main.bcf'
+[119] Biber.pm:645> INFO - Found 2 citekeys in bib section 0
+[135] Biber.pm:2977> INFO - Processing section 0
+[152] Biber.pm:3115> INFO - Looking for bibtex format file 'thesis.bib' for section 0
+[155] bibtex.pm:1021> INFO - Decoding LaTeX character macros into UTF-8
+[158] bibtex.pm:895> INFO - Found BibTeX data source 'thesis.bib'
+[167] Utils.pm:146> WARN - BibTeX subsystem: /var/folders/9m/7yvjw_r54n1c0nbfzndk_j0m0000gn/T/zsa1zjNzHr/thesis.bib_31885.utf8, line 96, warning: 2 characters of junk seen at toplevel
+[168] Utils.pm:146> WARN - The field 'author' in entry 'mira' cannot be null, deleting it
+[168] Utils.pm:146> WARN - The field 'author' in entry 'c74' cannot be null, deleting it
+[189] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[189] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[189] Biber.pm:2854> INFO - Sorting list 'none' of type 'entry' with scheme 'none' and locale 'en-US'
+[189] Biber.pm:2858> INFO - No sort tailoring available for locale 'en-US'
+[191] bbl.pm:505> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[192] bbl.pm:596> INFO - Output to main.bbl
+[192] Biber.pm:106> INFO - WARNINGS: 3

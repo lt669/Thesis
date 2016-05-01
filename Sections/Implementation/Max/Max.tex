@@ -5,6 +5,7 @@
 \begin{document}
 \lstset{language=Java} 
 	\subsection{Software}
+	\label{software}
 		
 		%Overall idea
 		As a software patch was already in use with the \ac{VSS}, the idea was to extend this software patch to accommodate the newly proposed functionality.
@@ -18,6 +19,8 @@
 				The original max patch was used to convolve a real time audio signal with a set of four \ac{RIR}'s simultaneously, allowing the user to turn their head in the \ac{VAE} through the use of an Oculus Rift as a head tracking device. Four positions within the \ac{VAE} were available. To select one, the user (or an operator) selected an `open' button which prompted a file navigation window. The \ac{RIR} files then had to be found (in the correct order) and opened one at a time, with a new file window opening after each file had been selected. Figure~\ref{original} shows this.
 
 				This was the primary aspect of the original patch that needed extending to make the process automatic.
+
+				The software was run on a 2012 Mac mini with 8GB of RAM running OSX 10 \textbf{FIND SPECS}
 
 					%-------------Max UI Flow diagram-------------%
 				\begin{figure}[H]
@@ -57,6 +60,7 @@
 
 
 		\subsubsection{Location Selection}
+		\label{locationSelection}
 			%User interface section
 			%The location selection part of the system was required to present the user with an interface with which they could select a location within the \ac{VAE}. The system would then interpret their input and select the correct \ac{RIR} file(s) to be used in the rest of the system. 
 
@@ -79,43 +83,69 @@
 				\label{lcd}
 			\end{figure}
 
-			The outputs from the lcd object are sent to the patch ‘UI\_to\_file’ which contains a JavaScript file called ‘loadFilesLogic’. This JavaScript file converts the (x,y) coordinates into an appropriate filename, by taking into account the size of the lcd screen and how many RIRs there are per meter.
+			The outputs from the lcd object are sent to the patch ‘UI\_to\_file’ which contains a JavaScript file called ‘loadFilesLogic’. This JavaScript file converts the (x,y) coordinates into an appropriate file name, by taking into account the size of the lcd screen and how many RIRs there are per meter.
 
-			The javascript takes 5 inputs: UI (x,y) coordinates , (x,y) lcd dimensions and a number representing how many sections the lcd grid should be split into. This last value is calculated by sending a number from 1-5 (distance per RIR) to the third inlet of the UI\_to\_file patch (on the far right). As the maximum number of RIRs that will be available per length of the room is 15, the input is divided by 15 and rounded to the nearest value, giving the number of sections the lcd screen should be split into along the x-axis (the number of y-axis sections is calculated later). This information can then be used to determine in which \textit{‘section’} the user is currently located based on their coordinates, allowing it to load the appropriate RIRs that are available in that section. Figure~\ref{locationsConvert} shows the section of `UI\_to\_file' highlighting each section.
+			This lcd screen could also be displayed on an iPad which was used as a remote user interaction. Initially, the more popular and supported application \textbf{Mira} \cite{mira} was going to be used. This allows for the mirroring of a selected portion of a Max patch to be disapled and interacted with on an iPad. However, the lcd object used to track coordinates was not supported by this application and thus did not appear on the iPad. Instead an alternative was found. Cycling74, the same company that produces Max/MSP and Mira also created an app for the iPhone and iPad called c74 \cite{c74} and allows for the creation of an independent interface that can control objects within the max patch. The operation of this section is explained further in section \nameref{locationtracking}
+
+			The javascript takes 5 inputs: UI (x,y) coordinates , (x,y) lcd dimensions and a number representing how many rows and colums of \ac{RIR} locations there should be available. This last value is calculated by sending a number from 1-5 (distance per RIR) to the third inlet of the UI\_to\_file patch (on the far right). As the maximum number of RIRs that will be available per length of the room is 15, 15 is divided by the input and rounded to the nearest integer, giving the number of rows and columns the lcd screen should be split into (the exact number of rows and columns is calculated later in the javascript file). This information can then be used to determine in which \textit{‘section’} (row and column) the user is currently located based on their coordinates, allowing it to load the appropriate RIRs that are available in that section. Figure~\ref{locationsConvert} shows the section of `UI\_to\_file' highlighting each section.
 
 			%-------------UI_to_file Image-------------%
 			\begin{figure}[H]
-				\centerline{\includegraphics[scale = 0.6]{Sections/Implementation/Max/images/Max/UI_to_file_edit_3.png}}
+				\centerline{\includegraphics[scale = 0.6]{Sections/Implementation/Max/images/Max/UI_to_file_edit_4.png}}
 				\caption{Screen shot from Max showing a section that converts the user interface coordinates into the appropriate file name. 1) Coordinates from lcd object 2) Dimensions of lcd object 3) Number of segments the lcd object should be split into due to the number of \ac{RIR}'s per meter 4) JavaScript file take produces an appropriate file name given the input data.}
 				\label{locationsConvert}
 			\end{figure}
 
 			\paragraph{File name JavaScript: `loadFilesLogic'}
 
-			%	\begin{wrapfigure}{R}{0.6\textwidth}
-			\begin{minipage}{0.6\textwidth}
-				\begin{lstlisting}
-				function msg_int(input){
-					if(inlet == 0){
-						xPos = input; 
-					} else if (inlet == 1){
-						yPos = input;//Add off set to start at (0,1)
-					} else if (inlet == 2){
-						windowSize [0] = input;
-					} else if (inlet == 3){
-						windowSize [1] = input;
-					} else if(inlet==4){
-						numberOfMeters = input;
-					}
-				\end{lstlisting}
+				%-------------Input Code-------------%
+				\begin{minipage}{0.6\textwidth}
+					\begin{lstlisting}
+					function msg_int(input){
+						if(inlet == 0){
+							xPos = input; 
+						} else if (inlet == 1){
+							yPos = input;//Add off set to start at (0,1)
+						} else if (inlet == 2){
+							windowSize [0] = input;
+						} else if (inlet == 3){
+							windowSize [1] = input;
+						} else if(inlet==4){
+							numberOfMeters = input;
+						}
+					\end{lstlisting}
 				\end{minipage}
-				\begin{minipage}{0.35\textwidth}
-				The first section in the JavaScript files simply stores the data from different inputs to different variables that are used throughout the rest of the code.
+				\begin{minipage}{0.4\textwidth}
+					The first section in the JavaScript simply stores the data from different inputs to different variables that are used throughout the rest of the code, where:
+
+					\vspace{5mm}
+
+					\hspace{-10mm}\begin{tabular}{r l}
+						xPos & = user x coordinate \\
+						yPos & = user y coordinate \\
+						windowSize[0] & = lcd length \\
+						windowSize[1] & = lcd height \\
+						numberOfMeters & = Integer to calculate rows/columns \\
+					\end{tabular}
+					
 				\end{minipage}
 
-				The code in figure~\ref{code2} calculates which section the user is closest to. The numberOfMeters variable is the 5th input to the js object which can be used to determine how many rows and columns of RIRs there are going to be. When the RIRs are separated by 3m or 5m, there are the same number of rows as there is columns (3m: 5x5) (5m: 3x3), whereas (1m: 15x16) the other distances produce grids of RIRs with one more row than there are columns. The if statement from 31 - 39 ensures that the lcd screen is split into the correct amount of sections in order to correctly load the appropriate RIR.
+				As can be seen in figures~\ref{2m},\ref{3m},\ref{4m} and~\ref{5m} in \nameref{appendixB}, there are not always the same number of rows as there are columns in each of the grids. The if else statements in figure~\ref{jsPosition} calculate the users positions by taking the users x and y coordinates and dividing by the x and y dimensions of the lcd screen, giving a percentage of how far across the room they are. This allows the for lcd screen to be resized allowing it to be used of different sized screens in the future (see section \nameref{furtherwork}). This value is then multiplies by either the number of rows (x axis) or columns (y axis) there are, which is calculated by adding or subtracting 1, or using the value of numberOfRows which is calculated before being input into the js object. The following table indicates how many rows and columns there are given the inputs to the js object:
 
-				\begin{figure}
+					\begin{center}
+					\begin{tabular}{c c c c c}
+						Distance between \ac{RIR}`s (m) & Calculation & numberOfMeters & Rows & Columns\\
+						1 & 15/1 & 15 & 15 & 16\\
+						2 & 15/2 & 8 & 7 & 8\\
+						3 & 15/3 & 5 & 5 & 5\\
+						4 & 15/4 & 4 & 3 & 4\\
+						5 & 15/5 & 3 & 3 & 3\\
+					\end{tabular}
+				\end{center}
+
+				Lines 17 and 18, the calculated positions are rounded to the nearest integer in order to determine which \ac{RIR} location the user is closest too. Lines 21 to 26, create an initial offset to prevent the lcd screen from starting at location (0,0), as this is not a physical point in the room itself thus preventing errors from occurring when searching for the appropriate \ac{RIR} file.
+
+				\begin{figure}[H]
 				\begin{lstlisting}
 					//Split into sections
 					if(numberOfMeters == 3 || numberOfMeters == 5){
@@ -131,15 +161,7 @@
 						xPosition = (xPos/windowSize[0])*(numberOfMeters); 
 						yPosition = (yPos/windowSize[1])*(numberOfMeters+1);
 					}	
-					\end{lstlisting}
-					\caption{Code}
-					\label{code2}
-					\end{figure}
-				
-					MMMMMMMBITCH
-				
 
-					\begin{lstlisting}
 					//Round to nearest value
 					xSection = Math.round(xPosition);
 					ySection = Math.round(yPosition); 
@@ -151,29 +173,125 @@
 					if(ySection == 0){
 						ySection = 1;
 					}
-				\end{lstlisting}
+					\end{lstlisting}
+					\caption{Code used to calculate user location}
+					\label{jsPosition}
+					\end{figure}
 
+					 The section the user is currently located in is then saved to the first address in a array and can be used to compare against their previous position to check whether a new file needs to be loaded. This is necessary because each time the user touched the user interface, thus changing the x and y coordinates, javascript file is run. However, if there new location is still within the same `section' then a new \ac{RIR} file does not need to be loaded.
 
-	
+					 In figure~\ref{jsFile}, lines 6 to 26 contain one large if statement. This essentially prevents the program from calculating, searching for and trying to load a file if the same one is still in use, thus saving computation time. This is done by comparing the section of the grid the user is currently in with the previous section they were currently in and if it has changed the file name for the new location should be calculated and searched for, otherwise no new file should be calculated.
+
+					 If the location of the user has changed, two more conditions are checked in lines 8 and 14. This ensures that only the section that has changed is updated, ie, if the user has moved to the left, only the X axis section is updated.
+
+					 Finally, the appropriate file name is calculated. Two different algorithms are used depending on which \ac{RIR} grid is being used. Both essentially take the section the user is located on the X axis, and add the number of locations there are due to how many rows down the room they are located.
+
+					 This then outputs a number from 1 to the maximum number of locations in the selected grid.
+
+				
+					\begin{figure}[H]
+					\begin{lstlisting}
+					//Store current location
+					xArray[0] = xSection;
+					yArray[0] = ySection;
+
+					//If either coordinate is changed search for new files
+					if(xArray[0] != xArray[1] || yArray[0] != yArray[1]){
+						
+						if(xArray[0] != xArray[1]){
+							//Store previous value
+							xArray[1] = xArray[0];
+							X = xArray[0];
+						}
+						
+						if(yArray[0] != yArray[1]){
+							yArray[1] = yArray[0];
+							Y = yArray[0]
+						}
+						
+						//Output user location within grid
+						if(numberOfMeters == 4 || numberOfMeters == 8){
+							fileNumber = X + ((numberOfMeters-1)*(Y-1)); //Requires different algorithm for 2m and 4m due to different grid shapes
+						} else {
+							fileNumber = X + ((numberOfMeters)*(Y-1));
+						}	
+						outlet(1,fileNumber);
+					}
+					\end{lstlisting}
+					\caption{Code used to search for appropriate file name}
+					\label{jsFile}
+					\end{figure}
+		
 
 		\subsubsection{Mobility Implementation}
 
+		The following sections describe two earlier iterations of the systems that were attempted and the issues faced, eventually leading to the third and final iteration which can been seen as a compromise between technological capability and freedom of movement. All three iterations are extensions of the original patch used in the \ac{VSS} which use spat to load \ac{RIR} files into the system, and to convolve a real time audio input with them.
+
 		 \paragraph{Iteration 1}
 		 	%Idea to stay between RIRs in a grid
+		 	% Initially, the idea was to pre-load a grid of the closest \ac{RIR} locations that surrounded the user and simultaneously convolve the real-time audio with all of the \ac{RIR} files. This is illustrated on the left in figure~\ref{iteration1Panning} which shows annotated grid positions on the lcd screen labeled 1 - 9. The patch on the right shows the corresponding volume bars used to automatically vary the output level of each of the convolved signals depending on the users position within the defined grid, essentially panning between the grid position, allowing the user to move freely between them.
+
+		 	Initially, the idea was to pre-load a grid of the closest \ac{RIR} locations that surrounded the user and simultaneously convolve the real-time audio with all of the \ac{RIR} files. This is illustrated on the left in figure~\ref{iteration1Panning} which shows annotated grid positions on the lcd screen labeled 1 - 9. The patch on the right shows the corresponding volume bars (also labelled 1 - 9) used to automatically vary the output level of each of the convolved signals. This required a panning algorithm for each of the positions in the defined grid, an overview of which is shown in figure~\ref{iteration1PanningCombined}, based on where the user has moved relative to the centre position essentially allowing the user to move freely.
+
+		 	When the user reaches on of the other locations in the grid, that location becomes the centre of a new grid, and the appropriate files are loaded around that centre positions through the use of a javascript file. This requires the system to simultaneously load 4 \ac{RIR} files per location, of which there are 9, meaning 36 files are loaded into the system at once. Due to the time taken to load all of the files, the system ran too slow and could not be used for real time movement.
+
+		 	A video demonstrating the functionality of the proposed system can be found \textbf{HERE} \textbf{LINK!: Writeup/videios/iteration1Panning}.
+
+		 	%-------------Iteration1 Panning Image-------------%
+			\begin{figure}[H]
+				\centerline{\includegraphics[scale = 0.45]{Sections/Implementation/Max/images/Max/iteration1/panning_edit2.png}}
+				\caption{}
+				\label{iteration1Panning}
+			\end{figure}
+
+			%-------------Panning Image-------------%
+			\begin{figure}[H]
+				\centerline{\includegraphics[scale = 0.4]{Sections/Implementation/Max/images/Max/iteration1/panning1.png}}
+				\centerline{\includegraphics[scale = 0.4]{Sections/Implementation/Max/images/Max/iteration1/panning2.png}}
+				\centerline{\includegraphics[scale = 0.4]{Sections/Implementation/Max/images/Max/iteration1/panning3.png}}
+				\caption{}
+				\label{iteration1PanningCombined}
+			\end{figure}
 
 		 	%Loading issued
 
 		 \paragraph{Iteration 2}
 		 	%Preload RIRs
 
+		 	In an attempt to maintain the current implementation and solve the file loading time issue, a patch was built to pre-load all the \ac{RIR} files, meaning the files only had to be associated with a grid position as opposed to loaded every time a new position was used. This involved running a convolution patch for each file loaded into the system. As the files would no longer need to be loaded into the system, the user interface section described in section~\nameref{locationSelection} is used to decide which of the convolution patched to bypass and mute, and which ones to run. This means that only the grid of \ac{RIR}'s being used would be convolved with the audio signal, saving computational resources. Figure~\ref{preload} shows part of the patch used to pre-load all the \ac{RIR} files.
+
+		 	%-------------Preload Image-------------%
+			\begin{figure}[H]
+				\centerline{\includegraphics[scale = 0.4]{Sections/Implementation/Max/images/Max/Iteration2/preload.png}}
+				\caption{Chained convolution patches used to pre-load each \ac{RIR} file. \textit{Image taken from Max 6 as the version of this patch would not run in Max 7}}
+				\label{preload}
+			\end{figure}
+
+
+			Though it was possible to load smaller grids, such as a 9x9 grid used when locations are separated by 5m, the larger grids caused the system to run too slowly due to the amount of RAM that was used.
+
 		 \paragraph{Iteration 3}
 		 \label{iteration3}
 		 	%Path defining
+		 	%As it seemed it was not possible to load any type of grid fast enough, it was decided that \ac{RIR} files would be loaded into the system one at a time when they are required.
+
+		 	The previous iterations attempted to allow the user to move anywhere within the \ac{VAE} in real time as they moved their finger around the screen, however due to technological implications, this was not possible to do. It was therefore decided to find a compromise, where the user could draw themselves a path around the space and the system would move them along the path when the appropriate files had been loaded.
+
+		 	The top half of figure~\ref{storeLocations} has seen already in figure~\ref{locationsConvert}, however the bottom of figure~\ref{storeLocations} shows what how the file number calculated is used. It is.....
+
+		 	%-------------Store Locations Image-------------%
+			\begin{figure}[H]
+				\centerline{\includegraphics[scale = 0.4]{Sections/Implementation/Max/images/Max/Iteration3/storeLocations_edit.png}}
+				\caption{}
+				\label{storeLocations}
+			\end{figure}
 
 
-
-	\subsection{Head-Tracking}
+	\subsubsection{Head-Tracking}
 		YEI Sensor was not good.
+
+	\subsubsection{Location Tracking}
+	\label{locationtracking}
 
 
 	\subsection{Latency Test}

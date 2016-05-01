@@ -467,11 +467,9 @@
 
 	\subsection{File Sorting (Extra Grids)}
 
-		As described in section~\nameref{Background:RIRPositions}, user test \#3 requires there to be a grid of \ac{RIR}'s that are separated by a variety of distances. To achieve this, four more \ac{RIR} grids were produced with an increasing distance between the \ac{RIR}'s in each one (2m - 5m). This was done by first finding which \ac{RIR}'s would be included in each of the new grids by starting from the centre of the first grid (position 128) and moving outwards. By doing this, it was possible to find the first \ac{RIR} positions of each new grid. Usingthig, 4 Matlab algorithms were written to extract the appropriate \ac{RIR}'s required for each new gird, and rename them starting from 001 up to the maximum number of \ac{RIR}'s in each grid.
+		As described in section~\fullref{Background:RIRPositions}, user test \#3 requires there to be a number of available \ac{RIR} grids to choose from, each containing \ac{RIR} locations separated by a fixed distance. It was decided that there would be a total of 5 grids to choose from, the first (the one already produced) containing \ac{RIR}'s separated by 1m, the second grid containing \ac{RIR}'s separated by 2m and so on.	 Four Matlab algorithms were written (fully commented code available here \texttt{SupportingFiles/Matlab/renameSortFiles.m} \textbf{LINK}) to extract the appropriate \ac{RIR}'s required for each new gird, and rename them starting from 001 up to the maximum number of \ac{RIR}'s in each grid. This made it easily  integrable with the software described in section~\fullref{software}.
 
-		 For this, the greatest distance between \ac{RIR} locations was found. This was done by starting at the centre of the \ac{RIR} grid (position 128) 
-
-		MATLAB SCRIPT
+		The four grids can be seen in figures~\ref{2m},~\ref{3m},~\ref{4m} and~\ref{5m} respectively in~\nameref{appendixB}, showing which \ac{RIR} locations from the original grid they contain.
 
 	
 \end{document}

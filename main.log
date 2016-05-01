@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.14)  30 APR 2016 11:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.14)  1 MAY 2016 15:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1004,11 +1004,7 @@ File: english.lbx 2015/04/19 v3.0 biblatex localization (PK/JW/AB)
 \@quotelevel=\count285
 \@quotereset=\count286
 
-(./main.aux
-
-LaTeX Warning: Label `materialTable' multiply defined.
-
-)
+(./main.aux)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
@@ -1125,33 +1121,7 @@ Package biblatex Info: Automatic encoding selection.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
- (./main.bbl
-
-Package biblatex Warning: Biber reported the following issues
-(biblatex)                with 'dewalt':
-(biblatex)                - Datamodel: Entry 'dewalt' (thesis.bib): Invalid for
-mat '' of date field 'date' - ignoring.
-
-
-Package biblatex Warning: Biber reported the following issues
-(biblatex)                with 'odeonEmail':
-(biblatex)                - Datamodel: Entry 'odeonEmail' (thesis.bib): Invalid
- format '22' of date field 'date' - ignoring.
-
-
-Package biblatex Warning: Biber reported the following issues
-(biblatex)                with 'genelec':
-(biblatex)                - Datamodel: Entry 'genelec' (thesis.bib): Invalid fo
-rmat '' of date field 'date' - ignoring.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                soundFieldMic
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-)
+ (./main.bbl)
 Package biblatex Info: Reference section=0 on input line 25.
 Package biblatex Info: Reference segment=0 on input line 25.
 Package caption Info: Begin \AtBeginDocument code.
@@ -1160,761 +1130,321 @@ Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10> not available
 (Font)              Font shape `T1/ppl/b/n' tried instead on input line 29.
  (./main.toc
-LaTeX Font Info:    Try loading font information for OT1+ppl on input line 7.
- (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/ot1ppl.fd
+LaTeX Font Info:    Try loading font information for OT1+ppl on input line 5.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/ot1ppl.fd
 File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
 )
-LaTeX Font Info:    Try loading font information for OML+zplm on input line 7.
+LaTeX Font Info:    Try loading font information for OML+zplm on input line 5.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/omlzplm.fd
 File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
 )
-LaTeX Font Info:    Try loading font information for OMS+zplm on input line 7.
+LaTeX Font Info:    Try loading font information for OMS+zplm on input line 5.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/omszplm.fd
 File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
 )
-LaTeX Font Info:    Try loading font information for OMX+zplm on input line 7.
+LaTeX Font Info:    Try loading font information for OMX+zplm on input line 5.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/omxzplm.fd
 File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
 )
-LaTeX Font Info:    Try loading font information for OT1+zplm on input line 7.
+LaTeX Font Info:    Try loading font information for OT1+zplm on input line 5.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/ot1zplm.fd
 File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
 ) [1{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
-] [2])
+])
 \tf@toc=\write6
 \openout6 = `main.toc'.
 
- [3]
-(./Sections/Background/Background.tex
-Package acronym Info: Label `acro:VAE' newly defined as it shall be overridden
-although it is yet undefined on input line 47.
- [4]
-Package acronym Info: Label `acro:RIR' newly defined as it shall be overridden
-although it is yet undefined on input line 49.
-
-<Sections/Background/images/soudFieldMic.jpg, id=424, 440.64626pt x 702.625pt>
-File: Sections/Background/images/soudFieldMic.jpg Graphic file (type jpg)
-
-<use Sections/Background/images/soudFieldMic.jpg>
-Package pdftex.def Info: Sections/Background/images/soudFieldMic.jpg used on in
-put line 79.
-(pdftex.def)             Requested size: 88.12769pt x 140.5225pt.
-
-<Sections/Background/images/soundFieldPolar.jpg, id=425, 702.625pt x 588.1975pt
->
-File: Sections/Background/images/soundFieldPolar.jpg Graphic file (type jpg)
- <use Sections/Background/images/soundFieldPolar.jpg>
-Package pdftex.def Info: Sections/Background/images/soundFieldPolar.jpg used on
- input line 82.
-(pdftex.def)             Requested size: 210.78912pt x 176.4606pt.
-
-Overfull \hbox (1.90001pt too wide) in paragraph at lines 78--84
-[]$[]$ $[]$ 
- []
-
-[5]
-Package acronym Info: Label `acro:ISM' newly defined as it shall be overridden
-although it is yet undefined on input line 94.
- [6 <./Sections/Background/images/soudFieldMic.jpg> <./Sections/Background/imag
-es/soundFieldPolar.jpg>]
-Overfull \hbox (0.92375pt too wide) in paragraph at lines 109--110
-\T1/ppl/m/n/10 the im-age sources that have been pro-duced can be seen by the r
-e-ceiver, there-fore check-ing whether
- []
-
-<Sections/Background/images/ISM.png, id=454, 556.479pt x 571.1739pt>
-File: Sections/Background/images/ISM.png Graphic file (type png)
-
-<use Sections/Background/images/ISM.png>
-Package pdftex.def Info: Sections/Background/images/ISM.png used on input line 
-113.
-(pdftex.def)             Requested size: 166.94498pt x 171.35349pt.
- [7 <./Sections/Background/images/ISM.png>]
-Package acronym Info: Label `acro:TO' newly defined as it shall be overridden
-although it is yet undefined on input line 123.
- [8]
+ [2]
+(./Sections/Implementation/Max/Max.tex
 Package acronym Info: Label `acro:VSS' newly defined as it shall be overridden
-although it is yet undefined on input line 163.
-
-
-LaTeX Warning: Reference `vssDiagram' on page 9 undefined on input line 163.
-
-[9] [10]
-Underfull \hbox (badness 10000) in paragraph at lines 203--204
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 204--205
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 205--206
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 206--207
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 207--208
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 208--209
-
- []
-
-LaTeX Font Info:    Try loading font information for TS1+ppl on input line 211.
-
-(/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/ts1ppl.fd
-File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
-)
-Underfull \hbox (badness 10000) in paragraph at lines 211--212
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 212--213
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 213--214
-
- []
-
-[11]) (./Sections/Implementation/Modelling/Modelling.tex [12]
-<Sections/Implementation/Modelling/images/sku1.png, id=557, 1927.2pt x 1084.05p
-t>
-File: Sections/Implementation/Modelling/images/sku1.png Graphic file (type png)
-
- <use Sections/Implementation/Modelling/images/sku1.png>
-Package pdftex.def Info: Sections/Implementation/Modelling/images/sku1.png used
- on input line 24.
-(pdftex.def)             Requested size: 385.43318pt x 216.80615pt.
- [13 <./Sections/Implementation/Modelling/images/sku1.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 36--37
-
- []
-
-
-<Sections/Implementation/Modelling/images/lights2.png, id=572, 992.20688pt x 50
-2.87875pt>
-File: Sections/Implementation/Modelling/images/lights2.png Graphic file (type p
-ng)
- <use Sections/Implementation/Modelling/images/lights2.png>
-Package pdftex.def Info: Sections/Implementation/Modelling/images/lights2.png u
-sed on input line 50.
-(pdftex.def)             Requested size: 248.05112pt x 125.71938pt.
-
-<Sections/Implementation/Modelling/images/projector1.png, id=573, 606.265pt x 7
-10.655pt>
-File: Sections/Implementation/Modelling/images/projector1.png Graphic file (typ
-e png)
- <use Sections/Implementation/Modelling/images/projector1.png>
-Package pdftex.def Info: Sections/Implementation/Modelling/images/projector1.pn
-g used on input line 55.
-(pdftex.def)             Requested size: 151.56587pt x 177.66331pt.
-
-<Sections/Implementation/Modelling/images/concave1.png, id=574, 858.70813pt x 4
-41.65pt>
-File: Sections/Implementation/Modelling/images/concave1.png Graphic file (type 
-png)
- <use Sections/Implementation/Modelling/images/concave1.png>
-Package pdftex.def Info: Sections/Implementation/Modelling/images/concave1.png 
-used on input line 60.
-(pdftex.def)             Requested size: 214.6765pt x 110.41222pt.
-
-Overfull \hbox (80.99867pt too wide) in paragraph at lines 48--63
-[][] []
- []
-
-
-<Sections/Implementation/Modelling/images/lightsSimple.png, id=575, 1242.6425pt
- x 617.30624pt>
-File: Sections/Implementation/Modelling/images/lightsSimple.png Graphic file (t
-ype png)
-
-<use Sections/Implementation/Modelling/images/lightsSimple.png>
-Package pdftex.def Info: Sections/Implementation/Modelling/images/lightsSimple.
-png used on input line 72.
-(pdftex.def)             Requested size: 310.65987pt x 154.32617pt.
-
-Overfull \hbox (21.57988pt too wide) in paragraph at lines 72--73
- [][] 
- []
-
-
-<Sections/Implementation/Modelling/images/projectorSimple.png, id=576, 749.8012
-5pt x 815.045pt>
-File: Sections/Implementation/Modelling/images/projectorSimple.png Graphic file
- (type png)
-
-<use Sections/Implementation/Modelling/images/projectorSimple.png>
-Package pdftex.def Info: Sections/Implementation/Modelling/images/projectorSimp
-le.png used on input line 77.
-(pdftex.def)             Requested size: 187.44984pt x 203.76074pt.
-
-<Sections/Implementation/Modelling/images/concaveSimple.png, id=577, 1258.7025p
-t x 580.1675pt>
-File: Sections/Implementation/Modelling/images/concaveSimple.png Graphic file (
-type png)
-
-<use Sections/Implementation/Modelling/images/concaveSimple.png>
-Package pdftex.def Info: Sections/Implementation/Modelling/images/concaveSimple
-.png used on input line 82.
-(pdftex.def)             Requested size: 314.67485pt x 145.0415pt.
-
-Overfull \hbox (97.86485pt too wide) in paragraph at lines 82--83
- [][] 
- []
-
-
-Overfull \hbox (80.99867pt too wide) in paragraph at lines 70--85
-[][] []
- []
-
-
-<Sections/Implementation/Modelling/images/realVsSku/roofSku.png, id=578, 1445.4
-pt x 903.375pt>
-File: Sections/Implementation/Modelling/images/realVsSku/roofSku.png Graphic fi
-le (type png)
-
-<use Sections/Implementation/Modelling/images/realVsSku/roofSku.png>
-Package pdftex.def Info: Sections/Implementation/Modelling/images/realVsSku/roo
-fSku.png used on input line 90.
-(pdftex.def)             Requested size: 433.62335pt x 271.01459pt.
-
-Overfull \hbox (6.83202pt too wide) in paragraph at lines 90--91
- [] 
- []
-
-
-<Sections/Implementation/Modelling/images/HHroof.jpg, id=579, 3276.24pt x 2154.
-0475pt>
-File: Sections/Implementation/Modelling/images/HHroof.jpg Graphic file (type jp
-g)
- <use Sections/Implementation/Modelling/images/HHroof.jpg>
-Package pdftex.def Info: Sections/Implementation/Modelling/images/HHroof.jpg us
-ed on input line 91.
-(pdftex.def)             Requested size: 425.92616pt x 280.03601pt.
-)
-(./Sections/Implementation/Odeon/Odeon.tex [14 <./Sections/Implementation/Model
-ling/images/lights2.png> <./Sections/Implementation/Modelling/images/projector1
-.png> <./Sections/Implementation/Modelling/images/concave1.png>]
-<Sections/Implementation/Odeon/images/OdeonRays/waterTight2.PNG, id=591, 1445.4
-pt x 788.9475pt>
-File: Sections/Implementation/Odeon/images/OdeonRays/waterTight2.PNG Graphic fi
-le (type png)
-
-<use Sections/Implementation/Odeon/images/OdeonRays/waterTight2.PNG>
-Package pdftex.def Info: Sections/Implementation/Odeon/images/OdeonRays/waterTi
-ght2.PNG used on input line 14.
-(pdftex.def)             Requested size: 433.62335pt x 236.68607pt.
-
-Overfull \hbox (6.83202pt too wide) in paragraph at lines 14--15
- [] 
- []
-
-[15 <./Sections/Implementation/Modelling/images/lightsSimple.png> <./Sections/I
-mplementation/Modelling/images/projectorSimple.png> <./Sections/Implementation/
-Modelling/images/concaveSimple.png>] [16 <./Sections/Implementation/Odeon/image
-s/OdeonRays/waterTight2.PNG>]
-<Sections/Implementation/Odeon/images/Absorption.PNG, id=612, 461.47406pt x 299
-.61937pt>
-File: Sections/Implementation/Odeon/images/Absorption.PNG Graphic file (type pn
-g)
- <use Sections/Implementation/Odeon/images/Absorption.PNG>
-Package pdftex.def Info: Sections/Implementation/Odeon/images/Absorption.PNG us
-ed on input line 45.
-(pdftex.def)             Requested size: 276.88655pt x 179.77301pt.
-
-<Sections/Implementation/Odeon/images/seating.jpg, id=616, 3276.24pt x 1652.172
-5pt>
-File: Sections/Implementation/Odeon/images/seating.jpg Graphic file (type jpg)
- <use Sections/Implementation/Odeon/images/seating.jpg>
-Package pdftex.def Info: Sections/Implementation/Odeon/images/seating.jpg used 
-on input line 57.
-(pdftex.def)             Requested size: 393.13184pt x 198.25214pt.
- [17 <./Sections/Implementation/Odeon/images/Absorption.PNG>]
-<Sections/Implementation/Odeon/images/OdeonRays/transparencyEdit/singleRay2_edi
-t3.PNG, id=628, 187.45032pt x 292.84406pt>
-File: Sections/Implementation/Odeon/images/OdeonRays/transparencyEdit/singleRay
-2_edit3.PNG Graphic file (type png)
-
-<use Sections/Implementation/Odeon/images/OdeonRays/transparencyEdit/singleRay2
-_edit3.PNG>
-Package pdftex.def Info: Sections/Implementation/Odeon/images/OdeonRays/transpa
-rencyEdit/singleRay2_edit3.PNG used on input line 64.
-(pdftex.def)             Requested size: 131.21431pt x 204.98944pt.
-
-<Sections/Implementation/Odeon/images/scatteringCoefficients.png, id=632, 1260.
-71pt x 338.26375pt>
-File: Sections/Implementation/Odeon/images/scatteringCoefficients.png Graphic f
-ile (type png)
-
-<use Sections/Implementation/Odeon/images/scatteringCoefficients.png>
-Package pdftex.def Info: Sections/Implementation/Odeon/images/scatteringCoeffic
-ients.png used on input line 73.
-(pdftex.def)             Requested size: 378.21593pt x 101.4799pt.
- [18 <./Sections/Implementation/Odeon/images/seating.jpg> <./Sections/Implement
-ation/Odeon/images/OdeonRays/transparencyEdit/singleRay2_edit3.PNG>]
-<Sections/Implementation/Odeon/images/MaterialCompare/OriginalMaterials/origina
-l.png, id=648, 1114.1625pt x 716.6775pt>
-File: Sections/Implementation/Odeon/images/MaterialCompare/OriginalMaterials/or
-iginal.png Graphic file (type png)
-
-<use Sections/Implementation/Odeon/images/MaterialCompare/OriginalMaterials/ori
-ginal.png>
-Package pdftex.def Info: Sections/Implementation/Odeon/images/MaterialCompare/O
-riginalMaterials/original.png used on input line 84.
-(pdftex.def)             Requested size: 334.25133pt x 215.00491pt.
- [19 <./Sections/Implementation/Odeon/images/scatteringCoefficients.png> <./Sec
-tions/Implementation/Odeon/images/MaterialCompare/OriginalMaterials/original.pn
-g>]
-
-LaTeX Warning: Reference `SoftwareOdon' on page 20 undefined on input line 115.
-
-
-
-<Sections/Implementation/Odeon/images/MaterialCompare/OriginalMaterials/all.png
-, id=676, 1118.1775pt x 708.6475pt>
-File: Sections/Implementation/Odeon/images/MaterialCompare/OriginalMaterials/al
-l.png Graphic file (type png)
-
-<use Sections/Implementation/Odeon/images/MaterialCompare/OriginalMaterials/all
-.png>
-Package pdftex.def Info: Sections/Implementation/Odeon/images/MaterialCompare/O
-riginalMaterials/all.png used on input line 123.
-(pdftex.def)             Requested size: 447.26308pt x 283.45398pt.
-
-Overfull \hbox (20.47174pt too wide) in paragraph at lines 123--124
- [] 
- []
-
-[20]
-<Sections/Implementation/Odeon/images/MaterialCompare/OriginalMaterials/new.png
-, id=689, 1124.2pt x 667.49374pt>
-File: Sections/Implementation/Odeon/images/MaterialCompare/OriginalMaterials/ne
-w.png Graphic file (type png)
-
-<use Sections/Implementation/Odeon/images/MaterialCompare/OriginalMaterials/new
-.png>
-Package pdftex.def Info: Sections/Implementation/Odeon/images/MaterialCompare/O
-riginalMaterials/new.png used on input line 130.
-(pdftex.def)             Requested size: 337.2626pt x 200.24966pt.
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 135.
- (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/t1pcr.fd
-File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-) [21 <./Sections/Implementation/Odeon/images/MaterialCompare/OriginalMaterials
-/all.png> <./Sections/Implementation/Odeon/images/MaterialCompare/OriginalMater
-ials/new.png>]
-<Sections/Implementation/Odeon/images/MaterialCompare/NewMaterials/newOdeonComp
-arison.png, id=709, 1129.21875pt x 716.6775pt>
-File: Sections/Implementation/Odeon/images/MaterialCompare/NewMaterials/newOdeo
-nComparison.png Graphic file (type png)
-
-<use Sections/Implementation/Odeon/images/MaterialCompare/NewMaterials/newOdeon
-Comparison.png>
-Package pdftex.def Info: Sections/Implementation/Odeon/images/MaterialCompare/N
-ewMaterials/newOdeonComparison.png used on input line 142.
-(pdftex.def)             Requested size: 451.6795pt x 286.66592pt.
-
-Overfull \hbox (24.88817pt too wide) in paragraph at lines 142--143
- [] 
- []
-
-[22 <./Sections/Implementation/Odeon/images/MaterialCompare/NewMaterials/newOde
-onComparison.png>]
-Package acronym Info: Label `acro:VBS' newly defined as it shall be overridden
-although it is yet undefined on input line 173.
-Package acronym Info: Label `acro:LR's' newly defined as it shall be overridden
-
-although it is yet undefined on input line 177.
-
-<Sections/Implementation/Odeon/images/OdeonSettings/settingsFigure_edit.png, id
-=748, 1190.4475pt x 697.60625pt>
-File: Sections/Implementation/Odeon/images/OdeonSettings/settingsFigure_edit.pn
-g Graphic file (type png)
-
-<use Sections/Implementation/Odeon/images/OdeonSettings/settingsFigure_edit.png
->
-Package pdftex.def Info: Sections/Implementation/Odeon/images/OdeonSettings/set
-tingsFigure_edit.png used on input line 200.
-(pdftex.def)             Requested size: 476.17056pt x 279.03755pt.
-
-Overfull \hbox (49.37923pt too wide) in paragraph at lines 200--201
- [] 
- []
-
-
-<Sections/Implementation/Odeon/images/OdeonSettings/settingsFigureZoomed.png, i
-d=753, 1561.835pt x 863.225pt>
-File: Sections/Implementation/Odeon/images/OdeonSettings/settingsFigureZoomed.p
-ng Graphic file (type png)
-
-<use Sections/Implementation/Odeon/images/OdeonSettings/settingsFigureZoomed.pn
-g>
-Package pdftex.def Info: Sections/Implementation/Odeon/images/OdeonSettings/set
-tingsFigureZoomed.png used on input line 206.
-(pdftex.def)             Requested size: 468.55412pt x 258.9695pt.
-
-Overfull \hbox (41.76279pt too wide) in paragraph at lines 206--207
- [] 
- []
-
-[23] [24 <./Sections/Implementation/Odeon/images/OdeonSettings/settingsFigure_e
-dit.png>]
-<Sections/Implementation/Odeon/images/OdeonSettings/settingsFigure_TOZoom.png, 
-id=767, 1575.8875pt x 855.195pt>
-File: Sections/Implementation/Odeon/images/OdeonSettings/settingsFigure_TOZoom.
-png Graphic file (type png)
-
-<use Sections/Implementation/Odeon/images/OdeonSettings/settingsFigure_TOZoom.p
-ng>
-Package pdftex.def Info: Sections/Implementation/Odeon/images/OdeonSettings/set
-tingsFigure_TOZoom.png used on input line 213.
-(pdftex.def)             Requested size: 472.7699pt x 256.56049pt.
-
-Overfull \hbox (45.97856pt too wide) in paragraph at lines 213--214
- [] 
- []
-
-[25 <./Sections/Implementation/Odeon/images/OdeonSettings/settingsFigureZoomed.
-png> <./Sections/Implementation/Odeon/images/OdeonSettings/settingsFigure_TOZoo
-m.png>] [26]
-<Sections/Implementation/Odeon/images/Directivity/DirectivityPattern.png, id=81
-9, 1445.4pt x 788.9475pt>
-File: Sections/Implementation/Odeon/images/Directivity/DirectivityPattern.png G
-raphic file (type png)
-
-<use Sections/Implementation/Odeon/images/Directivity/DirectivityPattern.png>
-Package pdftex.def Info: Sections/Implementation/Odeon/images/Directivity/Direc
-tivityPattern.png used on input line 258.
-(pdftex.def)             Requested size: 433.62335pt x 236.68607pt.
-
-Overfull \hbox (6.83202pt too wide) in paragraph at lines 258--259
- [] 
- []
-
-
-LaTeX Warning: Reference `incorrectRIR_3' on page 27 undefined on input line 26
-9.
-
-[27 <./Sections/Implementation/Odeon/images/Directivity/DirectivityPattern.png>
-]
-<Sections/Implementation/Odeon/images/incorrectRIR/RIR_76_incorrect_edit.png, i
-d=835, 1590.94376pt x 886.31125pt>
-File: Sections/Implementation/Odeon/images/incorrectRIR/RIR_76_incorrect_edit.p
-ng Graphic file (type png)
-
-<use Sections/Implementation/Odeon/images/incorrectRIR/RIR_76_incorrect_edit.pn
-g>
-Package pdftex.def Info: Sections/Implementation/Odeon/images/incorrectRIR/RIR_
-76_incorrect_edit.png used on input line 276.
-(pdftex.def)             Requested size: 477.2868pt x 265.89542pt.
-
-Overfull \hbox (50.49547pt too wide) in paragraph at lines 276--277
- [] 
- []
-
-
-<Sections/Implementation/Odeon/images/incorrectRIR/RIR_76_incorrect_edit_crop.p
-ng, id=843, 849.1725pt x 251.94125pt>
-File: Sections/Implementation/Odeon/images/incorrectRIR/RIR_76_incorrect_edit_c
-rop.png Graphic file (type png)
-
-<use Sections/Implementation/Odeon/images/incorrectRIR/RIR_76_incorrect_edit_cr
-op.png>
-Package pdftex.def Info: Sections/Implementation/Odeon/images/incorrectRIR/RIR_
-76_incorrect_edit_crop.png used on input line 285.
-(pdftex.def)             Requested size: 424.5852pt x 125.9703pt.
- [28 <./Sections/Implementation/Odeon/images/incorrectRIR/RIR_76_incorrect_edit
-.png>] [29 <./Sections/Implementation/Odeon/images/incorrectRIR/RIR_76_incorrec
-t_edit_crop.png>] [30]
-<Sections/Implementation/Odeon/images/incorrectRIR/HeightTest_Edit.png, id=884,
- 1636.1125pt x 945.5325pt>
-File: Sections/Implementation/Odeon/images/incorrectRIR/HeightTest_Edit.png Gra
-phic file (type png)
-
-<use Sections/Implementation/Odeon/images/incorrectRIR/HeightTest_Edit.png>
-Package pdftex.def Info: Sections/Implementation/Odeon/images/incorrectRIR/Heig
-htTest_Edit.png used on input line 377.
-(pdftex.def)             Requested size: 490.83754pt x 283.66194pt.
-LaTeX Font Info:    Font shape `T1/ppl/bx/it' in size <8> not available
-(Font)              Font shape `T1/ppl/b/it' tried instead on input line 386.
-
-[31 <./Sections/Implementation/Odeon/images/incorrectRIR/HeightTest_Edit.png>]
-<Sections/Implementation/Odeon/images/incorrectRIR/76_60cm_editV2_crop.png, id=
-905, 620.3175pt x 252.945pt>
-File: Sections/Implementation/Odeon/images/incorrectRIR/76_60cm_editV2_crop.png
- Graphic file (type png)
-
-<use Sections/Implementation/Odeon/images/incorrectRIR/76_60cm_editV2_crop.png>
-Package pdftex.def Info: Sections/Implementation/Odeon/images/incorrectRIR/76_6
-0cm_editV2_crop.png used on input line 395.
-(pdftex.def)             Requested size: 372.19337pt x 151.76816pt.
-
-<Sections/Implementation/Odeon/images/incorrectRIR/reflectionPaths_colourV1.png
-, id=911, 2013.5225pt x 1478.52374pt>
-File: Sections/Implementation/Odeon/images/incorrectRIR/reflectionPaths_colourV
-1.png Graphic file (type png)
-
-<use Sections/Implementation/Odeon/images/incorrectRIR/reflectionPaths_colourV1
-.png>
-Package pdftex.def Info: Sections/Implementation/Odeon/images/incorrectRIR/refl
-ectionPaths_colourV1.png used on input line 416.
-(pdftex.def)             Requested size: 503.3794pt x 369.63004pt.
- [32 <./Sections/Implementation/Odeon/images/incorrectRIR/76_60cm_editV2_crop.p
-ng>] [33 <./Sections/Implementation/Odeon/images/incorrectRIR/reflectionPaths_c
-olourV1.png>]
-<Sections/Implementation/Odeon/images/RIRPositions/RIRPositionAnnotated.png, id
-=936, 934.49126pt x 946.53625pt>
-File: Sections/Implementation/Odeon/images/RIRPositions/RIRPositionAnnotated.pn
-g Graphic file (type png)
-
-<use Sections/Implementation/Odeon/images/RIRPositions/RIRPositionAnnotated.png
->
-Package pdftex.def Info: Sections/Implementation/Odeon/images/RIRPositions/RIRP
-ositionAnnotated.png used on input line 429.
-(pdftex.def)             Requested size: 373.78989pt x 378.60779pt.
-
-
-LaTeX Warning: Reference `latency' on page 34 undefined on input line 436.
-
-[34 <./Sections/Implementation/Odeon/images/RIRPositions/RIRPositionAnnotated.p
-ng>]
-<Sections/Implementation/Odeon/images/RIRPositions/RIR_Position_Bulk.png, id=95
-5, 934.49126pt x 946.53625pt>
-File: Sections/Implementation/Odeon/images/RIRPositions/RIR_Position_Bulk.png G
-raphic file (type png)
-
-<use Sections/Implementation/Odeon/images/RIRPositions/RIR_Position_Bulk.png>
-Package pdftex.def Info: Sections/Implementation/Odeon/images/RIRPositions/RIR_
-Position_Bulk.png used on input line 442.
-(pdftex.def)             Requested size: 373.78989pt x 378.60779pt.
-
-[35 <./Sections/Implementation/Odeon/images/RIRPositions/RIR_Position_Bulk.png>
-]
-<Sections/Implementation/Odeon/images/SouRecPos/SouRecSelection_crop.png, id=97
-1, 825.83531pt x 364.36125pt>
-File: Sections/Implementation/Odeon/images/SouRecPos/SouRecSelection_crop.png G
-raphic file (type png)
-
-<use Sections/Implementation/Odeon/images/SouRecPos/SouRecSelection_crop.png>
-Package pdftex.def Info: Sections/Implementation/Odeon/images/SouRecPos/SouRecS
-election_crop.png used on input line 459.
-(pdftex.def)             Requested size: 330.32828pt x 145.74191pt.
-)
-(./Sections/Implementation/Max/Max.tex [36 <./Sections/Implementation/Odeon/ima
-ges/SouRecPos/SouRecSelection_crop.png>]
-<Sections/Implementation/Max/images/Max/OriginalPatch_Edit.png, id=986, 1437.37
+although it is yet undefined on input line 11.
+Package acronym Info: Label `acro:RIR' newly defined as it shall be overridden
+although it is yet undefined on input line 19.
+Package acronym Info: Label `acro:VAE' newly defined as it shall be overridden
+although it is yet undefined on input line 19.
+
+<Sections/Implementation/Max/images/Max/OriginalPatch_Edit.png, id=145, 1437.37
 pt x 783.92876pt>
 File: Sections/Implementation/Max/images/Max/OriginalPatch_Edit.png Graphic fil
 e (type png)
 
 <use Sections/Implementation/Max/images/Max/OriginalPatch_Edit.png>
 Package pdftex.def Info: Sections/Implementation/Max/images/Max/OriginalPatch_E
-dit.png used on input line 24.
+dit.png used on input line 27.
 (pdftex.def)             Requested size: 574.93782pt x 313.56595pt.
- [37 <./Sections/Implementation/Max/images/Max/OriginalPatch_Edit.png>]
-<Sections/Implementation/Max/images/Max/MyPatch_Edit.png, id=1008, 1334.9875pt 
-x 915.42pt>
+ [3]
+[4 <./Sections/Implementation/Max/images/Max/OriginalPatch_Edit.png>]
+<Sections/Implementation/Max/images/Max/MyPatch_Edit.png, id=172, 1334.9875pt x
+ 915.42pt>
 File: Sections/Implementation/Max/images/Max/MyPatch_Edit.png Graphic file (typ
 e png)
  <use Sections/Implementation/Max/images/Max/MyPatch_Edit.png>
 Package pdftex.def Info: Sections/Implementation/Max/images/Max/MyPatch_Edit.pn
-g used on input line 48.
+g used on input line 51.
 (pdftex.def)             Requested size: 533.98555pt x 366.16151pt.
 
-[38 <./Sections/Implementation/Max/images/Max/MyPatch_Edit.png>]
-<Sections/Implementation/Max/images/FlowDiagrams/Max1_V2.png, id=1016, 803.0pt 
-x 1199.48125pt>
+[5 <./Sections/Implementation/Max/images/Max/MyPatch_Edit.png>]
+<Sections/Implementation/Max/images/FlowDiagrams/Max1_V2.png, id=180, 803.0pt x
+ 1199.48125pt>
 File: Sections/Implementation/Max/images/FlowDiagrams/Max1_V2.png Graphic file 
 (type png)
 
 <use Sections/Implementation/Max/images/FlowDiagrams/Max1_V2.png>
 Package pdftex.def Info: Sections/Implementation/Max/images/FlowDiagrams/Max1_V
-2.png used on input line 67.
+2.png used on input line 72.
 (pdftex.def)             Requested size: 240.90186pt x 359.84715pt.
 
-<Sections/Implementation/Max/images/Max/lcd.png, id=1021, 690.58pt x 681.54625p
-t>
+<Sections/Implementation/Max/images/Max/lcd.png, id=185, 690.58pt x 681.54625pt
+>
 File: Sections/Implementation/Max/images/Max/lcd.png Graphic file (type png)
  <use Sections/Implementation/Max/images/Max/lcd.png>
 Package pdftex.def Info: Sections/Implementation/Max/images/Max/lcd.png used on
- input line 76.
+ input line 81.
 (pdftex.def)             Requested size: 276.2271pt x 272.61366pt.
- [39 <./Sections/Implementation/Max/images/FlowDiagrams/Max1_V2.png>]
-<Sections/Implementation/Max/images/Max/UI_to_file_edit_3.png, id=1030, 641.396
-26pt x 320.19624pt>
-File: Sections/Implementation/Max/images/Max/UI_to_file_edit_3.png Graphic file
+ [6 <./Sections/Implementation/Max/images/FlowDiagrams/Max1_V2.png>]
+<Sections/Implementation/Max/images/Max/UI_to_file_edit_4.png, id=198, 644.4075
+pt x 298.11375pt>
+File: Sections/Implementation/Max/images/Max/UI_to_file_edit_4.png Graphic file
  (type png)
 
-<use Sections/Implementation/Max/images/Max/UI_to_file_edit_3.png>
+<use Sections/Implementation/Max/images/Max/UI_to_file_edit_4.png>
 Package pdftex.def Info: Sections/Implementation/Max/images/Max/UI_to_file_edit
-_3.png used on input line 87.
-(pdftex.def)             Requested size: 384.84071pt x 192.11922pt.
- [40 <./Sections/Implementation/Max/images/Max/lcd.png>] [41 <./Sections/Implem
-entation/Max/images/Max/UI_to_file_edit_3.png>])
-(./Sections/Implementation/RealRIRs/RealRIRs.tex [42]
-<Sections/Implementation/RealRIRs/images/realRIRTopology1.jpg, id=1088, 2457.18
-pt x 3276.24pt>
-File: Sections/Implementation/RealRIRs/images/realRIRTopology1.jpg Graphic file
- (type jpg)
-
-<use Sections/Implementation/RealRIRs/images/realRIRTopology1.jpg>
-Package pdftex.def Info: Sections/Implementation/RealRIRs/images/realRIRTopolog
-y1.jpg used on input line 22.
-(pdftex.def)             Requested size: 147.42444pt x 196.56592pt.
-
-<Sections/Implementation/RealRIRs/images/realRIRSetup_edit.jpg, id=1091, 2784.4
-025pt x 1464.47125pt>
-File: Sections/Implementation/RealRIRs/images/realRIRSetup_edit.jpg Graphic fil
-e (type jpg)
-
-<use Sections/Implementation/RealRIRs/images/realRIRSetup_edit.jpg>
-Package pdftex.def Info: Sections/Implementation/RealRIRs/images/realRIRSetup_e
-dit.jpg used on input line 31.
-(pdftex.def)             Requested size: 389.81369pt x 205.02457pt.
-
-<Sections/Implementation/RealRIRs/images/Real_RIRs7_editV2.png, id=1096, 1557.8
-2pt x 988.69376pt>
-File: Sections/Implementation/RealRIRs/images/Real_RIRs7_editV2.png Graphic fil
-e (type png)
-
-<use Sections/Implementation/RealRIRs/images/Real_RIRs7_editV2.png>
-Package pdftex.def Info: Sections/Implementation/RealRIRs/images/Real_RIRs7_edi
-tV2.png used on input line 52.
-(pdftex.def)             Requested size: 467.34961pt x 296.61041pt.
-
-Overfull \hbox (40.55827pt too wide) in paragraph at lines 52--53
- [] 
+_4.png used on input line 94.
+(pdftex.def)             Requested size: 386.64748pt x 178.86963pt.
+ [7 <./Sections/Implementation/Max/images/Max/lcd.png>]
+Overfull \hbox (62.16049pt too wide) in paragraph at lines 123--130
+[] [] 
  []
 
-[43]) (./Sections/Implementation/RIRFinalisation/RIRFinalisation.tex)
-(./Sections/userTesting/userTesting.tex)
+
+Overfull \hbox (1.90001pt too wide) in paragraph at lines 102--132
+$[]$ $[]$ 
+ []
+
+
+LaTeX Warning: Reference `furtherwork' on page 8 undefined on input line 133.
+
+[8 <./Sections/Implementation/Max/images/Max/UI_to_file_edit_4.png>]
+LaTeX Font Info:    Try loading font information for TS1+ppl on input line 153.
+
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/ts1ppl.fd
+File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
+) [9] [10]
+[11]
+<Sections/Implementation/Max/images/Max/iteration1/panning_edit2.png, id=326, 1
+186.4325pt x 521.95pt>
+File: Sections/Implementation/Max/images/Max/iteration1/panning_edit2.png Graph
+ic file (type png)
+
+<use Sections/Implementation/Max/images/Max/iteration1/panning_edit2.png>
+Package pdftex.def Info: Sections/Implementation/Max/images/Max/iteration1/pann
+ing_edit2.png used on input line 242.
+(pdftex.def)             Requested size: 533.8897pt x 234.87532pt.
+
+<Sections/Implementation/Max/images/Max/iteration1/panning1.png, id=327, 1115.1
+6624pt x 498.86375pt>
+File: Sections/Implementation/Max/images/Max/iteration1/panning1.png Graphic fi
+le (type png)
+
+<use Sections/Implementation/Max/images/Max/iteration1/panning1.png>
+Package pdftex.def Info: Sections/Implementation/Max/images/Max/iteration1/pann
+ing1.png used on input line 249.
+(pdftex.def)             Requested size: 446.0586pt x 199.54196pt.
+
+<Sections/Implementation/Max/images/Max/iteration1/panning2.png, id=328, 1111.1
+5125pt x 603.25375pt>
+File: Sections/Implementation/Max/images/Max/iteration1/panning2.png Graphic fi
+le (type png)
+
+<use Sections/Implementation/Max/images/Max/iteration1/panning2.png>
+Package pdftex.def Info: Sections/Implementation/Max/images/Max/iteration1/pann
+ing2.png used on input line 250.
+(pdftex.def)             Requested size: 444.45262pt x 241.29723pt.
+
+<Sections/Implementation/Max/images/Max/iteration1/panning3.png, id=329, 1156.3
+2pt x 525.965pt>
+File: Sections/Implementation/Max/images/Max/iteration1/panning3.png Graphic fi
+le (type png)
+
+<use Sections/Implementation/Max/images/Max/iteration1/panning3.png>
+Package pdftex.def Info: Sections/Implementation/Max/images/Max/iteration1/pann
+ing3.png used on input line 251.
+(pdftex.def)             Requested size: 462.5198pt x 210.38226pt.
+ [12 <./Sections/Implementation/Max/images/Max/iteration1/panning_edit2.png>]
+Overfull \vbox (28.39148pt too high) has occurred while \output is active []
+
+
+[13 <./Sections/Implementation/Max/images/Max/iteration1/panning1.png> <./Secti
+ons/Implementation/Max/images/Max/iteration1/panning2.png> <./Sections/Implemen
+tation/Max/images/Max/iteration1/panning3.png>]
+<Sections/Implementation/Max/images/Max/Iteration2/preload.png, id=349, 1393.20
+5pt x 666.49pt>
+File: Sections/Implementation/Max/images/Max/Iteration2/preload.png Graphic fil
+e (type png)
+
+<use Sections/Implementation/Max/images/Max/Iteration2/preload.png>
+Package pdftex.def Info: Sections/Implementation/Max/images/Max/Iteration2/prel
+oad.png used on input line 265.
+(pdftex.def)             Requested size: 557.27214pt x 266.59128pt.
+ [14 <./Sections/Implementation/Max/images/Max/Iteration2/preload.png>]
+<Sections/Implementation/Max/images/Max/Iteration3/storeLocations_edit.png, id=
+361, 583.17876pt x 441.65pt>
+File: Sections/Implementation/Max/images/Max/Iteration3/storeLocations_edit.png
+ Graphic file (type png)
+
+<use Sections/Implementation/Max/images/Max/Iteration3/storeLocations_edit.png>
+Package pdftex.def Info: Sections/Implementation/Max/images/Max/Iteration3/stor
+eLocations_edit.png used on input line 284.
+(pdftex.def)             Requested size: 233.26736pt x 176.65686pt.
+) (./Sections/userTesting/userTesting.tex)
 (./Sections/Appendix/AppendixA/AppendixA.tex
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <20.74> not available
 (Font)              Font shape `T1/ppl/b/n' tried instead on input line 14.
- [44]
-<Sections/Appendix/AppendixA/images/bluePrintTop.jpg, id=1118, 2888.7925pt x 20
-32.59375pt>
+ [15 <./Sections/Implementation/Max/images/Max/Iteration3/storeLocations_edit.p
+ng>]
+<Sections/Appendix/AppendixA/images/bluePrintTop.jpg, id=368, 2888.7925pt x 203
+2.59375pt>
 File: Sections/Appendix/AppendixA/images/bluePrintTop.jpg Graphic file (type jp
 g)
  <use Sections/Appendix/AppendixA/images/bluePrintTop.jpg>
 Package pdftex.def Info: Sections/Appendix/AppendixA/images/bluePrintTop.jpg us
-ed on input line 20.
+ed on input line 21.
 (pdftex.def)             Requested size: 288.89618pt x 203.27129pt.
 
-<Sections/Appendix/AppendixA/images/realVsSku/roofSku.png, id=1119, 1445.4pt x 
-903.375pt>
+<Sections/Appendix/AppendixA/images/realVsSku/roofSku.png, id=369, 1445.4pt x 9
+03.375pt>
 File: Sections/Appendix/AppendixA/images/realVsSku/roofSku.png Graphic file (ty
 pe png)
  <use Sections/Appendix/AppendixA/images/realVsSku/roofSku.png>
 Package pdftex.def Info: Sections/Appendix/AppendixA/images/realVsSku/roofSku.p
-ng used on input line 29.
+ng used on input line 28.
 (pdftex.def)             Requested size: 289.07487pt x 180.6718pt.
 
-<Sections/Appendix/AppendixA/images/realVsSku/roofReal.jpg, id=1120, 3276.24pt 
-x 2457.18pt>
+<Sections/Appendix/AppendixA/images/realVsSku/roofReal.jpg, id=370, 3276.24pt x
+ 2457.18pt>
 File: Sections/Appendix/AppendixA/images/realVsSku/roofReal.jpg Graphic file (t
 ype jpg)
  <use Sections/Appendix/AppendixA/images/realVsSku/roofReal.jpg>
 Package pdftex.def Info: Sections/Appendix/AppendixA/images/realVsSku/roofReal.
-jpg used on input line 30.
+jpg used on input line 29.
 (pdftex.def)             Requested size: 327.64319pt x 245.73239pt.
 
-<Sections/Appendix/AppendixA/images/realVsSku/fromSeatsSku.png, id=1121, 1445.4
-pt x 903.375pt>
+[16 <./Sections/Appendix/AppendixA/images/bluePrintTop.jpg>]
+<Sections/Appendix/AppendixA/images/realVsSku/fromSeatsSku.png, id=376, 1445.4p
+t x 903.375pt>
 File: Sections/Appendix/AppendixA/images/realVsSku/fromSeatsSku.png Graphic fil
 e (type png)
 
 <use Sections/Appendix/AppendixA/images/realVsSku/fromSeatsSku.png>
 Package pdftex.def Info: Sections/Appendix/AppendixA/images/realVsSku/fromSeats
-Sku.png used on input line 35.
+Sku.png used on input line 34.
 (pdftex.def)             Requested size: 289.07487pt x 180.6718pt.
 
-<Sections/Appendix/AppendixA/images/realVsSku/fromSeatsReal.jpg, id=1122, 3276.
-24pt x 2457.18pt>
+<Sections/Appendix/AppendixA/images/realVsSku/fromSeatsReal.jpg, id=377, 3276.2
+4pt x 2457.18pt>
 File: Sections/Appendix/AppendixA/images/realVsSku/fromSeatsReal.jpg Graphic fi
 le (type jpg)
 
 <use Sections/Appendix/AppendixA/images/realVsSku/fromSeatsReal.jpg>
 Package pdftex.def Info: Sections/Appendix/AppendixA/images/realVsSku/fromSeats
-Real.jpg used on input line 36.
+Real.jpg used on input line 35.
 (pdftex.def)             Requested size: 327.64319pt x 245.73239pt.
-
-<Sections/Appendix/AppendixA/images/realVsSku/doorsSku.png, id=1123, 1445.4pt x
- 903.375pt>
+ [17 <./Sections/Appendix/AppendixA/images/realVsSku/roofSku.png> <./Sections/A
+ppendix/AppendixA/images/realVsSku/roofReal.jpg>]
+<Sections/Appendix/AppendixA/images/realVsSku/doorsSku.png, id=384, 1445.4pt x 
+903.375pt>
 File: Sections/Appendix/AppendixA/images/realVsSku/doorsSku.png Graphic file (t
 ype png)
  <use Sections/Appendix/AppendixA/images/realVsSku/doorsSku.png>
 Package pdftex.def Info: Sections/Appendix/AppendixA/images/realVsSku/doorsSku.
-png used on input line 41.
+png used on input line 40.
 (pdftex.def)             Requested size: 289.07487pt x 180.6718pt.
 
-<Sections/Appendix/AppendixA/images/realVsSku/doorsReal.jpg, id=1124, 3276.24pt
- x 2457.18pt>
+<Sections/Appendix/AppendixA/images/realVsSku/doorsReal.jpg, id=385, 3276.24pt 
+x 2457.18pt>
 File: Sections/Appendix/AppendixA/images/realVsSku/doorsReal.jpg Graphic file (
 type jpg)
  <use Sections/Appendix/AppendixA/images/realVsSku/doorsReal.jpg>
 Package pdftex.def Info: Sections/Appendix/AppendixA/images/realVsSku/doorsReal
-.jpg used on input line 42.
+.jpg used on input line 41.
 (pdftex.def)             Requested size: 327.64319pt x 245.73239pt.
 
-(./Sections/Appendix/AppendixA/Code/loadFilesLogic.js [45] [46])) [47]
-Overfull \hbox (4.04419pt too wide) in paragraph at lines 94--94
-\T1/ppl/m/n/10 gby Den-mark, 2015. [On-line]. Avail-able: [][]$\T1/pcr/m/n/10 h
-ttp : / / www . odeon . dk / pdf / ODEONManual12 .
+[18 <./Sections/Appendix/AppendixA/images/realVsSku/fromSeatsSku.png> <./Sectio
+ns/Appendix/AppendixA/images/realVsSku/fromSeatsReal.jpg>]
+<Sections/Appendix/AppendixA/images/Odeon/2m.png, id=392, 934.49126pt x 946.536
+25pt>
+File: Sections/Appendix/AppendixA/images/Odeon/2m.png Graphic file (type png)
+ <use Sections/Appendix/AppendixA/images/Odeon/2m.png>
+Package pdftex.def Info: Sections/Appendix/AppendixA/images/Odeon/2m.png used o
+n input line 52.
+(pdftex.def)             Requested size: 214.92847pt x 217.69876pt.
+
+<Sections/Appendix/AppendixA/images/Odeon/3m.png, id=395, 934.49126pt x 946.536
+25pt>
+File: Sections/Appendix/AppendixA/images/Odeon/3m.png Graphic file (type png)
+ <use Sections/Appendix/AppendixA/images/Odeon/3m.png>
+Package pdftex.def Info: Sections/Appendix/AppendixA/images/Odeon/3m.png used o
+n input line 59.
+(pdftex.def)             Requested size: 214.92847pt x 217.69876pt.
+
+Overfull \hbox (1.90001pt too wide) in paragraph at lines 50--64
+$[]$ $[]$ 
  []
 
+[19 <./Sections/Appendix/AppendixA/images/realVsSku/doorsSku.png> <./Sections/A
+ppendix/AppendixA/images/realVsSku/doorsReal.jpg>]
+<Sections/Appendix/AppendixA/images/Odeon/4m.png, id=406, 934.49126pt x 946.536
+25pt>
+File: Sections/Appendix/AppendixA/images/Odeon/4m.png Graphic file (type png)
+ <use Sections/Appendix/AppendixA/images/Odeon/4m.png>
+Package pdftex.def Info: Sections/Appendix/AppendixA/images/Odeon/4m.png used o
+n input line 67.
+(pdftex.def)             Requested size: 214.92847pt x 217.69876pt.
 
-Overfull \hbox (1.9156pt too wide) in paragraph at lines 94--94
-[]\T1/ppl/m/n/10 (2016). Max/msp, Cy-cling74, [On-line]. Avail-able: [][]$\T1/p
-cr/m/n/10 https : / / cycling74 . com / products /
+<Sections/Appendix/AppendixA/images/Odeon/5m.png, id=409, 934.49126pt x 946.536
+25pt>
+File: Sections/Appendix/AppendixA/images/Odeon/5m.png Graphic file (type png)
+ <use Sections/Appendix/AppendixA/images/Odeon/5m.png>
+Package pdftex.def Info: Sections/Appendix/AppendixA/images/Odeon/5m.png used o
+n input line 74.
+(pdftex.def)             Requested size: 214.92847pt x 217.69876pt.
+
+Overfull \hbox (1.90001pt too wide) in paragraph at lines 65--79
+[]$[]$ $[]$ 
  []
 
-[48]
-Overfull \hbox (14.91418pt too wide) in paragraph at lines 94--94
-[]\T1/ppl/m/n/10 (2016). Ab-sorp-tion co-ef-fi-cients, Acous-tic-Traf-fic, [On-
-line]. Avail-able: [][]$\T1/pcr/m/n/10 http : / / www . acoustic .
+[20 <./Sections/Appendix/AppendixA/images/Odeon/2m.png> <./Sections/Appendix/Ap
+pendixA/images/Odeon/3m.png> <./Sections/Appendix/AppendixA/images/Odeon/4m.png
+> <./Sections/Appendix/AppendixA/images/Odeon/5m.png>]
+(./Sections/Appendix/AppendixA/Code/loadFilesLogic.js [21] [22])) [23]
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 93.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/t1pcr.fd
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+)
+Overfull \hbox (23.74594pt too wide) in paragraph at lines 94--94
+[]\T1/ppl/m/n/10 (2016). C74, Cy-cling74, [On-line]. Avail-able: [][]$\T1/pcr/m
+/n/10 https : / / cycling74 . com / project / project43 -[]
  []
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 94.
-[49] [50 <./Sections/Implementation/Modelling/images/realVsSku/roofSku.png> <./
-Sections/Implementation/Modelling/images/HHroof.jpg>] [51 <./Sections/Implement
-ation/RealRIRs/images/realRIRTopology1.jpg>] [52 <./Sections/Implementation/Rea
-lRIRs/images/realRIRSetup_edit.jpg> <./Sections/Implementation/RealRIRs/images/
-Real_RIRs7_editV2.png>] [53 <./Sections/Appendix/AppendixA/images/bluePrintTop.
-jpg>] [54 <./Sections/Appendix/AppendixA/images/realVsSku/roofSku.png> <./Secti
-ons/Appendix/AppendixA/images/realVsSku/roofReal.jpg>] [55 <./Sections/Appendix
-/AppendixA/images/realVsSku/fromSeatsSku.png> <./Sections/Appendix/AppendixA/im
-ages/realVsSku/fromSeatsReal.jpg>] [56 <./Sections/Appendix/AppendixA/images/re
-alVsSku/doorsSku.png> <./Sections/Appendix/AppendixA/images/realVsSku/doorsReal
-.jpg>]
+[24]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 94.
  (./main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 94.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 94.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 7D6CC4AD32BBA8A6454146CBCD9F415B;5188.
+(rerunfilecheck)             Checksum: 678847EBF622F197E8235C2CE9D218AC;1532.
 
 
 LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: There were multiply-defined labels.
 
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
@@ -1922,25 +1452,23 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 94.
  ) 
 Here is how much of TeX's memory you used:
- 17527 strings out of 493089
- 286748 string characters out of 6134842
- 935322 words of memory out of 5000000
- 20256 multiletter control sequences out of 15000+600000
- 47370 words of font info for 88 fonts, out of 8000000 for 9000
+ 17044 strings out of 493089
+ 272754 string characters out of 6134842
+ 836420 words of memory out of 5000000
+ 19970 multiletter control sequences out of 15000+600000
+ 34803 words of font info for 68 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 47i,13n,52p,1299b,2007s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 47i,12n,48p,1033b,1953s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
-exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/tex
-live/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texl
-ive/2015/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2015
-/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2015/texmf-
-dist/fonts/type1/urw/palatino/uplbi8a.pfb></usr/local/texlive/2015/texmf-dist/f
-onts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/ty
-pe1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (56 pages, 17712080 bytes).
+exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/te
+xlive/2015/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/20
+15/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2015/texm
+f-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2015/texmf-dist/
+fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on main.pdf (24 pages, 9574756 bytes).
 PDF statistics:
- 1441 PDF objects out of 1728 (max. 8388607)
- 1248 compressed objects within 13 object streams
- 368 named destinations out of 1000 (max. 500000)
- 825 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 611 PDF objects out of 1000 (max. 8388607)
+ 526 compressed objects within 6 object streams
+ 241 named destinations out of 1000 (max. 500000)
+ 295 words of extra memory for PDF output out of 10000 (max. 10000000)
 
