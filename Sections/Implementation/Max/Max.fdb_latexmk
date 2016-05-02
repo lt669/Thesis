@@ -1,0 +1,13 @@
+# Fdb version 3
+["pdflatex"] 1462116691 "Max.tex" "Max.pdf" "Max" 1462116691
+  "../../main.tex" 0 -1 0 ""
+  "/usr/local/texlive/2015/texmf-dist/tex/latex/subfiles/subfiles.cls" 1337903397 1668 72b0756be37b3cb3f28b12a13569c109 ""
+  "/usr/local/texlive/2015/texmf-dist/tex/latex/tools/verbatim.sty" 1428932888 7264 8720371c12792118e8ec06018cd2e9c6 ""
+  "/usr/local/texlive/2015/texmf-dist/web2c/texmf.cnf" 1428852030 31983 18aeec08f48baa3cf3508d538dd5f459 ""
+  "/usr/local/texlive/2015/texmf-var/web2c/pdftex/pdflatex.fmt" 1457994678 3849859 e8db08d4628ec5827045b6ee8071c089 ""
+  "/usr/local/texlive/2015/texmf.cnf" 1432479636 577 0d611272082f3cdb8e80e09a3c69cf07 ""
+  "Max.aux" 1462116691 8 a94a2480d3289e625eea47cd1b285758 ""
+  "Max.tex" 1462116691 23422 be245e0ea63389801dcd79d96d4b477d ""
+  (generated)
+  "Max.pdf"
+  "Max.log"

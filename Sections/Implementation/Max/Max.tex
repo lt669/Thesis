@@ -92,11 +92,11 @@
 			%-------------UI_to_file Image-------------%
 			\begin{figure}[H]
 				\centerline{\includegraphics[scale = 0.6]{Sections/Implementation/Max/images/Max/UI_to_file_edit_4.png}}
-				\caption{Screen shot from Max showing a section that converts the user interface coordinates into the appropriate file name. 1) Coordinates from lcd object 2) Dimensions of lcd object 3) Number of segments the lcd object should be split into due to the number of \ac{RIR}'s per meter 4) JavaScript file take produces an appropriate file name given the input data.}
+				\caption{Screen shot from Max showing a section that converts the user interface coordinates into the appropriate file name. 1) Coordinates from lcd object 2) Dimensions of lcd object 3) Number of segments the lcd object should be split into due to the number of \ac{RIR}'s per meter 4) JavaScript file that produces an appropriate file name given the input data.}
 				\label{locationsConvert}
 			\end{figure}
 
-			\paragraph{File name JavaScript: `loadFilesLogic'}
+			\paragraph{File name JavaScript: `loadFilesLogic.js'}
 
 				%-------------Input Code-------------%
 				\begin{minipage}{0.6\textwidth}
@@ -225,13 +225,14 @@
 
 		\subsubsection{Mobility Implementation}
 
-		The following sections describe two earlier iterations of the systems that were attempted and the issues faced, eventually leading to the third and final iteration which can been seen as a compromise between technological capability and freedom of movement. All three iterations are extensions of the original patch used in the \ac{VSS} which use spat to load \ac{RIR} files into the system, and to convolve a real time audio input with them.
+		The following sections describe two earlier iterations of the systems that were attempted and the issues faced, eventually leading to the third and final iteration which can been seen as a compromise between system speed and desired functionality. All three iterations are extensions of the original patch used in the \ac{VSS} which use spat to load \ac{RIR} files into the system, and to convolve a real time audio input with them.
 
 		 \paragraph{Iteration 1}
+		 \label{iteration1}
 		 	%Idea to stay between RIRs in a grid
 		 	% Initially, the idea was to pre-load a grid of the closest \ac{RIR} locations that surrounded the user and simultaneously convolve the real-time audio with all of the \ac{RIR} files. This is illustrated on the left in figure~\ref{iteration1Panning} which shows annotated grid positions on the lcd screen labeled 1 - 9. The patch on the right shows the corresponding volume bars used to automatically vary the output level of each of the convolved signals depending on the users position within the defined grid, essentially panning between the grid position, allowing the user to move freely between them.
 
-		 	Initially, the idea was to pre-load a grid of the closest \ac{RIR} locations that surrounded the user and simultaneously convolve the real-time audio with all of the \ac{RIR} files. This is illustrated on the left in figure~\ref{iteration1Panning} which shows annotated grid positions on the lcd screen labeled 1 - 9. The patch on the right shows the corresponding volume bars (also labelled 1 - 9) used to automatically vary the output level of each of the convolved signals. This required a panning algorithm for each of the positions in the defined grid, an overview of which is shown in figure~\ref{iteration1PanningCombined}, based on where the user has moved relative to the centre position essentially allowing the user to move freely.
+		 	Initially, the idea was to pre-load a grid of the closest \ac{RIR} locations that surrounded the user and simultaneously convolve the real-time audio with all of the \ac{RIR} files. This is illustrated on the left in figure~\ref{iteration1Panning} which shows annotated grid positions on the lcd screen labeled 1 - 9. The patch on the right shows the corresponding volume bars (also labelled 1 - 9) used to automatically vary the output level of each of the convolved signals. This required a panning algorithm for each of the positions in the defined grid, an overview of which is shown in figure~\ref{iteration1PanningCombined} in \nameref{appendixC}, based on where the user has moved relative to the centre position essentially allowing the user to move freely.
 
 		 	When the user reaches on of the other locations in the grid, that location becomes the centre of a new grid, and the appropriate files are loaded around that centre positions through the use of a javascript file. This requires the system to simultaneously load 4 \ac{RIR} files per location, of which there are 9, meaning 36 files are loaded into the system at once. Due to the time taken to load all of the files, the system ran too slow and could not be used for real time movement.
 
@@ -244,14 +245,6 @@
 				\label{iteration1Panning}
 			\end{figure}
 
-			%-------------Panning Image-------------%
-			\begin{figure}[H]
-				\centerline{\includegraphics[scale = 0.4]{Sections/Implementation/Max/images/Max/iteration1/panning1.png}}
-				\centerline{\includegraphics[scale = 0.4]{Sections/Implementation/Max/images/Max/iteration1/panning2.png}}
-				\centerline{\includegraphics[scale = 0.4]{Sections/Implementation/Max/images/Max/iteration1/panning3.png}}
-				\caption{}
-				\label{iteration1PanningCombined}
-			\end{figure}
 
 		 	%Loading issued
 
@@ -270,22 +263,56 @@
 
 			Though it was possible to load smaller grids, such as a 9x9 grid used when locations are separated by 5m, the larger grids caused the system to run too slowly due to the amount of RAM that was used.
 
-		 \paragraph{Iteration 3}
+		 \paragraph{Iteration 3 (Final)}
 		 \label{iteration3}
 		 	%Path defining
 		 	%As it seemed it was not possible to load any type of grid fast enough, it was decided that \ac{RIR} files would be loaded into the system one at a time when they are required.
 
-		 	The previous iterations attempted to allow the user to move anywhere within the \ac{VAE} in real time as they moved their finger around the screen, however due to technological implications, this was not possible to do. It was therefore decided to find a compromise, where the user could draw themselves a path around the space and the system would move them along the path when the appropriate files had been loaded.
+		 	The previous iterations attempted to allow the user to move anywhere within the \ac{VAE} in real time as they moved their finger around the screen, however due to technological implications, this was not possible. It was therefore decided to find a compromise, where the user could draw themselves a path around the space and the system would move them along the path when the appropriate files had been loaded.
 
-		 	The top half of figure~\ref{storeLocations} has seen already in figure~\ref{locationsConvert}, however the bottom of figure~\ref{storeLocations} shows what how the file number calculated is used. It is.....
+		 	The top half of figure~\ref{storeLocations} has been seen already in figure~\ref{locationsConvert}, however the bottom of figure~\ref{storeLocations} shows how the resulting file number is used. It gets sent to a javascript file that adds the file number to the end of a mutable array \footnotemark[1]. As the file names are being stored, the corresponding files can be loaded when the system is ready, instead of trying to load them instantly as in~\nameref{iteration1}. Once the js object receivers a message from the timer (highlighted as number 3 in figure~\ref{myPatch}), the number at the start of the array is sent to the output. The array is then truncated by 1, moving the next file number to the front of the array waiting for the next timer message. If a reset message is sent to the third inlet of this js object (by pressing the first button in section 1 shown in figure~\ref{myPatch}), the arrays are cleared enabling the user to start drawing another path if the previous path had not been completely travelled.
+
+		 	\footnotetext[1]{An array that can be extended or truncated once created}
 
 		 	%-------------Store Locations Image-------------%
 			\begin{figure}[H]
-				\centerline{\includegraphics[scale = 0.4]{Sections/Implementation/Max/images/Max/Iteration3/storeLocations_edit.png}}
-				\caption{}
+				\centerline{\includegraphics[scale = 0.6]{Sections/Implementation/Max/images/Max/Iteration3/storeLocations_edit.png}}
+				\caption{Highlighting the section of `UI\_to\_file' that stores the file numbers and outputs them when a timer is done.}
 				\label{storeLocations}
 			\end{figure}
 
+			Figure~\ref{overviewIteration3} shows the output from the `UI\_to\_file' patch in the red rectangle (the patch that contains the contents of figure~\ref{storeLocations}) running into a new javascript called `js switcher' in the blue rectangle. This simple script ensures that each new file number is sent to a different convolution patch (shown in the yellow rectangle). This means that while a new file is being loaded into one of the convolution patches, the other two can be used to pan between two pre-loaded positions. This is illustrated in figure~\ref{movementIllustration}\\
+
+		 	%-------------Iteration3 Overview Image-------------%
+			\begin{figure}[H]
+				\centerline{\includegraphics[scale = 0.5]{Sections/Implementation/Max/images/Max/Iteration3/fileSelectionConvolution_Edit.png}}
+				\caption{\textbf{Red:} Outputs file stored file number. \textbf{Blue:} Distributed file number to a different convolution patch each time. \textbf{Yellow:} Receives file number and loades appropriate file into the system.}
+				\label{overviewIteration3}
+			\end{figure}
+
+
+			%-------------Movement Illustration Image-------------%
+			\begin{figure}[H]
+				\centerline{\includegraphics[scale = 0.45]{Sections/Implementation/Max/images/Max/Iteration3/movementIllustration2.png}}
+				\caption{Illustration of how the three convolution patches work together to simulate movement, where the circles represent locations within the \ac{VAE} and are numbered to indicate which convolution patch they are loaded in. \textbf{(1)} User is moved between two loaded positions while the third patch loads a new \ac{RIR} fie. \textbf{(2)} The user is held in the new position until the next position has been loaded into the system. \textbf{(3)} User is moved between the two available positions while the next position is loaded into the system.}
+				\label{movementIllustration}
+			\end{figure}
+
+			The convolution patches have three outputs connecting to:\\
+			\textbf{1:} A level meter used to see which patch is being used.\\
+			\textbf{2:} A number box to check the level of each patch. \\
+			\textbf{3:} A toggle box used to see which spat convolution algorithms have been bypassed (a function that was later removed, explained in section \nameref{iteration3Issues}) These were used to monitor the functionality of the patch while testing.
+
+				%-------------Convolution Patch Overview Image-------------%
+			\begin{figure}[H]
+				\centerline{\includegraphics[scale = 0.5]{Sections/Implementation/Max/images/Max/Iteration3/convPatch_edit.png}}
+				\caption{}
+				\label{convPatch}
+			\end{figure}
+
+			To achieve the path following functionality, each convolution patch contains its own level control algorithm. Figure~\ref{convPatch} shows an overview of the first convolution patch which is a modified version of the original pathch used in the \ac{VSS}. The input to the convolution patch (orange) feeds the file number directly into a `loadFiles.js' javascript object. This simply prepends the number with the appropriate number of 0's (eg 1 becomes 001 and 28 becomes 028), then this number is concatenated with a file patch pointing to where the audio files are located (see js file: loadFiles.js \textbf{LINK}. This outputs four `open' messages (one for each directional \ac{RIR} file)  followed by a file paths to the spat.conv objects (blue). These are the objects that actually search for the file and load it into the system. By sending the pre-pending `open' message, manually searching for a file is not required, thus automating the process. These objects convolve the loaded file with what ever audio input it is given at its inlet, in this case the real time audio input or audio file (yellow). These outputs are then sent through multipliers (green), used to fade the signal in and out with an automated volume control (red).
+		 	
+		 	The automated volume controls receives a `bang' (signalling something has happened) when the `open' message is sent form the `loadFiles' js object (orange). This bang is also sent to the convolution patch that is currently at full volume. This prompts the volume of the current patch to increase while the volume of the previous patch decreases, thus panning between the two signal.
 
 	\subsubsection{Head-Tracking}
 		YEI Sensor was not good.
@@ -293,6 +320,8 @@
 	\subsubsection{Location Tracking}
 	\label{locationtracking}
 
+	\subsubsection{Software Issues}
+	\label{iteration3Issues}
 
 	\subsection{Latency Test}
 	
