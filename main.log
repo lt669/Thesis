@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.14)  2 MAY 2016 12:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.14)  2 MAY 2016 13:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1313,7 +1313,7 @@ ng>]) (./Sections/Appendix/AppendixA/AppendixA.tex
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <20.74> not available
 (Font)              Font shape `T1/ppl/b/n' tried instead on input line 14.
 
-<Sections/Appendix/AppendixA/images/bluePrintTop.jpg, id=380, 2888.7925pt x 203
+<Sections/Appendix/AppendixA/images/bluePrintTop.jpg, id=383, 2888.7925pt x 203
 2.59375pt>
 File: Sections/Appendix/AppendixA/images/bluePrintTop.jpg Graphic file (type jp
 g)
@@ -1322,7 +1322,7 @@ Package pdftex.def Info: Sections/Appendix/AppendixA/images/bluePrintTop.jpg us
 ed on input line 21.
 (pdftex.def)             Requested size: 288.89618pt x 203.27129pt.
 
-<Sections/Appendix/AppendixA/images/realVsSku/roofSku.png, id=381, 1445.4pt x 9
+<Sections/Appendix/AppendixA/images/realVsSku/roofSku.png, id=384, 1445.4pt x 9
 03.375pt>
 File: Sections/Appendix/AppendixA/images/realVsSku/roofSku.png Graphic file (ty
 pe png)
@@ -1331,7 +1331,7 @@ Package pdftex.def Info: Sections/Appendix/AppendixA/images/realVsSku/roofSku.p
 ng used on input line 28.
 (pdftex.def)             Requested size: 289.07487pt x 180.6718pt.
 
-<Sections/Appendix/AppendixA/images/realVsSku/roofReal.jpg, id=382, 3276.24pt x
+<Sections/Appendix/AppendixA/images/realVsSku/roofReal.jpg, id=385, 3276.24pt x
  2457.18pt>
 File: Sections/Appendix/AppendixA/images/realVsSku/roofReal.jpg Graphic file (t
 ype jpg)
@@ -1347,7 +1347,7 @@ Overfull \vbox (96.94594pt too high) has occurred while \output is active []
 [19 <./Sections/Appendix/AppendixA/images/bluePrintTop.jpg> <./Sections/Appendi
 x/AppendixA/images/realVsSku/roofSku.png> <./Sections/Appendix/AppendixA/images
 /realVsSku/roofReal.jpg>]
-<Sections/Appendix/AppendixA/images/realVsSku/fromSeatsSku.png, id=396, 1445.4p
+<Sections/Appendix/AppendixA/images/realVsSku/fromSeatsSku.png, id=400, 1445.4p
 t x 903.375pt>
 File: Sections/Appendix/AppendixA/images/realVsSku/fromSeatsSku.png Graphic fil
 e (type png)
@@ -1357,7 +1357,7 @@ Package pdftex.def Info: Sections/Appendix/AppendixA/images/realVsSku/fromSeats
 Sku.png used on input line 34.
 (pdftex.def)             Requested size: 289.07487pt x 180.6718pt.
 
-<Sections/Appendix/AppendixA/images/realVsSku/fromSeatsReal.jpg, id=397, 3276.2
+<Sections/Appendix/AppendixA/images/realVsSku/fromSeatsReal.jpg, id=401, 3276.2
 4pt x 2457.18pt>
 File: Sections/Appendix/AppendixA/images/realVsSku/fromSeatsReal.jpg Graphic fi
 le (type jpg)
@@ -1367,7 +1367,7 @@ Package pdftex.def Info: Sections/Appendix/AppendixA/images/realVsSku/fromSeats
 Real.jpg used on input line 35.
 (pdftex.def)             Requested size: 327.64319pt x 245.73239pt.
 
-<Sections/Appendix/AppendixA/images/realVsSku/doorsSku.png, id=398, 1445.4pt x 
+<Sections/Appendix/AppendixA/images/realVsSku/doorsSku.png, id=402, 1445.4pt x 
 903.375pt>
 File: Sections/Appendix/AppendixA/images/realVsSku/doorsSku.png Graphic file (t
 ype png)
@@ -1376,7 +1376,7 @@ Package pdftex.def Info: Sections/Appendix/AppendixA/images/realVsSku/doorsSku.
 png used on input line 40.
 (pdftex.def)             Requested size: 289.07487pt x 180.6718pt.
 
-<Sections/Appendix/AppendixA/images/realVsSku/doorsReal.jpg, id=399, 3276.24pt 
+<Sections/Appendix/AppendixA/images/realVsSku/doorsReal.jpg, id=403, 3276.24pt 
 x 2457.18pt>
 File: Sections/Appendix/AppendixA/images/realVsSku/doorsReal.jpg Graphic file (
 type jpg)
@@ -1387,7 +1387,7 @@ Package pdftex.def Info: Sections/Appendix/AppendixA/images/realVsSku/doorsReal
 
 [20 <./Sections/Appendix/AppendixA/images/realVsSku/fromSeatsSku.png> <./Sectio
 ns/Appendix/AppendixA/images/realVsSku/fromSeatsReal.jpg>]
-<Sections/Appendix/AppendixA/images/Odeon/2m.png, id=406, 934.49126pt x 946.536
+<Sections/Appendix/AppendixA/images/Odeon/2m.png, id=410, 934.49126pt x 946.536
 25pt>
 File: Sections/Appendix/AppendixA/images/Odeon/2m.png Graphic file (type png)
  <use Sections/Appendix/AppendixA/images/Odeon/2m.png>
@@ -1395,7 +1395,7 @@ Package pdftex.def Info: Sections/Appendix/AppendixA/images/Odeon/2m.png used o
 n input line 52.
 (pdftex.def)             Requested size: 214.92847pt x 217.69876pt.
 
-<Sections/Appendix/AppendixA/images/Odeon/3m.png, id=409, 934.49126pt x 946.536
+<Sections/Appendix/AppendixA/images/Odeon/3m.png, id=413, 934.49126pt x 946.536
 25pt>
 File: Sections/Appendix/AppendixA/images/Odeon/3m.png Graphic file (type png)
  <use Sections/Appendix/AppendixA/images/Odeon/3m.png>
@@ -1409,7 +1409,7 @@ $[]$ $[]$
 
 [21 <./Sections/Appendix/AppendixA/images/realVsSku/doorsSku.png> <./Sections/A
 ppendix/AppendixA/images/realVsSku/doorsReal.jpg>]
-<Sections/Appendix/AppendixA/images/Odeon/4m.png, id=418, 934.49126pt x 946.536
+<Sections/Appendix/AppendixA/images/Odeon/4m.png, id=422, 934.49126pt x 946.536
 25pt>
 File: Sections/Appendix/AppendixA/images/Odeon/4m.png Graphic file (type png)
  <use Sections/Appendix/AppendixA/images/Odeon/4m.png>
@@ -1417,7 +1417,7 @@ Package pdftex.def Info: Sections/Appendix/AppendixA/images/Odeon/4m.png used o
 n input line 67.
 (pdftex.def)             Requested size: 214.92847pt x 217.69876pt.
 
-<Sections/Appendix/AppendixA/images/Odeon/5m.png, id=421, 934.49126pt x 946.536
+<Sections/Appendix/AppendixA/images/Odeon/5m.png, id=425, 934.49126pt x 946.536
 25pt>
 File: Sections/Appendix/AppendixA/images/Odeon/5m.png Graphic file (type png)
  <use Sections/Appendix/AppendixA/images/Odeon/5m.png>
@@ -1432,7 +1432,7 @@ Overfull \hbox (1.90001pt too wide) in paragraph at lines 65--79
 [22 <./Sections/Appendix/AppendixA/images/Odeon/2m.png> <./Sections/Appendix/Ap
 pendixA/images/Odeon/3m.png> <./Sections/Appendix/AppendixA/images/Odeon/4m.png
 > <./Sections/Appendix/AppendixA/images/Odeon/5m.png>]
-<Sections/Implementation/Max/images/Max/iteration1/panning1.png, id=432, 1115.1
+<Sections/Implementation/Max/images/Max/iteration1/panning1.png, id=436, 1115.1
 6624pt x 498.86375pt>
 File: Sections/Implementation/Max/images/Max/iteration1/panning1.png Graphic fi
 le (type png)
@@ -1442,7 +1442,7 @@ Package pdftex.def Info: Sections/Implementation/Max/images/Max/iteration1/pann
 ing1.png used on input line 87.
 (pdftex.def)             Requested size: 446.0586pt x 199.54196pt.
 
-<Sections/Implementation/Max/images/Max/iteration1/panning2.png, id=433, 1111.1
+<Sections/Implementation/Max/images/Max/iteration1/panning2.png, id=437, 1111.1
 5125pt x 603.25375pt>
 File: Sections/Implementation/Max/images/Max/iteration1/panning2.png Graphic fi
 le (type png)
@@ -1452,7 +1452,7 @@ Package pdftex.def Info: Sections/Implementation/Max/images/Max/iteration1/pann
 ing2.png used on input line 88.
 (pdftex.def)             Requested size: 444.45262pt x 241.29723pt.
 
-<Sections/Implementation/Max/images/Max/iteration1/panning3.png, id=434, 1156.3
+<Sections/Implementation/Max/images/Max/iteration1/panning3.png, id=438, 1156.3
 2pt x 525.965pt>
 File: Sections/Implementation/Max/images/Max/iteration1/panning3.png Graphic fi
 le (type png)
@@ -1497,10 +1497,10 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 94.
  ) 
 Here is how much of TeX's memory you used:
- 17069 strings out of 493089
- 273881 string characters out of 6134842
- 853513 words of memory out of 5000000
- 19991 multiletter control sequences out of 15000+600000
+ 17076 strings out of 493089
+ 274002 string characters out of 6134842
+ 853516 words of memory out of 5000000
+ 19997 multiletter control sequences out of 15000+600000
  38015 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  47i,12n,48p,1329b,1953s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1510,10 +1510,10 @@ xlive/2015/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/20
 15/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2015/texm
 f-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2015/texmf-dist/
 fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (27 pages, 9945935 bytes).
+Output written on main.pdf (27 pages, 9948671 bytes).
 PDF statistics:
- 634 PDF objects out of 1000 (max. 8388607)
- 538 compressed objects within 6 object streams
- 244 named destinations out of 1000 (max. 500000)
+ 640 PDF objects out of 1000 (max. 8388607)
+ 544 compressed objects within 6 object streams
+ 245 named destinations out of 1000 (max. 500000)
  286 words of extra memory for PDF output out of 10000 (max. 10000000)
 

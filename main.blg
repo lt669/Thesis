@@ -1,19 +1,20 @@
 [0] Config.pm:324> INFO - This is Biber 2.1
 [0] Config.pm:327> INFO - Logfile is 'main.blg'
-[47] biber-darwin:276> INFO - === Mon May  2, 2016, 12:24:01
-[47] Biber.pm:333> INFO - Reading 'main.bcf'
-[137] Biber.pm:645> INFO - Found 2 citekeys in bib section 0
-[160] Biber.pm:2977> INFO - Processing section 0
-[176] Biber.pm:3115> INFO - Looking for bibtex format file 'thesis.bib' for section 0
-[179] bibtex.pm:1021> INFO - Decoding LaTeX character macros into UTF-8
-[182] bibtex.pm:895> INFO - Found BibTeX data source 'thesis.bib'
-[193] Utils.pm:146> WARN - BibTeX subsystem: /var/folders/9m/7yvjw_r54n1c0nbfzndk_j0m0000gn/T/vumxLI3tD4/thesis.bib_99226.utf8, line 96, warning: 2 characters of junk seen at toplevel
-[193] Utils.pm:146> WARN - The field 'author' in entry 'mira' cannot be null, deleting it
-[194] Utils.pm:146> WARN - The field 'author' in entry 'c74' cannot be null, deleting it
-[218] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[218] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[218] Biber.pm:2854> INFO - Sorting list 'none' of type 'entry' with scheme 'none' and locale 'en-US'
-[218] Biber.pm:2858> INFO - No sort tailoring available for locale 'en-US'
-[220] bbl.pm:505> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[221] bbl.pm:596> INFO - Output to main.bbl
-[221] Biber.pm:106> INFO - WARNINGS: 3
+[38] biber-darwin:276> INFO - === Mon May  2, 2016, 13:07:20
+[39] Biber.pm:333> INFO - Reading 'main.bcf'
+[121] Biber.pm:645> INFO - Found 3 citekeys in bib section 0
+[137] Biber.pm:2977> INFO - Processing section 0
+[150] Biber.pm:3115> INFO - Looking for bibtex format file 'thesis.bib' for section 0
+[153] bibtex.pm:1021> INFO - Decoding LaTeX character macros into UTF-8
+[156] bibtex.pm:895> INFO - Found BibTeX data source 'thesis.bib'
+[163] Utils.pm:146> WARN - BibTeX subsystem: /var/folders/9m/7yvjw_r54n1c0nbfzndk_j0m0000gn/T/KgyQORQJdw/thesis.bib_3154.utf8, line 108, warning: 2 characters of junk seen at toplevel
+[164] Utils.pm:146> WARN - The field 'author' in entry 'mira' cannot be null, deleting it
+[164] Utils.pm:146> WARN - The field 'author' in entry 'c74' cannot be null, deleting it
+[165] Utils.pm:146> WARN - The field 'year' in entry 'YEI' cannot be null, deleting it
+[191] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[191] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[191] Biber.pm:2854> INFO - Sorting list 'none' of type 'entry' with scheme 'none' and locale 'en-US'
+[191] Biber.pm:2858> INFO - No sort tailoring available for locale 'en-US'
+[196] bbl.pm:505> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[197] bbl.pm:596> INFO - Output to main.bbl
+[197] Biber.pm:106> INFO - WARNINGS: 4

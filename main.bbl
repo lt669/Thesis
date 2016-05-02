@@ -53,6 +53,27 @@
       \verb https://cycling74.com/project/project43-c74-iphone-app/#.Vv1FhRIrJE4
       \endverb
     \endentry
+    \entry{YEI}{manual}{}
+      \name{author}{1}{}{%
+        {{hash=921edc623154ce0d834cd8ecefa0e668}{Technology}{T\bibinitperiod}{YEI}{Y\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {630 Second Street, Portsmouth, Ohio 45662}%
+      }
+      \strng{namehash}{921edc623154ce0d834cd8ecefa0e668}
+      \strng{fullhash}{921edc623154ce0d834cd8ecefa0e668}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{3-Space Sensor Embedded}}
+      \field{urlday}{02}
+      \field{urlmonth}{05}
+      \field{urlyear}{2016}
+      \verb{url}
+      \verb http://www.solarsystemexpress.com/uploads/5/0/6/0/5060129/3-space_sensor_users_manual_embedded_1.1_r13.pdf
+      \endverb
+    \endentry
   \endsortlist
 \endrefsection
 \endinput
