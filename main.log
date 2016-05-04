@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.14)  2 MAY 2016 13:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.14)  4 MAY 2016 12:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1121,7 +1121,14 @@ Package biblatex Info: Automatic encoding selection.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
- (./main.bbl)
+ (./main.bbl
+
+Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'earthworks':
+(biblatex)                - Datamodel: Entry 'earthworks' (thesis.bib): Invalid
+ format '' of date field 'date' - ignoring.
+
+)
 Package biblatex Info: Reference section=0 on input line 25.
 Package biblatex Info: Reference segment=0 on input line 25.
 Package caption Info: Begin \AtBeginDocument code.
@@ -1131,8 +1138,7 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10> not available
 (Font)              Font shape `T1/ppl/b/n' tried instead on input line 29.
  (./main.toc
 LaTeX Font Info:    Try loading font information for OT1+ppl on input line 5.
-
-(/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/ot1ppl.fd
+ (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/ot1ppl.fd
 File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
 )
 LaTeX Font Info:    Try loading font information for OML+zplm on input line 5.
@@ -1169,151 +1175,237 @@ although it is yet undefined on input line 19.
 Package acronym Info: Label `acro:VAE' newly defined as it shall be overridden
 although it is yet undefined on input line 19.
 
-<Sections/Implementation/Max/images/Max/OriginalPatch_Edit.png, id=130, 1437.37
+<Sections/Implementation/Max/images/Max/OriginalPatch_Edit.png, id=147, 1437.37
 pt x 783.92876pt>
 File: Sections/Implementation/Max/images/Max/OriginalPatch_Edit.png Graphic fil
 e (type png)
 
 <use Sections/Implementation/Max/images/Max/OriginalPatch_Edit.png>
 Package pdftex.def Info: Sections/Implementation/Max/images/Max/OriginalPatch_E
-dit.png used on input line 27.
-(pdftex.def)             Requested size: 574.93782pt x 313.56595pt.
- [3]
-[4 <./Sections/Implementation/Max/images/Max/OriginalPatch_Edit.png>]
-<Sections/Implementation/Max/images/Max/MyPatch_Edit.png, id=157, 1334.9875pt x
+dit.png used on input line 23.
+(pdftex.def)             Requested size: 431.21432pt x 235.18044pt.
+ [3 <./Sections/Implementation/Max/images/Max/OriginalPatch_Edit.png>]
+<Sections/Implementation/Max/images/Max/MyPatch_Edit.png, id=169, 1334.9875pt x
  915.42pt>
 File: Sections/Implementation/Max/images/Max/MyPatch_Edit.png Graphic file (typ
 e png)
  <use Sections/Implementation/Max/images/Max/MyPatch_Edit.png>
 Package pdftex.def Info: Sections/Implementation/Max/images/Max/MyPatch_Edit.pn
-g used on input line 51.
+g used on input line 47.
 (pdftex.def)             Requested size: 533.98555pt x 366.16151pt.
 
-[5 <./Sections/Implementation/Max/images/Max/MyPatch_Edit.png>]
-<Sections/Implementation/Max/images/FlowDiagrams/Max1_V2.png, id=165, 803.0pt x
+[4]
+<Sections/Implementation/Max/images/FlowDiagrams/Max1_V2.png, id=178, 803.0pt x
  1199.48125pt>
 File: Sections/Implementation/Max/images/FlowDiagrams/Max1_V2.png Graphic file 
 (type png)
 
 <use Sections/Implementation/Max/images/FlowDiagrams/Max1_V2.png>
 Package pdftex.def Info: Sections/Implementation/Max/images/FlowDiagrams/Max1_V
-2.png used on input line 72.
+2.png used on input line 68.
 (pdftex.def)             Requested size: 240.90186pt x 359.84715pt.
-
-<Sections/Implementation/Max/images/Max/lcd.png, id=170, 690.58pt x 681.54625pt
+ [5 <./Sections/Implementation/Max/images/Max/MyPatch_Edit.png>]
+<Sections/Implementation/Max/images/Max/lcd.png, id=189, 690.58pt x 681.54625pt
 >
 File: Sections/Implementation/Max/images/Max/lcd.png Graphic file (type png)
  <use Sections/Implementation/Max/images/Max/lcd.png>
 Package pdftex.def Info: Sections/Implementation/Max/images/Max/lcd.png used on
- input line 81.
+ input line 77.
 (pdftex.def)             Requested size: 276.2271pt x 272.61366pt.
  [6 <./Sections/Implementation/Max/images/FlowDiagrams/Max1_V2.png>]
-<Sections/Implementation/Max/images/Max/UI_to_file_edit_4.png, id=183, 644.4075
+<Sections/Implementation/Max/images/Max/UI_to_file_edit_4.png, id=201, 644.4075
 pt x 298.11375pt>
 File: Sections/Implementation/Max/images/Max/UI_to_file_edit_4.png Graphic file
  (type png)
 
 <use Sections/Implementation/Max/images/Max/UI_to_file_edit_4.png>
 Package pdftex.def Info: Sections/Implementation/Max/images/Max/UI_to_file_edit
-_4.png used on input line 94.
+_4.png used on input line 90.
 (pdftex.def)             Requested size: 386.64748pt x 178.86963pt.
  [7 <./Sections/Implementation/Max/images/Max/lcd.png>]
-Overfull \hbox (62.16049pt too wide) in paragraph at lines 123--130
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 99.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/t1pcr.fd
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+)
+Overfull \hbox (62.16049pt too wide) in paragraph at lines 119--126
 [] [] 
  []
 
 
-Overfull \hbox (1.90001pt too wide) in paragraph at lines 102--132
+Overfull \hbox (1.90001pt too wide) in paragraph at lines 98--128
 $[]$ $[]$ 
  []
 
 
-LaTeX Warning: Reference `furtherwork' on page 8 undefined on input line 133.
+LaTeX Warning: Reference `furtherwork' on page 8 undefined on input line 129.
 
-[8 <./Sections/Implementation/Max/images/Max/UI_to_file_edit_4.png>]
-LaTeX Font Info:    Try loading font information for TS1+ppl on input line 153.
-
-
-(/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/ts1ppl.fd
-File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
-) [9] [10]
-[11]
-<Sections/Implementation/Max/images/Max/iteration1/panning_edit2.png, id=312, 1
+[8 <./Sections/Implementation/Max/images/Max/UI_to_file_edit_4.png>] [9]
+[10] [11]
+<Sections/Implementation/Max/images/Max/iteration1/panning_edit2.png, id=331, 1
 186.4325pt x 521.95pt>
 File: Sections/Implementation/Max/images/Max/iteration1/panning_edit2.png Graph
 ic file (type png)
 
 <use Sections/Implementation/Max/images/Max/iteration1/panning_edit2.png>
 Package pdftex.def Info: Sections/Implementation/Max/images/Max/iteration1/pann
-ing_edit2.png used on input line 243.
+ing_edit2.png used on input line 239.
 (pdftex.def)             Requested size: 533.8897pt x 234.87532pt.
 
-<Sections/Implementation/Max/images/Max/Iteration2/preload.png, id=318, 1393.20
+<Sections/Implementation/Max/images/Max/Iteration2/preload.png, id=337, 1393.20
 5pt x 666.49pt>
 File: Sections/Implementation/Max/images/Max/Iteration2/preload.png Graphic fil
 e (type png)
 
 <use Sections/Implementation/Max/images/Max/Iteration2/preload.png>
 Package pdftex.def Info: Sections/Implementation/Max/images/Max/Iteration2/prel
-oad.png used on input line 258.
+oad.png used on input line 254.
 (pdftex.def)             Requested size: 557.27214pt x 266.59128pt.
  [12 <./Sections/Implementation/Max/images/Max/iteration1/panning_edit2.png>]
 <Sections/Implementation/Max/images/Max/Iteration3/storeLocations_edit.png, id=
-335, 583.17876pt x 441.65pt>
+354, 583.17876pt x 441.65pt>
 File: Sections/Implementation/Max/images/Max/Iteration3/storeLocations_edit.png
  Graphic file (type png)
 
 <use Sections/Implementation/Max/images/Max/Iteration3/storeLocations_edit.png>
 Package pdftex.def Info: Sections/Implementation/Max/images/Max/Iteration3/stor
-eLocations_edit.png used on input line 279.
+eLocations_edit.png used on input line 272.
 (pdftex.def)             Requested size: 349.90996pt x 264.99203pt.
 [13 <./Sections/Implementation/Max/images/Max/Iteration2/preload.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 284--285
+Underfull \hbox (badness 10000) in paragraph at lines 277--278
 
  []
 
 
 <Sections/Implementation/Max/images/Max/Iteration3/fileSelectionConvolution_Edi
-t.png, id=346, 520.94624pt x 502.87875pt>
+t.png, id=365, 520.94624pt x 502.87875pt>
 File: Sections/Implementation/Max/images/Max/Iteration3/fileSelectionConvolutio
 n_Edit.png Graphic file (type png)
 
 <use Sections/Implementation/Max/images/Max/Iteration3/fileSelectionConvolution
 _Edit.png>
 Package pdftex.def Info: Sections/Implementation/Max/images/Max/Iteration3/file
-SelectionConvolution_Edit.png used on input line 288.
+SelectionConvolution_Edit.png used on input line 281.
 (pdftex.def)             Requested size: 260.47249pt x 251.43875pt.
  [14 <./Sections/Implementation/Max/images/Max/Iteration3/storeLocations_edit.p
 ng>]
 <Sections/Implementation/Max/images/Max/Iteration3/movementIllustration2.png, i
-d=354, 886.31125pt x 493.845pt>
+d=373, 886.31125pt x 493.845pt>
 File: Sections/Implementation/Max/images/Max/Iteration3/movementIllustration2.p
 ng Graphic file (type png)
 
 <use Sections/Implementation/Max/images/Max/Iteration3/movementIllustration2.pn
 g>
 Package pdftex.def Info: Sections/Implementation/Max/images/Max/Iteration3/move
-mentIllustration2.png used on input line 296.
+mentIllustration2.png used on input line 289.
 (pdftex.def)             Requested size: 398.83638pt x 222.22818pt.
  [15 <./Sections/Implementation/Max/images/Max/Iteration3/fileSelectionConvolut
 ion_Edit.png>]
-<Sections/Implementation/Max/images/Max/Iteration3/convPatch_edit.png, id=365, 
+<Sections/Implementation/Max/images/Max/Iteration3/convPatch_edit.png, id=384, 
 945.5325pt x 932.48375pt>
 File: Sections/Implementation/Max/images/Max/Iteration3/convPatch_edit.png Grap
 hic file (type png)
 
 <use Sections/Implementation/Max/images/Max/Iteration3/convPatch_edit.png>
 Package pdftex.def Info: Sections/Implementation/Max/images/Max/Iteration3/conv
-Patch_edit.png used on input line 308.
+Patch_edit.png used on input line 301.
 (pdftex.def)             Requested size: 472.76509pt x 466.24074pt.
 
 [16 <./Sections/Implementation/Max/images/Max/Iteration3/movementIllustration2.
 png>] [17 <./Sections/Implementation/Max/images/Max/Iteration3/convPatch_edit.p
-ng>]) (./Sections/Appendix/AppendixA/AppendixA.tex
+ng>]
+<Sections/Implementation/Max/images/Max/UserInterface/pTouchScreen_edit.png, id
+=401, 1194.4625pt x 682.55pt>
+File: Sections/Implementation/Max/images/Max/UserInterface/pTouchScreen_edit.pn
+g Graphic file (type png)
+
+<use Sections/Implementation/Max/images/Max/UserInterface/pTouchScreen_edit.png
+>
+Package pdftex.def Info: Sections/Implementation/Max/images/Max/UserInterface/p
+TouchScreen_edit.png used on input line 317.
+(pdftex.def)             Requested size: 597.22978pt x 341.27417pt.
+ [18 <./Sections/Implementation/Max/images/Max/UserInterface/pTouchScreen_edit.
+png>]
+<Sections/Implementation/Max/images/Max/UserInterface/UI_dot.png, id=411, 1541.
+76pt x 2055.68pt>
+File: Sections/Implementation/Max/images/Max/UserInterface/UI_dot.png Graphic f
+ile (type png)
+
+<use Sections/Implementation/Max/images/Max/UserInterface/UI_dot.png>
+Package pdftex.def Info: Sections/Implementation/Max/images/Max/UserInterface/U
+I_dot.png used on input line 327.
+(pdftex.def)             Requested size: 231.25401pt x 308.3387pt.
+ [19 <./Sections/Implementation/Max/images/Max/UserInterface/UI_dot.png>]
+<Sections/Implementation/Max/images/Max/UserInterface/locationsExample2.png, id
+=425, 1314.9125pt x 740.7675pt>
+File: Sections/Implementation/Max/images/Max/UserInterface/locationsExample2.pn
+g Graphic file (type png)
+
+<use Sections/Implementation/Max/images/Max/UserInterface/locationsExample2.png
+>
+Package pdftex.def Info: Sections/Implementation/Max/images/Max/UserInterface/l
+ocationsExample2.png used on input line 339.
+(pdftex.def)             Requested size: 525.95569pt x 296.30174pt.
+ [20]
+LaTeX Font Info:    Try loading font information for TS1+ppl on input line 348.
+
+ (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/ts1ppl.fd
+File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
+) [21 <./Sections/Implementation/Max/images/Max/UserInterface/locationsExample2
+.png>]
+<Sections/Implementation/Max/images/settings.png, id=450, 891.33pt x 837.1275pt
+>
+File: Sections/Implementation/Max/images/settings.png Graphic file (type png)
+ <use Sections/Implementation/Max/images/settings.png>
+Package pdftex.def Info: Sections/Implementation/Max/images/settings.png used o
+n input line 356.
+(pdftex.def)             Requested size: 356.52568pt x 334.84506pt.
+ [22 <./Sections/Implementation/Max/images/settings.png>]
+<Sections/Implementation/Max/images/Latency/latencyDiagram.png, id=465, 993.712
+5pt x 492.84125pt>
+File: Sections/Implementation/Max/images/Latency/latencyDiagram.png Graphic fil
+e (type png)
+
+<use Sections/Implementation/Max/images/Latency/latencyDiagram.png>
+Package pdftex.def Info: Sections/Implementation/Max/images/Latency/latencyDiag
+ram.png used on input line 368.
+(pdftex.def)             Requested size: 397.47795pt x 197.133pt.
+ [23 <./Sections/Implementation/Max/images/Latency/latencyDiagram.png>]
+
+LaTeX Warning: Reference `reflectionPaths' on page 24 undefined on input line 3
+92.
+
+
+LaTeX Warning: Hyper reference `odeon:results' on page 24 undefined on input li
+ne 392.
+
+
+LaTeX Warning: Reference `odeon:results' on page 24 undefined on input line 392
+.
+
+
+LaTeX Warning: Reference `odeon:results' on page 24 undefined on input line 392
+.
+
+
+<Sections/Implementation/Max/images/Latency/odeonLatency_edit.png, id=482, 1196
+.47pt x 719.68875pt>
+File: Sections/Implementation/Max/images/Latency/odeonLatency_edit.png Graphic 
+file (type png)
+
+<use Sections/Implementation/Max/images/Latency/odeonLatency_edit.png>
+Package pdftex.def Info: Sections/Implementation/Max/images/Latency/odeonLatenc
+y_edit.png used on input line 396.
+(pdftex.def)             Requested size: 478.57953pt x 287.87039pt.
+
+
+LaTeX Warning: Reference `realTrim' on page 24 undefined on input line 414.
+
+) (./Sections/Appendix/AppendixA/AppendixA.tex
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <20.74> not available
 (Font)              Font shape `T1/ppl/b/n' tried instead on input line 14.
-
-<Sections/Appendix/AppendixA/images/bluePrintTop.jpg, id=383, 2888.7925pt x 203
+ [24 <./Sections/Implementation/Max/images/Latency/odeonLatency_edit.png>]
+<Sections/Appendix/AppendixA/images/bluePrintTop.jpg, id=492, 2888.7925pt x 203
 2.59375pt>
 File: Sections/Appendix/AppendixA/images/bluePrintTop.jpg Graphic file (type jp
 g)
@@ -1322,7 +1414,7 @@ Package pdftex.def Info: Sections/Appendix/AppendixA/images/bluePrintTop.jpg us
 ed on input line 21.
 (pdftex.def)             Requested size: 288.89618pt x 203.27129pt.
 
-<Sections/Appendix/AppendixA/images/realVsSku/roofSku.png, id=384, 1445.4pt x 9
+<Sections/Appendix/AppendixA/images/realVsSku/roofSku.png, id=493, 1445.4pt x 9
 03.375pt>
 File: Sections/Appendix/AppendixA/images/realVsSku/roofSku.png Graphic file (ty
 pe png)
@@ -1331,7 +1423,7 @@ Package pdftex.def Info: Sections/Appendix/AppendixA/images/realVsSku/roofSku.p
 ng used on input line 28.
 (pdftex.def)             Requested size: 289.07487pt x 180.6718pt.
 
-<Sections/Appendix/AppendixA/images/realVsSku/roofReal.jpg, id=385, 3276.24pt x
+<Sections/Appendix/AppendixA/images/realVsSku/roofReal.jpg, id=494, 3276.24pt x
  2457.18pt>
 File: Sections/Appendix/AppendixA/images/realVsSku/roofReal.jpg Graphic file (t
 ype jpg)
@@ -1340,14 +1432,8 @@ Package pdftex.def Info: Sections/Appendix/AppendixA/images/realVsSku/roofReal.
 jpg used on input line 29.
 (pdftex.def)             Requested size: 327.64319pt x 245.73239pt.
 
-[18]
-Overfull \vbox (96.94594pt too high) has occurred while \output is active []
-
-
-[19 <./Sections/Appendix/AppendixA/images/bluePrintTop.jpg> <./Sections/Appendi
-x/AppendixA/images/realVsSku/roofSku.png> <./Sections/Appendix/AppendixA/images
-/realVsSku/roofReal.jpg>]
-<Sections/Appendix/AppendixA/images/realVsSku/fromSeatsSku.png, id=400, 1445.4p
+[25 <./Sections/Appendix/AppendixA/images/bluePrintTop.jpg>]
+<Sections/Appendix/AppendixA/images/realVsSku/fromSeatsSku.png, id=501, 1445.4p
 t x 903.375pt>
 File: Sections/Appendix/AppendixA/images/realVsSku/fromSeatsSku.png Graphic fil
 e (type png)
@@ -1357,7 +1443,7 @@ Package pdftex.def Info: Sections/Appendix/AppendixA/images/realVsSku/fromSeats
 Sku.png used on input line 34.
 (pdftex.def)             Requested size: 289.07487pt x 180.6718pt.
 
-<Sections/Appendix/AppendixA/images/realVsSku/fromSeatsReal.jpg, id=401, 3276.2
+<Sections/Appendix/AppendixA/images/realVsSku/fromSeatsReal.jpg, id=502, 3276.2
 4pt x 2457.18pt>
 File: Sections/Appendix/AppendixA/images/realVsSku/fromSeatsReal.jpg Graphic fi
 le (type jpg)
@@ -1366,8 +1452,9 @@ le (type jpg)
 Package pdftex.def Info: Sections/Appendix/AppendixA/images/realVsSku/fromSeats
 Real.jpg used on input line 35.
 (pdftex.def)             Requested size: 327.64319pt x 245.73239pt.
-
-<Sections/Appendix/AppendixA/images/realVsSku/doorsSku.png, id=402, 1445.4pt x 
+ [26 <./Sections/Appendix/AppendixA/images/realVsSku/roofSku.png> <./Sections/A
+ppendix/AppendixA/images/realVsSku/roofReal.jpg>]
+<Sections/Appendix/AppendixA/images/realVsSku/doorsSku.png, id=509, 1445.4pt x 
 903.375pt>
 File: Sections/Appendix/AppendixA/images/realVsSku/doorsSku.png Graphic file (t
 ype png)
@@ -1376,7 +1463,7 @@ Package pdftex.def Info: Sections/Appendix/AppendixA/images/realVsSku/doorsSku.
 png used on input line 40.
 (pdftex.def)             Requested size: 289.07487pt x 180.6718pt.
 
-<Sections/Appendix/AppendixA/images/realVsSku/doorsReal.jpg, id=403, 3276.24pt 
+<Sections/Appendix/AppendixA/images/realVsSku/doorsReal.jpg, id=510, 3276.24pt 
 x 2457.18pt>
 File: Sections/Appendix/AppendixA/images/realVsSku/doorsReal.jpg Graphic file (
 type jpg)
@@ -1385,9 +1472,9 @@ Package pdftex.def Info: Sections/Appendix/AppendixA/images/realVsSku/doorsReal
 .jpg used on input line 41.
 (pdftex.def)             Requested size: 327.64319pt x 245.73239pt.
 
-[20 <./Sections/Appendix/AppendixA/images/realVsSku/fromSeatsSku.png> <./Sectio
+[27 <./Sections/Appendix/AppendixA/images/realVsSku/fromSeatsSku.png> <./Sectio
 ns/Appendix/AppendixA/images/realVsSku/fromSeatsReal.jpg>]
-<Sections/Appendix/AppendixA/images/Odeon/2m.png, id=410, 934.49126pt x 946.536
+<Sections/Appendix/AppendixA/images/Odeon/2m.png, id=517, 934.49126pt x 946.536
 25pt>
 File: Sections/Appendix/AppendixA/images/Odeon/2m.png Graphic file (type png)
  <use Sections/Appendix/AppendixA/images/Odeon/2m.png>
@@ -1395,7 +1482,7 @@ Package pdftex.def Info: Sections/Appendix/AppendixA/images/Odeon/2m.png used o
 n input line 52.
 (pdftex.def)             Requested size: 214.92847pt x 217.69876pt.
 
-<Sections/Appendix/AppendixA/images/Odeon/3m.png, id=413, 934.49126pt x 946.536
+<Sections/Appendix/AppendixA/images/Odeon/3m.png, id=520, 934.49126pt x 946.536
 25pt>
 File: Sections/Appendix/AppendixA/images/Odeon/3m.png Graphic file (type png)
  <use Sections/Appendix/AppendixA/images/Odeon/3m.png>
@@ -1407,9 +1494,9 @@ Overfull \hbox (1.90001pt too wide) in paragraph at lines 50--64
 $[]$ $[]$ 
  []
 
-[21 <./Sections/Appendix/AppendixA/images/realVsSku/doorsSku.png> <./Sections/A
+[28 <./Sections/Appendix/AppendixA/images/realVsSku/doorsSku.png> <./Sections/A
 ppendix/AppendixA/images/realVsSku/doorsReal.jpg>]
-<Sections/Appendix/AppendixA/images/Odeon/4m.png, id=422, 934.49126pt x 946.536
+<Sections/Appendix/AppendixA/images/Odeon/4m.png, id=529, 934.49126pt x 946.536
 25pt>
 File: Sections/Appendix/AppendixA/images/Odeon/4m.png Graphic file (type png)
  <use Sections/Appendix/AppendixA/images/Odeon/4m.png>
@@ -1417,7 +1504,7 @@ Package pdftex.def Info: Sections/Appendix/AppendixA/images/Odeon/4m.png used o
 n input line 67.
 (pdftex.def)             Requested size: 214.92847pt x 217.69876pt.
 
-<Sections/Appendix/AppendixA/images/Odeon/5m.png, id=425, 934.49126pt x 946.536
+<Sections/Appendix/AppendixA/images/Odeon/5m.png, id=532, 934.49126pt x 946.536
 25pt>
 File: Sections/Appendix/AppendixA/images/Odeon/5m.png Graphic file (type png)
  <use Sections/Appendix/AppendixA/images/Odeon/5m.png>
@@ -1429,10 +1516,10 @@ Overfull \hbox (1.90001pt too wide) in paragraph at lines 65--79
 []$[]$ $[]$ 
  []
 
-[22 <./Sections/Appendix/AppendixA/images/Odeon/2m.png> <./Sections/Appendix/Ap
+[29 <./Sections/Appendix/AppendixA/images/Odeon/2m.png> <./Sections/Appendix/Ap
 pendixA/images/Odeon/3m.png> <./Sections/Appendix/AppendixA/images/Odeon/4m.png
 > <./Sections/Appendix/AppendixA/images/Odeon/5m.png>]
-<Sections/Implementation/Max/images/Max/iteration1/panning1.png, id=436, 1115.1
+<Sections/Implementation/Max/images/Max/iteration1/panning1.png, id=544, 1115.1
 6624pt x 498.86375pt>
 File: Sections/Implementation/Max/images/Max/iteration1/panning1.png Graphic fi
 le (type png)
@@ -1442,7 +1529,7 @@ Package pdftex.def Info: Sections/Implementation/Max/images/Max/iteration1/pann
 ing1.png used on input line 87.
 (pdftex.def)             Requested size: 446.0586pt x 199.54196pt.
 
-<Sections/Implementation/Max/images/Max/iteration1/panning2.png, id=437, 1111.1
+<Sections/Implementation/Max/images/Max/iteration1/panning2.png, id=545, 1111.1
 5125pt x 603.25375pt>
 File: Sections/Implementation/Max/images/Max/iteration1/panning2.png Graphic fi
 le (type png)
@@ -1452,7 +1539,7 @@ Package pdftex.def Info: Sections/Implementation/Max/images/Max/iteration1/pann
 ing2.png used on input line 88.
 (pdftex.def)             Requested size: 444.45262pt x 241.29723pt.
 
-<Sections/Implementation/Max/images/Max/iteration1/panning3.png, id=438, 1156.3
+<Sections/Implementation/Max/images/Max/iteration1/panning3.png, id=546, 1156.3
 2pt x 525.965pt>
 File: Sections/Implementation/Max/images/Max/iteration1/panning3.png Graphic fi
 le (type png)
@@ -1461,32 +1548,27 @@ le (type png)
 Package pdftex.def Info: Sections/Implementation/Max/images/Max/iteration1/pann
 ing3.png used on input line 89.
 (pdftex.def)             Requested size: 462.5198pt x 210.38226pt.
- [23]
+ [30]
 Overfull \vbox (77.89189pt too high) has occurred while \output is active []
 
 
-[24 <./Sections/Implementation/Max/images/Max/iteration1/panning1.png> <./Secti
+[31 <./Sections/Implementation/Max/images/Max/iteration1/panning1.png> <./Secti
 ons/Implementation/Max/images/Max/iteration1/panning2.png> <./Sections/Implemen
 tation/Max/images/Max/iteration1/panning3.png>]
-(./Sections/Appendix/AppendixA/Code/loadFilesLogic.js [25])) [26]
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 93.
-
-(/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/t1pcr.fd
-File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-)
-Overfull \hbox (23.74594pt too wide) in paragraph at lines 94--94
+(./Sections/Appendix/AppendixA/Code/loadFilesLogic.js [32])) [33]
+Overfull \hbox (23.74594pt too wide) in paragraph at lines 97--97
 []\T1/ppl/m/n/10 (2016). C74, Cy-cling74, [On-line]. Avail-able: [][]$\T1/pcr/m
 /n/10 https : / / cycling74 . com / project / project43 -[]
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 94.
-[27]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 94.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 97.
+[34]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 97.
  (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 94.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 94.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 97.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 97.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 78D55019466CCC7A0C84DF0713DD2D6B;1378.
+(rerunfilecheck)             Checksum: BB4CBEAD21E85BDB6372E3BDF09B60E8;1603.
 
 
 LaTeX Warning: There were undefined references.
@@ -1494,26 +1576,26 @@ LaTeX Warning: There were undefined references.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 94.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 97.
  ) 
 Here is how much of TeX's memory you used:
- 17076 strings out of 493089
- 274002 string characters out of 6134842
- 853516 words of memory out of 5000000
- 19997 multiletter control sequences out of 15000+600000
- 38015 words of font info for 72 fonts, out of 8000000 for 9000
+ 17139 strings out of 493089
+ 276320 string characters out of 6134842
+ 855114 words of memory out of 5000000
+ 20033 multiletter control sequences out of 15000+600000
+ 31311 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 47i,12n,48p,1329b,1953s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 47i,12n,49p,1802b,1955s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
-exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/te
-xlive/2015/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/20
-15/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2015/texm
-f-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2015/texmf-dist/
-fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (27 pages, 9948671 bytes).
+exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/tex
+live/2015/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/201
+5/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2015/texmf
+-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2015/texmf-dist/f
+onts/type1/urw/palatino/uplri8a.pfb>
+Output written on main.pdf (34 pages, 10604000 bytes).
 PDF statistics:
- 640 PDF objects out of 1000 (max. 8388607)
- 544 compressed objects within 6 object streams
- 245 named destinations out of 1000 (max. 500000)
- 286 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 755 PDF objects out of 1000 (max. 8388607)
+ 640 compressed objects within 7 object streams
+ 264 named destinations out of 1000 (max. 500000)
+ 340 words of extra memory for PDF output out of 10000 (max. 10000000)
 

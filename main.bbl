@@ -74,6 +74,60 @@
       \verb http://www.solarsystemexpress.com/uploads/5/0/6/0/5060129/3-space_sensor_users_manual_embedded_1.1_r13.pdf
       \endverb
     \endentry
+    \entry{Brereton2014}{article}{}
+      \name{author}{2}{}{%
+        {{hash=162910466367ad3de6353be6735b4aff}{Brereton}{B\bibinitperiod}{Judith\bibnamedelima Sara}{J\bibinitperiod\bibinitdelim S\bibinitperiod}{}{}{}{}}%
+        {{hash=6592806c0fc014c1e33299458f3413d5}{Hons}{H\bibinitperiod}{B\bibnamedelima A}{B\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{b48c1be0536c035cbe4edb0aad063f0b}
+      \strng{fullhash}{b48c1be0536c035cbe4edb0aad063f0b}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{number}{August}
+      \field{title}{{Singing in Space ( s ): Singing performance in real and virtual acoustic environments — Singers ’ evaluation , performance analysis and listeners ’ perception .}}
+      \field{year}{2014}
+      \verb{file}
+      \verb :Users/Lewis 1/Library/Application Support/Mendeley Desktop/Downloaded/Brereton, Hons - 2014 - Singing in Space ( s ) Singing performance in real and virtual acoustic environments — Singers ’ evaluati(2).pdf:pdf
+      \endverb
+    \endentry
+    \entry{earthworks}{manual}{}
+      \list{organization}{1}{%
+        {Earthworks}%
+      }
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Datasheet}
+      \field{note}{Data Sheet}
+      \field{title}{M30 High Definition Measurement Microphone}
+      \field{urlday}{03}
+      \field{urlmonth}{05}
+      \field{urlyear}{2016}
+      \field{year}{2016}
+      \verb{url}
+      \verb http://www.earthworksaudio.com/wp-content/uploads/2016/03/M30-Data-Sheet-2016.pdf
+      \endverb
+      \warn{\item Datamodel: Entry 'earthworks' (thesis.bib): Invalid format '' of date field 'date' - ignoring}
+    \endentry
+    \entry{motu}{online}{}
+      \list{organization}{1}{%
+        {MOTU}%
+      }
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Hardware}
+      \field{title}{MOTU UltraLite-mk3}
+      \field{urlday}{03}
+      \field{urlmonth}{05}
+      \field{urlyear}{2016}
+      \field{year}{2016}
+      \verb{url}
+      \verb http://motu.com/products/motuaudio/ultralite-mk3
+      \endverb
+    \endentry
   \endsortlist
 \endrefsection
 \endinput

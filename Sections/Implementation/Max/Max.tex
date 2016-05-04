@@ -8,23 +8,19 @@
 	\label{software}
 		
 		%Overall idea
-		As a software patch was already in use with the \ac{VSS}, the idea was to extend this software patch to accommodate the newly proposed functionality.
+		As a software patch was already in use with the \ac{VSS}, the idea was to extend this software patch to accommodate the newly proposed functionality. This section will first give a quick overview of the original max patch and then an overview of the newly produced software with a simple explanation of how it works, followed by a more detailed explanation of how the two main parts of the software work.
 
-		This section will first give a quick overview of the original max patch and then an overview of the newly produced software with a simple explanation of how it works, followed by a more detailed explanation of how the two main parts of the software work.
+		The software described was run on a 2012 Mac mini with 16GB of RAM, an IntelCore i7 processor running OSX 10.10.4.
 
 		\subsubsection{Software Overview}
 
 			\paragraph{The Original Patch}
 			\label{softwareoverview:original}
-				The original max patch was used to convolve a real time audio signal with a set of four \ac{RIR}'s simultaneously, allowing the user to turn their head in the \ac{VAE} through the use of an Oculus Rift as a head tracking device. Four positions within the \ac{VAE} were available. To select one, the user (or an operator) selected an `open' button which prompted a file navigation window. The \ac{RIR} files then had to be found (in the correct order) and opened one at a time, with a new file window opening after each file had been selected. Figure~\ref{original} shows this.
-
-				This was the primary aspect of the original patch that needed extending to make the process automatic.
-
-				The software was run on a 2012 Mac mini with 8GB of RAM running OSX 10 \textbf{FIND SPECS}
+				The original max patch was used to convolve a real time audio signal with a set of four \ac{RIR}'s simultaneously, allowing the user to turn their head in the \ac{VAE} through the use of an Oculus Rift as a head tracking device. Four positions within the \ac{VAE} were available. To select one, the user (or an operator) selected an `open' button which prompted a file navigation window. The \ac{RIR} files then had to be found (in the correct order) and opened one at a time, with a new file window opening after each file had been selected. A screen shot of this process is shown in figure~\ref{original}. This was the primary aspect of the original patch that needed extending to make the process automatic.
 
 					%-------------Max UI Flow diagram-------------%
 				\begin{figure}[H]
-					\centerline{\includegraphics[scale = 0.4]{Sections/Implementation/Max/images/Max/OriginalPatch_Edit.png}}
+					\centerline{\includegraphics[scale = 0.3]{Sections/Implementation/Max/images/Max/OriginalPatch_Edit.png}}
 					\caption{Original Max patch used in the \ac{VSS} showing the file location window that pops up 4 times.}
 					\label{original}
 				\end{figure}
@@ -36,7 +32,7 @@
 
 				\textbf{2:} Here, an audio file can be loaded into the system and used instead of a real time audio input. This is used in user test \#3.
 
-				\textbf{3:} A timer used to load new \ac{RIR} files when appropriate.
+				\textbf{3:} A timer system used to synchronise the output of data transfer (from \textbf{4.2} to \textbf{4.3}), panning between convolved audio and the movement of the user interface feedback system (see section~\nameref{locationtracking}).
 
 				\textbf{4.1:} Patches that send a user interface to an iPad which allows a user to select a location within the \ac{VAE}. User interaction is monitored (in the form of screen coordinates) and sent to \textbf{4.2}.
 
@@ -85,7 +81,7 @@
 
 			The outputs from the lcd object are sent to the patch ‘UI\_to\_file’ which contains a JavaScript file called ‘loadFilesLogic’. This JavaScript file converts the (x,y) coordinates into an appropriate file name, by taking into account the size of the lcd screen and how many RIRs there are per meter.
 
-			This lcd screen could also be displayed on an iPad which was used as a remote user interaction. Initially, the more popular and supported application \textbf{Mira} \cite{mira} was going to be used. This allows for the mirroring of a selected portion of a Max patch to be disapled and interacted with on an iPad. However, the lcd object used to track coordinates was not supported by this application and thus did not appear on the iPad. Instead an alternative was found. Cycling74, the same company that produces Max/MSP and Mira also created an app for the iPhone and iPad called c74 \cite{c74} and allows for the creation of an independent interface that can control objects within the max patch. The operation of this section is explained further in section \nameref{locationtracking}
+			This lcd screen could also be displayed on an iPad which was used as a remote user interaction. Initially, the more popular and supported application \textbf{Mira} \cite{mira} was going to be used. This allows for the mirroring of a selected portion of a Max patch to be displayed and interacted with on an iPad. However, the lcd object used to track coordinates was not supported by this application and thus did not appear on the iPad. Instead an alternative was found. Cycling74, the same company that produces Max/MSP and Mira also created an app for the iPhone and iPad called c74 \cite{c74} and allows for the creation of an independent interface that can control objects within the max patch. The operation of this section is explained further in section \nameref{locationtracking}
 
 			The javascript takes 5 inputs: UI (x,y) coordinates , (x,y) lcd dimensions and a number representing how many rows and colums of \ac{RIR} locations there should be available. This last value is calculated by sending a number from 1-5 (distance per RIR) to the third inlet of the UI\_to\_file patch (on the far right). As the maximum number of RIRs that will be available per length of the room is 15, 15 is divided by the input and rounded to the nearest integer, giving the number of rows and columns the lcd screen should be split into (the exact number of rows and columns is calculated later in the javascript file). This information can then be used to determine in which \textit{‘section’} (row and column) the user is currently located based on their coordinates, allowing it to load the appropriate RIRs that are available in that section. Figure~\ref{locationsConvert} shows the section of `UI\_to\_file' highlighting each section.
 
@@ -236,7 +232,7 @@
 
 		 	When the user reaches on of the other locations in the grid, that location becomes the centre of a new grid, and the appropriate files are loaded around that centre positions through the use of a javascript file. This requires the system to simultaneously load 4 \ac{RIR} files per location, of which there are 9, meaning 36 files are loaded into the system at once. Due to the time taken to load all of the files, the system ran too slow and could not be used for real time movement.
 
-		 	A video demonstrating the functionality of the proposed system can be found \textbf{HERE} \textbf{LINK!: Writeup/videios/iteration1Panning}.
+		 	A video demonstrating the functionality of the proposed system can be found \href{run:./././SupportingFiles/Webpage/pages/video.html}{link} \textbf{HERE} \textbf{LINK!: Writeup/videios/iteration1Panning}.
 
 		 	%-------------Iteration1 Panning Image-------------%
 			\begin{figure}[H]
@@ -266,13 +262,10 @@
 		 \paragraph{Iteration 3 (Final)}
 		 \label{iteration3}
 		 	%Path defining
-		 	%As it seemed it was not possible to load any type of grid fast enough, it was decided that \ac{RIR} files would be loaded into the system one at a time when they are required.
 
 		 	The previous iterations attempted to allow the user to move anywhere within the \ac{VAE} in real time as they moved their finger around the screen, however due to technological implications, this was not possible. It was therefore decided to find a compromise, where the user could draw themselves a path around the space and the system would move them along the path when the appropriate files had been loaded.
 
-		 	The top half of figure~\ref{storeLocations} has been seen already in figure~\ref{locationsConvert}, however the bottom of figure~\ref{storeLocations} shows how the resulting file number is used. It gets sent to a javascript file that adds the file number to the end of a mutable array \footnotemark[1]. As the file names are being stored, the corresponding files can be loaded when the system is ready, instead of trying to load them instantly as in~\nameref{iteration1}. Once the js object receivers a message from the timer (highlighted as number 3 in figure~\ref{myPatch}), the number at the start of the array is sent to the output. The array is then truncated by 1, moving the next file number to the front of the array waiting for the next timer message. If a reset message is sent to the third inlet of this js object (by pressing the first button in section 1 shown in figure~\ref{myPatch}), the arrays are cleared enabling the user to start drawing another path if the previous path had not been completely travelled.
-
-		 	\footnotetext[1]{An array that can be extended or truncated once created}
+		 	The top half of figure~\ref{storeLocations} has been seen already in figure~\ref{locationsConvert}, however the bottom of figure~\ref{storeLocations} shows how the resulting file number is used. It gets sent to a javascript file that adds the file number to the end of a mutable array (an array that can be extended or truncated once created). As the file names are being stored, the corresponding files can be loaded when the system is ready, instead of trying to load them instantly as in~\nameref{iteration1}. Once the js object receivers a message from the timer (highlighted as number 3 in figure~\ref{myPatch}), the number at the start of the array is sent to the output. The array is then truncated by 1, moving the next file number to the front of the array waiting for the next timer message. If a reset message is sent to the third inlet of this js object (by pressing the first button in section 1 shown in figure~\ref{myPatch}), the arrays are cleared enabling the user to start drawing another path if the previous path had not been completely travelled.
 
 		 	%-------------Store Locations Image-------------%
 			\begin{figure}[H]
@@ -314,21 +307,125 @@
 		 	
 		 	The automated volume controls receives a `bang' (signalling something has happened) when the `open' message is sent form the `loadFiles' js object (orange). This bang is also sent to the convolution patch that is currently at full volume. This prompts the volume of the current patch to increase while the volume of the previous patch decreases, thus panning between the two signal.
 
-	\subsubsection{Head-Tracking}
-
-		The original patch used in the \ac{VSS} used an Oculus Rift as a head-tracking device which was also used to provide visuals of the \ac{VAE}. As this project does not provide visuals, a smaller, less obtrusive device was sought. \cite{YEI}
-
-		The YEI sensor
-		YEI Sensor was not good.
 
 	\subsubsection{Location Tracking}
 	\label{locationtracking}
+	Figure~\ref{touchScreenPatch} shows the patch `touchScreen' which contains two main elements. The left side is used to draw a dot on the user interface that indicated to the user where they currently are in the virtual space and the right side is used to draw the user interface. Both are described in the following sections.
 
-	\subsubsection{Software Issues}
+			%-------------Convolution Patch Overview Image-------------%
+		\begin{figure}[H]
+			\centerline{\includegraphics[scale = 0.5]{Sections/Implementation/Max/images/Max/UserInterface/pTouchScreen_edit.png}}
+			\caption{Screen shot of `touchScreen', the patch used to produce the user interface on the iPad (right side) and to draw a dot on the iPad showing the user where they are located in the virtual space (left side). `storeCood' javascript object highlighted in blue.}
+			\label{touchScreenPatch}
+		\end{figure}
+
+		\paragraph{User Interface}
+			As previously mentioned, the c74 application was used to display a user interface on an iPad, allowing the user to select their location within the space. This is created on the right side of figure~\ref{touchScreenPatch}, by sending the `c74' object a message that contains the type of object that should be presented, its coordinates in the space as well as size and colour, the results of which are shown in figure~\ref{UIdot}. The output of the `c74' object returns information regarding the objects created in the user interface. In this case, the positions touched on the lcd screen will be sent from the iPad back to this `c74' object. This information is sent to the input of the `UI\_to\_file' patch. This allows the iPad screen to be used the same way as the lcd screen in Max is used (show previously in figure~\ref{lcd}).
+
+						%-------------UI Image-------------%
+			\begin{figure}[H]
+				\centerline{\includegraphics[scale = 0.15]{Sections/Implementation/Max/images/Max/UserInterface/UI_dot.png}}
+				\caption{Screen shot of the user interface produced on the iPad. The large white rectangle represents the virtual space in which the user can place themselves, where the top of the rectangle is the front of the room (where the blackboards are in Hendrix Hall). The dot in the white rectangle is used to show the user where they are located in the space and the button in the top left corner is used for calibrating the head-tracking device.}
+				\label{UIdot}
+			\end{figure}
+
+		\paragraph{Position Feedback}
+			The left side of figure~\ref{touchScreenPatch} contains a javascript file called `storeCood' \textbf{Available here: LINK} (highlighted in blue) with a number of inputs. As mentioned above, the `c74' objects can retrieve data from the lcd screen on the iPad. When the user selects a location, the (x,y) coordinates are sent to the first two inputs of the javascript file respectively. These coordinates are stored in a list along with the corresponding section that they are located in (third input), calculated using the method described in section~\fullref{locationSelection}. Figure~\ref{locationsExample} shows a simple example, where the coordinates of a path spanning across 4 sections are stored in groups.
+
+			Input 4 and 5 receive two different signals routed from the main timer (labelled 3 in figure~\ref{myPatch}). Input 4 receives a signal every time the timer is done (ever 2.5 seconds) and input 5 receives a message every 100ms (the rate at which the timer increments). These are used to call the two main functions that are used to output the coordinates at the correct times, \texttt{findLength()} and \texttt{outputCoords()}. Each time the timer finishes (after 2.5 seconds), \texttt{findLength()} starts from the beginning of the list of stored coordinates and scans through them, calculating how many coordinates are located in the same section. For the example in figure~\ref{locationsExample}, this would find a length of 2 for positions 1 and 2 located in section 5. As the user is moved to a new \ac{RIR} location every 2.5 seconds, \texttt{outputCoords()} will output the coordinates that were travelled in that section evenly within that amount of time. This is done by dividing 2500(ms) by the number of points within that section. For the example in figure~\ref{locationsExample}, this would be $2500/2 = 1250$. Therefore, every 100ms the function checks to see whether it is time to output the stored coordinates, meaning the coordinates of position 1 and 2 will be output at times 1250ms and 2500ms. If we were to continue with the example, the next three positions, 3, 4 and 5 would be output at times 833ms, 1666ms and 2500ms, thus evenly spreading out the movement of the dot on the user interface screen \textit{meaning the dot should travel around the path at a continuous rate instead of in staggered increments}. An example of the dot movement can be found \textbf{LINK TO DOT MOVEMENT VIDEO}.
+
+			%-------------Locations example Image-------------%
+			\begin{figure}[H]
+				\centerline{\includegraphics[scale = 0.4]{Sections/Implementation/Max/images/Max/UserInterface/locationsExample2.png}}
+				\caption{Simple example of the coordinates along a path being stored in groups depending on which section of the lcd screen they are located. \textit{(The smallest number of sections possible is actually 9, but 6 are used here for simplicity)}}
+				\label{locationsExample}
+			\end{figure}
+
+	\subsubsection{Head-Tracking}
+
+		The original \ac{VSS} patch used an Oculus Rift as a head-tracking device which was also used to provide visuals of the \ac{VAE}. As this project does not provide visuals, a smaller, less obtrusive device was sought. Initially the YEI 3-Space Sensor \cite{YEI} was investigated, a small device that can track angular rotation and output results into Max. It was found however that the software used to interface between the device and the computer (a Mac) was only in a Beta stage. As a consequence, the output from the sensor did not function correctly or provide useful information.
+
+		Instead, the c74 application already being used for the iPad user interface (see section~\fullref{locationSelection}) was used to extract rotational data from an iPhone. The iPhone data retrieved was accurate and provided a steady wireless connection, as opposed to the USB connection required for the YEI sensor. For user testing, a low-tech head-mounting solution was found by wrapping the iPhone in the front of a cotton hat. This was integrated with the existing head-tracking by creating a new patch that reads data from the iPhone (much like the patch used for the iPad) and maps the data to an angle from 0\textdegree~to 360\textdegree, including a calibration system ensuring that each user is facing the same way in the \ac{VAE}. The output of this was sent to the input of the existing head-tracking system where the Oculus rift data would have been sent. This data is used to pan between the four direction \ac{RIR} files simulating the effect of turning the the \ac{VAE}.
+
+	\subsubsection{Settings Menu}
+
+	Figure~\ref{settings} shows the settings patch `settings'. This can be used to determine which \ac{RIR} grid to use by selecting the number 1-5 on the top left of the patch (green buttons) as well as the sample rate of the \ac{RIR} files. The audio input settings can be used to change which audio input is used. The panning settings determine the speed at which the user is moved between \ac{RIR} locations.
+
+		%-------------Locations example Image-------------%
+		\begin{figure}[H]
+			\centerline{\includegraphics[scale = 0.4]{Sections/Implementation/Max/images/settings.png}}
+			\caption{Settings patch used to control parts of the overall patch from one location}
+			\label{settings}
+		\end{figure}
+
+
+	\subsection{Latency}
+
+		The time taken for the input signal to run through the system causes the room reflection to arrive at the user at the incorrect times. To determine the length of the delay, a latency test was conducted. The test procedure was similar to that in the production of the original \ac{VSS} \cite{Brereton2014} with some slight differences. Two Earthwork M30 reference microphones \cite{earthworks} were placed in the centre of the speaker array. One was connected to the input of the max patch and the other was connected to mac running reaper through a MOTU audio interface \cite{motu} to record a reference input. An output channel running to one of the Genelec speakers was routed to the second input of the MOTU interface. This was used to record the signal after it had run through the Max patch, thus allowing the two signals to be compared to find the latency time. Both systems were running at a sample rate of 44.1kHz. To identify the impulse clearly, a pair of drumsticks were used to produce an impulse. This was then convolved with a 4-channel Dirac impulse (1 sample of amplitude 1) of approximately 3 seconds long. Figure~\ref{latencyDiagram} shows a diagram of the latency measurement process.
+
+		%-------------Latency Diagram-------------%
+		\begin{figure}[H]
+			\centerline{\includegraphics[scale = 0.4]{Sections/Implementation/Max/images/Latency/latencyDiagram.png}}
+			\caption{Diagram showing the latency measurement process. Red arrow shows the signal being delayed due to running through the max patch, eventually being output from the Genelec and running into reaper. Blue arrow indicates the direct signal to Reaper. The numbers indicate which of the audio waves comes from which source, 1 being the direct sound and 2 being the delayed sound.}
+			\label{latencyDiagram}
+		\end{figure}
+
+		Previous testing of the system had shown that the system ran smoothly when using an input block size of 32 in Max, however for future records (and in case the system speed were to slow down due to potential future changes) the latency was measured for varying block sizes. The following table shows the resulting latency time due to the different block sizes used in Max. The total latency is calculated by adding 5ms to the system latency. This accounts for the time taken to travel from the loudspeaker to the centre of the speaker array where the user will be present.
+
+
+		\begin{center}
+		\begin{tabular}{|c |c |c |c|}
+		\hline
+		Sample Rate (kHz) & Block Size & System Latency (ms) & Total Latency (ms) \\ \hline
+		44.1 & 512 & 27 & 32 \\ \hline
+		44.1 & 256 & 20 & 25 \\ \hline
+		44.1 & 128 & 18 & 23 \\ \hline
+		44.1 & 64 & 17 & 22 \\ \hline
+		44.1 & 32 & 17 & 22 \\ \hline
+		\end{tabular}
+		\end{center}
+
+
+	\subsection{RIR Trimming}
+		Due to the latency present in the system, the first 22ms of the \ac{RIR}'s had to be trimmed. Figure~\ref{odeonTrim} shows two of the synthetic \ac{RIR}'s, the top shows one from the centre of the room (8.85m from the left wall) and the bottom shows an \ac{RIR} taken 1.85m away from the left wall which are two of the locations that were also taken in Hendrix Hall for user test \#1. Both of the \ac{RIR}'s being analysed were produced with the sound source facing the left wall to emphasis the early wall reflection making the following point more obvious. 
+
+		Points (1), (2) and (3) are idential in both \ac{RIR}'s showing the start of the impulse, the direct sound and the floor reflection respectfully. The main difference in the \ac{RIR}'s are the direct reflection times from the left wall. (4) shows the wall reflection occurring at 0.04084s, indicating travel distance of 3.75 (following the same patch described in figure~\ref{reflectionPaths} in section \fullref{odeon:results}). (5) shows the reflection from the same wall, however occurring much later due to the greater distance from the wall. The point at which the \ac{RIR}'s will be trimmed is indicated by the red intersection line. It can be seen that the direct reflection from the left wall (4) gets removed from the impulse, whereas in the \ac{RIR} in the centre of the room, the direct wall reflection (5) remains in the trimmed version of the \ac{RIR}.
+
+		%-------------Latency Diagram-------------%
+		\begin{figure}[H]
+			\centerline{\includegraphics[scale = 0.4]{Sections/Implementation/Max/images/Latency/odeonLatency_edit.png}}
+			\caption{}
+			\label{odeonTrim}
+		\end{figure}
+
+
+		% The first impulse can be seen at  0.0464 (46ms). As the tweeter is the closest sound source to the microphone and is located 0.22m away (thus taking 0.64ms to reach the receiver), it can be calculated that the impulse starts at 0.04576 (0.0464 - 0.00065). Therefore, to remove 22ms, the file must be trimmed at 0.06776 (67.8ms).
+
+		% Both \ac{RIR}'s show a peak at (2), 0.05405s into the impulse. This can be calculated ($(0.05404-0.0464)\times{340}$) as having travelled 2.65m, which is the distance from the woofer to the floor (1.2m) and back to the receiver $(1.2m + 0.4m = 1.6m)$ total = 1.2 + 1.6 = 2.8. This is not an exact match, however this will be due to some error in the physical measurements of the sound source and receiver placement. The main difference between the two \ac{RIR}'s can be seen by comparing peaks (3) and (4).
+
+		% Peak (3) is shown at 0.06188 $(0.06188-0.04642)*344 = 5.34m$ (0.06188-0.04642)*340 = 5.1m, corresponding to the wall approximately 2.55m away (should be 2m).
+		% (4) shows a peak at 0.09654 $(0.06188-0.04642)*344 = 5.34m$
+
+
+
+
+		RIRtrim.m
+
+		This was done for the real \ac{RIR} measurements as well. Figure~\ref{realTrim} shows two \ac{RIR}'s in the same positions as mentioned above, where the early wall reflection in the bottom \ac{RIR} (3) is trimmed.
+
+		% 	%-------------Latency Diagram-------------%
+		% \begin{figure}[H]
+		% 	\centerline{\includegraphics[scale = 0.2]{Sections/Implementation/Max/images/Latency/RealRIR(9,9)(9,2)_90.png}}
+		% 	\caption{}
+		% 	\label{realTrim}
+		% \end{figure}
+
+
+		\subsubsection{Software Issues}
 	\label{iteration3Issues}
 
-	\subsection{Latency Test}
+	%Removed Bypass function
+
 	
-	\subsection{RIR Trimming}
 
 \end{document}
