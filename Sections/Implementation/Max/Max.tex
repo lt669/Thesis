@@ -303,7 +303,7 @@
 				\label{convPatch}
 			\end{figure}
 
-			To achieve the path following functionality, each convolution patch contains its own level control algorithm. Figure~\ref{convPatch} shows an overview of the first convolution patch which is a modified version of the original pathch used in the \ac{VSS}. The input to the convolution patch (orange) feeds the file number directly into a `loadFiles.js' javascript object. This simply prepends the number with the appropriate number of 0's (eg 1 becomes 001 and 28 becomes 028), then this number is concatenated with a file patch pointing to where the audio files are located (see js file: loadFiles.js \textbf{LINK}. This outputs four `open' messages (one for each directional \ac{RIR} file)  followed by a file paths to the spat.conv objects (blue). These are the objects that actually search for the file and load it into the system. By sending the pre-pending `open' message, manually searching for a file is not required, thus automating the process. These objects convolve the loaded file with what ever audio input it is given at its inlet, in this case the real time audio input or audio file (yellow). These outputs are then sent through multipliers (green), used to fade the signal in and out with an automated volume control (red).
+			To achieve the path following functionality, each convolution patch contains its own level control algorithm. Figure~\ref{convPatch} shows an overview of the first convolution patch which is a modified version of the original pathch used in the \ac{VSS}. The input to the convolution patch (orange) feeds the file number directly into a `loadFiles.js' javascript object. This simply prepends the number with the appropriate number of 0's (eg 1 becomes 001 and 28 becomes 028), then this number is concatenated with a file path pointing to where the audio files are located (see js file: loadFiles.js \textbf{LINK}. This outputs four `open' messages (one for each directional \ac{RIR} file)  followed by a file paths to the spat.conv objects (blue). These are the objects that actually search for the file and load it into the system. By sending the pre-pending `open' message, manually searching for a file is not required, thus automating the process. These objects convolve the loaded file with what ever audio input it is given at its inlet, in this case the real time audio input or audio file (yellow). These outputs are then sent through multipliers (green), used to fade the signal in and out with an automated volume control (red).
 		 	
 		 	The automated volume controls receives a `bang' (signalling something has happened) when the `open' message is sent form the `loadFiles' js object (orange). This bang is also sent to the convolution patch that is currently at full volume. This prompts the volume of the current patch to increase while the volume of the previous patch decreases, thus panning between the two signal.
 
@@ -358,10 +358,28 @@
 			\label{settings}
 		\end{figure}
 
+		\subsubsection{Software Issues}
+	\label{iteration3Issues}
+
+	%Removed Bypass function
+
+	%Zigzag movement
+	One issue raised when implementing iteration 3 was the way in which the user is moved through the virtual space. As only two \ac{RIR} locations are used at a time as opposed to using 4 \ac{RIR} locations for interpolation, the user is moved in a `zigzag' pattern. Figure~\ref{iterationMovement} shows two images illustrating how the user is moved through the virtual space using the final iteration of the software against the initial two iterations, where the curved blue line represents the path drawn by the user. The image on the right shows how the 4 \ac{RIR} locations are used together to make it sound like the user is placed between them. The image on the right shows how the user is passed between locations one at a time, causing the `zigzag' pattern.
+
+
+		%-------------Latency Diagram-------------%
+		\begin{figure}[H]
+			\centerline{\includegraphics[scale = 0.4]{Sections/Implementation/Max/images/Max/iterationMovement.png}}
+			\caption{Illustration of how the user is moved through the virtual space using different numbers of \ac{RIR} locations where the image on the \textbf{right} shows how 4 \ac{RIR}'s are used at a time and the image on the \textbf{left}  shows the user being passed between two \ac{RIR} locations at a time. The blue line represents the paths drawn by the user and the circles represent \ac{RIR locations}.}
+			\label{iterationMovement}
+		\end{figure}
+
+	As previously explained in section~\fullref{iteration3}, three convolution patches were used to move the user between two \ac{RIR} locations while the third loads the next location. In an attempt to make the system less computationally expensive, if any of the convolution patched were loading a file as opposed to convolving an audio signal with one, the convolution algorithm was bypassed. However it was found that any delay in turning the bypass on or off produced a `popping' noise. Small delays in turning the bypass on and off often occurred, therefore this bypass functionality was removed.
+
 
 	\subsection{Latency}
 
-		The time taken for the input signal to run through the system causes the room reflection to arrive at the user at the incorrect times. To determine the length of the delay, a latency test was conducted. The test procedure was similar to that in the production of the original \ac{VSS} \cite{Brereton2014} with some slight differences. Two Earthwork M30 reference microphones \cite{earthworks} were placed in the centre of the speaker array. One was connected to the input of the max patch and the other was connected to mac running reaper through a MOTU audio interface \cite{motu} to record a reference input. An output channel running to one of the Genelec speakers was routed to the second input of the MOTU interface. This was used to record the signal after it had run through the Max patch, thus allowing the two signals to be compared to find the latency time. Both systems were running at a sample rate of 44.1kHz. To identify the impulse clearly, a pair of drumsticks were used to produce an impulse. This was then convolved with a 4-channel Dirac impulse (1 sample of amplitude 1) of approximately 3 seconds long. Figure~\ref{latencyDiagram} shows a diagram of the latency measurement process.
+		The time taken for the input signal to run through the system causes the room reflection to arrive at the user at the incorrect times. To determine the length of the delay, a latency test was conducted. The test procedure was similar to that in the production of the original \ac{VSS} \cite{Brereton2014} with some slight differences. Two Earthwork M30 reference microphones \cite{earthworks} were placed in the centre of the speaker array. One was connected to the input of the max patch and the other was connected to a Mac running reaper through a MOTU audio interface \cite{motu} to record a reference input. An output channel running to one of the Genelec speakers was routed to the second input of the MOTU interface. This was used to record the signal after it had run through the Max patch, thus allowing the two signals to be compared to find the latency time. Both systems were running at a sample rate of 44.1kHz. To identify the impulse clearly, a pair of drumsticks were used to produce an impulse. This was then convolved with a 4-channel Dirac impulse (1 sample of amplitude 1) of approximately 3 seconds long. Figure~\ref{latencyDiagram} shows a diagram of the latency measurement process.
 
 		%-------------Latency Diagram-------------%
 		\begin{figure}[H]
@@ -389,7 +407,15 @@
 	\subsection{RIR Trimming}
 		Due to the latency present in the system, the first 22ms of the \ac{RIR}'s had to be trimmed. Figure~\ref{odeonTrim} shows two of the synthetic \ac{RIR}'s, the top shows one from the centre of the room (8.85m from the left wall) and the bottom shows an \ac{RIR} taken 1.85m away from the left wall which are two of the locations that were also taken in Hendrix Hall for user test \#1. Both of the \ac{RIR}'s being analysed were produced with the sound source facing the left wall to emphasis the early wall reflection making the following point more obvious. 
 
-		Points (1), (2) and (3) are idential in both \ac{RIR}'s showing the start of the impulse, the direct sound and the floor reflection respectfully. The main difference in the \ac{RIR}'s are the direct reflection times from the left wall. (4) shows the wall reflection occurring at 0.04084s, indicating travel distance of 3.75 (following the same patch described in figure~\ref{reflectionPaths} in section \fullref{odeon:results}). (5) shows the reflection from the same wall, however occurring much later due to the greater distance from the wall. The point at which the \ac{RIR}'s will be trimmed is indicated by the red intersection line. It can be seen that the direct reflection from the left wall (4) gets removed from the impulse, whereas in the \ac{RIR} in the centre of the room, the direct wall reflection (5) remains in the trimmed version of the \ac{RIR}.
+		Points (1), (2) and (3) are identical in both \ac{RIR}'s showing the start of the impulse, the direct sound and the floor reflection respectfully. The main difference in the \ac{RIR}'s are the direct reflection times from the left wall. (4) shows the wall reflection occurring at 0.04084s, indicating travel distance of 3.75 (following the same patch described in figure~\ref{reflectionPaths} in section \fullref{odeon:results}). (5) shows the reflection from the same wall, however occurring much later due to the greater distance from the wall. The point at which the \ac{RIR}'s will be trimmed is indicated by the red intersection line, occurring at approximately 0.052s. It can be seen that the direct reflection from the left wall (4) is removed from the impulse, whereas in the \ac{RIR} in the centre of the room, the direct wall reflection (5) remains in the trimmed version of the \ac{RIR}. Due to the 22ms delay, any sound that travels less than 7.568m before reaching the receiver will be removed from the \ac{RIR}. 
+
+		This was not considered at the start of the project and therefore 
+
+		\begin{center}
+			\textbf{[SAY SOMETHING ABOUT DIRECT SOUNDS FOR LOCALISATION]}
+		\end{center}
+
+		The effects of using \ac{RIR}'s, most of which had the direct sound
 
 		%-------------Latency Diagram-------------%
 		\begin{figure}[H]
@@ -398,18 +424,7 @@
 			\label{odeonTrim}
 		\end{figure}
 
-
-		% The first impulse can be seen at  0.0464 (46ms). As the tweeter is the closest sound source to the microphone and is located 0.22m away (thus taking 0.64ms to reach the receiver), it can be calculated that the impulse starts at 0.04576 (0.0464 - 0.00065). Therefore, to remove 22ms, the file must be trimmed at 0.06776 (67.8ms).
-
-		% Both \ac{RIR}'s show a peak at (2), 0.05405s into the impulse. This can be calculated ($(0.05404-0.0464)\times{340}$) as having travelled 2.65m, which is the distance from the woofer to the floor (1.2m) and back to the receiver $(1.2m + 0.4m = 1.6m)$ total = 1.2 + 1.6 = 2.8. This is not an exact match, however this will be due to some error in the physical measurements of the sound source and receiver placement. The main difference between the two \ac{RIR}'s can be seen by comparing peaks (3) and (4).
-
-		% Peak (3) is shown at 0.06188 $(0.06188-0.04642)*344 = 5.34m$ (0.06188-0.04642)*340 = 5.1m, corresponding to the wall approximately 2.55m away (should be 2m).
-		% (4) shows a peak at 0.09654 $(0.06188-0.04642)*344 = 5.34m$
-
-
-
-
-		RIRtrim.m
+		The Matlab script used from audio file trimming can be found: RIRtrim.m
 
 		This was done for the real \ac{RIR} measurements as well. Figure~\ref{realTrim} shows two \ac{RIR}'s in the same positions as mentioned above, where the early wall reflection in the bottom \ac{RIR} (3) is trimmed.
 
@@ -421,11 +436,6 @@
 		% \end{figure}
 
 
-		\subsubsection{Software Issues}
-	\label{iteration3Issues}
-
-	%Removed Bypass function
-
-	
+		
 
 \end{document}
