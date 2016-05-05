@@ -422,6 +422,7 @@
 			It can therefore be noted that the \ac{RIR}'s with a distance of 60cm between the source and receiver are accurate and can be used to produce a mass of \ac{RIR}'s.
 
 		\subsubsection{RIR Locations}
+		\label{rirlocations}
 			%How many RIRs and where?
 			As discussed in section~\nameref{Background:RIRPositions}, \ac{RIR}'s were to be taken every 1m starting from the centre of the room and should form a grid (rectangular or square). However, there were some positions within the room that would cause some \ac{RIR} positions to be invalid. The location of these invalid positions could be found anywhere the sound source and receiver were placed closer than 0.75m next to a surface. This is because the loudspeakers in the \ac{VSS} are placed 1.5m away from the centre, where the user will be stood meaning that any sound that has to travel less than 1.5m the reach the receiver will be impossible to reproduce at the correct time within the \ac{VSS}. If a source and receiver were to be placed placed closer than 0.75m from a wall, sound would have to travel less than 1.5m before reaching the receiver. When taking this into account, figure~\ref{incorrectRIRPositions} shows the positions that would be invalid due to them being placed too close to a surface, marked as U, V, W and Z. W represents a large space of invalid \ac{RIR} positions and they would all be too close to the table surfaces.
 
@@ -451,8 +452,6 @@
 
 		\subsubsection{RIR Rendering}
 
-			Once all of the source and receiver positions had been decided, they must be included in Odeons 
-
 			The source and receiver positions can be set using a .SouRecScript file, which contains information regarding the Cartesian coordinates of both sources and receivers within the room as well as the sound source directivity patter and the direction in which the source is facing. This made producing 240 \ac{RIR}'s almost effortless. However, one the script had set to locations of the source and receivers, each source and receiver had to be paired up individually. This is because Odeon provides a \textbf{Job List}, where any number of \ac{RIR}'s can be rendered one after. For this to work, the user must tell Odeon which receiver to use for each sound source. Figure~\ref{SouRecPos} shows the job list menu where each source has to be connected to each receiver, using a series od drop down menus and scroll bars. This part of Odeon is clumsy and in no way designed to make the process fast and simple. This had to be done for all 240 \ac{RIR}'s and then again for the other three sets of \ac{RIR}'s used for facing different direction within the room, totalling 960 \ac{RIR}'s.
 
 			%-------------RIR Invalid Positions Image-------------%
@@ -467,7 +466,7 @@
 			\textbf{Files available: SupportingFiles/sourecscripts/}
 
 	\subsection{File Sorting (Extra Grids)}
-
+	\label{odeon:grids}
 		As described in section~\fullref{Background:RIRPositions}, user test \#3 requires there to be a number of available \ac{RIR} grids to choose from, each containing \ac{RIR} locations separated by a fixed distance. It was decided that there would be a total of 5 grids to choose from, the first (the one already produced) containing \ac{RIR}'s separated by 1m, the second grid containing \ac{RIR}'s separated by 2m and so on.	 Four Matlab algorithms were written (fully commented code available here \texttt{SupportingFiles/Matlab/renameSortFiles.m} \textbf{LINK}) to extract the appropriate \ac{RIR}'s required for each new gird, and rename them starting from 001 up to the maximum number of \ac{RIR}'s in each grid. This made it easily  integrable with the software described in section~\fullref{software}.
 
 		The four grids can be seen in figures~\ref{2m},~\ref{3m},~\ref{4m} and~\ref{5m} respectively in~\nameref{appendixB}, showing which \ac{RIR} locations from the original grid they contain.

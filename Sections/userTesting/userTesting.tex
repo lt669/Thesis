@@ -5,91 +5,234 @@
 \begin{document}
 
 \section{User Testing}
-	Once the implementation of the system to allow the user to move themselves around a virtual space had been completed, the plausibility of the methods used were tested. The following sections present the aims of the user tests in full and the procedure required to fulfil the set objectives.
+	Once the implementation of the system to allow the user to move themselves around a virtual space had been completed, the plausibility of the methods used were tested. The following sections present the aims of the user tests in full, the procedure required to fulfil the set objectives followed by the results and a discussion.
+
+	In total, seven students took part in the user tests, all of which were studying audio related subjects.
 
 	\subsection{User Testing Aims}
 		There were a total of 3 user tests, with the third being split into two parts with an identical procedure. The aims of each test were as follows:
 
 		\textbf{Test \#1:} Investigate the effect of using the synthetic \ac{RIR}'s as opposed to the previously used real \ac{RIR}'s used.
 
-		\textbf{Test \#2:} Investigate how far the user has to be moved before they notice that have been moved using synthetic \ac{RIR}'s
+		\textbf{Test \#2:} Investigate how far the user has to be moved before they notice that they have been moved using synthetic \ac{RIR}'s
 
 		\textbf{Test \#3.1:} Investigate which \ac{RIR} grid provides the user with the best sense of mobility
 
 		\textbf{Test \#3.2:}  Investigate whether the users opinion changes when using a position feedback system
 
+			Before the tests were conducted, each participant was presented with a `Test Participant Form', informing them of the aims of the tests and the procedures that were to follow. As they were going to be stood inside the speaker array, the answers provided by each participant were taken down on their behalf. At the end of the experiment the answers were checked and signed by the participant assuring that their answers had been taken down accurately. The form provided to the participants can be found in~\nameref{appendixD}.
 
-	\subsection{Testing Procedure}
-		Before the tests were conducted, each participant was presented with a `Test Participant Form', informing them of the aims of the tests and the procedures that were to follow. As they were going to be stood inside the speaker array, the answers provided by each participant were taken down on their behalf. At the end of the experiment the answers were checked and signed by the participant assuring that their answers had been taken down accurately. The form provided to the participants can be found in~\nameref{appendixD}.
+			Before each test, the participants were allowed two `dummy runs', allowing them to get used to the system without having their answers recorded, with the intention of removing the disadvantage of being unfamiliar with the system for the first few questions of each test. They were also informed that during each test they were allowed to turn their head in the space to obtain a more natural listening experience.
 
-		\subsubsection{Test \#1}
+	\subsection{Test \#1}
+	
 
-			To test the effect of using sysnthetic \ac{RIR}'s as opposed to real \ac{RIR}'s the use was asked to perform the same takst twice. the taks 
+		\subsubsection{Procedure}
 
 			To investigate the difference in the perception of distance moved when using either synthetic or real \ac{RIR}'s, the following procedure was carried out:
 
-			Figure~\ref{test1Positions} shows an illustration of the virtual space indicating where the four \ac{RIR} locations used for the test are. The black numbers indicate the coordinates of the \ac{RIR}'s  relative to the top left corner of the room (note that the x and y axis are opposite to convention due to the way the building was modelled in Google SketchUp), and the red numbers are used to indicate which location the user was moved to during each test, shown in table~\ref{test1Procedure}.
+			%The user was placed at position (1) (using a real \ac{RIR}, in the centre of the virtual space and asked to say the word `Bob'. The were then moved to a new position and asked to repeat themselves. THen, using the \ac{RIR}'s produced in Odeon the were asked to do the same again. They were then asked whether 
+
+			The participant was told that two methods were going to be investigated during this test, method \textbf{A} and method \textbf{B}. The participant was not told that in method \textbf{A}, the real \ac{RIR} measurements from Hendrix Hall were going to be used to move them around the room and in method \textbf{B} the synthetic \ac{RIR}'s produced in Odeon were going to be used. The participant was told that using method \textbf{A}, they were going to be placed somewhere in the virtual space and that they would be asked to say the word `Bob'. They would then be moved to another position in the space and asked to repeat themselves. This procedure would the be repeated, however this time using method \textbf{B}. They were then asked to state whether they felt they had:
+
+			\begin{center}
+			    \begin{tabular}{l}
+			       1) Moved a \textbf{shorter} distance than they had in \textbf{A}\\
+			       2) Moved the \textbf{same} distance they had in \textbf{A}\\
+			       3) Moved a \textbf{further} distance than they had in \textbf{A}\\
+			       4) I don't know\\
+			    \end{tabular}
+			\end{center}
+
+			This was repeated three times where the distances used for mathes A and B were kept the same. For the final two trials, the distances between the two methods were changed. The left of figure~\ref{test1} shows an illustration of the virtual space indicating where the four \ac{RIR} locations used for the test are. The black numbers indicate the coordinates of the \ac{RIR}'s  relative to the top left corner of the room (note that the x and y axis are opposite to convention due to the way the building was modelled in Google SketchUp), and the red numbers are used to indicate which location the user was moved to during each test, shown on the right in figure~\ref{test1}.
 
 
-			The user was placed at position (1), in the centre of the virtual space and asked to say the word `Bob'. The were then moved to a new position and asked to repeat themselves
 
-
-			%-------------Latency Diagram-------------%
+			%-------------Test 1 Image and Table-------------%
 			\begin{figure}[H]
-				\centerline{\includegraphics[scale = 0.5]{Sections/userTesting/images/test1/roomPositions3.png}}
-				\caption{Illustration of \ac{RIR} locations used for user test \#1.}
-				\label{test1Positions}
+				\begin{minipage}{0.5\textwidth}
+					\begin{figure}[H]
+						\centerline{\includegraphics[scale = 0.5]{Sections/userTesting/images/test1/roomPositions3.png}}
+					\end{figure}			
+				\end{minipage}
+				~
+				\hspace{25mm}\begin{minipage}{0.5\textwidth}
+				\begin{table}[H]
+				    \begin{tabular}{|c|cc|cc|} \hline
+				        \multirow{2}{*}{Trail} & \multicolumn{2}{c|}{Real RIR \textbf{(A)}} & \multicolumn{2}{c|}{Odeon RIR \textbf{(B)}}\\ \cline{2-5}
+				            & Start & End & Start & End \\ \hline
+				          1 & (1) & (2) & (1) & (2)\\
+				          2 & (1) & (3) & (1) & (3)\\
+				          3 & (1) & (4) & (1) & (4)\\ \hline
+				          4 & (1) & (3) & (1) & (4)\\ 
+				          5 & (4) & (1) & (1) & (3)\\ \hline
+				    \end{tabular}
+				\end{table}
+				\end{minipage}
+				\caption{\textbf{Left:} Illustration of the \ac{RIR} locations used in user test \#1. \textbf{Right:} Table showing the pairs of positions the participant was moved to, corresponding to the positions shown in the diagram on the left.}
+				\label{test1}
+			\end{figure}
+
+		\subsubsection{Results}
+			The participants answers for user test \#1 were taken and averaged across all five trials. Figure~\ref{test1Results} shows these results, showing the percentage of correct and incorrect answers given (left) and the percentage of each type of answer given (right). It can be seen that only 23\% of the answers given across all trials and participants were correct, indicating there being difficult comparing the two distances moved.
+
+			%-------------Pie 1-------------%
+			\begin{figure}[H]
+				\begin{subfigure}{0.5\textwidth}
+					\centerline{\includegraphics[scale = 0.7]{Sections/userTesting/images/test1/Q1Pie1_edit.png}}
+				\end{subfigure}
+				~
+				\begin{subfigure}{0.5\textwidth}
+					\centerline{\includegraphics[scale = 0.7]{Sections/userTesting/images/test1/Q1Pie2.png}}
+				\end{subfigure}
+				\caption{Pie charts showing the results of user test \#1}
+				\label{test1Results}
+			\end{figure}
+
+
+			The pie chart on the right shows that more commonly, people thought that they were moving a further distance when the synthetic \ac{RIR}'s were used. It can be seen in the table in figure~\ref{test1} that the expected answers are as follows:
+
+			\begin{center}
+			\begin{tabular}{c l}
+			\textbf{Trial} & \textbf{Correct Answer} \\
+			1-3 & Same \\
+			4 & Shorter \\
+			5 & Further
+			\end{tabular}
+			\end{center}
+
+			However, an interesting result can be seen when breaking down the answers given into their respective trials, as shown by the three pie charts in figure~\ref{Q1Trials}. When the distance moved was either the same (trials 1-3) or shorter (trial 4), more people tend to answer that they had moved further, more so when they had actually moved a shorter distance. When the distance moved was actually further, the answers are evenly split between `Further', `Same' and `Don't Know'. This negative correlation between expected answer and given answer suggests that the pie chart on the right in figure~\ref{test1Results}, showing that the majority of people thought they were moving further throughout all trials, is not influence by the fact that people got the answer to trial 5 correct, indicating that it is the use of the synthetic \ac{RIR}'s themselves that cause this perception.
+
+
+			%-------------Pie 1-------------%
+			\begin{figure}[H]
+				\centerline{\includegraphics[scale = 0.6]{Sections/userTesting/images/test1/Q1Trials.png}}
+				\caption{Three pie charts showing the percentage of answers given for: \textbf{Left:} Trials 1- 3, \textbf{Centre:} Trial 4, \textbf{Right:} Trial 5.}
+				\label{Q1Trials}
+			\end{figure}
+
+		\subsubsection{Discussion}
+
+			%Reason so little got the answer right may be because they expect to have moved. Also because the input (them saying Bob) might have been different every time.
+
+			Due to the small percentage of correct answers given, it is apparent that comparing the difference in distance moved is not easy. For the system used, there may be 2 reasons for this:
+
+			\begin{tabular}{l p{0.9\textwidth} }
+			1) & \textbf{The test is too hard} \\
+			& Asking the participants to not only compare how two different locations sound to each other, but compare that difference to how another two sound compare to each other may have been too much to remember at once. This may have led to participants guessing answer as opposed to giving an answer based on opinion, even though the `I Don't Know' option was available. \\
+			2) & \textbf{Inaccurate \ac{RIR}'s} \\
+			& It has been mentioned in section~\fullref{RIRtrimming} that due the fact that the \ac{RIR}'s had to be trimmed due to system latency, much needed direct wall reflections are not present for surfaces less than approximately 3.78m away. Though this may effect the ability to accurately access ones location in the virtual space, it does not explain the perception of moving a further distance when using synthetic \ac{RIR}'s than when using real measured \ac{RIR}'s\\
+			\end{tabular}
+
+		\subsection{Test \#2}
+
+			\subsubsection{Procedure}
+				The second user test is similar to that of the first test, though a little more simple. Figure~\ref{test2} shows 8 \ac{RIR} locations, where (1) is in the centre of the room. The participant was placed at position (1) and asked to say the word `Bob'. They would then be moved closer to the left wall, asked to repeat themselves and asked whether they thought they had moved or not, simply answering yes, no or `I Don't Know'. This was done 7 times, moving the participant a further distance each time. The table on the right in figure~\ref{test2} shows the start and end position for each trial.
+
+							%-------------Test 1 Image and Table-------------%
+			\begin{figure}[H]
+				\begin{minipage}{0.5\textwidth}
+					\begin{figure}[H]
+					\hspace{0mm}\includegraphics[scale = 0.3]{Sections/userTesting/images/test2/test2Positions2.png}
+					\end{figure}			
+				\end{minipage}
+				~
+				\begin{minipage}{0.5\textwidth}
+				    \hspace{35mm}\begin{tabular}{|c|c|c|} \hline
+				        \multirow{2}{*}{Trail} & \multicolumn{2}{c|}{Position (x,y)} \\ \cline{2-3}
+				             & Start & End \\ \hline
+				          1 & (1) & (2) \\
+				          2 & (1) & (3) \\
+				          3 & (1) & (4) \\
+				          4 & (1) & (5) \\
+				          5 & (1) & (6) \\
+				          6 & (1) & (7) \\
+				          7 & (1) & (8) \\ \hline
+				    \end{tabular}
+			    \end{minipage}
+			    \caption{\textbf{Left:} Illustration of the \ac{RIR} locations used in user test \#2. \textbf{Right:} Table showing the pairs of positions the participant was moved to, corresponding to the positions shown in the diagram on the left.}
+				\label{test2}
+			\end{figure}
+
+			\subsubsection{Results}
+
+				Figure~\ref{test2results} shows a line graph of the results obtained from user test \#2, showing on how many participants answered `Yes', `No' or `Don't Know' for each of the trials.
+
+				The original hypothesis to this test was that the participants were unlikely to notice that they had moved for the first few trials as they were being moved such a short distance (1m, 2m), with the expectation that they would notice when they were being moved much larger distances, hence the reason there were moved 1m closer to the wall in each trial. However, it was found that all participants answered `Yes' for the first trial (movement of 1m towards the left wall) and all other trials resulted in a number of participants giving an answer other than `Yes'. Instead of a positive correlation between distance moved and `Yes' answers given, there appears to be a dip from trials 2-4
+
+				%-------------Test 2 Results-------------%
+				\begin{figure}[H]
+					\centerline{\includegraphics[scale = 1]{Sections/userTesting/images/test2/Q2_edit.png}}
+					\caption{Line graph of the results from user test \#2 showing the number of participants who answered `Yes', `No' or `Don't Know' for each of the trials.}
+					\label{test2results}
+				\end{figure}
+
+			\subsubsection{Discussion}
+
+				Comparing the results to the original hypothesis, excluding the first two trails, there seems to be more people noticing movement as the distance moved increases. These first two trials may have been subject to a bias, where the user is expecting to be moved. This however can not be backed up and remains a speculation.
+
+				Other causes for these results could be one of the following:
+
+				\begin{tabular}{l p{0.9\textwidth}}
+				1) & That the \ac{RIR}'s used do not contain enough information regarding the users location. \\
+				2) & The participants answering `No' simply don't know or do not hear that they expect to hear when moving in a room.\\
+				3) & The inconsistency in repeating themselves has more of an effect on their perception of location than the actually room acoustics.
+				\end{tabular}
+
+
+		\subsection{Test \#3}
+
+			\subsubsection{Procedure}
+				The participants were presented with an iPad and informed that it could be used to draw a path within the virtual space which they would then be moved around. They were asked 
+
+				Five trials were run, each using a different \ac{RIR} grid, previously explained in section~\fullref{odeon:grids} and displayed in section~ \fullref{rirlocations} in figure~\ref{bulkRIRs} (1m separation) and in \fullref{appendixB} as figures~\ref{2m},\ref{3m},\ref{4m},\ref{5m} (2m - 5m separation respectively). The following table shows which trial used with \ac{RIR} grid, stating the distance between \c{RIR} locations and the number of \ac{RIR} locations within that grid:
+
+				\begin{center}
+					\begin{tabu} to 0.9\textwidth{X[1,c] X[2,c] X[2,c]}
+					Trial & \ac{RIR} Location Separation & Number of Positions Available \\
+						1 & 1m & 240 \\
+						2 & 2m & 112 \\
+						3 & 3m & 25 \\
+						4 & 4m & 12 \\
+						5 & 5m & 9 \\
+					\end{tabu}
+				\end{center}
+
+				In each trial, the participant was asked to draw a path and listen to an audio sample (an audio sample \textbf{[REFERENCE AUDIO SAMPLE]} was played in place of the participant speaking/singing to provide a constant sound source as determining movement would be difficult with inconsistent speaking). They were then asked to rate on a scale of 1-10 the quality of mobility, where 1 = extremely ``jumpy'' movement and 10 = completely smooth movement, or to give the answer `N/A' if they had difficulty telling whether they were moving or not.
+
+				Participants were 
+
+			\subsubsection{Results}
+			%-------------Test 3 results-------------%
+
+			\begin{figure}[H]
+				\begin{subfigure}{1\textwidth}
+					\centerline{\includegraphics[scale = 0.7]{Sections/userTesting/images/test3/Q3Score.png}}
+					\caption{A}
+					\label{score}
+				\end{subfigure}
+				
+				\begin{subfigure}{1\textwidth}
+					\centerline{\includegraphics[scale = 0.7]{Sections/userTesting/images/test3/Q3Variance.png}}
+					\caption{B}
+					\label{variance}
+				\end{subfigure}
+				\caption{Pie charts showing the results of user test \#1}
+				\label{test1Results}
 			\end{figure}
 
 
 
-			% \begin{center}
-			%     \begin{tabular}{|c|c|c|c|c|} \hline
-			%         \multirow{2}{*}{Trail} & \multicolumn{2}{c|}{A} & \multicolumn{2}{c|}{B}\\ \cline{2-5}
-			%             & Start & End & A & B \\ \hline
-			          
-			%           1 & (9,9)R & (9,4.5)R & (9,9)S & (9,4.5)S \\
-			%           2 & (9,9)R & (9,2)R & (9,9)S & (9,2)S \\
-			%           3 & (9,9)R & (1.17,10)R &  (9,9)S & (1.17,10)\\ \hline
-			%           4 & (9,9)R & (9,2)R & (9,9)S & (1.17, 10)S  \\ 
-			%           5 & (1.17, 10)R & (9,9)S & (9,9)S & (9,2)S \\ \hline
-			%     \end{tabular}
-			% \end{center}
+			\subsubsection{Discussion}
 
-			\begin{table}[H]
-				\begin{center}
-				    \begin{tabular}{|c|cc|cc|} \hline
-				        \multirow{2}{*}{Trail} & \multicolumn{2}{c|}{Real RIR} & \multicolumn{2}{c|}{Odeon RIR}\\ \cline{2-5}
-				            & Start & End & Start & End \\ \hline
-				          1 & (1) & (2) & (1) & (2) \\
-				          2 & (1) & (3) & (1) & (3)\\
-				          3 & (1) & (4) & (1) & (4)\\ \hline
-				          4 & (1) & (3) & (1) & (4)  \\ 
-				          5 & (4) & (1) & (1) & (3) \\ \hline
-				    \end{tabular}
-				    \caption{Showing}
-				    \label{test1Procedure}
-				\end{center}
-			\end{table}
+			%Less RIRs, move faster, not good
 
+		\subsection{User Test Summary}
 
-		\subsubsection{Test \#2}
+			%The 'I Don't Know' Problem
 
-		\subsubsection{Test \#3}
+			%Results were not great due to the user test not being well suited towards the system
 
-
-	\subsection{Results}
-
-		\subsubsection{Test \#1 Results}
-		\subsubsection{Test \#1 Discussion}
-
-		\subsubsection{Test \#2 Results}
-		\subsubsection{Test \#2 Discussion}
-
-		\subsubsection{Test \#3 Results}
-		\subsubsection{Test \#3 Discussion}
-
-	\subsection{Discussion}
-	%Less RIRs, move faster, not good
+			%The test were long, therefore sthe questions were kept shorter than they should have been. For example, In Test 2 it would have been benifitial to run the same test multiple times to check the variance in their answers, however it was this wuold have taken far too long to do, especially given the tediousness of the tests.
 
 \end{document}

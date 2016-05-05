@@ -77,7 +77,30 @@
 
 		Through observation it was possible to narrow down which order the channels might have been recorded in, however as it could not be 100\% certain the measurements were taken again.
 
+\subsection{RIR Calibrating}
+	
+	As both the real and synthetic \ac{RIR}'s were to be used in the user test, it was imperative that they were calibrated to be the same level to prevent a difference in perception when convolving with an audio signal. As the real \ac{RIR}'s were louder than the synthetic ones and the fact that there were far fewer real \ac{RIR} measurements than synthetic ones, the real measurements were decreased in level to match those produced by Odeon.
 
+	In an attempt to perfectly reducde the level of the real \ac{RIRs} to match those of the synthetic ones, using Matlab, a multiplier was calculated by taking the RMS level of both the real and synthetic \ac{RIRs}:
+
+	\begin{lstlisting}
+		Multiplier = RMS(real)/RMS(synthetic)
+	\end{lstlisting}
+
+	\ac{RIR}'s from the centre of the room were taken and used to calculated the multiplier. Figure~\ref{calRMS} shows the plots of both of the original \ac{RIR}'s (top = real, centre = Odeon) and the calibrated version of the real \ac{RIR}. As it can be seen, the peaks of the real \ac{RIR} fall within the same range as the synthetic \ac{RIR}. However, when these \ac{RIR}'s were convolved with an audio sample taken from OpenAir (sing44.wav) \textbf{[LINK TO SAMPLE]}
+
+	%-------------Real RIR Positions Image-------------%
+	\begin{figure}[H]
+		\begin{center}
+			\includegraphics[scale = 0.3]{Sections/Implementation/RealRIRs/images/calibration/CalRMS_RIR_edit.png} 
+			\caption{Plots of the original real \ac{RIR}, the synthetic \ac{RIR} and the calibrated real \ac{RIR} using the multiplier calculated using the RMS ratio value}
+			\label{calRMS}
+		\end{center}
+	\end{figure}
+
+
+
+	\textbf{Matlab file used: calibrateALL.m}
 
 
 %--------------------------Link Testing--------------------------%
