@@ -183,9 +183,7 @@
 		\subsection{Test \#3}
 
 			\subsubsection{Procedure}
-				The participants were presented with an iPad and informed that it could be used to draw a path within the virtual space which they would then be moved around. They were asked 
-
-				Five trials were run, each using a different \ac{RIR} grid, previously explained in section~\fullref{odeon:grids} and displayed in section~ \fullref{rirlocations} in figure~\ref{bulkRIRs} (1m separation) and in \fullref{appendixB} as figures~\ref{2m},\ref{3m},\ref{4m},\ref{5m} (2m - 5m separation respectively). The following table shows which trial used with \ac{RIR} grid, stating the distance between \c{RIR} locations and the number of \ac{RIR} locations within that grid:
+				The participants were presented with an iPad and informed that it could be used to draw a path within the virtual space which they would then be moved around. Five trials were run, each using a different \ac{RIR} grid, previously explained in section~\fullref{odeon:grids} and displayed in section~ \fullref{rirlocations} in figure~\ref{bulkRIRs} (1m separation) and in \fullref{appendixB} as figures~\ref{2m},\ref{3m},\ref{4m},\ref{5m} (2m - 5m separation respectively). The following table shows which trial used with \ac{RIR} grid, stating the distance between \ac{RIR} locations and the number of \ac{RIR} locations within that grid:
 
 				\begin{center}
 					\begin{tabu} to 0.9\textwidth{X[1,c] X[2,c] X[2,c]}
@@ -197,42 +195,75 @@
 						5 & 5m & 9 \\
 					\end{tabu}
 				\end{center}
+				\vspace{5mm}
+				In each trial, the participant was asked to draw a path and listen to an audio sample \cite{trumpet} (\textbf{[REFERENCE AUDIO SAMPLE]} which was played in place of the participant speaking/singing to provide a constant sound source (as determining movement would be difficult with inconsistent speaking). They were then asked to rate on a scale of 1-10 the quality of mobility, where 1 = extremely ``jumpy'' movement and 10 = completely smooth movement, or to give the answer `N/A' if they had difficulty telling whether they were moving or not.
 
-				In each trial, the participant was asked to draw a path and listen to an audio sample (an audio sample \textbf{[REFERENCE AUDIO SAMPLE]} was played in place of the participant speaking/singing to provide a constant sound source as determining movement would be difficult with inconsistent speaking). They were then asked to rate on a scale of 1-10 the quality of mobility, where 1 = extremely ``jumpy'' movement and 10 = completely smooth movement, or to give the answer `N/A' if they had difficulty telling whether they were moving or not.
-
-				Participants were 
+				The five trials were run twice, once without a dot showing them where they are in the virtual space and once with a dot. This was to test whether their perception of how `smoothly' they were moving around the space changed when they could see exactly where they were.
 
 			\subsubsection{Results}
-			%-------------Test 3 results-------------%
 
-			\begin{figure}[H]
-				\begin{subfigure}{1\textwidth}
-					\centerline{\includegraphics[scale = 0.7]{Sections/userTesting/images/test3/Q3Score.png}}
-					\caption{A}
-					\label{score}
-				\end{subfigure}
-				
-				\begin{subfigure}{1\textwidth}
-					\centerline{\includegraphics[scale = 0.7]{Sections/userTesting/images/test3/Q3Variance.png}}
-					\caption{B}
-					\label{variance}
-				\end{subfigure}
-				\caption{Pie charts showing the results of user test \#1}
-				\label{test1Results}
-			\end{figure}
+				The results in figure~\ref{score} show that on average, using the grid with \ac{RIR} locations separated by 4m when the location tracking dot was not used (blue bars), scored the highest. However it only scoring an average 0.5 higher than the grid using 3m of separation. By looking at that variance of the answers given in figure~\ref{variance}, it can be seen that the grid with 3m separation was rated much more consistently that the grid with 4m separation.
+
+				When the location tracking dot was used, it was found the using the grid with 4m separation on average scored the highest with only a slightly higher variance than the grid of 2m separation, which scored second highest.
+
+				Participants were asked to provide comments on using the system both with and without the location tracking dot. Several participants commented on trial number 3, mentioning that it was easier to tell that they were moving than the prior trials. Comments on using the location tracking dot referred to the fact that it helped them determine what they should be listening for, one participant in particular referring to the speed the dot was moving at was important, given its variance across trials.
+
+				%-------------Test 3 results-------------%
+
+				\begin{figure}[H]
+					\begin{subfigure}{1\textwidth}
+						\centerline{\includegraphics[scale = 0.7]{Sections/userTesting/images/test3/Q3Score.png}}
+						\caption{Average score given from 1 - 10 (1 = jumpy movements, 10 = smooth movement) for each of the trials 1 - 5 (1 = 1m \ac{RIR} separation, 5 = 5m \ac{RIR} separation)}
+						\label{score}
+					\end{subfigure}
+					
+					\begin{subfigure}{1\textwidth}
+						\centerline{\includegraphics[scale = 0.7]{Sections/userTesting/images/test3/Q3Variance.png}}
+						\caption{Variance of the answers given in figure~\ref{score}}
+						\label{variance}
+					\end{subfigure}
+					\caption{Pie charts showing the results of user test \#1}
+					\label{test1Results}
+				\end{figure}
 
 
 
 			\subsubsection{Discussion}
 
+				figure~\ref{iterationMovement} in section \fullref{iteration3issues}
+
 			%Less RIRs, move faster, not good
+			As discussed in section~\fullref{iteration3}, the rate at which the user is moved from one \ac{RIR} location to another is determined by a timer which runs at a constant speed. This means that when the distance between \ac{RIR} locations is greater, the speed at which the participant is moved across the room is greater. This inconsistency in movement speed is a variable that has had an effect on the perception of movement when using different sized \ac{RIR} grids, where participants had noted that it felt like they were moving faster. This may have also had an effect on their scores of the different trials. For example, it had been noted by some participants that in trials 1 (1m \ac{RIR} separation), it did not feel like they were moving. This is most likely because moving 1m every 2.5 seconds is too slow to notice. However, due to the compromise that had to be made due to system speed, they could not be moved any faster than this. This may have led to participants giving the trials that used more spacious \ac{RIR} placement a higher score as the fact that they could heard themselves moving more obviously due to the greater distance travelled, thus thinking that they were moving more smoothly.
+
+			This is most likely the reason why trials 3 and 4 scored the highest whether the dot was used or not.
+
+			Due to the issues mentioned, the author concludes that the results of these tests are inconclusive, as they do not answer the original question asked due to the variable of speed incorporated into the system.
+
+			This test was more suited towards iteration 1.
 
 		\subsection{User Test Summary}
 
 			%The 'I Don't Know' Problem
+			\subsubsection{The `I Don't Know' Problem}
+				Previous papers discussing the pros and cons of including an `I Don't Know' (DK) answer, such as \cite{DK}, suggest that including a DK response could leave holes in data by preventing a participant from having to do any cognitive work thus not coming to a conclusion or formulating an opinion for an answer, even if they have one, or it could prevent noise in the data due to participants having to provide a guess for an answer if they truly have no answer to give. Due to the difficult of these listening tests, it was decided that it was necessary to include a DK response, running the risk that the difficulty of the test may result in participants taking the easy option. However, during the user tests it was noted by the author that participants seemed hesitant about giving a DK answer, even when encouraged to do so when they were clearly struggling to formulate an answer. A lot of the time it was noticed that the answers given by participants were not confident. Though the analysis of the confidence in their answers given are informal, the author feels it is important to take into account for two reasons;
+				\begin{tabular}{l}
+				1) The small number of people who took part in the user tests.\\
+				2) The difficulty of the tests.
+				\end{tabular}
 
-			%Results were not great due to the user test not being well suited towards the system
+				As there were only 7 people who took part in the test, a guess answer from any of the participants may heavily influence the obtained results and as it is thought that most of the participants were not sure of their answers, the obtained results do in fact unreliable. Coupled with the fact that the test (especially test \#1) were quite difficult, it is expected that guessing will have occurred. Again, these claims can not be backed up as the confidence in the participants answers are not formally part of this study, however it may explain some randomness in the results.
 
-			%The test were long, therefore sthe questions were kept shorter than they should have been. For example, In Test 2 it would have been benifitial to run the same test multiple times to check the variance in their answers, however it was this wuold have taken far too long to do, especially given the tediousness of the tests.
+			\subsubsection{Results Summary}
+
+				\begin{tabular}{l p{0.9\textwidth} }
+					\textbf{Test \#1}: & When using the synthetic \ac{RIR}'s, participants felt like they had moved further than when using the real \ac{RIR}'s. \\
+					\textbf{Test \#2}: & Mixed results show that there is no strict correlation between whether a participant can tell they have moved and the distance they were moved. \\
+					\textbf{Test \#3}: & For the currently implemented system, using an \ac{RIR} grid with 3m separation provides the best experience for free mobility around the virtual space.
+				\end{tabular}
+				%Results were not great due to the user test not being well suited towards the system
+
+				%The test were long, therefore the questions were kept shorter than they should have been. For example, In Test 2 it would have been beneficial to run the same test multiple times to check the variance in their answers, however it was this would have taken far too long to do, especially given the tediousness of the tests.
+
+
 
 \end{document}

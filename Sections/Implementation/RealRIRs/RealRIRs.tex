@@ -77,31 +77,81 @@
 
 		Through observation it was possible to narrow down which order the channels might have been recorded in, however as it could not be 100\% certain the measurements were taken again.
 
-\subsection{RIR Calibrating}
+\subsection{RIR Calibration}
 	
 	As both the real and synthetic \ac{RIR}'s were to be used in the user test, it was imperative that they were calibrated to be the same level to prevent a difference in perception when convolving with an audio signal. As the real \ac{RIR}'s were louder than the synthetic ones and the fact that there were far fewer real \ac{RIR} measurements than synthetic ones, the real measurements were decreased in level to match those produced by Odeon.
 
-	In an attempt to perfectly reducde the level of the real \ac{RIRs} to match those of the synthetic ones, using Matlab, a multiplier was calculated by taking the RMS level of both the real and synthetic \ac{RIRs}:
+	\subsubsection{Matlab}
+
+	In an attempt to perfectly reduce the level of the real \ac{RIRs} to match those of the synthetic ones, using Matlab, a multiplier was calculated by taking the RMS level of both the real and synthetic \ac{RIRs}:
 
 	\begin{lstlisting}
 		Multiplier = RMS(real)/RMS(synthetic)
 	\end{lstlisting}
 
-	\ac{RIR}'s from the centre of the room were taken and used to calculated the multiplier. Figure~\ref{calRMS} shows the plots of both of the original \ac{RIR}'s (top = real, centre = Odeon) and the calibrated version of the real \ac{RIR}. As it can be seen, the peaks of the real \ac{RIR} fall within the same range as the synthetic \ac{RIR}. However, when these \ac{RIR}'s were convolved with an audio sample taken from OpenAir (sing44.wav) \textbf{[LINK TO SAMPLE]}
+	\ac{RIR}'s from the centre of the room were taken and used to calculated the multiplier. Figure~\ref{calRMS} shows the plots of both of the original \ac{RIR}'s (top = real, centre = Odeon) and the calibrated version of the real \ac{RIR} (bottom). As it can be seen, the peaks of the real \ac{RIR} fall within the same range as the synthetic \ac{RIR}. However, when these \ac{RIR}'s were convolved with an audio sample taken from OpenAir \cite{singingSample} (sing44.wav) \textbf{[LINK TO SAMPLE]}, it still sounded significantly louder than that of the synthetic RIR convolved with the same audio sample.
 
-	%-------------Real RIR Positions Image-------------%
+	This can be heard in audio examples: \textbf{calRMSConv.wav and odeonConv.wav [LINK]}
+
+
+	%-------------RMS calibrated RIR Image-------------%
 	\begin{figure}[H]
 		\begin{center}
-			\includegraphics[scale = 0.3]{Sections/Implementation/RealRIRs/images/calibration/CalRMS_RIR_edit.png} 
-			\caption{Plots of the original real \ac{RIR}, the synthetic \ac{RIR} and the calibrated real \ac{RIR} using the multiplier calculated using the RMS ratio value}
+			\includegraphics[scale = 0.3]{Sections/Implementation/RealRIRs/images/calibration/CalRMS_RIR_edit2.png} 
+			\caption{Plots of the original real \ac{RIR} (top), the synthetic \ac{RIR} (centre) and the calibrated real \ac{RIR} (bottom) using the multiplier calculated using the RMS ratio value showing that the peaks of the calibrated \ac{RIR} sit approximately within the same range as the synthetic \ac{RIR}}
 			\label{calRMS}
 		\end{center}
 	\end{figure}
 
+	As can be seen in figure~\ref{calRMSsing}, the peaks in the signal convolved with the calibrated RIR are approximately twice as large as those in the synthetic RIR convolved with the sample thus is perceived as louder.
 
+	%-------------RMS calibrated Convolved Image-------------%
+	\begin{figure}[H]
+		\begin{center}
+			\includegraphics[scale = 0.3]{Sections/Implementation/RealRIRs/images/calibration/CalRMS_Sing_edit.png} 
+			\caption{Plots of the synthetic \ac{RIR} (top) and the RMS calibrated real \ac{RIR} (bottom) convolved with an anechoic audio sample showing that the speaks of the calibrated \ac{RIR} convolved sample sit approximately in the range double that of the synthetic \ac{RIR} convolved sample, thus is perceived as louder.}
+			\label{calRMSsing}
+		\end{center}
+	\end{figure}
+
+	Several manual values for the multiplier were tried starting from 0.7 down to 0.2. It was found that a value of 0.3 can the closest level similarity. Figure~\ref{calMan} shows that the level of the manually calibrated RIR falls within values half the magnitude of those found in the synthetic RIR. As the RMS calibrated audio sample shows that its magnitude sits within value twice as large as the synthetic \ac{RIR} sample, now that the peaks of the manually calibrated \ac{RIR} sit within half the synthetic \ac{RIR}'s range, it makes sense that the audio samples now approximately lay within the same range, as can be seen in figure~\ref{calMansing}.
+
+			%-------------Manually calibrated RIR Image-------------%
+	\begin{figure}[H]
+		\begin{center}
+			\includegraphics[scale = 0.3]{Sections/Implementation/RealRIRs/images/calibration/CalMan_RIR_edit.png} 
+			\caption{Plots of the original real \ac{RIR} (top), the synthetic \ac{RIR} (centre) and the \textit{manually} calibrated real \ac{RIR} (bottom) showing that the peaks of the manually calibrated \ac{RIR} sit within half of the range of the synthetic \ac{RIR}.}
+			\label{calMan}
+		\end{center}
+	\end{figure}
+
+	%-------------Manually Calibrated Convolved Image-------------%
+	\begin{figure}[H]
+		\begin{center}
+			\includegraphics[scale = 0.3]{Sections/Implementation/RealRIRs/images/calibration/CalMan_Sing_edit.png} 
+			\caption{Plots of the synthetic \ac{RIR} (top) and the RMS calibrated rel \ac{RIR} (bottom) convolved with an anechoic audio sample showing that the speaks of the calibrated \ac{RIR} convolved sample sit approximately in the range double that of the synthetic \ac{RIR} convolved sample.}
+			\label{calMansing}
+		\end{center}
+	\end{figure}
+
+	After listening to the convolved audio file more closely, it could be heard that the tail of the reverb seemed to increase in volume, producing what sounded like a `swelling' effect. Figure~\ref{pulse} shows the reverb tail of the manually calibrated convolved audio samples, there small pulses can be seen (mostly in the channel shown in yellow). Further investigation did not reveal the cause of the pulsing, though it was found that it occurred every 0.05s, making it a 20Hz pulse. The effect of the pulse can be heard in the audio sample: pulseExample.wav \textbf{[LINK HERE]}.
+
+	%-------------Pulse Image-------------%
+	\begin{figure}[H]
+		\begin{center}
+			\includegraphics[scale = 1]{Sections/Implementation/RealRIRs/images/calibration/cal_pulse.png} 
+			\caption{Reverb tail of the audio sample convolved with the manually calibrated \ac{RIR} showing a pulse like pattern.}
+			\label{pulse}
+		\end{center}
+	\end{figure}
+
+	As the cause of the problem could not be uncovered within the time allocated, a solution was found.
 
 	\textbf{Matlab file used: calibrateALL.m}
 
+	\subsubsection{Reaper}
+
+		All of the real \ac{RIR} files were imported into Reaper and send through a bus to a master channel in order to normalise all \ac{RIR}'s evenly. These were then compared by ear to a synthetic \ac{RIR} and manually level matched. The closest match was by reducing the level of the real \ac{RIR}'s by 28.6dB. Though this method is less accurate, it prevented any unwanted errors in the signal such as those caused by using Matlab.
 
 %--------------------------Link Testing--------------------------%
 % There a link like: \href{/SuportingFiles/doc.pdf}{Audio!}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.14)  5 MAY 2016 18:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.14)  6 MAY 2016 12:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1227,7 +1227,7 @@ File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
 Package acronym Info: Label `acro:RIR' newly defined as it shall be overridden
 although it is yet undefined on input line 15.
  [3]
-<Sections/userTesting/images/test1/roomPositions3.png, id=141, 681.54625pt x 42
+<Sections/userTesting/images/test1/roomPositions3.png, id=151, 681.54625pt x 42
 2.57875pt>
 File: Sections/userTesting/images/test1/roomPositions3.png Graphic file (type p
 ng)
@@ -1241,7 +1241,7 @@ Overfull \hbox (76.83194pt too wide) in paragraph at lines 53--72
  []
 
 [4]
-<Sections/userTesting/images/test1/Q1Pie1_edit.png, id=151, 423.984pt x 251.499
+<Sections/userTesting/images/test1/Q1Pie1_edit.png, id=162, 423.984pt x 251.499
 6pt>
 File: Sections/userTesting/images/test1/Q1Pie1_edit.png Graphic file (type png)
 
@@ -1250,7 +1250,7 @@ Package pdftex.def Info: Sections/userTesting/images/test1/Q1Pie1_edit.png used
  on input line 82.
 (pdftex.def)             Requested size: 296.78676pt x 176.04851pt.
 
-<Sections/userTesting/images/test1/Q1Pie2.png, id=152, 320.8788pt x 252.945pt>
+<Sections/userTesting/images/test1/Q1Pie2.png, id=163, 320.8788pt x 252.945pt>
 File: Sections/userTesting/images/test1/Q1Pie2.png Graphic file (type png)
 
 <use Sections/userTesting/images/test1/Q1Pie2.png>
@@ -1265,7 +1265,7 @@ Overfull \hbox (5.70006pt too wide) in paragraph at lines 81--88
 [5 <./Sections/userTesting/images/test1/roomPositions3.png> <./Sections/userTes
 ting/images/test1/Q1Pie1_edit.png> <./Sections/userTesting/images/test1/Q1Pie2.
 png>]
-<Sections/userTesting/images/test1/Q1Trials.png, id=170, 816.04875pt x 351.3125
+<Sections/userTesting/images/test1/Q1Trials.png, id=180, 816.04875pt x 351.3125
 pt>
 File: Sections/userTesting/images/test1/Q1Trials.png Graphic file (type png)
  <use Sections/userTesting/images/test1/Q1Trials.png>
@@ -1284,7 +1284,7 @@ LaTeX Warning: Reference `RIRtrimming' on page 6 undefined on input line 124.
 LaTeX Warning: Reference `RIRtrimming' on page 6 undefined on input line 124.
 
 [6 <./Sections/userTesting/images/test1/Q1Trials.png>]
-<Sections/userTesting/images/test2/test2Positions2.png, id=184, 1053.9375pt x 6
+<Sections/userTesting/images/test2/test2Positions2.png, id=194, 1053.9375pt x 6
 26.34pt>
 File: Sections/userTesting/images/test2/test2Positions2.png Graphic file (type 
 png)
@@ -1303,7 +1303,7 @@ Overfull \hbox (5.70006pt too wide) in paragraph at lines 134--153
  []
 
 [7 <./Sections/userTesting/images/test2/test2Positions2.png>]
-<Sections/userTesting/images/test2/Q2_edit.png, id=196, 428.802pt x 259.2084pt>
+<Sections/userTesting/images/test2/Q2_edit.png, id=206, 428.802pt x 259.2084pt>
 File: Sections/userTesting/images/test2/Q2_edit.png Graphic file (type png)
 <use Sections/userTesting/images/test2/Q2_edit.png>
 Package pdftex.def Info: Sections/userTesting/images/test2/Q2_edit.png used on 
@@ -1312,49 +1312,87 @@ input line 165.
  [8 <./Sections/userTesting/images/test2/Q2_edit.png>]
 
 LaTeX Warning: Hyper reference `odeon:grids' on page 9 undefined on input line 
-188.
+186.
 
 
-LaTeX Warning: Reference `odeon:grids' on page 9 undefined on input line 188.
+LaTeX Warning: Reference `odeon:grids' on page 9 undefined on input line 186.
 
 
-LaTeX Warning: Reference `odeon:grids' on page 9 undefined on input line 188.
+LaTeX Warning: Reference `odeon:grids' on page 9 undefined on input line 186.
 
 
 LaTeX Warning: Hyper reference `rirlocations' on page 9 undefined on input line
- 188.
+ 186.
 
 
-LaTeX Warning: Reference `rirlocations' on page 9 undefined on input line 188.
+LaTeX Warning: Reference `rirlocations' on page 9 undefined on input line 186.
 
 
-LaTeX Warning: Reference `rirlocations' on page 9 undefined on input line 188.
+LaTeX Warning: Reference `rirlocations' on page 9 undefined on input line 186.
 
 
-LaTeX Warning: Reference `bulkRIRs' on page 9 undefined on input line 188.
+LaTeX Warning: Reference `bulkRIRs' on page 9 undefined on input line 186.
 
 
-<Sections/userTesting/images/test3/Q3Score.png, id=215, 357.9774pt x 215.3646pt
->
+Overfull \hbox (16.22473pt too wide) in paragraph at lines 199--200
+\T1/ppl/m/n/10 In each trial, the par-tic-i-pant was asked to draw a path and l
+is-ten to an au-dio sam-ple [[][]1[][]] (\T1/ppl/b/n/10 [REFERENCE
+ []
+
+[9]
+<Sections/userTesting/images/test3/Q3Score.png, id=239, 455.301pt x 264.0264pt>
 File: Sections/userTesting/images/test3/Q3Score.png Graphic file (type png)
- <use Sections/userTesting/images/test3/Q3Score.png>
+<use Sections/userTesting/images/test3/Q3Score.png>
 Package pdftex.def Info: Sections/userTesting/images/test3/Q3Score.png used on 
-input line 208.
-(pdftex.def)             Requested size: 250.58246pt x 150.75418pt.
+input line 215.
+(pdftex.def)             Requested size: 318.70853pt x 184.8172pt.
 
-<Sections/userTesting/images/test3/Q3Variance.png, id=216, 358.941pt x 214.401p
-t>
+<Sections/userTesting/images/test3/Q3Variance.png, id=244, 423.984pt x 259.6902
+pt>
 File: Sections/userTesting/images/test3/Q3Variance.png Graphic file (type png)
  <use Sections/userTesting/images/test3/Q3Variance.png>
 Package pdftex.def Info: Sections/userTesting/images/test3/Q3Variance.png used 
-on input line 214.
-(pdftex.def)             Requested size: 251.25697pt x 150.07967pt.
- [9]) [10 <./Sections/userTesting/images/test3/Q3Score.png> <./Sections/userTes
-ting/images/test3/Q3Variance.png>] (./Sections/Appendix/AppendixA/AppendixA.tex
+on input line 221.
+(pdftex.def)             Requested size: 296.78676pt x 181.78188pt.
+
+
+LaTeX Warning: Reference `iterationMovement' on page 10 undefined on input line
+ 233.
+
+
+LaTeX Warning: Hyper reference `iteration3issues' on page 10 undefined on input
+ line 233.
+
+
+LaTeX Warning: Reference `iteration3issues' on page 10 undefined on input line 
+233.
+
+
+LaTeX Warning: Reference `iteration3issues' on page 10 undefined on input line 
+233.
+
+[10 <./Sections/userTesting/images/test3/Q3Score.png> <./Sections/userTesting/i
+mages/test3/Q3Variance.png>]
+
+LaTeX Warning: Hyper reference `iteration3' on page 11 undefined on input line 
+236.
+
+
+LaTeX Warning: Reference `iteration3' on page 11 undefined on input line 236.
+
+
+LaTeX Warning: Reference `iteration3' on page 11 undefined on input line 236.
+
+[11]
+Overfull \hbox (14.64809pt too wide) in paragraph at lines 258--264
+[][] 
+ []
+
+) [12] (./Sections/Appendix/AppendixA/AppendixA.tex
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <20.74> not available
 (Font)              Font shape `T1/ppl/b/n' tried instead on input line 14.
 
-<Sections/Appendix/AppendixA/images/bluePrintTop.jpg, id=231, 2888.7925pt x 203
+<Sections/Appendix/AppendixA/images/bluePrintTop.jpg, id=271, 2888.7925pt x 203
 2.59375pt>
 File: Sections/Appendix/AppendixA/images/bluePrintTop.jpg Graphic file (type jp
 g)
@@ -1363,7 +1401,7 @@ Package pdftex.def Info: Sections/Appendix/AppendixA/images/bluePrintTop.jpg us
 ed on input line 24.
 (pdftex.def)             Requested size: 288.89618pt x 203.27129pt.
 
-<Sections/Appendix/AppendixA/images/realVsSku/roofSku.png, id=232, 1445.4pt x 9
+<Sections/Appendix/AppendixA/images/realVsSku/roofSku.png, id=272, 1445.4pt x 9
 03.375pt>
 File: Sections/Appendix/AppendixA/images/realVsSku/roofSku.png Graphic file (ty
 pe png)
@@ -1372,7 +1410,7 @@ Package pdftex.def Info: Sections/Appendix/AppendixA/images/realVsSku/roofSku.p
 ng used on input line 31.
 (pdftex.def)             Requested size: 289.07487pt x 180.6718pt.
 
-<Sections/Appendix/AppendixA/images/realVsSku/roofReal.jpg, id=233, 3276.24pt x
+<Sections/Appendix/AppendixA/images/realVsSku/roofReal.jpg, id=273, 3276.24pt x
  2457.18pt>
 File: Sections/Appendix/AppendixA/images/realVsSku/roofReal.jpg Graphic file (t
 ype jpg)
@@ -1381,8 +1419,8 @@ Package pdftex.def Info: Sections/Appendix/AppendixA/images/realVsSku/roofReal.
 jpg used on input line 32.
 (pdftex.def)             Requested size: 327.64319pt x 245.73239pt.
 
-[11 <./Sections/Appendix/AppendixA/images/bluePrintTop.jpg>]
-<Sections/Appendix/AppendixA/images/realVsSku/fromSeatsSku.png, id=239, 1445.4p
+[13 <./Sections/Appendix/AppendixA/images/bluePrintTop.jpg>]
+<Sections/Appendix/AppendixA/images/realVsSku/fromSeatsSku.png, id=281, 1445.4p
 t x 903.375pt>
 File: Sections/Appendix/AppendixA/images/realVsSku/fromSeatsSku.png Graphic fil
 e (type png)
@@ -1392,7 +1430,7 @@ Package pdftex.def Info: Sections/Appendix/AppendixA/images/realVsSku/fromSeats
 Sku.png used on input line 37.
 (pdftex.def)             Requested size: 289.07487pt x 180.6718pt.
 
-<Sections/Appendix/AppendixA/images/realVsSku/fromSeatsReal.jpg, id=240, 3276.2
+<Sections/Appendix/AppendixA/images/realVsSku/fromSeatsReal.jpg, id=282, 3276.2
 4pt x 2457.18pt>
 File: Sections/Appendix/AppendixA/images/realVsSku/fromSeatsReal.jpg Graphic fi
 le (type jpg)
@@ -1401,9 +1439,9 @@ le (type jpg)
 Package pdftex.def Info: Sections/Appendix/AppendixA/images/realVsSku/fromSeats
 Real.jpg used on input line 38.
 (pdftex.def)             Requested size: 327.64319pt x 245.73239pt.
- [12 <./Sections/Appendix/AppendixA/images/realVsSku/roofSku.png> <./Sections/A
+ [14 <./Sections/Appendix/AppendixA/images/realVsSku/roofSku.png> <./Sections/A
 ppendix/AppendixA/images/realVsSku/roofReal.jpg>]
-<Sections/Appendix/AppendixA/images/realVsSku/doorsSku.png, id=247, 1445.4pt x 
+<Sections/Appendix/AppendixA/images/realVsSku/doorsSku.png, id=289, 1445.4pt x 
 903.375pt>
 File: Sections/Appendix/AppendixA/images/realVsSku/doorsSku.png Graphic file (t
 ype png)
@@ -1412,7 +1450,7 @@ Package pdftex.def Info: Sections/Appendix/AppendixA/images/realVsSku/doorsSku.
 png used on input line 43.
 (pdftex.def)             Requested size: 289.07487pt x 180.6718pt.
 
-<Sections/Appendix/AppendixA/images/realVsSku/doorsReal.jpg, id=248, 3276.24pt 
+<Sections/Appendix/AppendixA/images/realVsSku/doorsReal.jpg, id=290, 3276.24pt 
 x 2457.18pt>
 File: Sections/Appendix/AppendixA/images/realVsSku/doorsReal.jpg Graphic file (
 type jpg)
@@ -1421,11 +1459,11 @@ Package pdftex.def Info: Sections/Appendix/AppendixA/images/realVsSku/doorsReal
 .jpg used on input line 44.
 (pdftex.def)             Requested size: 327.64319pt x 245.73239pt.
 
-[13 <./Sections/Appendix/AppendixA/images/realVsSku/fromSeatsSku.png> <./Sectio
-ns/Appendix/AppendixA/images/realVsSku/fromSeatsReal.jpg>] [14 <./Sections/Appe
+[15 <./Sections/Appendix/AppendixA/images/realVsSku/fromSeatsSku.png> <./Sectio
+ns/Appendix/AppendixA/images/realVsSku/fromSeatsReal.jpg>] [16 <./Sections/Appe
 ndix/AppendixA/images/realVsSku/doorsSku.png> <./Sections/Appendix/AppendixA/im
 ages/realVsSku/doorsReal.jpg>]
-<Sections/Appendix/AppendixA/images/Odeon/2m.png, id=262, 934.49126pt x 946.536
+<Sections/Appendix/AppendixA/images/Odeon/2m.png, id=303, 934.49126pt x 946.536
 25pt>
 File: Sections/Appendix/AppendixA/images/Odeon/2m.png Graphic file (type png)
  <use Sections/Appendix/AppendixA/images/Odeon/2m.png>
@@ -1433,7 +1471,7 @@ Package pdftex.def Info: Sections/Appendix/AppendixA/images/Odeon/2m.png used o
 n input line 58.
 (pdftex.def)             Requested size: 214.92847pt x 217.69876pt.
 
-<Sections/Appendix/AppendixA/images/Odeon/3m.png, id=265, 934.49126pt x 946.536
+<Sections/Appendix/AppendixA/images/Odeon/3m.png, id=306, 934.49126pt x 946.536
 25pt>
 File: Sections/Appendix/AppendixA/images/Odeon/3m.png Graphic file (type png)
  <use Sections/Appendix/AppendixA/images/Odeon/3m.png>
@@ -1446,7 +1484,7 @@ $[]$ $[]$
  []
 
 
-<Sections/Appendix/AppendixA/images/Odeon/4m.png, id=268, 934.49126pt x 946.536
+<Sections/Appendix/AppendixA/images/Odeon/4m.png, id=309, 934.49126pt x 946.536
 25pt>
 File: Sections/Appendix/AppendixA/images/Odeon/4m.png Graphic file (type png)
  <use Sections/Appendix/AppendixA/images/Odeon/4m.png>
@@ -1454,7 +1492,7 @@ Package pdftex.def Info: Sections/Appendix/AppendixA/images/Odeon/4m.png used o
 n input line 73.
 (pdftex.def)             Requested size: 214.92847pt x 217.69876pt.
 
-<Sections/Appendix/AppendixA/images/Odeon/5m.png, id=271, 934.49126pt x 946.536
+<Sections/Appendix/AppendixA/images/Odeon/5m.png, id=312, 934.49126pt x 946.536
 25pt>
 File: Sections/Appendix/AppendixA/images/Odeon/5m.png Graphic file (type png)
  <use Sections/Appendix/AppendixA/images/Odeon/5m.png>
@@ -1466,10 +1504,10 @@ Overfull \hbox (1.90001pt too wide) in paragraph at lines 71--85
 []$[]$ $[]$ 
  []
 
-[15 <./Sections/Appendix/AppendixA/images/Odeon/2m.png> <./Sections/Appendix/Ap
+[17 <./Sections/Appendix/AppendixA/images/Odeon/2m.png> <./Sections/Appendix/Ap
 pendixA/images/Odeon/3m.png> <./Sections/Appendix/AppendixA/images/Odeon/4m.png
 > <./Sections/Appendix/AppendixA/images/Odeon/5m.png>]
-<Sections/Implementation/Max/images/Max/iteration1/panning1.png, id=282, 1115.1
+<Sections/Implementation/Max/images/Max/iteration1/panning1.png, id=323, 1115.1
 6624pt x 498.86375pt>
 File: Sections/Implementation/Max/images/Max/iteration1/panning1.png Graphic fi
 le (type png)
@@ -1479,7 +1517,7 @@ Package pdftex.def Info: Sections/Implementation/Max/images/Max/iteration1/pann
 ing1.png used on input line 94.
 (pdftex.def)             Requested size: 446.0586pt x 199.54196pt.
 
-<Sections/Implementation/Max/images/Max/iteration1/panning2.png, id=283, 1111.1
+<Sections/Implementation/Max/images/Max/iteration1/panning2.png, id=324, 1111.1
 5125pt x 603.25375pt>
 File: Sections/Implementation/Max/images/Max/iteration1/panning2.png Graphic fi
 le (type png)
@@ -1489,7 +1527,7 @@ Package pdftex.def Info: Sections/Implementation/Max/images/Max/iteration1/pann
 ing2.png used on input line 95.
 (pdftex.def)             Requested size: 444.45262pt x 241.29723pt.
 
-<Sections/Implementation/Max/images/Max/iteration1/panning3.png, id=284, 1156.3
+<Sections/Implementation/Max/images/Max/iteration1/panning3.png, id=325, 1156.3
 2pt x 525.965pt>
 File: Sections/Implementation/Max/images/Max/iteration1/panning3.png Graphic fi
 le (type png)
@@ -1498,11 +1536,11 @@ le (type png)
 Package pdftex.def Info: Sections/Implementation/Max/images/Max/iteration1/pann
 ing3.png used on input line 96.
 (pdftex.def)             Requested size: 462.5198pt x 210.38226pt.
- [16]
+ [18]
 Overfull \vbox (77.89189pt too high) has occurred while \output is active []
 
 
-[17 <./Sections/Implementation/Max/images/Max/iteration1/panning1.png> <./Secti
+[19 <./Sections/Implementation/Max/images/Max/iteration1/panning1.png> <./Secti
 ons/Implementation/Max/images/Max/iteration1/panning2.png> <./Sections/Implemen
 tation/Max/images/Max/iteration1/panning3.png>]
 LaTeX Font Info:    Try loading font information for T1+pcr on input line 101.
@@ -1510,9 +1548,9 @@ LaTeX Font Info:    Try loading font information for T1+pcr on input line 101.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
-(./Sections/Appendix/AppendixA/Code/loadFilesLogic.js [18]) [19]
+(./Sections/Appendix/AppendixA/Code/loadFilesLogic.js [20]) [21]
 <Sections/Appendix/AppendixA/images/userTests/Test_Participant_Form_V3.pdf, id=
-405, 597.50829pt x 845.0471pt>
+445, 597.50829pt x 845.0471pt>
 File: Sections/Appendix/AppendixA/images/userTests/Test_Participant_Form_V3.pdf
  Graphic file (type pdf)
 
@@ -1529,7 +1567,7 @@ icipant_Form_V3.pdf used on input line 113.
 (pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
 
 <Sections/Appendix/AppendixA/images/userTests/Test_Participant_Form_V3.pdf, id=
-408, page=1, 597.50829pt x 845.0471pt>
+448, page=1, 597.50829pt x 845.0471pt>
 File: Sections/Appendix/AppendixA/images/userTests/Test_Participant_Form_V3.pdf
  Graphic file (type pdf)
 
@@ -1562,9 +1600,9 @@ File: Sections/Appendix/AppendixA/images/userTests/Test_Participant_Form_V3.pdf
 Package pdftex.def Info: Sections/Appendix/AppendixA/images/userTests/Test_Part
 icipant_Form_V3.pdf, page1 used on input line 113.
 (pdftex.def)             Requested size: 478.00728pt x 676.0386pt.
- [20]
+ [22]
 <Sections/Appendix/AppendixA/images/userTests/Test_Participant_Form_V3.pdf, id=
-413, page=2, 597.50829pt x 845.0471pt>
+453, page=2, 597.50829pt x 845.0471pt>
 File: Sections/Appendix/AppendixA/images/userTests/Test_Participant_Form_V3.pdf
  Graphic file (type pdf)
 
@@ -1588,67 +1626,67 @@ File: Sections/Appendix/AppendixA/images/userTests/Test_Participant_Form_V3.pdf
  page 1>
 Package pdftex.def Info: Sections/Appendix/AppendixA/images/userTests/Test_Part
 icipant_Form_V3.pdf, page1 used on input line 113.
-(pdftex.def)             Requested size: 478.00728pt x 676.0386pt.
- [21 <./Sections/Appendix/AppendixA/images/userTests/Test_Participant_Form_V3.p
-df>]
-<Sections/Appendix/AppendixA/images/userTests/Test_Participant_Form_V3.pdf, id=
-447, page=3, 597.50829pt x 845.0471pt>
-File: Sections/Appendix/AppendixA/images/userTests/Test_Participant_Form_V3.pdf
- Graphic file (type pdf)
-
-<use Sections/Appendix/AppendixA/images/userTests/Test_Participant_Form_V3.pdf,
- page 3>
-Package pdftex.def Info: Sections/Appendix/AppendixA/images/userTests/Test_Part
-icipant_Form_V3.pdf, page3 used on input line 113.
-(pdftex.def)             Requested size: 478.00728pt x 676.0386pt.
-File: Sections/Appendix/AppendixA/images/userTests/Test_Participant_Form_V3.pdf
- Graphic file (type pdf)
-
-<use Sections/Appendix/AppendixA/images/userTests/Test_Participant_Form_V3.pdf,
- page 3>
-Package pdftex.def Info: Sections/Appendix/AppendixA/images/userTests/Test_Part
-icipant_Form_V3.pdf, page3 used on input line 113.
-(pdftex.def)             Requested size: 478.00728pt x 676.0386pt.
-File: Sections/Appendix/AppendixA/images/userTests/Test_Participant_Form_V3.pdf
- Graphic file (type pdf)
-
-<use Sections/Appendix/AppendixA/images/userTests/Test_Participant_Form_V3.pdf,
- page 2>
-Package pdftex.def Info: Sections/Appendix/AppendixA/images/userTests/Test_Part
-icipant_Form_V3.pdf, page2 used on input line 113.
-(pdftex.def)             Requested size: 478.00728pt x 676.0386pt.
- [22 <./Sections/Appendix/AppendixA/images/userTests/Test_Participant_Form_V3.p
-df>]
-<Sections/Appendix/AppendixA/images/userTests/Test_Participant_Form_V3.pdf, id=
-467, page=4, 597.50829pt x 845.0471pt>
-File: Sections/Appendix/AppendixA/images/userTests/Test_Participant_Form_V3.pdf
- Graphic file (type pdf)
-
-<use Sections/Appendix/AppendixA/images/userTests/Test_Participant_Form_V3.pdf,
- page 4>
-Package pdftex.def Info: Sections/Appendix/AppendixA/images/userTests/Test_Part
-icipant_Form_V3.pdf, page4 used on input line 113.
-(pdftex.def)             Requested size: 478.00728pt x 676.0386pt.
-File: Sections/Appendix/AppendixA/images/userTests/Test_Participant_Form_V3.pdf
- Graphic file (type pdf)
-
-<use Sections/Appendix/AppendixA/images/userTests/Test_Participant_Form_V3.pdf,
- page 4>
-Package pdftex.def Info: Sections/Appendix/AppendixA/images/userTests/Test_Part
-icipant_Form_V3.pdf, page4 used on input line 113.
-(pdftex.def)             Requested size: 478.00728pt x 676.0386pt.
-File: Sections/Appendix/AppendixA/images/userTests/Test_Participant_Form_V3.pdf
- Graphic file (type pdf)
-
-<use Sections/Appendix/AppendixA/images/userTests/Test_Participant_Form_V3.pdf,
- page 3>
-Package pdftex.def Info: Sections/Appendix/AppendixA/images/userTests/Test_Part
-icipant_Form_V3.pdf, page3 used on input line 113.
 (pdftex.def)             Requested size: 478.00728pt x 676.0386pt.
  [23 <./Sections/Appendix/AppendixA/images/userTests/Test_Participant_Form_V3.p
 df>]
 <Sections/Appendix/AppendixA/images/userTests/Test_Participant_Form_V3.pdf, id=
-472, page=5, 597.50829pt x 845.0471pt>
+487, page=3, 597.50829pt x 845.0471pt>
+File: Sections/Appendix/AppendixA/images/userTests/Test_Participant_Form_V3.pdf
+ Graphic file (type pdf)
+
+<use Sections/Appendix/AppendixA/images/userTests/Test_Participant_Form_V3.pdf,
+ page 3>
+Package pdftex.def Info: Sections/Appendix/AppendixA/images/userTests/Test_Part
+icipant_Form_V3.pdf, page3 used on input line 113.
+(pdftex.def)             Requested size: 478.00728pt x 676.0386pt.
+File: Sections/Appendix/AppendixA/images/userTests/Test_Participant_Form_V3.pdf
+ Graphic file (type pdf)
+
+<use Sections/Appendix/AppendixA/images/userTests/Test_Participant_Form_V3.pdf,
+ page 3>
+Package pdftex.def Info: Sections/Appendix/AppendixA/images/userTests/Test_Part
+icipant_Form_V3.pdf, page3 used on input line 113.
+(pdftex.def)             Requested size: 478.00728pt x 676.0386pt.
+File: Sections/Appendix/AppendixA/images/userTests/Test_Participant_Form_V3.pdf
+ Graphic file (type pdf)
+
+<use Sections/Appendix/AppendixA/images/userTests/Test_Participant_Form_V3.pdf,
+ page 2>
+Package pdftex.def Info: Sections/Appendix/AppendixA/images/userTests/Test_Part
+icipant_Form_V3.pdf, page2 used on input line 113.
+(pdftex.def)             Requested size: 478.00728pt x 676.0386pt.
+ [24 <./Sections/Appendix/AppendixA/images/userTests/Test_Participant_Form_V3.p
+df>]
+<Sections/Appendix/AppendixA/images/userTests/Test_Participant_Form_V3.pdf, id=
+507, page=4, 597.50829pt x 845.0471pt>
+File: Sections/Appendix/AppendixA/images/userTests/Test_Participant_Form_V3.pdf
+ Graphic file (type pdf)
+
+<use Sections/Appendix/AppendixA/images/userTests/Test_Participant_Form_V3.pdf,
+ page 4>
+Package pdftex.def Info: Sections/Appendix/AppendixA/images/userTests/Test_Part
+icipant_Form_V3.pdf, page4 used on input line 113.
+(pdftex.def)             Requested size: 478.00728pt x 676.0386pt.
+File: Sections/Appendix/AppendixA/images/userTests/Test_Participant_Form_V3.pdf
+ Graphic file (type pdf)
+
+<use Sections/Appendix/AppendixA/images/userTests/Test_Participant_Form_V3.pdf,
+ page 4>
+Package pdftex.def Info: Sections/Appendix/AppendixA/images/userTests/Test_Part
+icipant_Form_V3.pdf, page4 used on input line 113.
+(pdftex.def)             Requested size: 478.00728pt x 676.0386pt.
+File: Sections/Appendix/AppendixA/images/userTests/Test_Participant_Form_V3.pdf
+ Graphic file (type pdf)
+
+<use Sections/Appendix/AppendixA/images/userTests/Test_Participant_Form_V3.pdf,
+ page 3>
+Package pdftex.def Info: Sections/Appendix/AppendixA/images/userTests/Test_Part
+icipant_Form_V3.pdf, page3 used on input line 113.
+(pdftex.def)             Requested size: 478.00728pt x 676.0386pt.
+ [25 <./Sections/Appendix/AppendixA/images/userTests/Test_Participant_Form_V3.p
+df>]
+<Sections/Appendix/AppendixA/images/userTests/Test_Participant_Form_V3.pdf, id=
+513, page=5, 597.50829pt x 845.0471pt>
 File: Sections/Appendix/AppendixA/images/userTests/Test_Participant_Form_V3.pdf
  Graphic file (type pdf)
 
@@ -1673,7 +1711,7 @@ File: Sections/Appendix/AppendixA/images/userTests/Test_Participant_Form_V3.pdf
 Package pdftex.def Info: Sections/Appendix/AppendixA/images/userTests/Test_Part
 icipant_Form_V3.pdf, page4 used on input line 113.
 (pdftex.def)             Requested size: 478.00728pt x 676.0386pt.
- [24 <./Sections/Appendix/AppendixA/images/userTests/Test_Participant_Form_V3.p
+ [26 <./Sections/Appendix/AppendixA/images/userTests/Test_Participant_Form_V3.p
 df>]
 File: Sections/Appendix/AppendixA/images/userTests/Test_Participant_Form_V3.pdf
  Graphic file (type pdf)
@@ -1683,18 +1721,22 @@ File: Sections/Appendix/AppendixA/images/userTests/Test_Participant_Form_V3.pdf
 Package pdftex.def Info: Sections/Appendix/AppendixA/images/userTests/Test_Part
 icipant_Form_V3.pdf, page5 used on input line 113.
 (pdftex.def)             Requested size: 478.00728pt x 676.0386pt.
- [25 <./Sections/Appendix/AppendixA/images/userTests/Test_Participant_Form_V3.p
+ [27 <./Sections/Appendix/AppendixA/images/userTests/Test_Participant_Form_V3.p
 df>])
-
-LaTeX Warning: Empty bibliography on input line 108.
+Overfull \hbox (7.73863pt too wide) in paragraph at lines 109--109
+\T1/ppl/m/n/10 sur-veys,'' \T1/ppl/m/it/10 Vasa\T1/ppl/m/n/10 , pp. 1005^^U1010
+, 1989. [On-line]. Avail-able: [][]$\T1/pcr/m/n/10 http : / / medcontent . meta
+press .
+ []
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 110.
+[28]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 110.
-(./main.aux)
+ (./main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 110.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 110.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 0363C5EA9938A0381E86C40C8D6BA22E;1259.
+(rerunfilecheck)             Checksum: 8553777344162553D0C76A8A280F8A36;1420.
 
 
 LaTeX Warning: There were undefined references.
@@ -1708,13 +1750,13 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 110.
  ) 
 Here is how much of TeX's memory you used:
- 18143 strings out of 493089
- 289640 string characters out of 6134842
- 880288 words of memory out of 5000000
- 21133 multiletter control sequences out of 15000+600000
- 30211 words of font info for 56 fonts, out of 8000000 for 9000
+ 18289 strings out of 493089
+ 292293 string characters out of 6134842
+ 880710 words of memory out of 5000000
+ 21269 multiletter control sequences out of 15000+600000
+ 32063 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 47i,19n,50p,972b,2016s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 47i,19n,50p,1302b,2016s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/te
 xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/tex
@@ -1726,11 +1768,12 @@ ve/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive
 /texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2015/texmf-d
 ist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2015/texmf-dist/fon
 ts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type
-1/public/wasy2-ps/wasy10.pfb>
-Output written on main.pdf (25 pages, 8497110 bytes).
+1/urw/palatino/uplri8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/publ
+ic/wasy2-ps/wasy10.pfb>
+Output written on main.pdf (28 pages, 8510384 bytes).
 PDF statistics:
- 540 PDF objects out of 1000 (max. 8388607)
- 439 compressed objects within 5 object streams
- 163 named destinations out of 1000 (max. 500000)
- 319 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 593 PDF objects out of 1000 (max. 8388607)
+ 485 compressed objects within 5 object streams
+ 170 named destinations out of 1000 (max. 500000)
+ 335 words of extra memory for PDF output out of 10000 (max. 10000000)
 

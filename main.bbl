@@ -16,5 +16,56 @@
   {}
 \endgroup
 
+
+\refsection{0}
+  \sortlist{none}{none}
+    \entry{trumpet}{online}{}
+      \name{author}{1}{}{%
+        {{hash=d5fb1c7a754331b87517aa8dac618b0d}{Steele-Perkins}{S\bibinithyphendelim P\bibinitperiod}{Crispian}{C\bibinitperiod}{}{}{}{}}%
+      }
+      \list{organization}{1}{%
+        {OpenAir}%
+      }
+      \strng{namehash}{d5fb1c7a754331b87517aa8dac618b0d}
+      \strng{fullhash}{d5fb1c7a754331b87517aa8dac618b0d}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Website}
+      \field{title}{'The Trumpet Shall Sound' Anechoic Trumpet Sample}
+      \field{urlday}{06}
+      \field{urlmonth}{05}
+      \field{urlyear}{2016}
+      \field{year}{2016}
+      \verb{url}
+      \verb http://www.openairlib.net/sites/default/files/anechoic/data/helena-daffern/handel-trumpet/mono/tr-1888-piece2-t-32.wav
+      \endverb
+    \endentry
+    \entry{DK}{article}{}
+      \name{author}{1}{}{%
+        {{hash=bf920574220ba161b32c209b3c8cd5ca}{{Paul\bibnamedelimb Beatty\bibnamedelimb {\&}\bibnamedelimb Douglas\bibnamedelimb Herrmann}}{P\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{bf920574220ba161b32c209b3c8cd5ca}
+      \strng{fullhash}{bf920574220ba161b32c209b3c8cd5ca}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Vasa}
+      \field{title}{{A Framework For Evaluating "Don't Know" Responses in Surveys}}
+      \field{year}{1989}
+      \field{pages}{1005\bibrangedash 1010}
+      \range{pages}{6}
+      \verb{file}
+      \verb :Users/Lewis 1/Uni Work/4th Year/Project/User Tests/DontKnowPapers/1995{\_}175.pdf:pdf
+      \endverb
+      \verb{url}
+      \verb http://medcontent.metapress.com/index/A65RM03P4874243N.pdf
+      \endverb
+      \keyw{Don't Know Responses,Survey Design Survey}
+    \endentry
+  \endsortlist
+\endrefsection
 \endinput
 

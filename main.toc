@@ -26,18 +26,22 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {2.4.1}Procedure}{9}{subsubsection.2.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.4.2}Results}{10}{subsubsection.2.4.2}
+\contentsline {subsubsection}{\numberline {2.4.2}Results}{9}{subsubsection.2.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.4.3}Discussion}{10}{subsubsection.2.4.3}
+\contentsline {subsubsection}{\numberline {2.4.3}Discussion}{11}{subsubsection.2.4.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.5}User Test Summary}{10}{subsection.2.5}
+\contentsline {subsection}{\numberline {2.5}User Test Summary}{11}{subsection.2.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Appendices}{11}{section*.11}
+\contentsline {subsubsection}{\numberline {2.5.1}The `I Don't Know' Problem}{11}{subsubsection.2.5.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A}Appendix A}{11}{Appendix.1.A}
+\contentsline {subsubsection}{\numberline {2.5.2}Results Summary}{12}{subsubsection.2.5.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {B}Appendix B}{15}{Appendix.1.B}
+\contentsline {section}{Appendices}{13}{section*.11}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {C}Appendix C}{17}{Appendix.1.C}
+\contentsline {section}{\numberline {A}Appendix A}{13}{Appendix.1.A}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {D}Appendix D}{20}{Appendix.1.D}
+\contentsline {section}{\numberline {B}Appendix B}{17}{Appendix.1.B}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {C}Appendix C}{19}{Appendix.1.C}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {D}Appendix D}{22}{Appendix.1.D}
