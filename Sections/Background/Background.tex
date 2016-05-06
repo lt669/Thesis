@@ -14,6 +14,8 @@
 
 	%The ability to recreate the acoustics of a room has been well established tool for many years and has provided ample opportunity for research in areas such as acoustic and performance analysis by allowing the acoustics of multiple rooms quickly and easily without having to revisit said rooms. Furthermore, the ability to simulate the acoustics of a room through the use of room modelling software and sound propagation simulations has further enhanced the world of research by enabling us to hear what a room might sound like that we can not get to, or even allow us to hear what a room that no longer exists, or maybe never existed might sound like.
 
+
+
 	The \ac{VSS} is a system situated in the listening space of the Audio Lab at the University of York that allows a user to hear themselves as though they are present in another acoustic environment by recreating the acoustics of an existing room. The project described in this document aims to extend the functionality of the \ac{VSS} to allow the user to move themselves around a digitally modelled version of Hendrix Hall, one of the lecture halls on the Universities campus by generation a large grid of synthetic room impulse responses using the room acoustic simulation software Odeon.
 
 	% The aims of the project are as follows:
@@ -122,7 +124,7 @@
 			Once all image sources have been calculated, a visibility check occurs. This checks to see whether the image sources that have been produced can be seen by the receiver, therefore checking whether that image source needs to be used or not offering the potential to cut down on computation time. If the receiver position is moved, the visibility check is run again. Overall, this saves time as the image sources do not need to be recalculated.
 
 
-			\begin{figure}[ht]
+			\begin{figure}[H]
 				\center\includegraphics[scale = 0.3]{Sections/Background/images/ISM.png}
 				\caption{Illustration of the image source method (by the author) showing how the reflection from the sound source to the receiver is modelled by a secondary sound source.}
 				\label{ISMPic}
@@ -138,17 +140,25 @@
 		\paragraph{Scattering}
 		\label{background:scattering}	
 
-			Unless a surface in infinitely smooth (which most surfaces are not), when sound comes into contact with that surface it is scattered. Odeon takes this phenomena into account by using `Vector Based Scattering' \cite{odeonManual}. Initially, Odeon assumes that the ray will be reflected at a specular angle (reflects at the same angle of incident) and that scales this specular angle using a user assigned scattering coefficient (s) where the reflected angle = (1-s)*specular reflection.
+			Unless a surface is infinitely smooth (which almost all surfaces are not), when sound comes into contact with that surface it is scattered at a angle that deviates for that at which it hit the wall. Odeon takes this phenomena into account by using `Vector Based Scattering' \cite{odeonManual}. This is done by added the specular vector (a vector that has been reflected at the same angle of incident) to a randomly reflecting vector that has been scaled by a value of 1-s, where s is the scattering coefficient applied to a surface (ranging from 0 - 1). This essentially calculates how much a specular reflection should deviate based on how `rough' a surface is, where the rougher the surface, the higher the scattering coefficient. Figure~\ref{odeonScatterImage} shows an annotated image taken from the oOeon manual, illustrating this concept.
 
-			Quote from Odeon Manual:	
 
-			 \vspace{5mm}
-		 \begin{center}
-		 \begin{minipage}{0.5\textwidth}
-		 \textit{``In short, each time ODEON detects an image source (IMS), an inner loop of (scatter) rays (not visualised in the 3D Investigate Rays display) is started, taking care of the scattered sound which is reflected from this image source /surface''}
-		 \end{minipage}
-		 \end{center}
-		 \vspace{5mm}
+			\begin{figure}[H]
+				\center\includegraphics[scale = 1]{Sections/Background/images/scattering_edit.png}
+				\caption{Annotated image from the Odeon manual \cite{odeonManual} showing how scattered reflections are calculated, where a = the specular reflection, b = randomly scattered vector.}
+				\label{odeonScatterImage}
+			\end{figure}
+
+
+			% Quote from Odeon Manual:	
+
+			%  \vspace{5mm}
+		 % \begin{center}
+		 % \begin{minipage}{0.5\textwidth}
+		 % \textit{``In short, each time ODEON detects an image source (IMS), an inner loop of (scatter) rays (not visualised in the 3D Investigate Rays display) is started, taking care of the scattered sound which is reflected from this image source /surface''}
+		 % \end{minipage}
+		 % \end{center}
+		 % \vspace{5mm}
 
 		\paragraph{Room Modelling}
 
@@ -180,53 +190,53 @@
 			\textbf{[Add VSS system diagram here]}
 		\end{center}
 
-		The \ac{VAE} used in the \ac{VSS} was initially the National Centre for Early Music, a space in York frequently used for musical performance. Using a Soundfield microphone, 16 Ambisonic B-Format \ac{RIR}'s were captured. Four positions were chosen and four \ac{RIR}'s facing in each direction (front, left, back, right) were recorded in each. These four directional \ac{RIR}'s are used to approximate the room acoustic phenomena that would occur if the user were projecting in that direction. This is done by using the data from the head-tracking device to amplitude pan the convolved signals before sending them to the spherical speaker array. Though this is a crude method for achieving such a state, it provides enough variation between the two directions to be considered convincing.
+		The \ac{VAE} used in the \ac{VSS} was initially the National Centre for Early Music, a space in York frequently used for musical performance. Using a Soundfield microphone, Ambisonic B-Format \ac{RIR}'s in each direction (front, left, back, right) were captured in 4 locations. The four directional \ac{RIR}'s are used to approximate the room acoustic phenomena that would occur if the user were projecting in that direction. This is done by using the data from the head-tracking device to amplitude pan the convolved signals before sending them to the spherical speaker array.
 
 
-		\subsubsection{Project Motivation}
-			
-			%The \ac{VSS} has addressed a problem faced by professional musical performers: travelling to performance spaces for rehearsal.
+	\subsubsection{Project Motivation}
+		
+		%The \ac{VSS} has addressed a problem faced by professional musical performers: travelling to performance spaces for rehearsal.
 
-			The \ac{VSS} addressed a problem faced when trying to research how musicians preform in different acoustic environments: having to travel to each performance space with musicians and researchers. This also indirectly provides a solution for performers wanting to rehearse is spaces that are often inaccessible and would otherwise be expensive to book and travel to. By obtaining an \ac{RIR} of the desired location, the only time travelling will be necessary is to initially obtain said \ac{RIR}. However, one limitation of using the \ac{VSS} is the restriction of position. If a performer wanted to try and sing at another point in the room, an \ac{RIR} would have to be taken in that position too. This could be done initially, taking a range of \ac{RIR}'s in a number of positions, however it cannot be guaranteed that all positions desirable to the performer will be available. Therefore, this project aims to implement a system that will allow the user of the \ac{VSS} to feel as though thy can move around a \ac{VAE} freely.
+		The \ac{VSS} addressed a problem faced when trying to research how musicians preform in different acoustic environments: having to travel to each performance space with musicians and researchers. This also indirectly provides a solution for performers wanting to rehearse is spaces that are often inaccessible and would otherwise be expensive to book and travel to. By obtaining an \ac{RIR} of the desired location, the only time travelling will be necessary is to initially obtain said \ac{RIR}. However, one limitation of using the \ac{VSS} is the restriction of position. If a performer wanted to try and sing at another point in the room, an \ac{RIR} would have to be taken in that position too. This could be done initially, taking a range of \ac{RIR}'s in a number of positions, however it cannot be guaranteed that all positions desirable to the performer will be available. Therefore, this project aims to implement a system that will allow the user of the \ac{VSS} to feel as though thy can move around a \ac{VAE} freely.
 
-			%The initial implementation of the \ac{VSS} provided the user with a choice of four positions. To provide the user with more \ac{RIR} positions it could be possible to allow them to move where they choose.
+		%The initial implementation of the \ac{VSS} provided the user with a choice of four positions. To provide the user with more \ac{RIR} positions it could be possible to allow them to move where they choose.
 
-			Previous projects have addressed mobility within \ac{VAE}'s before, such as \cite{Savioja1999}. The paper initially looks at two methods for providing mobility:
+		Previous projects have addressed mobility within \ac{VAE}'s before, such as \cite{Savioja1999}. The paper initially looks at two methods for providing mobility:
 
-			%\textbf{direct} room impulse response rendering and \textbf{parametric} room impulse response rendering. Direct room impulse response rendering consists of obtaining a set number of \ac{RIR}'s in a grid and interpolation between them to synthesis the users position. This method suffered from the fact that a large number of \ac{RIR}'s are required, thus the requirement for a large amount of storage space.
+		%\textbf{direct} room impulse response rendering and \textbf{parametric} room impulse response rendering. Direct room impulse response rendering consists of obtaining a set number of \ac{RIR}'s in a grid and interpolation between them to synthesis the users position. This method suffered from the fact that a large number of \ac{RIR}'s are required, thus the requirement for a large amount of storage space.
 
-			\begin{enumerate}
+		\begin{enumerate}
 
-			 \item \textbf{Direct room impulse response rendering}: By producing a large grid of \ac{RIR}'s within the desired space, it is possible to allow a user to select a position in the room by interpolation between the two nearest neighbouring \ac{RIR}'s. This method does not provide truly accurate room acoustics for the selected location and also suffers from the fact that a large number of \ac{RIR}'s are required, thus the requirement for a large amount of storage space.
+		 \item \textbf{Direct room impulse response rendering}: By producing a large grid of \ac{RIR}'s within the desired space, it is possible to allow a user to select a position in the room by interpolation between the two nearest neighbouring \ac{RIR}'s. This method does not provide truly accurate room acoustics for the selected location and also suffers from the fact that a large number of \ac{RIR}'s are required, thus the requirement for a large amount of storage space.
 
-			\item \textbf{Parametric room impulse response rendering}: By actually synthesising \ac{RIR}'s in real time for the given position of the user in the \ac{VAE}, it is possible to provide an accurate \ac{RIR} for the given location. This method avoids the need for a large amount of storage space and a system to retrieve the correct files, however, as will be seen through the rest of this report, post-processing of the obtained {RIR}'s would not be possible with real time rendering.
+		\item \textbf{Parametric room impulse response rendering}: By actually synthesising \ac{RIR}'s in real time for the given position of the user in the \ac{VAE}, it is possible to provide an accurate \ac{RIR} for the given location. This method avoids the need for a large amount of storage space and a system to retrieve the correct files, however, as will be seen through the rest of this report, post-processing of the obtained {RIR}'s would not be possible with real time rendering.
+		\end{enumerate}
+
+		The authors of said paper used the parametric \ac{RIR} rendering method, thus no information regarding the process of implementing the system using the direct \ac{RIR} method was obtained, nor the plausibility of such a system.
+
+		As the intention was to build upon the existing \ac{VSS} system which requires pre-recorded (and post-processed) \ac{RIR}'s and that storage space is no longer a problem due to cheap hard disc drive storage, it was decided that the direct room impulse response rendering method was to be used. In addition to implementing the desired functionality, the process of obtaining the grids of \ac{RIR}'s was to be accessed, aiming to provide an insight into the practicality of implementing a system using this method.
+
+		 %which would involve providing \ac{RIR}'s to the max patch to convolve with a real-time audio input, it was decided that the direct room impulse response rendering method was to be used and a way in which to provide the necessary \ac{RIR}'s was investigated. As mass storage is currently cheap and easily available, it was decided that the required number of \ac{RIR}'s to produce such as system was to be investigated, and whether the inaccuracy caused by interpolation between \ac{RIR}'s instead of producing location accurate \ac{RIR}'s is noticeable for the produced system.
+
+
+	\subsubsection{Project Objectives}
+
+		Given the project aims and the background provided, the following is a list of objectives that were set in order to complete this project:
+
+		\begin{enumerate}
+			\item Find an appropriate room to be modelled as a \ac{VAE} \\
+			\item Digitally model the room using either Odeons extrusion modelling or 3rd part application \\
+			\item Import room model into Odeon to finish material selection and \ac{RIR} settings\\
+			\item Produce a grid of \ac{RIR}'s that can be used to interpolate between to simulate user positions\\
+			\item Record real \ac{RIR}'s in locations that can be compared to synthetic \ac{RIR}'s\\
+			\item Extend upon existing software patch to accommodate new functionality\\
+			\item Preform user tests:
+				\begin{itemize}
+					\item Test \#1: Does the perception of distance change when using real or synthetic \ac{RIR}'s?\\
+					\item Test \#2: How far does the user have to move in the given \ac{VAE} before they notice they have moved \\
+					\item Test \#3: How many \ac{RIR}'s are required for interpolation for the user to feel they are moving around the space freely\\
+				\end{itemize}
 			\end{enumerate}
-
-			As the intention was to build upon the existing \ac{VSS} system, it was decided that the direct room impulse response rendering method would be used, as this method would allow for the modification of the existing patch used to real-time convolution.
-
-			As the intention was to build upon the existing \ac{VSS} system which requires pre-recorded (and post-processed) \ac{RIR}'s, it was decided that the direct room impulse response rendering method was to be used and the effects of the issues related with the method studied.
-
-			 %which would involve providing \ac{RIR}'s to the max patch to convolve with a real-time audio input, it was decided that the direct room impulse response rendering method was to be used and a way in which to provide the necessary \ac{RIR}'s was investigated. As mass storage is currently cheap and easily available, it was decided that the required number of \ac{RIR}'s to produce such as system was to be investigated, and whether the inaccuracy caused by interpolation between \ac{RIR}'s instead of producing location accurate \ac{RIR}'s is noticeable for the produced system.
-
-
-		\subsubsection{Project Objectives}
-
-			Given the project aims and the background provided, the following is a list of objectives that were set in order to complete this project:
-
-			\begin{enumerate}
-				\item Find an appropriate room to be modelled as a \ac{VAE} \\
-				\item Digitally model the room using either Odeons extrusion modelling or 3rd part application \\
-				\item Import room model into Odeon to finish material selection and \ac{RIR} settings\\
-				\item Produce a grid of \ac{RIR}'s that can be used to interpolate between to simulate user positions\\
-				\item Record real \ac{RIR}'s in locations that can be compared to synthetic \ac{RIR}'s\\
-				\item Extend upon existing software patch to accommodate new functionality\\
-				\item Preform user tests:
-					\begin{itemize}
-						\item Test \#1: Does the perception of distance change when using real or synthetic \ac{RIR}'s?\\
-						\item Test \#2: How far does the user have to move in the given \ac{VAE} before they notice they have moved \\
-						\item Test \#3: How many \ac{RIR}'s are required for interpolation for the user to feel they are moving around the space freely\\
-					\end{itemize}
-				\end{enumerate}
 
 
 	In order to test the perceptual differences when using synthetic RIRs (Test \#1), real RIRs of the same space had to be taken.

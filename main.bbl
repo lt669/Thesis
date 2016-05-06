@@ -19,234 +19,24 @@
 
 \refsection{0}
   \sortlist{none}{none}
-    \entry{Huopaniemi2000}{article}{}
-      \name{author}{4}{}{%
-        {{hash=efd3e50bccd9273d1bd4d0eccb0b790d}{Huopaniemi}{H\bibinitperiod}{J}{J\bibinitperiod}{}{}{}{}}%
-        {{hash=a3b3e1d11beaf8e3260d7c9cb937df47}{Savioja}{S\bibinitperiod}{L}{L\bibinitperiod}{}{}{}{}}%
-        {{hash=1318cee3e9f936611425d8bd1ca4fa26}{Lokki}{L\bibinitperiod}{T}{T\bibinitperiod}{}{}{}{}}%
-        {{hash=d746462388ae75ffd4ef5b82a5cc9c3e}{Väänänen}{V\bibinitperiod}{R}{R\bibinitperiod}{}{}{}{}}%
-      }
-      \strng{namehash}{aa380fc4958a67d14944635daabc4e76}
-      \strng{fullhash}{2d83e06fa828044c7ac705d1c1eddc3d}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Proc. European Signal Proc. Conf. (Eusipco'2000)}
-      \field{title}{{Virtual acoustics - applications and technology trends}}
-      \field{year}{2000}
-      \field{pages}{2201\bibrangedash 2208}
-      \range{pages}{8}
-      \verb{file}
-      \verb :Users/Lewis 1/Uni Work/4th Year/Project/Post-Lit Papers/VAE/CR1904.PDF:PDF
-      \endverb
-      \keyw{Auralization}
-    \endentry
-    \entry{Stan2002}{article}{}
-      \name{author}{3}{}{%
-        {{hash=3c887bda3aeb5bb614e4b99173d97dcf}{Stan}{S\bibinitperiod}{GB}{G\bibinitperiod}{}{}{}{}}%
-        {{hash=1f71267593ae1ff7d51fbf087c7b2b7a}{Embrechts}{E\bibinitperiod}{JJ}{J\bibinitperiod}{}{}{}{}}%
-        {{hash=7576b9709d6d549b225e36cc31d26f98}{Archambeau}{A\bibinitperiod}{Dominique}{D\bibinitperiod}{}{}{}{}}%
-      }
-      \strng{namehash}{159cbb3167a189524b559428d0ac030a}
-      \strng{fullhash}{159cbb3167a189524b559428d0ac030a}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{The impulse response of an acoustical space or transducer is one of its most important characterizations. In order to perform the measurement of their impulse responses, four of the most suitable methods are compared: MLS (maximum-length sequence), IRS (inverse repeated sequence), time-stretched pulses, and SineSweep. These methods have already been described in the literature. Nevertheless, the choice of one of them depending on the measurement conditions is critical. Therefore an extensive comparison has been realized. This comparison was done through the implementation and realization of a complete, fast, reliable, and cheap measurement system. Finally, a conclusion for the use of each method according to the principal measurement conditions is presented. It is shown that in the presence of nonwhite noise, the MLS and IRS techniques seem to be more accurate. On the contrary, in quiet environments the logarithmic SineSweep method seems to be the most appropriate.}
-      \field{issn}{1549-4950}
-      \field{journaltitle}{Journal of the Audio Engineering Society}
-      \field{number}{4}
-      \field{title}{{Comparison of different impulse response measurement techniques}}
-      \field{urlday}{25}
-      \field{urlmonth}{04}
-      \field{urlyear}{2016}
-      \field{volume}{50}
-      \field{year}{2002}
-      \field{pages}{249\bibrangedash 262}
-      \range{pages}{14}
-      \verb{file}
-      \verb :Users/Lewis 1/Uni Work/4th Year/Project/Post-Lit Papers/SineSweep/ArticleJAES.pdf:pdf
-      \endverb
-      \verb{url}
-      \verb http://orbi.ulg.ac.be/handle/2268/34825
-      \endverb
-    \endentry
-    \entry{ISO}{article}{}
-      \name{author}{1}{}{%
-        {{hash=3b3ab68c8c2f196fcd1562d8b1e1e0d8}{{Iso\bibnamedelimb 3382-1}}{I\bibinitperiod}{}{}{}{}{}{}}%
-      }
-      \strng{namehash}{3b3ab68c8c2f196fcd1562d8b1e1e0d8}
-      \strng{fullhash}{3b3ab68c8c2f196fcd1562d8b1e1e0d8}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{ISO 3382-1:2009 specifies methods for the measurement of reverberation time and other room acoustical parameters in performance spaces. It describes the measurement procedure, the apparatus needed, the coverage required, and the method of evaluating the data and presenting the test report. It is intended for the application of modern digital measuring techniques and for the evaluation of room acoustical parameters derived from impulse responses.}
-      \field{title}{{Acoustics - Measurement of room acoustic parameters - Part 1: Performance spaces}}
-      \field{volume}{3}
-      \field{year}{2009}
-      \verb{file}
-      \verb :Users/Lewis 1/Uni Work/4th Year/Project/Post-Lit Papers/ISO 3382-2009.pdf:pdf
-      \endverb
-    \endentry
-    \entry{ambisonics}{online}{}
-      \name{author}{1}{}{%
-        {{hash=32f5e76b6fbb48023de076c933f7e918}{White}{W\bibinitperiod}{Paul}{P\bibinitperiod}{}{}{}{}}%
-      }
+    \entry{mira}{online}{}
       \list{organization}{1}{%
-        {SOS}%
+        {Cycling74}%
       }
-      \strng{namehash}{32f5e76b6fbb48023de076c933f7e918}
-      \strng{fullhash}{32f5e76b6fbb48023de076c933f7e918}
       \field{sortinit}{0}
       \field{sortinithash}{990108227b3316c02842d895999a0165}
-      \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{howpublished}{Online}
-      \field{title}{Recording A Live Choral Performance}
-      \field{urlday}{06}
-      \field{urlmonth}{05}
-      \field{urlyear}{2016}
-      \field{year}{2016}
-      \verb{url}
-      \verb http://www.soundonsound.com/sos/jun04/articles/liveconcert.htm
-      \endverb
-    \endentry
-    \entry{odeon}{online}{}
-      \list{organization}{1}{%
-        {Odeon}%
-      }
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
-      \field{howpublished}{Software}
+      \field{howpublished}{Application}
+      \field{title}{Mira}
       \field{urlday}{25}
       \field{urlmonth}{04}
       \field{urlyear}{2016}
       \field{year}{2016}
       \verb{url}
-      \verb http://www.odeon.dk/pdf/ODEONManual.pdf
+      \verb https://cycling74.com/products/mira/
       \endverb
     \endentry
-    \entry{Siltanen2010}{article}{}
-      \name{author}{3}{}{%
-        {{hash=498c826edf9a2805b4c0e67ff68b9d45}{Siltanen}{S\bibinitperiod}{Samuel}{S\bibinitperiod}{}{}{}{}}%
-        {{hash=8668a3e26e443df4dd23ef8c1068afdc}{Lokki}{L\bibinitperiod}{Tapio}{T\bibinitperiod}{}{}{}{}}%
-        {{hash=b50a22c2e1c05593efba03d484c4b4d0}{Savioja}{S\bibinitperiod}{Lauri}{L\bibinitperiod}{}{}{}{}}%
-      }
-      \strng{namehash}{ec1f2bb116440d885cc524ba182b4396}
-      \strng{fullhash}{ec1f2bb116440d885cc524ba182b4396}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Proceedings of the International Symposium on Room Acoustics, ISRA 2010}
-      \field{number}{August}
-      \field{title}{{Rays or Waves? Understanding the Strengths and Weaknesses of Computational Room Acoustics Modeling Techniques}}
-      \field{urlday}{25}
-      \field{urlmonth}{04}
-      \field{urlyear}{2016}
-      \field{year}{2010}
-      \field{pages}{1\bibrangedash 6}
-      \range{pages}{6}
-      \verb{file}
-      \verb :Users/Lewis 1/Library/Application Support/Mendeley Desktop/Downloaded/Siltanen, Lokki, Savioja - 2010 - Rays or Waves Understanding the Strengths and Weaknesses of Computational Room Acoustics Modeling T(2).pdf:pdf
-      \endverb
-      \verb{url}
-      \verb http://www.acoustics.asn.au/conference%7B%5C_%7Dproceedings/ICA2010/cdrom-ISRA2010/Papers/O5a.pdf
-      \endverb
-    \endentry
-    \entry{Rindel1995}{article}{}
-      \name{author}{1}{}{%
-        {{hash=eff9057a1e382dc05503081db5bceb15}{Rindel}{R\bibinitperiod}{Jens\bibnamedelima Holger}{J\bibinitperiod\bibinitdelim H\bibinitperiod}{}{}{}{}}%
-      }
-      \strng{namehash}{eff9057a1e382dc05503081db5bceb15}
-      \strng{fullhash}{eff9057a1e382dc05503081db5bceb15}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Acoustics Australia}
-      \field{title}{{Computer Simulation Techniques for Acoustical Design of Rooms}}
-      \field{urlday}{25}
-      \field{urlmonth}{04}
-      \field{urlyear}{2016}
-      \field{volume}{23}
-      \field{year}{1995}
-      \field{pages}{81\bibrangedash 86}
-      \range{pages}{6}
-      \verb{file}
-      \verb :Users/Lewis 1/Uni Work/4th Year/Project/Write Up/Post-Lit Papers/Odeon/AustralAc{\_}1995{\_}Rindel.pdf:pdf
-      \endverb
-      \verb{url}
-      \verb http://www.odeon.dk/pdf/AustralAc_1995_Rindel.pdf
-      \endverb
-    \endentry
-    \entry{odeonManual}{manual}{}
-      \name{author}{2}{}{%
-        {{hash=3cfb885ac637698a5e3e1b8d9bb4a011}{Christensen}{C\bibinitperiod}{Claus\bibnamedelima Lynge}{C\bibinitperiod\bibinitdelim L\bibinitperiod}{}{}{}{}}%
-        {{hash=2a8f1fe777391b8d07173d8159aac89f}{Koutsouris}{K\bibinitperiod}{George}{G\bibinitperiod}{}{}{}{}}%
-      }
-      \list{location}{1}{%
-        {Scion DTU Diplomvej Kgs. Lyngby Denmark}%
-      }
-      \strng{namehash}{41db1ff97e4f8e7ecb696ad93f561184}
-      \strng{fullhash}{41db1ff97e4f8e7ecb696ad93f561184}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{{ODEON User's Manual}}
-      \field{urlday}{25}
-      \field{urlmonth}{04}
-      \field{urlyear}{2016}
-      \field{year}{2015}
-      \verb{file}
-      \verb :Users/Lewis 1/Library/Application Support/Mendeley Desktop/Downloaded/Christensen, Koutsouris - 2015 - ODEON User's Manual(2).pdf:pdf
-      \endverb
-      \verb{url}
-      \verb http://www.odeon.dk/pdf/ODEONManual12.pdf
-      \endverb
-    \endentry
-    \entry{SKU}{online}{}
-      \name{author}{1}{}{%
-        {{hash=8b36e9207c24c76e6719268e49201d94}{Google}{G\bibinitperiod}{}{}{}{}{}{}}%
-      }
-      \strng{namehash}{8b36e9207c24c76e6719268e49201d94}
-      \strng{fullhash}{8b36e9207c24c76e6719268e49201d94}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{howpublished}{Software}
-      \field{title}{Google SketchUp}
-      \field{urlday}{25}
-      \field{urlmonth}{04}
-      \field{urlyear}{2016}
-      \field{year}{2015}
-      \verb{url}
-      \verb http://www.sketchup.com/
-      \endverb
-    \endentry
-    \entry{SU2Odeon}{online}{}
-      \list{organization}{1}{%
-        {Odeon}%
-      }
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
-      \field{labeltitlesource}{title}
-      \field{howpublished}{Software}
-      \field{title}{SU2Odeon}
-      \field{urlday}{25}
-      \field{urlmonth}{04}
-      \field{urlyear}{2016}
-      \field{year}{2016}
-      \verb{url}
-      \verb http://www.odeon.dk/su2odeon-plugin-trimble-sketchup
-      \endverb
-    \endentry
-    \entry{max}{online}{}
+    \entry{c74}{online}{}
       \list{organization}{1}{%
         {Cycling74}%
       }
@@ -254,30 +44,34 @@
       \field{sortinithash}{990108227b3316c02842d895999a0165}
       \field{labeltitlesource}{title}
       \field{howpublished}{Software}
-      \field{title}{Max/MSP}
+      \field{title}{c74}
       \field{urlday}{25}
       \field{urlmonth}{04}
       \field{urlyear}{2016}
       \field{year}{2016}
       \verb{url}
-      \verb https://cycling74.com/products/max/
+      \verb https://cycling74.com/project/project43-c74-iphone-app/#.Vv1FhRIrJE4
       \endverb
     \endentry
-    \entry{spat}{online}{}
-      \list{organization}{1}{%
-        {IRCAM Centre Pompidou}%
+    \entry{YEI}{manual}{}
+      \name{author}{1}{}{%
+        {{hash=921edc623154ce0d834cd8ecefa0e668}{Technology}{T\bibinitperiod}{YEI}{Y\bibinitperiod}{}{}{}{}}%
       }
+      \list{location}{1}{%
+        {630 Second Street, Portsmouth, Ohio 45662}%
+      }
+      \strng{namehash}{921edc623154ce0d834cd8ecefa0e668}
+      \strng{fullhash}{921edc623154ce0d834cd8ecefa0e668}
       \field{sortinit}{0}
       \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{howpublished}{Software}
-      \field{title}{Spat}
-      \field{urlday}{25}
-      \field{urlmonth}{04}
+      \field{title}{{3-Space Sensor Embedded}}
+      \field{urlday}{02}
+      \field{urlmonth}{05}
       \field{urlyear}{2016}
-      \field{year}{2016}
       \verb{url}
-      \verb http://forumnet.ircam.fr/product/spat-en/
+      \verb http://www.solarsystemexpress.com/uploads/5/0/6/0/5060129/3-space_sensor_users_manual_embedded_1.1_r13.pdf
       \endverb
     \endentry
     \entry{Brereton2014}{article}{}
@@ -298,50 +92,75 @@
       \verb :Users/Lewis 1/Library/Application Support/Mendeley Desktop/Downloaded/Brereton, Hons - 2014 - Singing in Space ( s ) Singing performance in real and virtual acoustic environments — Singers ’ evaluati(2).pdf:pdf
       \endverb
     \endentry
-    \entry{oculus}{online}{}
+    \entry{earthworks}{manual}{}
       \list{organization}{1}{%
-        {Oculus}%
+        {Earthworks}%
       }
       \field{sortinit}{0}
       \field{sortinithash}{990108227b3316c02842d895999a0165}
-      \field{howpublished}{Website}
-      \field{urlday}{25}
-      \field{urlmonth}{04}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Datasheet}
+      \field{note}{Data Sheet}
+      \field{title}{M30 High Definition Measurement Microphone}
+      \field{urlday}{03}
+      \field{urlmonth}{05}
       \field{urlyear}{2016}
       \field{year}{2016}
       \verb{url}
-      \verb https://www.oculus.com/en-us/
+      \verb http://www.earthworksaudio.com/wp-content/uploads/2016/03/M30-Data-Sheet-2016.pdf
+      \endverb
+      \warn{\item Datamodel: Entry 'earthworks' (thesis.bib): Invalid format '' of date field 'date' - ignoring}
+    \endentry
+    \entry{motu}{online}{}
+      \list{organization}{1}{%
+        {MOTU}%
+      }
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Hardware}
+      \field{title}{MOTU UltraLite-mk3}
+      \field{urlday}{03}
+      \field{urlmonth}{05}
+      \field{urlyear}{2016}
+      \field{year}{2016}
+      \verb{url}
+      \verb http://motu.com/products/motuaudio/ultralite-mk3
       \endverb
     \endentry
-    \entry{Savioja1999}{article}{}
-      \name{author}{4}{}{%
-        {{hash=b50a22c2e1c05593efba03d484c4b4d0}{Savioja}{S\bibinitperiod}{Lauri}{L\bibinitperiod}{}{}{}{}}%
-        {{hash=29d74f37601ecf5f04d69141f517fdfa}{Huopaniemi}{H\bibinitperiod}{Jyri}{J\bibinitperiod}{}{}{}{}}%
-        {{hash=8668a3e26e443df4dd23ef8c1068afdc}{Lokki}{L\bibinitperiod}{Tapio}{T\bibinitperiod}{}{}{}{}}%
-        {{hash=73d8af6604e6a3f49994864ce64fa724}{Väänänen}{V\bibinitperiod}{Ritta}{R\bibinitperiod}{}{}{}{}}%
+    \entry{Devore2009}{article}{}
+      \name{author}{5}{}{%
+        {{hash=f67d3f10e644886ab750c0622dd46df0}{Devore}{D\bibinitperiod}{Sasha}{S\bibinitperiod}{}{}{}{}}%
+        {{hash=4c4e60cd08cd5776b199eb46528747eb}{Ihlefeld}{I\bibinitperiod}{Antje}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=1a823adfd0405023037c4c6f873f2cda}{Hancock}{H\bibinitperiod}{Kenneth}{K\bibinitperiod}{}{}{}{}}%
+        {{hash=3996ade1bb1a09a2b30d08ce6245e012}{Shinn-Cunningham}{S\bibinithyphendelim C\bibinitperiod}{Barbara}{B\bibinitperiod}{}{}{}{}}%
+        {{hash=522ddd6aad91ac5a5d5f594a071e13bd}{Delgutte}{D\bibinitperiod}{Bertrand}{B\bibinitperiod}{}{}{}{}}%
       }
-      \strng{namehash}{122a9270f72a827e2a1f3480f176ec2d}
-      \strng{fullhash}{c0a66951ec3c0a09ad08d118ff2e7a1a}
+      \strng{namehash}{6aaf1f8c2b50c8ff5adfd0a6e4a7eb99}
+      \strng{fullhash}{fb2caee91ecf9c65e8a3e561059bf5f6}
       \field{sortinit}{0}
       \field{sortinithash}{990108227b3316c02842d895999a0165}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{J. Audio Eng. Soc}
-      \field{number}{9}
-      \field{title}{Creating Interactive Virtual Acoustic Environments}
-      \field{urlday}{25}
-      \field{urlmonth}{04}
-      \field{urlyear}{2016}
-      \field{volume}{47}
-      \field{year}{1999}
-      \field{pages}{675\bibrangedash 705}
-      \range{pages}{31}
-      \verb{url}
-      \verb http://www.aes.org/e-lib/browse.cfm?elib=12095
+      \field{abstract}{In reverberant environments, acoustic reflections interfere with the direct sound arriving at a listener's ears, distorting the spatial cues for sound localization. Yet, human listeners have little difficulty localizing sounds in most settings. Because reverberant energy builds up over time, the source location is represented relatively faithfully during the early portion of a sound, but this representation becomes increasingly degraded later in the stimulus. We show that the directional sensitivity of single neurons in the auditory midbrain of anesthetized cats follows a similar time course, although onset dominance in temporal response patterns results in more robust directional sensitivity than expected, suggesting a simple mechanism for improving directional sensitivity in reverberation. In parallel behavioral experiments, we demonstrate that human lateralization judgments are consistent with predictions from a population rate model decoding the observed midbrain responses, suggesting a subcortical origin for robust sound localization in reverberant environments. © 2009 Elsevier Inc. All rights reserved.}
+      \field{isbn}{1097-4199 (Electronic)$\backslash$r0896-6273 (Linking)}
+      \field{issn}{08966273}
+      \field{journaltitle}{Neuron}
+      \field{number}{1}
+      \field{title}{{Accurate Sound Localization in Reverberant Environments Is Mediated by Robust Encoding of Spatial Cues in the Auditory Midbrain}}
+      \field{volume}{62}
+      \field{year}{2009}
+      \field{pages}{123\bibrangedash 134}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1016/j.neuron.2009.02.018
       \endverb
+      \verb{file}
+      \verb :Users/Lewis 1/Uni Work/4th Year/Project/Write Up/Post-Lit Papers/Movement/Reverb Masking/2009Neuron{\_}Devore.pdf:pdf
+      \endverb
+      \keyw{SYSNEURO}
     \endentry
   \endsortlist
-  \missing{soundFieldMic}
 \endrefsection
 \endinput
 
