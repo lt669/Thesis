@@ -2212,8 +2212,27 @@
     <bcf:datasource type="file" datatype="bibtex">thesis.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">trumpet</bcf:citekey>
-    <bcf:citekey order="2">DK</bcf:citekey>
+    <bcf:citekey order="1">Huopaniemi2000</bcf:citekey>
+    <bcf:citekey order="2">Stan2002</bcf:citekey>
+    <bcf:citekey order="3">ISO</bcf:citekey>
+    <bcf:citekey order="4">soundFieldMic</bcf:citekey>
+    <bcf:citekey order="5">ambisonics</bcf:citekey>
+    <bcf:citekey order="6">soundFieldMic</bcf:citekey>
+    <bcf:citekey order="7">ambisonics</bcf:citekey>
+    <bcf:citekey order="8">odeon</bcf:citekey>
+    <bcf:citekey order="9">Siltanen2010</bcf:citekey>
+    <bcf:citekey order="10">Rindel1995</bcf:citekey>
+    <bcf:citekey order="11">odeonManual</bcf:citekey>
+    <bcf:citekey order="12">Rindel1995</bcf:citekey>
+    <bcf:citekey order="13">odeonManual</bcf:citekey>
+    <bcf:citekey order="14">SKU</bcf:citekey>
+    <bcf:citekey order="15">SKU</bcf:citekey>
+    <bcf:citekey order="16">SU2Odeon</bcf:citekey>
+    <bcf:citekey order="17">max</bcf:citekey>
+    <bcf:citekey order="18">spat</bcf:citekey>
+    <bcf:citekey order="19">Brereton2014</bcf:citekey>
+    <bcf:citekey order="20">oculus</bcf:citekey>
+    <bcf:citekey order="21">Savioja1999</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="none" type="entry" sortscheme="none">
   <bcf:sorting>

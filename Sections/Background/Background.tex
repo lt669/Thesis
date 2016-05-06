@@ -6,19 +6,32 @@
 
 \section{Introduction}
 
-\subsection{Project Overview}
-	The project described in this paper aims to extend the functionality of a currently implemented system called the Virtual Singing Studio situated in the listening space of the Audio Lab at the University of York. The system allows a user to hear themselves as though they are present in another acoustic environment. This project looks into extending this functionality to allow the user to move themselves around a digitally modelled version of Hendrix Hall, one of the lecture halls on the Universities campus by generation a large grid of synthetic room impulse responses using the room acoustic simulation software Odeon.
+	% The project described in this document aims to extend the functionality of a currently implemented system called the \ac{VSS} situated in the listening space of the Audio Lab at the University of York. The system allows a user to hear themselves as though they are present in another acoustic environment. This project looks into extending this functionality to allow the user to move themselves around a digitally modelled version of Hendrix Hall, one of the lecture halls on the Universities campus by generation a large grid of synthetic room impulse responses using the room acoustic simulation software Odeon.
 
-	The aims of the project are as follows:
+	%The project described in this document aims to build upon an existing system called the \ac{VSS}, a system that allows a user to hear themselves as though they are present in another acoustic environment, situated in the listening space of the Audio Lab at the University of York. This project looks into extending this functionality to allow the user to move themselves around a digitally modelled version of Hendrix Hall, one of the lecture halls on the Universities campus by generation a large grid of synthetic room impulse responses using the room acoustic simulation software Odeon.
 
-	\begin{itemize}
-		\item[-] Extend the Virtual Singing Studio to allow a user to select any position the want within the given virtual space
-		\item[-] Allow the user to feel as though they are freely moving around the space
-		\item[-] Investigate the plausibility of the produced system
-		\item[-] Investigate the perception of mobility given different Room Impulse Response densities provided.
-	\end{itemize}
-	
-\subsection{Project Motivation}
+	%The way in which sound propagates around a room has been of great interest to audiophiles and scientists alike for some time and vast amounts of literature on the subject now exists. This research in conjunction with room modelling software has led to the ability to simulate how sound would propagate around a room, something that has multiple benefits, from allowing architects to hear how a room would sound before it is built, recreating lost buildings to hear what they might have sounded like or allowing someone to feel as though they are present in a room one second and present in another room the next. It is upon these techniques that the project described in the document is based.
+
+	%The ability to recreate the acoustics of a room has been well established tool for many years and has provided ample opportunity for research in areas such as acoustic and performance analysis by allowing the acoustics of multiple rooms quickly and easily without having to revisit said rooms. Furthermore, the ability to simulate the acoustics of a room through the use of room modelling software and sound propagation simulations has further enhanced the world of research by enabling us to hear what a room might sound like that we can not get to, or even allow us to hear what a room that no longer exists, or maybe never existed might sound like.
+
+	The \ac{VSS} is a system situated in the listening space of the Audio Lab at the University of York that allows a user to hear themselves as though they are present in another acoustic environment by recreating the acoustics of an existing room. The project described in this document aims to extend the functionality of the \ac{VSS} to allow the user to move themselves around a digitally modelled version of Hendrix Hall, one of the lecture halls on the Universities campus by generation a large grid of synthetic room impulse responses using the room acoustic simulation software Odeon.
+
+	% The aims of the project are as follows:
+
+	% \begin{itemize}
+	% 	\item[-] Extend the Virtual Singing Studio to allow a user to select any position the want within the given virtual space
+	% 	\item[-] Allow the user to feel as though they are freely moving around the space
+	% 	\item[-] Investigate the plausibility of the produced system
+	% 	\item[-] Investigate the perception of mobility given different Room Impulse Response densities provided.
+	% \end{itemize}
+
+	This chapter will be be structured as follows:
+
+	\begin{tabular}{r p{0.75\textwidth}}
+	Background: & An overview of all the material that form the basis of the described project. \\
+	Software Overview: & An overview of the software that was used to complete the project and some of the required information regarding how they work. \\
+	Project Description: & A description of what the aim of the project is, the motivation behind the project and a list of tasks required to be completed in order to finish the project.
+	\end{tabular}
 
 \subsection{Background}
 
@@ -81,7 +94,7 @@
 				\begin{minipage}{0.5\textwidth}
 					\center\includegraphics[scale = 0.3]{Sections/Background/images/soundFieldPolar.jpg}
 				\end{minipage}
-				\caption{\textbf{Left}: Picture of a Soundfield microphone with coincident capsules exposed \textbf{Right}: Soundfield microphone polar pattern \cite{soundFieldMic}}
+				\caption{\textbf{Left}: Picture of a Soundfield microphone with coincident capsules exposed. \textbf{Right}: Soundfield microphone polar pattern \cite{soundFieldMic}. Images sourced from~\cite{ambisonics}}
 				\label{sfMic}
 			\end{figure}
 
@@ -106,12 +119,12 @@
 
 			The \ac{ISM} can be used to find all possible specular reflections paths from the sound source to the receiver position. This is done by representing each specular reflection from a surface as a secondary source known as an ``image source'' \cite{Rindel1995}, illustrated in figure~\ref{ISMPic}. The advantage of the \ac{ISM} is that each surface can be modelled by an image source which provides a great deal of data regarding the contribution to the received sound making this method more accurate than ray-tracing, however as each image source then emits more rays there is a possibility to produce a great deal more image sources. This means that the number of image sources grows exponentially for each new image source than is produced making this method much more computationally expensive than the ray-tracing method. This problem can be avoided by setting a \textit{reflection order} which determines how many times a ray can reflect off a surface before calculations are stopped, thus preventing the creation of more image source though the calculates for the prediction of the rooms acoustics will be incomplete. This obviously then makes the \ac{ISM} less accurate with a smaller reflection order.
 
-			Once all image sources have been calculated, a visibility check is run. This checks to see whether the image sources that have been produced can be seen by the receiver, therefore checking whether that image source needs to be used or not. If the image source is not in sight of the receiver, it therefore does not need to be used for calculations. If the receiver position is moved, the visibility check is run again. Overall, this saves time as the image sources do not need to be recalculated.
+			Once all image sources have been calculated, a visibility check occurs. This checks to see whether the image sources that have been produced can be seen by the receiver, therefore checking whether that image source needs to be used or not offering the potential to cut down on computation time. If the receiver position is moved, the visibility check is run again. Overall, this saves time as the image sources do not need to be recalculated.
 
 
 			\begin{figure}[ht]
 				\center\includegraphics[scale = 0.3]{Sections/Background/images/ISM.png}
-				\caption{Illustration of the image source method (by the author)}
+				\caption{Illustration of the image source method (by the author) showing how the reflection from the sound source to the receiver is modelled by a secondary sound source.}
 				\label{ISMPic}
 			\end{figure}
 
@@ -123,7 +136,10 @@
 			The hybrid method first uses the \ac{ISM} to calculate a number of image sources up until a specified reflection order determined by a \ac{TO}. For example, if the \ac{TO} = 2, the image source method will allow a ray to reflect twice which will produce a number of image sources, then it will switch to using the ray tracing method to calculate a statistical model of how the rest of the rays might propagate. This gives the user the choice between computation time and accuracy.
 
 		\paragraph{Scattering}
-		\label{background:scattering}			
+		\label{background:scattering}	
+
+			Unless a surface in infinitely smooth (which most surfaces are not), when sound comes into contact with that surface it is scattered. Odeon takes this phenomena into account by using `Vector Based Scattering' \cite{odeonManual}. Initially, Odeon assumes that the ray will be reflected at a specular angle (reflects at the same angle of incident) and that scales this specular angle using a user assigned scattering coefficient (s) where the reflected angle = (1-s)*specular reflection.
+
 			Quote from Odeon Manual:	
 
 			 \vspace{5mm}
@@ -133,8 +149,6 @@
 		 \end{minipage}
 		 \end{center}
 		 \vspace{5mm}
-
-		 \textbf{Reword that shit}
 
 		\paragraph{Room Modelling}
 
@@ -206,7 +220,7 @@
 				\item Produce a grid of \ac{RIR}'s that can be used to interpolate between to simulate user positions\\
 				\item Record real \ac{RIR}'s in locations that can be compared to synthetic \ac{RIR}'s\\
 				\item Extend upon existing software patch to accommodate new functionality\\
-				\item  Preform user tests:
+				\item Preform user tests:
 					\begin{itemize}
 						\item Test \#1: Does the perception of distance change when using real or synthetic \ac{RIR}'s?\\
 						\item Test \#2: How far does the user have to move in the given \ac{VAE} before they notice they have moved \\
