@@ -2212,13 +2212,33 @@
     <bcf:datasource type="file" datatype="bibtex">thesis.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">mira</bcf:citekey>
-    <bcf:citekey order="2">c74</bcf:citekey>
-    <bcf:citekey order="3">YEI</bcf:citekey>
-    <bcf:citekey order="4">Brereton2014</bcf:citekey>
-    <bcf:citekey order="5">earthworks</bcf:citekey>
-    <bcf:citekey order="6">motu</bcf:citekey>
-    <bcf:citekey order="7">Devore2009</bcf:citekey>
+    <bcf:citekey order="1">Brereton2014</bcf:citekey>
+    <bcf:citekey order="2">Huopaniemi2000</bcf:citekey>
+    <bcf:citekey order="3">Stan2002</bcf:citekey>
+    <bcf:citekey order="4">Smith2003</bcf:citekey>
+    <bcf:citekey order="5">ISO</bcf:citekey>
+    <bcf:citekey order="6">sosAmbisonics</bcf:citekey>
+    <bcf:citekey order="7">Power</bcf:citekey>
+    <bcf:citekey order="8">soundFieldMic</bcf:citekey>
+    <bcf:citekey order="9">ambisonics</bcf:citekey>
+    <bcf:citekey order="10">soundFieldMic</bcf:citekey>
+    <bcf:citekey order="11">ambisonics</bcf:citekey>
+    <bcf:citekey order="12">odeon</bcf:citekey>
+    <bcf:citekey order="13">Siltanen2010</bcf:citekey>
+    <bcf:citekey order="14">Rindel1995</bcf:citekey>
+    <bcf:citekey order="15">odeonManual</bcf:citekey>
+    <bcf:citekey order="16">Rindel1995</bcf:citekey>
+    <bcf:citekey order="17">odeonManual</bcf:citekey>
+    <bcf:citekey order="18">odeonManual</bcf:citekey>
+    <bcf:citekey order="19">odeonManual</bcf:citekey>
+    <bcf:citekey order="20">SKU</bcf:citekey>
+    <bcf:citekey order="21">SKU</bcf:citekey>
+    <bcf:citekey order="22">SU2Odeon</bcf:citekey>
+    <bcf:citekey order="23">max</bcf:citekey>
+    <bcf:citekey order="24">spat</bcf:citekey>
+    <bcf:citekey order="25">Brereton2014</bcf:citekey>
+    <bcf:citekey order="26">oculus</bcf:citekey>
+    <bcf:citekey order="27">Savioja1999</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="none" type="entry" sortscheme="none">
   <bcf:sorting>

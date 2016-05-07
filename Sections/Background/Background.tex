@@ -6,48 +6,34 @@
 
 \section{Introduction}
 
-	% The project described in this document aims to extend the functionality of a currently implemented system called the \ac{VSS} situated in the listening space of the Audio Lab at the University of York. The system allows a user to hear themselves as though they are present in another acoustic environment. This project looks into extending this functionality to allow the user to move themselves around a digitally modelled version of Hendrix Hall, one of the lecture halls on the Universities campus by generation a large grid of synthetic room impulse responses using the room acoustic simulation software Odeon.
+	No prior understanding of room acoustics is required to appreciate the difference in sound experienced when talking, singing or playing an instrument in rooms of different size and interior. For those who listen even more closely, the effect of standing in different positions of a room can also be appreciated, such as the deep booming sound of standing in a corner or the fluttering echo heard when clapping in the centre of two symmetrical walls. However, the benefits of the hard work that has gone into studying room acoustics and sound propagation are apparent across multiple platforms, from understanding how to acoustically treat a room to make it sound the way we want, to creating tools and defining methods that allow us to recreate or synthesis a rooms acoustics, leading to the ability to development realistic soundscapes to bring virtual worlds to life, such as in video games and films.
 
-	%The project described in this document aims to build upon an existing system called the \ac{VSS}, a system that allows a user to hear themselves as though they are present in another acoustic environment, situated in the listening space of the Audio Lab at the University of York. This project looks into extending this functionality to allow the user to move themselves around a digitally modelled version of Hendrix Hall, one of the lecture halls on the Universities campus by generation a large grid of synthetic room impulse responses using the room acoustic simulation software Odeon.
+	The ability to do such things has been utilised in other areas of research, such as studying how musicians perform differently when playing in rooms with different room acoustics \cite{Brereton2014}. This has been done at the University of York, where the benefit of being able to simulate the acoustics of multiple rooms within moments has been used to effectively transport musicians and researchers to different venues without having to travel anywhere. The system used to do this is the \ac{VSS}, upon which this project is based. In addition to allowing a user to simply hear themselves in different venues, this project aims to allow the user to also move themselves around that venue, allowing them to experiment with performing in different positions.
 
-	%The way in which sound propagates around a room has been of great interest to audiophiles and scientists alike for some time and vast amounts of literature on the subject now exists. This research in conjunction with room modelling software has led to the ability to simulate how sound would propagate around a room, something that has multiple benefits, from allowing architects to hear how a room would sound before it is built, recreating lost buildings to hear what they might have sounded like or allowing someone to feel as though they are present in a room one second and present in another room the next. It is upon these techniques that the project described in the document is based.
+	The rest of this document will be structured as follows:
 
-	%The ability to recreate the acoustics of a room has been well established tool for many years and has provided ample opportunity for research in areas such as acoustic and performance analysis by allowing the acoustics of multiple rooms quickly and easily without having to revisit said rooms. Furthermore, the ability to simulate the acoustics of a room through the use of room modelling software and sound propagation simulations has further enhanced the world of research by enabling us to hear what a room might sound like that we can not get to, or even allow us to hear what a room that no longer exists, or maybe never existed might sound like.
+	\textbf{Background}\\
+		An overview of all the material that form the basis of this project, including an overview of the software used to achieve the end result. Previous work is discussed, leading to a full description of the project including the motivation behind it. Finally, the project aims and objectives are stated, including how the system was to be produced and tested to access plausibility, providing a set a metrics that are used to access the success of the project.
 
+	\textbf{Implementation}\\
+		This section presents the practical work that was carried out throughout the project, describing the decisions made, issues encountered and how they were overcome.
 
+	\textbf{User Testing}\\	
+		The procedure that was carried out to test the implemented system is described and the results are presented and discussed, followed by a conclusion, highlighting potential reasons for the obtained results.
 
-	The \ac{VSS} is a system situated in the listening space of the Audio Lab at the University of York that allows a user to hear themselves as though they are present in another acoustic environment by recreating the acoustics of an existing room. The project described in this document aims to extend the functionality of the \ac{VSS} to allow the user to move themselves around a digitally modelled version of Hendrix Hall, one of the lecture halls on the Universities campus by generation a large grid of synthetic room impulse responses using the room acoustic simulation software Odeon.
+	\textbf{Project Management}\\
+		A brief overview of how the project was planned and time managed.
 
-	% The aims of the project are as follows:
+	\textbf{Conclusion}\\
+		The project as a whole is summarised and measured against the initial metrics set, evaluating the overall success of the project. The issues raised throughout previous sections are reviewed and potential solutions are discussed. Further improvements to the system are suggested, including some of the work that was initially intended to be carried out.
 
-	% \begin{itemize}
-	% 	\item[-] Extend the Virtual Singing Studio to allow a user to select any position the want within the given virtual space
-	% 	\item[-] Allow the user to feel as though they are freely moving around the space
-	% 	\item[-] Investigate the plausibility of the produced system
-	% 	\item[-] Investigate the perception of mobility given different Room Impulse Response densities provided.
-	% \end{itemize}
-
-	This chapter will be be structured as follows:
-
-	\begin{tabular}{r p{0.75\textwidth}}
-	Background: & An overview of all the material that form the basis of the described project. \\
-	Software Overview: & An overview of the software that was used to complete the project and some of the required information regarding how they work. \\
-	Project Description: & A description of what the aim of the project is, the motivation behind the project and a list of tasks required to be completed in order to finish the project.
-	\end{tabular}
-
-\subsection{Background}
-
-	%The following section provides the relevant background information that form the basis of the project described in this paper.
-
+\pagebreak
+\section{Background}
 	
-
 	The following section covers material that forms the basis of the system produced as a result of this project.
 
-	% This section will be split into two parts: \textbf{Pre-project}, covering material that forms the basis of the existing system upon which this project will extend upon, and \textbf{Project}, covering extra material which is specific to the extension of the current system.
-
-
 %-------------Virtual Acoustic Environments-------------%
-	\subsubsection{Virtual Acoustic Environments}
+	\subsection{Virtual Acoustic Environments}
 
 		 Virtual acoustics has been previously described \cite{Huopaniemi2000} as follows: 
 
@@ -63,48 +49,41 @@
 
 		This information can be gathered by taking a \ac{RIR} and used to recreate the acoustics of a room for the set sound source and receiver location.
 
-		%  To produce a \ac{VAE}, prior knowledge regarding the sound source, room geometry and listener are required \cite{Huopaniemi2000}.
-
-		%  An example of a \ac{VAE} can be found in previous projects such as \cite{Brereton2012}, upon which this project is based.
-
-		% This essentially means reproducing sounds in an environment other than the one the sound were originally present. However, it can be said that it is possible to produce a \ac{VAE}'s using non-physical methods and could also be rendered through headphones depending on the technique used to capture the 
-
-		% Essentially, \ac{VAE}'s make it sound like someone is in an environment that they're actually not in by producing sound waves that would be present if the they were actually present in that environment. These sound waves can actually be reproduced over headphones as well as loudspeakers, depending on the method used to either capture or synthesise the sound field.
-
 %-------------Room Impulse Responses-------------%
-		\subsubsection{Room Impulse Responses}
-			% In order to reproduce the acoustical phenomena of a room, a description of how all audible frequencies interact with that room must be obtained. This can be done by capturing a \ac{RIR}. By placing a sound source and a receiver (microphone) in said room and exciting all audible frequencies, 
+	\subsection{Room Impulse Responses}
 
-			In order to reproduce the acoustical phenomena of a room, an \ac{RIR} must be obtained. This is done by exciting all audible frequencies within the room by using a sound source such as a loudspeaker, and recording the result using a receiver microphone.
+		In order to reproduce the acoustical phenomena of a room, an \ac{RIR} must be obtained. This is done by exciting all audible frequencies within the room by using a sound source such as a loudspeaker, and recording the result using a receiver microphone.
 
-			There are a number of techniques used for exciting all audible frequencies. These include an \textbf{impulse} (such as a starter pistol) or an \textbf{exponentially swept sine} for which a sine wave is exponentially increased in frequency over a fixed period of time. Using a starter pistol means that no post processing is required as all the frequencies are excited at the same time and the impulse recorded at the receiver position can be used for convolution with an audio source. Using an exponentially swept sine requires post processing in order to time align all of the frequency dependent room reflections, thus producing an impulse response through the use of a deconvolution algorithm, however this method produces a greater signal to noise ratio thus is the desired method \cite{Stan2002}. 
-
-			Though using an omni-directional microphone to record an \ac{RIR} is a set standard \cite{ISO}, it is also possible to record \ac{RIR}'s using techniques such as Ambisonics to capture a three dimensional sound field.
-
-		
+		There are a number of techniques used for exciting all audible frequencies. These include an \textbf{impulse} (such as a starter pistol) or an \textbf{exponentially swept sine} for which a sine wave is exponentially increased in frequency over a fixed period of time. The difference between these techniques is that an impulse emits all of the audible frequencies into the room at the same time, where as the sine sweep does it gradually. As the idea is to obtain an \textbf{impulse}, using the impulse technique is much more simple as no post processing is required. Using an exponentially swept sine requires post processing in order to time align all of the frequency dependent room reflections through the use of a deconvolution algorithm and thus producing an impulse response, making this method a little less simple. However, this method produces a greater signal to noise ratio thus is the desired method \cite{Stan2002}. Once the impulse is obtained, it can be convolved with an audio signal, making that audio signal sound as though it is being produced within the room that the \ac{RIR} was taken from. Convolution simply takes an input signal and multiplies each of the discrete samples with the impulse response, thus simulation the effect the room would have on each of these samples if they were actually emitted in the room itself \cite{Smith2003}.
 
 %-------------Ambisonics-------------%
-		\subsubsection{Ambisonics}
+	\subsection{Ambisonics}
 
-			Ambisonics is a technique used to encode and decode three dimensional spatial audio information using just four audio channels. A three dimensional sound field can be recorded using a microphone known as a Soundfield microphone shown on the left in figure~\ref{sfMic}. These microphones contain four coincident capsules, one of which is an omni-directional capsule (W) and the rest of which are figure of 8 capsules used to record sound in the X (front and back), Y (left and right) and Z (up and down) direction illustrated on the right in figure~\ref{sfMic}. By combining these signals in what is known as a B-Format audio file, the sound field surrounding the microphone can be captured. By using a system specific Ambisonic decoder, the soundfield can be accurately reconstructed by replaying the B-Format file over a spherical loudspeaker array of arbitrary size.
 
-			%-------------Soundfield mic images-------------%
-			\begin{figure}[ht]
-				\begin{minipage}{0.5\textwidth}
-					\center\includegraphics[scale = 0.2]{Sections/Background/images/soudFieldMic.jpg}
-				\end{minipage}
-				\begin{minipage}{0.5\textwidth}
-					\center\includegraphics[scale = 0.3]{Sections/Background/images/soundFieldPolar.jpg}
-				\end{minipage}
-				\caption{\textbf{Left}: Picture of a Soundfield microphone with coincident capsules exposed. \textbf{Right}: Soundfield microphone polar pattern \cite{soundFieldMic}. Images sourced from~\cite{ambisonics}}
-				\label{sfMic}
-			\end{figure}
+		% Though using an omni-directional microphone to record an \ac{RIR} is a set standard \cite{ISO}, it is also possible to record \ac{RIR}'s using techniques such as Ambisonics to capture a three dimensional sound field.
 
-		\subsection{Software Overview}
+		Though using an omni-directional microphone to record an \ac{RIR} is a set standard \cite{ISO}, it is also possible to use techniques such as Ambisonics to record \ac{RIR}`s that can be used to reproduce a soundfield in three dimensions.
+
+		Ambisonics is a technique used to encode and decode three dimensional spatial audio information using just four audio channels. A three dimensional sound field can be recorded using a microphone known as a Soundfield microphone shown on the left in figure~\ref{sfMic}. These microphones contain four coincident capsules, one of which is an omni-directional capsule (W) and the rest of which are figure of 8 capsules used to record sound in the X (front and back), Y (left and right) and Z (up and down) direction illustrated on the right in figure~\ref{sfMic}. In theory, the aim is to record the sound field at a single point, however this will never be possible given that the microphones take up physical space. Therefore, the sound captured by the microphones are first recorded into A-format (raw unedited signals) and then converted to B-format which is the same signal with an applied inter-capsule time correction to compensate for the physical separation of the microphones \cite{sosAmbisonics} and the fact that they are not absolutely coincident \cite{Power}. Once the sound field has been captured, a system specific decoder can be used to replay the captured signal over an arbitrary number of loudspeakers.
+
+		%-------------Soundfield mic images-------------%
+		\begin{figure}[ht]
+			\begin{minipage}{0.5\textwidth}
+				\center\includegraphics[scale = 0.2]{Sections/Background/images/soudFieldMic.jpg}
+			\end{minipage}
+			\begin{minipage}{0.5\textwidth}
+				\center\includegraphics[scale = 0.3]{Sections/Background/images/soundFieldPolar.jpg}
+			\end{minipage}
+			\caption{\textbf{Left}: Picture of a Soundfield microphone with coincident capsules exposed. \textbf{Right}: Soundfield microphone polar pattern \cite{soundFieldMic}. Images sourced from~\cite{ambisonics}}
+			\label{sfMic}
+		\end{figure}
+
+	\subsection{Software Overview}
 
 		\subsubsection{ODEON}
 		\label{Software:Odeon}
-		A method for measuring \ac{RIR}'s has been discussed, however there is also a way to synthesis \ac{RIR}'s by using room acoustic simulation software such as Odeon \cite{odeon}.
+			
+			Methods for physically measuring \ac{RIR}'s within rooms has been discussed, however there is also a way to synthesis \ac{RIR}'s by using room acoustic simulation software such as Odeon \cite{odeon}.
 
 			Odeon was designed to provide reliable predictions of room acoustics by using a hybrid of two geometric acoustic models, Ray-tracing and the \ac{ISM} to synthesis \ac{RIR}'s. These methods model how sound would propagate around a room as though it were a straight line (ray). This inherently neglects wave phenomena such as phase and diffraction, properties that are negligible at high frequencies, however they are fundamental in describing low frequency wave behaviour \cite{Siltanen2010}. Therefore geometrical methods are not accurate at modelling sound propagation for low frequency waves.
 
@@ -197,7 +176,7 @@
 		
 		%The \ac{VSS} has addressed a problem faced by professional musical performers: travelling to performance spaces for rehearsal.
 
-		The \ac{VSS} addressed a problem faced when trying to research how musicians preform in different acoustic environments: having to travel to each performance space with musicians and researchers. This also indirectly provides a solution for performers wanting to rehearse is spaces that are often inaccessible and would otherwise be expensive to book and travel to. By obtaining an \ac{RIR} of the desired location, the only time travelling will be necessary is to initially obtain said \ac{RIR}. However, one limitation of using the \ac{VSS} is the restriction of position. If a performer wanted to try and sing at another point in the room, an \ac{RIR} would have to be taken in that position too. This could be done initially, taking a range of \ac{RIR}'s in a number of positions, however it cannot be guaranteed that all positions desirable to the performer will be available. Therefore, this project aims to implement a system that will allow the user of the \ac{VSS} to feel as though thy can move around a \ac{VAE} freely.
+		The \ac{VSS} addressed a problem faced when trying to research how musicians preform in different acoustic environments: having to travel to each performance space with musicians and researchers. This also indirectly provides a solution for performers wanting to rehearse in spaces that are often inaccessible and would otherwise be expensive to book and travel to. By obtaining an \ac{RIR} of the desired location, the only time travelling will be necessary is to initially obtain said \ac{RIR}. However, one limitation of using the \ac{VSS} is the restriction of position. If a performer wanted to try and sing at another point in the room, an \ac{RIR} would have to be taken in that position too. This could be done initially, taking a range of \ac{RIR}'s in a number of positions, however it cannot be guaranteed that all positions desirable to the performer will be available. Therefore, this project aims to implement a system that will allow the user of the \ac{VSS} to feel as though thy can move around a \ac{VAE} freely.
 
 		%The initial implementation of the \ac{VSS} provided the user with a choice of four positions. To provide the user with more \ac{RIR} positions it could be possible to allow them to move where they choose.
 
