@@ -175,12 +175,12 @@
       \verb http://usir.salford.ac.uk/34100/1/P%20Power_Thesis_Final.pdf
       \endverb
     \endentry
-    \entry{ambisonics}{online}{}
+    \entry{soundfieldMic}{online}{}
       \name{author}{1}{}{%
         {{hash=32f5e76b6fbb48023de076c933f7e918}{White}{W\bibinitperiod}{Paul}{P\bibinitperiod}{}{}{}{}}%
       }
       \list{organization}{1}{%
-        {SOS}%
+        {sos}%
       }
       \strng{namehash}{32f5e76b6fbb48023de076c933f7e918}
       \strng{fullhash}{32f5e76b6fbb48023de076c933f7e918}
@@ -188,29 +188,14 @@
       \field{sortinithash}{990108227b3316c02842d895999a0165}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{howpublished}{Online}
+      \field{howpublished}{Website}
       \field{title}{Recording A Live Choral Performance}
-      \field{urlday}{06}
-      \field{urlmonth}{05}
-      \field{urlyear}{2016}
-      \field{year}{2016}
-      \verb{url}
-      \verb http://www.soundonsound.com/sos/jun04/articles/liveconcert.htm
-      \endverb
-    \endentry
-    \entry{odeon}{online}{}
-      \list{organization}{1}{%
-        {Odeon}%
-      }
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
-      \field{howpublished}{Software}
       \field{urlday}{25}
       \field{urlmonth}{04}
       \field{urlyear}{2016}
       \field{year}{2016}
       \verb{url}
-      \verb http://www.odeon.dk/pdf/ODEONManual.pdf
+      \verb http://www.soundonsound.com/sos/jun04/articles/liveconcert.htm
       \endverb
     \endentry
     \entry{Siltanen2010}{article}{}
@@ -239,6 +224,21 @@
       \endverb
       \verb{url}
       \verb http://www.acoustics.asn.au/conference%7B%5C_%7Dproceedings/ICA2010/cdrom-ISRA2010/Papers/O5a.pdf
+      \endverb
+    \endentry
+    \entry{odeon}{online}{}
+      \list{organization}{1}{%
+        {Odeon}%
+      }
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{howpublished}{Software}
+      \field{urlday}{25}
+      \field{urlmonth}{04}
+      \field{urlyear}{2016}
+      \field{year}{2016}
+      \verb{url}
+      \verb http://www.odeon.dk/pdf/ODEONManual.pdf
       \endverb
     \endentry
     \entry{Rindel1995}{article}{}
@@ -407,7 +407,6 @@
       \endverb
     \endentry
   \endsortlist
-  \missing{soundFieldMic}
 \endrefsection
 \endinput
 

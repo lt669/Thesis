@@ -1,26 +1,24 @@
-[0] Config.pm:324> INFO - This is Biber 2.1
-[0] Config.pm:327> INFO - Logfile is 'main.blg'
-[37] biber-darwin:276> INFO - === Sat May  7, 2016, 11:55:44
-[38] Biber.pm:333> INFO - Reading 'main.bcf'
-[120] Biber.pm:645> INFO - Found 19 citekeys in bib section 0
-[135] Biber.pm:2977> INFO - Processing section 0
-[149] Biber.pm:3115> INFO - Looking for bibtex format file 'thesis.bib' for section 0
-[153] bibtex.pm:1021> INFO - Decoding LaTeX character macros into UTF-8
-[157] bibtex.pm:895> INFO - Found BibTeX data source 'thesis.bib'
-[171] Utils.pm:146> WARN - Possible typo (case mismatch) between citation and datasource keys: 'soundFieldMic' and 'soundfieldMic' in file 'thesis.bib'
-[179] Utils.pm:146> WARN - BibTeX subsystem: /var/folders/9m/7yvjw_r54n1c0nbfzndk_j0m0000gn/T/IIgz9TORtX/thesis.bib_8464.utf8, line 137, warning: 2 characters of junk seen at toplevel
-[179] Utils.pm:146> WARN - I didn't find a database entry for 'soundFieldMic' (section 0)
-[180] Utils.pm:146> WARN - The field 'author' in entry 'odeon' cannot be null, deleting it
-[180] Utils.pm:146> WARN - The field 'title' in entry 'odeon' cannot be null, deleting it
-[180] Utils.pm:146> WARN - The field 'author' in entry 'SU2Odeon' cannot be null, deleting it
-[180] Utils.pm:146> WARN - The field 'author' in entry 'max' cannot be null, deleting it
-[180] Utils.pm:146> WARN - The field 'author' in entry 'spat' cannot be null, deleting it
-[181] Utils.pm:146> WARN - The field 'author' in entry 'oculus' cannot be null, deleting it
-[181] Utils.pm:146> WARN - The field 'title' in entry 'oculus' cannot be null, deleting it
-[297] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[297] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[297] Biber.pm:2854> INFO - Sorting list 'none' of type 'entry' with scheme 'none' and locale 'en-US'
-[297] Biber.pm:2858> INFO - No sort tailoring available for locale 'en-US'
-[312] bbl.pm:505> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[314] bbl.pm:596> INFO - Output to main.bbl
-[314] Biber.pm:106> INFO - WARNINGS: 10
+[1] Config.pm:324> INFO - This is Biber 2.1
+[1] Config.pm:327> INFO - Logfile is 'main.blg'
+[43] biber-darwin:276> INFO - === Sat May  7, 2016, 17:21:45
+[44] Biber.pm:333> INFO - Reading 'main.bcf'
+[148] Biber.pm:645> INFO - Found 18 citekeys in bib section 0
+[163] Biber.pm:2977> INFO - Processing section 0
+[180] Biber.pm:3115> INFO - Looking for bibtex format file 'thesis.bib' for section 0
+[183] bibtex.pm:1021> INFO - Decoding LaTeX character macros into UTF-8
+[187] bibtex.pm:895> INFO - Found BibTeX data source 'thesis.bib'
+[211] Utils.pm:146> WARN - BibTeX subsystem: /var/folders/9m/7yvjw_r54n1c0nbfzndk_j0m0000gn/T/vgurG7EQ16/thesis.bib_9402.utf8, line 137, warning: 2 characters of junk seen at toplevel
+[213] Utils.pm:146> WARN - The field 'author' in entry 'odeon' cannot be null, deleting it
+[213] Utils.pm:146> WARN - The field 'title' in entry 'odeon' cannot be null, deleting it
+[213] Utils.pm:146> WARN - The field 'author' in entry 'SU2Odeon' cannot be null, deleting it
+[213] Utils.pm:146> WARN - The field 'author' in entry 'max' cannot be null, deleting it
+[213] Utils.pm:146> WARN - The field 'author' in entry 'spat' cannot be null, deleting it
+[213] Utils.pm:146> WARN - The field 'author' in entry 'oculus' cannot be null, deleting it
+[213] Utils.pm:146> WARN - The field 'title' in entry 'oculus' cannot be null, deleting it
+[348] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[348] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[349] Biber.pm:2854> INFO - Sorting list 'none' of type 'entry' with scheme 'none' and locale 'en-US'
+[349] Biber.pm:2858> INFO - No sort tailoring available for locale 'en-US'
+[366] bbl.pm:505> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[368] bbl.pm:596> INFO - Output to main.bbl
+[368] Biber.pm:106> INFO - WARNINGS: 8
