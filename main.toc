@@ -2,58 +2,78 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1}Acronyms}{1}{section.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2}Introduction}{3}{section.2}
+\contentsline {section}{\numberline {2}Implementation}{3}{section.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3}Background}{5}{section.3}
+\contentsline {subsection}{\numberline {2.1}Room Choice}{3}{subsection.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1}Virtual Acoustic Environments}{5}{subsection.3.1}
+\contentsline {subsection}{\numberline {2.2}User Test Planning}{3}{subsection.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2}Room Impulse Responses}{5}{subsection.3.2}
+\contentsline {subsection}{\numberline {2.3}Real RIR Recordings}{4}{subsection.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3}Ambisonics}{6}{subsection.3.3}
+\contentsline {subsubsection}{\numberline {2.3.1}RIR Measurement Setup}{4}{subsubsection.2.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.4}Software Overview}{7}{subsection.3.4}
+\contentsline {subsubsection}{\numberline {2.3.2}Positions}{5}{subsubsection.2.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.4.1}ODEON: Simulating Room Acoustics}{7}{subsubsection.3.4.1}
+\contentsline {subsubsection}{\numberline {2.3.3}Measurements}{6}{subsubsection.2.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {3.4.1.1}Ray-Tracing}{7}{paragraph.3.4.1.1}
+\contentsline {subsubsection}{\numberline {2.3.4}RIR Analysis}{6}{subsubsection.2.3.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {3.4.1.2}Image Source Method}{8}{paragraph.3.4.1.2}
+\contentsline {subsubsection}{\numberline {2.3.5}Issues}{7}{subsubsection.2.3.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {3.4.1.3}Hybrid Method}{9}{paragraph.3.4.1.3}
+\contentsline {subsection}{\numberline {2.4}Room Modelling}{8}{subsection.2.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {3.4.1.4}Scattering}{10}{paragraph.3.4.1.4}
+\contentsline {subsubsection}{\numberline {2.4.1}Room Measurements}{8}{subsubsection.2.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {3.4.1.5}Room Modelling}{10}{paragraph.3.4.1.5}
+\contentsline {subsubsection}{\numberline {2.4.2}Designing the room}{8}{subsubsection.2.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {3.4.1.6}Material Selection}{10}{paragraph.3.4.1.6}
+\contentsline {subsection}{\numberline {2.5}ODEON}{10}{subsection.2.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.4.2}Google SketchUp}{11}{subsubsection.3.4.2}
+\contentsline {subsubsection}{\numberline {2.5.1}Water Tightness Test}{10}{subsubsection.2.5.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.4.3}Max/MSP}{11}{subsubsection.3.4.3}
+\contentsline {subsubsection}{\numberline {2.5.2}Material Selection}{11}{subsubsection.2.5.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.5}Project Description}{11}{subsection.3.5}
+\contentsline {paragraph}{\numberline {2.5.2.1}Initial Materials}{11}{paragraph.2.5.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.5.1}The Virtual Singing Studio}{11}{subsubsection.3.5.1}
+\contentsline {paragraph}{\numberline {2.5.2.2}Surface Types}{12}{paragraph.2.5.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.5.2}Project Aim and Motivation}{12}{subsubsection.3.5.2}
+\contentsline {paragraph}{\numberline {2.5.2.3}RIR Comparison}{14}{paragraph.2.5.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.5.3}Project Objectives}{14}{subsubsection.3.5.3}
+\contentsline {paragraph}{\numberline {2.5.2.4}Final Material Choice}{17}{paragraph.2.5.2.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.5.4}Project Overview}{15}{subsubsection.3.5.4}
+\contentsline {subsubsection}{\numberline {2.5.3}Odeon Output Settings}{18}{subsubsection.2.5.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.5.5}Room Choice}{15}{subsubsection.3.5.5}
+\contentsline {paragraph}{\numberline {2.5.3.1}Ray Settings}{18}{paragraph.2.5.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.5.6}User Test Planning}{16}{subsubsection.3.5.6}
+\contentsline {paragraph}{\numberline {2.5.3.2}Directivity}{21}{paragraph.2.5.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Appendices}{17}{section*.12}
+\contentsline {subsubsection}{\numberline {2.5.4}RIR Topology Problems}{22}{subsubsection.2.5.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A}Appendix A}{17}{Appendix.1.A}
+\contentsline {paragraph}{\numberline {2.5.4.1}RIR Analysis}{22}{paragraph.2.5.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {B}Appendix B}{21}{Appendix.1.B}
+\contentsline {paragraph}{\numberline {2.5.4.2}Experiment}{25}{paragraph.2.5.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {C}Appendix C}{23}{Appendix.1.C}
+\contentsline {paragraph}{\numberline {2.5.4.3}Results}{27}{paragraph.2.5.4.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {D}Appendix D}{26}{Appendix.1.D}
+\contentsline {subsubsection}{\numberline {2.5.5}RIR Locations}{28}{subsubsection.2.5.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {E}Appendix E}{32}{Appendix.1.E}
+\contentsline {subsubsection}{\numberline {2.5.6}RIR Rendering}{31}{subsubsection.2.5.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.6}File Sorting (Extra Grids)}{31}{subsection.2.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.7}RIR Calibration}{32}{subsection.2.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.7.1}Matlab}{32}{subsubsection.2.7.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.7.2}Reaper}{37}{subsubsection.2.7.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Appendices}{38}{section*.44}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A}Appendix A}{38}{Appendix.1.A}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {B}Appendix B}{41}{Appendix.1.B}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {C}Appendix C}{43}{Appendix.1.C}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {D}Appendix D}{46}{Appendix.1.D}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {E}Appendix E}{52}{Appendix.1.E}

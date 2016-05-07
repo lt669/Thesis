@@ -29,177 +29,370 @@
 \newacro{TO}[\AC@hyperlink{TO}{TO}]{Transition Order}
 \newacro{VBS}[\AC@hyperlink{VBS}{VBS}]{Vector Based Scattering Method}
 \newacro{LR's}[\AC@hyperlink{LR's}{LR's}]{Late Rays}
-\abx@aux@cite{Brereton2014}
-\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {section}{\numberline {2}Introduction}{3}{section.2}}
-\AC@undonewlabel{acro:VSS}
-\newlabel{acro:VSS}{{2}{3}{Introduction}{section*.1}{}}
-\acronymused{VSS}
-\abx@aux@cite{Huopaniemi2000}
-\abx@aux@cite{Stan2002}
-\abx@aux@cite{Smith2003}
-\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {section}{\numberline {3}Background}{5}{section.3}}
-\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Virtual Acoustic Environments}{5}{subsection.3.1}}
-\AC@undonewlabel{acro:VAE}
-\newlabel{acro:VAE}{{3.1}{5}{Virtual Acoustic Environments}{section*.2}{}}
-\acronymused{VAE}
-\acronymused{VAE}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {section}{\numberline {2}Implementation}{3}{section.2}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Room Choice}{3}{subsection.2.1}}
+\newlabel{roomChoice}{{2.1}{3}{Room Choice}{subsection.2.1}{}}
 \AC@undonewlabel{acro:RIR}
-\newlabel{acro:RIR}{{3.1}{5}{Virtual Acoustic Environments}{section*.3}{}}
-\acronymused{RIR}
-\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Room Impulse Responses}{5}{subsection.3.2}}
-\acronymused{RIR}
-\abx@aux@cite{ISO}
-\abx@aux@cite{sosAmbisonics}
-\abx@aux@cite{Power}
-\abx@aux@cite{soundfieldMic}
-\acronymused{RIR}
-\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Ambisonics}{6}{subsection.3.3}}
+\newlabel{acro:RIR}{{2.1}{3}{Room Choice}{section*.1}{}}
 \acronymused{RIR}
 \acronymused{RIR}
-\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces \textbf  {Left}: Picture of a Soundfield microphone with coincident capsules exposed. \textbf  {Right}: Soundfield microphone polar pattern. Images sourced from\nobreakspace  {}\cite {soundfieldMic} (background removed from left image) \relax }}{6}{figure.caption.4}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}User Test Planning}{3}{subsection.2.2}}
+\newlabel{Background:RIRPositions}{{2.2}{3}{User Test Planning}{subsection.2.2}{}}
+\acronymused{RIR}
+\acronymused{RIR}
+\abx@aux@cite{genelec}
+\abx@aux@cite{st450}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Real RIR Recordings}{4}{subsection.2.3}}
+\newlabel{realRIRs}{{2.3}{4}{Real RIR Recordings}{subsection.2.3}{}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.3.1}RIR Measurement Setup}{4}{subsubsection.2.3.1}}
+\AC@undonewlabel{acro:VSS}
+\newlabel{acro:VSS}{{2.3.1}{4}{RIR Measurement Setup}{section*.2}{}}
+\acronymused{VSS}
+\acronymused{RIR}
+\acronymused{RIR}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Human head topology \ac {RIR} measurement set up with a Genelec 8040B sound source placed 1m off the floor 0.6m below a Soundfield microphone used as a receiver.\relax }}{4}{figure.caption.3}}
+\acronymused{RIR}
 \providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
-\newlabel{sfMic}{{1}{6}{\textbf {Left}: Picture of a Soundfield microphone with coincident capsules exposed. \textbf {Right}: Soundfield microphone polar pattern. Images sourced from~\cite {soundfieldMic} (background removed from left image) \relax }{figure.caption.4}{}}
-\abx@aux@cite{Siltanen2010}
-\abx@aux@cite{odeon}
-\abx@aux@cite{Rindel1995}
+\newlabel{realRIRTop}{{1}{4}{Human head topology \ac {RIR} measurement set up with a Genelec 8040B sound source placed 1m off the floor 0.6m below a Soundfield microphone used as a receiver.\relax }{figure.caption.3}{}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Real \ac {RIR} measurement set up. \textbf  {(1)}: Sound source and receiver set up \textbf  {(2)}: Soundfield interface \textbf  {(3)}: Fireface UXC audio interface \textbf  {(4)}: Mac running Reaper to output sinusoidal sweep and record B-format input.\relax }}{5}{figure.caption.4}}
+\acronymused{RIR}
+\newlabel{realRIRSetup}{{2}{5}{Real \ac {RIR} measurement set up. \textbf {(1)}: Sound source and receiver set up \textbf {(2)}: Soundfield interface \textbf {(3)}: Fireface UXC audio interface \textbf {(4)}: Mac running Reaper to output sinusoidal sweep and record B-format input.\relax }{figure.caption.4}{}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.3.2}Positions}{5}{subsubsection.2.3.2}}
+\acronymused{RIR}
+\abx@aux@cite{sineSweep}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Google SketchUp model showing the positions of where the real \ac {RIR}'s were taken\relax }}{6}{figure.caption.5}}
+\acronymused{RIR}
+\newlabel{rirPositions}{{3}{6}{Google SketchUp model showing the positions of where the real \ac {RIR}'s were taken\relax }{figure.caption.5}{}}
+\acronymused{RIR}
+\acronymused{VSS}
+\acronymused{RIR}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.3.3}Measurements}{6}{subsubsection.2.3.3}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.3.4}RIR Analysis}{6}{subsubsection.2.3.4}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.3.5}Issues}{7}{subsubsection.2.3.5}}
+\acronymused{RIR}
+\acronymused{RIR}
+\abx@aux@cite{dewalt}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {2.4}Room Modelling}{8}{subsection.2.4}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.4.1}Room Measurements}{8}{subsubsection.2.4.1}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.4.2}Designing the room}{8}{subsubsection.2.4.2}}
+\newlabel{designRoom}{{2.4.2}{8}{Designing the room}{subsubsection.2.4.2}{}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Early iteration of the Hendrix Hall SketchUp model with a few early wall protrusions being modelled such as the entrance door\relax }}{8}{figure.caption.6}}
+\newlabel{sku1}{{4}{8}{Early iteration of the Hendrix Hall SketchUp model with a few early wall protrusions being modelled such as the entrance door\relax }{figure.caption.6}{}}
 \abx@aux@cite{odeonManual}
-\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {3.4}Software Overview}{7}{subsection.3.4}}
-\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.4.1}ODEON: Simulating Room Acoustics}{7}{subsubsection.3.4.1}}
-\newlabel{Software:Odeon}{{3.4.1}{7}{ODEON: Simulating Room Acoustics}{subsubsection.3.4.1}{}}
-\acronymused{RIR}
-\acronymused{RIR}
-\acronymused{RIR}
-\AC@undonewlabel{acro:ISM}
-\newlabel{acro:ISM}{{3.4.1}{7}{ODEON: Simulating Room Acoustics}{section*.5}{}}
-\acronymused{ISM}
-\acronymused{RIR}
-\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {paragraph}{\numberline {3.4.1.1}Ray-Tracing}{7}{paragraph.3.4.1.1}}
-\newlabel{rayTracing}{{3.4.1.1}{7}{Ray-Tracing}{paragraph.3.4.1.1}{}}
-\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Illustration of the ray-tracing method (by the author) showing a sound source (black) emitting three rays (R1, R2 and R3) and shows how each ray is attenuated by a factor of $(1-\alpha $ each time it is reflected from a wall. The red dot represents the receiver positions and the outlining gray circle represents the area in which rays need to pass through to be used in the \ac {RIR} calculation.\relax }}{8}{figure.caption.6}}
-\acronymused{RIR}
-\newlabel{rayTracingImage}{{2}{8}{Illustration of the ray-tracing method (by the author) showing a sound source (black) emitting three rays (R1, R2 and R3) and shows how each ray is attenuated by a factor of $(1-\alpha $ each time it is reflected from a wall. The red dot represents the receiver positions and the outlining gray circle represents the area in which rays need to pass through to be used in the \ac {RIR} calculation.\relax }{figure.caption.6}{}}
-\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {paragraph}{\numberline {3.4.1.2}Image Source Method}{8}{paragraph.3.4.1.2}}
-\acronymused{ISM}
-\acronymused{RIR}
-\acronymused{ISM}
-\acronymused{RIR}
-\acronymused{ISM}
-\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Illustration of the image source method (by the author) showing how the reflection from the sound source to the receiver is modelled by a secondary sound source.\relax }}{9}{figure.caption.7}}
-\newlabel{ISMPic}{{3}{9}{Illustration of the image source method (by the author) showing how the reflection from the sound source to the receiver is modelled by a secondary sound source.\relax }{figure.caption.7}{}}
-\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {paragraph}{\numberline {3.4.1.3}Hybrid Method}{9}{paragraph.3.4.1.3}}
-\acronymused{ISM}
-\acronymused{ISM}
-\AC@undonewlabel{acro:TO}
-\newlabel{acro:TO}{{3.4.1.3}{9}{Hybrid Method}{section*.8}{}}
-\acronymused{TO}
-\acronymused{TO}
-\abx@aux@cite{SKU}
-\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {paragraph}{\numberline {3.4.1.4}Scattering}{10}{paragraph.3.4.1.4}}
-\newlabel{background:scattering}{{3.4.1.4}{10}{Scattering}{paragraph.3.4.1.4}{}}
-\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Annotated image from the Odeon manual \cite {odeonManual} showing how scattered reflections are calculated, where a = the specular reflection, b = randomly scattered vector.\relax }}{10}{figure.caption.9}}
-\newlabel{odeonScatterImage}{{4}{10}{Annotated image from the Odeon manual \cite {odeonManual} showing how scattered reflections are calculated, where a = the specular reflection, b = randomly scattered vector.\relax }{figure.caption.9}{}}
-\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {paragraph}{\numberline {3.4.1.5}Room Modelling}{10}{paragraph.3.4.1.5}}
-\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {paragraph}{\numberline {3.4.1.6}Material Selection}{10}{paragraph.3.4.1.6}}
-\acronymused{VAE}
-\acronymused{RIR}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Initial models of the lights and projector hangings made of a large number of surfaces\relax }}{9}{figure.caption.7}}
+\newlabel{surfaces}{{5}{9}{Initial models of the lights and projector hangings made of a large number of surfaces\relax }{figure.caption.7}{}}
 \abx@aux@cite{SU2Odeon}
-\abx@aux@cite{max}
-\abx@aux@cite{spat}
-\abx@aux@cite{oculus}
-\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.4.2}Google SketchUp}{11}{subsubsection.3.4.2}}
-\newlabel{GSU}{{3.4.2}{11}{Google SketchUp}{subsubsection.3.4.2}{}}
-\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.4.3}Max/MSP}{11}{subsubsection.3.4.3}}
-\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {3.5}Project Description}{11}{subsection.3.5}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Simplified models of the lights and projector hangings containing a smaller number of surfaces\relax }}{10}{figure.caption.8}}
+\newlabel{simpleSurfaces}{{6}{10}{Simplified models of the lights and projector hangings containing a smaller number of surfaces\relax }{figure.caption.8}{}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {2.5}ODEON}{10}{subsection.2.5}}
+\newlabel{odeon}{{2.5}{10}{ODEON}{subsection.2.5}{}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.5.1}Water Tightness Test}{10}{subsubsection.2.5.1}}
+\abx@aux@cite{plastic}
+\abx@aux@cite{mineralFibre}
+\abx@aux@cite{Kovalchik}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Hendrix Hall model undergoing a water tightness test in Odeon.\relax }}{11}{figure.caption.10}}
+\newlabel{watertight}{{8}{11}{Hendrix Hall model undergoing a water tightness test in Odeon.\relax }{figure.caption.10}{}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.5.2}Material Selection}{11}{subsubsection.2.5.2}}
+\newlabel{odeon:materials}{{2.5.2}{11}{Material Selection}{subsubsection.2.5.2}{}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {paragraph}{\numberline {2.5.2.1}Initial Materials}{11}{paragraph.2.5.2.1}}
+\@writefile{lot}{\defcounter {refsection}{0}\relax }\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Table of materials for which absorption coefficients were sought and added to Odeon's material list.\relax }}{12}{table.caption.11}}
+\newlabel{materialTable}{{1}{12}{Table of materials for which absorption coefficients were sought and added to Odeon's material list.\relax }{table.caption.11}{}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Absorption coefficient editing window in Odeon used to add unavailable materials.\relax }}{12}{figure.caption.12}}
+\newlabel{materialEdit}{{9}{12}{Absorption coefficient editing window in Odeon used to add unavailable materials.\relax }{figure.caption.12}{}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {paragraph}{\numberline {2.5.2.2}Surface Types}{12}{paragraph.2.5.2.2}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Contracted seating in Hendrix Hall showing gaps in the structure.\relax }}{13}{figure.caption.13}}
+\newlabel{seating}{{10}{13}{Contracted seating in Hendrix Hall showing gaps in the structure.\relax }{figure.caption.13}{}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces Blue circle highlights a ray penetrating the modelled seating area, reflecting 3 times and escaping the seating area due to the transparency value set.\relax }}{13}{figure.caption.14}}
+\newlabel{transparency}{{11}{13}{Blue circle highlights a ray penetrating the modelled seating area, reflecting 3 times and escaping the seating area due to the transparency value set.\relax }{figure.caption.14}{}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces A table provided in the Odeon Manual \cite {odeonManual} that can be used to set an approximate scattering coefficient for surfaces similar to those described\relax }}{14}{figure.caption.15}}
+\newlabel{odeonTable}{{12}{14}{A table provided in the Odeon Manual \cite {odeonManual} that can be used to set an approximate scattering coefficient for surfaces similar to those described\relax }{figure.caption.15}{}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {paragraph}{\numberline {2.5.2.3}RIR Comparison}{14}{paragraph.2.5.2.3}}
+\acronymused{RIR}
+\acronymused{RIR}
+\acronymused{RIR}
+\acronymused{RIR}
+\acronymused{RIR}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {13}{\ignorespaces Spectrograms of real \ac {RIR} (top) against spectrogram of first rendered \ac {RIR} from Odeon.\relax }}{14}{figure.caption.16}}
+\acronymused{RIR}
+\acronymused{RIR}
+\newlabel{compareOriginal}{{13}{14}{Spectrograms of real \ac {RIR} (top) against spectrogram of first rendered \ac {RIR} from Odeon.\relax }{figure.caption.16}{}}
+\acronymused{RIR}
+\acronymused{RIR}
+\acronymused{RIR}
+\acronymused{RIR}
+\acronymused{RIR}
+\@writefile{lot}{\defcounter {refsection}{0}\relax }\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces List of audio samples with corresponding spectrogram title in figure\nobreakspace  {}\ref  {compareAll} and the edits made for each one.\relax }}{15}{table.caption.17}}
+\newlabel{materialTable}{{2}{15}{List of audio samples with corresponding spectrogram title in figure~\ref {compareAll} and the edits made for each one.\relax }{table.caption.17}{}}
+\acronymused{RIR}
+\acronymused{RIR}
+\acronymused{RIR}
+\acronymused{RIR}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {14}{\ignorespaces Spectrograms of real \ac {RIR} (top) against spectrogram of several rendered \ac {RIR} from Odeon with different material absorption coefficients where ODEON (bottom) shows the final \ac {RIR} used.\relax }}{16}{figure.caption.18}}
+\acronymused{RIR}
+\acronymused{RIR}
+\acronymused{RIR}
+\newlabel{compareAll}{{14}{16}{Spectrograms of real \ac {RIR} (top) against spectrogram of several rendered \ac {RIR} from Odeon with different material absorption coefficients where ODEON (bottom) shows the final \ac {RIR} used.\relax }{figure.caption.18}{}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {15}{\ignorespaces Spectrograms of real \ac {RIR} (top) against Odeon \ac {RIR} from Odeon with final material absorption coefficients.\relax }}{16}{figure.caption.19}}
+\acronymused{RIR}
+\acronymused{RIR}
+\newlabel{compareNew}{{15}{16}{Spectrograms of real \ac {RIR} (top) against Odeon \ac {RIR} from Odeon with final material absorption coefficients.\relax }{figure.caption.19}{}}
+\acronymused{RIR}
+\acronymused{RIR}
+\acronymused{RIR}
+\acronymused{RIR}
+\acronymused{RIR}
+\acronymused{RIR}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {16}{\ignorespaces Spectrograms of correct Odeon \ac {RIR}'s with original materials (top) and final materials (center) to compare against real RIR that has been level calibrated (bottom).\relax }}{17}{figure.caption.20}}
+\acronymused{RIR}
+\newlabel{compareCorrect}{{16}{17}{Spectrograms of correct Odeon \ac {RIR}'s with original materials (top) and final materials (center) to compare against real RIR that has been level calibrated (bottom).\relax }{figure.caption.20}{}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {paragraph}{\numberline {2.5.2.4}Final Material Choice}{17}{paragraph.2.5.2.4}}
+\acronymused{RIR}
+\acronymused{RIR}
+\acronymused{RIR}
+\acronymused{RIR}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.5.3}Odeon Output Settings}{18}{subsubsection.2.5.3}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {paragraph}{\numberline {2.5.3.1}Ray Settings}{18}{paragraph.2.5.3.1}}
+\acronymused{RIR}
+\AC@undonewlabel{acro:VBS}
+\newlabel{acro:VBS}{{2.5.3.1}{18}{Ray Settings}{section*.21}{}}
+\acronymused{VBS}
+\AC@undonewlabel{acro:TO}
+\newlabel{acro:TO}{{2.5.3.1}{18}{Ray Settings}{section*.22}{}}
+\acronymused{TO}
+\AC@undonewlabel{acro:ISM}
+\newlabel{acro:ISM}{{2.5.3.1}{18}{Ray Settings}{section*.23}{}}
+\acronymused{ISM}
+\AC@undonewlabel{acro:LR's}
+\newlabel{acro:LR's}{{2.5.3.1}{18}{Ray Settings}{section*.24}{}}
+\acronymused{LR's}
+\acronymused{TO}
+\acronymused{LR's}
+\acronymused{TO}
+\acronymused{LR's}
+\acronymused{RIR}
+\acronymused{RIR}
+\acronymused{RIR}
+\acronymused{TO}
+\acronymused{LR's}
+\acronymused{TO}
+\acronymused{LR's}
+\acronymused{RIR}
+\acronymused{RIR}
+\acronymused{TO}
+\acronymused{LR's}
+\@writefile{lot}{\defcounter {refsection}{0}\relax }\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Table of audio samples with the corresponding settings information and graph name\relax }}{19}{table.caption.25}}
+\newlabel{odeonSettingsTable}{{3}{19}{Table of audio samples with the corresponding settings information and graph name\relax }{table.caption.25}{}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {17}{\ignorespaces \ac {RIR}'s rendered using different \ac {TO} and late ray values\relax }}{19}{figure.caption.26}}
+\acronymused{RIR}
+\acronymused{TO}
+\newlabel{odeonSettingsRIR}{{17}{19}{\ac {RIR}'s rendered using different \ac {TO} and late ray values\relax }{figure.caption.26}{}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {18}{\ignorespaces Zoomed in section indicated by the red dashed line in figure\nobreakspace  {}\ref  {odeonSettingsRIR}\relax }}{20}{figure.caption.27}}
+\newlabel{odeonSettingsRIRZoomed}{{18}{20}{Zoomed in section indicated by the red dashed line in figure~\ref {odeonSettingsRIR}\relax }{figure.caption.27}{}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {19}{\ignorespaces Zoomed in section showing the effects of using a high \ac {TO} value\relax }}{20}{figure.caption.28}}
+\acronymused{TO}
+\newlabel{odeonSettings_TOZoomed}{{19}{20}{Zoomed in section showing the effects of using a high \ac {TO} value\relax }{figure.caption.28}{}}
+\acronymused{LR's}
+\acronymused{LR's}
+\acronymused{RIR}
+\acronymused{RIR}
+\acronymused{RIR}
+\acronymused{RIR}
+\acronymused{LR's}
+\acronymused{RIR}
+\acronymused{TO}
+\acronymused{RIR}
+\acronymused{TO}
+\acronymused{TO}
+\acronymused{ISM}
+\acronymused{TO}
+\acronymused{RIR}
+\acronymused{RIR}
+\acronymused{RIR}
+\acronymused{RIR}
+\acronymused{RIR}
+\acronymused{TO}
+\acronymused{TO}
+\acronymused{TO}
+\acronymused{RIR}
+\acronymused{LR's}
+\acronymused{RIR}
+\acronymused{LR's}
 \acronymused{VSS}
-\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.5.1}The Virtual Singing Studio}{11}{subsubsection.3.5.1}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {paragraph}{\numberline {2.5.3.2}Directivity}{21}{paragraph.2.5.3.2}}
+\abx@aux@cite{Monson2012b}
+\abx@aux@cite{calum}
+\acronymused{RIR}
+\acronymused{RIR}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {20}{\ignorespaces Directivity pattern editor window in Odeon showing the directivity pattern for the horizontal plane (left) and the vertical plane (right) for the 8Khz octave band using data from \cite {calum}\relax }}{22}{figure.caption.29}}
+\newlabel{directivity}{{20}{22}{Directivity pattern editor window in Odeon showing the directivity pattern for the horizontal plane (left) and the vertical plane (right) for the 8Khz octave band using data from \cite {calum}\relax }{figure.caption.29}{}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.5.4}RIR Topology Problems}{22}{subsubsection.2.5.4}}
+\newlabel{odeonError}{{2.5.4}{22}{RIR Topology Problems}{subsubsection.2.5.4}{}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {paragraph}{\numberline {2.5.4.1}RIR Analysis}{22}{paragraph.2.5.4.1}}
+\acronymused{RIR}
+\acronymused{RIR}
+\acronymused{RIR}
+\acronymused{RIR}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {21}{\ignorespaces Initial \ac {RIR} output with receiver 5cm above sound source showing \ac {RIR}'s from grid positions 76, 77 and 83 shown in figure\nobreakspace  {}\ref  {bulkRIRs}\relax }}{23}{figure.caption.30}}
+\acronymused{RIR}
+\acronymused{RIR}
+\newlabel{incorrectRIR}{{21}{23}{Initial \ac {RIR} output with receiver 5cm above sound source showing \ac {RIR}'s from grid positions 76, 77 and 83 shown in figure~\ref {bulkRIRs}\relax }{figure.caption.30}{}}
+\acronymused{RIR}
+\acronymused{RIR}
+\acronymused{RIR}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {22}{\ignorespaces Initial \ac {RIR} output with receiver 5cm above sound source from grid position 76\relax }}{24}{figure.caption.31}}
+\acronymused{RIR}
+\newlabel{incorrectRIR_76}{{22}{24}{Initial \ac {RIR} output with receiver 5cm above sound source from grid position 76\relax }{figure.caption.31}{}}
+\acronymused{RIR}
+\acronymused{RIR}
+\newlabel{distance}{{1}{24}{RIR Analysis}{equation.2.1}{}}
+\abx@aux@cite{odeonEmail}
+\acronymused{RIR}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {paragraph}{\numberline {2.5.4.2}Experiment}{25}{paragraph.2.5.4.2}}
+\acronymused{RIR}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {23}{\ignorespaces Plots of \ac {RIR}'s produced with the receiver placed at varying distances from the source, indicated by the title of each plot where \textbf  {(1)}: 5cm \textbf  {(2)}: 15cm \textbf  {(3)}: 30cm \textbf  {(4)}: 50cm \textbf  {(5)}: 60cm \textbf  {(6)}: 70cm\relax }}{26}{figure.caption.32}}
+\acronymused{RIR}
+\newlabel{HeightTest}{{23}{26}{Plots of \ac {RIR}'s produced with the receiver placed at varying distances from the source, indicated by the title of each plot where \textbf {(1)}: 5cm \textbf {(2)}: 15cm \textbf {(3)}: 30cm \textbf {(4)}: 50cm \textbf {(5)}: 60cm \textbf {(6)}: 70cm\relax }{figure.caption.32}{}}
+\acronymused{RIR}
+\acronymused{RIR}
+\acronymused{RIR}
+\acronymused{RIR}
+\acronymused{RIR}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {paragraph}{\numberline {2.5.4.3}Results}{27}{paragraph.2.5.4.3}}
+\newlabel{odeon:results}{{2.5.4.3}{27}{Results}{paragraph.2.5.4.3}{}}
+\acronymused{RIR}
+\acronymused{RIR}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {24}{\ignorespaces \ac {RIR} produced when the receiver is places 60cm above the source.\relax }}{27}{figure.caption.33}}
+\acronymused{RIR}
+\newlabel{60cm}{{24}{27}{\ac {RIR} produced when the receiver is places 60cm above the source.\relax }{figure.caption.33}{}}
+\acronymused{RIR}
+\acronymused{RIR}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {25}{\ignorespaces Illustration of the two early reflection paths due to the floor and left side wall when the receiver is placed 60cm above the source.\relax }}{28}{figure.caption.34}}
+\newlabel{reflectionPaths}{{25}{28}{Illustration of the two early reflection paths due to the floor and left side wall when the receiver is placed 60cm above the source.\relax }{figure.caption.34}{}}
+\acronymused{RIR}
+\acronymused{RIR}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.5.5}RIR Locations}{28}{subsubsection.2.5.5}}
+\newlabel{rirlocations}{{2.5.5}{28}{RIR Locations}{subsubsection.2.5.5}{}}
+\acronymused{RIR}
+\acronymused{RIR}
+\acronymused{VSS}
 \acronymused{VSS}
 \acronymused{RIR}
-\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Flow diagram of the VSS showing how the audio signal and head tracking signal form the performer are used in Max before the convolved audio signal is sent back out to the speaker array.\relax }}{12}{figure.caption.10}}
-\newlabel{vssDiagram}{{5}{12}{Flow diagram of the VSS showing how the audio signal and head tracking signal form the performer are used in Max before the convolved audio signal is sent back out to the speaker array.\relax }{figure.caption.10}{}}
-\acronymused{VAE}
-\acronymused{VSS}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {26}{\ignorespaces Top down view of the Hendrix Hall model indicating the \ac {RIR} positions that are invalid due to being too close to a surface (U, V, W and Z), where other \ac {RIR}'s that are valid are not included as it would cause inconsistency (X and Y)\relax }}{29}{figure.caption.35}}
 \acronymused{RIR}
 \acronymused{RIR}
-\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.5.2}Project Aim and Motivation}{12}{subsubsection.3.5.2}}
-\acronymused{VSS}
-\acronymused{RIR}
-\acronymused{RIR}
-\acronymused{VSS}
-\acronymused{RIR}
-\acronymused{RIR}
-\abx@aux@cite{Savioja1999}
-\acronymused{VSS}
-\acronymused{VAE}
-\acronymused{VAE}
-\acronymused{RIR}
-\acronymused{RIR}
-\acronymused{RIR}
-\acronymused{RIR}
-\acronymused{VAE}
-\acronymused{RIR}
-\acronymused{RIR}
-\acronymused{RIR}
-\acronymused{RIR}
-\acronymused{VSS}
+\newlabel{incorrectRIRPositions}{{26}{29}{Top down view of the Hendrix Hall model indicating the \ac {RIR} positions that are invalid due to being too close to a surface (U, V, W and Z), where other \ac {RIR}'s that are valid are not included as it would cause inconsistency (X and Y)\relax }{figure.caption.35}{}}
 \acronymused{RIR}
 \acronymused{RIR}
 \acronymused{RIR}
 \acronymused{RIR}
 \acronymused{RIR}
-\acronymused{VAE}
-\acronymused{VAE}
-\acronymused{VAE}
-\acronymused{VAE}
-\acronymused{VSS}
 \acronymused{RIR}
-\acronymused{VAE}
-\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Flow diagram of the way in which the desired extended version VSS works\relax }}{14}{figure.caption.11}}
-\newlabel{vssExtention}{{6}{14}{Flow diagram of the way in which the desired extended version VSS works\relax }{figure.caption.11}{}}
-\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.5.3}Project Objectives}{14}{subsubsection.3.5.3}}
-\acronymused{VAE}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {27}{\ignorespaces Top down view of the Hendrix Hall model showing the maximum available \ac {RIR} locations\relax }}{30}{figure.caption.36}}
+\acronymused{RIR}
+\newlabel{bulkRIRs}{{27}{30}{Top down view of the Hendrix Hall model showing the maximum available \ac {RIR} locations\relax }{figure.caption.36}{}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.5.6}RIR Rendering}{31}{subsubsection.2.5.6}}
 \acronymused{RIR}
 \acronymused{RIR}
 \acronymused{RIR}
 \acronymused{RIR}
 \acronymused{RIR}
-\acronymused{VAE}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {28}{\ignorespaces Source and receiver pairing window in Odeon\relax }}{31}{figure.caption.37}}
+\newlabel{SouRecPos}{{28}{31}{Source and receiver pairing window in Odeon\relax }{figure.caption.37}{}}
 \acronymused{RIR}
-\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.5.4}Project Overview}{15}{subsubsection.3.5.4}}
-\acronymused{VAE}
-\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.5.5}Room Choice}{15}{subsubsection.3.5.5}}
 \acronymused{RIR}
-\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.5.6}User Test Planning}{16}{subsubsection.3.5.6}}
-\newlabel{Background:RIRPositions}{{3.5.6}{16}{User Test Planning}{subsubsection.3.5.6}{}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {2.6}File Sorting (Extra Grids)}{31}{subsection.2.6}}
+\newlabel{odeon:grids}{{2.6}{31}{File Sorting (Extra Grids)}{subsection.2.6}{}}
 \acronymused{RIR}
-\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {section}{Appendices}{17}{section*.12}}
-\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {section}{\numberline {A}Appendix A}{17}{Appendix.1.A}}
-\newlabel{appendixA}{{A}{17}{Appendix A}{Appendix.1.A}{}}
-\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Annotated blueprint of Hendrix Hall from a birds-eye view\relax }}{17}{figure.caption.13}}
-\newlabel{blueprintTop}{{7}{17}{Annotated blueprint of Hendrix Hall from a birds-eye view\relax }{figure.caption.13}{}}
-\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Real Vs SKU Roof\relax }}{18}{figure.caption.14}}
-\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Real Vs SKU Seating Area\relax }}{19}{figure.caption.15}}
-\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Real Vs SKU Door\relax }}{20}{figure.caption.16}}
-\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {section}{\numberline {B}Appendix B}{21}{Appendix.1.B}}
-\newlabel{appendixB}{{B}{21}{Appendix B}{Appendix.1.B}{}}
-\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces \ac {RIR} grid with 2m separation\relax }}{21}{figure.caption.17}}
 \acronymused{RIR}
-\newlabel{2m}{{11}{21}{\ac {RIR} grid with 2m separation\relax }{figure.caption.17}{}}
-\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces \ac {RIR} grid with 3m separation\relax }}{21}{figure.caption.18}}
 \acronymused{RIR}
-\newlabel{3m}{{12}{21}{\ac {RIR} grid with 3m separation\relax }{figure.caption.18}{}}
-\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {13}{\ignorespaces \ac {RIR} grid with 4m separation\relax }}{21}{figure.caption.19}}
 \acronymused{RIR}
-\newlabel{4m}{{13}{21}{\ac {RIR} grid with 4m separation\relax }{figure.caption.19}{}}
-\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {14}{\ignorespaces \ac {RIR} grid with 5m separation\relax }}{21}{figure.caption.20}}
 \acronymused{RIR}
-\newlabel{5m}{{14}{21}{\ac {RIR} grid with 5m separation\relax }{figure.caption.20}{}}
-\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {section}{\numberline {C}Appendix C}{23}{Appendix.1.C}}
-\newlabel{appendixC}{{C}{23}{Appendix C}{Appendix.1.C}{}}
-\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {15}{\ignorespaces Overview of the individual panning algorithms used in iteration 1.\relax }}{23}{figure.caption.21}}
-\newlabel{iteration1PanningCombined}{{15}{23}{Overview of the individual panning algorithms used in iteration 1.\relax }{figure.caption.21}{}}
-\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {section}{\numberline {D}Appendix D}{26}{Appendix.1.D}}
-\newlabel{appendixD}{{D}{26}{Appendix D}{Appendix.1.D}{}}
-\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {section}{\numberline {E}Appendix E}{32}{Appendix.1.E}}
-\newlabel{appendixE}{{E}{32}{Appendix E}{Appendix.1.E}{}}
-\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {16}{\ignorespaces Initial Gantt chart showing the approximate time allocated to each of the tasks required to complete the project. The red line shows the time at which the Gantt chart was abandoned for a more appropriate planning method\relax }}{33}{figure.caption.22}}
-\newlabel{gantt}{{16}{33}{Initial Gantt chart showing the approximate time allocated to each of the tasks required to complete the project. The red line shows the time at which the Gantt chart was abandoned for a more appropriate planning method\relax }{figure.caption.22}{}}
+\abx@aux@cite{singingSample}
+\acronymused{RIR}
+\acronymused{RIR}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {2.7}RIR Calibration}{32}{subsection.2.7}}
+\acronymused{RIR}
+\acronymused{RIR}
+\acronymused{RIR}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.7.1}Matlab}{32}{subsubsection.2.7.1}}
+\AC@undonewlabel{acro:RIRs}
+\newlabel{acro:RIRs}{{2.7.1}{32}{Matlab}{section*.38}{}}
+\acronymused{RIRs}
+\acronymused{RIRs}
+\acronymused{RIR}
+\acronymused{RIR}
+\acronymused{RIR}
+\acronymused{RIR}
+\acronymused{RIR}
+\acronymused{RIR}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {29}{\ignorespaces Plots of the original real \ac {RIR} (top), the synthetic \ac {RIR} (centre) and the calibrated real \ac {RIR} (bottom) using the multiplier calculated using the RMS ratio value showing that the peaks of the calibrated \ac {RIR} sit approximately within the same range as the synthetic \ac {RIR}\relax }}{33}{figure.caption.39}}
+\acronymused{RIR}
+\acronymused{RIR}
+\acronymused{RIR}
+\acronymused{RIR}
+\acronymused{RIR}
+\newlabel{calRMS}{{29}{33}{Plots of the original real \ac {RIR} (top), the synthetic \ac {RIR} (centre) and the calibrated real \ac {RIR} (bottom) using the multiplier calculated using the RMS ratio value showing that the peaks of the calibrated \ac {RIR} sit approximately within the same range as the synthetic \ac {RIR}\relax }{figure.caption.39}{}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {30}{\ignorespaces Plots of the synthetic \ac {RIR} (top) and the RMS calibrated real \ac {RIR} (bottom) convolved with an anechoic audio sample showing that the speaks of the calibrated \ac {RIR} convolved sample sit approximately in the range double that of the synthetic \ac {RIR} convolved sample, thus is perceived as louder.\relax }}{34}{figure.caption.40}}
+\acronymused{RIR}
+\acronymused{RIR}
+\acronymused{RIR}
+\acronymused{RIR}
+\newlabel{calRMSsing}{{30}{34}{Plots of the synthetic \ac {RIR} (top) and the RMS calibrated real \ac {RIR} (bottom) convolved with an anechoic audio sample showing that the speaks of the calibrated \ac {RIR} convolved sample sit approximately in the range double that of the synthetic \ac {RIR} convolved sample, thus is perceived as louder.\relax }{figure.caption.40}{}}
+\acronymused{RIR}
+\acronymused{RIR}
+\acronymused{RIR}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {31}{\ignorespaces Plots of the original real \ac {RIR} (top), the synthetic \ac {RIR} (centre) and the \textit  {manually} calibrated real \ac {RIR} (bottom) showing that the peaks of the manually calibrated \ac {RIR} sit within half of the range of the synthetic \ac {RIR}.\relax }}{35}{figure.caption.41}}
+\acronymused{RIR}
+\acronymused{RIR}
+\acronymused{RIR}
+\acronymused{RIR}
+\acronymused{RIR}
+\newlabel{calMan}{{31}{35}{Plots of the original real \ac {RIR} (top), the synthetic \ac {RIR} (centre) and the \textit {manually} calibrated real \ac {RIR} (bottom) showing that the peaks of the manually calibrated \ac {RIR} sit within half of the range of the synthetic \ac {RIR}.\relax }{figure.caption.41}{}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {32}{\ignorespaces Plots of the synthetic \ac {RIR} (top) and the RMS calibrated rel \ac {RIR} (bottom) convolved with an anechoic audio sample showing that the speaks of the calibrated \ac {RIR} convolved sample sit approximately in the range double that of the synthetic \ac {RIR} convolved sample.\relax }}{36}{figure.caption.42}}
+\acronymused{RIR}
+\acronymused{RIR}
+\acronymused{RIR}
+\acronymused{RIR}
+\newlabel{calMansing}{{32}{36}{Plots of the synthetic \ac {RIR} (top) and the RMS calibrated rel \ac {RIR} (bottom) convolved with an anechoic audio sample showing that the speaks of the calibrated \ac {RIR} convolved sample sit approximately in the range double that of the synthetic \ac {RIR} convolved sample.\relax }{figure.caption.42}{}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {33}{\ignorespaces Reverb tail of the audio sample convolved with the manually calibrated \ac {RIR} showing a pulse like pattern.\relax }}{37}{figure.caption.43}}
+\acronymused{RIR}
+\newlabel{pulse}{{33}{37}{Reverb tail of the audio sample convolved with the manually calibrated \ac {RIR} showing a pulse like pattern.\relax }{figure.caption.43}{}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.7.2}Reaper}{37}{subsubsection.2.7.2}}
+\acronymused{RIR}
+\acronymused{RIR}
+\acronymused{RIR}
+\acronymused{RIR}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {section}{Appendices}{38}{section*.44}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {section}{\numberline {A}Appendix A}{38}{Appendix.1.A}}
+\newlabel{appendixA}{{A}{38}{Appendix A}{Appendix.1.A}{}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {35}{\ignorespaces Real Vs SKU Roof\relax }}{38}{figure.caption.46}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {36}{\ignorespaces Real Vs SKU Seating Area\relax }}{39}{figure.caption.47}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {37}{\ignorespaces Real Vs SKU Door\relax }}{40}{figure.caption.48}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {section}{\numberline {B}Appendix B}{41}{Appendix.1.B}}
+\newlabel{appendixB}{{B}{41}{Appendix B}{Appendix.1.B}{}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {38}{\ignorespaces \ac {RIR} grid with 2m separation\relax }}{41}{figure.caption.49}}
+\acronymused{RIR}
+\newlabel{2m}{{38}{41}{\ac {RIR} grid with 2m separation\relax }{figure.caption.49}{}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {39}{\ignorespaces \ac {RIR} grid with 3m separation\relax }}{41}{figure.caption.50}}
+\acronymused{RIR}
+\newlabel{3m}{{39}{41}{\ac {RIR} grid with 3m separation\relax }{figure.caption.50}{}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {40}{\ignorespaces \ac {RIR} grid with 4m separation\relax }}{41}{figure.caption.51}}
+\acronymused{RIR}
+\newlabel{4m}{{40}{41}{\ac {RIR} grid with 4m separation\relax }{figure.caption.51}{}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {41}{\ignorespaces \ac {RIR} grid with 5m separation\relax }}{41}{figure.caption.52}}
+\acronymused{RIR}
+\newlabel{5m}{{41}{41}{\ac {RIR} grid with 5m separation\relax }{figure.caption.52}{}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {section}{\numberline {C}Appendix C}{43}{Appendix.1.C}}
+\newlabel{appendixC}{{C}{43}{Appendix C}{Appendix.1.C}{}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {42}{\ignorespaces Overview of the individual panning algorithms used in iteration 1.\relax }}{43}{figure.caption.53}}
+\newlabel{iteration1PanningCombined}{{42}{43}{Overview of the individual panning algorithms used in iteration 1.\relax }{figure.caption.53}{}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {section}{\numberline {D}Appendix D}{46}{Appendix.1.D}}
+\newlabel{appendixD}{{D}{46}{Appendix D}{Appendix.1.D}{}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {section}{\numberline {E}Appendix E}{52}{Appendix.1.E}}
+\newlabel{appendixE}{{E}{52}{Appendix E}{Appendix.1.E}{}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Comparison of the final simplified model and a picture of the real Hendrix Hall\relax }}{53}{figure.caption.9}}
+\newlabel{simpleSurfacesRoom}{{7}{53}{Comparison of the final simplified model and a picture of the real Hendrix Hall\relax }{figure.caption.9}{}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {34}{\ignorespaces Annotated blueprint of Hendrix Hall from a birds-eye view\relax }}{54}{figure.caption.45}}
+\newlabel{blueprintTop}{{34}{54}{Annotated blueprint of Hendrix Hall from a birds-eye view\relax }{figure.caption.45}{}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {43}{\ignorespaces Initial Gantt chart showing the approximate time allocated to each of the tasks required to complete the project. The red line shows the time at which the Gantt chart was abandoned for a more appropriate planning method\relax }}{55}{figure.caption.54}}
+\newlabel{gantt}{{43}{55}{Initial Gantt chart showing the approximate time allocated to each of the tasks required to complete the project. The red line shows the time at which the Gantt chart was abandoned for a more appropriate planning method\relax }{figure.caption.54}{}}

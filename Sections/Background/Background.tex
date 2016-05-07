@@ -85,13 +85,13 @@
 		\label{Software:Odeon}
 
 			%The techniques listen here are not used in this project and do not need to be fully understood. However they are mentioned for completeness and the use of them was considered at the start of the project and could be used in future work.
-			Methods for physically measuring \ac{RIR}'s within rooms has been discussed, however there is also a way to synthesis \ac{RIR}'s by mathematical modelling the way in which sound interacts with a room. The two ways of doing this are described as \textbf{Wave-based Methods} and \textbf{Geometrical Acoustic Methods}.
+			Methods for physically measuring \ac{RIR}'s within rooms has been discussed, however there is also a way to synthesis \ac{RIR}'s by mathematical modelling the way in which sound interacts with a room. The two methods of doing so are described as \textbf{Wave-based Methods} and \textbf{Geometrical Acoustic Methods}.
 
 			\textbf{Note: The next paragraph on wave-based methods is adapted from the initially submitted literature review and is not required for the understanding of this project. However, it is provided here as the initial project plan included the use of such methods and is therefore mention later in this section}
 
 			Wave-based methods are based on solving the wave equation, producing a solution that is physically correct and can be used to accurately model how a sound would propagate from a source in a room and reflect \cite{Siltanen2010}. However, accurately calculating the way in which a wave moves through and interacts with a room is computationally expensive making them impractical for real time simulations.
 
-			Instead, it is possible synthesis \ac{RIR}'s by using room acoustic simulation software such as Odeon \cite{odeon} that utilises the much quicker geometrical methods. Odeon was designed to provide reliable predictions of room acoustics by using a hybrid of two geometric acoustic modelling methods: \textbf{ray-tracing} and the \textbf{\ac{ISM}} to synthesis \ac{RIR}'s. These methods model how sound would propagate and interact with a room as though it were a straight line (ray). This inherently neglects wave phenomena such as phase and diffraction, properties that are negligible at high frequencies, however they are fundamental in describing low frequency wave behaviour \cite{Siltanen2010}. Therefore geometrical methods are not accurate at modelling sound propagation for low frequency waves, however they provide a good approximation for most applications.
+			Instead, it is possible synthesis \ac{RIR}'s by using room acoustic simulation software such as Odeon \cite{odeon} that utilises the much quicker geometrical methods. Odeon was designed to provide reliable predictions of room acoustics by using a hybrid of two geometric acoustic modelling methods: \textbf{ray-tracing} and the \textbf{\ac{ISM}} to synthesis \ac{RIR}'s. These methods model how sound would propagate and interact with a room as though it were a straight line (ray). This inherently neglects wave phenomena such as phase and diffraction, properties that are negligible at high frequencies, however they are fundamental in describing low frequency wave behaviour \cite{Siltanen2010}. Therefore geometrical methods are not accurate at modelling sound propagation for low frequency waves, however they provide a good approximation for most applications and are much quicker to compute.
 
 			A description of both of the geometrical methods are described below, leading to a description of the hybrid method used in Odeon.
 
@@ -165,7 +165,7 @@
 
 	\subsubsection{The Virtual Singing Studio}
 
-		The \ac{VSS} is a loudspeaker based room acoustics simulator used as a tool for analysing the correlation between room acoustic characteristics and vocal performance parameters as part of Dr Jude Breretons PhD Thesis \cite{Brereton2014}. It is comprised of a head-mounted microphone used to capture a real-time audio input from a singer, a software patch written in Max/MSP that convolves the audio signal with a number of Ambisonic B-Format \ac{RIR}'s using Spat and finally a spherical array of 16 loudspeakers for which the convolved audio signal is decoded and fed to. In addition, a head-tracking device (an Oculus Rift \cite{oculus}) is also used to track which direction the user is facing in the virtual space. A flow diagram of the system can is shown in figure~\ref{vssDiagram}.
+		The \ac{VSS} is a loudspeaker based room acoustics simulator used as a tool for analysing the correlation between room acoustic characteristics and vocal performance parameters as part of Dr Jude Breretons PhD Thesis \cite{Brereton2014}. It is comprised of a head-mounted microphone used to capture a real-time audio input from a singer, a software patch written in Max/MSP that convolves the audio signal with a number of Ambisonic B-Format \ac{RIR}'s using Spat and finally a spherical array of 16 loudspeakers for which the convolved audio signal is decoded and fed to allowing the performer stood within the speaker array to hear themselves as though they are stood in the \ac{VAE}. In addition, a head-tracking device (an Oculus Rift \cite{oculus}) is also used to track which direction the user is facing in the virtual space. A flow diagram of the system can is shown in figure~\ref{vssDiagram}.
 
 	
 		\begin{figure}[H]
@@ -174,47 +174,48 @@
 			\label{vssDiagram}
 		\end{figure}
 
-		The \ac{VAE} used in the \ac{VSS} was initially the National Centre for Early Music, a space in York frequently used for musical performance. Using a Soundfield microphone, Ambisonic B-Format \ac{RIR}'s in each direction (front, left, back, right) were captured in 4 locations. The four directional \ac{RIR}'s are used to approximate the room acoustic phenomena that would occur if the user were projecting in that direction. This is done by using the data from the head-tracking device to amplitude pan the convolved signals before sending them to the spherical speaker array.
+		The \ac{VAE} used in the \ac{VSS} was initially the National Centre for Early Music, a space in York frequently used for musical performance. Using a Soundfield microphone, Ambisonic B-Format \ac{RIR}'s in each direction (front, left, back, right) were captured in 4 locations. The four directional \ac{RIR}'s are used to approximate the room acoustic phenomena that would occur if the user were projecting whatever sound they are producing in that direction. This is done by using the data from the head-tracking device to amplitude pan the convolved signals before sending them to the spherical speaker array.
 
 
 	\subsubsection{Project Aim and Motivation}
 		
-		The \ac{VSS} addressed a problem faced when trying to research how musicians preform in different acoustic environments: having to travel to each performance space with musicians and researchers. This also indirectly provides a solution for performers wanting to rehearse in spaces that are often inaccessible and would otherwise be expensive to book and travel to. By obtaining an \ac{RIR} of the desired location, the only time travelling will be necessary is to initially obtain said \ac{RIR}. However, one limitation of using the \ac{VSS} is the restriction of position. If a performer wanted to try and sing at another point in the room, an \ac{RIR} would have to be taken in that position too. This could be done initially, taking a range of \ac{RIR}'s in a number of positions, however it cannot be guaranteed that all positions desirable to the performer will be available. Therefore, this project aims to implement a system that will allow the user of the \ac{VSS} to feel as though they can move around a \ac{VAE} freely.
+		The \ac{VSS} addressed a problem faced when trying to research how musicians perform in different acoustic environments: having to travel to each performance space with musicians and researchers. This also indirectly provides a solution for performers wanting to rehearse in spaces that are often inaccessible and would otherwise be expensive to book and travel to. By obtaining an \ac{RIR} of the desired location, the only time travelling will be necessary is to initially obtain said \ac{RIR}. However, one limitation of using the \ac{VSS} is the restriction of position. If a performer wanted to try and sing at another point in the room, an \ac{RIR} would have to be taken in that position too. This could be done initially, taking a range of \ac{RIR}'s in a number of positions, however it cannot be guaranteed that all positions desirable to the performer will be available. For this to be certain, technically an infinite number of \ac{RIR}'s would have to be taken. As this is obviously not possible, the next best thing would be to take a large grid of \ac{RIR}'s and simulate movement by interpolation between a number of neighbouring \ac{RIR}'s. This raises the question as to how many \ac{RIR}'s are required to convince a user that they are able to move to any position they like within the virtual space? As this would require producing a large grid of \ac{RIR}'s, measuring them in a real space would be impractical due to the sheer number that need to be taken for experimentation. Instead, Odeon can be used to produce a bulk of \ac{RIR}'s much quicker.
 
-		Previous projects have addressed mobility within \ac{VAE}'s before, such as \cite{Savioja1999}. The paper initially looks at two methods for providing mobility:
+		This technique has been considered previously in \cite{Savioja1999}, referring to it as the \textit{direct room impulse response rendering method}. However another method called \textit{parametric room impulse response rendering} was favoured instead. This method actually synthesises \ac{RIR}'s in real time for a given position of the user within a \ac{VAE} using geometric acoustic modelling methods. The reason this was chosen over the dynamic method was the fact that rendering the \ac{RIR} for the users virtual position would produce a much more accurate \ac{RIR}, as opposed to having to interpolate between a number of \ac{RIR} positions. In addition to this, it is noted that the direct rendering method requires a lot of storage space. However, this method is much more complicated and limits itself to the accuracy of geometrical methods.
 
-
+		There are two reasons why using the direct rendering method in this project was initially considered: 
 		\begin{enumerate}
-
-		 \item \textbf{Direct room impulse response rendering}: By producing a large grid of \ac{RIR}'s within the desired space, it is possible to allow a user to select a position in the room by interpolation between the two nearest neighbouring \ac{RIR}'s. This method does not provide truly accurate room acoustics for the selected location and also suffers from the fact that a large number of \ac{RIR}'s are required, thus the requirement for a large amount of storage space.
-
-		\item \textbf{Parametric room impulse response rendering}: By actually synthesising \ac{RIR}'s in real time for the given position of the user in the \ac{VAE}, it is possible to provide an accurate \ac{RIR} for the given location. This method avoids the need for a large amount of storage space and a system to retrieve the correct files.
+			\item Simplicity
+			\item The option to use wave-based methods
 		\end{enumerate}
 
-		The author stated:
+		As using the parametric method required the \ac{RIR}'s to be calculated in real time, it would not be possible with current technology to produce a more accurate \ac{RIR} than can be obtained using the geometrical acoustic modelling methods. However, as the direct \ac{RIR} method produced the \ac{RIR}'s offline, it could be possible be produce more accurate \ac{RIR}'s in terms of frequency content.
 
-		 \vspace{5mm}
-		 \begin{center}
-		 \begin{minipage}{0.5\textwidth}
-		 \textit{``Although a static setting would be technically much simpler, it has only limited applicability''}
-		 \end{minipage}
-		 \end{center}
-		 \vspace{5mm}
+		However, early in the project it was decided that using wave-based modelling methods would be much too time consuming to implement along with carrying out the primary project aims given 1) the time scale of the project and 2) the time it takes to produce such \ac{RIR}'s compared to the ones produced in Odeon. It was therefore decided that a system would be built using only \ac{RIR}'s produced in Odeon which would still allow the question of how many \ac{RIR}'s are required to produce such a system to be investigated.
 
-		For this reason, the authors of said paper used the parametric \ac{RIR} rendering method, thus no information regarding the process of implementing the system using the direct \ac{RIR} method was obtained, nor the plausibility of such a system. 
+		% The author stated:
 
-		% It can be said that although parametric room impulse response rendering might be limited in its applicability, for the aims of the project described in this document, it provides a solution that is simple enough to implement within the time given and will allow for the desired functionality. It will also be explained later in this document (\fullref{RIRtrimming}) that post-processing of the \ac{RIR}'s are required which would not be possible using the dynamic rendering method. Therefore, as the intention was to build upon the existing \ac{VSS} system which requires pre-recorded (and post-processed) \ac{RIR}'s and that storage space is no longer a problem due to cheap hard disc drive storage, it was decided that the direct room impulse response rendering method was to be used. In addition to implementing the desired functionality, the process of obtaining the grids of \ac{RIR}'s was to be accessed, aiming to provide an insight into the practicality of implementing a system using this method and the size of the grid of \ac{RIR}'s required to simulate free movement within the virtual environment was to be investigated.
+		%  \vspace{5mm}
+		%  \begin{center}
+		%  \begin{minipage}{0.5\textwidth}
+		%  \textit{``Although a static setting would be technically much simpler, it has only limited applicability''}
+		%  \end{minipage}
+		%  \end{center}
+		%  \vspace{5mm}
 
-		It can be said that although parametric room impulse response rendering might be limited in its applicability, for the aims of the project described in this document, it provides a solution that is simple enough to implement within the time given and will allow for the desired functionality. It will also be explained later in this document (\fullref{RIRtrimming}) that post-processing of the \ac{RIR}'s are required which would not be possible using the dynamic rendering method. Therefore, as the intention was to build upon the existing \ac{VSS} system which requires pre-recorded (and post-processed) \ac{RIR}'s and that storage space is no longer a problem due to cheap hard disc drive storage, it was decided that the direct room impulse response rendering method was to be used. In addition to implementing the desired functionality, the following additional information were to be investigated:
+	
+		% It can be said that although parametric room impulse response rendering might be limited in its applicability, for the aims of the project described in this document, it provides a solution that is simple enough to implement within the time given and will allow for the desired functionality. It will also be explained later in this document (\fullref{RIRtrimming}) that post-processing of the \ac{RIR}'s are required which would not be possible using the dynamic rendering method. Therefore, as the intention was to build upon the existing \ac{VSS} system which requires pre-recorded (and post-processed) \ac{RIR}'s and that storage space is no longer a problem due to cheap hard disc drive storage, it was decided that the direct room impulse response rendering method was to be used. In addition to implementing the desired functionality, the following additional information were to be investigated:
 
 		
-			\textbf{The process:} Given the apparent simplicity compared to producing a dynamic rendering system, the process of obtaining the \ac{RIR}'s was to be accessed.
+		% 	\textbf{The process:} Given the apparent simplicity compared to producing a dynamic rendering system, the process of obtaining the \ac{RIR}'s was to be accessed.
 
-			\textbf{Number of \ac{RIR}'s:} As one of the points mentioned was the space required to store the \ac{RIR} grid(s), the number of \ac{RIR}'s required to convince the user that they are moving freely around the virtual space was to be investigated.
+		% 	\textbf{Number of \ac{RIR}'s:} As one of the points mentioned was the space required to store the \ac{RIR} grid(s), the number of \ac{RIR}'s required to convince the user that they are moving freely around the virtual space was to be investigated.
 
-			\textbf{System authenticity:} Previous test in the VSS have required ‘plausibility’ test, where the user must evaluate the \ac{VAE} produced by the VSS without reference to the real venue. This is usually because testing a virtual environment against a real one (authenticity tests) requires travel which can be expensive and difficult. Therefore, by running test based on ‘plausibility’ a sense of how convincing the virtual room is can be obtained. In the case of other virtual reality systems where the virtual environment does not exist in the real world, only these types of test can be run. Though plausibility test are acceptable, an authenticity test gives more objective results by comparing the simulated \ac{VAE} to the real thing. Therefore impulse responses of the same room used to designed the \ac{VAE} were to be taken.
+		% 	\textbf{System authenticity:} Previous test in the VSS have required ‘plausibility’ test, where the user must evaluate the \ac{VAE} produced by the VSS without reference to the real venue. This is usually because testing a virtual environment against a real one (authenticity tests) requires travel which can be expensive and difficult. Therefore, by running test based on ‘plausibility’ a sense of how convincing the virtual room is can be obtained. In the case of other virtual reality systems where the virtual environment does not exist in the real world, only these types of test can be run. Though plausibility test are acceptable, an authenticity test gives more objective results by comparing the simulated \ac{VAE} to the real thing. Therefore impulse responses of the same room used to designed the \ac{VAE} were to be taken.
 
 		%As mentioned in section~\ref{Software:Odeon}, using geometrical acoustic modelling methods produce \ac{RIR}'s that do not produce accurate low frequency content. Therefore, it was decided to seize the opportunity to test the authenticity of the system.
+
+		
 
 		In order for the user to move themselves around the \ac{VAE}, the Max patch that the \ac{VSS} was built on had to be extended in the following ways:
 
@@ -222,7 +223,9 @@
 
 			\item The production of a user interface that can be used remotely from within the spherical speaker array. \\
 
-			\item The extension of the Max patch that could accommodate the user interface and load the appropriate \ac{RIR} files required to place the user in the desired location within the \ac{VAE}.
+			\item The extension of the Max patch that could accommodate the user interface and load the appropriate \ac{RIR} files required to place the user in the desired location within the \ac{VAE}. \\
+
+			\item The production of a system that can interpolate between the appropriate \ac{RIR} positions.
 
 		\end{enumerate}
 
@@ -234,65 +237,46 @@
 			\label{vssExtention}
 		\end{figure}
 
+		As the original implementation of the \ac{VSS} uses real \ac{RIR}'s to simulate a \ac{VAE} and the newly proposed implementation was to use synthetic \ac{RIR}'s, the difference in perception regarding how a user feels they are moving around the space was also to be investigated. This would provide an insight as to whether the newly implemented functionality of movement was worth sacrificing the accuracy of the real \ac{RIR}'s. For this to be investigated, real \ac{RIR} measurements must be taken, therefore, the \ac{VAE} to be modelled must be a building that was accessible for real \ac{RIR} measurements.
 
-
-		 %which would involve providing \ac{RIR}'s to the max patch to convolve with a real-time audio input, it was decided that the direct room impulse response rendering method was to be used and a way in which to provide the necessary \ac{RIR}'s was investigated. As mass storage is currently cheap and easily available, it was decided that the required number of \ac{RIR}'s to produce such as system was to be investigated, and whether the inaccuracy caused by interpolation between \ac{RIR}'s instead of producing location accurate \ac{RIR}'s is noticeable for the produced system.
-
-
-		 % THOUGH IT IS POSSIBLE TO USE WAVE BASED METHODS, IT IS NOT NECESSARY TO FORFIL THE REQUIREMENTS OF THIS PROJECT. TIME WILL BE SAVED USING ODEON.
-
+%The the original \ac{VSS} used an Oculus Rift, using 3D images was possible. However, this was more simple as the user place within the \ac{VAE} was static, therefore the movement was not an issue. it was decided that this functionality was not going to be implemented as interpolation between images is not convincing compared to interpolation between \ac{RIR}'s.
 
 	\subsubsection{Project Objectives}
-
-
 
 		Given the project aims and the background provided, the following is a list of objectives that were set in order to complete this project:
 
 		\begin{enumerate}
-			\item Find an appropriate room to be modelled as a \ac{VAE} \\
-			\item Digitally model the room using either Odeons extrusion modelling or 3rd part application \\
-			\item Import room model into Odeon to finish material selection and \ac{RIR} settings\\
-			\item Produce a grid of \ac{RIR}'s that can be used to interpolate between to simulate user positions\\
-			\item Record real \ac{RIR}'s in locations that can be compared to synthetic \ac{RIR}'s\\
-			\item Extend upon existing software patch to accommodate new functionality\\
+			\item Find an appropriate room to be modelled as a \ac{VAE} 
+			\item Digitally model the room using in Google SketchUp
+			\item Import room model into Odeon to finish material selection and \ac{RIR} settings
+			\item Produce a grid of \ac{RIR}'s that can be used to interpolate between to simulate user positions
+			\item Record real \ac{RIR}'s in locations that can be compared to synthetic \ac{RIR}'s
+			\item Extend upon existing software patch to accommodate new functionality
 			\item Preform user tests:
 				\begin{itemize}
-					\item Test \#1: Does the perception of distance change when using real or synthetic \ac{RIR}'s?\\
-					\item Test \#2: How far does the user have to move in the given \ac{VAE} before they notice they have moved \\
-					\item Test \#3: How many \ac{RIR}'s are required for interpolation for the user to feel they are moving around the space freely\\
+					\item Test \#1: Does the perception of distance change when using real or synthetic \ac{RIR}'s?
+					\item Test \#2: How far does the user have to move in the given \ac{VAE} before they notice they have moved 
+					\item Test \#3: How many \ac{RIR}'s are required for interpolation for the user to feel they are moving around the space freely
 				\end{itemize}
 			\end{enumerate}
 
 
-	In order to test the perceptual differences when using synthetic RIRs (Test \#1), real RIRs of the same space had to be taken.
 
-	To access the success of this project, 
+	To assess the success of this project, the following metrics have been set based on the aims previously stated, and will be re-evaluated in the conclusion.
 
+	\begin{itemize}
+		\item Produce a system that:
+	\begin{itemize}
+		\item[-] Allows the user to move themselves around the \ac{VAE} freely
+		\item[-] Is beneficial to the user
+		\item[-] Is simple to implement compared to other methods
+	\end{itemize}
 
-
-
-		\subsubsection{Project Overview}
-
-			The following outlines the steps that were required to produce a system that allowed a user to feel as though they are freely moving around a \ac{VAE} and the tasks necessary to investigate the plausibility of said system, thus completing the project aims and objectives set
-
-		\subsubsection{Room Choice}
-
-			The following room features were kept in mind when searching for a room to use as part of this project:
-
-			\begin{center}
-			\begin{tabular}{r p{12cm}}
-				Size: & Large enough to be used as a singing space \\
-				Simplicity: & Simple enough architecture to be able to model with the time available \\
-				Accessibility: & The room had to be easily accessible to take  multiple measurements to make blue prints and take \ac{RIR} measurements
-			\end{tabular}
-			\end{center}
-
-			The room chosen was Hendrix Hall, a large lecture theatre on the University of York campus. The room contains retractable seating leaving the large space in the centre open and unobstructed. The room is architecturally simple being almost perfectly rectangular with the occasional wall indent. With it being located on the universities campus it can be booked for any time of the week meaning it can be accessed when necessary and for free.
-
-		\subsubsection{User Test Planning}
-		\label{Background:RIRPositions}
-
-			In order to perform the final user tests (test \#1 and test \#2), minimum distance between \ac{RIR}'s had to be decided.
-
+		\item Obtain information regarding:
+		\begin{itemize}
+			\item[-] How many \ac{RIR}'s are required for convincing mobility
+			\item[-] The effect of using synthetic \ac{RIR}'s on the perception of movement
+		\end{itemize}
+	\end{itemize}
 
 \end{document}
