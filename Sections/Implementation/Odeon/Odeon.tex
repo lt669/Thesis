@@ -295,9 +295,9 @@
 			where:
 
 			\begin{tabular}{l l}
-			$t_s$ & = Expected start of impulse \\
-			$t_p$ & = Time of first recorded reflection (first peak) \\
-			$d$ & = Distance between source and receiver\\
+			$t_s$ & = Expected start of impulse (seconds)\\
+			$t_p$ & = Time of first recorded reflection (first peak) (seconds)\\
+			$d$ & = Distance between source and receiver (meters)\\
 			$c$ & = Speed of sound ($344m/s$) \\
 			\end{tabular}
 
@@ -305,25 +305,25 @@
 			Therefore, if this dip is assumed to be the direct sound which occurs at $t_p = 0.03448s$ , where $d = 0.5$, then the start of the impulse can be calculated to be:
 
 			\begin{equation}
-			 0.03448 - \frac{0.05}{344} = 0.03433s = t_s
+			 0.03448s - \frac{0.05m}{344m/s} = 0.03433s = t_s
 			\end{equation}
 
 			This is indistinguishable from the direct sound peak, which is understandable given the source and receiver are 0.05m away. Now the expected start of this impulse is known, the expected first reflection due to the floor can be calculated:
 
 			\begin{equation}
-			\frac{2.05}{344} + t_s = 0.4029s
+			\frac{2.05m}{344m/s} + t_s = 0.4029s
 			\end{equation}
 
 			However, it can be seen that the first reflection occurs at 920, at a time of $0.039s$ suggesting that sound has travelled 1.6392m before reaching the receiver. However, the shortest available distance a sound could travel other than directly from the source to the receiver is 2.05m, which is the first floor reflection.
 
 			\begin{equation}
-			(0.039 - t_s)*c = 1.6382m
+			(0.039s - t_s)*c = 1.6382m
 			\end{equation}
 
 			As the source and receiver are placed 1.85m away from the left side wall, a second reflection would be expected to occur at:
 
 			\begin{equation}
-			\frac{1.85\times{2}}{c} + t_s = 0.04509s
+			\frac{1.85m\times{2}}{c} + t_s = 0.04509s
 			\end{equation}
 
 			indicated by (3) in figure~\ref{incorrectRIR_76}. However, it can be seen that no strong reflection occurs here.
@@ -331,13 +331,13 @@
 			After an email was sent to the technical department \cite{odeonEmail}, it was suggested that the small dip may be a bug in the version of Odeon being used. It could therefore be assumed that the direct sound is actually captured at the peak shown at (2) in figure~\ref{incorrectRIR_76} at a time of $0.03908$. From this the new expected time for the start of the impulse could be calculated:
 
 			\begin{equation}
-			0.03908 - \frac{d}{c} = 0.03893 = t_s
+			0.03908s - \frac{d}{c} = 0.03893s = t_s
 			\end{equation}
 
 			It could then be assumed that the first reflection caused by the floor is the peak at (4) in figure~\ref{incorrectRIR_76} which occurs at a time of 0.04058s. However, this would suggest that sound has travelled 0.05532m:
 
 			\begin{equation}
-			(0.04058 - t_s)\times{c} = 0.05532
+			(0.04058s - t_s)\times{c} = 0.05532m
 			\end{equation}
 
 			meaning that it has reflected off a surface approximately 0.28m away, of which there is no surface.
@@ -399,13 +399,13 @@
 			The first peak (a) can be assumed to be the direct sound, present at $0.03168s$ meaning the start of the impulse can be calculated using equation~\ref{distance}, where now $d = 0.6$:
 
 			\begin{equation}
-			0.03168 - \frac{0.6}{c} = 0.02994s = t_s
+			0.03168s - \frac{0.6m}{c} = 0.02994s = t_s
 			\end{equation}
 
 			From this, it can be calculated that the peak at (b), which occurs at $0.0375s$ had been captured after sound has travelled 2.6m:
 
 			\begin{equation}
-			(0.0375 - t_s)\times{c} = 2.6m
+			(0.0375s - t_s)\times{c} = 2.6m
 			\end{equation}
 
 			This is the reflection from the floor which is 1.6m below the receiver, causing the sound to travel 1m to the floor and then a further 1.6m to reach the receiver. This is shown in \textbf{Path 1} in figure~\ref{reflectionPaths}. The peak at (c), occuring at $0.04084s$ can be calculated as having travelled 3.75m which is approximately the distance travelled by a reflection caused by the left side wall shown as \textbf{Path 2} in figure~\ref{reflectionPaths}.
@@ -449,8 +449,9 @@
 			The tables present within the room so not cause an issue 
 
 		\subsubsection{RIR Rendering}
+			\label{odeon:rendering}
 
-			The source and receiver positions can be set using a .SouRecScript file, which contains information regarding the Cartesian coordinates of both sources and receivers within the room as well as the sound source directivity patter and the direction in which the source is facing. This made producing 240 \ac{RIR}'s almost effortless. However, one the script had set to locations of the source and receivers, each source and receiver had to be paired up individually. This is because Odeon provides a \textbf{Job List}, where any number of \ac{RIR}'s can be rendered one after. For this to work, the user must tell Odeon which receiver to use for each sound source. Figure~\ref{SouRecPos} shows the job list menu where each source has to be connected to each receiver, using a series od drop down menus and scroll bars. This part of Odeon is clumsy and in no way designed to make the process fast and simple. This had to be done for all 240 \ac{RIR}'s and then again for the other three sets of \ac{RIR}'s used for facing different direction within the room, totalling 960 \ac{RIR}'s.
+			The source and receiver positions can be set using a .SouRecScript file, which contains information regarding the Cartesian coordinates of both sources and receivers within the room as well as the sound source directivity patter and the direction in which the source is facing. This made producing 240 \ac{RIR}'s almost effortless. However, once the script had set to locations of the source and receivers, each source and receiver had to be paired up individually. This is because Odeon provides a \textbf{Job List}, where any number of \ac{RIR}'s can be rendered one after another automatically, allowing the process to run without user interaction. For this to work, the user must tell Odeon which receiver to use for each sound source. Figure~\ref{SouRecPos} shows the job list menu where each source has to be connected to each receiver, using a series of drop down menus and scroll bars. This part of Odeon is clumsy and in no way designed to make the process fast and simple. This had to be done for all 240 \ac{RIR}'s and then again for the other three sets of \ac{RIR}'s used for facing different direction within the room, totalling 960 \ac{RIR}'s.
 
 			%-------------RIR Invalid Positions Image-------------%
 			\begin{figure}[H]
@@ -545,6 +546,29 @@
 		\subsubsection{Reaper}
 
 			All of the real \ac{RIR} files were imported into Reaper and send through a bus to a master channel in order to normalise all \ac{RIR}'s evenly. These were then compared by ear to a synthetic \ac{RIR} and manually level matched. The closest match was by reducing the level of the real \ac{RIR}'s by 28.6dB. Though this method is less accurate, it prevented any unwanted errors in the signal such as those caused by using Matlab.
+
+		\subsection{Synthetic RIR Rendering Summary}
+
+			As stated in section \fullref{background:aims}, one benefit of using the direct \ac{RIR} rendering method is that it is simple. The process of obtaining the desired \ac{RIR}'s has shown that though time consuming, no complex procedures were undertaken therefore the statement is true. The fact that this process was time consuming can be put down to two points:
+			\begin{enumerate}
+				\item In experience
+				\item Starting from scratch
+			\end{enumerate}
+
+			Though in this case, the dimensions of the building in question had to be obtained, it would be much faster to work from existing blueprints.
+
+			%Adding directivity is a bonus
+			A benefit of using Odeon the obtain these \ac{RIR}'s is that it has allowed for the directivity of a human head has been modelled, thus providing a more accurate sound source directivity pattern than would have otherwise been achieved and was no more hassle to do than rendering \ac{RIR}'s from a point source.
+			
+			%Still easier to produce bulk RIRs
+
+			%Odeon room materials are lacking
+			Issues faced during this process were caused by using the software Odeon itself. Though the material list could be edited and built upon, the fact that its initial available options are lacking instantly reduced the possibility for an accurate simulation of room acoustics. It has been shown that it is possible to achieve a close to desired result through the manipulation of the material list, however this issue coupled with the already stated issues of geometrical acoustic modelling methods regarding their accuracy diminishes the plausibility of the system. In addition, the extra time spend on tweaking the resultant \ac{RIR}'s is not desirable, however this can be said for any modelling technique that involves simulation, thus is not restricted to this project alone.
+
+			Though it has been shown that producing 960 \ac{RIR}'s can be done sat in front of a computer, Odeon is not optimised for such a task. As stated in \fullref{odeon:rendering}, though it is possible to import a siple script to set all of the source and receiver locations, having to join them up one at a time takes the best part of an hour and for this project has to be done four times over. This undesirable software flaw would be simply fixed by adding the option to pair them up within the source and receiver script.
+			
+			In summary, a large grid of 960 \ac{RIR}'s in 240 locations within a virtual space of choosing have been relatively easily produced, providing a good approximation of its room acoustics. The only real issue faced was software that is not optimised for such a task.
+
 
 	
 \end{document}

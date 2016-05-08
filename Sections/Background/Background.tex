@@ -6,14 +6,14 @@
 
 \section{Introduction}
 
-	No prior understanding of room acoustics is required to appreciate the difference in sound experienced when talking, singing or playing an instrument in rooms of different size and interior. For those who listen even more closely, the effect of standing in different positions of a room can also be appreciated, such as the deep booming sound of standing in a corner or the fluttering echo heard when clapping in the centre of two symmetrical walls. However, the benefits of the hard work that has gone into studying room acoustics and sound propagation are apparent across multiple platforms, from understanding how to acoustically treat a room to make it sound the way we want, to creating tools and defining methods that allow us to recreate or synthesis a rooms acoustics, leading to the ability to development realistic soundscapes to bring virtual worlds to life, such as in video games and films.
+	No prior understanding of room acoustics is required to appreciate the difference in sound experienced when talking, singing or playing an instrument in rooms of different size and interior. For those who listen even more closely, the effect of standing in different positions of a room can also be appreciated, such as the deep booming sound of standing in a corner or the fluttering echo heard when clapping in the centre of two symmetrical walls. However, the benefits of the hard work that has gone into studying room acoustics and sound propagation are apparent across multiple platforms, from understanding how to acoustically treat a room to make it sound the way we want, to creating tools and defining methods that allow us to recreate or synthesis a rooms acoustics, leading to the ability to develop realistic soundscapes that can bring virtual worlds to life, such as in video games and films.
 
 	The ability to do such things has been utilised in other areas of research, such as studying how musicians perform differently when playing in rooms with different room acoustics \cite{Brereton2014}. This has been done at the University of York, where the benefit of being able to simulate the acoustics of multiple rooms within moments has been used to effectively transport musicians and researchers to different venues without having to travel anywhere. The system used to do this is the \ac{VSS}, upon which this project is based. In addition to allowing a user to simply hear themselves in different venues, this project aims to allow the user to also move themselves around that venue, allowing them to experiment with performing in different positions.
 
 	The rest of this document will be structured as follows:
 
 	\textbf{Background}\\
-		An overview of all the material that form the basis of this project, including an overview of the software used to achieve the end result. Previous work is discussed, leading to a full description of the project including the motivation behind it. Finally, the project aims and objectives are stated, including how the system was to be produced and tested to access plausibility, providing a set a metrics that are used to access the success of the project.
+		An overview of all the material that form the basis of this project, including an overview of the software used to achieve the end result. Previous work is discussed, leading to a full description of the project including the motivation behind it. Finally, the project aims and objectives are stated, including how the system was to be produced and tested to access plausibility, providing a set a statements that are used to measure the success of the project upon completion.
 
 	\textbf{Implementation}\\
 		This section presents the practical work that was carried out throughout the project, describing the decisions made, issues encountered and how they were overcome.
@@ -55,7 +55,7 @@
 
 		In order to reproduce the acoustical phenomena of a room, an \ac{RIR} must be obtained. This is done by exciting all audible frequencies within the room by using a sound source such as a loudspeaker, and recording the result using a receiver microphone.
 
-		There are a number of techniques used for exciting all audible frequencies. These include an \textbf{impulse} (such as a starter pistol) or an \textbf{exponentially swept sine} for which a sine wave is exponentially increased in frequency over a fixed period of time. The difference between these techniques is that an impulse emits all of the audible frequencies into the room at the same time, where as the sine sweep does it gradually. As the idea is to obtain an \textbf{impulse}, using the impulse technique is much more simple as no post processing is required. Using an exponentially swept sine requires post processing in order to time align all of the frequency dependent room reflections through the use of a deconvolution algorithm and thus producing an impulse response, making this method a little less simple. However, this method produces a greater signal to noise ratio thus is the desired method \cite{Stan2002}. Once the impulse is obtained, it can be convolved with an audio signal, making that audio signal sound as though it is being produced within the room that the \ac{RIR} was taken from. Convolution simply takes an input signal and multiplies each of the discrete samples with the impulse response, thus simulation the effect the room would have on each of these samples if they were actually emitted in the room itself \cite{Smith2003}.
+		There are a number of techniques used for exciting all audible frequencies. These include an \textbf{impulse} (such as a starter pistol) or an \textbf{exponentially swept sine} for which a sine wave is exponentially increased in frequency over a fixed period of time. The difference between these techniques is that an impulse emits all of the audible frequencies into the room at the same time, whereas the sine sweep does it gradually. As the idea is to obtain an \textbf{impulse}, using the impulse technique is much more simple as no post processing is required. Using an exponentially swept sine requires post processing in order to time align all of the frequency dependent room reflections through the use of a deconvolution algorithm and thus producing an impulse response, making this method a little less simple. However, this method produces a greater signal to noise ratio thus is the desired method \cite{Stan2002}. Once the impulse is obtained, it can be convolved with an audio signal, making that audio signal sound as though it is being produced within the room that the \ac{RIR} was taken from. Convolution simply takes an input signal and multiplies each of the discrete samples with the impulse response, thus simulating the effect the room would have on each of these samples if they were actually emitted in the room itself \cite{Smith2003}.
 
 %-------------Ambisonics-------------%
 	\subsection{Ambisonics}
@@ -177,21 +177,34 @@
 		The \ac{VAE} used in the \ac{VSS} was initially the National Centre for Early Music, a space in York frequently used for musical performance. Using a Soundfield microphone, Ambisonic B-Format \ac{RIR}'s in each direction (front, left, back, right) were captured in 4 locations. The four directional \ac{RIR}'s are used to approximate the room acoustic phenomena that would occur if the user were projecting whatever sound they are producing in that direction. This is done by using the data from the head-tracking device to amplitude pan the convolved signals before sending them to the spherical speaker array.
 
 
-	\subsubsection{Project Aim and Motivation}
+	\subsubsection{Project Aims and Motivation}
+	\label{background:aims}
 		
-		The \ac{VSS} addressed a problem faced when trying to research how musicians perform in different acoustic environments: having to travel to each performance space with musicians and researchers. This also indirectly provides a solution for performers wanting to rehearse in spaces that are often inaccessible and would otherwise be expensive to book and travel to. By obtaining an \ac{RIR} of the desired location, the only time travelling will be necessary is to initially obtain said \ac{RIR}. However, one limitation of using the \ac{VSS} is the restriction of position. If a performer wanted to try and sing at another point in the room, an \ac{RIR} would have to be taken in that position too. This could be done initially, taking a range of \ac{RIR}'s in a number of positions, however it cannot be guaranteed that all positions desirable to the performer will be available. For this to be certain, technically an infinite number of \ac{RIR}'s would have to be taken. As this is obviously not possible, the next best thing would be to take a large grid of \ac{RIR}'s and simulate movement by interpolation between a number of neighbouring \ac{RIR}'s. This raises the question as to how many \ac{RIR}'s are required to convince a user that they are able to move to any position they like within the virtual space? As this would require producing a large grid of \ac{RIR}'s, measuring them in a real space would be impractical due to the sheer number that need to be taken for experimentation. Instead, Odeon can be used to produce a bulk of \ac{RIR}'s much quicker.
+		The \ac{VSS} addressed a problem faced when trying to research how musicians perform in different acoustic environments: having to travel to each performance space with musicians and researchers. This also indirectly provides a solution for performers wanting to rehearse in spaces that are often inaccessible and would otherwise be expensive to book and travel to. By obtaining an \ac{RIR} of the desired location, the only time travelling will be necessary is to initially obtain said \ac{RIR}. However, one limitation of using the \ac{VSS} is the restriction of position. If a performer wanted to try and sing at another point in the room, an \ac{RIR} would have to be taken in that position too. This could be done initially, taking a range of \ac{RIR}'s in a number of positions, however it cannot be guaranteed that all positions desirable to the performer will be available. For this to be certain, technically an infinite number of \ac{RIR}'s would have to be taken. As this is obviously not possible, the next best thing would be to take a large grid of \ac{RIR}'s and simulate movement by interpolation between a number of neighbouring \ac{RIR}'s. This raises the question:
 
-		This technique has been considered previously in \cite{Savioja1999}, referring to it as the \textit{direct room impulse response rendering method}. However another method called \textit{parametric room impulse response rendering} was favoured instead. This method actually synthesises \ac{RIR}'s in real time for a given position of the user within a \ac{VAE} using geometric acoustic modelling methods. The reason this was chosen over the dynamic method was the fact that rendering the \ac{RIR} for the users virtual position would produce a much more accurate \ac{RIR}, as opposed to having to interpolate between a number of \ac{RIR} positions. In addition to this, it is noted that the direct rendering method requires a lot of storage space. However, this method is much more complicated and limits itself to the accuracy of geometrical methods.
 
-		There are two reasons why using the direct rendering method in this project was initially considered: 
+
+		 \vspace{5mm}
+		 \begin{center}
+		 \begin{minipage}{0.7\textwidth}
+		 \textbf{``How many \ac{RIR}'s are required to convince a user that they are able to move to any position they like within the virtual space?''}
+		 \end{minipage}
+		 \end{center}
+		 \vspace{5mm}
+
+
+		 As investigating this question would require producing a large grid of \ac{RIR}'s, measuring them in a real space would be impractical due to the sheer number that need to be taken for experimentation. Instead, Odeon can be used to produce a bulk of \ac{RIR}'s much quicker.
+
+		This technique has been considered previously in \cite{Savioja1999}, referring to it as the \textit{direct room impulse response rendering method}. However another method called \textit{parametric room impulse response rendering} was favoured instead. This method actually synthesises \ac{RIR}'s in real time for a given position of the user within a \ac{VAE} using geometric acoustic modelling methods. The reason this was chosen over the dynamic method was the fact that rendering the \ac{RIR} for the users virtual position would produce a much more accurate \ac{RIR}, as opposed to having to interpolate between a number of \ac{RIR} positions. In addition to this, it is noted that the direct rendering method requires a lot of storage space. However, this method is much more complicated and limits itself to the accuracy of geometrical methods as wave-based methods are currently not able to run in real time (not even with using GPU technology, still taking approximately 10 minutes to render a single \ac{RIR} \cite{Mehra2010}).
+
+		There are three reasons why using the direct rendering method in this project was initially considered: 
 		\begin{enumerate}
-			\item Simplicity
-			\item The option to use wave-based methods
+			\item Simplicity, as a real time \ac{RIR} rendering system would not have to be produced.
+			\item The existing \ac{VSS} system could be used as a starting point (thus adding to the simplicity).
+			\item The potential to use wave-based methods.
 		\end{enumerate}
 
-		As using the parametric method required the \ac{RIR}'s to be calculated in real time, it would not be possible with current technology to produce a more accurate \ac{RIR} than can be obtained using the geometrical acoustic modelling methods. However, as the direct \ac{RIR} method produced the \ac{RIR}'s offline, it could be possible be produce more accurate \ac{RIR}'s in terms of frequency content.
-
-		However, early in the project it was decided that using wave-based modelling methods would be much too time consuming to implement along with carrying out the primary project aims given 1) the time scale of the project and 2) the time it takes to produce such \ac{RIR}'s compared to the ones produced in Odeon. It was therefore decided that a system would be built using only \ac{RIR}'s produced in Odeon which would still allow the question of how many \ac{RIR}'s are required to produce such a system to be investigated.
+		As using the parametric method required the \ac{RIR}'s to be calculated in real time, it would not be possible with current technology to produce a more accurate \ac{RIR} than can be obtained using the geometrical acoustic modelling methods. However, as the direct \ac{RIR} method produced the \ac{RIR}'s offline, it could be possible be produce more accurate \ac{RIR}'s in terms of frequency content. However, early in the project it was decided that using wave-based modelling methods would be much too time consuming to implement along with carrying out the primary project aims given 1) the time scale of the project and 2) the time it takes to produce such \ac{RIR}'s compared to the ones produced in Odeon. It was therefore decided that a system would be built using only \ac{RIR}'s produced in Odeon which would still allow the question of how many \ac{RIR}'s are required to produce such a system to be investigated.
 
 		% The author stated:
 
@@ -239,9 +252,18 @@
 
 		As the original implementation of the \ac{VSS} uses real \ac{RIR}'s to simulate a \ac{VAE} and the newly proposed implementation was to use synthetic \ac{RIR}'s, the difference in perception regarding how a user feels they are moving around the space was also to be investigated. This would provide an insight as to whether the newly implemented functionality of movement was worth sacrificing the accuracy of the real \ac{RIR}'s. For this to be investigated, real \ac{RIR} measurements must be taken, therefore, the \ac{VAE} to be modelled must be a building that was accessible for real \ac{RIR} measurements.
 
-%The the original \ac{VSS} used an Oculus Rift, using 3D images was possible. However, this was more simple as the user place within the \ac{VAE} was static, therefore the movement was not an issue. it was decided that this functionality was not going to be implemented as interpolation between images is not convincing compared to interpolation between \ac{RIR}'s.
+		To conclude, the project aims were:
+
+		\begin{enumerate}
+			\item To implement a direct \ac{RIR} rendering system as an extension of the \ac{VSS}
+
+			\item To investigate the number of \ac{RIR}'s that are required to convince a user that they can freely move themselves around a virtual space without limitation
+
+			\item To investigate the difference in the perception of mobility in the virtual space when using real \ac{RIR}'s and synthetic \ac{RIR}'s
+		\end{enumerate}
 
 	\subsubsection{Project Objectives}
+	\label{background:objectives}
 
 		Given the project aims and the background provided, the following is a list of objectives that were set in order to complete this project:
 
@@ -262,7 +284,7 @@
 
 
 
-	To assess the success of this project, the following metrics have been set based on the aims previously stated, and will be re-evaluated in the conclusion.
+	To assess the success of this project, the following list of statements are defined with the intent of evaluating the extent of their correctness:
 
 	\begin{itemize}
 		\item Produce a system that:

@@ -5,21 +5,60 @@
 \begin{document}
 	\section{Conclusion}
 	
-	%Despite attempts to make SRIR accurate they still do not sound close enough
+		\subsection{Project Summary}
+		A digital model of Hendrix Hall was deigned and used to produce a large grid of synthetic \ac{RIR}'s in order to implement a direct \ac{RIR} rendering system with the aim of allowing a user to move themselves around a virtual space. The original Max patch designed for the \ac{VSS} was built upon to accommodate this new functionality by implementing an automated file loading system and a \ac{RIR} interpolation system that approximates the movement defined by the user. Three user tests were carried out to access the plausibility of the system as a whole and to uncover information regarding the perception of mobility with regards to the implemented system. 
 
-	%It is still apparent that they are convincing enough
+		\subsection{Project Aims Evaluation}
 
-	%Compare against initial project metrics
+		Here, the project aims set in \fullref{background:aims} are re-stated:
 
-	%Due to computer speed not being able to run the desired system (Iteration 1) a compramise had to be found. As a result of this, the system was much less accurate than intented, this may be a cause for some weird results and also defeats the purpose of using this system over the parametric rendering method
+		\begin{enumerate}
+			\item To implement a direct \ac{RIR} rendering system as an extension of the \ac{VSS}
 
-	\subsection{Project Summary}
+			\item To investigate the number of \ac{RIR}'s that are required to convince a user that they can freely move themselves around a virtual space without limitation
+
+			\item To investigate the difference in the perception of mobility in the virtual space when using real \ac{RIR}'s and synthetic \ac{RIR}'s
+		\end{enumerate}
+
+		Upon completion of the project, it can be said that each of these aims had been achieved, however the quality
+
+		\subsection{Project Success Evaluation}
+
+			The success of the project can be measured to evaluation the correctness of the statements first provided in section \fullref{background:objectivs}
+
+			\vspace{5mm}
+			\begin{center}
+			\begin{minipage}{0.7\textwidth}
+			\textbf{``Produce a system that: allows the user to move themselves around the \ac{VAE} freely''}
+			\end{minipage}
+			\end{center}
+			\vspace{5mm}
+
+			Here, the word `freely' must be defined. Originally the intent was to allow the user to select any location in the virtual space and hear themselves as though they are present in the location. As it is not possible to provide and \ac{RIR} in every possible location using the direct \ac{RIR} rendering method, interpolation between neighbouring \ac{RIR}'s would provide an approximation of an \ac{RIR} in that location. It was discovered however that the software implementation that provided this functionality would not run smoothly in real time.
+
+			%FINISH THIS BIT!!!
+			 Therefore a compromise was found where the user can move themselves along a path in the virtual space, but could not technically experience even an approximation of an \ac{RIR} location, instead only being able to place themselves on specific \ac{RIR} locations. However, as the users were not informed that this was convinced, it was possible that their perception of location was changed, believing that they were in fact in the desired location.
+
+			Due to this compromise, this metric is deemed on partially successful
 
 
-	\subsection{Metrics Review}
 
-	%Allow the user to freely move themselves around the VAE
-	Due to the fact that iteration 1 and 2 failed, the fact is that technically the user could not move themselves freely, but rather move themselves to the closest possible \ac{RIR}.
+			%Despite attempts to make SRIR accurate they still do not sound close enough
+
+			%It is still apparent that they are convincing enough
+
+			%Compare against initial project metrics
+
+			%Due to computer speed not being able to run the desired system (Iteration 1) a compramise had to be found. As a result of this, the system was much less accurate than intented, this may be a cause for some weird results and also defeats the purpose of using this system over the parametric rendering method
+
+
+		\subsection{Metrics Review}
+
+		%Allow the user to freely move themselves around the VAE
+		Due to the fact that iteration 1 and 2 failed, the fact is that technically the user could not move themselves freely, but rather move themselves to the closest possible \ac{RIR}.
+
+		\subsection{Overall System Implementation}
+			%User tests say it is shit
 \end{document}
 		
 		

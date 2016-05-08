@@ -432,6 +432,27 @@
 		% 	\label{realTrim}
 		% \end{figure}
 
+	\subsection{Software Implementation Summary}
+
+		Revisiting the aims regarding software implementation set in \fullref{background:aims}, it can be said that two out of the three accomplished:
+
+		\textbf{1)} The production of a user interface that can be used remotely from within the spherical speaker array. 
+
+		\textbf{2)} The extension of the Max patch that could accommodate the user interface and load the appropriate \ac{RIR} files required to place the user in the desired location within the \ac{VAE}. 
+
+		These has been achieved by producing the user interface using the `c74' object, allowing the iPad to communicate with the Max patch and visa versa. The interaction with the user interface is interpreted by the `UI\_to\_file' patch and the `loadFilesLogic' javascript object. These successfully interpret the users intention to move to a position within the \ac{VAE} and calculate the appropriate files to load.
+ 
+ 		\textbf{3)} The production of a system that can interpolate between the appropriate \ac{RIR} positions.
+
+ 		For the third aim set, it must be said that this was only partially fulfilled. Though the final iteration of the software (\fullref{iteration3}) interpolates between the appropriate \ac{RIR}'s for the given design, it does not work the way originally intended due to the technological restrictions previously stated. Instead of allowing the user to `freely' move around the space, they are instead restricted the the available \ac{RIR} locations and are only able to move between them when moving from one set location to another, as opposed to being able to hover between them as would have been able using iteration 1 (\fullref{iteration1}).
+
+ 		However, as the user interface interpretation section of the software simple outputs the required file names, it can be integrated with an improved version of the mobility section in the future. Therefore with simplifications to the first iteration of the software, such as providing the user with a grid of four \ac{RIR} locations instead of a full grid of 9, though less accurate, would be much quicker and would provide more freedom than the currently implemented version.
+
+		%The latency due to the system running in real time degrades the ability to access localisation
+		Due to this being a real time system, the latency introduced as a result greatly effects a large number of the \ac{RIR} files being used by having to cut 22ms of each one of them. This unfortunately removes some of the direct wall reflections for surfaces that are closer than 3.75m. However, this process also removed the direct sound and floor reflection as desired.
+
+
+
 
 		
 

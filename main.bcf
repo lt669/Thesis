@@ -2212,26 +2212,42 @@
     <bcf:datasource type="file" datatype="bibtex">thesis.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">genelec</bcf:citekey>
-    <bcf:citekey order="2">st450</bcf:citekey>
-    <bcf:citekey order="3">sineSweep</bcf:citekey>
-    <bcf:citekey order="4">sineSweep</bcf:citekey>
-    <bcf:citekey order="5">dewalt</bcf:citekey>
-    <bcf:citekey order="6">odeonManual</bcf:citekey>
-    <bcf:citekey order="7">SU2Odeon</bcf:citekey>
-    <bcf:citekey order="8">plastic</bcf:citekey>
-    <bcf:citekey order="9">mineralFibre</bcf:citekey>
-    <bcf:citekey order="10">Kovalchik</bcf:citekey>
-    <bcf:citekey order="11">odeonManual</bcf:citekey>
-    <bcf:citekey order="12">odeonManual</bcf:citekey>
-    <bcf:citekey order="13">Monson2012b</bcf:citekey>
-    <bcf:citekey order="14">calum</bcf:citekey>
-    <bcf:citekey order="15">calum</bcf:citekey>
-    <bcf:citekey order="16">calum</bcf:citekey>
-    <bcf:citekey order="17">calum</bcf:citekey>
-    <bcf:citekey order="18">odeonEmail</bcf:citekey>
-    <bcf:citekey order="19">odeonManual</bcf:citekey>
-    <bcf:citekey order="20">singingSample</bcf:citekey>
+    <bcf:citekey order="1">Brereton2014</bcf:citekey>
+    <bcf:citekey order="2">Huopaniemi2000</bcf:citekey>
+    <bcf:citekey order="3">Stan2002</bcf:citekey>
+    <bcf:citekey order="4">Smith2003</bcf:citekey>
+    <bcf:citekey order="5">ISO</bcf:citekey>
+    <bcf:citekey order="6">sosAmbisonics</bcf:citekey>
+    <bcf:citekey order="7">Power</bcf:citekey>
+    <bcf:citekey order="8">soundfieldMic</bcf:citekey>
+    <bcf:citekey order="9">soundfieldMic</bcf:citekey>
+    <bcf:citekey order="10">Siltanen2010</bcf:citekey>
+    <bcf:citekey order="11">odeon</bcf:citekey>
+    <bcf:citekey order="12">Siltanen2010</bcf:citekey>
+    <bcf:citekey order="13">Rindel1995</bcf:citekey>
+    <bcf:citekey order="14">odeonManual</bcf:citekey>
+    <bcf:citekey order="15">Rindel1995</bcf:citekey>
+    <bcf:citekey order="16">odeonManual</bcf:citekey>
+    <bcf:citekey order="17">odeonManual</bcf:citekey>
+    <bcf:citekey order="18">odeonManual</bcf:citekey>
+    <bcf:citekey order="19">SKU</bcf:citekey>
+    <bcf:citekey order="20">SKU</bcf:citekey>
+    <bcf:citekey order="21">SU2Odeon</bcf:citekey>
+    <bcf:citekey order="22">max</bcf:citekey>
+    <bcf:citekey order="23">spat</bcf:citekey>
+    <bcf:citekey order="24">Brereton2014</bcf:citekey>
+    <bcf:citekey order="25">oculus</bcf:citekey>
+    <bcf:citekey order="26">Savioja1999</bcf:citekey>
+    <bcf:citekey order="27">Mehra2010</bcf:citekey>
+    <bcf:citekey order="28">mira</bcf:citekey>
+    <bcf:citekey order="29">c74</bcf:citekey>
+    <bcf:citekey order="30">YEI</bcf:citekey>
+    <bcf:citekey order="31">Brereton2014</bcf:citekey>
+    <bcf:citekey order="32">earthworks</bcf:citekey>
+    <bcf:citekey order="33">motu</bcf:citekey>
+    <bcf:citekey order="34">Devore2009</bcf:citekey>
+    <bcf:citekey order="35">trumpet</bcf:citekey>
+    <bcf:citekey order="36">DK</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="none" type="entry" sortscheme="none">
   <bcf:sorting>
