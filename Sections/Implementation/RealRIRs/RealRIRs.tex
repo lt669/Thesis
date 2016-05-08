@@ -66,11 +66,11 @@
 
 	%-------------Measurements-------------%
 	\subsubsection{Measurements}
-		The sound source signal used was a 15 second long exponentially swept sinusoid ranging from 20Hz to 20kHz with an 8 second padding to ensure that the room could be vacated before the sweep began. The sweep was produced using the Matlab function \texttt{generatesweep.m} \textbf{LINK!} taken from the departmental website \cite{sineSweep} which produced both the sinusoidal sweep and an inverse sinusoidal sweep used for deconvolution at a later stage.
+		The sound source signal used was a 15 second long exponentially swept sinusoid ranging from 20Hz to 20kHz with an 8 second padding to ensure that the room could be vacated before the sweep began. The sweep was produced using the Matlab function \href{http://lt669.github.io/code/matlab/html/generatesweep.html}{\texttt{generatesweep.m}} taken from the departmental website \cite{sineSweep} which produced both the sinusoidal sweep and an inverse sinusoidal sweep used for deconvolution at a later stage.
 		
 	\subsubsection{RIR Analysis}
 
-		Once the measurements had been recorded, the first 8 seconds of the files were muted in order to remove noise such as door slams as the room was vacated. Then the signals were deconvolved with an inverse of the sinusoidal sweep to time align the frequency dependant room reflections. This was done using the deconvolution Matlab function \texttt{deconvolve.m} \textbf{LINK!} again taken from the departmental website \cite{sineSweep}.
+		Once the measurements had been recorded, the first 8 seconds of the files were muted in order to remove noise such as door slams as the room was vacated. Then the signals were deconvolved with an inverse of the sinusoidal sweep to time align the frequency dependant room reflections. This was done using the deconvolution Matlab function \href{http://lt669.github.io/code/matlab/html/deconvolve.html}{\texttt{deconvolve.m}} again taken from the departmental website \cite{sineSweep}.
 
 	\subsubsection{Issues}
 		Several issues arose when taking the initial \ac{RIR}'s. Simply connection the outputs from the Soundfield converter to the incorrect inputs on the Fireface audio interface meant that the initial recordings contained tracks that were not necessarily recorded in the correct order, i.e the tracks were not recorded as [W, X, Y, Z] but could have been recorded in a possible 24 combinations. This meant that when used to convolve with an audio source, the localisation of the sound source would be incorrect.

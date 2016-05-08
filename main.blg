@@ -1,31 +1,9 @@
 [0] Config.pm:324> INFO - This is Biber 2.1
 [0] Config.pm:327> INFO - Logfile is 'main.blg'
-[44] biber-darwin:276> INFO - === Sun May  8, 2016, 15:06:21
-[45] Biber.pm:333> INFO - Reading 'main.bcf'
-[133] Biber.pm:645> INFO - Found 27 citekeys in bib section 0
-[149] Biber.pm:2977> INFO - Processing section 0
-[167] Biber.pm:3115> INFO - Looking for bibtex format file 'thesis.bib' for section 0
-[170] bibtex.pm:1021> INFO - Decoding LaTeX character macros into UTF-8
-[176] bibtex.pm:895> INFO - Found BibTeX data source 'thesis.bib'
-[200] Utils.pm:146> WARN - Datamodel: Entry 'earthworks' (thesis.bib): Invalid format '' of date field 'date' - ignoring
-[203] Utils.pm:146> WARN - BibTeX subsystem: /var/folders/9m/7yvjw_r54n1c0nbfzndk_j0m0000gn/T/mjEWSqtKYZ/thesis.bib_2874.utf8, line 137, warning: 2 characters of junk seen at toplevel
-[206] Utils.pm:146> WARN - The field 'author' in entry 'odeon' cannot be null, deleting it
-[206] Utils.pm:146> WARN - The field 'title' in entry 'odeon' cannot be null, deleting it
-[206] Utils.pm:146> WARN - The field 'author' in entry 'SU2Odeon' cannot be null, deleting it
-[207] Utils.pm:146> WARN - The field 'author' in entry 'max' cannot be null, deleting it
-[207] Utils.pm:146> WARN - The field 'author' in entry 'spat' cannot be null, deleting it
-[207] Utils.pm:146> WARN - The field 'author' in entry 'oculus' cannot be null, deleting it
-[207] Utils.pm:146> WARN - The field 'title' in entry 'oculus' cannot be null, deleting it
-[207] Utils.pm:146> WARN - The field 'author' in entry 'mira' cannot be null, deleting it
-[207] Utils.pm:146> WARN - The field 'author' in entry 'c74' cannot be null, deleting it
-[208] Utils.pm:146> WARN - The field 'year' in entry 'YEI' cannot be null, deleting it
-[208] Utils.pm:146> WARN - The field 'author' in entry 'earthworks' cannot be null, deleting it
-[208] Utils.pm:146> WARN - The field 'month' in entry 'earthworks' cannot be null, deleting it
-[208] Utils.pm:146> WARN - The field 'author' in entry 'motu' cannot be null, deleting it
-[380] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[380] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[381] Biber.pm:2854> INFO - Sorting list 'none' of type 'entry' with scheme 'none' and locale 'en-US'
-[381] Biber.pm:2858> INFO - No sort tailoring available for locale 'en-US'
-[400] bbl.pm:505> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[403] bbl.pm:596> INFO - Output to main.bbl
-[403] Biber.pm:106> INFO - WARNINGS: 15
+[46] biber-darwin:276> INFO - === Sun May  8, 2016, 23:36:07
+[46] Biber.pm:333> INFO - Reading 'main.bcf'
+[139] Biber.pm:645> INFO - Found 0 citekeys in bib section 0
+[139] Utils.pm:146> WARN - The file 'main.bcf' does not contain any citations!
+[159] bbl.pm:505> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[159] bbl.pm:596> INFO - Output to main.bbl
+[159] Biber.pm:106> INFO - WARNINGS: 1
