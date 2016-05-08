@@ -81,17 +81,17 @@
 
 	\subsection{Software Overview}
 
-		\subsubsection{ODEON: Simulating Room Acoustics}
+		\subsubsection{Odeon: Simulating Room Acoustics}
 		\label{Software:Odeon}
 
 			%The techniques listen here are not used in this project and do not need to be fully understood. However they are mentioned for completeness and the use of them was considered at the start of the project and could be used in future work.
 			Methods for physically measuring \ac{RIR}'s within rooms has been discussed, however there is also a way to synthesis \ac{RIR}'s by mathematical modelling the way in which sound interacts with a room. The two methods of doing so are described as \textbf{Wave-based Methods} and \textbf{Geometrical Acoustic Methods}.
 
-			\textbf{Note: The next paragraph on wave-based methods is adapted from the initially submitted literature review and is not required for the understanding of this project. However, it is provided here as the initial project plan included the use of such methods and is therefore mention later in this section}
+			\textbf{Note: The next paragraph on wave-based methods is adapted from the initially submitted literature review and is not required for the understanding of this project. However, it is provided here as the initial project plan included the use of such methods and is therefore mentioned later in this section}
 
 			Wave-based methods are based on solving the wave equation, producing a solution that is physically correct and can be used to accurately model how a sound would propagate from a source in a room and reflect \cite{Siltanen2010}. However, accurately calculating the way in which a wave moves through and interacts with a room is computationally expensive making them impractical for real time simulations.
 
-			Instead, it is possible synthesis \ac{RIR}'s by using room acoustic simulation software such as Odeon \cite{odeon} that utilises the much quicker geometrical methods. Odeon was designed to provide reliable predictions of room acoustics by using a hybrid of two geometric acoustic modelling methods: \textbf{ray-tracing} and the \textbf{\ac{ISM}} to synthesis \ac{RIR}'s. These methods model how sound would propagate and interact with a room as though it were a straight line (ray). This inherently neglects wave phenomena such as phase and diffraction, properties that are negligible at high frequencies, however they are fundamental in describing low frequency wave behaviour \cite{Siltanen2010}. Therefore geometrical methods are not accurate at modelling sound propagation for low frequency waves, however they provide a good approximation for most applications and are much quicker to compute.
+			Instead, it is possible to synthesis \ac{RIR}'s by using room acoustic simulation software such as Odeon \cite{odeon} that utilises the much quicker geometrical methods. Odeon was designed to provide reliable predictions of room acoustics by using a hybrid of two geometric acoustic modelling methods: \textbf{ray-tracing} and the \textbf{\ac{ISM}} to synthesis \ac{RIR}'s. These methods model how sound would propagate and interact with a room as though it were a straight line (ray). This inherently neglects wave phenomena such as phase and diffraction, properties that are negligible at high frequencies, however they are fundamental in describing low frequency wave behaviour \cite{Siltanen2010}. Therefore geometrical methods are not accurate at modelling sound propagation for low frequency waves, however they provide a good approximation for most applications and are much quicker to compute.
 
 			A description of both of the geometrical methods are described below, leading to a description of the hybrid method used in Odeon.
 
@@ -113,7 +113,7 @@
 
 %			The \ac{ISM} can be used to find all possible specular reflections paths from the sound source to the receiver position. This is done by representing each specular reflection from a surface as a secondary source known as an ``image source'' \cite{Rindel1995}, illustrated in figure~\ref{ISMPic}. The advantage of the \ac{ISM} is that each surface can be modelled by an image source which provides a great deal of data regarding the contribution to the received sound as opposed to relying on random ray reflection as is done in the ray-tracing method, making this method more accurate, however as each image source then emits more rays, there is a possibility to produce a great deal more image sources. This means that the number of image sources grows exponentially for each new image source than is produced making this method much more computationally expensive than the ray-tracing method. This problem can be avoided by setting a \textit{reflection order} which determines how many times a ray can reflect off a surface before calculations are stopped, thus preventing the creation of more image source though the calculates for the prediction of the rooms acoustics will be incomplete. This obviously then makes the \ac{ISM} less accurate with a smaller reflection order.
 
-			The \ac{ISM} can be used to find all possible specular reflections paths from the sound source to the receiver position. This is done by representing each specular reflection (a reflection with angle equal to the angle of incidence) from a surface as a secondary source known as an ``image source'' \cite{Rindel1995}, illustrated in figure~\ref{ISMPic}. Once these image sources have been created, a visibility test is run which checks to see which image sources are in sight of the receiver thus calculating which image sources should be used in the final calculation of the \ac{RIR}. If the receiver is then moved, the images sources to not need to be recalculated, only the visibility check needs to be run again. It is due to this that the \ac{ISM} is much more accurate than ray- tracing which relies on random reflections to calculate an \ac{RIR}. However, as each new image source emits a number of rays of its own, there is a potential for it to produce a number of image sources. Therefore, with each new image source there is an exponential growth in the total number of image sources, making this method much more computationally expensive than ray-tracing. This problem can be avoided by setting a \textit{reflection order} which determines how many times a ray can reflect around a room before calculations are stopped, thus preventing the creation of more image sources. This however will cause the prediction of the rooms acoustics to be incomplete. This obviously then makes the \ac{ISM} less accurate with a smaller reflection order.
+			The \ac{ISM} can be used to find all possible specular reflection paths from the sound source to the receiver position. This is done by representing each specular reflection (a reflection with angle equal to the angle of incidence) from a surface as a secondary source known as an ``image source'' \cite{Rindel1995}, illustrated in figure~\ref{ISMPic}. Once these image sources have been created, a visibility test is run which checks to see which image sources are in sight of the receiver thus calculating which image sources should be used in the final calculation of the \ac{RIR}. If the receiver is then moved, the images sources to not need to be recalculated, only the visibility check needs to be run again. It is due to this that the \ac{ISM} is much more accurate than ray-tracing which relies on random reflections to calculate an \ac{RIR}. However, as each new image source emits a number of rays of its own, there is a potential for it to produce a number of image sources. Therefore, with each new image source there is an exponential growth in the total number of image sources, making this method much more computationally expensive than ray-tracing. This problem can be avoided by setting a \textit{reflection order} which determines how many times a ray can reflect around a room before calculations are stopped, thus preventing the creation of more image sources. This however will cause the prediction of the rooms acoustics to be incomplete. This obviously then makes the \ac{ISM} less accurate with a smaller reflection order.
 
 			%Once all image sources have been calculated, a visibility check occurs. This checks to see whether the image sources that have been produced can be seen by the receiver, therefore checking whether that image source needs to be used or not offering the potential to cut down on computation time. If the receiver position is moved, the visibility check is run again. Overall, this saves time as the image sources do not need to be recalculated.
 
@@ -156,7 +156,7 @@
 		Google SketchUp \cite{SKU} is an easy to use 3-D modelling software that can be used to produce room models. Unlike Odeon extrusion modeller, it allows the user the draw surfaces with a mouse, easily duplicate structures and provides simple measuring tools and markers to enable accurate modelling. Plug-ins such as SU2Odeon (``SketchUp to Odeon'') \cite{SU2Odeon} enables the user to convert the model into a .par file for Odeon to use as a geometry file.
 
 	\subsubsection{Max/MSP}
-		Max/MSP (Max) is a visual programming language that essentially provides pre-written blocks of code in the form of objects, providing the ability to chain them together in order to route and manipulate audio signals \cite{max}. This allows user to quickly and easily produce audio applications (called patches) without having to deal with the complex side of audio programming. This is beneficial for students and researchers as it allows them to concentrate of the results rather than the application programming itself. Additionally, third-party plug-ins can be incorporated into a Max patch as libraries would in any other programming language. One third-party application utilised in this project is Spat. Developed at the research institute IRCAM \cite{spat}, Spat is designed for real-time spatialisation of sound signals in Max without having to touch any code. It provides an simple way to convolve B-format audio signals with impulse responses as well as decode the B-format signals for any given number of speakers in any arrangement by simply providing the number of speakers and angles at which they are placed.
+		Max/MSP (Max) is a visual programming language that essentially provides pre-written blocks of code in the form of objects, providing the ability to chain them together in order to route and manipulate audio signals \cite{max}. This allows user to quickly and easily produce audio applications (called patches) without having to deal with the complex side of audio programming. This is beneficial for students and researchers as it allows them to concentrate on the results rather than the application programming itself. Additionally, third-party plug-ins can be incorporated into a Max patch as libraries would in any other programming language. One third-party application utilised in this project is Spat. Developed at the research institute IRCAM \cite{spat}, Spat is designed for real-time spatialisation of sound signals in Max without having to touch any code. It provides a simple way to convolve B-format audio signals with impulse responses as well as decode the B-format signals for any given number of speakers in any arrangement by simply providing the number of speakers and angles at which they are placed.
 
 
 \subsection{Project Description}
@@ -165,12 +165,12 @@
 
 	\subsubsection{The Virtual Singing Studio}
 
-		The \ac{VSS} is a loudspeaker based room acoustics simulator used as a tool for analysing the correlation between room acoustic characteristics and vocal performance parameters as part of Dr Jude Breretons PhD Thesis \cite{Brereton2014}. It is comprised of a head-mounted microphone used to capture a real-time audio input from a singer, a software patch written in Max/MSP that convolves the audio signal with a number of Ambisonic B-Format \ac{RIR}'s using Spat and finally a spherical array of 16 loudspeakers for which the convolved audio signal is decoded and fed to allowing the performer stood within the speaker array to hear themselves as though they are stood in the \ac{VAE}. In addition, a head-tracking device (an Oculus Rift \cite{oculus}) is also used to track which direction the user is facing in the virtual space. A flow diagram of the system can is shown in figure~\ref{vssDiagram}.
+		The \ac{VSS} is a loudspeaker based room acoustics simulator used as a tool for analysing the correlation between room acoustic characteristics and vocal performance parameters as part of Dr Jude Breretons PhD Thesis \cite{Brereton2014}. It is comprised of a head-mounted microphone used to capture a real-time audio input from a singer, a software patch written in Max/MSP that convolves the audio signal with a number of Ambisonic B-Format \ac{RIR}'s using Spat and finally a spherical array of 16 loudspeakers for which the convolved audio signals are decoded and sent. This allows the performer stood within the speaker array to hear themselves as though they are stood in the \ac{VAE}. In addition, a head-tracking device (an Oculus Rift \cite{oculus}) is also used to track which direction the user is facing in the virtual space. A flow diagram of the system is shown in figure~\ref{vssDiagram}.
 
 	
 		\begin{figure}[H]
 			\centerline{\includegraphics[scale = 0.45]{Sections/Background/images/vssDiagram.png}}
-			\caption{Flow diagram of the VSS showing how the audio signal and head tracking signal form the performer are used in Max before the convolved audio signal is sent back out to the speaker array.}
+			\caption{Flow diagram of the VSS showing how the audio signal and head tracking signal from the performer are used in Max before the convolved audio signal is sent back out to the speaker array.}
 			\label{vssDiagram}
 		\end{figure}
 
@@ -283,22 +283,30 @@
 			\end{enumerate}
 
 
+	% To assess the success of this project, the following list of statements are defined with the intent of evaluating the extent of their correctness:
 
-	To assess the success of this project, the following list of statements are defined with the intent of evaluating the extent of their correctness:
 
-	\begin{itemize}
-		\item Produce a system that:
-	\begin{itemize}
-		\item[-] Allows the user to move themselves around the \ac{VAE} freely
-		\item[-] Is beneficial to the user
-		\item[-] Is simple to implement compared to other methods
-	\end{itemize}
+	% Upon completion of the project, the answers to the following questions can be used to evaluate the success of the project 
 
-		\item Obtain information regarding:
-		\begin{itemize}
-			\item[-] How many \ac{RIR}'s are required for convincing mobility
-			\item[-] The effect of using synthetic \ac{RIR}'s on the perception of movement
-		\end{itemize}
-	\end{itemize}
+	% \begin{itemize}
+	% 	\item Was the above described system full implemented?
+	% 	\item Was the number of \ac{RIR}'s required to produce the system discovered?
+	% 	\item 
+	% \end{itemize}
+
+	% \begin{itemize}
+	% 	\item Produce a system that:
+	% \begin{itemize}
+	% 	\item[-] Allows the user to move themselves around the \ac{VAE} freely
+	% 	\item[-] Is beneficial to the user
+	% 	\item[-] Is simple to implement compared to other methods
+	% \end{itemize}
+
+	% 	\item Obtain information regarding:
+	% 	\begin{itemize}
+	% 		\item[-] How many \ac{RIR}'s are required for convincing mobility
+	% 		\item[-] The effect of using synthetic \ac{RIR}'s on the perception of movement
+	% 	\end{itemize}
+	% \end{itemize}
 
 \end{document}

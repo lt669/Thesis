@@ -20,26 +20,52 @@
 			\item To investigate the difference in the perception of mobility in the virtual space when using real \ac{RIR}'s and synthetic \ac{RIR}'s
 		\end{enumerate}
 
-		Upon completion of the project, it can be said that each of these aims had been achieved, however the quality
+		Upon completion of the project, it can be said that each of these aims had been achieved, however, to evaluate the success of the project, the aims can be turned into questions  however the quality of the  to which they have been fulfilled can be discussed in greater detail.
 
 		\subsection{Project Success Evaluation}
 
-			The success of the project can be measured to evaluation the correctness of the statements first provided in section \fullref{background:objectivs}
+			To measure the success of the project, the aims set in \fullref{background:aims} can be evaluated as follows:
 
-			\vspace{5mm}
-			\begin{center}
-			\begin{minipage}{0.7\textwidth}
-			\textbf{``Produce a system that: allows the user to move themselves around the \ac{VAE} freely''}
-			\end{minipage}
-			\end{center}
-			\vspace{5mm}
+			\textbf{1)} Was the desired direct \ac{RIR} rendering system fully implemented?
 
-			Here, the word `freely' must be defined. Originally the intent was to allow the user to select any location in the virtual space and hear themselves as though they are present in the location. As it is not possible to provide and \ac{RIR} in every possible location using the direct \ac{RIR} rendering method, interpolation between neighbouring \ac{RIR}'s would provide an approximation of an \ac{RIR} in that location. It was discovered however that the software implementation that provided this functionality would not run smoothly in real time.
+				Partially. Though the desired system was produced in Max (section~\fullref{iteration1}), due to technological issues regarding the speed at which it ran, it could not be used for a real time system such as this. Instead, a compromise between desired functionality and reliability was made (section~\fullref{iteration3}), where instead of a user being able to place themselves between \ac{RIR} locations, they were restricted to the strict locations available within the \ac{RIR} grid. So, though technically the desired system was not used, the compromise still allowed the user to achieve a similar result.
 
-			%FINISH THIS BIT!!!
-			 Therefore a compromise was found where the user can move themselves along a path in the virtual space, but could not technically experience even an approximation of an \ac{RIR} location, instead only being able to place themselves on specific \ac{RIR} locations. However, as the users were not informed that this was convinced, it was possible that their perception of location was changed, believing that they were in fact in the desired location.
+				Upon these grounds, the author believes this aim had been achieved with a partial amount of success.
 
-			Due to this compromise, this metric is deemed on partially successful
+
+			\textbf{2)} Were comprehensive results obtained regarding the number of \ac{RIR}'s required to produce a plausible system?
+
+
+				Partially. The results obtained from user test \#3 give an indication to the optimal number of \ac{RIR}'s required when the speed of mobility in the system varies depending on \ac{RIR} separation, however the results do not indicate the minimum number of \ac{RIR}'s that can be used to convince a user that they can freely move around a virtual space. This is a consequence of negligence on the authors part when attempting to design a system other that the one originally intended. However, results from user test \#2 show that some people can perceive movement with a distance of 2m (excluding the outlier of trial 1, where all participants reported that they could tell they had moved) while there is a rise in the number of people who perceive movement after a distance of 4m. This result in combination with the results from user test \#3, suggesting that movement is more obvious with an \ac{RIR} of 3 - 4 meters, indicates that using a distance of separating less than this may not be worth it. %WRITE THIS BIT
+
+				%Partially. The results obtained from user test \#3 indicate that without any visual indication as to where they are placed within the virtual space, an \ac{RIR} spacing of 3m is optimum.
+
+				%No. Though results were obtained regarding the users opinion on whether they felt they could move around the virtual space freely when using different \ac{RIR} grids, the results were no longer based on the intended system where a user would be able to place themselves between a number of \ac{RIR} locations as opposed to directly on them. As the speed at which the user was interpolated between \ac{RIR}'s was kept the same, regardless of the distance between them, the speed at which the user was moved through the system would vary depending on which \ac{RIR} grid was being used. Given the comments provided by some of the test participants, discussed in section~\fullref{usertests:test3}, the rate at which they moved through the system had an obvious impact and their answers.
+
+				 This had an obvious impact on the results of user test \#3, with users commenting on the variation in speed rather than the ability to select their location.
+
+			\textbf{3)} Were comprehensive results obtained regarding the perceptual difference in moving distance within a the \ac{VAE} when using synthetic \ac{RIR}'s as opposed to the real \ac{RIR}'s?
+
+				Yes. The results from test \#1 show that the majority of participants answered incorrectly when asked if they felt they had moved a distance that is shorter, the same or further than they had moved when they were placed in the \ac{VAE} when using real \ac{RIR}'s. This indicates that the use of different \ac{RIR}'s may effect the user perception of mobility. However, it would have been beneficial to also test the participants using two of the \ac{RIR}'s twice in an attempt to assess whether they might perceive movement when in fact they have been moved the same distance twice. This would indicate whether the participants could trick themselves in to thinking they have moved.% WRITE THIS BIT
+
+			% The success of the project can be measured to evaluation the correctness of the statements first provided in section \fullref{background:objectivs}
+
+			% \vspace{5mm}
+			% \begin{center}
+			% \begin{minipage}{0.7\textwidth}
+			% \textbf{``Produce a system that: allows the user to move themselves around the \ac{VAE} freely''}
+			% \end{minipage}
+			% \end{center}
+			% \vspace{5mm}
+
+			% Here, the word `freely' must be defined. Originally the intent was to allow the user to select any location in the virtual space and have them hear themselves as though they are present in the desired location. As it is not possible to provide and \ac{RIR} in every possible location using the direct \ac{RIR} rendering method, interpolation between neighbouring \ac{RIR}'s would provide an approximation of an \ac{RIR} in that location. It was discovered however that the software implementation that provided this functionality would not run smoothly in real time. It is due to this that the statement being assessed can be deemed to be only partially successful.
+
+
+
+			% %FINISH THIS BIT!!!
+			%  Therefore a compromise was found where the user can move themselves along a path in the virtual space, but could not technically experience even an approximation of an \ac{RIR} location, instead only being able to place themselves on specific \ac{RIR} locations. However, as the users were not informed that this was convinced, it was possible that their perception of location was changed, believing that they were in fact in the desired location.
+
+			% Due to this compromise, this metric is deemed on partially successful
 
 
 
@@ -50,6 +76,8 @@
 			%Compare against initial project metrics
 
 			%Due to computer speed not being able to run the desired system (Iteration 1) a compramise had to be found. As a result of this, the system was much less accurate than intented, this may be a cause for some weird results and also defeats the purpose of using this system over the parametric rendering method
+
+			%The reason iteration 3 had to be used is because the author ran out of time and needed to implement a system.
 
 
 		\subsection{Metrics Review}

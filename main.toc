@@ -14,7 +14,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.4}Software Overview}{8}{subsection.3.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.4.1}ODEON: Simulating Room Acoustics}{8}{subsubsection.3.4.1}
+\contentsline {subsubsection}{\numberline {3.4.1}Odeon: Simulating Room Acoustics}{8}{subsubsection.3.4.1}
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{\numberline {3.4.1.1}Ray-Tracing}{8}{paragraph.3.4.1.1}
 \defcounter {refsection}{0}\relax 
@@ -72,58 +72,58 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {3.6.7}Software Issues}{36}{subsubsection.3.6.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.7}Latency}{37}{subsection.3.7}
+\contentsline {subsection}{\numberline {3.7}Latency}{38}{subsection.3.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.8}RIR Trimming}{38}{subsection.3.8}
+\contentsline {subsection}{\numberline {3.8}RIR Trimming}{39}{subsection.3.8}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.9}Software Implementation Summary}{40}{subsection.3.9}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4}User Testing}{41}{section.4}
+\contentsline {section}{\numberline {4}User Testing}{42}{section.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1}User Testing Aims}{41}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.1}User Testing Aims}{42}{subsection.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2}Statement of Hypothesis}{42}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.2}Statement of Hypothesis}{43}{subsection.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3}Test \#1}{42}{subsection.4.3}
+\contentsline {subsection}{\numberline {4.3}Test \#1}{43}{subsection.4.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.3.1}Procedure}{42}{subsubsection.4.3.1}
+\contentsline {subsubsection}{\numberline {4.3.1}Procedure}{43}{subsubsection.4.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.3.2}Results}{43}{subsubsection.4.3.2}
+\contentsline {subsubsection}{\numberline {4.3.2}Results}{44}{subsubsection.4.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.3.3}Discussion}{44}{subsubsection.4.3.3}
+\contentsline {subsubsection}{\numberline {4.3.3}Discussion}{45}{subsubsection.4.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.4}Test \#2}{45}{subsection.4.4}
+\contentsline {subsection}{\numberline {4.4}Test \#2}{46}{subsection.4.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.4.1}Procedure}{45}{subsubsection.4.4.1}
+\contentsline {subsubsection}{\numberline {4.4.1}Procedure}{46}{subsubsection.4.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.4.2}Results}{46}{subsubsection.4.4.2}
+\contentsline {subsubsection}{\numberline {4.4.2}Results}{47}{subsubsection.4.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.4.3}Discussion}{46}{subsubsection.4.4.3}
+\contentsline {subsubsection}{\numberline {4.4.3}Discussion}{48}{subsubsection.4.4.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.5}Test \#3}{47}{subsection.4.5}
+\contentsline {subsection}{\numberline {4.5}Test \#3}{48}{subsection.4.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.5.1}Procedure}{47}{subsubsection.4.5.1}
+\contentsline {subsubsection}{\numberline {4.5.1}Procedure}{48}{subsubsection.4.5.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.5.2}Results}{47}{subsubsection.4.5.2}
+\contentsline {subsubsection}{\numberline {4.5.2}Results}{49}{subsubsection.4.5.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.5.3}Discussion}{49}{subsubsection.4.5.3}
+\contentsline {subsubsection}{\numberline {4.5.3}Discussion}{50}{subsubsection.4.5.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.6}User Tests Discussion and Summary}{49}{subsection.4.6}
+\contentsline {subsection}{\numberline {4.6}User Tests Discussion and Summary}{51}{subsection.4.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.6.1}Test Length}{49}{subsubsection.4.6.1}
+\contentsline {subsubsection}{\numberline {4.6.1}Test Length}{51}{subsubsection.4.6.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.6.2}The `I Don't Know' Problem}{49}{subsubsection.4.6.2}
+\contentsline {subsubsection}{\numberline {4.6.2}The `I Don't Know' Problem}{51}{subsubsection.4.6.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.6.3}Results Summary}{50}{subsubsection.4.6.3}
+\contentsline {subsubsection}{\numberline {4.6.3}Results Summary}{52}{subsubsection.4.6.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5}Conclusion}{51}{section.5}
+\contentsline {section}{\numberline {5}Conclusion}{53}{section.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1}Project Summary}{51}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.1}Project Summary}{53}{subsection.5.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2}Project Aims Evaluation}{51}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.2}Project Aims Evaluation}{53}{subsection.5.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3}Project Success Evaluation}{51}{subsection.5.3}
+\contentsline {subsection}{\numberline {5.3}Project Success Evaluation}{53}{subsection.5.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.4}Metrics Review}{52}{subsection.5.4}
+\contentsline {subsection}{\numberline {5.4}Metrics Review}{54}{subsection.5.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.5}Overall System Implementation}{52}{subsection.5.5}
+\contentsline {subsection}{\numberline {5.5}Overall System Implementation}{54}{subsection.5.5}
