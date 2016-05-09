@@ -7,7 +7,7 @@
 \subsection{ODEON}
 	\label{odeon}
 	\subsubsection{Water Tightness Test}
-		Once the SketchUp model had been exported as a .par file using the SU2Odeon plug-in \cite{SU2Odeon} it could be opened in Odeon and checked to ensure that there were no gaps in the model for which rays to escape. If this was the case, the model would have to be fixed in SketchUp and reimported into Odeon. Odeon makes checking the model easy by running a `\textbf{water tightness}' check where a large number of rays are reflected around the room seeing whether any of them manage to escape. Figure~\ref{watertight} shows the Hendrix Hall model undergoing such a test. Once it was ensured that the model was fit for use, the surface materials could be assigned.
+		Once the SketchUp model had been exported as a .par file using the SU2Odeon plug-in \cite{SU2Odeon} it could be opened in Odeon and checked to ensure that there were no gaps in the model for which rays to escape. If this was the case, the model would have to be fixed in SketchUp and reimported into Odeon. Odeon makes checking the model easy by running a `\textbf{water tightness}' check where a large number of rays are traced around the room, seeing whether any of them manage to escape. Figure~\ref{watertight} shows the Hendrix Hall model undergoing such a test. Once it was ensured that the model was fit for use, the surface materials could be assigned.
 
 		%-------------Water tightness test-------------%
 		\begin{figure}[H]
@@ -18,11 +18,11 @@
 
 	\subsubsection{Material Selection}
 	\label{odeon:materials}
-		The surface materials within a room heavily influence how sound propagates around a room, effecting reverberation time and frequency content of said reverb. It is therefore imperative to assign materials as close to the real material as possible in order to produce an accurate representation of a known acoustic environment. For this, Odeon provides a list of common materials often found when constructing buildings.
+		Surface materials greatly influence how sound reflects around a room, effecting reverberation time and the rate at which frequency bands are absorbed. It is therefore imperative to assign materials that closely match those within the real room in order to produce an accurate representation of the acoustic environment. For this, Odeon provides a list of common materials often found when constructing buildings.
 
 		\paragraph{Initial Materials}
 
-			Odeon's material list appears to be designed for auralisation of structures with very basic interior. Due to a lack of choice, exact materials in the room could not be modelled accurately, however the closest match to what is thought to be the true material was selected as a replacement instead. In some cases, appropriate replacement materials were not available, therefore new materials had to be added to the material list. This can be done by finding a materials absorption coefficients, selecting `\textbf{Edit an existing material}' where new materials absorption coefficients can be entered and saved as a new material as shown in figure~\ref{materialEdit}. Absorption coefficient values range from 0 - 1 (0\% - 100\%), indicating the percentage of attenuation applied to the selected frequency band upon a contact with the surface. Required materials for which an appropriate replacement could not be found in the material list are listed in table~\ref{materialTable}.
+			Odeon's material list appears to be designed for the auralisation of structures with very basic interior. Due to a lack of choice, exact materials in the room could not be modelled accurately, however the closest match to what was thought to be the true material were selected as an approximation. In some cases, appropriate replacement materials were not available, therefore new materials had to be added to the material list. This can be done by finding a materials absorption coefficients and selecting `\textbf{Edit an existing material}' where a new materials absorption coefficients can be entered and saved, as shown in figure~\ref{materialEdit}. Absorption coefficient values range from 0 - 1 (0\% - 100\%), indicating the percentage of attenuation applied to the selected frequency band upon a contact with the surface. Required materials for which an appropriate replacement could not be found in the material list are listed in table~\ref{materialTable}.
 
 			\begin{table}[H]
 			\begin{center}
@@ -42,42 +42,42 @@
 
 			%-------------Material Edit Image-------------%
 			\begin{figure}[H]
-				\centerline{\includegraphics[scale = 0.6]{Sections/Implementation/Odeon/images/Absorption.PNG}}
+				\centerline{\includegraphics[scale = 0.9]{Sections/Implementation/Odeon/images/Absorption.PNG}}
 				\caption{Absorption coefficient editing window in Odeon used to add unavailable materials.}
 				\label{materialEdit}
 			\end{figure}
 
 		\paragraph{Surface Types}
 
-			For a number of surfaces it is appropriate to edit properties other than just their absorption coefficients. As explained in section \nameref{designRoom}, the roof hangings are constructed of four joint slanting surfaces. By changing the individual surface types from \textbf{`Normal'} to \textbf{`Fractional'}, Odeon avoids erroneously calculating the diffraction caused due to each of the individual surfaces and treats them as a whole surface. For surfaces such as the contracted seating shown in figure~\ref{seating} where gaps are present in the over all structure, it was possible to model this as one solid object and to set a \textbf{transparency} value. A transparency value of 0 means the surface is a solid where as a value of 1 makes a surface totally transparent which will let ways pass straight through. A transparency value of 0.3 was chosen as a reasonable estimate, the effects of which are shown in figure~\ref{transparency}, showing how a ray can pass through the front of the object, propagate around the inside and eventually reflect back out again.
+			For a number of surfaces it is appropriate to edit properties other than just their absorption coefficients. As explained in section \nameref{designRoom}, the roof hangings are constructed of four joint slanting surfaces. By changing the individual surface types from \textbf{`Normal'} to \textbf{`Fractional'}, Odeon avoids erroneously calculating diffraction due to each of the individual surfaces and treats them as a whole surface. For surfaces such as the contracted seating shown in figure~\ref{seating} where gaps are present in the over all structure, it was possible to model this as one solid object and to set a \textbf{transparency} value. A transparency value of 0 means the surface is a solid, whereas a value of 1 makes a surface totally transparent, allowing rays pass straight through it. A transparency value of 0.3 was chosen as a reasonable estimate, the effects of which are shown in figure~\ref{transparency}, showing how a ray can pass through the front of the object, reflect around the inside and eventually reflect back out again.
 
 
 				%-------------Seating Image-------------%
-			\begin{figure}[H]
+			\begin{figure}[h]
 				\centerline{\includegraphics[scale = 0.12]{Sections/Implementation/Odeon/images/seating.jpg}}
 				\caption{Contracted seating in Hendrix Hall showing gaps in the structure.}
 				\label{seating}
 			\end{figure}
 
 			%-------------Transparency Image-------------%
-			\begin{figure}[H]
+			\begin{figure}[h]
 				\center\includegraphics[scale = 0.7]{Sections/Implementation/Odeon/images/OdeonRays/transparencyEdit/singleRay2_edit3.PNG}
 				\caption{Blue circle highlights a ray penetrating the modelled seating area, reflecting 3 times and escaping the seating area due to the transparency value set.}
 				\label{transparency}
 			\end{figure}
 
-			As previously mentioned in section~\nameref{designRoom}, the lights were modelled as simple rectangles as opposed to the more complex objects made from a large number of surfaces with the intention of more accurately modelling the scattering effect (descripbed in section~\nameref{background:scattering}) due to their shape by altering the objects \textbf{Scattering Coefficient}. Odeon provides a table of initial indicators for possible scattering coefficients, shown in figure~\ref{odeonTable} which can be used to select the scattering coefficient for a surface that fits a similar description to the one given. A scattering coefficient of 0.2 was selected for the lights by assuming the effect would not be as sever as a bookshelf. \textbf{[Seriously, re-word this bit]}.
+			As previously mentioned in section~\nameref{designRoom}, the lights were modelled as simple rectangles as opposed to the more complex objects made from a large number of surfaces with the intention of more accurately modelling the scattering effect (described in section~\nameref{background:scattering}) due to their shape by altering the objects \textbf{Scattering Coefficient}. Odeon provides a table of initial indicators for possible scattering coefficients, shown in figure~\ref{odeonTable} which can be used to select the scattering coefficient for a surface that fits a similar description to the one given. Given the vague descriptions, a scattering coefficient of 0.2 was selected for the lights.
 
 			%-------------Scattering Coefficients table-------------%
 			\begin{figure}[H]
 				\centerline{\includegraphics[scale = 0.3]{Sections/Implementation/Odeon/images/scatteringCoefficients.png}}
-				\caption{A table provided in the Odeon Manual \cite{odeonManual} that can be used to set an approximate scattering coefficient for surfaces similar to those described}
+				\caption{A table provided in the Odeon Manual \cite{odeonManual} that can be used to set an approximate scattering coefficient for surfaces similar to those described.}
 				\label{odeonTable}
 			\end{figure}
 		
 		\paragraph{RIR Comparison}
 
-			Once the initial materials had been selected, the authenticity of the \ac{RIR}'s were checked by comparing their frequency content against that of a real measured \ac{RIR} from Hendrix Hall (see section~\nameref{realRIRs}). This was done by using Matlab to plotting the spectrograms of the omni-directional W channel of both \ac{RIR}'s, as can be seen in figure~\ref{compareOriginal}. The spectrogram shows the high frequency content in the real \ac{RIR} attenuating in a smooth roll off fashion from 20kHz to about 8kHz starting from about 0.2 seconds in, where as the full audible spectrum appears to attenuate almost evenly in the Odeon produced \ac{RIR}.
+			Once the initial materials had been selected, the authenticity of the \ac{RIR}'s were checked by comparing their frequency content against that of a real measured \ac{RIR} from Hendrix Hall (see section~\nameref{realRIRs}). This was done by using Matlab to plotting the spectrograms of the omni-directional W channel of both \ac{RIR}'s, as can be seen in figure~\ref{compareOriginal}. The spectrogram shows the high frequency content in the real \ac{RIR} attenuating in a smooth roll off fashion from 20kHz to about 8kHz starting from approximately 0.2 seconds in, whereas the full audible spectrum appears to attenuate almost evenly in the \ac{RIR} produced in Odeon.
 
 			%-------------Original materials compare-------------%
 			\begin{figure}[H]
@@ -86,14 +86,12 @@
 				\label{compareOriginal}
 			\end{figure}
 
-			In an attempt to produce a more realistic synthetic \ac{RIR} the surface materials were edited several times until .
+			 As the most obvious difference between the two is the difference in high frequency attenuation, large surfaces with low valued high frequency absorption coefficients, such as the walls and ceiling, were edited to absorb more of the high frequency content. Several iterations can be seen in figure~\ref{compareAll}, showing the spectrogram of the real \ac{RIR} and several iterations of the \ac{RIR}'s rendered from Odeon. The Spectrogram at the bottom is that of an \ac{RIR} produced in Odeon with the final material selections. The difference between the real RIR and the final Odeon \ac{RIR} can be seen more clearly in figure~\ref{compareNew}. This was done by adding 10\% onto the existing absorption coefficients for the 63Hz - 2000Hz octave bands, 20\% to the 4000Hz band and 30\% to the 8000Hz band. This also included edited the ceiling material coefficients by adding an extra 10\% to the 8000Hz octave band.
 
-			 As the most obvious difference between the two is the difference in high frequency attenuation, large surfaces with low valued high frequency absorption coefficients such as the walls and ceiling were edited to absorb more of the high frequency content. Several iterations can be seen in figure~\ref{compareAll} showing the spectrogram of the real \ac{RIR} and several iterations of the \ac{RIR}'s rendered from Odeon. The Spectrogram at the bottom is that of an \ac{RIR} produced in Odeon with the final material selections. The difference between the real RIR and the final Odeon \ac{RIR} can be seen in figure~\ref{compareNew}. This was done by adding 10\% onto the existing absorption coefficients for the 63Hz - 2000Hz octave bands, 20\% to the 4000Hz band and 30\% to the 8000Hz band. This also included edited the ceiling material coefficients by adding an extra 10\% to the 8000Hz octave band.
-
-			The following table contains a list of audio samples and edits made to the material list in order to produce each one, with their corresponding spectrogram graph name which can be found in figure~\ref{compareAll}.
+			Table~\ref{materialTable} contains a list of audio samples (can be found \href{http://lt669.github.io/pages/audioSamples.html}{here} or in file 1.4) indicating the edits made to the material list in order to produce each one, with their corresponding spectrogram graph name which can be found in figure~\ref{compareAll}.
 
 			%-------------Audio Samples Table-------------%
-			\begin{table}[H]
+			\begin{table}[h]
 				\centering
 				\begin{tabular}{|l | l | c | c | c |} 
 					\hline
@@ -107,55 +105,38 @@
 					& & & +20\% & 8kHz \\
 					& & Ceiling (Mineral Fibre) & +10\% & 8kHz\\ \hline
 				\end{tabular}
-				\caption{List of audio samples with corresponding spectrogram title in figure~\ref{compareAll} and the edits made for each one.}
+				\caption{List of audio samples with corresponding spectrogram title in figure~\ref{compareAll} and the edits made for each one. (Only Odeon(3)(6)(7) audio sample are shown here as the other audio samples produced as a result of other material list iterations provided no relevant information).}
 				\label{materialTable}
 			\end{table}
 
 			%Material selection conclusion
-			By analysing figure~\ref{compareNew} it can be seen that it was possible to produce a much more fitting \ac{RIR} compared to the one produced using the original materials. By listening to the audio samples, it is clear that though the final Odeon RIR (Odeon7RIR.wav) is much more similar to the real \ac{RIR} (RealRIR.wav) than the one produced using the original surface materials (OdeonOriginal.wav) in terms of reverberation time, they still sound very different in terms of their frequency content, where the \ac{RIR}'s produced in Odeon lack what the author considers \textit{depth}. This is most likely due to the fact that the geometrical acoustic modelling methods used to produce the \ac{RIR} do not accurately reproduce the low-frequency content, the reasons for which were discussed in section~\nameref{SoftwareOdon}
-
-			\begin{center}
-				\textbf{[Consider adding more detail of material selection process here]}
-			\end{center}
+			By analysing figure~\ref{compareNew} it can be seen that it was possible to produce a much more fitting \ac{RIR} compared to the one produced using the original materials. By listening to the audio samples, it is clear that though the final Odeon RIR (Odeon7RIR.wav) is much more similar to the real \ac{RIR} (RealRIR.wav) than the one produced using the original surface materials (OdeonOriginal.wav) in terms of reverberation time, they still sound very different in terms of their frequency content, where the \ac{RIR}'s produced in Odeon lack what the author considers \textit{depth}. This is most likely due to the fact that the geometrical acoustic modelling methods used to produce the \ac{RIR} do not accurately reproduce the low-frequency content, the reasons for which were discussed in section~\nameref{SoftwareOdon}. However, it can be said that the final Odeon \ac{RIR} sounds much more similar to the real one than the other three \ac{RIR}'s produced using earlier iterations of the material list.
 
 			%-------------All materials compare-------------%
 			\begin{figure}[H]
-				\centerline{\includegraphics[scale = 0.4]{Sections/Implementation/Odeon/images/MaterialCompare/OriginalMaterials/all.png}}
-				\caption{Spectrograms of real \ac{RIR} (top) against spectrogram of several rendered \ac{RIR} from Odeon with different material absorption coefficients where ODEON  (bottom) shows the final \ac{RIR} used.}
+				\centerline{\includegraphics[scale = 0.45]{Sections/Implementation/Odeon/images/MaterialCompare/OriginalMaterials/all.png}}
+				\caption{Spectrograms of real \ac{RIR} (top) against spectrogram of several rendered \ac{RIR} from Odeon with different material absorption coefficients where ODEON (bottom) shows the final \ac{RIR} used. Spectrogram titles and corresponding material edits can be found in table~\ref{materialTable}}
 				\label{compareAll}
 			\end{figure}
 
 			%-------------New materials compare-------------%
 			\begin{figure}[H]
-				\centerline{\includegraphics[scale = 0.3]{Sections/Implementation/Odeon/images/MaterialCompare/OriginalMaterials/new.png}}
-				\caption{Spectrograms of real \ac{RIR} (top) against Odeon \ac{RIR} from Odeon with final material absorption coefficients.}
+				\centerline{\includegraphics[scale = 0.4]{Sections/Implementation/Odeon/images/MaterialCompare/OriginalMaterials/new.png}}
+				\caption{Spectrograms of real \ac{RIR} (top) against Odeon \ac{RIR} from Odeon with final material absorption coefficients showing a more convincing replica of the real \ac{RIR} by editing the rooms material absorption coefficients.}
 				\label{compareNew}
 			\end{figure}
 
-			A full material list is available in `\texttt{Material\_List\_V2.xlsx}', showing which materials are applied to each surface within the Odeon model.
+			A full material list is available in `\texttt{Material\_List\_V2.xlsx}', showing which materials are applied to each surface within the Odeon model, as well as a list of absorption coefficients iterations that were applied to the brick walls and ceiling can be found in \texttt{Absorption Coefficients.xlsx}. Both can also be found in file 4.3.
 
 			%Mention incorrect RIRs
-			It was later discovered (see section~\nameref{odeonError}) that the \ac{RIR}'s used to decide the final materials were incorrect, a result of which caused them to be much louder than they should have been. To ensure that the materials selected when using the incorrect \ac{RIR}'s were still appropriate for the new ones, two new \ac{RIR}'s were exported with the original materials and the final materials selected and plotted to compare against the same real \ac{RIR} used before. As the new Odeon \ac{RIR}'s were so much quieter, the real \ac{RIR} was reduced in level to match those produced by Odeon. The results are shown in figure~\ref{compareCorrect}. As it can be seen, the final materials used in the room model reduce the length of the reverb and attenuate high frequencies quicker than when the room model contained the original materials, the match is still not perfect.  
+			It was later discovered (see section~\nameref{odeonError}) that the \ac{RIR}'s used to decide the final materials were incorrect, a result of which caused them to be much louder than they should have been. To ensure that the final surface materials that were selected when using the incorrect \ac{RIR}'s were still appropriate for the new, quieter ones, two new \ac{RIR}'s were rendered using both the original materials and the final materials. Both were plotted to compare against the same real \ac{RIR} used before, the results of which are shown in figure~\ref{compareCorrect}. As the new Odeon \ac{RIR}'s were so much quieter, the real \ac{RIR} was reduced in level to match those produced by Odeon. As it can be seen, the final materials used in the room model reduce the length of the reverb and attenuate high frequencies quicker than when the room model contained the original materials as they had shown previously.  
 
 			%-------------Correct RIR materials compare-------------%
 			\begin{figure}[H]
 				\centerline{\includegraphics[scale = 0.4]{Sections/Implementation/Odeon/images/MaterialCompare/NewMaterials/newOdeonComparison.png}}
-				\caption{Spectrograms of correct Odeon \ac{RIR}'s with original materials (top) and final materials (center) to compare against real RIR that has been level calibrated (bottom).}
+				\caption{Spectrograms of correct Odeon \ac{RIR}'s with original materials (top) and final materials (centre) to compare against real RIR that has been level calibrated (bottom).}
 				\label{compareCorrect}
 			\end{figure}
-
-			\textbf{NOTE: The reason the Real RIR looks so different to the previous one is because it is much quieter, therefore the spectrogram shows less energy much earlier on. However the roll off described the first time is still present and is highlighted, starting again from about 0.2 seconds in. Why do the Odeon RIRs look similar to before then?}
-
-			%RIR calibration for comparison
-
-			%Show that new RIRs are okay
-
-
-		\paragraph{Final Material Choice}
-
-			
-
-			The incorrect \ac{RIR}'s were used to calculate the room materials to begin with. Upon rendering new \ac{RIR}'s, three tests \ac{RIR}'s were rendered with the three main differences in materials selection in order to check that the spectrogram was close enough to the real \ac{RIR}'s
 
 		\subsubsection{Odeon Output Settings}
 			\paragraph{Ray Settings}
@@ -164,6 +145,7 @@
 				Odeon provides the following options for \ac{RIR} rendering:
 
 				\textbf{Astop} - The maximum possible attenuation of each octave band.
+
 				\textbf{Apass} - Ripple of octave band filters in dB.
 
 				\textbf{Band overlap} - 100\% overlap gives a smooth transition between the FIR octave band filters as they are not completely rectangular.
@@ -177,7 +159,7 @@
 				All settings apart from \ac{LR's} and \ac{TO} are left at their default values as they are sufficient for accuracy and prevent the increase of computation time which will be needed given the large number of RIRs required for free movement.
 
 				%TO and Late rays
-				Odeon suggests two possible modes, \textbf{Engineer} and \textbf{Precision} which both suggest using a different number of \ac{LR's} which are 1285 and 20560 respectively. As both the \ac{TO} and \ac{LR's} value increase both the accuracy and computation time of the \ac{RIR}'s, different combinations were tried and \ac{RIR}'s were rendered. Figure~\ref{odeonSettingsRIR} shows plots of the rendered \ac{RIR}'s with the name indicating the \ac{TO} and \ac{LR's} value. For example, `TO\_2\_LR\_1285' indicates the sample was produced where \ac{TO} = 2 and \ac{LR's} = 1285. Table~\ref{odeonSettingsTable} can be used to clarify the settings used for each \ac{RIR} in figure~\ref{odeonSettingsRIR} and indicates which audio sample can be listened to. For consistency, all \ac{RIR}'s were taken from the centre of the room.
+				Odeon suggests two possible modes, \textbf{Engineer} and \textbf{Precision} which both suggest using a different number of \ac{LR's} which are 1285 and 20560 respectively. As both the \ac{TO} and \ac{LR's} value increase both the accuracy and computation time of the \ac{RIR}'s, different combinations of the values were tried and \ac{RIR}'s were rendered for comparison. Figure~\ref{odeonSettingsRIR} shows plots of the rendered \ac{RIR}'s with the name indicating the \ac{TO} and \ac{LR's} value. For example, `TO\_2\_LR\_1285' indicates the sample was produced where \ac{TO} = 2 and \ac{LR's} = 1285. Table~\ref{odeonSettingsTable} can be used to clarify the settings used for each \ac{RIR} in figure~\ref{odeonSettingsRIR} and indicates which audio sample can be listened to. For consistency, all \ac{RIR}'s were taken from the centre of the modelled room.
 
 				\begin{table}
 				\begin{center}
@@ -190,46 +172,45 @@
 					TO\_4\_LR\_20560.wav & 4 & 20560 & TO\_4\_LR\_20560 \\ \hline
 					\end{tabular}
 				\end{center}
-				\caption{Table of audio samples with the corresponding settings information and graph name}
+				\caption{Table of audio samples with the corresponding settings information and graph name. Samples can be listened to \href{http://lt669.github.io/pages/audioSamples.html}{here} or in file 1.3}
 				\label{odeonSettingsTable}
 				\end{table}
 
 
 			%-------------TO and LR value image-------------%
-			\begin{figure}[H]
-				\centerline{\includegraphics[scale = 0.4]{Sections/Implementation/Odeon/images/OdeonSettings/settingsFigure_edit.png}}
+			\begin{figure}[h]
+				\centerline{\includegraphics[scale = 0.35]{Sections/Implementation/Odeon/images/OdeonSettings/settingsFigure_edit.png}}
 				\caption{\ac{RIR}'s rendered using different \ac{TO} and late ray values}
 				\label{odeonSettingsRIR}
 			\end{figure}
 				%-------------TO and LR value Zoomed image-------------%
-			\begin{figure}[H]
-				\centerline{\includegraphics[scale = 0.3]{Sections/Implementation/Odeon/images/OdeonSettings/settingsFigureZoomed.png}}
+			\begin{figure}[h]
+				\centerline{\includegraphics[scale = 0.33]{Sections/Implementation/Odeon/images/OdeonSettings/settingsFigureZoomed.png}}
 				\caption{Zoomed in section indicated by the red dashed line in figure~\ref{odeonSettingsRIR}}
 				\label{odeonSettingsRIRZoomed}
 			\end{figure}
 
 				%-------------TO Zoomed image-------------%
-			\begin{figure}[H]
-				\centerline{\includegraphics[scale = 0.3]{Sections/Implementation/Odeon/images/OdeonSettings/settingsFigure_TOZoom.png}}
+			\begin{figure}[h]
+				\centerline{\includegraphics[scale = 0.35]{Sections/Implementation/Odeon/images/OdeonSettings/settingsFigure_TOZoom.png}}
 				\caption{Zoomed in section showing the effects of using a high \ac{TO} value}
 				\label{odeonSettings_TOZoomed}
 			\end{figure}
 
+				Through aural analysis, it can be heard that the number of \ac{LR's} used has an audible impact, where a lower \ac{LR's} value produces an \ac{RIR} that sounds \textit{grainy}. This can be seen in figure~\ref{odeonSettingsRIRZoomed}, which is zoomed in on the section highlighted in red in figure~\ref{odeonSettingsRIR} showing the \ac{RIR}'s from approximately 0.085s, where the difference caused by the different setting combinations can be seen. The two \ac{RIR}'s with a high \ac{LR's} value (2nd and 4th plot) show more densely packed reflections due to the fact that more rays are used. This produces a `smoother' more natural sounding reverb tail.
 
-				\textbf{Audio samples: SupportingFiles/Audio/Odeon\_Settings}
+				%Figure~\ref{odeonSettings_TOZoomed} shows the same \ac{RIR}'s from the start of the plots. It is here that the effects of the different \ac{TO} values can be seen. The two plots showing the \ac{RIR}'s with a \ac{TO} of 2 (1st and 2nd plots) show more random peaks reflections than the \ac{RIR}'s that used a \ac{TO} of 4. This is because it is at this point that the ray-tracing method has been used, whereas the bottom two plots with a \ac{TO} of 4 show less random reflections as the \ac{ISM} will still be in use, thus peaks due to random ray reflections do not occur. Though the difference in using a \ac{TO} of 2 or 4 can be seen, is not audible.
 
-				Through aural analysis, it can be heard that the number of \ac{LR's} used has an audible impact, where a lower \ac{LR's} value produces an \ac{RIR} that sounds more \textit{grainy}. This can be seen in figure~\ref{odeonSettingsRIRZoomed}, showing the \ac{RIR}'s in figure~\ref{odeonSettingsRIR} which have been zoomed to show the \ac{RIR} from approximately 0.085s where a difference caused by the different setting combinations can be seen. The two \ac{RIR}'s with a high \ac{LR's} value (2nd and 4th plot) show more densely packed reflections due to the fact that more rays are used. This produces a `smoother' more natural sounding reverb tail.
-
-				Figure~\ref{odeonSettings_TOZoomed} shows an earlier part of the \ac{RIR}'s where the effect of using a high \ac{TO} value can be seen. The two plots showing the \ac{RIR}'s with a \ac{TO} of 2 show more random reflections earlier on where the ray-tracing method has been used, whereas the bottom two plots with a \ac{TO} of 4 show less random reflections as the \ac{ISM} will still be used. Though the difference in using a \ac{TO} of 2 or 4 can be seen, is not audible.
+				Figure~\ref{odeonSettings_TOZoomed} shows the same \ac{RIR}'s from the start of the plots. For the \ac{RIR}'s produced with a \ac{TO} value of 2 (1st and 2nd plots), it can be seen that there are a lot more randomly occurring peaks than in the \ac{RIR}'s with a \ac{TO} value of 4. It is assumed that this is caused by the fact that the ray-tracing method is used much earlier on in the top two \ac{RIR} plots, thus the randomly reflected rays cause more randomly occurring peaks. Though the difference in using a \ac{TO} of 2 or 4 can be seen, is not audible by listening to the \ac{RIR} audio samples.
 
 				The time difference taken to render the \ac{RIR}'s is also an important factor when choosing which of these settings to use. Given the potentially large number of \ac{RIR}'s required, a slightly more accurate output may result in a much greater calculation time. Odeon uses information gathered when previously rendering \ac{RIR}'s to speed up calculations for other \ac{RIR}'s being rendered in the same room, however there initial time taken to calculate each of the \ac{RIR}'s was noted and compared for reference.
 
-				Initially it was found that increasing the \ac{TO} from 2 to 4 increased the time taken to render by approximately 20 seconds. However, It was later realised that inaccurate calulation times may have been given due to the fact the project was being stored on the University network, thus adding variable delay times. The project was later stored on a local C drive, eliminating any network speed issues and inconsistencies. After doing so, the difference in \ac{TO} values made almost no difference to the calculation times. In hindsight, a higher \ac{TO} value could have been used to produce more accurate \ac{RIR}'s.
+				Initially it was found that increasing the \ac{TO} value from 2 to 4 increased the time taken to render by approximately 20 seconds, at which point it was decided that a \ac{TO} value of 2 would be used, given that it made no perceptual difference. However, much later it realised that inaccurate calculation times may have been given due to the fact the project was being stored on the University network, thus adding variable delay times. The project was later stored on a local C drive, eliminating any network speed issues and inconsistencies. After doing so, the difference in \ac{TO} values made almost no difference to the calculation times. In hindsight, a higher \ac{TO} value could have been used to produce more accurate \ac{RIR}'s.
 
 				It was found that the \ac{LR's} value made quite a difference to the calculation time:
 
 				\begin{center}
-					\begin{tabular}{c l c}
+					\begin{tabular}{c c c}
 					\textbf{Transition Order} & \textbf{Late Ray Value} & \textbf{Calculation Time (s)} \\ \hline
 					2 & 1285 & 11 \\
 					2 & 20560 & 28 \\
@@ -241,7 +222,7 @@
 				Despite the increase in calculation time by 17 seconds, the inaccuracy of \ac{RIR}'s produced when using the lower \ac{LR's} makes using the higher value justifiable.
 
 				%B-Format setting
-				As the \ac{VSS} requires B-format audio files, the B-format option was selected.
+				As the \ac{VSS} requires B-format audio files, the B-format option was selected in Odeons options menu.
 
 
 
@@ -250,13 +231,13 @@
 				%Possible to use CLF2 to mimic sound source directivity
 				Without selecting otherwise, Odeon uses an omni-directional point source as the sound source. This can be changed however by providing a .cf2 file. This file stores loudspeaker performance data and polar plots in what is known as a Common Loudspeaker Format, a standard used by loudspeaker manufacturers. By importing one of these files, Odeon simulates the directionality of the selected loudspeaker as the sound source. This can be used to attempt to more accurately recreate an \ac{RIR} that would be taken in a real space, by finding the .cf2 file that corresponds to the loudspeaker used for the measurement.
 
-				It is also possible however, to input a custom directivity pattern to model a specific sound source. This provides an opportunity to create a more accurate sound source for a human head, something desirable when creating \ac{RIR}'s that will be convolved with the audio input from a singer. Techniques for recording the directivity of the human head have been reviewed and improved upon in \cite{Monson2012b}, however only directivity data for the horizontal plane was recorded. A student from the University of York has recently investigated the directivity of a human head in both the vertical and horizontal planes ranging from the 63Hz to 8kHz octave band \cite{calum} \textbf{[CHANGE NAME]} and generously provided said data to be used in this project. Figure~\ref{directivity} shows the directivity patten editor window in Odeon with the input horizontal and vertical directivity patterns for the 8Khz octave band taken from \cite{calum}. 
+				It is also possible however, to input a custom directivity pattern to model a specific sound source. This provides an opportunity to create a more accurate sound source for a human head, something desirable when creating \ac{RIR}'s that will be convolved with the audio input from a singer. Techniques for recording the directivity of the human head have been reviewed and improved upon in \cite{Monson2012b}, however only directivity data for the horizontal plane was recorded. Calum Armstrong, a student from the University of York has recently investigated the directivity of a human head in both the vertical and horizontal planes ranging from the 63Hz to 8kHz octave band \cite{calum} and generously provided said data to be used in this project. Figure~\ref{directivity} shows the directivity patten editor window in Odeon with the horizontal and vertical directivity patterns for the 8Khz octave band taken from \cite{calum}. 
 
 
 				%-------------Directivity Image image-------------%
 				\begin{figure}[H]
 					\centerline{\includegraphics[scale = 0.3]{Sections/Implementation/Odeon/images/Directivity/DirectivityPattern.png}}
-					\caption{Directivity pattern editor window in Odeon showing the directivity pattern for the horizontal plane (left) and the vertical plane (right) for the 8Khz octave band using data from \cite{calum}}
+					\caption{Directivity pattern editor window in Odeon showing the directivity pattern for the horizontal plane (left) and the vertical plane (right) for the 8Khz octave band using data from \cite{calum}.}
 					\label{directivity}
 				\end{figure}
 
@@ -268,17 +249,15 @@
 			%Show original output RIR
 			It has been noted that the \ac{RIR}'s produced will attempt to accurately resemble a human head. This involves placing the sound source below the receiver, to resemble the mouth (sound source) below the ears (receiver). When taking real \ac{RIR} measurements it is often not possible to get the source and receiver close enough due to the physical dimensions of the equipment used and therefore result in an unnatural distance between them (see section~\nameref{realRIRs}). However, with using software such as Odeon, where sound sources are calculated from a point source, it is possible to move the source and receiver much closer together. Initially, the sound source was placed 1m off the ground and the receiver was positioned 0.05m above the sound source. Three \ac{RIR}'s positioned along the centre of the room at varying distances from the left wall can be seen in figure~\ref{incorrectRIR}. (These \ac{RIR}'s are taken from grid positions 76, 77 and 83 respectively which can be seen in figure~\ref{bulkRIRs} and is explained in section~\fullref{rirlocations})
 
-			%Show timing errors
+			
 
 
 			%-------------Incorrect RIRs image-------------%
 			\begin{figure}[H]
-				\centerline{\includegraphics[scale = 0.3]{Sections/Implementation/Odeon/images/incorrectRIR/RIR_76_incorrect_edit.png}}
+				\centerline{\includegraphics[scale = 0.33]{Sections/Implementation/Odeon/images/incorrectRIR/RIR_76_incorrect_edit.png}}
 				\caption{Initial \ac{RIR} output with receiver 5cm above sound source showing \ac{RIR}'s from grid positions 76, 77 and 83 shown in figure~\ref{bulkRIRs}}
 				\label{incorrectRIR}
 			\end{figure}
-
-			These \ac{RIR} positions were chosen as the varying distance from the left wall can be used to estimate when to expect reflection other than that from the floor which will remain the same across each \ac{RIR}. Each \ac{RIR} shows a dip of varying amplitude at the same instance in time. Without further inspection, this could be assumed as the direct sound from the source to receiver, which would be in the same place in time as the source and receiver are kept the same distance across all RIRs, though the varying amplitude is questionable.
 
 			%-------------76 incorrect RIR image-------------%
 			\begin{figure}[H]
@@ -287,7 +266,9 @@
 				\label{incorrectRIR_76}
 			\end{figure}
 
-			Figure~\ref{incorrectRIR_76} shows the first \ac{RIR} from figure~\ref{incorrectRIR} which is used for analysis or early reflections. The \ac{RIR}'s can be validated by calculating where expected reflections should be using the following equation:
+			These \ac{RIR} positions were chosen as the varying distance from the left wall can be used to estimate when to expect reflection other than that from the floor which will remain the same across each \ac{RIR}. At the beginning of each plot, a dip of varying amplitude at the same instance in time can be seen. Without further inspection, this could be assumed as the direct sound from the source to receiver, which would be in the same place in time as the source and receiver are kept the same distance across all RIRs, though the varying amplitude is questionable.
+
+			Figure~\ref{incorrectRIR_76} shows the first \ac{RIR} from figure~\ref{incorrectRIR} which is used the for analysis of early reflections. The \ac{RIR}'s can be validated by calculating where expected reflections should be, using the following equation:
 			
 			\begin{equation}\label{distance}
 				t_s = t_p - \frac{d}{c}
@@ -302,25 +283,27 @@
 			\end{tabular}
 
 
-			Therefore, if this dip is assumed to be the direct sound which occurs at $t_p = 0.03448s$ , where $d = 0.5$, then the start of the impulse can be calculated to be:
+			Therefore, if this dip is assumed to be the direct sound which occurs at $t_p = 0.03448s$ , where $d = 0.05m$, then the start of the impulse can be calculated to be:
 
 			\begin{equation}
 			 0.03448s - \frac{0.05m}{344m/s} = 0.03433s = t_s
 			\end{equation}
 
-			This is indistinguishable from the direct sound peak, which is understandable given the source and receiver are 0.05m away. Now the expected start of this impulse is known, the expected first reflection due to the floor can be calculated:
+			This is indistinguishable from the direct sound peak, which is understandable given the source and receiver are only separated by 0.05m. Now the expected start of this impulse is known, the expected first reflection due to the floor can be calculated:
 
 			\begin{equation}
 			\frac{2.05m}{344m/s} + t_s = 0.4029s
 			\end{equation}
 
-			However, it can be seen that the first reflection occurs at 920, at a time of $0.039s$ suggesting that sound has travelled 1.6392m before reaching the receiver. However, the shortest available distance a sound could travel other than directly from the source to the receiver is 2.05m, which is the first floor reflection.
+			However, it can be seen that the first reflection occurs at (2), at a time of $0.039s$ suggesting that sound has travelled 1.6392m before reaching the receiver. 
 
 			\begin{equation}
 			(0.039s - t_s)*c = 1.6382m
 			\end{equation}
 
-			As the source and receiver are placed 1.85m away from the left side wall, a second reflection would be expected to occur at:
+			However, the shortest available distance a sound could travel other than directly from the source to the receiver is 2.05m (the first floor reflection).
+
+			As the source and receiver are placed 1.85m away from the left side wall (meaning sound has to travel slightly over twice this distance), a second reflection would be expected to occur at:
 
 			\begin{equation}
 			\frac{1.85m\times{2}}{c} + t_s = 0.04509s
@@ -328,7 +311,7 @@
 
 			indicated by (3) in figure~\ref{incorrectRIR_76}. However, it can be seen that no strong reflection occurs here.
 
-			After an email was sent to the technical department \cite{odeonEmail}, it was suggested that the small dip may be a bug in the version of Odeon being used. It could therefore be assumed that the direct sound is actually captured at the peak shown at (2) in figure~\ref{incorrectRIR_76} at a time of $0.03908$. From this the new expected time for the start of the impulse could be calculated:
+			After an email was sent to the technical department at Odeon \cite{odeonEmail}, it was suggested that the small dip at the beginging of the \ac{RIR} may be a bug in the version of Odeon being used. It could therefore be assumed that the direct sound is actually captured at the peak shown at (2) in figure~\ref{incorrectRIR_76} at a time of $0.03908$. From this the new expected time for the start of the impulse could be calculated:
 
 			\begin{equation}
 			0.03908s - \frac{d}{c} = 0.03893s = t_s
@@ -342,7 +325,7 @@
 
 			meaning that it has reflected off a surface approximately 0.28m away, of which there is no surface.
 
-			It is also apparent that if the first peak other than the dip at the beginning of the file is taken to be the direct sound, it can be seen across impulse responses that these would occur at different times depending on room position. This is also incorrect as it has been mentioned that the source and receiver distance is kept constant across \ac{RIR}’s. The first strong reflection appears to be delayed in time the further away from the left side wall the RIRs are taken which would be accurate, however the timings are incorrect.
+			It is also apparent that if the first peak other than the dip at the beginning of the file is taken to be the direct sound, it can be seen across the \ac{RIR} plots shown in figure~\ref{incorrectRIR} that these would occur at different times depending on room position. This is also incorrect as it has been mentioned that the source and receiver distance is kept constant for all \ac{RIR} simulations. The first strong reflection appears to be delayed in time the further away from the left side wall the RIRs are taken which would be accurate, however the timings are incorrect.
 
 			\paragraph{Experiment}
 			%Show Height Test Images
@@ -351,12 +334,12 @@
 			 \vspace{5mm}
 			 \begin{center}
 			 \begin{minipage}{0.75\textwidth}
-			 \textit{``If a receiver is placed very close to a surface then results will be sensitive to the actual position of the secondary sources generated by ODEON’s late ray method. If such a secondary source happens to be very close to the receiver, e.g. 1 to 10 centimetres, this may produce a spurious spike on the decay curve, resulting in unreliable predictions of the reverberation time.''}
+			 ``\textit{If a receiver is placed very close to a surface then results will be sensitive to the actual position of the secondary sources generated by ODEON’s late ray method. If such a secondary source happens to be very close to the receiver, e.g. 1 to 10 centimetres, this may produce a spurious spike on the decay curve, resulting in unreliable predictions of the reverberation time [...] to avoid this problem it is recommended that distances to surfaces are kept greater than say 0.3 and 0.5 meters}''
 			 \end{minipage}
 			 \end{center}
 			 \vspace{5mm}
 
-			 Though this is a problem said to be caused by secondary sources, it can be assumed that this issue could be caused to primary sources. This was investigated by producing RIRs with the source in a stationary location with receivers varying in distance above the source. Figure~\ref{HeightTest} shows six \ac{RIR}'s produced using different distances between the source and receiver where the numbers 1 - 6 indicate the following:
+			 Though this is a problem said to be caused by secondary sources, it can be assumed that this issue could also be caused by primary sources. This was investigated by producing \ac{RIR}'s with the source in a stationary location with receivers varying in distance above the source. Figure~\ref{HeightTest} shows six \ac{RIR}'s produced using different distances between the source and receiver where the numbers 1 - 6 indicate the following:
 
 			 \begin{center}
 				 \begin{tabular}{|c |c| c|}
@@ -373,21 +356,23 @@
 			 \end{center}
 
 		 	%-------------Height Test image-------------%
-			\begin{figure}[H]
-				\centerline{\includegraphics[scale = 0.3]{Sections/Implementation/Odeon/images/incorrectRIR/HeightTest_Edit.png}}
+			\begin{figure}[h]
+				\centerline{\includegraphics[scale = 0.32]{Sections/Implementation/Odeon/images/incorrectRIR/HeightTest_Edit.png}}
 				\caption{Plots of \ac{RIR}'s produced with the receiver placed at varying distances from the source, indicated by the title of each plot where \textbf{(1)}: 5cm \textbf{(2)}: 15cm \textbf{(3)}: 30cm \textbf{(4)}: 50cm \textbf{(5)}: 60cm \textbf{(6)}: 70cm}
 				\label{HeightTest}
 			\end{figure}
 
 			The following numbers (1) - (6) refer to the individual plots in figure~\ref{HeightTest}.
 
-			A 5cm distance between the source and receiver shown in (1) was originally used. This plot can be seen to be greatly different from the rest (\textit{\textbf{Note:} The reason the \ac{RIR} shown in (1) looks different to previously investigated \ac{RIR}'s such as those in figure~\ref{incorrectRIR} is due to (1) being zoomed in, causing it to look greater in amplitude. This was done so it could be compared to (2) - (6) whilst being on the same scale}). It is in this \ac{RIR} that the `dip' found in the previously investigated \ac{RIR}'s is contained, whereas the \ac{RIR}'s with a greater distance between source and receiver (2) - (6) do not.
+			A 5cm distance between the source and receiver shown in (1) was originally used. This plot can be seen to be greatly different from the rest (\textit{\textbf{Note:} The reason the \ac{RIR} shown in (1) looks different to previously investigated \ac{RIR}'s such as those in figure~\ref{incorrectRIR} is due to the plot being zoomed in, causing it to look greater in amplitude. This was done so it could be compared to (2) - (6) whilst being on the same scale}). It is in this \ac{RIR} that the `dip' found in the previously investigated \ac{RIR}'s is contained, whereas the \ac{RIR}'s with a greater distance between source and receiver (2) - (6) do not.
 
 			\paragraph{Results}
 			\label{odeon:results}
 			%Show new RIRs with correct timings
 
-			It is suggested in the Odeon manual that source and receiver be at least between 30cm and 50cm apart. Though a distance of 15cm (2) shows an \ac{RIR} similar to the rest of the assumed correct ones, it is obvious that there is one strong direct sound, however it is difficult to see other reflections, whereas when the receiver is moved further away to a distance suggested by the Odeon manual, the early reflections become more obvious, with clarity of amplitude being more consistent through (4) - (6). The peaks in the RIR (5) (60cm) were investigated to assure they correctness, shown in figure~\ref{60cm}. This \ac{RIR} was chosen as the distance between the source and receiver for the real RIR’s taken in Hendrix Hall was also 60cm. As the aim of achieving a more accurate human head topology is not possible due to this issue caused by Odeon, it was decided that for now, consistency is the next best thing.
+			It is suggested in the Odeon manual (quoted above) that source and receiver be at least between 30cm and 50cm apart. Though a distance of 15cm (2) shows an \ac{RIR} similar to the rest of the assumed correct ones, it is obvious that there is one strong direct sound, however it is difficult to see other reflections, whereas when the receiver is moved further away to a distance suggested by the Odeon manual, the early reflections become more obvious, with clarity of amplitude being more consistent through (4) - (6). The peaks in the RIR (5) (60cm) were investigated to assure they correctness, shown in figure~\ref{60cm}. This \ac{RIR} was chosen as the distance between the source and receiver for the real RIR’s taken in Hendrix Hall was also 60cm. As the aim of achieving a more accurate human head topology is not possible due to this issue caused by Odeon, it was decided that for now, consistency is the next best thing.
+
+			As can be seen, one the source has been moved away from the receiver by the amount suggested in the Odeon manual,
 
 			%-------------60cm image-------------%
 			\begin{figure}[H]
