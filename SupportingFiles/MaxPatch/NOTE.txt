@@ -1,1 +1,0 @@
-This is not the final Maxpatch. This is used as a dummy file to test including js files and audio files. The final version of the max patch is located on the external harddrive
