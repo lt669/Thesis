@@ -6,7 +6,7 @@
 	\section{Conclusion}
 	
 		\subsection{Project Summary}
-		A digital model of Hendrix Hall was deigned and used to produce a large grid of synthetic \ac{RIR}'s in order to implement a direct \ac{RIR} rendering system with the aim of allowing a user to move themselves around a virtual space. The original Max patch designed for the \ac{VSS} was built upon to accommodate this new functionality by implementing an automated file loading system and a \ac{RIR} interpolation system that approximates the movement defined by the user. Three user tests were carried out to access the plausibility of the system as a whole and to uncover information regarding the perception of mobility with regards to the implemented system. 
+		A digital model of Hendrix Hall was designed and used to produce a large grid of synthetic \ac{RIR}'s in order to implement a direct \ac{RIR} rendering system with the aim of allowing a user to move themselves around a virtual space. The original Max patch designed for the \ac{VSS} was built upon to accommodate this new functionality by implementing an automated file loading system and a \ac{RIR} interpolation system that approximates the movement defined by the user. Three user tests were carried out to access the plausibility of the system as a whole and to uncover information regarding the perception of mobility with regards to the implemented system. 
 
 		% \subsection{Project Aims Evaluation}
 
@@ -24,11 +24,11 @@
 
 		\subsection{Project Success Evaluation}
 
-			To measure the success of the project, the aims set in \fullref{background:aims} can be evaluated as follows:
+			To measure the success of the project, the aims set in \nameref{background:aims} can be evaluated as follows:
 
 			\textbf{1)} Was the desired direct \ac{RIR} rendering system fully implemented?
 
-				Partially. Though the desired system was produced in Max (section~\fullref{iteration1}), due to technological issues regarding the speed at which it ran, it could not be used for a real time system such as the one required. Instead, a compromise between desired functionality and reliability was made (section~\fullref{iteration3}), where instead of a user being able to place themselves between \ac{RIR} locations, they were restricted to the strict locations available within the \ac{RIR} grid. So, though technically the desired system was not used, the compromise still allowed the user to achieve a similar result.
+				Partially. Though the desired system was produced in Max (section~\nameref{iteration1}), due to technological issues regarding the speed at which it ran, it could not be used for a real time system such as the one required. Instead, a compromise between desired functionality and reliability was made (section~\nameref{iteration3}), where instead of a user being able to place themselves between \ac{RIR} locations, they were restricted to the strict locations available within the \ac{RIR} grid. So, though technically the desired system was not used, the compromise still allowed the user to achieve a similar result.
 
 				Upon these grounds, the author believes this aim had been achieved partially successfully.
 
@@ -36,7 +36,7 @@
 			\textbf{2)} Were comprehensive results obtained regarding the number of \ac{RIR}'s required to produce a plausible system?
 
 
-				Partially. The results obtained from user test \#3 give an indication to the optimal number of \ac{RIR}'s required when the speed of mobility in the system varies depending on \ac{RIR} separation, however the results do not indicate the minimum number of \ac{RIR}'s that can be used to convince a user that they can freely move around a virtual space, which was the original intention of this test. This is a consequence of negligence on the authors part when forced to design a system other that the one originally intended. However, results from user test \#2 show that some of the participant perceive movement when moved a distance as short as 2m (excluding the outlier of trial 1, where all participants reported that they could tell they had moved) while there is a rise in the number of people who perceive movement after a distance of 4m. This result in combination with the results from user test \#3, suggesting that movement becomes noticeable with an \ac{RIR} of 3 - 4 meters, indicating that using \ac{RIR}'s separated distances less than this may not be necessary.
+				Partially. The results obtained from user test \#3 give an indication to the optimal number of \ac{RIR}'s required when the speed of mobility in the system varies depending on \ac{RIR} separation. However, the results do not indicate the minimum number of \ac{RIR}'s that can be used to convince a user that they can freely move around a virtual space, which was the original intention of this test. This was a result of overlooking some of the undesired functionality of the new system. However, results from user test \#2 show that some of the participant perceive movement when moved a distance as short as 2m (excluding the outlier of trial 1, where all participants reported that they could tell they had moved) while there is a rise in the number of people who perceive movement after a distance of 4m. This result in combination with the results from user test \#3, suggesting that movement becomes noticeable with an \ac{RIR} of 3 - 4 meters, indicating that using \ac{RIR}'s separated by a distance less than this may not be necessary.
 
 				So, though useful results for the implemented system have been acquired, to investigate the minimum number of \ac{RIR}'s required for the originally intended system, further investigation is required, thus the author again believes that this aim had been achieved partially successfully.
 
@@ -46,17 +46,11 @@
 
 				 %This had an obvious impact on the results of user test \#3, with users commenting on the variation in speed rather than the ability to select their location.
 
-			\textbf{3)} Were comprehensive results obtained regarding the perceptual difference in moving distance within a the \ac{VAE} when using synthetic \ac{RIR}'s as opposed to the real \ac{RIR}'s?
+			\textbf{3)} Were comprehensive results obtained regarding the perceptual difference in moving varying distances within a the \ac{VAE} when using synthetic \ac{RIR}'s as opposed to the real \ac{RIR}'s?
 
 				Yes. The results from user test \#1 show that the majority of participants answered incorrectly when asked if they felt they had moved a distance that is shorter, the same or further than they had moved when they were placed in the \ac{VAE} when using real \ac{RIR}'s. This indicates that the use of different \ac{RIR}'s may effect the user perception of mobility. More thorough results could have been obtained by testing the users ability to perceive the difference in distance moved when using two sets of the same \ac{RIR}'s (eg, using only synthetic \ac{RIR}'s and seeing if the user was more likely to get these answers correct).
 
-				However, it would have been beneficial to also test the participants using two of the \ac{RIR}'s twice in an attempt to assess whether they might perceive movement when in fact they have been moved the same distance twice. This would indicate whether the participants could trick themselves in to thinking they have moved.% WRITE THIS BIT
-
-		
-
-			% Due to this compromise, this metric is deemed on partially successful
-
-
+				%However, it would have been beneficial to also test the participants using two of the \ac{RIR}'s twice in an attempt to assess whether they might perceive movement when in fact they have been moved the same distance twice. This would indicate whether the participants could trick themselves in to thinking they have moved.% WRITE THIS BIT
 
 			%Despite attempts to make SRIR accurate they still do not sound close enough
 
@@ -69,10 +63,18 @@
 			%The reason iteration 3 had to be used is because the author ran out of time and needed to implement a system
 
 		\subsection{Overall System Implementation}
-			 As mentioned in \fullref{background:aims}, using the direct \ac{RIR} rendering method to implement mobility is simple, however the time required to implement such as system from scratch has to potential to deter people from recreating it. Now that the system is in place however, the process of creating another \ac{VAE} would simply require to modelling of the room. Though this was one of the most time consuming parts of the process, it is the only process that would need to be redone.
+			 As mentioned in \nameref{background:aims}, using the direct \ac{RIR} rendering method to implement mobility is simple, however the time required to implement such as system from scratch has the potential to deter people from recreating it. Now that the system is in place however, the process of creating another \ac{VAE} would simply require the modelling of the desired room. Though this was one of the most time consuming parts of the process, it is the only process that would need to be redone.
+
+			 One of the issues raised during the project was the effect of the system latency on the accuracy of the \ac{RIR}'s. As the direct wall reflections were removed from a large portion of the \ac{RIR} files the system became a lot less accurate. It is possible that this latency may come down to the software used, Max. It may be possible to reduce the latency of the system by reproducing it in a more efficient language, such as C++.
 
 			%User tests say it is shit
 			Though it has been mentioned that the initially designed system was not able to be fully implemented, there now exists a system that can be easily built upon to implement different methods of virtual location simulation.
+
+			Rendering synthetic \ac{RIR}'s has shown to have its advantages over recording real \ac{RIR}'s such as being able to produce them in bulk without having to leave a computer. Also the option to move the source and receiver closer than typical methods of \ac{RIR} recordings would allow (when using a loudspeaker and a microphone) and modelling a human head by using the appropriate directivity pattern was simple to do. However, it has been shown that issues such as the lack of necessary data for correctly modelling a room, such as the material list, has a significant impact on the quality of the produced \ac{RIR}'s, as shown in \nameref{rirComparison}.
+
+		\subsection{Final Comments}
+			It was found that for a real time application such as the one required for the VSS, that the system implemented requires further work before it can be considered a beneficial tool for musical performers.
+
 \end{document}
 		
 		

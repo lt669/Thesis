@@ -22,7 +22,7 @@
 		The procedure that was carried out to test the implemented system is described and the results are presented and discussed, followed by a conclusion, highlighting potential reasons for the obtained results.
 
 	\textbf{Project Management}\\
-		A brief overview of how the project was planned and time managed.
+		A brief overview of how the project was planned and time-managed.
 
 	\textbf{Conclusion}\\
 		The project as a whole is summarised and measured against the initial metrics set, evaluating the overall success of the project. The issues raised throughout previous sections are reviewed and potential solutions are discussed. Further improvements to the system are suggested, including some of the work that was initially intended to be carried out.
@@ -55,7 +55,7 @@
 
 		In order to reproduce the acoustical phenomena of a room, an \ac{RIR} must be obtained. This is done by exciting all audible frequencies within the room by using a sound source such as a loudspeaker, and recording the result using a receiver microphone.
 
-		There are a number of techniques used for exciting all audible frequencies. These include an \textbf{impulse} (such as a starter pistol) or an \textbf{exponentially swept sine} for which a sine wave is exponentially increased in frequency over a fixed period of time. The difference between these techniques is that an impulse emits all of the audible frequencies into the room at the same time, whereas the sine sweep does it gradually. As the idea is to obtain an \textbf{impulse}, using the impulse technique is much more simple as no post processing is required. Using an exponentially swept sine requires post processing in order to time align all of the frequency dependent room reflections through the use of a deconvolution algorithm and thus producing an impulse response, making this method a little less simple. However, this method produces a greater signal to noise ratio thus is the desired method \cite{Stan2002}. Once the impulse is obtained, it can be convolved with an audio signal, making that audio signal sound as though it is being produced within the room that the \ac{RIR} was taken from. Convolution simply takes an input signal and multiplies each of the discrete samples with the impulse response, thus simulating the effect the room would have on each of these samples if they were actually emitted in the room itself \cite{Smith2003}.
+		There are a number of techniques used for exciting all audible frequencies. These include an \textbf{impulse} (such as a starter pistol) or an \textbf{exponentially swept sine} for which a sine wave is exponentially increased in frequency over a fixed period of time. The difference between these techniques is that an impulse emits all of the audible frequencies into the room at the same time, whereas the sine sweep does it gradually. As the idea is to obtain an \textbf{impulse}, using the impulse technique is far simpler as no post processing is required. Using an exponentially swept sine requires post processing in order to time align all of the frequency dependent room reflections through the use of a deconvolution algorithm, making this method a little less simple. However, this method produces a greater signal to noise ratio thus is the desired method \cite{Stan2002}. Once the impulse is obtained, it can be convolved with an audio signal, making that audio signal sound as though it is being produced within the room that the \ac{RIR} was taken from. Convolution simply takes an input signal and multiplies each of the discrete samples with the impulse response, thus simulating the effect the room would have on each of these samples if they were actually emitted in the room itself \cite{Smith2003}.
 
 %-------------Ambisonics-------------%
 	\subsection{Ambisonics}
@@ -87,7 +87,7 @@
 			%The techniques listen here are not used in this project and do not need to be fully understood. However they are mentioned for completeness and the use of them was considered at the start of the project and could be used in future work.
 			Methods for physically measuring \ac{RIR}'s within rooms has been discussed, however there is also a way to synthesis \ac{RIR}'s by mathematical modelling the way in which sound interacts with a room. The two methods of doing so are described as \textbf{Wave-based Methods} and \textbf{Geometrical Acoustic Methods}.
 
-			\textbf{Note: The next paragraph on wave-based methods is adapted from the initially submitted literature review and is not required for the understanding of this project. However, it is provided here as the initial project plan included the use of such methods and is therefore mentioned later in this section as well as \fullref{furtherwork}}
+			\textbf{Note: The next paragraph on wave-based methods is adapted from the initially submitted literature review and is not required for the understanding of this project. However, it is provided here as the initial project plan included the use of such methods and is therefore mentioned later in this section as well as in section~\nameref{furtherwork}}
 
 			Wave-based methods are based on solving the wave equation, producing a solution that is physically correct and can be used to accurately model how a sound would propagate from a source in a room and reflect \cite{Siltanen2010}. One such example is the finite-difference time-domain (FDTD) method, where sound is modelled by calculating the interaction between nodes in a rectangular mesh. The number of nodes in the mesh is determined by the frequency being modelled, therefore as the frequency being modelled increases, the number of nodes required in the mesh also increases which in turn increases computation time. It is for this reason that using wave-based methods are impractical for calculating high frequency sound propagation.
 
@@ -97,7 +97,7 @@
 
 		\paragraph{Ray-Tracing}
 		\label{rayTracing}
-			The ray-tracing method imitates a sound source by emitting a large number of particles in various directions from a single point \cite{Rindel1995}. These particles are then traced around the room,  losing energy each time the particle encounters a surface by a factor of $1 - \alpha$, where $\alpha$ is the absorption coefficient assigned to that surface, illustrated in figure~\ref{rayTracingImage}. The angle at which the particle is then reflected is determined by the scattering coefficient assigned to the surface of contact, ranging from a specular reflection to a completely random reflection \cite{odeonManual} (described in section~\fullref{background:scattering}). For a specific receiver position, an area around said point is defined in which rays are collected and used to calculate the results.
+			The ray-tracing method imitates a sound source by emitting a large number of particles in various directions from a single point \cite{Rindel1995}. These particles are then traced around the room,  losing energy each time the particle encounters a surface by a factor of $1 - \alpha$, where $\alpha$ is the absorption coefficient assigned to that surface, illustrated in figure~\ref{rayTracingImage}. The angle at which the particle is then reflected is determined by the scattering coefficient assigned to the surface of contact, ranging from a specular reflection to a completely random reflection \cite{odeonManual} (described in section~\nameref{background:scattering}). For a specific receiver position, an area around said point is defined in which rays are collected and used to calculate the results.
 
 			\begin{figure}[H]
 				\center\includegraphics[scale = 0.5]{Sections/Background/images/rayTracingImage_edit.png}
@@ -109,11 +109,7 @@
 
 		\paragraph{Image Source Method}
 
-			%The \ac{ISM} represents specular reflections from surfaces as its own source, mirroring that of the original sound source, creating what is known as ``image sources'' \cite{Rindel1995} and can be used to find all possible specular reflection paths. Figure~\ref{ISMPic} illustrates this concept. The advantage of the \ac{ISM} is that each surface can be modelled by an image source which provides a great deal of data regarding the contribution to the received sound making this method more accurate than ray-tracing.
-
-%			The \ac{ISM} can be used to find all possible specular reflections paths from the sound source to the receiver position. This is done by representing each specular reflection from a surface as a secondary source known as an ``image source'' \cite{Rindel1995}, illustrated in figure~\ref{ISMPic}. The advantage of the \ac{ISM} is that each surface can be modelled by an image source which provides a great deal of data regarding the contribution to the received sound as opposed to relying on random ray reflection as is done in the ray-tracing method, making this method more accurate, however as each image source then emits more rays, there is a possibility to produce a great deal more image sources. This means that the number of image sources grows exponentially for each new image source than is produced making this method much more computationally expensive than the ray-tracing method. This problem can be avoided by setting a \textit{reflection order} which determines how many times a ray can reflect off a surface before calculations are stopped, thus preventing the creation of more image source though the calculates for the prediction of the rooms acoustics will be incomplete. This obviously then makes the \ac{ISM} less accurate with a smaller reflection order.
-
-			The \ac{ISM} can be used to find all possible specular reflection paths from the sound source to the receiver position. This is done by representing each specular reflection (a reflection with angle equal to the angle of incidence) from a surface as a secondary source known as an ``image source'' \cite{Rindel1995}, illustrated in figure~\ref{ISMPic}. Once these image sources have been created, a visibility test is run which checks to see which image sources are in sight of the receiver thus calculating which image sources should be used in the final calculation of the \ac{RIR}. If the receiver is then moved, the images sources to not need to be recalculated, only the visibility check needs to be run again. It is due to this that the \ac{ISM} is much more accurate than ray-tracing which relies on random reflections to calculate an \ac{RIR}. However, as each new image source emits a number of rays of its own, there is a potential for it to produce a number of image sources. Therefore, with each new image source there is an exponential growth in the total number of image sources, making this method much more computationally expensive than ray-tracing. This problem can be avoided by setting a \textit{reflection order} which determines how many times a ray can reflect around a room before calculations are stopped, thus preventing the creation of more image sources. This however will cause the prediction of the rooms acoustics to be incomplete. This obviously then makes the \ac{ISM} less accurate with a smaller reflection order.
+			The \ac{ISM} can be used to find all possible specular reflection paths from the sound source to the receiver position. This is done by representing each specular reflection (a reflection with angle equal to the angle of incidence) from a surface as a secondary source known as an ``image source'' \cite{Rindel1995}, illustrated in figure~\ref{ISMPic}. Once these image sources have been created, a visibility test is run which checks to see which image sources are in sight of the receiver thus calculating which image sources should be used in the final calculation of the \ac{RIR}. If the receiver is then moved, the images sources do not need to be recalculated, only the visibility check needs to be run again. It is due to this that the \ac{ISM} is much more accurate than ray-tracing which relies on random reflections to calculate an \ac{RIR}. However, as each new image source emits a number of rays of its own, there is a potential for it to produce a number of image sources. Therefore, with each new image source there is an exponential growth in the total number of image sources, making this method much more computationally expensive than ray-tracing. This problem can be avoided by setting a \textit{reflection order} which determines how many times a ray can reflect around a room before calculations are stopped, thus preventing the creation of more image sources. This however will cause the prediction of the rooms acoustics to be incomplete. This obviously then makes the \ac{ISM} less accurate with a smaller reflection order.
 
 			%Once all image sources have been calculated, a visibility check occurs. This checks to see whether the image sources that have been produced can be seen by the receiver, therefore checking whether that image source needs to be used or not offering the potential to cut down on computation time. If the receiver position is moved, the visibility check is run again. Overall, this saves time as the image sources do not need to be recalculated.
 
@@ -125,7 +121,6 @@
 			\end{figure}
 
 		\paragraph{Hybrid Method}
-			%The inherent problems of the ray-tracing method and the \ac{ISM} are occluded by using a hybrid method that uses the best part of both. 
 
 			Ideally, the \ac{ISM} would be used to calculate all sound rays due to its accurate results, however due to the computational limitations, Odeon uses a hybrid method to provide a reasonable compromise between calculation time and accuracy.
 
@@ -135,7 +130,7 @@
 		\paragraph{Scattering}
 		\label{background:scattering}	
 
-			Unless a surface is infinitely smooth (which almost all surfaces are not), when sound comes into contact with that surface it is scattered at a angle that deviates for that at which it hit the wall. Odeon takes this phenomena into account by using `Vector Based Scattering' \cite{odeonManual}. This is done by adding the specular vector to a randomly reflecting vector that has been scaled by a value of 1-s, where s is the scattering coefficient applied to a surface (ranging from 0 - 1). This essentially calculates how much a specular reflection should deviate based on how `rough' a surface is, where the rougher the surface, the higher the scattering coefficient. Figure~\ref{odeonScatterImage} shows an annotated image taken from the Odeon manual illustrating this concept.
+			Unless a surface is infinitely smooth (which almost all surfaces are not), when sound comes into contact with that surface it is scattered at a angle that deviates from that at which it hit the wall (the angle of incident). Odeon takes this phenomena into account by using `Vector Based Scattering' \cite{odeonManual}. This is done by adding the specular vector to a randomly reflecting vector that has been scaled by a value of 1-s, where s is the scattering coefficient applied to a surface (ranging from 0 - 1, covered in more detail in section~\nameref{surfaceTypes}). This essentially calculates how much a ray should deviate from a specular reflection based on how `rough' a surface is, where the rougher the surface, the higher the scattering coefficient. Figure~\ref{odeonScatterImage} shows an annotated image taken from the Odeon manual illustrating this concept.
 
 
 			\begin{figure}[H]
@@ -146,11 +141,11 @@
 
 		\paragraph{Room Modelling}
 
-			In order to predict the acoustics of a space, Odeon requires a geometry file in the form of a .par file. This file contains information regarding the room dimensions, object dimensions and positions. This can be produced within Odeon itself by using the built in `Extrusion Modeller' which allows a user to use a script like language to describe the rooms geometry. It is also possible to use 3rd party applications such as Google SketchUp \cite{SKU}, a software which is described in section~\fullref{GSU}.
+			In order to predict the acoustics of a space, Odeon requires a geometry file in the form of a .par file. This file contains information regarding the room dimensions, object dimensions and positions. This can be produced within Odeon itself by using the built in `Extrusion Modeller' which allows a user to use a script like language to describe the rooms geometry. It is also possible to use 3rd party applications such as Google SketchUp \cite{SKU}, a software which is described in section~\nameref{GSU}.
 
 		\paragraph{Material Selection}
 
-			Selecting the appropriate absorption coefficients of the surfaces within a \ac{VAE} is crucial to determining how sound will attenuate as it reflects around the room (as described in \fullref{rayTracing}), thus the accuracy of the generated \ac{RIR}. Odeon provides a material list with common materials with pre-determined absorption coefficients that can be assigned to the surfaces of a model read from a geometry file. This material list can be extended by creating new materials and assigning absorption coefficients to the appropriate frequency bands.
+			Selecting the appropriate absorption coefficients of the surfaces within a \ac{VAE} is crucial to determining how sound will attenuate as it reflects around the room (as described in \nameref{rayTracing}), thus the accuracy of the generated \ac{RIR}. Odeon provides a material list with common materials with pre-determined absorption coefficients that can be assigned to the surfaces of a model read from a geometry file. This material list can be extended by creating new materials and assigning absorption coefficients to the appropriate frequency bands.
 
 	\subsubsection{Google SketchUp}\label{GSU}
 		Google SketchUp \cite{SKU} is an easy to use 3-D modelling software that can be used to produce room models. Unlike Odeon extrusion modeller, it allows the user the draw surfaces with a mouse, easily duplicate structures and provides simple measuring tools and markers to enable accurate modelling. Plug-ins such as SU2Odeon (``SketchUp to Odeon'') \cite{SU2Odeon} enables the user to convert the model into a .par file for Odeon to use as a geometry file.
@@ -165,10 +160,10 @@
 
 	\subsubsection{The Virtual Singing Studio}
 
-		The \ac{VSS} is a loudspeaker based room acoustics simulator used as a tool for analysing the correlation between room acoustic characteristics and vocal performance parameters as part of Dr Jude Breretons PhD Thesis \cite{Brereton2014}. It is comprised of a head-mounted microphone used to capture a real-time audio input from a singer, a software patch written in Max/MSP that convolves the audio signal with a number of Ambisonic B-Format \ac{RIR}'s using Spat and finally a spherical array of 16 loudspeakers for which the convolved audio signals are decoded and sent. This allows the performer stood within the speaker array to hear themselves as though they are stood in the \ac{VAE}. In addition, a head-tracking device (an Oculus Rift \cite{oculus}) is also used to track which direction the user is facing in the virtual space. A flow diagram of the system is shown in figure~\ref{vssDiagram}.
+		The \ac{VSS} is a loudspeaker based room acoustics simulator used as a tool for analysing the correlation between room acoustic characteristics and vocal performance parameters as part of Dr Jude Breretons PhD Thesis \cite{Brereton2014}. It is comprised of a head-mounted microphone used to capture a real-time audio input from a singer, a software patch written in Max/MSP that convolves the audio signal with a number of Ambisonic B-Format \ac{RIR}'s using Spat and finally a spherical array of 16 loudspeakers for which the convolved audio signals are decoded and sent. This allows the performer standing within the speaker array to hear themselves as though they are stood in the \ac{VAE}. In addition, a head-tracking device (an Oculus Rift \cite{oculus}) is also used to track which direction the user is facing in the virtual space. A flow diagram of the system is shown in figure~\ref{vssDiagram}.
 
 	
-		\begin{figure}[H]
+		\begin{figure}
 			\centerline{\includegraphics[scale = 0.45]{Sections/Background/images/vssDiagram.png}}
 			\caption{Flow diagram of the VSS showing how the audio signal and head tracking signal from the performer are used in Max before the convolved audio signal is sent back out to the speaker array.}
 			\label{vssDiagram}
@@ -204,31 +199,7 @@
 			\item The potential to use wave-based methods.
 		\end{enumerate}
 
-		As using the parametric method requires the \ac{RIR}'s to be calculated in real time, it would not be possible with current technology to produce a more accurate \ac{RIR} than can be obtained using the geometrical acoustic modelling methods. However, as the direct \ac{RIR} method produces the \ac{RIR}'s offline, it could be possible be produce more accurate results. This has been investigated previously \cite{Oxnard2013}, where the \ac{RIR}'s calculated in Odeon are merged with the low-frequency accurate \ac{RIR}'s calculated using wave-based methods to produce an accurate full bandwidth \ac{RIR} using calibration methods (a method to accurately mix the two together) proposed in \cite{Southern}. However, early in the project it was decided that using wave-based modelling methods would be much too time consuming to implement along with carrying out the primary project aims given 1) the time scale of the project and 2) the time it takes to produce such \ac{RIR}'s compared to the ones produced in Odeon. It was therefore decided that a system would be built using only \ac{RIR}'s produced in Odeon which would still allow the question of how many \ac{RIR}'s are required to produce such a system to be investigated.
-
-		% The author stated:
-
-		%  \vspace{5mm}
-		%  \begin{center}
-		%  \begin{minipage}{0.5\textwidth}
-		%  \textit{``Although a static setting would be technically much simpler, it has only limited applicability''}
-		%  \end{minipage}
-		%  \end{center}
-		%  \vspace{5mm}
-
-	
-		% It can be said that although parametric room impulse response rendering might be limited in its applicability, for the aims of the project described in this document, it provides a solution that is simple enough to implement within the time given and will allow for the desired functionality. It will also be explained later in this document (\fullref{RIRtrimming}) that post-processing of the \ac{RIR}'s are required which would not be possible using the dynamic rendering method. Therefore, as the intention was to build upon the existing \ac{VSS} system which requires pre-recorded (and post-processed) \ac{RIR}'s and that storage space is no longer a problem due to cheap hard disc drive storage, it was decided that the direct room impulse response rendering method was to be used. In addition to implementing the desired functionality, the following additional information were to be investigated:
-
-		
-		% 	\textbf{The process:} Given the apparent simplicity compared to producing a dynamic rendering system, the process of obtaining the \ac{RIR}'s was to be accessed.
-
-		% 	\textbf{Number of \ac{RIR}'s:} As one of the points mentioned was the space required to store the \ac{RIR} grid(s), the number of \ac{RIR}'s required to convince the user that they are moving freely around the virtual space was to be investigated.
-
-		% 	\textbf{System authenticity:} Previous test in the VSS have required ‘plausibility’ test, where the user must evaluate the \ac{VAE} produced by the VSS without reference to the real venue. This is usually because testing a virtual environment against a real one (authenticity tests) requires travel which can be expensive and difficult. Therefore, by running test based on ‘plausibility’ a sense of how convincing the virtual room is can be obtained. In the case of other virtual reality systems where the virtual environment does not exist in the real world, only these types of test can be run. Though plausibility test are acceptable, an authenticity test gives more objective results by comparing the simulated \ac{VAE} to the real thing. Therefore impulse responses of the same room used to designed the \ac{VAE} were to be taken.
-
-		%As mentioned in section~\ref{Software:Odeon}, using geometrical acoustic modelling methods produce \ac{RIR}'s that do not produce accurate low frequency content. Therefore, it was decided to seize the opportunity to test the authenticity of the system.
-
-		
+		As using the parametric method requires the \ac{RIR}'s to be calculated in real time, it would not be possible with current technology to produce a more accurate \ac{RIR} than can be obtained using the geometrical acoustic modelling methods. However, as the direct \ac{RIR} method produces the \ac{RIR}'s offline, it could be possible to produce more accurate results. This has been investigated previously \cite{Oxnard2013}, where the \ac{RIR}'s calculated in Odeon are merged with the low-frequency accurate \ac{RIR}'s calculated using wave-based methods to produce an accurate full bandwidth \ac{RIR} using calibration methods (a method to accurately mix the two together) proposed in \cite{Southern}. However, early in the project it was decided that using wave-based modelling methods would be much too time consuming to implement along with carrying out the primary project aims given 1) the time scale of the project and 2) the time it takes to produce such \ac{RIR}'s compared to the ones produced in Odeon. It was therefore decided that a system would be built using only \ac{RIR}'s produced in Odeon which would still allow the question of how many \ac{RIR}'s are required to produce such a system to be investigated.
 
 		In order for the user to move themselves around the \ac{VAE}, the Max patch that the \ac{VSS} was built on had to be extended in the following ways:
 
@@ -242,10 +213,10 @@
 
 		\end{enumerate}
 
-		Figure~\ref{vssExtention} shows an adapted flow diagram from figure~\ref{vssDiagram} with the added user interface and automatic file searching functionality.
+		Figure~\ref{vssExtention} shows an adapted flow diagram from figure~\ref{vssDiagram} with the added user interface, automatic file searching functionality and interpolation system.
 
-		\begin{figure}[H]
-			\centerline{\includegraphics[scale = 0.45]{Sections/Background/images/vssExtention.png}}
+		\begin{figure}
+			\centerline{\includegraphics[width=\textwidth]{Sections/Background/images/vssExtention2.png}}
 			\caption{Flow diagram of the way in which the desired extended version VSS works}
 			\label{vssExtention}
 		\end{figure}

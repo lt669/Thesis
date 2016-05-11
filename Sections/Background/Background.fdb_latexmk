@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1462704705 "Background.tex" "Background.pdf" "Background" 1462704705
-  "../../main.tex" 1462703261 2645 c15812a587ea80e1f4853eba1fdd32a9 ""
-  "./Background.out" 1462704348 1380 fa8f510cfab43eaba92bde2806d28a70 ""
+["pdflatex"] 1462952438 "Background.tex" "Background.pdf" "Background" 1462952438
+  "../../main.tex" 1462922022 2642 ac2bd5efb74676f2ef59a65a48974eea ""
+  "./Background.out" 1462704705 1380 fa8f510cfab43eaba92bde2806d28a70 ""
   "/usr/local/texlive/2015/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1136768653 1328 c834bbb027764024c09d3d2bf908b5f0 ""
   "/usr/local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1136768653 1324 c910af8c371558dc20f2d7822f66fe64 ""
@@ -65,9 +65,9 @@
   "/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1432479641 1764542 91654ba72bdb667e84ea24f076ae16d8 ""
   "/usr/local/texlive/2015/texmf-var/web2c/pdftex/pdflatex.fmt" 1457994678 3849859 e8db08d4628ec5827045b6ee8071c089 ""
   "/usr/local/texlive/2015/texmf.cnf" 1432479636 577 0d611272082f3cdb8e80e09a3c69cf07 ""
-  "Background.aux" 1462704348 9042 9c925e6a3a20d676c9c6d79a407a0ee6 ""
-  "Background.out" 1462704348 1380 fa8f510cfab43eaba92bde2806d28a70 ""
-  "Background.tex" 1462704152 34584 f8679343d968ee42df6aa162db11e3b7 ""
+  "Background.aux" 1462704705 9042 9c925e6a3a20d676c9c6d79a407a0ee6 ""
+  "Background.out" 1462704705 1380 fa8f510cfab43eaba92bde2806d28a70 ""
+  "Background.tex" 1462788974 35541 392f4659dcdeb838d160be1a073b67c3 ""
   "Sections/Background/images/ISM.png" 0 -1 0 ""
   "Sections/Background/images/rayTracingImage_edit.png" 0 -1 0 ""
   "Sections/Background/images/scattering_edit.png" 0 -1 0 ""
@@ -78,6 +78,6 @@
   "thesisStyle.sty" 1460826353 313 ef9fbfa1069aaf782a8f4e9123604b7c ""
   (generated)
   "Background.log"
+  "Background.out"
   "Background.aux"
   "Background.pdf"
-  "Background.out"

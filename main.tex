@@ -7,7 +7,7 @@
 
 %---------Redefine Paragraph to create new sections---------%
 \usepackage{titlesec}
-\setcounter{secnumdepth}{4}
+\setcounter{secnumdepth}{3}
 \setcounter{tocdepth}{4}
 \titleformat{\paragraph}
 {\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
@@ -23,25 +23,25 @@
 \cfoot{\thepage}
 
 \begin{document}
+\pagenumbering{roman}
+%-------------Title Page-------------%
+\subfile{Presections/titlePage/titlePage}
+\pagebreak
 
-% %-------------Title Page-------------%
-% \subfile{Presections/titlePage/titlePage}
-% \pagebreak
-
-% %-------------Acknowledgements-------------%
-% \subfile{Presections/Acknowledgements/Acknowledgments}
-% \pagebreak
-% %-------------Ethics-------------%
-% \subfile{Presections/ethics/ethics}
-% \pagebreak
+%-------------Acknowledgements-------------%
+\subfile{Presections/Acknowledgements/Acknowledgments}
+\pagebreak
+%-------------Ethics-------------%
+\subfile{Presections/ethics/ethics}
+\pagebreak
 
 %-------------Acknowledgements-------------%
 \subfile{Presections/supportingWebpage/supportingWebpage}
 \pagebreak
 
-% %-------------Abstract-------------%
-% \subfile{Presections/Abstract/Abstract}
-% \pagebreak
+%-------------Abstract-------------%
+\subfile{Presections/Abstract/Abstract}
+\pagebreak
 
 \tableofcontents
 % \listoffigures
@@ -50,7 +50,7 @@
  \pagebreak
 
  %-------------Acronyms-------------%
-\section{Acronyms}
+\section*{Acronyms}
 \begin{acronym}[TDMA]
 	\acro{VAE}{Virtual Acoustic Environment}
 	\acro{VSS}{Virtual Singing Studio}
@@ -62,39 +62,52 @@
 \end{acronym}
 \pagebreak
 
+ \pagenumbering{arabic}
+
+%-------------Introduction-------------%
+ \subfile{Sections/Background/Background}
+\pagebreak
 
 
-% %-------------Introduction-------------%
-%  \subfile{Sections/Background/Background}
-% \pagebreak
+%-------------Implementation-------------%
+	%Room Modelling
+	\subfile{Sections/Implementation/RoomChoice/RoomChoice}
+	
+
+	 \subfile{Sections/Implementation/RealRIRs/RealRIRs}
+	
 
 
-% %-------------Implementation-------------%
-...to avoid this problem it is recommended that distances to surfaces are kept greater than say 03 and 0.5 meters''
+	%Room Modelling
+	\subfile{Sections/Implementation/Modelling/Modelling}
+	
 
 	%Odeon
 	\subfile{Sections/Implementation/Odeon/Odeon}
+	
+
+	\subfile{Sections/Implementation/Max/Max}
+	
+
+%-------------User Testing-------------%
+	\subfile{Sections/userTesting/userTesting}
 	\pagebreak
 
-% 	\subfile{Sections/Implementation/Max/Max}
-% 	\pagebreak
 
-% %-------------User Testing-------------%
-% 	\subfile{Sections/userTesting/userTesting}
-% 	\pagebreak
 
-% % %-------------Project Management-------------%
-% 	% \subfile{Sections/ProjectManagement/ProjectManagement}
-% 	% \pagebreak
+%-------------Conclusion-------------%
+	\subfile{Sections/Conclusion/Conclusion}
+	\pagebreak
 
-% %-------------Conclusion-------------%
-% 	\subfile{Sections/Conclusion/Conclusion}
-% 	\pagebreak
+%-------------Further Work-------------%
+	\subfile{Sections/FurtherWork/FurtherWork}
+	\pagebreak
 
-% %-------------Further Work-------------%
-% 	\subfile{Sections/FurtherWork/FurtherWork}
-% 	\pagebreak
+%-------------Project Management-------------%
+	\subfile{Sections/ProjectManagement/ProjectManagement}
+	\pagebreak
 
+\printbibliography
 
 %-------------Appendix-------------%
 \subfile{Sections/Appendix/AppendixA/AppendixA}
@@ -104,7 +117,5 @@
 %-------------Bibliography-------------%
 % \bibliographystyle{IEEEtran}
 % \bibliography{IEEEabrv,thesis.bib}	
-
-\printbibliography
 
 \end{document}

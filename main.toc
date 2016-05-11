@@ -1,57 +1,231 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1}Supporting Material}{1}{section.1}
+\contentsline {section}{\numberline {1}Introduction}{1}{section.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2}Acronyms}{3}{section.2}
+\contentsline {section}{\numberline {2}Background}{3}{section.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1}ODEON}{4}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.1}Virtual Acoustic Environments}{3}{subsection.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.1.1}Water Tightness Test}{4}{subsubsection.2.1.1}
+\contentsline {subsection}{\numberline {2.2}Room Impulse Responses}{3}{subsection.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.1.2}Material Selection}{4}{subsubsection.2.1.2}
+\contentsline {subsection}{\numberline {2.3}Ambisonics}{4}{subsection.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {2.1.2.1}Initial Materials}{5}{paragraph.2.1.2.1}
+\contentsline {subsection}{\numberline {2.4}Software Overview}{5}{subsection.2.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {2.1.2.2}Surface Types}{6}{paragraph.2.1.2.2}
+\contentsline {subsubsection}{\numberline {2.4.1}Odeon: Simulating Room Acoustics}{5}{subsubsection.2.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {2.1.2.3}RIR Comparison}{7}{paragraph.2.1.2.3}
+\contentsline {paragraph}{Ray-Tracing}{5}{section*.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.1.3}Odeon Output Settings}{11}{subsubsection.2.1.3}
+\contentsline {paragraph}{Image Source Method}{6}{figure.caption.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {2.1.3.1}Ray Settings}{11}{paragraph.2.1.3.1}
+\contentsline {paragraph}{Hybrid Method}{7}{figure.caption.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {2.1.3.2}Directivity}{15}{paragraph.2.1.3.2}
+\contentsline {paragraph}{Scattering}{8}{figure.caption.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.1.4}RIR Topology Problems}{16}{subsubsection.2.1.4}
+\contentsline {paragraph}{Room Modelling}{8}{figure.caption.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {2.1.4.1}RIR Analysis}{16}{paragraph.2.1.4.1}
+\contentsline {paragraph}{Material Selection}{8}{figure.caption.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {2.1.4.2}Experiment}{18}{paragraph.2.1.4.2}
+\contentsline {subsubsection}{\numberline {2.4.2}Google SketchUp}{9}{subsubsection.2.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {2.1.4.3}Results}{19}{paragraph.2.1.4.3}
+\contentsline {subsubsection}{\numberline {2.4.3}Max/MSP}{9}{subsubsection.2.4.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.1.5}RIR Locations}{22}{subsubsection.2.1.5}
+\contentsline {subsection}{\numberline {2.5}Project Description}{9}{subsection.2.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.1.6}RIR Rendering}{24}{subsubsection.2.1.6}
+\contentsline {subsubsection}{\numberline {2.5.1}The Virtual Singing Studio}{9}{subsubsection.2.5.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2}File Sorting (Extra Grids)}{25}{subsection.2.2}
+\contentsline {subsubsection}{\numberline {2.5.2}Project Aims and Motivation}{10}{subsubsection.2.5.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3}RIR Calibration}{25}{subsection.2.3}
+\contentsline {subsubsection}{\numberline {2.5.3}Project Objectives}{13}{subsubsection.2.5.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.3.1}Matlab}{26}{subsubsection.2.3.1}
+\contentsline {section}{\numberline {3}Implementation}{14}{section.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.3.2}Reaper}{31}{subsubsection.2.3.2}
+\contentsline {subsection}{\numberline {3.1}Room Choice}{14}{subsection.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.4}Synthetic RIR Rendering Summary}{31}{subsection.2.4}
+\contentsline {subsection}{\numberline {3.2}User Test Planning}{14}{subsection.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Appendices}{33}{section*.37}
+\contentsline {subsection}{\numberline {3.3}Real RIR Recordings}{15}{subsection.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A}Appendix A}{33}{Appendix.1.A}
+\contentsline {subsubsection}{\numberline {3.3.1}RIR Measurement Set Up}{15}{subsubsection.3.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {B}Appendix B}{37}{Appendix.1.B}
+\contentsline {subsubsection}{\numberline {3.3.2}Positions}{15}{subsubsection.3.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {C}Appendix C}{39}{Appendix.1.C}
+\contentsline {subsubsection}{\numberline {3.3.3}Measurements}{17}{subsubsection.3.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {D}Appendix D}{42}{Appendix.1.D}
+\contentsline {subsubsection}{\numberline {3.3.4}Measurements Post-Production}{17}{subsubsection.3.3.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {E}Appendix E}{48}{Appendix.1.E}
+\contentsline {subsubsection}{\numberline {3.3.5}Issues}{18}{subsubsection.3.3.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.4}Room Modelling}{18}{subsection.3.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.4.1}Room Measurements}{18}{subsubsection.3.4.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.4.2}Designing the room}{18}{subsubsection.3.4.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.5}ODEON}{20}{subsection.3.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.5.1}Water Tightness Test}{20}{subsubsection.3.5.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.5.2}Material Selection}{21}{subsubsection.3.5.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Initial Materials}{21}{section*.15}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Surface Types}{22}{figure.caption.17}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{RIR Comparison}{24}{figure.caption.20}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.5.3}Odeon Output Settings}{28}{subsubsection.3.5.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Ray Settings}{28}{section*.26}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Directivity}{32}{figure.caption.30}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.5.4}RIR Topology Problems}{33}{subsubsection.3.5.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{RIR Analysis}{33}{section*.32}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Experiment}{35}{equation.3.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Results}{36}{figure.caption.35}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.5.5}RIR Locations}{39}{subsubsection.3.5.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.5.6}RIR Rendering}{40}{subsubsection.3.5.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.6}Producing Different RIR Grids}{41}{subsection.3.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.7}RIR Calibration}{42}{subsection.3.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.7.1}Matlab}{42}{subsubsection.3.7.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Method}{42}{section*.41}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Issue}{46}{figure.caption.45}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.7.2}Reaper}{47}{subsubsection.3.7.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.8}Room Modelling and Synthetic RIR Rendering Summary}{47}{subsection.3.8}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.9}Software}{48}{subsection.3.9}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.9.1}Software Overview}{48}{subsubsection.3.9.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{The Original Patch}{48}{section*.47}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Extended Patch Overview}{48}{figure.caption.49}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.9.2}Location Selection}{50}{subsubsection.3.9.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{File name JavaScript: `loadFilesLogic.js'}{54}{figure.caption.52}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.9.3}Mobility Implementation}{56}{subsubsection.3.9.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Iteration 1}{56}{section*.55}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Iteration 2}{57}{figure.caption.56}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Iteration 3 (Final)}{58}{figure.caption.57}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.9.4}Location Tracking}{62}{subsubsection.3.9.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{User Interface}{62}{figure.caption.62}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Position Feedback}{63}{figure.caption.63}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.9.5}Head-Tracking}{64}{subsubsection.3.9.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.9.6}Settings Menu}{65}{subsubsection.3.9.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.9.7}Software Issues}{65}{subsubsection.3.9.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Location approximation}{65}{section*.67}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Travel Speed}{66}{section*.67}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.10}Latency}{67}{subsection.3.10}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.11}RIR Trimming}{69}{subsection.3.11}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.12}Software Implementation Summary}{69}{subsection.3.12}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4}User Testing}{71}{section.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.1}User Testing Aims}{71}{subsection.4.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2}Test \#1}{72}{subsection.4.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.2.1}Procedure}{72}{subsubsection.4.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.2.2}Results}{72}{subsubsection.4.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.2.3}Discussion}{73}{subsubsection.4.2.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.3}Test \#2}{74}{subsection.4.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.3.1}Procedure}{74}{subsubsection.4.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.3.2}Results}{75}{subsubsection.4.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.3.3}Discussion}{77}{subsubsection.4.3.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.4}Test \#3}{77}{subsection.4.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.4.1}Procedure}{77}{subsubsection.4.4.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.4.2}Results}{78}{subsubsection.4.4.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.4.3}Discussion}{79}{subsubsection.4.4.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.5}User Tests Discussion and Summary}{80}{subsection.4.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.5.1}Test Length}{80}{subsubsection.4.5.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.5.2}The `I Don't Know' Problem}{80}{subsubsection.4.5.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.5.3}Results Summary}{81}{subsubsection.4.5.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5}Conclusion}{82}{section.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.1}Project Summary}{82}{subsection.5.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.2}Project Success Evaluation}{82}{subsection.5.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.3}Overall System Implementation}{83}{subsection.5.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.4}Final Comments}{84}{subsection.5.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6}Further Work}{85}{section.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.1}Software}{85}{subsection.6.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {6.1.1}Storage}{85}{subsubsection.6.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {6.1.2}Iteration 1 Redesign}{85}{subsubsection.6.1.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {6.1.3}UI cross platform}{85}{subsubsection.6.1.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.2}Accuracy}{86}{subsection.6.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {6.2.1}RIR Modelling}{86}{subsubsection.6.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {6.2.2}Surface Materials}{86}{subsubsection.6.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.3}Additional Functionality}{86}{subsection.6.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7}Project Management}{88}{section.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.1}Management Methods}{88}{subsection.7.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.2}Dealing With Issues}{88}{subsection.7.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Appendices}{92}{section*.81}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A}Appendix A}{93}{Appendix.1.A}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {B}Appendix B}{97}{Appendix.1.B}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {C}Appendix C}{99}{Appendix.1.C}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {D}Appendix D}{100}{Appendix.1.D}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {E}Appendix E}{106}{Appendix.1.E}
