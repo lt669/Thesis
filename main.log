@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.14)  11 MAY 2016 13:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.14)  11 MAY 2016 19:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1488,13 +1488,7 @@ File: english.lbx 2015/04/19 v3.0 biblatex localization (PK/JW/AB)
 
 (./main.aux
 
-LaTeX Warning: Label `materialTable' multiply defined.
-
-
 LaTeX Warning: Label `test1Results' multiply defined.
-
-
-LaTeX Warning: Label `realRIRs' multiply defined.
 
 )
 \openout1 = `main.aux'.
@@ -1884,25 +1878,22 @@ File: Sections/Implementation/Modelling/images/sku1.png Graphic file (type png)
  <use Sections/Implementation/Modelling/images/sku1.png>
 Package pdftex.def Info: Sections/Implementation/Modelling/images/sku1.png used
  on input line 18.
-(pdftex.def)             Requested size: 426.79134pt x 240.06316pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 30--31
-
- []
-
-[18] [19 <./Sections/Implementation/Modelling/images/sku1.png>]
-<Sections/Implementation/Modelling/images/SimplevsComplex/all2.png, id=860, 772
+(pdftex.def)             Requested size: 418.25368pt x 235.26619pt.
+ [18]
+<Sections/Implementation/Modelling/images/SimplevsComplex/all2.png, id=850, 772
 .8875pt x 673.51625pt>
 File: Sections/Implementation/Modelling/images/SimplevsComplex/all2.png Graphic
  file (type png)
 
 <use Sections/Implementation/Modelling/images/SimplevsComplex/all2.png>
 Package pdftex.def Info: Sections/Implementation/Modelling/images/SimplevsCompl
-ex/all2.png used on input line 42.
-(pdftex.def)             Requested size: 386.4428pt x 336.7573pt.
+ex/all2.png used on input line 40.
+(pdftex.def)             Requested size: 426.79134pt x 371.91496pt.
 )
-(./Sections/Implementation/Odeon/Odeon.tex
-<Sections/Implementation/Odeon/images/OdeonRays/waterTight2.PNG, id=863, 1445.4
+(./Sections/Implementation/Odeon/Odeon.tex [19 <./Sections/Implementation/Model
+ling/images/sku1.png>] [20 <./Sections/Implementation/Modelling/images/Simplevs
+Complex/all2.png>]
+<Sections/Implementation/Odeon/images/OdeonRays/waterTight2.PNG, id=868, 1445.4
 pt x 788.9475pt>
 File: Sections/Implementation/Odeon/images/OdeonRays/waterTight2.PNG Graphic fi
 le (type png)
@@ -1911,31 +1902,31 @@ le (type png)
 Package pdftex.def Info: Sections/Implementation/Odeon/images/OdeonRays/waterTi
 ght2.PNG used on input line 17.
 (pdftex.def)             Requested size: 433.62335pt x 236.68607pt.
- [20 <./Sections/Implementation/Modelling/images/SimplevsComplex/all2.png>]
+
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
 (hyperref)                be the same. Added a new anchor on input line 26.
 
 [21 <./Sections/Implementation/Odeon/images/OdeonRays/waterTight2.PNG>]
-<Sections/Implementation/Odeon/images/Absorption.PNG, id=882, 461.47406pt x 299
+<Sections/Implementation/Odeon/images/Absorption.PNG, id=881, 461.47406pt x 299
 .61937pt>
 File: Sections/Implementation/Odeon/images/Absorption.PNG Graphic file (type pn
 g)
  <use Sections/Implementation/Odeon/images/Absorption.PNG>
 Package pdftex.def Info: Sections/Implementation/Odeon/images/Absorption.PNG us
 ed on input line 48.
-(pdftex.def)             Requested size: 415.3228pt x 269.65494pt.
+(pdftex.def)             Requested size: 426.79134pt x 277.10243pt.
  [22 <./Sections/Implementation/Odeon/images/Absorption.PNG>]
-<Sections/Implementation/Odeon/images/seating.jpg, id=897, 3276.24pt x 1652.172
+<Sections/Implementation/Odeon/images/seating.jpg, id=894, 3276.24pt x 1652.172
 5pt>
 File: Sections/Implementation/Odeon/images/seating.jpg Graphic file (type jpg)
  <use Sections/Implementation/Odeon/images/seating.jpg>
 Package pdftex.def Info: Sections/Implementation/Odeon/images/seating.jpg used 
 on input line 61.
-(pdftex.def)             Requested size: 393.13184pt x 198.25214pt.
+(pdftex.def)             Requested size: 426.79134pt x 215.21854pt.
 
 <Sections/Implementation/Odeon/images/OdeonRays/transparencyEdit/singleRay2_edi
-t3.PNG, id=898, 187.45032pt x 292.84406pt>
+t3.PNG, id=895, 187.45032pt x 292.84406pt>
 File: Sections/Implementation/Odeon/images/OdeonRays/transparencyEdit/singleRay
 2_edit3.PNG Graphic file (type png)
 
@@ -1945,7 +1936,7 @@ Package pdftex.def Info: Sections/Implementation/Odeon/images/OdeonRays/transpa
 rencyEdit/singleRay2_edit3.PNG used on input line 68.
 (pdftex.def)             Requested size: 131.21431pt x 204.98944pt.
 
-<Sections/Implementation/Odeon/images/scatteringCoefficients.png, id=902, 1260.
+<Sections/Implementation/Odeon/images/scatteringCoefficients.png, id=899, 1260.
 71pt x 338.26375pt>
 File: Sections/Implementation/Odeon/images/scatteringCoefficients.png Graphic f
 ile (type png)
@@ -1953,11 +1944,12 @@ ile (type png)
 <use Sections/Implementation/Odeon/images/scatteringCoefficients.png>
 Package pdftex.def Info: Sections/Implementation/Odeon/images/scatteringCoeffic
 ients.png used on input line 77.
-(pdftex.def)             Requested size: 378.21593pt x 101.4799pt.
- [23 <./Sections/Implementation/Odeon/images/seating.jpg> <./Sections/Implement
-ation/Odeon/images/OdeonRays/transparencyEdit/singleRay2_edit3.PNG>]
+(pdftex.def)             Requested size: 426.79134pt x 114.51263pt.
+ [23 <./Sections/Implementation/Odeon/images/seating.jpg>] [24 <./Sections/Impl
+ementation/Odeon/images/OdeonRays/transparencyEdit/singleRay2_edit3.PNG> <./Sec
+tions/Implementation/Odeon/images/scatteringCoefficients.png>]
 <Sections/Implementation/Odeon/images/MaterialCompare/OriginalMaterials/origina
-l.png, id=912, 1114.1625pt x 716.6775pt>
+l.png, id=916, 1114.1625pt x 716.6775pt>
 File: Sections/Implementation/Odeon/images/MaterialCompare/OriginalMaterials/or
 iginal.png Graphic file (type png)
 
@@ -1965,61 +1957,63 @@ iginal.png Graphic file (type png)
 ginal.png>
 Package pdftex.def Info: Sections/Implementation/Odeon/images/MaterialCompare/O
 riginalMaterials/original.png used on input line 89.
-(pdftex.def)             Requested size: 334.25133pt x 215.00491pt.
- [24 <./Sections/Implementation/Odeon/images/scatteringCoefficients.png> <./Sec
-tions/Implementation/Odeon/images/MaterialCompare/OriginalMaterials/original.pn
-g>]
+(pdftex.def)             Requested size: 426.79134pt x 274.5274pt.
+
 Overfull \hbox (1.55513pt too wide) in paragraph at lines 101--113
  [][] 
  []
 
 
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[25 <./Sections/Implementation/Odeon/images/MaterialCompare/OriginalMaterials/o
+riginal.png>]
 <Sections/Implementation/Odeon/images/MaterialCompare/OriginalMaterials/all.png
-, id=931, 1118.1775pt x 708.6475pt>
+, id=936, 1118.1775pt x 708.6475pt>
 File: Sections/Implementation/Odeon/images/MaterialCompare/OriginalMaterials/al
 l.png Graphic file (type png)
 
 <use Sections/Implementation/Odeon/images/MaterialCompare/OriginalMaterials/all
 .png>
 Package pdftex.def Info: Sections/Implementation/Odeon/images/MaterialCompare/O
-riginalMaterials/all.png used on input line 122.
-(pdftex.def)             Requested size: 503.17523pt x 318.88843pt.
- [25]
+riginalMaterials/all.png used on input line 127.
+(pdftex.def)             Requested size: 426.79134pt x 270.47829pt.
+
 <Sections/Implementation/Odeon/images/MaterialCompare/OriginalMaterials/new.png
-, id=940, 1124.2pt x 667.49374pt>
+, id=939, 1124.2pt x 667.49374pt>
 File: Sections/Implementation/Odeon/images/MaterialCompare/OriginalMaterials/ne
 w.png Graphic file (type png)
 
 <use Sections/Implementation/Odeon/images/MaterialCompare/OriginalMaterials/new
 .png>
 Package pdftex.def Info: Sections/Implementation/Odeon/images/MaterialCompare/O
-riginalMaterials/new.png used on input line 129.
-(pdftex.def)             Requested size: 449.67204pt x 266.99277pt.
- [26 <./Sections/Implementation/Odeon/images/MaterialCompare/OriginalMaterials/
-all.png>]
+riginalMaterials/new.png used on input line 134.
+(pdftex.def)             Requested size: 426.79134pt x 253.40582pt.
+
 <Sections/Implementation/Odeon/images/MaterialCompare/NewMaterials/newOdeonComp
-arison.png, id=950, 1129.21875pt x 716.6775pt>
+arison.png, id=944, 1129.21875pt x 716.6775pt>
 File: Sections/Implementation/Odeon/images/MaterialCompare/NewMaterials/newOdeo
 nComparison.png Graphic file (type png)
 
 <use Sections/Implementation/Odeon/images/MaterialCompare/NewMaterials/newOdeon
 Comparison.png>
 Package pdftex.def Info: Sections/Implementation/Odeon/images/MaterialCompare/N
-ewMaterials/newOdeonComparison.png used on input line 141.
+ewMaterials/newOdeonComparison.png used on input line 146.
 (pdftex.def)             Requested size: 451.6795pt x 286.66592pt.
- [27 <./Sections/Implementation/Odeon/images/MaterialCompare/OriginalMaterials/
-new.png>]
+ [26] [27 <./Sections/Implementation/Odeon/images/MaterialCompare/OriginalMater
+ials/all.png> <./Sections/Implementation/Odeon/images/MaterialCompare/OriginalM
+aterials/new.png>]
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 147.
+(hyperref)                be the same. Added a new anchor on input line 152.
 
 Package acronym Info: Label `acro:VBS' newly defined as it shall be overridden
-although it is yet undefined on input line 160.
+although it is yet undefined on input line 165.
 [28 <./Sections/Implementation/Odeon/images/MaterialCompare/NewMaterials/newOde
 onComparison.png>]
 Package acronym Info: Label `acro:LR's' newly defined as it shall be overridden
 
-although it is yet undefined on input line 164.
+although it is yet undefined on input line 169.
 
 <Sections/Implementation/Odeon/images/OdeonSettings/settingsFigure_edit.png, id
 =970, 1190.4475pt x 697.60625pt>
@@ -2029,8 +2023,8 @@ g Graphic file (type png)
 <use Sections/Implementation/Odeon/images/OdeonSettings/settingsFigure_edit.png
 >
 Package pdftex.def Info: Sections/Implementation/Odeon/images/OdeonSettings/set
-tingsFigure_edit.png used on input line 187.
-(pdftex.def)             Requested size: 416.66287pt x 244.16583pt.
+tingsFigure_edit.png used on input line 192.
+(pdftex.def)             Requested size: 426.79134pt x 250.09488pt.
 
 <Sections/Implementation/Odeon/images/OdeonSettings/settingsFigureZoomed.png, i
 d=971, 1561.835pt x 863.225pt>
@@ -2040,8 +2034,8 @@ ng Graphic file (type png)
 <use Sections/Implementation/Odeon/images/OdeonSettings/settingsFigureZoomed.pn
 g>
 Package pdftex.def Info: Sections/Implementation/Odeon/images/OdeonSettings/set
-tingsFigureZoomed.png used on input line 193.
-(pdftex.def)             Requested size: 515.40715pt x 284.86513pt.
+tingsFigureZoomed.png used on input line 198.
+(pdftex.def)             Requested size: 426.79134pt x 235.87944pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -2055,8 +2049,8 @@ png Graphic file (type png)
 <use Sections/Implementation/Odeon/images/OdeonSettings/settingsFigure_TOZoom.p
 ng>
 Package pdftex.def Info: Sections/Implementation/Odeon/images/OdeonSettings/set
-tingsFigure_TOZoom.png used on input line 200.
-(pdftex.def)             Requested size: 551.5689pt x 299.32274pt.
+tingsFigure_TOZoom.png used on input line 205.
+(pdftex.def)             Requested size: 426.79134pt x 231.59735pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -2066,215 +2060,196 @@ ng>] [30 <./Sections/Implementation/Odeon/images/OdeonSettings/settingsFigureZo
 omed.png>] [31 <./Sections/Implementation/Odeon/images/OdeonSettings/settingsFi
 gure_TOZoom.png>]
 <Sections/Implementation/Odeon/images/Directivity/DirectivityPattern.png, id=10
-00, 1445.4pt x 788.9475pt>
+02, 1445.4pt x 788.9475pt>
 File: Sections/Implementation/Odeon/images/Directivity/DirectivityPattern.png G
 raphic file (type png)
 
 <use Sections/Implementation/Odeon/images/Directivity/DirectivityPattern.png>
 Package pdftex.def Info: Sections/Implementation/Odeon/images/Directivity/Direc
-tivityPattern.png used on input line 244.
+tivityPattern.png used on input line 246.
 (pdftex.def)             Requested size: 433.62335pt x 236.68607pt.
 
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 253.
+(hyperref)                be the same. Added a new anchor on input line 255.
 
 [32 <./Sections/Implementation/Odeon/images/Directivity/DirectivityPattern.png>
 ]
 <Sections/Implementation/Odeon/images/incorrectRIR/RIR_76_incorrect_edit.png, i
-d=1015, 1590.94376pt x 886.31125pt>
+d=1017, 1590.94376pt x 886.31125pt>
 File: Sections/Implementation/Odeon/images/incorrectRIR/RIR_76_incorrect_edit.p
 ng Graphic file (type png)
 
 <use Sections/Implementation/Odeon/images/incorrectRIR/RIR_76_incorrect_edit.pn
 g>
 Package pdftex.def Info: Sections/Implementation/Odeon/images/incorrectRIR/RIR_
-76_incorrect_edit.png used on input line 262.
-(pdftex.def)             Requested size: 525.01306pt x 292.48361pt.
+76_incorrect_edit.png used on input line 264.
+(pdftex.def)             Requested size: 426.79134pt x 237.75197pt.
 
 <Sections/Implementation/Odeon/images/incorrectRIR/RIR_76_incorrect_edit_crop.p
-ng, id=1018, 849.1725pt x 251.94125pt>
+ng, id=1020, 849.1725pt x 251.94125pt>
 File: Sections/Implementation/Odeon/images/incorrectRIR/RIR_76_incorrect_edit_c
 rop.png Graphic file (type png)
 
 <use Sections/Implementation/Odeon/images/incorrectRIR/RIR_76_incorrect_edit_cr
 op.png>
 Package pdftex.def Info: Sections/Implementation/Odeon/images/incorrectRIR/RIR_
-76_incorrect_edit_crop.png used on input line 269.
-(pdftex.def)             Requested size: 424.5852pt x 125.9703pt.
+76_incorrect_edit_crop.png used on input line 271.
+(pdftex.def)             Requested size: 426.79134pt x 126.62384pt.
  [33 <./Sections/Implementation/Odeon/images/incorrectRIR/RIR_76_incorrect_edit
-.png>] [34 <./Sections/Implementation/Odeon/images/incorrectRIR/RIR_76_incorrec
-t_edit_crop.png>] [35]
-<Sections/Implementation/Odeon/images/incorrectRIR/HeightTest_Edit.png, id=1053
+.png> <./Sections/Implementation/Odeon/images/incorrectRIR/RIR_76_incorrect_edi
+t_crop.png>] [34]
+<Sections/Implementation/Odeon/images/incorrectRIR/HeightTest_Edit.png, id=1051
 , 1636.1125pt x 945.5325pt>
 File: Sections/Implementation/Odeon/images/incorrectRIR/HeightTest_Edit.png Gra
 phic file (type png)
 
 <use Sections/Implementation/Odeon/images/incorrectRIR/HeightTest_Edit.png>
 Package pdftex.def Info: Sections/Implementation/Odeon/images/incorrectRIR/Heig
-htTest_Edit.png used on input line 365.
-(pdftex.def)             Requested size: 523.5667pt x 302.57658pt.
+htTest_Edit.png used on input line 372.
+(pdftex.def)             Requested size: 426.79134pt x 246.6406pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
+[35]
 LaTeX Font Info:    Font shape `T1/ppl/bx/it' in size <10> not available
-(Font)              Font shape `T1/ppl/b/it' tried instead on input line 372.
+(Font)              Font shape `T1/ppl/b/it' tried instead on input line 379.
 
 <Sections/Implementation/Odeon/images/incorrectRIR/76_60cm_editV2_crop.png, id=
-1057, 620.3175pt x 252.945pt>
+1060, 620.3175pt x 252.945pt>
 File: Sections/Implementation/Odeon/images/incorrectRIR/76_60cm_editV2_crop.png
  Graphic file (type png)
 
 <use Sections/Implementation/Odeon/images/incorrectRIR/76_60cm_editV2_crop.png>
 Package pdftex.def Info: Sections/Implementation/Odeon/images/incorrectRIR/76_6
-0cm_editV2_crop.png used on input line 383.
-(pdftex.def)             Requested size: 372.19337pt x 151.76816pt.
-[36]
+0cm_editV2_crop.png used on input line 390.
+(pdftex.def)             Requested size: 426.79134pt x 174.03049pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-
+[36 <./Sections/Implementation/Odeon/images/incorrectRIR/HeightTest_Edit.png>]
 <Sections/Implementation/Odeon/images/incorrectRIR/reflectionPaths_colourV2.png
-, id=1068, 2011.515pt x 1489.565pt>
+, id=1071, 2011.515pt x 1489.565pt>
 File: Sections/Implementation/Odeon/images/incorrectRIR/reflectionPaths_colourV
 2.png Graphic file (type png)
 
 <use Sections/Implementation/Odeon/images/incorrectRIR/reflectionPaths_colourV2
 .png>
 Package pdftex.def Info: Sections/Implementation/Odeon/images/incorrectRIR/refl
-ectionPaths_colourV2.png used on input line 405.
-(pdftex.def)             Requested size: 502.87752pt x 372.39034pt.
- [37 <./Sections/Implementation/Odeon/images/incorrectRIR/HeightTest_Edit.png>]
- [38 <./Sections/Implementation/Odeon/images/incorrectRIR/76_60cm_editV2_crop.p
-ng> <./Sections/Implementation/Odeon/images/incorrectRIR/reflectionPaths_colour
-V2.png>]
+ectionPaths_colourV2.png used on input line 412.
+(pdftex.def)             Requested size: 426.79134pt x 316.04538pt.
+ [37 <./Sections/Implementation/Odeon/images/incorrectRIR/76_60cm_editV2_crop.p
+ng>]
 <Sections/Implementation/Odeon/images/RIRPositions/RIRPositionAnnotated.png, id
-=1085, 934.49126pt x 946.53625pt>
+=1083, 934.49126pt x 946.53625pt>
 File: Sections/Implementation/Odeon/images/RIRPositions/RIRPositionAnnotated.pn
 g Graphic file (type png)
 
 <use Sections/Implementation/Odeon/images/RIRPositions/RIRPositionAnnotated.png
 >
 Package pdftex.def Info: Sections/Implementation/Odeon/images/RIRPositions/RIRP
-ositionAnnotated.png used on input line 419.
-(pdftex.def)             Requested size: 345.75635pt x 350.21294pt.
- [39 <./Sections/Implementation/Odeon/images/RIRPositions/RIRPositionAnnotated.
-png>]
-
-LaTeX Warning: Reference `latency' on page 40 undefined on input line 426.
-
+ositionAnnotated.png used on input line 426.
+(pdftex.def)             Requested size: 426.79134pt x 432.29228pt.
 
 <Sections/Implementation/Odeon/images/RIRPositions/RIR_Position_Bulk.png, id=10
-96, 934.49126pt x 946.53625pt>
+87, 934.49126pt x 946.53625pt>
 File: Sections/Implementation/Odeon/images/RIRPositions/RIR_Position_Bulk.png G
 raphic file (type png)
 
 <use Sections/Implementation/Odeon/images/RIRPositions/RIR_Position_Bulk.png>
 Package pdftex.def Info: Sections/Implementation/Odeon/images/RIRPositions/RIR_
-Position_Bulk.png used on input line 432.
-(pdftex.def)             Requested size: 345.75635pt x 350.21294pt.
+Position_Bulk.png used on input line 438.
+(pdftex.def)             Requested size: 426.79134pt x 432.29228pt.
 
-[40 <./Sections/Implementation/Odeon/images/RIRPositions/RIR_Position_Bulk.png>
-]
+[38 <./Sections/Implementation/Odeon/images/incorrectRIR/reflectionPaths_colour
+V2.png>] [39 <./Sections/Implementation/Odeon/images/RIRPositions/RIRPositionAn
+notated.png>] [40 <./Sections/Implementation/Odeon/images/RIRPositions/RIR_Posi
+tion_Bulk.png>]
 <Sections/Implementation/Odeon/images/SouRecPos/SouRecSelection_crop.png, id=11
-04, 825.83531pt x 364.36125pt>
+06, 825.83531pt x 364.36125pt>
 File: Sections/Implementation/Odeon/images/SouRecPos/SouRecSelection_crop.png G
 raphic file (type png)
 
 <use Sections/Implementation/Odeon/images/SouRecPos/SouRecSelection_crop.png>
 Package pdftex.def Info: Sections/Implementation/Odeon/images/SouRecPos/SouRecS
-election_crop.png used on input line 444.
+election_crop.png used on input line 450.
 (pdftex.def)             Requested size: 445.94443pt x 196.75214pt.
 
 [41 <./Sections/Implementation/Odeon/images/SouRecPos/SouRecSelection_crop.png>
 ]
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 464.
-
-
-Overfull \hbox (8.23604pt too wide) in paragraph at lines 482--483
-[]\T1/ppl/m/n/10 This can be heard in au-dio ex-am-ples: \T1/pcr/m/n/10 calRMSC
-onv.wav \T1/ppl/m/n/10 (cal-i-brated real [][]) and \T1/pcr/m/n/10 odeonConv.wa
-v
- []
+(hyperref)                be the same. Added a new anchor on input line 470.
 
 
 <Sections/Implementation/RealRIRs/images/calibration/CalRMS_RIR_edit2.png, id=1
-124, 554.07pt x 1453.43pt>
+131, 554.07pt x 1453.43pt>
 File: Sections/Implementation/RealRIRs/images/calibration/CalRMS_RIR_edit2.png 
 Graphic file (type png)
 
 <use Sections/Implementation/RealRIRs/images/calibration/CalRMS_RIR_edit2.png>
 Package pdftex.def Info: Sections/Implementation/RealRIRs/images/calibration/Ca
-lRMS_RIR_edit2.png used on input line 487.
-(pdftex.def)             Requested size: 166.22227pt x 436.03236pt.
+lRMS_RIR_edit2.png used on input line 493.
+(pdftex.def)             Requested size: 138.51715pt x 363.35661pt.
 
-[42]
 <Sections/Implementation/RealRIRs/images/calibration/CalRMS_Sing_edit.png, id=1
-136, 1438.37375pt x 1405.25pt>
+132, 1438.37375pt x 1405.25pt>
 File: Sections/Implementation/RealRIRs/images/calibration/CalRMS_Sing_edit.png 
 Graphic file (type png)
 
 <use Sections/Implementation/RealRIRs/images/calibration/CalRMS_Sing_edit.png>
 Package pdftex.def Info: Sections/Implementation/RealRIRs/images/calibration/Ca
-lRMS_Sing_edit.png used on input line 498.
-(pdftex.def)             Requested size: 431.51546pt x 421.57826pt.
+lRMS_Sing_edit.png used on input line 502.
+(pdftex.def)             Requested size: 298.75262pt x 291.87341pt.
 
-Overfull \hbox (4.72412pt too wide) in paragraph at lines 498--499
- [] 
- []
-
-[43 <./Sections/Implementation/RealRIRs/images/calibration/CalRMS_RIR_edit2.png
->]
 <Sections/Implementation/RealRIRs/images/calibration/CalMan_RIR_edit.png, id=11
-45, 405.515pt x 1466.47874pt>
+33, 405.515pt x 1466.47874pt>
 File: Sections/Implementation/RealRIRs/images/calibration/CalMan_RIR_edit.png G
 raphic file (type png)
 
 <use Sections/Implementation/RealRIRs/images/calibration/CalMan_RIR_edit.png>
 Package pdftex.def Info: Sections/Implementation/RealRIRs/images/calibration/Ca
-lMan_RIR_edit.png used on input line 511.
-(pdftex.def)             Requested size: 121.65543pt x 439.94702pt.
+lMan_RIR_edit.png used on input line 512.
+(pdftex.def)             Requested size: 101.3785pt x 366.61879pt.
 
-[44 <./Sections/Implementation/RealRIRs/images/calibration/CalRMS_Sing_edit.png
->]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
 <Sections/Implementation/RealRIRs/images/calibration/CalMan_Sing_edit.png, id=1
-152, 1492.57625pt x 1405.25pt>
+136, 1492.57625pt x 1405.25pt>
 File: Sections/Implementation/RealRIRs/images/calibration/CalMan_Sing_edit.png 
 Graphic file (type png)
 
 <use Sections/Implementation/RealRIRs/images/calibration/CalMan_Sing_edit.png>
 Package pdftex.def Info: Sections/Implementation/RealRIRs/images/calibration/Ca
-lMan_Sing_edit.png used on input line 520.
-(pdftex.def)             Requested size: 447.77634pt x 421.57826pt.
+lMan_Sing_edit.png used on input line 526.
+(pdftex.def)             Requested size: 298.75262pt x 281.25945pt.
 
-Overfull \hbox (20.985pt too wide) in paragraph at lines 520--521
- [] 
- []
-
-[45 <./Sections/Implementation/RealRIRs/images/calibration/CalMan_RIR_edit.png>
-]
-<Sections/Implementation/RealRIRs/images/calibration/cal_pulse.png, id=1161, 41
+[42]
+<Sections/Implementation/RealRIRs/images/calibration/cal_pulse.png, id=1148, 41
 3.545pt x 55.20625pt>
 File: Sections/Implementation/RealRIRs/images/calibration/cal_pulse.png Graphic
  file (type png)
 
 <use Sections/Implementation/RealRIRs/images/calibration/cal_pulse.png>
 Package pdftex.def Info: Sections/Implementation/RealRIRs/images/calibration/ca
-l_pulse.png used on input line 532.
+l_pulse.png used on input line 538.
 (pdftex.def)             Requested size: 413.54398pt x 55.2061pt.
 
-[46 <./Sections/Implementation/RealRIRs/images/calibration/CalMan_Sing_edit.png
->] [47 <./Sections/Implementation/RealRIRs/images/calibration/cal_pulse.png>])
-(./Sections/Implementation/Max/Max.tex
+[43 <./Sections/Implementation/RealRIRs/images/calibration/CalRMS_RIR_edit2.png
+>] [44 <./Sections/Implementation/RealRIRs/images/calibration/CalRMS_Sing_edit.
+png>] [45 <./Sections/Implementation/RealRIRs/images/calibration/CalMan_RIR_edi
+t.png>] [46 <./Sections/Implementation/RealRIRs/images/calibration/CalMan_Sing_
+edit.png> <./Sections/Implementation/RealRIRs/images/calibration/cal_pulse.png>
+]) (./Sections/Implementation/Max/Max.tex
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
 (hyperref)                be the same. Added a new anchor on input line 19.
 
 
-<Sections/Implementation/Max/images/Max/OriginalPatch_Edit.png, id=1178, 1437.3
+<Sections/Implementation/Max/images/Max/OriginalPatch_Edit.png, id=1176, 1437.3
 7pt x 783.92876pt>
 File: Sections/Implementation/Max/images/Max/OriginalPatch_Edit.png Graphic fil
 e (type png)
@@ -2288,7 +2263,7 @@ dit.png used on input line 25.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-<Sections/Implementation/Max/images/Max/MyPatch_Edit.png, id=1179, 1334.9875pt 
+<Sections/Implementation/Max/images/Max/MyPatch_Edit.png, id=1177, 1334.9875pt 
 x 915.42pt>
 File: Sections/Implementation/Max/images/Max/MyPatch_Edit.png Graphic file (typ
 e png)
@@ -2300,8 +2275,8 @@ g used on input line 32.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[48] [49 <./Sections/Implementation/Max/images/Max/OriginalPatch_Edit.png>]
-<Sections/Implementation/Max/images/FlowDiagrams/Max1_V2.png, id=1197, 803.0pt 
+[47] [48 <./Sections/Implementation/Max/images/Max/OriginalPatch_Edit.png>]
+<Sections/Implementation/Max/images/FlowDiagrams/Max1_V2.png, id=1195, 803.0pt 
 x 1199.48125pt>
 File: Sections/Implementation/Max/images/FlowDiagrams/Max1_V2.png Graphic file 
 (type png)
@@ -2315,16 +2290,16 @@ Package pdftex.def Info: Sections/Implementation/Max/images/FlowDiagrams/Max1_V
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-<Sections/Implementation/Max/images/Max/lcd.png, id=1200, 690.58pt x 681.54625p
+<Sections/Implementation/Max/images/Max/lcd.png, id=1198, 690.58pt x 681.54625p
 t>
 File: Sections/Implementation/Max/images/Max/lcd.png Graphic file (type png)
  <use Sections/Implementation/Max/images/Max/lcd.png>
 Package pdftex.def Info: Sections/Implementation/Max/images/Max/lcd.png used on
  input line 78.
 (pdftex.def)             Requested size: 298.75262pt x 294.8479pt.
- [50 <./Sections/Implementation/Max/images/Max/MyPatch_Edit.png>] [51 <./Sectio
+ [49 <./Sections/Implementation/Max/images/Max/MyPatch_Edit.png>] [50 <./Sectio
 ns/Implementation/Max/images/FlowDiagrams/Max1_V2.png>]
-<Sections/Implementation/Max/images/Max/UI_to_file_edit_4.png, id=1224, 644.407
+<Sections/Implementation/Max/images/Max/UI_to_file_edit_4.png, id=1221, 644.407
 5pt x 298.11375pt>
 File: Sections/Implementation/Max/images/Max/UI_to_file_edit_4.png Graphic file
  (type png)
@@ -2333,15 +2308,15 @@ File: Sections/Implementation/Max/images/Max/UI_to_file_edit_4.png Graphic file
 Package pdftex.def Info: Sections/Implementation/Max/images/Max/UI_to_file_edit
 _4.png used on input line 91.
 (pdftex.def)             Requested size: 426.79134pt x 197.4471pt.
- [52]
-[53 <./Sections/Implementation/Max/images/Max/lcd.png> <./Sections/Implementati
-on/Max/images/Max/UI_to_file_edit_4.png>] [54] [55]
+ [51]
+[52 <./Sections/Implementation/Max/images/Max/lcd.png> <./Sections/Implementati
+on/Max/images/Max/UI_to_file_edit_4.png>] [53] [54]
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
 (hyperref)                be the same. Added a new anchor on input line 214.
 
-[56]
-<Sections/Implementation/Max/images/Max/iteration1/panning_edit2.png, id=1321, 
+[55]
+<Sections/Implementation/Max/images/Max/iteration1/panning_edit2.png, id=1319, 
 1186.4325pt x 521.95pt>
 File: Sections/Implementation/Max/images/Max/iteration1/panning_edit2.png Graph
 ic file (type png)
@@ -2351,8 +2326,8 @@ Package pdftex.def Info: Sections/Implementation/Max/images/Max/iteration1/pann
 ing_edit2.png used on input line 227.
 (pdftex.def)             Requested size: 426.79134pt x 187.75848pt.
 
-[57 <./Sections/Implementation/Max/images/Max/iteration1/panning_edit2.png>]
-<Sections/Implementation/Max/images/Max/Iteration2/preload.png, id=1331, 1393.2
+[56 <./Sections/Implementation/Max/images/Max/iteration1/panning_edit2.png>]
+<Sections/Implementation/Max/images/Max/Iteration2/preload.png, id=1328, 1393.2
 05pt x 666.49pt>
 File: Sections/Implementation/Max/images/Max/Iteration2/preload.png Graphic fil
 e (type png)
@@ -2363,7 +2338,7 @@ oad.png used on input line 239.
 (pdftex.def)             Requested size: 426.79134pt x 204.169pt.
 
 <Sections/Implementation/Max/images/Max/Iteration3/storeLocations_edit2.png, id
-=1338, 583.17876pt x 441.65pt>
+=1335, 583.17876pt x 441.65pt>
 File: Sections/Implementation/Max/images/Max/Iteration3/storeLocations_edit2.pn
 g Graphic file (type png)
 
@@ -2374,7 +2349,7 @@ eLocations_edit2.png used on input line 255.
 (pdftex.def)             Requested size: 298.75262pt x 226.2561pt.
 
 <Sections/Implementation/Max/images/Max/Iteration3/fileSelectionConvolution_Edi
-t.png, id=1339, 520.94624pt x 502.87875pt>
+t.png, id=1336, 520.94624pt x 502.87875pt>
 File: Sections/Implementation/Max/images/Max/Iteration3/fileSelectionConvolutio
 n_Edit.png Graphic file (type png)
 
@@ -2385,7 +2360,7 @@ SelectionConvolution_Edit.png used on input line 262.
 (pdftex.def)             Requested size: 285.9494pt x 276.03168pt.
 
 <Sections/Implementation/Max/images/Max/Iteration3/movementIllustration2.png, i
-d=1340, 886.31125pt x 493.845pt>
+d=1337, 886.31125pt x 493.845pt>
 File: Sections/Implementation/Max/images/Max/Iteration3/movementIllustration2.p
 ng Graphic file (type png)
 
@@ -2394,11 +2369,11 @@ g>
 Package pdftex.def Info: Sections/Implementation/Max/images/Max/Iteration3/move
 mentIllustration2.png used on input line 269.
 (pdftex.def)             Requested size: 426.79134pt x 237.81151pt.
- [58 <./Sections/Implementation/Max/images/Max/Iteration2/preload.png>]
-[59 <./Sections/Implementation/Max/images/Max/Iteration3/storeLocations_edit2.p
+ [57 <./Sections/Implementation/Max/images/Max/Iteration2/preload.png>]
+[58 <./Sections/Implementation/Max/images/Max/Iteration3/storeLocations_edit2.p
 ng> <./Sections/Implementation/Max/images/Max/Iteration3/fileSelectionConvoluti
 on_Edit.png>]
-<Sections/Implementation/Max/images/Max/Iteration3/convPatch_edit.png, id=1358,
+<Sections/Implementation/Max/images/Max/Iteration3/convPatch_edit.png, id=1356,
  945.5325pt x 932.48375pt>
 File: Sections/Implementation/Max/images/Max/Iteration3/convPatch_edit.png Grap
 hic file (type png)
@@ -2408,11 +2383,11 @@ Package pdftex.def Info: Sections/Implementation/Max/images/Max/Iteration3/conv
 Patch_edit.png used on input line 283.
 (pdftex.def)             Requested size: 378.2063pt x 372.9869pt.
 
-[60 <./Sections/Implementation/Max/images/Max/Iteration3/movementIllustration2.
-png>] [61 <./Sections/Implementation/Max/images/Max/Iteration3/convPatch_edit.p
+[59 <./Sections/Implementation/Max/images/Max/Iteration3/movementIllustration2.
+png>] [60 <./Sections/Implementation/Max/images/Max/Iteration3/convPatch_edit.p
 ng>]
 <Sections/Implementation/Max/images/Max/UserInterface/pTouchScreen_edit.png, id
-=1375, 1194.4625pt x 682.55pt>
+=1373, 1194.4625pt x 682.55pt>
 File: Sections/Implementation/Max/images/Max/UserInterface/pTouchScreen_edit.pn
 g Graphic file (type png)
 
@@ -2422,7 +2397,7 @@ Package pdftex.def Info: Sections/Implementation/Max/images/Max/UserInterface/p
 TouchScreen_edit.png used on input line 299.
 (pdftex.def)             Requested size: 426.79134pt x 243.8848pt.
 
-<Sections/Implementation/Max/images/Max/UserInterface/UI_dot.png, id=1379, 1541
+<Sections/Implementation/Max/images/Max/UserInterface/UI_dot.png, id=1377, 1541
 .76pt x 2055.68pt>
 File: Sections/Implementation/Max/images/Max/UserInterface/UI_dot.png Graphic f
 ile (type png)
@@ -2431,11 +2406,11 @@ ile (type png)
 Package pdftex.def Info: Sections/Implementation/Max/images/Max/UserInterface/U
 I_dot.png used on input line 309.
 (pdftex.def)             Requested size: 213.39566pt x 284.4997pt.
- [62 <./Sections/Implementation/Max/images/Max/UserInterface/pTouchScreen_edit.
+ [61 <./Sections/Implementation/Max/images/Max/UserInterface/pTouchScreen_edit.
 png>]
-[63 <./Sections/Implementation/Max/images/Max/UserInterface/UI_dot.png>]
+[62 <./Sections/Implementation/Max/images/Max/UserInterface/UI_dot.png>]
 <Sections/Implementation/Max/images/Max/UserInterface/locationsExample2.png, id
-=1400, 1314.9125pt x 740.7675pt>
+=1397, 1314.9125pt x 740.7675pt>
 File: Sections/Implementation/Max/images/Max/UserInterface/locationsExample2.pn
 g Graphic file (type png)
 
@@ -2444,9 +2419,9 @@ g Graphic file (type png)
 Package pdftex.def Info: Sections/Implementation/Max/images/Max/UserInterface/l
 ocationsExample2.png used on input line 321.
 (pdftex.def)             Requested size: 426.79134pt x 240.43008pt.
- [64 <./Sections/Implementation/Max/images/Max/UserInterface/locationsExample2.
+ [63 <./Sections/Implementation/Max/images/Max/UserInterface/locationsExample2.
 png>]
-<Sections/Implementation/Max/images/Max/Iteration3/hat_edit.JPG, id=1411, 1337.
+<Sections/Implementation/Max/images/Max/Iteration3/hat_edit.JPG, id=1409, 1337.
 99875pt x 1179.40625pt>
 File: Sections/Implementation/Max/images/Max/Iteration3/hat_edit.JPG Graphic fi
 le (type jpg)
@@ -2456,7 +2431,7 @@ Package pdftex.def Info: Sections/Implementation/Max/images/Max/Iteration3/hat_
 edit.JPG used on input line 334.
 (pdftex.def)             Requested size: 213.39566pt x 188.09698pt.
 
-<Sections/Implementation/Max/images/settings.png, id=1413, 891.33pt x 837.1275p
+<Sections/Implementation/Max/images/settings.png, id=1411, 891.33pt x 837.1275p
 t>
 File: Sections/Implementation/Max/images/settings.png Graphic file (type png)
  <use Sections/Implementation/Max/images/settings.png>
@@ -2468,8 +2443,8 @@ n input line 345.
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
 (hyperref)                be the same. Added a new anchor on input line 353.
 
-[65 <./Sections/Implementation/Max/images/Max/Iteration3/hat_edit.JPG>]
-<Sections/Implementation/Max/images/Max/iterationMovement.png, id=1423, 1116.17
+[64 <./Sections/Implementation/Max/images/Max/Iteration3/hat_edit.JPG>]
+<Sections/Implementation/Max/images/Max/iterationMovement.png, id=1421, 1116.17
 pt x 537.00626pt>
 File: Sections/Implementation/Max/images/Max/iterationMovement.png Graphic file
  (type png)
@@ -2478,31 +2453,31 @@ File: Sections/Implementation/Max/images/Max/iterationMovement.png Graphic file
 Package pdftex.def Info: Sections/Implementation/Max/images/Max/iterationMoveme
 nt.png used on input line 365.
 (pdftex.def)             Requested size: 446.4601pt x 214.79869pt.
- [66 <./Sections/Implementation/Max/images/settings.png>] [67 <./Sections/Imple
+ [65 <./Sections/Implementation/Max/images/settings.png>] [66 <./Sections/Imple
 mentation/Max/images/Max/iterationMovement.png>]
-<Sections/Implementation/Max/images/Latency/latencyDiagram.png, id=1442, 993.71
+<Sections/Implementation/Max/images/Latency/latencyDiagram.png, id=1440, 993.71
 25pt x 492.84125pt>
 File: Sections/Implementation/Max/images/Latency/latencyDiagram.png Graphic fil
 e (type png)
 
 <use Sections/Implementation/Max/images/Latency/latencyDiagram.png>
 Package pdftex.def Info: Sections/Implementation/Max/images/Latency/latencyDiag
-ram.png used on input line 381.
+ram.png used on input line 382.
 (pdftex.def)             Requested size: 397.47795pt x 197.133pt.
- [68 <./Sections/Implementation/Max/images/Latency/latencyDiagram.png>]
-<Sections/Implementation/Max/images/Latency/odeonLatency_edit.png, id=1453, 119
+ [67 <./Sections/Implementation/Max/images/Latency/latencyDiagram.png>]
+<Sections/Implementation/Max/images/Latency/odeonLatency_edit.png, id=1451, 119
 6.47pt x 719.68875pt>
 File: Sections/Implementation/Max/images/Latency/odeonLatency_edit.png Graphic 
 file (type png)
 
 <use Sections/Implementation/Max/images/Latency/odeonLatency_edit.png>
 Package pdftex.def Info: Sections/Implementation/Max/images/Latency/odeonLatenc
-y_edit.png used on input line 413.
+y_edit.png used on input line 414.
 (pdftex.def)             Requested size: 426.79134pt x 256.71573pt.
- [69])
-(./Sections/userTesting/userTesting.tex [70 <./Sections/Implementation/Max/imag
-es/Latency/odeonLatency_edit.png>] [71]
-<Sections/userTesting/images/test1/roomPositionsandResults.png, id=1477, 1168.3
+ [68])
+(./Sections/userTesting/userTesting.tex [69 <./Sections/Implementation/Max/imag
+es/Latency/odeonLatency_edit.png>] [70]
+<Sections/userTesting/images/test1/roomPositionsandResults.png, id=1475, 1168.3
 65pt x 444.66125pt>
 File: Sections/userTesting/images/test1/roomPositionsandResults.png Graphic fil
 e (type png)
@@ -2512,15 +2487,15 @@ Package pdftex.def Info: Sections/userTesting/images/test1/roomPositionsandResu
 lts.png used on input line 74.
 (pdftex.def)             Requested size: 426.79134pt x 162.43231pt.
 
-<Sections/userTesting/images/test1/Q1Pies.png, id=1479, 1016.79875pt x 573.1412
-5pt>
+<Sections/userTesting/images/test1/Q1Pies.png, id=1477, 1064.97874pt x 584.1825
+pt>
 File: Sections/userTesting/images/test1/Q1Pies.png Graphic file (type png)
  <use Sections/userTesting/images/test1/Q1Pies.png>
 Package pdftex.def Info: Sections/userTesting/images/test1/Q1Pies.png used on i
 nput line 111.
-(pdftex.def)             Requested size: 426.79134pt x 240.569pt.
- [72]
-<Sections/userTesting/images/test1/Q1Trials.png, id=1489, 816.04875pt x 351.312
+(pdftex.def)             Requested size: 426.79134pt x 234.10564pt.
+ [71]
+<Sections/userTesting/images/test1/Q1Trials.png, id=1487, 816.04875pt x 351.312
 5pt>
 File: Sections/userTesting/images/test1/Q1Trials.png Graphic file (type png)
  <use Sections/userTesting/images/test1/Q1Trials.png>
@@ -2531,9 +2506,9 @@ Package pdftex.def Info: Sections/userTesting/images/test1/Q1Trials.png used on
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[73 <./Sections/userTesting/images/test1/roomPositionsandResults.png>] [74 <./S
+[72 <./Sections/userTesting/images/test1/roomPositionsandResults.png>] [73 <./S
 ections/userTesting/images/test1/Q1Pies.png>]
-<Sections/userTesting/images/test2/test2Positions2.png, id=1506, 1053.9375pt x 
+<Sections/userTesting/images/test2/test2Positions2.png, id=1504, 1053.9375pt x 
 626.34pt>
 File: Sections/userTesting/images/test2/test2Positions2.png Graphic file (type 
 png)
@@ -2551,9 +2526,9 @@ Overfull \hbox (5.70006pt too wide) in paragraph at lines 158--177
 []$[]$   $[]$ 
  []
 
-[75 <./Sections/userTesting/images/test1/Q1Trials.png> <./Sections/userTesting/
+[74 <./Sections/userTesting/images/test1/Q1Trials.png> <./Sections/userTesting/
 images/test2/test2Positions2.png>]
-<Sections/userTesting/images/test2/Q2_edit.png, id=1519, 428.802pt x 259.2084pt
+<Sections/userTesting/images/test2/Q2_edit.png, id=1516, 428.802pt x 259.2084pt
 >
 File: Sections/userTesting/images/test2/Q2_edit.png Graphic file (type png)
  <use Sections/userTesting/images/test2/Q2_edit.png>
@@ -2561,7 +2536,7 @@ Package pdftex.def Info: Sections/userTesting/images/test2/Q2_edit.png used on
 input line 191.
 (pdftex.def)             Requested size: 428.80095pt x 259.20775pt.
 
-<Sections/userTesting/images/test2/rateofchange.png, id=1520, 601.2864pt x 189.
+<Sections/userTesting/images/test2/rateofchange.png, id=1517, 601.2864pt x 189.
 3474pt>
 File: Sections/userTesting/images/test2/rateofchange.png Graphic file (type png
 )
@@ -2569,15 +2544,15 @@ File: Sections/userTesting/images/test2/rateofchange.png Graphic file (type png
 Package pdftex.def Info: Sections/userTesting/images/test2/rateofchange.png use
 d on input line 198.
 (pdftex.def)             Requested size: 420.89761pt x 132.54227pt.
- [76 <./Sections/userTesting/images/test2/Q2_edit.png>] [77 <./Sections/userTes
+ [75 <./Sections/userTesting/images/test2/Q2_edit.png>] [76 <./Sections/userTes
 ting/images/test2/rateofchange.png>]
 Overfull \hbox (23.90503pt too wide) in paragraph at lines 235--236
 []\T1/ppl/m/n/10 In each trial, the par-tic-i-pant was asked to draw a path and
- lis-ten to an au-dio sam-ple [[][]39[][]] (\T1/pcr/m/n/10 Trumpet.wav
+ lis-ten to an au-dio sam-ple [[][]40[][]] (\T1/pcr/m/n/10 Trumpet.wav
  []
 
 
-<Sections/userTesting/images/test3/Q3Score.png, id=1545, 455.301pt x 264.0264pt
+<Sections/userTesting/images/test3/Q3Score.png, id=1543, 455.301pt x 264.0264pt
 >
 File: Sections/userTesting/images/test3/Q3Score.png Graphic file (type png)
  <use Sections/userTesting/images/test3/Q3Score.png>
@@ -2585,31 +2560,31 @@ Package pdftex.def Info: Sections/userTesting/images/test3/Q3Score.png used on
 input line 251.
 (pdftex.def)             Requested size: 318.70853pt x 184.8172pt.
 
-<Sections/userTesting/images/test3/Q3Variance.png, id=1546, 423.984pt x 259.690
+<Sections/userTesting/images/test3/Q3Variance.png, id=1544, 423.984pt x 259.690
 2pt>
 File: Sections/userTesting/images/test3/Q3Variance.png Graphic file (type png)
  <use Sections/userTesting/images/test3/Q3Variance.png>
 Package pdftex.def Info: Sections/userTesting/images/test3/Q3Variance.png used 
 on input line 257.
 (pdftex.def)             Requested size: 296.78676pt x 181.78188pt.
- [78] [79 <./Sections/userTesting/images/test3/Q3Score.png> <./Sections/userTes
-ting/images/test3/Q3Variance.png>] [80]
+ [77] [78 <./Sections/userTesting/images/test3/Q3Score.png> <./Sections/userTes
+ting/images/test3/Q3Variance.png>] [79]
 Underfull \hbox (badness 10000) in paragraph at lines 308--309
 
  []
 
-) [81] (./Sections/Conclusion/Conclusion.tex [82] [83]) [84]
+) [80] (./Sections/Conclusion/Conclusion.tex [81] [82]) [83]
 (./Sections/FurtherWork/FurtherWork.tex
-<Sections/FurtherWork/images/grids2.png, id=1594, 1173.38374pt x 331.2375pt>
+<Sections/FurtherWork/images/grids2.png, id=1592, 1173.38374pt x 331.2375pt>
 File: Sections/FurtherWork/images/grids2.png Graphic file (type png)
 
 <use Sections/FurtherWork/images/grids2.png>
 Package pdftex.def Info: Sections/FurtherWork/images/grids2.png used on input l
 ine 26.
 (pdftex.def)             Requested size: 528.0178pt x 149.05548pt.
- [85] [86 <./Sections/FurtherWork/images/grids2.png>]) [87] (./Sections/Project
+ [84] [85 <./Sections/FurtherWork/images/grids2.png>]) [86] (./Sections/Project
 Management/ProjectManagement.tex
-<Sections/ProjectManagement/images/kanban_edit.jpg, id=1616, 3276.24pt x 2457.1
+<Sections/ProjectManagement/images/kanban_edit.jpg, id=1613, 3276.24pt x 2457.1
 8pt>
 File: Sections/ProjectManagement/images/kanban_edit.jpg Graphic file (type jpg)
 
@@ -2617,7 +2592,7 @@ File: Sections/ProjectManagement/images/kanban_edit.jpg Graphic file (type jpg)
 Package pdftex.def Info: Sections/ProjectManagement/images/kanban_edit.jpg used
  on input line 18.
 (pdftex.def)             Requested size: 491.41481pt x 368.5611pt.
-) [88] [89 <./Sections/ProjectManagement/images/kanban_edit.jpg>]
+) [87] [88 <./Sections/ProjectManagement/images/kanban_edit.jpg>]
 Overfull \hbox (31.1075pt too wide) in paragraph at lines 111--111
 []\T1/ppl/m/n/10 H. Rob-johns. (2001). You are sur-rounded, sos, [On-line]. Ava
 il-able: [][]$\T1/pcr/m/n/10 http : / / www . soundonsound .
@@ -2629,7 +2604,7 @@ Overfull \hbox (4.04419pt too wide) in paragraph at lines 111--111
 ttp : / / www . odeon . dk / pdf / ODEONManual12 .
  []
 
-[90]
+[89]
 Overfull \hbox (1.9156pt too wide) in paragraph at lines 111--111
 []\T1/ppl/m/n/10 (2016). Max/msp, Cy-cling74, [On-line]. Avail-able: [][]$\T1/p
 cr/m/n/10 https : / / cycling74 . com / products /
@@ -2647,7 +2622,13 @@ Overfull \hbox (14.91418pt too wide) in paragraph at lines 111--111
 line]. Avail-able: [][]$\T1/pcr/m/n/10 http : / / www . acoustic .
  []
 
-[91]
+
+Overfull \hbox (22.42474pt too wide) in paragraph at lines 111--111
+[]\T1/ppl/m/n/10 (2016). Com-mon loud-speaker for-mat, CLF-group, [On-line]. Av
+ail-able: [][]$\T1/pcr/m/n/10 http : / / www . clfgroup .
+ []
+
+[90]
 Overfull \hbox (28.74594pt too wide) in paragraph at lines 111--111
 []\T1/ppl/m/n/10 (2016). C74, Cy-cling74, [On-line]. Avail-able: [][]$\T1/pcr/m
 /n/10 https : / / cycling74 . com / project / project43 -[]
@@ -2670,7 +2651,7 @@ press .
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <20.74> not available
 (Font)              Font shape `T1/ppl/b/n' tried instead on input line 14.
 
-<Sections/Appendix/AppendixA/images/bluePrintTop.jpg, id=1694, 2888.7925pt x 20
+<Sections/Appendix/AppendixA/images/bluePrintTop.jpg, id=1693, 2888.7925pt x 20
 32.59375pt>
 File: Sections/Appendix/AppendixA/images/bluePrintTop.jpg Graphic file (type jp
 g)
@@ -2678,7 +2659,7 @@ g)
 Package pdftex.def Info: Sections/Appendix/AppendixA/images/bluePrintTop.jpg us
 ed on input line 24.
 (pdftex.def)             Requested size: 433.30019pt x 304.8759pt.
- [92]
+ [91]
 <Sections/Appendix/AppendixA/images/realVsSKU/compare1.png, id=1708, 549.05125p
 t x 615.29875pt>
 File: Sections/Appendix/AppendixA/images/realVsSKU/compare1.png Graphic file (t
@@ -2688,8 +2669,8 @@ ype png)
 Package pdftex.def Info: Sections/Appendix/AppendixA/images/realVsSKU/compare1.
 png used on input line 50.
 (pdftex.def)             Requested size: 439.2416pt x 492.23967pt.
- [93 <./Sections/Appendix/AppendixA/images/bluePrintTop.jpg>]
-<Sections/Appendix/AppendixA/images/realVsSKU/compare2.png, id=1715, 497.86pt x
+ [92 <./Sections/Appendix/AppendixA/images/bluePrintTop.jpg>]
+<Sections/Appendix/AppendixA/images/realVsSKU/compare2.png, id=1714, 497.86pt x
  558.085pt>
 File: Sections/Appendix/AppendixA/images/realVsSKU/compare2.png Graphic file (t
 ype png)
@@ -2698,7 +2679,7 @@ Package pdftex.def Info: Sections/Appendix/AppendixA/images/realVsSKU/compare2.
 png used on input line 56.
 (pdftex.def)             Requested size: 398.28853pt x 446.46861pt.
 
-[94 <./Sections/Appendix/AppendixA/images/realVsSKU/compare1.png>]
+[93 <./Sections/Appendix/AppendixA/images/realVsSKU/compare1.png>]
 <Sections/Appendix/AppendixA/images/realVsSKU/compare3.png, id=1721, 550.055pt 
 x 664.4825pt>
 File: Sections/Appendix/AppendixA/images/realVsSKU/compare3.png Graphic file (t
@@ -2708,7 +2689,7 @@ Package pdftex.def Info: Sections/Appendix/AppendixA/images/realVsSKU/compare3.
 png used on input line 62.
 (pdftex.def)             Requested size: 440.04459pt x 531.58672pt.
 
-[95 <./Sections/Appendix/AppendixA/images/realVsSKU/compare2.png>] [96 <./Secti
+[94 <./Sections/Appendix/AppendixA/images/realVsSKU/compare2.png>] [95 <./Secti
 ons/Appendix/AppendixA/images/realVsSKU/compare3.png>]
 <Sections/Appendix/AppendixA/images/Odeon/2m.png, id=1732, 934.49126pt x 946.53
 625pt>
@@ -2751,7 +2732,7 @@ Overfull \hbox (1.90001pt too wide) in paragraph at lines 91--105
 []$[]$ $[]$ 
  []
 
-[97 <./Sections/Appendix/AppendixA/images/Odeon/2m.png> <./Sections/Appendix/Ap
+[96 <./Sections/Appendix/AppendixA/images/Odeon/2m.png> <./Sections/Appendix/Ap
 pendixA/images/Odeon/3m.png> <./Sections/Appendix/AppendixA/images/Odeon/4m.png
 > <./Sections/Appendix/AppendixA/images/Odeon/5m.png>]
 <Sections/Implementation/Max/images/Max/iteration1/panning1.png, id=1744, 1115.
@@ -2783,15 +2764,15 @@ le (type png)
 Package pdftex.def Info: Sections/Implementation/Max/images/Max/iteration1/pann
 ing3.png used on input line 116.
 (pdftex.def)             Requested size: 426.79134pt x 194.13048pt.
- [98]
+ [97]
 Overfull \vbox (59.0242pt too high) has occurred while \output is active []
 
 
-[99 <./Sections/Implementation/Max/images/Max/iteration1/panning1.png> <./Secti
+[98 <./Sections/Implementation/Max/images/Max/iteration1/panning1.png> <./Secti
 ons/Implementation/Max/images/Max/iteration1/panning2.png> <./Sections/Implemen
 tation/Max/images/Max/iteration1/panning3.png>]
 <Sections/Appendix/AppendixA/images/userTests/Test_Participant_Form_V3.pdf, id=
-1759, 597.50829pt x 845.0471pt>
+1758, 597.50829pt x 845.0471pt>
 File: Sections/Appendix/AppendixA/images/userTests/Test_Participant_Form_V3.pdf
  Graphic file (type pdf)
 
@@ -2808,7 +2789,7 @@ icipant_Form_V3.pdf used on input line 133.
 (pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
 
 <Sections/Appendix/AppendixA/images/userTests/Test_Participant_Form_V3.pdf, id=
-1762, page=1, 597.50829pt x 845.0471pt>
+1761, page=1, 597.50829pt x 845.0471pt>
 File: Sections/Appendix/AppendixA/images/userTests/Test_Participant_Form_V3.pdf
  Graphic file (type pdf)
 
@@ -2841,7 +2822,7 @@ File: Sections/Appendix/AppendixA/images/userTests/Test_Participant_Form_V3.pdf
 Package pdftex.def Info: Sections/Appendix/AppendixA/images/userTests/Test_Part
 icipant_Form_V3.pdf, page1 used on input line 133.
 (pdftex.def)             Requested size: 478.00728pt x 676.0386pt.
- [100]
+ [99]
 <Sections/Appendix/AppendixA/images/userTests/Test_Participant_Form_V3.pdf, id=
 1767, page=2, 597.50829pt x 845.0471pt>
 File: Sections/Appendix/AppendixA/images/userTests/Test_Participant_Form_V3.pdf
@@ -2868,7 +2849,7 @@ File: Sections/Appendix/AppendixA/images/userTests/Test_Participant_Form_V3.pdf
 Package pdftex.def Info: Sections/Appendix/AppendixA/images/userTests/Test_Part
 icipant_Form_V3.pdf, page1 used on input line 133.
 (pdftex.def)             Requested size: 478.00728pt x 676.0386pt.
- [101 <./Sections/Appendix/AppendixA/images/userTests/Test_Participant_Form_V3.
+ [100 <./Sections/Appendix/AppendixA/images/userTests/Test_Participant_Form_V3.
 pdf>]
 <Sections/Appendix/AppendixA/images/userTests/Test_Participant_Form_V3.pdf, id=
 1801, page=3, 597.50829pt x 845.0471pt>
@@ -2896,7 +2877,7 @@ File: Sections/Appendix/AppendixA/images/userTests/Test_Participant_Form_V3.pdf
 Package pdftex.def Info: Sections/Appendix/AppendixA/images/userTests/Test_Part
 icipant_Form_V3.pdf, page2 used on input line 133.
 (pdftex.def)             Requested size: 478.00728pt x 676.0386pt.
- [102 <./Sections/Appendix/AppendixA/images/userTests/Test_Participant_Form_V3.
+ [101 <./Sections/Appendix/AppendixA/images/userTests/Test_Participant_Form_V3.
 pdf>]
 <Sections/Appendix/AppendixA/images/userTests/Test_Participant_Form_V3.pdf, id=
 1821, page=4, 597.50829pt x 845.0471pt>
@@ -2924,7 +2905,7 @@ File: Sections/Appendix/AppendixA/images/userTests/Test_Participant_Form_V3.pdf
 Package pdftex.def Info: Sections/Appendix/AppendixA/images/userTests/Test_Part
 icipant_Form_V3.pdf, page3 used on input line 133.
 (pdftex.def)             Requested size: 478.00728pt x 676.0386pt.
- [103 <./Sections/Appendix/AppendixA/images/userTests/Test_Participant_Form_V3.
+ [102 <./Sections/Appendix/AppendixA/images/userTests/Test_Participant_Form_V3.
 pdf>]
 <Sections/Appendix/AppendixA/images/userTests/Test_Participant_Form_V3.pdf, id=
 1826, page=5, 597.50829pt x 845.0471pt>
@@ -2952,7 +2933,7 @@ File: Sections/Appendix/AppendixA/images/userTests/Test_Participant_Form_V3.pdf
 Package pdftex.def Info: Sections/Appendix/AppendixA/images/userTests/Test_Part
 icipant_Form_V3.pdf, page4 used on input line 133.
 (pdftex.def)             Requested size: 478.00728pt x 676.0386pt.
- [104 <./Sections/Appendix/AppendixA/images/userTests/Test_Participant_Form_V3.
+ [103 <./Sections/Appendix/AppendixA/images/userTests/Test_Participant_Form_V3.
 pdf>]
 File: Sections/Appendix/AppendixA/images/userTests/Test_Participant_Form_V3.pdf
  Graphic file (type pdf)
@@ -2962,15 +2943,15 @@ File: Sections/Appendix/AppendixA/images/userTests/Test_Participant_Form_V3.pdf
 Package pdftex.def Info: Sections/Appendix/AppendixA/images/userTests/Test_Part
 icipant_Form_V3.pdf, page5 used on input line 133.
 (pdftex.def)             Requested size: 478.00728pt x 676.0386pt.
- [105 <./Sections/Appendix/AppendixA/images/userTests/Test_Participant_Form_V3.
-pdf>] [106]
+ [104 <./Sections/Appendix/AppendixA/images/userTests/Test_Participant_Form_V3.
+pdf>] [105]
 <Sections/ProjectManagement/images/Gantt.png, id=1840, 1843.88875pt x 224.84pt>
 File: Sections/ProjectManagement/images/Gantt.png Graphic file (type png)
 <use Sections/ProjectManagement/images/Gantt.png>
 Package pdftex.def Info: Sections/ProjectManagement/images/Gantt.png used on in
 put line 154.
 (pdftex.def)             Requested size: 645.37074pt x 78.69518pt.
- [107
+ [106
 
  <./Sections/ProjectManagement/images/Gantt.png>])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 121.
@@ -2982,9 +2963,6 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 746EB3F06E99E59469651E0AEA7F5C53;8080.
 
 
-LaTeX Warning: There were undefined references.
-
-
 LaTeX Warning: There were multiply-defined labels.
 
 Package logreq Info: Writing requests to 'main.run.xml'.
@@ -2993,13 +2971,13 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 121.
  ) 
 Here is how much of TeX's memory you used:
- 36254 strings out of 493089
- 741478 string characters out of 6134842
- 1306743 words of memory out of 5000000
- 38553 multiletter control sequences out of 15000+600000
+ 36258 strings out of 493089
+ 741560 string characters out of 6134842
+ 1307011 words of memory out of 5000000
+ 38557 multiletter control sequences out of 15000+600000
  52320 words of font info for 97 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 113i,19n,139p,1817b,3319s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 113i,19n,139p,1818b,3319s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/te
 xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/tex
@@ -3016,10 +2994,10 @@ pe1/urw/palatino/uplbi8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/ur
 w/palatino/uplr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/palat
 ino/uplri8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/wasy2-ps
 /wasy10.pfb>
-Output written on main.pdf (117 pages, 23245790 bytes).
+Output written on main.pdf (116 pages, 23508966 bytes).
 PDF statistics:
  1974 PDF objects out of 2073 (max. 8388607)
- 1653 compressed objects within 17 object streams
+ 1654 compressed objects within 17 object streams
  419 named destinations out of 1000 (max. 500000)
  1373 words of extra memory for PDF output out of 10000 (max. 10000000)
 

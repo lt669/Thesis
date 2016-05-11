@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.14)  11 MAY 2016 08:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.14)  11 MAY 2016 17:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -644,16 +644,8 @@ Package acronym Warning: Acronym `RIR' is not defined on input line 88.
 
 Package acronym Warning: Acronym `RIR' is not defined on input line 88.
 
-! Undefined control sequence.
-<argument> ...in this section as well as \fullref 
-                                                  {furtherwork}
-l.90 ... section as well as \fullref{furtherwork}}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+
+LaTeX Warning: Reference `furtherwork' on page 4 undefined on input line 90.
 
 
 LaTeX Warning: Citation `Siltanen2010' on page 4 undefined on input line 92.
@@ -688,15 +680,6 @@ LaTeX Warning: Citation `Rindel1995' on page 5 undefined on input line 100.
 
 
 LaTeX Warning: Citation `odeonManual' on page 5 undefined on input line 100.
-
-! Undefined control sequence.
-l.100 ...eonManual} (described in section~\fullref
-                                                  {background:scattering}). ...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
 
 
 ! LaTeX Error: Unknown float option `H'.
@@ -734,22 +717,22 @@ Package acronym Warning: Acronym `RIR' is not defined on input line 104.
 Package acronym Warning: Acronym `RIR' is not defined on input line 104.
 
 
-Package acronym Warning: Acronym `ISM' is not defined on input line 116.
+Package acronym Warning: Acronym `ISM' is not defined on input line 112.
 
 
-LaTeX Warning: Citation `Rindel1995' on page 5 undefined on input line 116.
+LaTeX Warning: Citation `Rindel1995' on page 5 undefined on input line 112.
 
 
-Package acronym Warning: Acronym `RIR' is not defined on input line 116.
+Package acronym Warning: Acronym `RIR' is not defined on input line 112.
 
 
-Package acronym Warning: Acronym `ISM' is not defined on input line 116.
+Package acronym Warning: Acronym `ISM' is not defined on input line 112.
 
 
-Package acronym Warning: Acronym `RIR' is not defined on input line 116.
+Package acronym Warning: Acronym `RIR' is not defined on input line 112.
 
 
-Package acronym Warning: Acronym `ISM' is not defined on input line 116.
+Package acronym Warning: Acronym `ISM' is not defined on input line 112.
 
 [5]
 
@@ -759,13 +742,13 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.121 			\begin{figure}[H]
+l.117 			\begin{figure}[H]
                           
 Option `H' ignored and `p' used.
 
 
 LaTeX Warning: File `Sections/Background/images/ISM.png' not found on input lin
-e 122.
+e 118.
 
 
 ! Package pdftex.def Error: File `Sections/Background/images/ISM.png' not found
@@ -775,31 +758,34 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.122 ... 0.4]{Sections/Background/images/ISM.png}
+l.118 ... 0.4]{Sections/Background/images/ISM.png}
                                                   
 Using draft setting for this image.
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-Package acronym Warning: Acronym `ISM' is not defined on input line 130.
+Package acronym Warning: Acronym `ISM' is not defined on input line 125.
 
 
-Package acronym Warning: Acronym `ISM' is not defined on input line 132.
+Package acronym Warning: Acronym `ISM' is not defined on input line 127.
 
 Package acronym Info: Label `acro:TO' newly defined as it shall be overridden
-although it is yet undefined on input line 132.
+although it is yet undefined on input line 127.
 
-Package acronym Warning: Acronym `TO' is not defined on input line 132.
-
-
-Package acronym Warning: Acronym `TO' is not defined on input line 132.
+Package acronym Warning: Acronym `TO' is not defined on input line 127.
 
 
-Package acronym Warning: Acronym `TO' is not defined on input line 132.
+Package acronym Warning: Acronym `TO' is not defined on input line 127.
 
 
-LaTeX Warning: Citation `odeonManual' on page 6 undefined on input line 138.
+Package acronym Warning: Acronym `TO' is not defined on input line 127.
+
+
+LaTeX Warning: Citation `odeonManual' on page 6 undefined on input line 133.
+
+
+LaTeX Warning: Reference `surfaceTypes' on page 6 undefined on input line 133.
 
 
 ! LaTeX Error: Unknown float option `H'.
@@ -808,13 +794,13 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.141 			\begin{figure}[H]
+l.136 			\begin{figure}[H]
                           
 Option `H' ignored and `p' used.
 
 
 LaTeX Warning: File `Sections/Background/images/scattering_edit.png' not found 
-on input line 142.
+on input line 137.
 
 
 ! Package pdftex.def Error: File `Sections/Background/images/scattering_edit.pn
@@ -824,91 +810,62 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.142 ...ns/Background/images/scattering_edit.png}
+l.137 ...ns/Background/images/scattering_edit.png}
                                                   
 Using draft setting for this image.
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-LaTeX Warning: Citation `odeonManual' on page 6 undefined on input line 143.
+LaTeX Warning: Citation `odeonManual' on page 6 undefined on input line 138.
 
 
-LaTeX Warning: Citation `odeonManual' on page 6 undefined on input line 143.
+LaTeX Warning: Citation `odeonManual' on page 6 undefined on input line 138.
 
 
-LaTeX Warning: Citation `SKU' on page 6 undefined on input line 149.
-
-! Undefined control sequence.
-l.149 ...re which is described in section~\fullref
-                                                  {GSU}.
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+LaTeX Warning: Citation `SKU' on page 6 undefined on input line 144.
 
 [6] [7]
 
-Package acronym Warning: Acronym `VAE' is not defined on input line 153.
-
-! Undefined control sequence.
-l.153 ...around the room (as described in \fullref
-                                                  {rayTracing}), thus the ac...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+Package acronym Warning: Acronym `VAE' is not defined on input line 148.
 
 
-Package acronym Warning: Acronym `RIR' is not defined on input line 153.
+Package acronym Warning: Acronym `RIR' is not defined on input line 148.
 
 
-LaTeX Warning: Citation `SKU' on page 8 undefined on input line 156.
+LaTeX Warning: Citation `SKU' on page 8 undefined on input line 151.
 
 
-LaTeX Warning: Citation `SU2Odeon' on page 8 undefined on input line 156.
+LaTeX Warning: Citation `SU2Odeon' on page 8 undefined on input line 151.
 
 
-LaTeX Warning: Citation `max' on page 8 undefined on input line 159.
+LaTeX Warning: Citation `max' on page 8 undefined on input line 154.
 
 
-LaTeX Warning: Citation `spat' on page 8 undefined on input line 159.
+LaTeX Warning: Citation `spat' on page 8 undefined on input line 154.
 
 
-Package acronym Warning: Acronym `VSS' is not defined on input line 164.
+Package acronym Warning: Acronym `VSS' is not defined on input line 159.
 
 
-Package acronym Warning: Acronym `VSS' is not defined on input line 168.
+Package acronym Warning: Acronym `VSS' is not defined on input line 163.
 
 
-LaTeX Warning: Citation `Brereton2014' on page 8 undefined on input line 168.
+LaTeX Warning: Citation `Brereton2014' on page 8 undefined on input line 163.
 
 
-Package acronym Warning: Acronym `RIR' is not defined on input line 168.
+Package acronym Warning: Acronym `RIR' is not defined on input line 163.
 
 
-Package acronym Warning: Acronym `VAE' is not defined on input line 168.
+Package acronym Warning: Acronym `VAE' is not defined on input line 163.
 
 
-LaTeX Warning: Citation `oculus' on page 8 undefined on input line 168.
+LaTeX Warning: Citation `oculus' on page 8 undefined on input line 163.
 
 [8]
 
-! LaTeX Error: Unknown float option `H'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.171 		\begin{figure}[H]
-                         
-Option `H' ignored and `p' used.
-
-
 LaTeX Warning: File `Sections/Background/images/vssDiagram.png' not found on in
-put line 172.
+put line 167.
 
 
 ! Package pdftex.def Error: File `Sections/Background/images/vssDiagram.png' no
@@ -918,266 +875,249 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.172 ...ctions/Background/images/vssDiagram.png}}
+l.167 ...ctions/Background/images/vssDiagram.png}}
                                                   
 Using draft setting for this image.
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-Package acronym Warning: Acronym `VAE' is not defined on input line 177.
+Package acronym Warning: Acronym `VAE' is not defined on input line 172.
 
 
-Package acronym Warning: Acronym `VSS' is not defined on input line 177.
+Package acronym Warning: Acronym `VSS' is not defined on input line 172.
 
 
-Package acronym Warning: Acronym `RIR' is not defined on input line 177.
+Package acronym Warning: Acronym `RIR' is not defined on input line 172.
 
 
-Package acronym Warning: Acronym `RIR' is not defined on input line 177.
+Package acronym Warning: Acronym `RIR' is not defined on input line 172.
 
 
-Package acronym Warning: Acronym `VSS' is not defined on input line 183.
+Package acronym Warning: Acronym `VSS' is not defined on input line 178.
 
 
-Package acronym Warning: Acronym `RIR' is not defined on input line 183.
+Package acronym Warning: Acronym `RIR' is not defined on input line 178.
 
 
-Package acronym Warning: Acronym `RIR' is not defined on input line 183.
+Package acronym Warning: Acronym `RIR' is not defined on input line 178.
 
 
-Package acronym Warning: Acronym `VSS' is not defined on input line 183.
+Package acronym Warning: Acronym `VSS' is not defined on input line 178.
 
 
-Package acronym Warning: Acronym `RIR' is not defined on input line 183.
+Package acronym Warning: Acronym `RIR' is not defined on input line 178.
 
 
-Package acronym Warning: Acronym `RIR' is not defined on input line 183.
+Package acronym Warning: Acronym `RIR' is not defined on input line 178.
 
 
-Package acronym Warning: Acronym `RIR' is not defined on input line 183.
+Package acronym Warning: Acronym `RIR' is not defined on input line 178.
 
 
-Package acronym Warning: Acronym `RIR' is not defined on input line 183.
+Package acronym Warning: Acronym `RIR' is not defined on input line 178.
 
 
-Package acronym Warning: Acronym `RIR' is not defined on input line 183.
-
-
-Package acronym Warning: Acronym `RIR' is not defined on input line 190.
-
-
-Package acronym Warning: Acronym `RIR' is not defined on input line 196.
-
-
-Package acronym Warning: Acronym `RIR' is not defined on input line 196.
+Package acronym Warning: Acronym `RIR' is not defined on input line 178.
 
 [9]
 
-LaTeX Warning: Citation `Savioja1999' on page 10 undefined on input line 198.
+Package acronym Warning: Acronym `RIR' is not defined on input line 185.
 
 
-Package acronym Warning: Acronym `RIR' is not defined on input line 198.
+Package acronym Warning: Acronym `RIR' is not defined on input line 191.
 
 
-Package acronym Warning: Acronym `VAE' is not defined on input line 198.
+Package acronym Warning: Acronym `RIR' is not defined on input line 191.
 
 
-Package acronym Warning: Acronym `RIR' is not defined on input line 198.
+LaTeX Warning: Citation `Savioja1999' on page 10 undefined on input line 193.
 
 
-Package acronym Warning: Acronym `RIR' is not defined on input line 198.
+Package acronym Warning: Acronym `RIR' is not defined on input line 193.
 
 
-Package acronym Warning: Acronym `RIR' is not defined on input line 198.
+Package acronym Warning: Acronym `VAE' is not defined on input line 193.
 
 
-LaTeX Warning: Citation `Mehra2010' on page 10 undefined on input line 198.
+Package acronym Warning: Acronym `RIR' is not defined on input line 193.
+
+
+Package acronym Warning: Acronym `RIR' is not defined on input line 193.
+
+
+Package acronym Warning: Acronym `RIR' is not defined on input line 193.
+
+
+LaTeX Warning: Citation `Mehra2010' on page 10 undefined on input line 193.
+
+
+Package acronym Warning: Acronym `RIR' is not defined on input line 197.
+
+
+Package acronym Warning: Acronym `VSS' is not defined on input line 198.
 
 
 Package acronym Warning: Acronym `RIR' is not defined on input line 202.
 
 
-Package acronym Warning: Acronym `VSS' is not defined on input line 203.
+Package acronym Warning: Acronym `RIR' is not defined on input line 202.
 
 
-Package acronym Warning: Acronym `RIR' is not defined on input line 207.
+Package acronym Warning: Acronym `RIR' is not defined on input line 202.
 
 
-Package acronym Warning: Acronym `RIR' is not defined on input line 207.
+Package acronym Warning: Acronym `RIR' is not defined on input line 202.
 
 
-Package acronym Warning: Acronym `RIR' is not defined on input line 207.
+LaTeX Warning: Citation `Oxnard2013' on page 10 undefined on input line 202.
 
 
-Package acronym Warning: Acronym `RIR' is not defined on input line 207.
+Package acronym Warning: Acronym `RIR' is not defined on input line 202.
 
 
-LaTeX Warning: Citation `Oxnard2013' on page 10 undefined on input line 207.
+Package acronym Warning: Acronym `RIR' is not defined on input line 202.
 
 
-Package acronym Warning: Acronym `RIR' is not defined on input line 207.
+Package acronym Warning: Acronym `RIR' is not defined on input line 202.
 
 
-Package acronym Warning: Acronym `RIR' is not defined on input line 207.
+LaTeX Warning: Citation `Southern' on page 10 undefined on input line 202.
 
 
-Package acronym Warning: Acronym `RIR' is not defined on input line 207.
+Package acronym Warning: Acronym `RIR' is not defined on input line 202.
 
 
-LaTeX Warning: Citation `Southern' on page 10 undefined on input line 207.
+Package acronym Warning: Acronym `RIR' is not defined on input line 202.
 
 
-Package acronym Warning: Acronym `RIR' is not defined on input line 207.
-
-
-Package acronym Warning: Acronym `RIR' is not defined on input line 207.
-
-
-Package acronym Warning: Acronym `RIR' is not defined on input line 207.
-
-
-Package acronym Warning: Acronym `VAE' is not defined on input line 233.
-
-
-Package acronym Warning: Acronym `VSS' is not defined on input line 233.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 237--238
-
- []
-
-
-Package acronym Warning: Acronym `RIR' is not defined on input line 239.
-
-
-Package acronym Warning: Acronym `VAE' is not defined on input line 239.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 239--240
-
- []
+Package acronym Warning: Acronym `RIR' is not defined on input line 202.
 
 [10]
 
-Package acronym Warning: Acronym `RIR' is not defined on input line 241.
+Package acronym Warning: Acronym `VAE' is not defined on input line 204.
 
 
-! LaTeX Error: Unknown float option `H'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.247 		\begin{figure}[H]
-                         
-Option `H' ignored and `p' used.
+Package acronym Warning: Acronym `VSS' is not defined on input line 204.
 
 
-LaTeX Warning: File `Sections/Background/images/vssExtention.png' not found on 
-input line 248.
+Underfull \hbox (badness 10000) in paragraph at lines 208--209
+
+ []
 
 
-! Package pdftex.def Error: File `Sections/Background/images/vssExtention.png' 
-not found.
+Package acronym Warning: Acronym `RIR' is not defined on input line 210.
+
+
+Package acronym Warning: Acronym `VAE' is not defined on input line 210.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 210--211
+
+ []
+
+
+Package acronym Warning: Acronym `RIR' is not defined on input line 212.
+
+
+LaTeX Warning: File `Sections/Background/images/vssExtention2.png' not found on
+ input line 219.
+
+
+! Package pdftex.def Error: File `Sections/Background/images/vssExtention2.png'
+ not found.
 
 See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.248 ...ions/Background/images/vssExtention.png}}
+l.219 ...ons/Background/images/vssExtention2.png}}
                                                   
 Using draft setting for this image.
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-Package acronym Warning: Acronym `VSS' is not defined on input line 253.
+Package acronym Warning: Acronym `VSS' is not defined on input line 224.
 
 
-Package acronym Warning: Acronym `RIR' is not defined on input line 253.
+Package acronym Warning: Acronym `RIR' is not defined on input line 224.
 
 
-Package acronym Warning: Acronym `VAE' is not defined on input line 253.
+Package acronym Warning: Acronym `VAE' is not defined on input line 224.
 
 
-Package acronym Warning: Acronym `RIR' is not defined on input line 253.
+Package acronym Warning: Acronym `RIR' is not defined on input line 224.
 
 
-Package acronym Warning: Acronym `RIR' is not defined on input line 253.
+Package acronym Warning: Acronym `RIR' is not defined on input line 224.
 
 
-Package acronym Warning: Acronym `RIR' is not defined on input line 253.
+Package acronym Warning: Acronym `RIR' is not defined on input line 224.
 
 
-Package acronym Warning: Acronym `VAE' is not defined on input line 253.
+Package acronym Warning: Acronym `VAE' is not defined on input line 224.
 
 
-Package acronym Warning: Acronym `RIR' is not defined on input line 253.
+Package acronym Warning: Acronym `RIR' is not defined on input line 224.
 
 
-Package acronym Warning: Acronym `RIR' is not defined on input line 258.
+Package acronym Warning: Acronym `RIR' is not defined on input line 229.
 
 
-Package acronym Warning: Acronym `VSS' is not defined on input line 258.
+Package acronym Warning: Acronym `VSS' is not defined on input line 229.
 
 
-Package acronym Warning: Acronym `RIR' is not defined on input line 260.
+Package acronym Warning: Acronym `RIR' is not defined on input line 231.
 
 
-Package acronym Warning: Acronym `RIR' is not defined on input line 262.
+Package acronym Warning: Acronym `RIR' is not defined on input line 233.
 
 
-Package acronym Warning: Acronym `RIR' is not defined on input line 262.
+Package acronym Warning: Acronym `RIR' is not defined on input line 233.
 
 
-Package acronym Warning: Acronym `VAE' is not defined on input line 271.
+Package acronym Warning: Acronym `VAE' is not defined on input line 242.
 
 
-Package acronym Warning: Acronym `RIR' is not defined on input line 273.
+Package acronym Warning: Acronym `RIR' is not defined on input line 244.
 
 
-Package acronym Warning: Acronym `RIR' is not defined on input line 274.
+Package acronym Warning: Acronym `RIR' is not defined on input line 245.
+
+[11] [12]
+
+Package acronym Warning: Acronym `RIR' is not defined on input line 246.
 
 
-Package acronym Warning: Acronym `RIR' is not defined on input line 275.
+Package acronym Warning: Acronym `RIR' is not defined on input line 246.
 
-
-Package acronym Warning: Acronym `RIR' is not defined on input line 275.
-
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 279.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 250.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 279.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 250.
 
 
-Package acronym Warning: Acronym `RIR' is not defined on input line 279.
+Package acronym Warning: Acronym `RIR' is not defined on input line 250.
 
 
-Package acronym Warning: Acronym `VAE' is not defined on input line 280.
+Package acronym Warning: Acronym `VAE' is not defined on input line 251.
 
-[11]
 
-Package acronym Warning: Acronym `RIR' is not defined on input line 281.
+Package acronym Warning: Acronym `RIR' is not defined on input line 252.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 312.
-[12] [13]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 312.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 283.
+[13]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 283.
  (./Background.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 312.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 312.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 283.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 283.
+Package rerunfilecheck Info: File `Background.out' has not changed.
+(rerunfilecheck)             Checksum: 9BC081BA0C2AE84DD3722137D6274D3C;1328.
 
-
-Package rerunfilecheck Warning: File `Background.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `Background.out':
-(rerunfilecheck)             Before: FA8F510CFAB43EABA92BDE2806D28A70;1380
-(rerunfilecheck)             After:  9BC081BA0C2AE84DD3722137D6274D3C;1328.
 
 LaTeX Warning: There were undefined references.
 
@@ -1186,43 +1126,25 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 6352 strings out of 493089
- 92401 string characters out of 6134842
- 185928 words of memory out of 5000000
- 9699 multiletter control sequences out of 15000+600000
+ 6345 strings out of 493089
+ 92248 string characters out of 6134842
+ 185906 words of memory out of 5000000
+ 9698 multiletter control sequences out of 15000+600000
  5666 words of font info for 21 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 45i,11n,47p,1601b,507s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{paragraph.2.4.1.6} has been referenced but does n
-ot exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{paragraph.2.4.1.5} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{paragraph.2.4.1.4} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{paragraph.2.4.1.3} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{paragraph.2.4.1.2} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{paragraph.2.4.1.1} has been referenced but does not
- exist, replaced by a fixed one
-
-</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><
-/usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></
-usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></
-usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></u
-sr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr
-/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/
-local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/l
-ocal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on Background.pdf (13 pages, 142181 bytes).
+ 45i,11n,47p,1601b,452s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
+></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
+</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb>
+</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
+/usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></u
+sr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></us
+r/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr
+/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on Background.pdf (13 pages, 142361 bytes).
 PDF statistics:
- 223 PDF objects out of 1000 (max. 8388607)
- 198 compressed objects within 2 object streams
- 61 named destinations out of 1000 (max. 500000)
+ 219 PDF objects out of 1000 (max. 8388607)
+ 194 compressed objects within 2 object streams
+ 55 named destinations out of 1000 (max. 500000)
  153 words of extra memory for PDF output out of 10000 (max. 10000000)
 

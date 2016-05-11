@@ -599,6 +599,23 @@
       \verb http://www.cdc.gov/niosh/mining/userfiles/works/pdfs/ammfd.pdf
       \endverb
     \endentry
+    \entry{clf}{online}{}
+      \list{organization}{1}{%
+        {CLFgroup}%
+      }
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{online}
+      \field{title}{Common Loudspeaker Format}
+      \field{urlday}{03}
+      \field{urlmonth}{05}
+      \field{urlyear}{2016}
+      \field{year}{2016}
+      \verb{url}
+      \verb http://www.clfgroup.org/
+      \endverb
+    \endentry
     \entry{Monson2012b}{article}{}
       \name{author}{3}{}{%
         {{hash=399b7453dd0a1835cce5b40e8fdad291}{Monson}{M\bibinitperiod}{Brian\bibnamedelima B}{B\bibinitperiod\bibinitdelim B\bibinitperiod}{}{}{}{}}%
