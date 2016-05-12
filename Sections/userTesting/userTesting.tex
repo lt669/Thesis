@@ -4,6 +4,7 @@
  
 \begin{document}
 
+
 \section{User Testing}
 	Once the implementation of the system to allow the user to move themselves around a virtual space had been completed, the plausibility of the system was tested and the questions raised as to the effect on the perception of motion with the \ac{VAE} when using this system were investigated. The following sections present the aims of the user tests in full, the procedure required to fulfil the set objectives followed by the results and a discussion.
 
@@ -24,7 +25,7 @@
 		
 			\textbf{Test \#1} & Investigate the effect of using the synthetic \ac{RIR}'s as opposed to the previously used real \ac{RIR}'s.\\
 			&\\
-			\textbf{Test \#2} & Investigate how far the user has to be moved before they notice that they have been moved using synthetic \ac{RIR}'s to investigate the potential minimum distance between synthetic \ac{RIR}'s required.\\
+			\textbf{Test \#2} & Investigate how far the user has to be moved before they perceive the difference when using synthetic \ac{RIR}'s to investigate the potential minimum distance between synthetic \ac{RIR}'s required.\\
 			&\\
 			\textbf{Test \#3.1} & Investigate which \ac{RIR} grid provides the user with the best sense of mobility.\\
 			&\\
@@ -67,7 +68,7 @@
 			\end{center}
 			\vspace{5mm}
 
-			This was repeated three times where the distances used for methods A and B were kept the same as each other. For the final two trials, the distances between the two methods were changed. The left of figure~\ref{test1} shows an illustration of the virtual space indicating where the four \ac{RIR} locations used for the test were. The black numbers indicate the coordinates of the \ac{RIR}'s  relative to the top left corner of the room (note that the x and y axis are opposite to convention due to the way the building was modelled in Google SketchUp) and the red numbers indicate which location the user was moved to during each test, shown on the right in figure~\ref{test1}.
+			This was repeated three times where the distances used for methods A and B were kept the same as each other. This was done the assess their perception of distance due to the type of \ac{RIR} used, therefore the variable of distance was kept the same between both methods. For the final two trials, the distances between the two methods were changed. The left of figure~\ref{test1} shows an illustration of the virtual space indicating where the four \ac{RIR} locations used for the test were. The black numbers indicate the coordinates of the \ac{RIR}'s  relative to the top left corner of the room (note that the x and y axis are opposite to convention due to the way the building was modelled in Google SketchUp) and the red numbers indicate which location the user was moved to during each test, shown on the right in figure~\ref{test1}.
 
 
 			\begin{figure}
@@ -76,44 +77,9 @@
 				\label{test1}
 			\end{figure}		
 
-			% %-------------Test 1 Image and Table-------------%
-			% \begin{figure}
-			% 	\begin{minipage}{0.5\textwidth}
-			% 		\begin{figure}[H]
-			% 			\centerline{\includegraphics[scale = 0.4]{Sections/userTesting/images/test1/roomPositions3.png}}
-			% 		\end{figure}			
-			% 	\end{minipage}
-			% 	~
-			% 	\hspace{25mm}\begin{minipage}{0.5\textwidth}
-			% 	\begin{table}[H]
-			% 	    \begin{tabular}{|c|cc|cc|} \hline
-			% 	        \multirow{2}{*}{Trail} & \multicolumn{2}{c|}{Real RIR \textbf{(A)}} & \multicolumn{2}{c|}{Odeon RIR \textbf{(B)}}\\ \cline{2-5}
-			% 	            & Start & End & Start & End \\ \hline
-			% 	          1 & (1) & (2) & (1) & (2)\\
-			% 	          2 & (1) & (3) & (1) & (3)\\
-			% 	          3 & (1) & (4) & (1) & (4)\\ \hline
-			% 	          4 & (1) & (3) & (1) & (4)\\ 
-			% 	          5 & (4) & (1) & (1) & (3)\\ \hline
-			% 	    \end{tabular}
-			% 	\end{table}
-			% 	\end{minipage}
-			% 	\caption{\textbf{Left:} Illustration of the \ac{RIR} locations used in user test \#1. \textbf{Right:} Table showing the pairs of positions the participant was moved to, corresponding to the positions shown in the diagram on the left.}
-			% 	\label{test1}
-			% \end{figure}
-
-
-
 		\subsubsection{Results}
-			The participants' answers for user test \#1 were taken and averaged across all five trials. Figure~\ref{test1Results} shows these results, showing the percentage of correct and incorrect answers given (left) and the percentage of each type of answer given (right). It can be seen that only 23\% of the answers given across all trials and participants were correct, indicating there being great difficulty comparing the two distances moved.
+			The participants' answers for user test \#1 were taken and averaged across all five trials. Figure~\ref{test1Results} shows these results, showing the percentage of correct and incorrect answers given (left) and the percentage of each type of answer given (right). It can be seen that only 23\% of the answers given across all trials and participants were correct, indicating there being great difficulty comparing the two distances moved. The pie chart on the right shows that more commonly, people thought that they were moving a further distance when the synthetic \ac{RIR}'s were used. It can be seen in the table on the right in figure~\ref{test1} that the expected answers are as follows:
 
-			%-------------Pie 1-------------%
-			\begin{figure}[t]
-				\centerline{\includegraphics[width=\textwidth]{Sections/userTesting/images/test1/Q1Pies.png}}
-				\caption{Pie charts showing the results of user test \#1}
-				\label{test1Results}
-			\end{figure}	
-			
-			The pie chart on the right shows that more commonly, people thought that they were moving a further distance when the synthetic \ac{RIR}'s were used. It can be seen in the table on the right in figure~\ref{test1} that the expected answers are as follows:
 
 			\begin{center}
 			\begin{tabular}{c l}
@@ -123,12 +89,20 @@
 			5 & Further
 			\end{tabular}
 			\end{center}
+			\vspace{5mm}
 
 			However, an interesting result can be seen when breaking down the answers given in their respective trials, as shown by the three pie charts in figure~\ref{Q1Trials}. When the distance moved was either the same (trials 1-3) or shorter (trial 4), more people tend to answer that they had moved further, more so when they had actually moved a shorter distance. When the distance moved was actually further, the answers are evenly split between `Further', `Same' and `Don't Know'. This negative correlation between expected answer and given answer suggests that the pie chart on the right in figure~\ref{test1Results}, showing that the majority of people thought they were moving further throughout all trials, is not influenced by the fact that people got the answer to trial 5 correct, indicating that it is the use of the synthetic \ac{RIR}'s themselves that cause this perception.
 
+			%-------------Pie 1-------------%
+			\begin{figure}[p]
+				\centerline{\includegraphics[width=0.9\textwidth]{Sections/userTesting/images/test1/Q1Pies.png}}
+				\caption{Pie charts showing the results of user test \#1}
+				\label{test1Results}
+			\end{figure}	
+
 
 			%-------------Pie trials-------------%
-			\begin{figure}[h]
+			\begin{figure}[p]
 				\centerline{\includegraphics[width=\textwidth]{Sections/userTesting/images/test1/Q1Trials.png}}
 				\caption{Three pie charts showing the percentage of answers given for: \textbf{Left:} Trials 1- 3, \textbf{Centre:} Trial 4, \textbf{Right:} Trial 5.}
 				\label{Q1Trials}
@@ -136,8 +110,8 @@
 
 		\subsubsection{Discussion}
 
-			%Reason so little got the answer right may be because they expect to have moved. Also because the input (them saying Bob) might have been different every time.
 
+			\begin{figure}[H]
 			Due to the small percentage of correct answers given, it is apparent that comparing the difference in distance moved is not easy. For the system used, there may be 2 reasons for this:
 
 			\begin{tabular}{l p{0.9\textwidth} }
@@ -146,15 +120,16 @@
 			2) & \textbf{Inaccurate \ac{RIR}'s} \\
 			& It has been mentioned in section~\nameref{RIRtrimming} that due to fact that the \ac{RIR}'s had to be trimmed due to system latency, much needed direct wall reflections are not present for surfaces less than approximately 3.78m away, thus affecting the ability to accurately assess ones location within a space.
 			\end{tabular}
+			\end{figure}
 
 		\subsection{Test \#2}
 			As this test was to obtain objective results, a hypothesis was formed: The participants would not notice they have moved for the first few trials given the short distance travelled. As the distance travelled increases, it is thought that the majority of participants would notice movement, producing a linear correlation between distance moved and `Yes' answers given.
 
 			\subsubsection{Procedure}
-				The second user test is similar to that of the first test, though a little simpler. Figure~\ref{test2} shows 8 \ac{RIR} locations, where (1) is in the centre of the room. The participant was placed at position (1) and asked to say the word `Bob'. They would then be moved closer to the left wall, asked to repeat themselves and asked whether they thought they had moved or not, simply answering `Yes', `No' or `I Don't Know'. This was done 7 times, moving the participant a further distance each time. The table on the right in figure~\ref{test2} shows the start and end position for each trial which is illustrated on the left.
+				The second user test is similar to that of the first test, though a little simpler. Figure~\ref{test2} shows 8 \ac{RIR} locations, where (1) is in the centre of the room. The participant was placed at position (1) and asked to say the word `Bob'. They would then be moved closer to the left wall, asked to repeat themselves and asked whether they thought they had moved or not, simply answering `Yes', `No' or `I Don't Know'. This was done 7 times, moving the participant a greater distance each time. The table on the right in figure~\ref{test2} shows the start and end position for each trial which is illustrated on the left.
 
 							%-------------Test 1 Image and Table-------------%
-			\begin{figure}[H]
+			\begin{figure}
 				\begin{minipage}{0.5\textwidth}
 					\begin{figure}[H]
 					\hspace{0mm}\includegraphics[scale = 0.3]{Sections/userTesting/images/test2/test2Positions2.png}
@@ -184,25 +159,25 @@
 
 				The original hypothesis to this test was that the participants were unlikely to notice that they had moved for the first few trials as they were being moved such a short distance (1m, 2m), with the expectation that they would notice when they were being moved much larger distances, hence the reason there were moved 1m closer to the wall in each trial. However, it was found that all participants answered `Yes' for the first trial (movement of 1m towards the left wall) and all other trials resulted in a number of participants giving an answer other than `Yes'. Instead of a positive correlation between distance moved and `Yes' answers given, there appears to be a dip from trials 2-4.
 
-				Figure~\ref{test2rate} shows a compressed version of the data in figure~\ref{test2results}, clearly indicating that at no point during the test, do any of the participants agree whether they have definitively moved or not. This indicates that the perception of mobility may differ from person to person. This could potentially be based on their listening experience, or possibly due to the consistency of the input signal (saying the word ``Bob'') being different between participants.
+				Figure~\ref{test2rate} shows a compressed version of the data in figure~\ref{test2results}, clearly indicating that at no point during the test, do any of the participants agree whether they have definitively moved or not. This could indicate that the perception of mobility may differ greatly from person to person. This could potentially be based on their listening experience, or possibly due to the consistency of the input signal (saying the word ``Bob'') being different between participants.
 
 				%-------------Test 2 Results-------------%
-				\begin{figure}[H]
+				\begin{figure}
 					\centerline{\includegraphics[scale = 1]{Sections/userTesting/images/test2/Q2_edit.png}}
 					\caption{Line graph of the results from user test \#2 showing the number of participants who answered `Yes', `No' or `Don't Know' for each of the trials.}
 					\label{test2results}
 				\end{figure}
 
 				%-------------Test 2 Results-------------%
-				\begin{figure}[H]
+				\begin{figure}
 					\centerline{\includegraphics[scale = 0.7]{Sections/userTesting/images/test2/rateofchange.png}}
-					\caption{Line graph showing the rate at which participants give `Yes' or `No' answers, showing that at no point do all participants agree whether they have definitively moved or not. (The single `Don't No' answer has been omitted here)}
+					\caption{Line graph showing the rate at which participants give `Yes' or `No' answers, showing that at no point do all participants agree whether they have definitively moved or not. (The single `Don't Know' answer has been omitted here)}
 					\label{test2rate}
 				\end{figure}
 
 			\subsubsection{Discussion}
 
-				Comparing the results to the original hypothesis, excluding the first two trails, there seems to be more people noticing movement as the distance moved increases thus showing a weak correlation between distance moved and `Yes' answers given. These first two trials may have been subject to a bias, where the user is expecting to be moved. This however cannot be backed up and remains a speculation. The fact that some participants could still not tell that they had moved at greater distances indicates that the differences between these \ac{RIR}'s may not be enough to convince some people that they have moved. A potential variable that may have caused some unexpected answers is the fact that no person can repeat themselves perfectly thus their perception of the location within the space is different each time. Another possible cause may be the lack of direct wall reflections due to the necessary \ac{RIR} trimming, making it more difficult for participants to assess their location.
+				Comparing the results to the original hypothesis, excluding the first two trails, there seems to be more people noticing movement as the distance moved increases, thus showing a weak correlation between distance moved and `Yes' answers given. These first two trials may have been subject to a bias, where the user is expecting to be moved. This however cannot be backed up and remains a speculation. The fact that some participants could still not tell that they had moved at greater distances indicates that the differences between these \ac{RIR}'s may not be enough to convince some people that they have moved. A potential variable that may have caused some unexpected answers is the fact that no person can repeat themselves perfectly, thus their perception of the location within the space is different each time. Another possible cause may be the lack of direct wall reflections due to the necessary \ac{RIR} trimming, making it more difficult for participants to assess their location.
 
 				% Other causes for these results could be one of the following:
 
@@ -267,7 +242,7 @@
 			\subsubsection{Discussion}
 
 			%Less RIRs, move faster, not good
-			As discussed in section~\nameref{iteration3}, the rate at which the user is moved from one \ac{RIR} location to another is determined by a timer which runs at a constant speed. This means that when the distance between \ac{RIR} locations is greater, the speed at which the participant is moved across the room is greater. The inconsistency in movement speed had an obvious effect on the perception of movement when using different sized \ac{RIR} grids, where participants had commented that it felt like they were moving faster. For example, it had been noted by some participants that in trials 1 (1m \ac{RIR} separation), it did not feel like they were moving. This is most likely because moving 1m every 2.5 seconds is too slow to notice. However, due to the compromise that had to be made due to system speed, they could not be moved any faster than this without the system failing to operate smoothly. This may have led to participants giving the trials that used more spacious \ac{RIR} placement a higher score (such as trial 3 and 4) as they could hear themselves moving more obviously due to the greater distance travelled, thus thinking that they were moving more smoothly.
+			As discussed in section~\nameref{iteration3}, the rate at which the user is moved from one \ac{RIR} location to another is determined by a timer which runs at a constant speed. This means that when the distance between \ac{RIR} locations is greater, the speed at which the participant is moved across the room is greater. The inconsistency in movement speed had an obvious effect on the perception of movement when using different sized \ac{RIR} grids, where participants had commented that it felt like they were moving faster. For example, it had been noted by some participants that in trial 1 (1m \ac{RIR} separation), it did not feel like they were moving. This is most likely because moving 1m every 2.5 seconds is too slow to notice. However, due to the compromise that had to be made due to system speed, they could not be moved any faster than this without the system failing to operate smoothly. This may have led to participants giving the trials that used more spacious \ac{RIR} placement a higher score (such as trial 3 and 4) as they could hear themselves moving more obviously due to the greater distance travelled, thus thinking that they were moving more smoothly.
 
 			Due to the issues mentioned, the author concludes that these results cannot be used to confidently suggest how many \ac{RIR}'s are required to convince the user that they can move freely in the \ac{VAE} and are therefore inconclusive. In order to obtain results regarding the original question, either the current system should be improved to keep the speed of the user constant, or a way to implement the original system, iteration 1, should be investigated.
 
@@ -310,7 +285,7 @@
 				\textbf{Test \#2}
 
 				%Mixed results show that there is no strict correlation between whether a participant can tell they have moved and the distance they were moved for the \ac{RIR} files used in this system. \\
-				Results show that there is a weak correlation between the distance moved and the number of people who notice they have moved. However it has been shown that at no point do all the participants agree on whether they have moved or not, showing a difference in perception between people regardless of distance moved.
+				Results show that there is a weak correlation between the distance moved and the number of people who notice they have moved. However it has been shown that at no point do all the participants agree on whether they have moved or not, showing a difference in perception between people regardless of the distance moved.
 				
 				\textbf{Test \#3}
 

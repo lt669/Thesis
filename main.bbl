@@ -451,11 +451,17 @@
       \field{pages}{1\bibrangedash 4}
       \range{pages}{4}
     \endentry
-    \entry{Southern}{article}{}
+    \entry{Southern}{inproceedings}{}
       \name{author}{3}{}{%
         {{hash=cb399f6c08583da440a90ed345807437}{Southern}{S\bibinitperiod}{Alex}{A\bibinitperiod}{}{}{}{}}%
         {{hash=498c826edf9a2805b4c0e67ff68b9d45}{Siltanen}{S\bibinitperiod}{Samuel}{S\bibinitperiod}{}{}{}{}}%
         {{hash=b50a22c2e1c05593efba03d484c4b4d0}{Savioja}{S\bibinitperiod}{Lauri}{L\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {London, UK}%
+      }
+      \list{organization}{1}{%
+        {Audio Engineering Society}%
       }
       \strng{namehash}{e3089c6daff0f519f17ac095c573694a}
       \strng{fullhash}{e3089c6daff0f519f17ac095c573694a}
@@ -463,8 +469,10 @@
       \field{sortinithash}{990108227b3316c02842d895999a0165}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{The synthesis of an arbitrary enclosures room impulse response (RIR) may be performed using acoustic modelling. A number of acoustic modelling methods have been proposed previously each with their own advantages and limitations. This paper is concerned with mixing the RIRs from different modelling methods to synthesize a hybrid RIR. Low frequencies are modelled using the finite difference time domain method (FDTD), high frequencies are treated with geometric methods. A practical implementation for forming a hybrid RIR is discussed and further demonstrated in the context of a 2nd order B-Format spatial encode of the modelled sound field. The paper discusses the considerations and limitations of forming such hybrid RIRs using wave-based and geometric-based methods.}
+      \field{booktitle}{130th AES Convention}
+      \field{month}{05}
       \field{title}{{Spatial Room Impulse Responses with a Hybrid Modelling Method}}
+      \field{year}{2011}
       \verb{file}
       \verb :Users/Lewis 1/Library/Application Support/Mendeley Desktop/Downloaded/Southern, Siltanen, Savioja - Unknown - Spatial Room Impulse Responses with a Hybrid Modelling Method(2).pdf:pdf
       \endverb

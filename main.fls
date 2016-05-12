@@ -400,8 +400,8 @@ INPUT /usr/local/texlive/2015/texmf-dist/fonts/vf/adobe/palatino/pplr8t.vf
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/adobe/palatino/pplr8r.tfm
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/vf/adobe/palatino/pplr8t.vf
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/adobe/palatino/pplr8r.tfm
-INPUT Presections/Acknowledgements/Acknowledgments.tex
-INPUT Presections/Acknowledgements/Acknowledgments.tex
+INPUT Presections/Abstract/Abstract.tex
+INPUT Presections/Abstract/Abstract.tex
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/adobe/palatino/pplr8t.tfm
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/adobe/palatino/pplrc8t.tfm
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/adobe/palatino/pplr7t.tfm
@@ -419,6 +419,8 @@ INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/adobe/palatino/pplr8r.tfm
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/adobe/palatino/pplr8r.tfm
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/vf/adobe/palatino/pplr8t.vf
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/adobe/palatino/pplr8r.tfm
+INPUT Presections/Acknowledgements/Acknowledgments.tex
+INPUT Presections/Acknowledgements/Acknowledgments.tex
 INPUT Presections/ethics/ethics.tex
 INPUT Presections/ethics/ethics.tex
 INPUT Presections/supportingWebpage/supportingWebpage.tex
@@ -431,8 +433,6 @@ INPUT /usr/local/texlive/2015/texmf-dist/fonts/vf/adobe/courier/pcrr8t.vf
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/adobe/courier/pcrr8r.tfm
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/vf/adobe/palatino/pplri8t.vf
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/adobe/palatino/pplri8r.tfm
-INPUT Presections/Abstract/Abstract.tex
-INPUT Presections/Abstract/Abstract.tex
 INPUT main.toc
 INPUT main.toc
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/adobe/palatino/pplb8t.tfm
@@ -714,8 +714,6 @@ INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/adobe/palatino/pplb8t.tfm
 INPUT Sections/Appendix/AppendixA/images/bluePrintTop.jpg
 INPUT ./Sections/Appendix/AppendixA/images/bluePrintTop.jpg
 INPUT ./Sections/Appendix/AppendixA/images/bluePrintTop.jpg
-INPUT /usr/local/texlive/2015/texmf-dist/fonts/vf/adobe/palatino/pplb8t.vf
-INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/adobe/palatino/pplb8r.tfm
 INPUT Sections/Appendix/AppendixA/images/realVsSKU/compare1.png
 INPUT ./Sections/Appendix/AppendixA/images/realVsSKU/compare1.png
 INPUT ./Sections/Appendix/AppendixA/images/realVsSKU/compare1.png
@@ -725,6 +723,8 @@ INPUT ./Sections/Appendix/AppendixA/images/realVsSKU/compare2.png
 INPUT Sections/Appendix/AppendixA/images/realVsSKU/compare3.png
 INPUT ./Sections/Appendix/AppendixA/images/realVsSKU/compare3.png
 INPUT ./Sections/Appendix/AppendixA/images/realVsSKU/compare3.png
+INPUT /usr/local/texlive/2015/texmf-dist/fonts/vf/adobe/palatino/pplb8t.vf
+INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/adobe/palatino/pplb8r.tfm
 INPUT Sections/Appendix/AppendixA/images/Odeon/2m.png
 INPUT ./Sections/Appendix/AppendixA/images/Odeon/2m.png
 INPUT ./Sections/Appendix/AppendixA/images/Odeon/2m.png
@@ -793,9 +793,9 @@ INPUT Sections/Appendix/AppendixA/images/userTests/Test_Participant_Form_V3.pdf
 INPUT ./Sections/Appendix/AppendixA/images/userTests/Test_Participant_Form_V3.pdf
 INPUT Sections/Appendix/AppendixA/images/userTests/Test_Participant_Form_V3.pdf
 INPUT ./Sections/Appendix/AppendixA/images/userTests/Test_Participant_Form_V3.pdf
-INPUT Sections/ProjectManagement/images/Gantt.png
-INPUT ./Sections/ProjectManagement/images/Gantt.png
-INPUT ./Sections/ProjectManagement/images/Gantt.png
+INPUT Sections/ProjectManagement/images/GanttSplit.png
+INPUT ./Sections/ProjectManagement/images/GanttSplit.png
+INPUT ./Sections/ProjectManagement/images/GanttSplit.png
 INPUT main.aux
 INPUT ./main.out
 INPUT ./main.out

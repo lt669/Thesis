@@ -8,9 +8,9 @@
 	\label{software}
 		
 		%Overall idea
-		As a software patch written in Max/MSP was already in use with the \ac{VSS}, the idea was to extend this software patch to accommodate the newly proposed functionality. This section will first give a quick overview of the original max patch and then an overview of the newly produced software with a simple explanation of how it works, followed by a more detailed explanation of how the two main parts of the software were designed, highlighting the issues faced when doing so.
+		As a software patch written in Max/MSP was already being used to run the \ac{VSS}, the idea was to extend it to accommodate the newly proposed functionality. This section will first give a quick overview of the original software and then an overview of the newly produced software, with a simple explanation of how it works, followed by a more detailed explanation of how the two main parts of the software were designed, highlighting the issues faced when doing so.
 
-		The software described was run on a 2012 Mac mini with 16GB of RAM, an Intel Core i7 processor running OSX 10.10.4.
+		The software described was operated on a 2012 Mac mini with 16GB of RAM, an Intel Core i7 processor running OSX 10.10.4.
 
 		All the javascript files referred to in this section along with the Max patch itself can be found in file 3 or \href{http://lt669.github.io/pages/javascripts.html}{here} and video examples can be found \href{http://lt669.github.io/pages/videos.html}{here}.
 
@@ -18,17 +18,18 @@
 
 			\paragraph{The Original Patch}
 			\label{softwareoverview:original}
-				The original max patch was used to convolve a real time audio signal with a set of four \ac{RIR}'s simultaneously, allowing the user to turn their head in the \ac{VAE} through the use of an Oculus Rift as a head tracking device. Four positions within the \ac{VAE} were available. To select one, the user (or an operator) selected an `open' button which prompted a file navigation window. The four \ac{RIR} files then had to be found (in the correct order of 0\textdegree, 90\textdegree, 180\textdegree and 270\textdegree) and opened one at a time, with a new file window opening after each file had been selected. A screen shot of this process is shown in figure~\ref{original}. It was this part of the original patch that needed building upon as this process had to be automated.
+				The original Max patch was used to convolve a real time audio signal with a set of four \ac{RIR}'s simultaneously, allowing the user to turn their head in the \ac{VAE} by using an Oculus Rift to track their head movement. Four positions within the \ac{VAE} were available. To select one, the user (or an operator) selected an `open' button which prompted a file navigation window. The four \ac{RIR} files then had to be found (in the correct order of 0\textdegree, 90\textdegree, 180\textdegree and 270\textdegree) and opened one at a time, with a new file window opening after each file had been selected. A screen shot of this process is shown in figure~\ref{original}. The idea was to automate this process, which would form the foundation for the rest of the software.
+				%  part of the system would form the basis of the new system. It was this part of the original patch that needed building upon as this process had to be automated.
 
 					%-------------Max UI Flow diagram-------------%
-				\begin{figure}[h]
+				\begin{figure}
 					\centerline{\includegraphics[width=\textwidth]{Sections/Implementation/Max/images/Max/OriginalPatch_Edit.png}}
 					\caption{Original Max patch used in the \ac{VSS} showing the file location window that pops up 4 times.}
 					\label{original}
 				\end{figure}
 
 								%-------------Max UI Flow diagram-------------%
-				\begin{figure}[h]
+				\begin{figure}
 					\centerline{\includegraphics[scale = 0.35]{Sections/Implementation/Max/images/Max/MyPatch_Edit.png}}
 					\caption{Top level view of the extended Max patch where: \textbf{1)} Control section, \textbf{2)} Audio file input, \textbf{3)} Timer function, \textbf{4)} User interface and Convolution section, \textbf{5)} head tracking input section}
 					\label{myPatch}
@@ -41,13 +42,13 @@
 
 				\textbf{2:} Here, an audio file can be loaded into the system and used instead of a real time audio input. This is used in user test \#3.
 
-				\textbf{3:} A timer system used to synchronise the output of data transfer (from \textbf{4.2} to \textbf{4.3}), panning between convolved audio and the movement of the user interface feedback system (see section~\nameref{locationtracking}).
+				\textbf{3:} A timer system used to synchronise the output of data transfer (from \textbf{4.2} to \textbf{4.3}), panning between convolved audio and the movement of the user interface feedback system (see section~\nameref{locationtracking}) that loops every 2.5 seconds.
 
 				\textbf{4.1:} Patches that send a user interface to an iPad which allows a user to select a location within the \ac{VAE}. User interaction is monitored (in the form of screen coordinates) and sent to \textbf{4.2}.
 
 				\textbf{4.2:} Takes the coordinates of the user input and calculates which (if any) \ac{RIR} file should be loaded into the system.
 
-				\textbf{4.3:} Three patches (extended versions of the Max patch explained in section~\nameref{softwareoverview:original}) used to simultaneously convolve an audio signal (real time or audio file) with four directional \ac{RIR} files. While one loads the next necessary \ac{RIR} file the other two are used to simulate the movement of the user by panning the real time audio between the two currently running convolutions. This is how the user is moved along a path, explained in section~\nameref{iteration3}.
+				\textbf{4.3:} Three patches (extended versions of the Max patch explained in section~\nameref{softwareoverview:original}) used to simultaneously convolve an audio signal (real time or audio file) with four directional \ac{RIR} files. While one loads the next necessary \ac{RIR} file, the other two are used to simulate the movement of the user by panning the real time audio signal between the two currently running convolution patches. This is how the user is moved along a path, explained in section~\nameref{iteration3}.
 
 				\textbf{5:} An extended version of the real time head-tracking system used in the original patch, used to pan between the four directional \ac{RIR}'s to simulate head movement in the \ac{VAE}.
 		
@@ -61,17 +62,17 @@
 			%User interface section
 			%The location selection part of the system was required to present the user with an interface with which they could select a location within the \ac{VAE}. The system would then interpret their input and select the correct \ac{RIR} file(s) to be used in the rest of the system. 
 
-			In order to allow the user to move themselves around the room, they had to be presented with a means of doing so. This involved presenting the user with an interface (UI) that resembled the virtual space available to them on which they could select their location. The coordinates of the selected locations then had to be converted into a format which could be interpreted as a file name, indicating which \ac{RIR} in the grid of available positions to use. This could then be passed to the rest of the system to load the appropriate files. A simple block diagram of the user interface part of the system is shown in figure~\ref{flowDiagram}.
+			In order to allow the user to move themselves around the room, they had to be presented with a means of doing so. This involved presenting the user with an interface (UI) that resembled the virtual space available to them, on which they could select their location. The coordinates of the selected locations then had to be converted into a format which could be interpreted as a file name, indicating which \ac{RIR} in the grid of available positions to use. This information could then be passed to another part of the system used to load the appropriate files. A simple block diagram of the user interface part of the system is shown in figure~\ref{flowDiagram}.
 
 
 			%-------------Max UI Flow diagram-------------%
-			\begin{figure}[h]
-				\centerline{\includegraphics[scale = 0.25]{Sections/Implementation/Max/images/FlowDiagrams/Max1_V2.png}}
+			\begin{figure}[t]
+				\centerline{\includegraphics[scale = 0.3]{Sections/Implementation/Max/images/FlowDiagrams/Max1_V2.png}}
 				\caption{Flow diagram of the location selection software design. \textbf{Section 1} indicates the user interface section where coordinates are recorded and \textbf{Section 2} takes these coordinates and finds the appropriate \ac{RIR} file.}
 				\label{flowDiagram}
 			\end{figure}
 
-			In Max, the ‘lcd’ object is used for this function. This object presents a quadrilateral of variable length and height with the ability to output its dimensional information by sending a ‘getSize’ message to its input, as well as output the coordinates of a mouse click/drag. Figure~\ref{lcd} shows the lcd object with its inputs and outputs represented by section 1 in figure~\ref{flowDiagram}.
+			In Max, the ‘lcd’ object is used for this function. This object presents a quadrilateral of variable length and height with the ability to output its dimensional information by sending a ‘getSize’ message to its input, as well as output the coordinates of a mouse click/drag. Figure~\ref{lcd} shows the lcd object with its inputs and outputs, represented by section 1 in figure~\ref{flowDiagram}.
 
 			%-------------LCD Image-------------%
 			\begin{figure}[p]
@@ -80,11 +81,11 @@
 				\label{lcd}
 			\end{figure}
 
-			The outputs from the lcd object are sent to the patch ‘UI\_to\_file’ (located at the top of section \textbf{4.2} in figure \ref{myPatch}) which contains a JavaScript file called \href{http://lt669.github.io/code/javascript/html/loadFilesLogic.html}{‘loadFilesLogic’}. This JavaScript file converts the (x,y) coordinates into an appropriate file name, by taking into account the size of the lcd screen and how many RIRs there are per meter.
+			The outputs from the lcd object are sent to the patch ‘UI\_to\_file’ (located at the top of section \textbf{4.2} in figure \ref{myPatch}) which contains a JavaScript file called \href{http://lt669.github.io/code/javascript/html/loadFilesLogic.html}{‘loadFilesLogic’}. This JavaScript file converts the (x,y) coordinates into an appropriate file name, by taking into account the size of the lcd screen and how many RIRs there are supposed to be per meter.
 
-			This lcd screen could also be displayed on an iPad which was used for remote user interaction. Initially, the more popular and supported application Mira \cite{mira} was going to be used. This allows for a selected portion of a Max patch to be displayed on an iPad, allowing the user to interact with the selected part. However, the lcd object used to track coordinates was not supported by this application and thus did not appear on the iPad. Instead an alternative was found. Cycling74, the same company that produces Max/MSP and Mira also created an app for the iPhone and iPad called c74 \cite{c74} and allows for the creation of an independent interface that can control objects within the max patch. The operation of this section is explained further in section \nameref{locationtracking}
+			This lcd screen could also be displayed on an iPad which was used for remote user interaction. Initially, the more popular and supported application Mira \cite{mira} was going to be used. This allows for a selected portion of a Max patch to be displayed on an iPad, allowing the user to interact with the selected part. However, the lcd object used was not supported by this application and thus did not appear on the iPad. Instead, an alternative was found. Cycling74, the same company that produces Max/MSP and Mira also created an app for the iPhone and iPad called c74 \cite{c74} which allows for the creation of an independent interface that can control objects within the Max patch. The operation of this section is explained further in section \nameref{locationtracking}
 
-			Figure~\ref{locationsConvert} shows a section of `UI\_to\_file' that contains the \href{http://lt669.github.io/code/javascript/html/loadFilesLogic.html}{‘loadFilesLogic’} javascript. It can be seen that it takes 5 inputs: UI (x,y) coordinates , (x,y) lcd dimensions and a number representing how many rows and colums of \ac{RIR} locations there should be available. This last value is calculated by sending a number from 1-5 (desired distance per RIR) to the fifth inlet of the UI\_to\_file patch (on the far right). As the maximum number of RIRs that would be available per length of the room is 15, 15 is divided by the input and rounded to the nearest integer, giving the number of rows and columns the lcd screen should be split into (the exact number of rows and columns is calculated later in the javascript file). This information can then be used to determine in which \textit{‘section’} (row and column) the user is currently located based on their coordinates, allowing it to load the appropriate RIRs that are available in that section. 
+			Figure~\ref{locationsConvert} shows a section of `UI\_to\_file' that contains the \href{http://lt669.github.io/code/javascript/html/loadFilesLogic.html}{‘loadFilesLogic’} javascript. It can be seen that it takes 5 inputs: UI (x,y) coordinates , (x,y) lcd dimensions and a number representing how many rows and colums of \ac{RIR} locations there should be available. This last value is calculated by sending a number from 1-5 (desired distance per RIR) to the fifth inlet of the `UI\_to\_file patch' (on the far right). As the maximum number of RIRs that would be available per length of the room is 15, 15 is divided by the input and rounded to the nearest integer, giving the number of rows and columns the lcd screen should be split into (the exact number of rows and columns is calculated later in the javascript file). This information can then be used to determine in which \textit{‘section’} (row and column) the user is currently located based on their coordinates, allowing it to load the appropriate RIRs that are available in that section. 
 
 			%-------------UI_to_file Image-------------%
 			\begin{figure}[p]
@@ -93,10 +94,9 @@
 				\label{locationsConvert}
 			\end{figure}
 
-			\pagebreak
-			\paragraph{File name JavaScript: `loadFilesLogic.js'}
+			\paragraph{Filename Javascript: `loadFilesLogic.js'}
 
-				The first section in the JavaScript simply stores the data from different inputs to different variables that are used throughout the rest of the code as follows:
+				The first section in the Javascript simply stores the data from different inputs to different variables that are used throughout the rest of the code as follows:
 
 				\begin{center}
 				\begin{tabular}{r l}
@@ -104,19 +104,19 @@
 					\texttt{yPos}: & user y coordinate \\
 					\texttt{windowSize[0]}: & lcd length \\
 					\texttt{windowSize[1]}: & lcd height \\
-					\texttt{numberOfMeters}: & Integer to calculate rows/columns \\
+					\texttt{rowColCalc}: & Integer to calculate rows/columns \\
 				\end{tabular}
 				\end{center}
 
 				\vspace{5mm}
 
-				As can be seen in figures~\ref{2m}, \ref{3m}, \ref{4m} and~\ref{5m} in \nameref{appendixB}, there are not always the same number of rows as there are columns in each of the grids, meaning that the location at which the user is placed has to be calculated slightly differently for each one. The \texttt{if else} statements on lines 1 to 14 shown in figure~\ref{jsPosition}, are used to calculate the users position by taking the selected x and y coordinates from the lcd screen and dividing them both by the x and y dimensions of the lcd screen respectively, giving a percentage of how far along the x axis and y axis of the room they are. By converting their position to a percentage instead of just using coordinates allows for the lcd screen to be resized whilst keeping the correct ratio of the \ac{RIR} grid meaning it can be used on different sized screens in the future (see section \nameref{furtherwork}). These percentages are then multiplied by either the number of rows (x axis) or columns (y axis) that are required for the desired \ac{RIR} grid, giving an approximation as to which section of the \ac{RIR} grid they are in. The number of rows and columns that are required are calculated by using the value stored in \texttt{numberOfRows} and adding or subtracting 1, depending on the shape of the grid being used. The following table indicates how many rows and columns there are given the inputs to the javascript:
+				As can be seen in figures~\ref{2m}, \ref{3m}, \ref{4m} and~\ref{5m} in \nameref{appendixB}, there are not always the same number of rows as there are columns in each of the grids, meaning that the location at which the user is placed has to be calculated slightly differently for each one. The \texttt{if else} statements on lines 1 to 14 shown in figure~\ref{jsPosition}, are used to calculate the users position by taking the selected x and y coordinates from the lcd screen and dividing them both by the x and y dimensions of the lcd screen respectively, giving a percentage of how far along the x axis and y axis of the room they are. By converting their position to a percentage instead of just using coordinates allows for the lcd screen to be resized whilst keeping the correct ratio of the \ac{RIR} grid, meaning it can be used on different sized screens in the future (see section \nameref{furtherwork}). These percentages are then multiplied by either the number of rows (x axis) or columns (y axis) that are required for the desired \ac{RIR} grid, giving an approximation as to which section of the \ac{RIR} grid they are in. The number of rows and columns that are required is calculated by using the value stored in \texttt{rowColCalc} and adding or subtracting 1, depending on the shape of the grid being used, eg, if the desired distance between \ac{RIR}'s is 2m, then \texttt{rowColCalc} will equal 8. As there is 1 less row than there are columns for this \ac{RIR} grid, the number of rows wil be calculated as \texttt{rowColCalc - 1}. This process is shown for each of the \ac{RIR} grids, given the inputs to the javascript:
 
 				\vspace{5mm}
 
 					\begin{center}
 					\begin{tabular}{c c c c c}
-						Distance between \ac{RIR}`s (m) & Calculation & numberOfMeters & Rows & Columns\\
+						Distance between \ac{RIR}`s (m) & Calculation & \texttt{rowColCalc} & Rows & Columns\\
 						1 & 15/1 & 15 & 15 & 16\\
 						2 & 15/2 & 8 & 7 & 8\\
 						3 & 15/3 & 5 & 5 & 5\\
@@ -132,18 +132,18 @@
 				\begin{figure}[H]
 				\begin{lstlisting}
 					//Split into sections
-					if(numberOfMeters == 3 || numberOfMeters == 5){
+					if(rowColCalc == 3 || rowColCalc == 5){
 						//Even grid for 3m and 5m
-						xPosition = (xPos/windowSize[0])*(numberOfMeters);
-						yPosition = (yPos/windowSize[1])*(numberOfMeters);
-					} else if (numberOfMeters == 4 || numberOfMeters == 8){
+						xPosition = (xPos/windowSize[0])*(rowColCalc);
+						yPosition = (yPos/windowSize[1])*(rowColCalc);
+					} else if (rowColCalc == 4 || rowColCalc == 8){
 						//4m separation requires different x,y coordinate scaling
-						xPosition = (xPos/windowSize[0])*(numberOfMeters-1);
-						yPosition = (yPos/windowSize[1])*(numberOfMeters);
+						xPosition = (xPos/windowSize[0])*(rowColCalc-1);
+						yPosition = (yPos/windowSize[1])*(rowColCalc);
 					} else{
 						//Extra row for others
-						xPosition = (xPos/windowSize[0])*(numberOfMeters); 
-						yPosition = (yPos/windowSize[1])*(numberOfMeters+1);
+						xPosition = (xPos/windowSize[0])*(rowColCalc); 
+						yPosition = (yPos/windowSize[1])*(rowColCalc+1);
 					}	
 
 					//Round to nearest value
@@ -158,7 +158,7 @@
 						ySection = 1;
 					}
 					\end{lstlisting}
-					\caption{Code used to calculate user location}
+					\caption{Section of \texttt{loadFilesLogic.js} used to calculate user location}
 					\label{jsPosition}
 					\end{figure}
 
@@ -166,12 +166,12 @@
 
 					In figure~\ref{jsFile}, lines 6 to 26 contain one large if statement. This essentially prevents the program from calculating, searching for and trying to load a file if the same one is still in use, thus saving computation time. This is done by comparing the section of the grid the user is currently in  (\texttt{xArray[0]/yArray[0]}) with the section that was stored the previous time their location was calculated  (\texttt{xArray[1]/yArray[1]}). If the location of the user has changed, two more conditions are checked in lines 8 and 14. This ensures that only the section that has changed is updated, ie, if the user has moved to the left, only the X axis section is updated.
 
-					Finally, the appropriate file name is calculated. Two different algorithms are used depending on which \ac{RIR} grid is being used. Both essentially multiply the number of positions there are per row by the number of the row the user is located. This is then added to the number of the column that the user is located, thus giving a number between 1 and the maximum number of locations there are available. Both algorithms can be seen in lines 21 and 23 in figure~\ref{jsFile}.
+					Finally, the appropriate file name is calculated. Two different algorithms are used depending on which \ac{RIR} grid is being used. Both essentially multiply the number of columns there are by the number of the row the user is located, e,g if there are 5 columns and the user is on row number 3, 5x3. This is then added to the number of the column that the user is located, thus giving a number between 1 and the maximum number of locations there are available. Both algorithms can be seen in lines 21 and 23 in figure~\ref{jsFile}.
 
 					% Both essentially take the section the user is located on the X axis and add the number of locations there are per row multiplied by the number of the row the user is located. This then outputs a number from 1 to the maximum number of locations in the selected grid.
 
 				
-					\begin{figure}[H]
+					\begin{figure}[t]
 					\begin{lstlisting}
 					//Store current location
 					xArray[0] = xSection;
@@ -192,15 +192,15 @@
 						}
 						
 						//Output user location within grid
-						if(numberOfMeters == 4 || numberOfMeters == 8){
-							fileNumber = X + ((numberOfMeters-1)*(Y-1)); //Requires different algorithm for 2m and 4m due to different grid shapes
+						if(rowColCalc == 4 || rowColCalc == 8){
+							fileNumber = X + ((rowColCalc-1)*(Y-1)); //Requires different algorithm for 2m and 4m due to different grid shapes
 						} else {
-							fileNumber = X + ((numberOfMeters)*(Y-1));
+							fileNumber = X + ((rowColCalc)*(Y-1));
 						}	
 						outlet(1,fileNumber);
 					}
 					\end{lstlisting}
-					\caption{Code used to search for appropriate file name}
+					\caption{Section of \texttt{loadFilesLogic.js} used to search for appropriate file name}
 					\label{jsFile}
 					\end{figure}
 		
@@ -216,14 +216,14 @@
 		 	%Idea to stay between RIRs in a grid
 		 	% Initially, the idea was to pre-load a grid of the closest \ac{RIR} locations that surrounded the user and simultaneously convolve the real-time audio with all of the \ac{RIR} files. This is illustrated on the left in figure~\ref{iteration1Panning} which shows annotated grid positions on the lcd screen labeled 1 - 9. The patch on the right shows the corresponding volume bars used to automatically vary the output level of each of the convolved signals depending on the users position within the defined grid, essentially panning between the grid position, allowing the user to move freely between them.
 
-		 	Initially, the idea was to pre-load a grid of the closest \ac{RIR} locations that surrounded the user and simultaneously convolve the real-time audio with all of the \ac{RIR} files. This is illustrated on the left in figure~\ref{iteration1Panning} which shows annotated grid positions on the lcd screen labelled 1 - 9. The patch on the right shows the corresponding volume bars (also labelled 1 - 9) used to automatically vary the output level of each of the convolved signals, thus linearly interpolating the user between available positions in order to approximate the room acoustics in these unmeasured locations. This required a panning algorithm for each of the positions in the defined grid, an overview of which is shown in figure~\ref{iteration1PanningCombined} in \nameref{appendixC}, based on where the user has moved relative to the centre position essentially allowing the user to move freely.
+		 	Initially, the idea was to pre-load a grid of the closest \ac{RIR} locations that surrounded the user and simultaneously convolve the real-time audio with all of the \ac{RIR} files. This is illustrated on the left in figure~\ref{iteration1Panning}, which shows annotated grid positions on the lcd screen labelled 1 - 9. The patch on the right shows the corresponding volume bars (also labelled 1 - 9) used to automatically vary the output level of each of the convolved signals, thus linearly interpolating the user between available positions in order to approximate the room acoustics in these unmeasured locations. This required a panning algorithm for each of the positions in the defined grid, an overview of which is shown in figure~\ref{iteration1PanningCombined} in \nameref{appendixC}, based on where the user has moved relative to the centre position, essentially allowing the user to move freely within the loaded grid of \ac{RIR}'s.
 
 		 	When the user reaches one of the other locations in the grid, that location becomes the centre of a new grid, and the appropriate files are loaded around that centre position through the use of a javascript file: \href{http://lt669.github.io/code/javascript/html/gridLoading.html}{gridLoading.js}. This requires the system to simultaneously load 4 \ac{RIR} files per location, of which there are 9, meaning 36 files are loaded into the system at once. Due to the time taken to load all of the files, the system ran too slow and could not be used for real time movement.
 
 		 	A video demonstrating the functionality of the proposed system can be found \href{http://lt669.github.io/pages/videos.html}{here}.
 
 		 	%-------------Iteration1 Panning Image-------------%
-			\begin{figure}[H]
+			\begin{figure}
 				\centerline{\includegraphics[width=\textwidth]{Sections/Implementation/Max/images/Max/iteration1/panning_edit2.png}}
 				\caption{Illustration of how the interpolation system worked in iteration 1 with the computer version of the user interface on the left and the corresponding automated panning controls on the right.}
 				\label{iteration1Panning}
@@ -232,12 +232,12 @@
 
 		 \paragraph{Iteration 2}
 
-		 	In an attempt to maintain the current implementation and solve the file loading time issue, a patch was built to pre-load all the \ac{RIR} files. This involved running a convolution patch for each file loaded into the system. As the files would no longer need to be loaded into the system, the user interface section described in section~\nameref{locationSelection} is used to decide which of the convolution patched to bypass and mute, and which ones to run. This means that only the grid of \ac{RIR}'s being used would be convolved with the audio signal, saving computational resources. Figure~\ref{preload} shows part of the patch used to pre-load all the \ac{RIR} files. The convolution patches were chained together in groups of ten. This was to allow the system to attempt to load the files in chunks of 40 at a time, as opposed to the potential 960 files that would need to be available. Though it was possible to load smaller grids, such as a 9x9 grid used when locations are separated by 5m, the larger grids caused the system to run too slowly due to the amount of RAM that was required.
+		 	In an attempt to maintain the current implementation and solve the file loading time issue, a patch was built to pre-load all the \ac{RIR} files. This involved running a convolution patch for each file loaded into the system. As the files would no longer need to be loaded into the system, the user interface section described in section~\nameref{locationSelection} is used to decide which of the convolution patches to bypass and mute, and which ones to run. This means that only the grid of \ac{RIR}'s being used would be convolved with the audio signal, saving computational resources. Figure~\ref{preload} shows part of the patch used to pre-load all the \ac{RIR} files. The convolution patches were chained together in groups of ten. This was to allow the system to attempt to load the files in chunks of 40 at a time, as opposed to the potential 960 files that would need to be available. Though it was possible to load smaller grids, such as a 9x9 grid used when locations are separated by 5m, the larger grids caused the system to run too slowly due to the amount of RAM that was required.
 
 		 	%-------------Preload Image-------------%
-			\begin{figure}[t]
+			\begin{figure}
 				\centerline{\includegraphics[width=\textwidth]{Sections/Implementation/Max/images/Max/Iteration2/preload.png}}
-				\caption{Chained convolution patches used to pre-load each \ac{RIR} file. \textit{Image taken from Max 6 as the version of this patch would not run in Max 7 at the time of writing.}}
+				\caption{Chained convolution patches used to pre-load each \ac{RIR} file. (Image taken from Max 6 as the version of this patch would not run in Max 7 at the time of writing.)}
 				\label{preload}
 			\end{figure}
 
@@ -246,27 +246,27 @@
 		 \label{iteration3}
 		 	%Path defining
 
-		 	The previous iterations attempted to allow the user to move anywhere within the \ac{VAE} in real time as they moved their finger around the screen, however, due to time it took to load the \ac{RIR} files into the system, this was not possible. It was therefore decided to find a compromise, where the user could draw themselves a path around the space and the system would move them along the path one \ac{RIR} location at a time at a rate determined by a timer, allowing the system to load all appropriate files with ample time to prevent the system from intermittently freezing up.
+		 	The previous iterations attempted to allow the user to move anywhere within the \ac{VAE} in real time as they moved their finger around the screen, however, due to time it took to load the \ac{RIR} files into the system, this was not possible. It was therefore decided to find a compromise, where the user could draw themselves a path around the space and the system would move them along the path one \ac{RIR} location at a time, the rate of which is determined by a timer, allowing the system to load all appropriate files with ample time to prevent the system from intermittently freezing up. Through experimentation, it was found that a timer value of 2.5 seconds allowed for the system to load all the necessary files without causing interruptions in the system.
 
 		 	The top half of figure~\ref{storeLocations} has been seen already in figure~\ref{locationsConvert}, however the bottom shows how the resulting file number is used (highlighted in the blue rectangle). It gets sent to a javascript file (\href{http://lt669.github.io/code/javascript/html/storeLocations.html}{storeLocations.js}) that adds the file number to the end of a mutable array (an array that can be extended or truncated once created). As the file names are being stored, the corresponding files can be loaded when the system is ready, instead of trying to load them instantly as in~\nameref{iteration1}. Once the javascript file receives a message from the timer (highlighted as number 3 in figure~\ref{myPatch}), the number at the start of the array is sent to the output. The array is then truncated by 1, moving the next file number to the front of the array waiting for the next timer message. If a reset message is sent to the third inlet of this javascript (by pressing the first button in section 1 shown in figure~\ref{myPatch}), the arrays are cleared, enabling the user to start drawing another path if the previous path had not been completely travelled.
 
 		 	%-------------Store Locations Image-------------%
-			\begin{figure}[p]
+			\begin{figure}[H]
 				\centerline{\includegraphics[width=0.7\textwidth]{Sections/Implementation/Max/images/Max/Iteration3/storeLocations_edit2.png}}
 				\caption{Highlighting the section of `UI\_to\_file' that stores the file numbers and outputs them when a timer is done.}
 				\label{storeLocations}
 			\end{figure}
 
 		 	%-------------Iteration3 Overview Image-------------%
-			\begin{figure}[p]
-				\centerline{\includegraphics[width=0.67\textwidth]{Sections/Implementation/Max/images/Max/Iteration3/fileSelectionConvolution_Edit.png}}
-				\caption{\textbf{Red:} Outputs file stored file number. \textbf{Blue:} Distributed file number to a different convolution patch each time. \textbf{Yellow:} Receives file number and loads appropriate file into the system.}
+			\begin{figure}[H]
+				\centerline{\includegraphics[width=0.6\textwidth]{Sections/Implementation/Max/images/Max/Iteration3/fileSelectionConvolution_Edit.png}}
+				\caption{\textbf{Red:} Outputs stored file number. \textbf{Blue:} Distributes the file number to a different convolution patch each time. \textbf{Yellow:} Receives file number and loads appropriate file into the system.}
 				\label{overviewIteration3}
 			\end{figure}
 
 			%-------------Movement Illustration Image-------------%
-			\begin{figure}[H]
-				\centerline{\includegraphics[width=\textwidth]{Sections/Implementation/Max/images/Max/Iteration3/movementIllustration2.png}}
+			\begin{figure}
+				\centerline{\includegraphics[width=0.9\textwidth]{Sections/Implementation/Max/images/Max/Iteration3/movementIllustration2.png}}
 				\caption{Illustration of how the three convolution patches work together to simulate movement, where the circles represent locations within the \ac{VAE} and are numbered to indicate which convolution patch they are loaded in. \textbf{(1)} User is moved between two loaded positions while the third patch loads a new \ac{RIR} file. \textbf{(2)} The user is held in the new position until the next position has been loaded into the system. \textbf{(3)} User is moved between the two available positions while the next position is loaded into the system.}
 				\label{movementIllustration}
 			\end{figure}
@@ -281,13 +281,13 @@
 				%-------------Convolution Patch Overview Image-------------%
 			\begin{figure}[t]
 				\centerline{\includegraphics[scale = 0.4]{Sections/Implementation/Max/images/Max/Iteration3/convPatch_edit.png}}
-				\caption{Overview of the one of the convolution patches showing: \textbf{Orange:} Input to the patch that receives the required file number, \textbf{Red:} Automated panning control, \textbf{Yellow:} Audio input section, \textbf{Blue:} Spat convolution objects, \textbf{Green:} Multiplication stage used for controlling the level of the convolved output.}
+				\caption{Overview of one of the convolution patches showing: \textbf{Orange:} Input to the patch that receives the required file number, \textbf{Red:} Automated panning control, \textbf{Yellow:} Audio input section, \textbf{Blue:} Spat convolution objects, \textbf{Green:} Multiplication stage used for controlling the level of the convolved output.}
 				\label{convPatch}
 			\end{figure}
 
-			To achieve the path following functionality illustrated in figure~\ref{movementIllustration}, each convolution patch contains its own level control algorithm. Figure~\ref{convPatch} shows an overview of the first convolution patch which is a modified version of the original patch used in the \ac{VSS}. The input to the convolution patch (orange) feeds the file number directly into a \href{http://lt669.github.io/code/javascript/html/loadFiles.html}{loadFiles.js} javascript object. This simply prepends the number with the appropriate number of 0's (eg 1 becomes 001 and 28 becomes 028), then this number is concatenated with a file path pointing to where the audio files are located. This outputs four `open' messages (one for each directional \ac{RIR} file)  followed by the appropriate file path to the spat.conv objects (blue). These are the objects that actually search for the file and load it into the system. By sending the prepending `open' message, manually searching for a file is not required, thus automating the process. These objects convolve the loaded \ac{RIR} file with whatever audio input is given at its inlet, in this case the real time audio input or audio file (yellow). These outputs are then sent through multipliers (green), used to fade the signal in and out with an automated volume control (red).
+			To achieve the path following functionality illustrated in figure~\ref{movementIllustration}, each convolution patch contains its own level control algorithm. Figure~\ref{convPatch} shows an overview of the first convolution patch which is a modified version of the original patch used in the \ac{VSS}. The input to the convolution patch (orange) feeds the file number directly into a \href{http://lt669.github.io/code/javascript/html/loadFiles.html}{loadFiles.js} javascript object. This simply prepends the number with the appropriate number of 0's (eg 1 becomes 001 and 28 becomes 028), then this number is concatenated with a file path pointing to where the audio files are located. This outputs four `open' messages (one for each directional \ac{RIR} file) followed by the appropriate file path to the spat.conv objects (blue). These are the objects that actually search for the file and load it into the system. By sending the prepending `open' message, manually searching for a file is not required, thus automating the process. These objects convolve the loaded \ac{RIR} file with whatever audio input is given at its inlet, in this case, the real time audio input or audio file (yellow). These outputs are then sent through multipliers (green), used to fade the signal in and out with an automated volume control (red).
 		 	
-		 	The automated volume controls receive a \textit{`bang'} (signalling something has happened) when the `open' message is sent form the `loadFiles.js' object (orange). This bang is also sent to the convolution patch that is currently at full volume. This prompts the volume of the current patch to increase while the volume of the previous patch decreases, thus panning between the two signals.
+		 	The automated volume controls receive a \textit{`bang'} (signalling something has happened) when the `open' message is sent from the `loadFiles.js' object (orange). This bang is also sent to the convolution patch that is currently at full volume. This prompts the volume of the current patch to increase while the volume of the previous patch decreases, thus panning between the two signals, simulating the movement between two positions in the virtual room.
 
 
 	\subsubsection{Location Tracking}
@@ -302,7 +302,7 @@
 		\end{figure}
 
 		\paragraph{User Interface}
-			As previously mentioned, the c74 application was used to display a user interface on an iPad, allowing the user to select their location within the space. This is created on the right side of figure~\ref{touchScreenPatch} and is done by sending the `c74' object a message that contains the type of object that should be presented, its coordinates in the space as well as size and colour, the results of which are shown in figure~\ref{UIdot}. The output of the `c74' object returns information regarding the objects created in the user interface. In this case, the positions touched on the lcd screen will be sent from the iPad back to this `c74' object. This information is sent to the input of the `UI\_to\_file' patch. This allows the iPad screen to be used the same way as the lcd screen in Max is used (show previously in figure~\ref{lcd}).
+			As previously mentioned, the c74 application was used to display a user interface on an iPad, allowing the user to select their location within the space. This is created on the right side of figure~\ref{touchScreenPatch} and is done by sending the `c74' object a message that contains the type of object that should be presented, its coordinates in the space as well as size and colour, the results of which are shown in figure~\ref{UIdot}. The output of the `c74' object returns information regarding the objects created in the user interface. In this case, the positions touched on the lcd screen will be sent from the iPad back to this `c74' object. This information is sent to the input of the `UI\_to\_file' patch. This allows the iPad screen to be used the same way as the lcd screen in Max is used (shown previously in figure~\ref{lcd}).
 
 			%-------------UI Image-------------%
 			\begin{figure}[t]
@@ -314,7 +314,7 @@
 		\paragraph{Position Feedback}
 			The left side of figure~\ref{touchScreenPatch} contains a javascript file called \href{http://lt669.github.io/code/javascript/html/storeCood.html}{storeCood.js} (highlighted in blue) with a number of inputs. As mentioned above, the `c74' objects can retrieve data from the lcd screen on the iPad. When the user selects a location, the (x,y) coordinates are sent to the first two inputs of the javascript file respectively. These coordinates are stored in a list along with the corresponding section that they are located in (third input), calculated using the method described in section~\nameref{locationSelection}. Figure~\ref{locationsExample} shows a simple example, where the coordinates of a path spanning across 4 sections are stored in groups.
 
-			Input 4 and 5 receive two different signals routed from the main timer (labelled 3 in figure~\ref{myPatch}). Input 4 receives a signal every time the timer is done (every 2.5 seconds) and input 5 receives a message every 100ms (the rate at which the timer increments). These are used to call the two main functions that are used to output the coordinates at the correct times, \texttt{findLength()} and \texttt{outputCoords()}. Each time the timer finishes (after 2.5 seconds), \texttt{findLength()} starts from the beginning of the list of stored coordinates and scans through them, calculating how many coordinates are located in the same section. For the example in figure~\ref{locationsExample}, this would find a length of 2 for positions 1 and 2 located in section 5. As the user is moved to a new \ac{RIR} location every 2.5 seconds, \texttt{outputCoords()} will output the coordinates that were travelled in that section evenly within that amount of time. This is done by dividing 2500(ms) by the number of points within that section. For the example in figure~\ref{locationsExample}, this would be $2500/2 = 1250$. Therefore, every 100ms the function checks to see whether it is time to output the stored coordinates, meaning the coordinates of position 1 and 2 will be output at times 1250ms and 2500ms. If we were to continue with the example, the next three positions, 3, 4 and 5 would be output at times 833ms, 1666ms and 2500ms, thus evenly spreading out the movement of the dot on the user interface screen meaning the dot should travel around the path at a continuous speed through each section of the lcd screen. An example of the dot movement can be found \href{http://lt669.github.io/pages/videos.html}{here}.
+			Input 4 and 5 receive two different signals routed from the main timer (labelled 3 in figure~\ref{myPatch}). Input 4 receives a signal every time the timer is done (every 2.5 seconds) and input 5 receives a message every 100ms (the rate at which the timer increments). These are used to call the two main functions that are used to output the coordinates at the correct times, \texttt{findLength()} and \texttt{outputCoords()}. Each time the timer finishes (after 2.5 seconds), \texttt{findLength()} starts from the beginning of the list of stored coordinates and scans through them, calculating how many coordinates are located in the same section. For the example in figure~\ref{locationsExample}, this would fine two sets of coordinates for positions 1 and 2 located in section 5. As the user is moved to a new \ac{RIR} location every 2.5 seconds, \texttt{outputCoords()} will output the coordinates that were travelled in that section evenly within that amount of time. This is done by dividing 2500(ms) by the number of points within that section. For the example in figure~\ref{locationsExample}, this would be $2500/2 = 1250$, meaning the coordinates of position 1 and 2 will be output at times 1250ms and 2500ms. If we were to continue with the example, the next three positions, 3, 4 and 5 would be output at times 833ms, 1666ms and 2500ms, thus evenly spreading out the movement of the dot on the user interface screen, meaning the dot should travel around the path at a continuous speed through each section of the lcd screen. An video example of the dot movement functionality can be found \href{http://lt669.github.io/pages/videos.html}{here}.
 
 			%-------------Locations example Image-------------%
 			\begin{figure}
@@ -338,7 +338,7 @@
 
 	\subsubsection{Settings Menu}
 
-	Figure~\ref{settings} shows the settings patch that can be used to determine which \ac{RIR} grid to use by selecting the number 1-5 on the top left of the patch (green buttons) as well as the sample rate of the \ac{RIR} files. The audio input settings can be used to change which audio input is used. The panning settings determine the speed at which the user is moved between \ac{RIR} locations (though this was kept at the same rate the system timer was set, 2.5s).
+	Figure~\ref{settings} shows the settings patch that can be used to determine which \ac{RIR} grid to use by selecting the number 1-5 on the top left of the patch (green buttons) as well as the sample rate of the \ac{RIR} files. The audio input settings can be used to change which audio input is used. The panning settings determine the speed at which the user is moved between \ac{RIR} locations (though this was kept at the same rate the system timer was set, which was 2.5s).
 
 		%-------------Locations example Image-------------%
 		\begin{figure}[t]
@@ -350,14 +350,14 @@
 		\subsubsection{Software Issues}
 	\label{iteration3Issues}
 
-		\paragraph{Location approximation}
+		\paragraph{Location Approximation}
 		%Zigzag movement
 		One issue raised when implementing iteration 3 was the way in which the user is moved through the virtual space. As only two \ac{RIR} locations are used at a time as opposed to using 4 \ac{RIR} locations for interpolation, the user is moved in a `zigzag' pattern (an example of 4 \ac{RIR} locations is used here as it is the minimum number that can be used other than 2). Figure~\ref{iterationMovement} shows two images illustrating how the user is moved through the virtual space using the final iteration of the software against the initial two iterations, where the curved blue line represents the path drawn by the user. The image on the left shows how 4 \ac{RIR} locations would be used together to approximate the room acoustics between them. The image on the right shows how the user is passed between locations one at a time, causing the `zigzag' pattern.
 
 		\paragraph{Travel Speed}
 		%As previously mentioned, the rate at which the \ac{RIR} files are loaded into the system is determined by a timer. This also determines where the user is placed in the virtual space and the rate at which they are moved from one position to another. This causes an issue regarding the inconsistency in the speed at which the user is moved through the space. As the \ac{RIR} locations are separated by a greater distance, the speed at which the user moves between them increases.
 
-		It has been mentioned that the rate at which \ac{RIR} files are loaded into the system are determined by a timer that loops every 2.5 seconds. As a result of this, the rate at which the user is moved from one \ac{RIR} position to the next is also 2.5 seconds, regardless of the distance between \ac{RIR} location. This means than when the \ac{RIR} locations are separated by a greater distance, the speed at which the user moves within the virtual space is also greater, creating an inconsistency in speed with each \ac{RIR} grid used. This was not considered when the system was designed and as a consequence, negatively influenced the results obtained in user test \#3 (see section~\nameref{usertests:test3}).
+		It has been mentioned that the rate at which \ac{RIR} files are loaded into the system are determined by a timer that loops every 2.5 seconds. As a result of this, the rate at which the user is moved from one \ac{RIR} position to the next is also 2.5 seconds, regardless of the distance between \ac{RIR} location. This means that when the \ac{RIR} locations are separated by a greater distance, the speed at which the user moves within the virtual space is also greater, creating an inconsistency in speed with each \ac{RIR} grid used. This was not considered when the system was designed and as a consequence, negatively influenced the results obtained in user test \#3 (see section~\nameref{usertests:test3}).
 
 
 		%-------------Latency Diagram-------------%
@@ -366,8 +366,6 @@
 			\caption{Illustration of how the user is moved through the virtual space using different numbers of \ac{RIR} locations where the image on the \textbf{left} shows how 4 \ac{RIR}'s are used at a time to approximate the room acoustics of the unmeasured location and the image on the \textbf{right} shows the user being passed between two \ac{RIR} locations at a time thus producing a `zigzag' pattern. The blue line represents the paths drawn by the user and the circles represent \ac{RIR} locations.}
 			\label{iterationMovement}
 		\end{figure}
-
-
 
 		As previously explained in section~\nameref{iteration3}, three convolution patches were used to move the user between two \ac{RIR} locations while the third loads the next location. In an attempt to make the system less computationally expensive, if any of the convolution patches were loading a file as opposed to convolving an audio signal with one, the convolution algorithm was bypassed. However it was found that any delay in turning the bypass on or off produced a `popping' noise. Small delays in turning the bypass on and off often occurred, therefore this bypass functionality was removed.
 
@@ -403,11 +401,11 @@
 
 	\subsection{RIR Trimming}
 	\label{RIRtrimming}
-		Due to the latency present in the system, the first 22ms of the \ac{RIR}'s had to be trimmed. Figure~\ref{odeonTrim} shows two of the synthetic \ac{RIR}'s, the top showing one from the centre of the room (8.85m from the left wall) and the bottom showing an \ac{RIR} taken 1.85m away from the left wall. Both of the \ac{RIR}'s being analysed were produced with the sound source facing the left wall (90\textdegree) to emphasis the early wall reflection, used to explain the issue caused due to the system latency. 
+		Due to the latency present in the system, the first 22ms of the \ac{RIR}'s had to be trimmed. Figure~\ref{odeonTrim} shows two of the synthetic \ac{RIR}'s, the top showing one from the centre of the room (8.85m from the left wall) and the bottom showing an \ac{RIR} taken 1.85m away from the left wall. Both of the \ac{RIR}'s being analysed were produced with the sound source facing the left wall (90\textdegree) to emphasise the early wall reflection, used to explain the issue caused due to the system latency. 
 
 		Points (1), (2) and (3) are identical in both \ac{RIR}'s showing the start of the impulse (1), the direct sound from the source to the receiver (2) and the floor reflection (3). The main difference in the \ac{RIR}'s are the direct reflection times from the left wall. (4) shows the wall reflection occurring at 0.04084s, indicating a travel distance of 3.75m (following the same path described in figure~\ref{reflectionPaths} in section \nameref{odeon:results}). (5) shows the reflection from the same wall, however occurring much later due to the greater distance from the wall. The point at which the \ac{RIR}'s will be trimmed is indicated by the red intersecting line, occurring at approximately 0.052s. It can be seen that the direct reflection from the left wall (4) is removed from the impulse, whereas in the \ac{RIR} in the centre of the room, the direct wall reflection (5) remains in the trimmed version of the \ac{RIR}. Due to the 22ms delay, any sound that travels less than 7.568m (if the source and receiver were placed 3.784 away from a surface) before reaching the receiver will be removed from the \ac{RIR}. 
 
-		The necessity for direct sound has been previously discussed in \cite{Devore2009}, stating that as reverb builds up over time eventually masking reflections, the direct sounds are used for sound source localisation. As the user in the \ac{VAE} is both the sound source and the receiver, they will rely on direct reflections from the walls to determine their location within the space, however, the direct reflections from walls have had to be removed in some cases. Therefore, when moving closer to a wall, it may become difficult for the user to determine their locations.
+		The necessity for direct sound has been previously discussed in \cite{Devore2009}, stating that as reverb builds up over time, eventually masking reflections, the direct sounds are used for sound source localisation. As the user in the \ac{VAE} is both the sound source and the receiver, they will rely on direct reflections from the walls to determine their location within the space, however, the direct reflections from walls have had to be removed in some cases. Therefore, when moving closer to a wall, it may become difficult for the user to determine their locations.
 
 		%-------------Latency Diagram-------------%
 		\begin{figure}

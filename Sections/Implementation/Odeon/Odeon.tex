@@ -10,7 +10,7 @@
 
 	\label{odeon}
 	\subsubsection{Water Tightness Test}
-		Once the SketchUp model had been exported as a .par file using the SU2Odeon plug-in \cite{SU2Odeon}, it could be opened in Odeon and checked to ensure that there were no gaps in the model for which rays to escape. If this was the case, the model would have to be fixed in SketchUp and reimported into Odeon. Odeon makes checking the model easy by running a `\textbf{water tightness}' check, where a large number of rays are traced around the room, seeing whether any of them manage to escape the model. Figure~\ref{watertight} shows the Hendrix Hall model undergoing such a test. Once it was ensured that the model was fit for use, the surface materials could be assigned.
+		Once the SketchUp model had been exported as a .par file using the SU2Odeon plug-in \cite{SU2Odeon}, it could be opened in Odeon and checked to ensure that there were no gaps in the model for rays to escape. If this was the case, the model would have to be fixed in SketchUp and reimported into Odeon. Odeon makes checking the model easy by running a `\textbf{water tightness}' check, where a large number of rays are traced around the room, seeing whether any of them manage to escape the model. Figure~\ref{watertight} shows the Hendrix Hall model undergoing such a test. Once it was ensured that the model was fit for use, the surface materials could be assigned.
 
 		%-------------Water tightness test-------------%
 		\begin{figure}[H]
@@ -25,7 +25,7 @@
 
 		\paragraph{Initial Materials}
 
-			Odeon's material list appears to be designed for the auralisation of structures with very basic interior. Due to a lack of choice, exact materials in the room could not be modelled accurately, however, the closest match to what was thought to be the true material were selected as an approximation. In some cases, appropriate replacement materials were not available, therefore new materials had to be added to the material list. This can be done by finding a materials absorption coefficients and selecting `\textbf{Edit an existing material}' where a new materials absorption coefficients can be entered and saved, as shown in figure~\ref{materialEdit}. Absorption coefficient values range from 0 - 1 (0\% - 100\%), indicating the percentage of attenuation applied to the selected frequency band upon a contact with the surface. Required materials for which an appropriate replacement could not be found in the material list are listed in table~\ref{materialTable}.
+			Odeon's material list appears to be designed for the auralisation of structures with very basic interiors. Due to a lack of choice, exact materials in the room could not be modelled accurately, however, the closest match to what were thought to be the true materials were selected as an approximation. In some cases, appropriate replacement materials were not available, therefore new materials had to be added to the material list. This can be done by finding a materials absorption coefficients and selecting `\textbf{Edit an existing material}' where a new materials absorption coefficients can be entered and saved, as shown in figure~\ref{materialEdit}. Absorption coefficient values range from 0 - 1 (0\% - 100\%), indicating the percentage of attenuation applied to the selected frequency band upon a contact with the surface. Required materials for which an appropriate replacement could not be found in the material list are listed in table~\ref{materialTable}.
 
 			\begin{table}[H]
 			\begin{center}
@@ -53,7 +53,7 @@
 		\paragraph{Surface Types}
 			\label{surfaceTypes}
 
-			For a number of surfaces it is appropriate to edit properties other than just their absorption coefficients. As explained in section \nameref{designRoom}, the roof hangings are constructed of four joint slanting surfaces. By changing the individual surface types from \textbf{`Normal'} to \textbf{`Fractional'}, Odeon avoids erroneously calculating diffraction due to each of the individual surfaces and treats them as a whole surface. For surfaces such as the contracted seating shown in figure~\ref{seating} where gaps are present in the overall structure, it was possible to model this as one solid object and to set a \textbf{transparency} value. A transparency value of 0 means the surface is a solid, whereas a value of 1 makes a surface totally transparent, allowing rays pass to straight through it. A transparency value of 0.3 was chosen as a reasonable estimate, the effects of which are illustrated in figure~\ref{transparency}, showing how a ray can pass through the front of the object, reflect around the inside and eventually reflect back out again.
+			For a number of surfaces it is appropriate to edit properties other than just their absorption coefficients. As explained in section \nameref{designRoom}, the roof hangings are constructed of four joint slanting surfaces. By changing the individual surface types from \textbf{`Normal'} to \textbf{`Fractional'}, Odeon avoids erroneously calculating diffraction due to each of the individual surfaces and treats them as a whole surface. For surfaces such as the contracted seating shown in figure~\ref{seating} where gaps are present in the overall structure, it was possible to model this as one solid object and to set a \textbf{transparency} value. A transparency value of 0 means the surface is a solid, whereas a value of 1 makes a surface totally transparent, allowing rays to pass straight through it. A transparency value of 0.3 was chosen as a reasonable estimate, the effects of which are illustrated in figure~\ref{transparency}, showing how a ray can pass through the front of the object, reflect around the inside and eventually reflect back out again.
 
 
 				%-------------Seating Image-------------%
@@ -70,7 +70,7 @@
 				\label{transparency}
 			\end{figure}
 
-			As previously mentioned in section~\nameref{designRoom}, the lights were modelled as simple rectangles as opposed to the more complex objects made from a large number of surfaces, with the intention of more accurately modelling the scattering effect (described in section~\nameref{background:scattering}) due to their shape by altering the objects \textbf{Scattering Coefficient}. Odeon provides a table of initial indicators for possible scattering coefficients, shown in figure~\ref{odeonTable} which can be used to select the scattering coefficient for a surface that fits a similar description to the one given. Given the vague descriptions, a scattering coefficient of 0.2 was selected for the lights.
+			As previously mentioned, the lights were modelled as simple rectangles as opposed to the more complex objects made from a large number of surfaces, with the intention of more accurately modelling the scattering effect (described in section~\nameref{background:scattering}) due to their shape by altering the objects \textbf{Scattering Coefficient}. Odeon provides a table of initial indicators for possible scattering coefficients, shown in figure~\ref{odeonTable} which can be used to select the scattering coefficient for a surface that fits a similar description to the one given. Given the vague descriptions, a scattering coefficient of 0.2 was selected for the lights.
 
 			%-------------Scattering Coefficients table-------------%
 			\begin{figure}
@@ -125,7 +125,7 @@
 			%-------------All materials compare-------------%
 			\begin{figure}
 				\centerline{\includegraphics[width=\textwidth]{Sections/Implementation/Odeon/images/MaterialCompare/OriginalMaterials/all.png}}
-				\caption{Spectrogram of real \ac{RIR} (top) against the spectrograms of several rendered \ac{RIR} from Odeon with different material absorption coefficients where ODEON (bottom) shows the final \ac{RIR} used. Spectrogram titles and corresponding material edits can be found in table~\ref{materialTable}}
+				\caption{Spectrogram of real \ac{RIR} (top) against the spectrograms of several rendered \ac{RIR} from Odeon with different material absorption coefficients where ODEON (bottom) shows the final \ac{RIR} used. Spectrogram titles and corresponding material edits can be found in table~\ref{materialTable}.}
 				\label{compareAll}
 			\end{figure}
 
@@ -393,7 +393,7 @@
 			\end{figure}
 
 
-			The first peak, (a), can be assumed to be the direct sound form the source to the receiver, present at $0.03168s$, meaning the start of the impulse can be calculated using equation~\ref{distance}, where $d = 0.6m$:
+			The first peak, (a), can be assumed to be the direct sound from the source to the receiver, present at $0.03168s$, meaning the start of the impulse can be calculated using equation~\ref{distance}, where $d = 0.6m$:
 
 			\begin{equation}
 			0.03168s - \frac{0.6m}{c} = 0.02994s = t_s
@@ -448,7 +448,7 @@
 			%-------------RIR Invalid Positions Image-------------%
 			\begin{figure}
 				\centerline{\includegraphics[scale = 0.54]{Sections/Implementation/Odeon/images/SouRecPos/SouRecSelection_crop.png}}
-				\caption{Source and receiver pairing window in Odeon}
+				\caption{Source and receiver pairing window in Odeon.}
 				\label{SouRecPos}
 			\end{figure}
 
